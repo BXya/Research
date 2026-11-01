@@ -1,0 +1,14 @@
+[
+ {
+  "wf": "wf_336d02fa-fcd",
+  "label": "research:colas_ink",
+  "url": "https://www.gutenberg.org/cache/epub/24016/pg24016-images.html",
+  "msg": "getaddrinfo ENOTFOUND www.gutenberg.org. In this cloud session a host fails to resolve like this when it is outside the session's allowed network domains, or do"
+ },
+ {
+  "wf": "wf_336d02fa-fcd",
+  "label": "research:colas_ink",
+  "url": "https://slyka.net/blog/2025/ink-print/",
+  "msg": "getaddrinfo ENOTFOUND slyka.net. In this cloud session a host fails to resolve like this when it is outside the session's allowed network domains, or does not e"
+ }
+]
