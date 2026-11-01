@@ -1,0 +1,694 @@
+{
+  "key": "audit_evidence",
+  "name": "旧轮承重主张复核（修订版）",
+  "date": "2026-11-01",
+  "verify_status": "adversarial re-check done 2026-11-01; verdicts in audit_evidence.verify.json",
+  "websearch_used": 1,
+  "findings": [
+    {
+      "id": "F01",
+      "claim_zh": "Dietzgen 60 天货架期（预涂重氮纸，旧轮作为出厂预涂货架期默认值）",
+      "label": "事实：数据表原文写明 SHELF LIFE 60 days（Dietzgen 241），存放 10–30°C、RH 30–65%，产品按单生产（不常备）；数据表未写起算点（出厂、交付或开封）。推断：该数值针对工业氨熏蒸重氮纸，不能直接移植到拼图涂层。推断：Rev 3「Updated 8/18」的年份 2018 数据表中未写明，只能标为推断。未验证：现行规格未核。",
+      "grade": "A",
+      "sources": ["S01", "S02", "S03"],
+      "notes": "证实（本轮 curl 全文 PDF 重读，verify: 证实）。c09 应写「厂商数值 60 天（起算点未写）」。「2018 年版」为推断，不得写成事实。旧轮「从生产日起」无来源，已删除。"
+    },
+    {
+      "id": "F02",
+      "claim_zh": "重氮像在光下数周至数月褪色",
+      "label": "事实（二手转述，本轮重读）：Wikipedia Whiteprint 原文 'A blue-line print is not permanent and will fade if exposed to light for weeks or months'，并写 'fade over months (indoors) or just days (outdoors)'。推断：「数周至数月」把户外（以天计）与室内（以月计）合并，偏宽。未验证：原始研究或厂商褪色速率数据未读。",
+      "grade": "B",
+      "sources": ["S04"],
+      "notes": "证实（verify: 证实）。建议改写为「户外日光下以天计、室内荧光灯下以月计（B，Wikipedia 转述，原始出处未核）」。不做年限换算。首次 curl 返回 Wikimedia Error 页，重试后成功。Dietzgen 数据表未给出褪色信息（S01）。"
+    },
+    {
+      "id": "F03",
+      "claim_zh": "SolarFast 价格：Dharma 4 oz 列价 $9.99（1–4 件）、8 oz $14.99；Jacquard 商店 4 fl oz Sale price $9.99。旧轮的 1 加仑约 $124.99 与 SolarFast Wash 约 $5.24 未能证实，已删除。",
+      "label": "事实（页面原文，2026-11-01 curl 读取）：Dharma 列表 4 oz $9.99（1–4 件）、8 oz $14.99，页面称 'special pricing through July 1st'（年份未标）；Jacquard 商店 4 fl oz 'Sale price $9.99'，1 gal 注明 'may require up to 10 business days for production'。两页均未列 1 gal 单价；$124.99 与 $5.24（SolarFast Wash）两页均无。未验证：全部价格与库存。",
+      "grade": "A（页面原文）；价格本身标未验证；旧值未能证实",
+      "sources": ["S07", "S09"],
+      "notes": "c12 只能写「4 oz 标价约 US$9.99（Jacquard 与 Dharma，2026-11-01 读取，未验证）」。删除 $124.99 与 $5.24。SolarFast 是否在售、库存状态未验证。S09 URL 名为 gallon，页面实际为 4 oz / 8 oz 列表。"
+    },
+    {
+      "id": "F04",
+      "claim_zh": "Inkodye 已停产",
+      "label": "事实：两个独立页面陈述 Inkodye 已不再生产或已停业（S06 原文 'Inkodye is no longer in production'；S05 原文 'Inkodye has closed their doors forever!'）；推断：SolarFast 为 Inkodye 配方衍生，这是厂商与联合创始人的说法，本轮未独立核实配方关系。",
+      "grade": "A",
+      "sources": ["S05", "S06"],
+      "notes": "证实（verify: 证实）。S06 为联合创始人个人页（页面标注 2009–2014）；S05 为零售商页。两页均 curl 全文读取，页面未注明日期。"
+    },
+    {
+      "id": "F05",
+      "claim_zh": "Pellet 成色「永久」：未能证实（旧轮结论「成色永久」降级）",
+      "label": "事实：Price 1995（curl 全文）定性称 Pellet 过程产生 'positive and permanent blue line image'，无耐光数据（A）；Kirby 1993 HTML 摘要页（PDF 未读）称 'The modern pigment is lightfast, except when mixed with an abundance of white'（A 摘录级）；Wikipedia 称普鲁士蓝 'fades upon exposure to light'，且 'its color returns if kept in a dark place'（B）。未验证：Pellet 成色的加速耐光数据本轮未找到。推断：可逆褪色与绝对意义的 permanent 字面不相容，但普鲁士蓝一般体系能否适用于 Pellet 成色未验证。",
+      "grade": "A（定性，无数据，Price 1995 全文）；Kirby 为 A（摘录级，已由原「A」降级）；「永久」未能证实",
+      "sources": ["S10", "S11", "S12"],
+      "notes": "c08 应写「未知：缺加速耐光数据；历史文献定性称 permanent，但无数据」，不得写「永久」。普鲁士蓝一般耐光的说法（Kirby，A 摘录级）与光照下褪色（Wikipedia，B）并存，需以实验判定。"
+    },
+    {
+      "id": "F06",
+      "claim_zh": "Photrio 半干法细节（亚铁氰化钾擦涂显影、吸干、热风停显、全程不水洗）：未能证实",
+      "label": "未验证：唯一现代来源不可读（Photrio 线程被 Cloudflare 人机验证拦截；本轮未重读，未绕过）；现有依据只有 C 级单一爱好者记述（旧轮 S4）。事实（历史对照，S10 原文）：Price 1995 记载的 Pellet 流程为 'developed in potassium ferrocyanide followed by a vigorous water bath ... A final rinse in a dilute acid bath of sulfuric or hydrochloric acid followed by another water bath'，与「不水洗」的现代变体不一致。事实（安全，S23）：亚铁氰化钾 SDS 写明 'Contact with acids releases toxic gases'，禁与酸共存。因此历史流程中的稀酸浴不得直接移植为任何步骤。",
+      "grade": "C（单一来源，未独立读取）；历史流程 A",
+      "sources": ["S18", "S10", "S23"],
+      "notes": "c05 维持「?」（半干，名义免洗、实际残留）。不得作为免洗证据。历史流程与现代记述的分歧应在矩阵里作为分歧项记录。c06 不得把稀酸浴列为停止方案（见 F13）。"
+    },
+    {
+      "id": "F07",
+      "claim_zh": "Ibanez 2011 书目（旧轮引用的光催化写像照射时间与光源参数：未能证实）",
+      "label": "事实（书目，Crossref 本轮重读）：The Basis for Photocatalytic Writing，Journal of Chemical Education，vol 88 issue 8，pp 1116–1118；published-print 2011-08-01；published-online 2011-06-22；作者 Ibanez, Tausch, Bohrmann-Linde 等；metadata 无 abstract。未能证实：文中数值无法从元数据、Semantic Scholar 页面或 ACS 全文获取（Crossref 无摘要，Semantic Scholar 为空壳页，ACS 会话列明 403 未请求）。",
+      "grade": "书目 A（API）；数值未能证实",
+      "sources": ["S16", "S17"],
+      "notes": "旧轮的 Ibanez 数值只能标「教学演示，数值未核实」，不作为剂量或曝光时长依据。c03、c08 不得引用这些数值作为结论。日期应写「2011（online 2011-06-22；print 2011-08）」，不写单一「发表日期」。"
+    },
+    {
+      "id": "F08",
+      "claim_zh": "TiO2 分类（旧轮以 IARC 2B 概括，实际为吸入性风险与通报分类）",
+      "label": "事实：IARC 2B 针对吸入性 TiO2 粉尘（Wikipedia 转述，B，本轮重读）；事实：PubChem 聚合的 ECHA C&L 通报（CID 26042，本轮 curl 重读）中，既有 H351 Suspected of causing cancer（Warning，12.6%/36.1% 组），也有 H372 Causes damage to organs through prolonged or repeated exposure（Danger，100% 于一组通报），还有 H335、H319；聚合 notifications 为 8+1+7+56=72。推断：分类因通报者而异，不能用单一标签概括；H372 仅见于一组通报，代表性有限。未验证：ECHA 官方 CLP 条目未读（echa.europa.eu 会话列明 403，未请求）。",
+      "grade": "IARC 2B：B；PubChem ECHA 通报聚合：A（API，非法定分类条目）",
+      "sources": ["S20", "S19"],
+      "notes": "c11 应写「吸入风险（粉末或喷雾）；IARC 2B（B）；ECHA 通报不一致（含 H351、H372 等，A-API 聚合，H372 仅一组）；以供应商 SDS 为准」。不能只写「2B」，也不能写「无标签」。"
+    },
+    {
+      "id": "F09",
+      "claim_zh": "Polaroid 碱定影（作为停止或定影先例；热产酸体系，非光化学停止）",
+      "label": "事实（专利原文，本轮 Google Patents 全文重读，逐字核对）：US 5,667,943（filed 1996-04-08，granted 1997-09-16）描述热成像介质，squaric acid 衍生物受热产酸，使酸敏隐色染料不可逆变色；原文 'the image can be fixed by neutralizing all the acid generated with excess base, thereby preventing further color change in the image during long term storage'。专利另写明显影后由碱后处理定影，'the excess base introduced by the post-treatment will neutralize any acid accidentally introduced'；介质中碱量被设计为不足以中和全部酸（不超过 10%）。推断：该「碱定影」针对热产酸体系，不是光化学停止，不能迁移到铁氰化物或普鲁士蓝成色区。未验证：碱对已成色区的影响未评估。",
+      "grade": "A（专利，一手全文）",
+      "sources": ["S21", "S12"],
+      "notes": "描述与原文逐字证实（verify: 证实）；迁移结论成立。c06 的 Polaroid 行应写「热产酸后碱后处理定影（US 5,667,943，A）；非光化学，不适用于铁氰化物或普鲁士蓝成色区；pH>7 对已成色区的影响需单独实验」。Wikipedia 普鲁士蓝页面未给出碱致褪色依据，但见 F15。"
+    },
+    {
+      "id": "F10",
+      "claim_zh": "Kalvar 停产：未能证实（改为「市场需求萎缩，现仅按需生产」）",
+      "label": "部分证实：Wikipedia（B，本轮重读）原文 'Kalvar was no longer in demand, and vesicular microfilm is now only made upon request'；原文无「停产」或 discontinued 字样；供应状态未验证（cameo.mfa.org 会话列明 403，未请求）。",
+      "grade": "B（部分）；「停产」未能证实",
+      "sources": ["S13"],
+      "notes": "矩阵应改为「市场需求萎缩，微缩胶片现仅按需生产（B）；厂商在售状态未验证」。"
+    },
+    {
+      "id": "F11",
+      "claim_zh": "Cromalin 停产：未能证实（改为「工艺与硬件状态不清」）",
+      "label": "未能证实：Wikipedia 'Cromalin' 页本轮 curl 重读，原文 'Wikipedia does not have an article with this exact name'（B，负结果，已证实）；搜索摘录（S15，未读全文，日期不一）称 DuPont 退出 proofer 硬件制造，分销转 GPS（Wifac Group），GPS 继续开发 Cromalin；另一摘录称数字打样已大体取代该工艺。两者都不是停产的直接证据，且有反向信息。",
+      "grade": "B（负结果，已证实）；S15 摘录级，未验证",
+      "sources": ["S14", "S15"],
+      "notes": "「Cromalin 停产」不得写。改为「工艺与硬件状态不清：硬件退出，分销与开发转 GPS（摘录，未验证）；数字打样取代（摘录）」。不作为淘汰依据。"
+    },
+    {
+      "id": "F12",
+      "claim_zh": "在本轮所列范围内未找到免洗停止产品（范围内负结果；不得写「无免洗产品」）",
+      "label": "负结果（仅限本轮所列范围）。事实（本轮 curl 原文）：SolarFast 厂商说明书写明 'you must remove the undeveloped dye by washing... Color development is not complete until after washing'，手洗 'keep the water flowing for at least 10 minutes'（A）；Pellet 历史流程含水浴与水洗（A，S10）。未判定：重氮 241 数据表未写任何水洗或停止步骤，只列 Diazo - Ammonia 显影（A，但只能说明「未记载」，不能判为需水洗）。",
+      "grade": "负结果（范围内）；SolarFast 与 Pellet 历史法需水洗为 A；241 水洗情况未知",
+      "sources": ["S07", "S08", "S09", "S10", "S01"],
+      "notes": "SolarFast 在 c05 判 ✗（底线 1）。241 不计入「需水洗」列表，c05 应写「未知（氨熏显影，数据表未载水洗与停止步骤）」。（verify: 「全部需要水洗」反驳，已修正。）"
+    },
+    {
+      "id": "F13",
+      "claim_zh": "亚铁氰化钾（potassium ferrocyanide，CAS 14459-95-1）与酸接触释放有毒气体（新增，独立于铁氰化钾红线）",
+      "label": "事实（SDS 原文，本轮 curl 全文 PDF）：AquaPhoenix 0.2 M Potassium Ferrocyanide SDS（Revision June 15, 2020，8 页）§10：'Contact with acids releases toxic gases.'；Incompatible materials: Acids；§7：'Do not store together with acids.'；分解产物：'Under fire conditions only: Hydrogen cyanide (prussic acid)'。推断：Pellet 历史流程中的稀酸浴与含亚铁氰化钾残留的样张相遇，即存在有毒气体风险；与铁氰化钾+强酸红线属同类风险，需独立对待。未验证：仅一家供应商的溶液 SDS；固体 K4Fe(CN)6·3H2O 的其他 SDS 未逐家核对；Spectrum（P1296）与 Flinn（sds_631）页面本轮不可读。",
+      "grade": "A（SDS，一手，单一供应商）",
+      "sources": ["S23", "S26", "S27", "S28"],
+      "notes": "红线（新增）：含亚铁氰化钾的步骤禁止加入任何酸，包括稀酸浴与酸性停止剂；铁氰化物体系附近禁强酸停止方案（原有）。实验 (1) 的稀酸对照组已删除。"
+    },
+    {
+      "id": "F14",
+      "claim_zh": "亚铁氰化钾在 UV 下缓慢分解释放氰根离子（新增安全项，audit 原未涉及）",
+      "label": "事实（聚合数据，API）：PubChem CID 9605257 Hazards Summary（本轮 curl 读取）：'Decomposes slowly producing cyanide ions when irradiated with UV light; [Ullmann]'。未验证：原始 Ullmann 条目未读；释放速率与剂量未知。推断：含亚铁氰化钾残留的样张若长时间 UV 照射，存在氰根释放风险；与实验 (2)(3) 的日光或 UV 曝光有关。",
+      "grade": "B（聚合引文，引 Ullmann 未读）",
+      "sources": ["S24"],
+      "notes": "c11 与 c03/c06 须加安全备注。实验样张若含亚铁氰根，曝光须通风并记录时间。"
+    },
+    {
+      "id": "F15",
+      "claim_zh": "普鲁士蓝碱敏感：有二手定性依据（旧轮「未找到依据」的负结论已反驳）；pH 阈值未知",
+      "label": "事实（聚合引文，API）：PubChem CID 2724251（Prussian blue）记录（本轮 curl 全文）：'Apart from poor fastness toward alkalies, its general fastness is good.'，引 Frank E, Rupp R; Ullmann's Encyclopedia of Industrial Chemistry, 7th ed., Printing Inks（2006）。未验证：pH 阈值、接触时间、已成色区褪色速率均无数据。推断：碱敏感方向有二手支持，pH>7 作为红线的方向可保留，阈值仍需实验（实验 4）。",
+      "grade": "B（二手定性；Ullmann 原条目未读；PubChem 为 API）",
+      "sources": ["S25", "S12"],
+      "notes": "替代旧 negative_findings 中「未找到碱致褪色依据」的结论（见 negative 条目）。c06/c08 写「碱（pH>7）：二手定性依据（B）；阈值未知」。"
+    },
+    {
+      "id": "F16",
+      "claim_zh": "Pellet 显影剂为亚铁氰化钾（potassium ferrocyanide），不是铁氰化钾（旧错误已显式更正：需求书 v0.5 §5 与阶段 2 协议草稿）",
+      "label": "事实（一手历史文献，本轮 curl 全文）：Price 1995（S10）原文 'developed in potassium ferrocyanide'，并写 'ferric-ferrocyanide「Prussian blue」'。同一文献中原始蓝图（ferric ammonium citrate + potassium ferricyanide）为另一流程，显影为水洗而非酸浴。推断：Pellet 与铁氰化钾流程不同；铁氰化钾+强酸红线不自动适用于亚铁氰化钾，但亚铁氰化钾 SDS（F13）仍禁酸接触。",
+      "grade": "A（一手，全文）",
+      "sources": ["S10", "S23"],
+      "notes": "所有 Pellet 显影剂字段一律写「亚铁氰化钾（potassium ferrocyanide）」，全名，不许简写为「铁氰化钾」或「氰化物显影剂」。"
+    }
+  ],
+  "sources": [
+    {
+      "id": "S01",
+      "title": "Dietzgen 241 20LB Blueline Paper Product Data Sheet (Rev 3, Updated 8/18)",
+      "url": "https://my.dietzgen.com/img/category/description/Data%20Sheets/241_Dietzgen_ProductDataSheet.pdf",
+      "quote": "241 is not a stocked item and is converted on a per order basis. This is due to the short shelf life of the product... SHELF LIFE 60 days. STORAGE CONDITIONS Temperature 50-85 F (10-30 C) Relative Humidity 30-65%. Printer compatibility: Diazo - Ammonia diazo machines.",
+      "type": "厂商数据表（PDF）",
+      "access": "curl全文（pdftotext），本轮 2026-11-01 重读，逐字核对",
+      "date": "数据表 Rev 3，标注 Updated 8/18（年份未写）"
+    },
+    {
+      "id": "S02",
+      "title": "Dietzgen Bond Paper category (my.dietzgen.com/bond-paper)",
+      "url": "https://my.dietzgen.com/bond-paper",
+      "quote": "Category listing: Bond Paper; Bond Paper (Tinted); Coated Matte Paper; Proofing Paper & Film; Vellum; and others. No item named 241 or blueline/diazo paper appears in the listing text.",
+      "type": "厂商列表页",
+      "access": "curl全文（HTML 转文本）",
+      "date": "页面未注明；本轮读取 2026-11-01"
+    },
+    {
+      "id": "S03",
+      "title": "Dietzgen Reprographic category (my.dietzgen.com/dietzgen-reprographic)",
+      "url": "https://my.dietzgen.com/dietzgen-reprographic",
+      "quote": "Subcategories: 430 20LB Engineering Bond Paper; 435 24LB; 436 32LB; 440 40LB; 431 20LB Bond Paper (High Bright); 450 18LB Translucent; FIBERLOCK treated bond paper. No 241 item in the listing text.",
+      "type": "厂商列表页",
+      "access": "curl全文（HTML 转文本）",
+      "date": "页面未注明；本轮读取 2026-11-01"
+    },
+    {
+      "id": "S04",
+      "title": "Whiteprint - Wikipedia (sections 'Fading prints' and process history)",
+      "url": "https://en.wikipedia.org/wiki/Whiteprint",
+      "quote": "A blue-line print is not permanent and will fade if exposed to light for weeks or months. ... A quirk of diazo blueline prints is that with continued exposure to ultraviolet light, either from natural sunlight or from typical office fluorescent lighting, a blueline copy can fade over months (indoors) or just days (outdoors).",
+      "type": "百科（二手）",
+      "access": "curl全文（HTML 转文本）；首次返回 Wikimedia Error 页，重试后成功，本轮逐字核对",
+      "date": "页面未注明版本；本轮读取 2026-11-01"
+    },
+    {
+      "id": "S05",
+      "title": "Inkodye Usage Instructions - Dharma Trading Co.",
+      "url": "https://dharmatrading.com/techniques/inkodye.html",
+      "quote": "Please Note: Inkodye has closed their doors forever! We will miss the quality... BUT, there is a product that is every bit as good, with MORE colors - Jacquard SolarFast!",
+      "type": "零售商页面（一手陈述）",
+      "access": "curl全文（HTML 转文本），本轮逐字核对",
+      "date": "页面未注明；本轮读取 2026-11-01"
+    },
+    {
+      "id": "S06",
+      "title": "Inkodye - Steph Ango (co-founder page)",
+      "url": "https://stephango.com/inkodye",
+      "quote": "Inkodye is no longer in production but you can now find Jacquard SolarFast which was derived from the Inkodye formula.",
+      "type": "联合创始人个人页（一手陈述）",
+      "access": "curl全文（HTML 转文本），本轮逐字核对",
+      "date": "页面未注明（页面标注 2009–2014）；本轮读取 2026-11-01"
+    },
+    {
+      "id": "S07",
+      "title": "SolarFast | Sun-Activated Dye for Photo Printing on Fabric & Paper - Jacquard store",
+      "url": "https://store.jacquardproducts.com/products/solarfast",
+      "quote": "SolarFast Sale price $9.99. Size options: 4 fl oz, 8 fl oz, 1 gal. NOTE: 1 gallon sizes may require up to 10 business days for production if not currently in stock. FAQ: Many UV bulbs, screen-printing exposure units, sun lamps, grow lights, and high-energy black lights can develop SolarFast indoors.",
+      "type": "厂商商店页",
+      "access": "curl全文（HTML 转文本），本轮逐字核对；页面未列 1 gal 单价，$124.99 与 $5.24 未出现",
+      "date": "价格与库存未验证；本轮读取 2026-11-01"
+    },
+    {
+      "id": "S08",
+      "title": "SolarFast Instructions - Jacquard Products",
+      "url": "https://www.jacquardproducts.com/solarfast-instructions",
+      "quote": "WASHING: After exposing, you must remove the undeveloped dye by washing. Use SolarFast Wash for best results. Color development is not complete until after washing. ... For hand washing paper or fabric, submerge in the hottest tap water possible, add SolarFast Wash (1-2 capfuls or 10ml), and keep the water flowing for at least 10 minutes.",
+      "type": "厂商说明书",
+      "access": "curl全文（HTML 转文本），本轮逐字核对",
+      "date": "页面未注明；本轮读取 2026-11-01"
+    },
+    {
+      "id": "S09",
+      "title": "Jacquard SolarFast - Dharma Trading Co. (product page; URL slug says gallon, content lists 4 oz and 8 oz)",
+      "url": "https://www.dharmatrading.com/dyes/jacquard-solarfast-gallon.html",
+      "quote": "Product Details: 4 oz. List Price $9.99 (1-4), $6.95 (5-9), $6.75 (10+), $6.35; 8 oz. $14.99, $10.39, $10.10, $9.55. Also: After exposure, wash out undeveloped dye with SolarFast Wash and HOT water, agitating vigorously. Get more SolarFast for less! Enjoy special pricing through July 1st.",
+      "type": "零售商价格页",
+      "access": "curl全文（HTML 转文本），本轮逐字核对；页面无 1 gal 价格，$124.99 与 $5.24 未出现",
+      "date": "价格未验证；促销年份未标；本轮读取 2026-11-01"
+    },
+    {
+      "id": "S10",
+      "title": "Lois Olcott Price, 'Pellet process' and historical blueprint processes, PMG Topics vol. 6 (1995)",
+      "url": "https://resources.culturalheritage.org/pmgtopics/1995-volume-six/06_03_Price.html",
+      "quote": "The value of the process was its ability to produce a positive and permanent blue line image directly from a tracing without the intermediate step of making a negative. ... It was exposed directly under a tracing and then developed in potassium ferrocyanide followed by a vigorous water bath sometimes accompanied by brushing ... A final rinse in a dilute acid bath of sulfuric or hydrochloric acid followed by another water bath served to finish clearing the highlights.",
+      "type": "学术文章（历史流程，定性描述，无数据）",
+      "access": "curl全文（HTML 转文本），本轮逐字核对",
+      "date": "1995"
+    },
+    {
+      "id": "S11",
+      "title": "Jo Kirby, Fading and Colour Change of Prussian Blue: Occurrences and Early Reports - National Gallery Technical Bulletin 14 (1993) (HTML abstract page; PDF not read)",
+      "url": "https://www.nationalgallery.org.uk/technical-bulletin/kirby1993",
+      "quote": "The modern pigment is lightfast, except when mixed with an abundance of white. The earliest product was made from dried blood, and had a poor reputation for lightfastness. Water solubility of the pigment increases with increasing potassium content, and so has a tendency to fade, though the manufacturing process also affects lightfastness.",
+      "type": "博物馆技术公报（学术，HTML 摘要页）",
+      "access": "curl全文（HTML 摘要页）= A（摘录级）；PDF 未读。原 audit 标注 A（定性）已降级",
+      "date": "1993（Technical Bulletin Vol 14）"
+    },
+    {
+      "id": "S12",
+      "title": "Prussian blue - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Prussian_blue",
+      "quote": "Prussian blue fades upon exposure to light or being mixed with excessive white pigments, but its color returns if kept in a dark place with good airflow. (Article text contains no direct statement on fading at alkaline pH; 'alkali' appears in electrochemical and ion-insertion contexts. Alkali fastness basis is in S25.)",
+      "type": "百科（二手）",
+      "access": "curl全文（HTML 转文本），本轮逐字核对",
+      "date": "页面未注明版本；本轮读取 2026-11-01"
+    },
+    {
+      "id": "S13",
+      "title": "Vesicular film (Kalvar) - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Vesicular_film",
+      "quote": "Vesicular film, almost universally known as Kalvar... It was originally developed at Tulane University in 1956, and then commercialized by the Kalvar Corporation starting the next year. ... As the document processing world moved to computerized records, Kalvar was no longer in demand, and vesicular microfilm is now only made upon request.",
+      "type": "百科（二手）",
+      "access": "curl全文（HTML 转文本），本轮逐字核对",
+      "date": "页面未注明版本；本轮读取 2026-11-01"
+    },
+    {
+      "id": "S14",
+      "title": "Cromalin - Wikipedia (no article with this exact name)",
+      "url": "https://en.wikipedia.org/wiki/Cromalin",
+      "quote": "Wikipedia does not have an article with this exact name. Please search for Cromalin in Wikipedia to check for alternative titles or spellings.",
+      "type": "百科（负结果）",
+      "access": "curl全文（HTML 转文本），本轮逐字核对",
+      "date": "本轮读取 2026-11-01"
+    },
+    {
+      "id": "S15",
+      "title": "Cromalin search excerpts: Sprinter (DuPont Digital Cromalin AQ), proofing.de lexicon, Printweek (DuPont Cromalin B3)",
+      "url": "https://www.sprinter.com.au/dupont-digital-cromalin-aq/ ; https://proofing.de/lexicon/cromalin/ ; https://www.printweek.com/content/news/dupont-launches-dod-cromalin-b3",
+      "quote": "Search-excerpt paraphrase, not verbatim: DuPont announced it would move out of hardware manufacture and distribution went to GPS (Wifac Group), which has continued development of Cromalin (Sprinter). Digital proofing has largely replaced the Cromalin process since the early 2000s (proofing.de). DuPont planned to cease production of the AQ proofer hardware (Printweek). Articles are undated and their dates are inconsistent.",
+      "type": "行业媒体（搜索摘录）",
+      "access": "搜索摘录（未读全文，本轮未重核）",
+      "date": "不详（页面日期不一致）"
+    },
+    {
+      "id": "S16",
+      "title": "The Basis for Photocatalytic Writing - Crossref metadata (DOI 10.1021/ed1008848)",
+      "url": "https://api.crossref.org/works/10.1021/ed1008848",
+      "quote": "title: The Basis for Photocatalytic Writing; container-title: Journal of Chemical Education; published-online: 2011-06-22; published-print: 2011-08-01; volume 88; issue 8; pages 1116-1118; authors: Ibanez, Tausch, Bohrmann-Linde, Fernandez-Gallardo, Robles-Leyzaola. No abstract in metadata.",
+      "type": "DOI 元数据（API）",
+      "access": "API（本轮第二次请求成功，首次返回空）",
+      "date": "online 2011-06-22；print 2011-08；本轮读取 2026-11-01"
+    },
+    {
+      "id": "S17",
+      "title": "Semantic Scholar DOI page for 10.1021/ed1008848",
+      "url": "https://www.semanticscholar.org/doi/10.1021/ed1008848",
+      "quote": "Page text is about 1 KB with no abstract or numerical content (shell page).",
+      "type": "索引页（空壳）",
+      "access": "curl（页面壳，无摘要）",
+      "date": "本轮读取 2026-11-01"
+    },
+    {
+      "id": "S18",
+      "title": "Photrio forum thread: 'Looking for Pellet's process direct positive cyanotype'",
+      "url": "https://www.photrio.com/forum/threads/looking-for-pellets-process-direct-positive-cyanotype.223549/",
+      "quote": "Not readable: the server returned a Cloudflare security verification page (live fetch and two local copies all returned the same challenge page). Not bypassed.",
+      "type": "论坛（不可读）",
+      "access": "不可读（人机验证）；本轮未重读，未绕过",
+      "date": "本轮未读取（沿用旧轮记录）"
+    },
+    {
+      "id": "S19",
+      "title": "Titanium dioxide (CID 26042) PubChem GHS Classification, aggregated ECHA C&L notifications",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug_view/data/compound/26042/JSON?heading=GHS%20Classification",
+      "quote": "H351: Suspected of causing cancer [Warning Carcinogenicity] (12.6%, 36.1% sets); H372: Causes damage to organs through prolonged or repeated exposure [Danger] (100% in one set); H335: May cause respiratory irritation; H319: Causes serious eye irritation. Aggregated GHS information: 762 reports from 8 notifications; 7 reports from 1 notification; 304 reports from 7 notifications; 11189 reports from 56 notifications (ECHA C&L Inventory).",
+      "type": "数据库聚合（非法定 CLP 条目）",
+      "access": "API（本轮 curl 重读，逐字核对）",
+      "date": "本轮读取 2026-11-01"
+    },
+    {
+      "id": "S20",
+      "title": "Titanium dioxide - Wikipedia (Health and safety section)",
+      "url": "https://en.wikipedia.org/wiki/Titanium_dioxide",
+      "quote": "Titanium dioxide dust, when inhaled, has been classified by the International Agency for Research on Cancer (IARC) as an IARC Group 2B carcinogen, meaning it is possibly carcinogenic to humans.",
+      "type": "百科（二手）",
+      "access": "curl全文（HTML 转文本），本轮逐字核对",
+      "date": "页面未注明版本；本轮读取 2026-11-01"
+    },
+    {
+      "id": "S21",
+      "title": "US5667943A - Process for thermochemical generation of acid and for thermal imaging, and imaging medium for use therein (Polaroid Corp; filed 1996-04-08; granted 1997-09-16)",
+      "url": "https://patents.google.com/patent/US5667943A/en",
+      "quote": "Preferably, the acid-sensitive materials undergo an irreversible color change, so that the image can be fixed by neutralizing all the acid generated with excess base, thereby preventing further color change in the image during long term storage. The imaging medium uses squaric acid derivatives that release acid on heating. (Post-treatment: 'the excess base introduced by the post-treatment will neutralize any acid accidentally introduced'; basic material in the medium is insufficient to neutralize all acid, not more than 10 percent.)",
+      "type": "专利（一手）",
+      "access": "curl全文（本轮第二次请求成功，首次返回 Sorry 反爬页）；原 quote 逐字核对成立",
+      "date": "申请 1996-04-08；授权 1997-09-16（本轮核对）"
+    },
+    {
+      "id": "S22",
+      "title": "washout-free / no-wash stop-spray search excerpts (incl. Wikipedia 'Washing (photography)', Jacquard PrintFix)",
+      "url": "https://en.wikipedia.org/wiki/Washing_(photography) ; https://www.jacquardproducts.com/printfix",
+      "quote": "Search-excerpt paraphrase, not verbatim: standard cyanotype practice still rinses in water; washing after fixing removes spent chemicals (Wikipedia). PrintFix is a protective finishing spray, not a stop for exposure or development.",
+      "type": "搜索摘录（百科与厂商页）",
+      "access": "搜索摘录（本轮未重核）",
+      "date": "不详"
+    },
+    {
+      "id": "S23",
+      "title": "Potassium Ferrocyanide 0.2M Safety Data Sheet - AquaPhoenix Scientific (Revision June 15, 2020)",
+      "url": "https://sds.aquaphoenixsci.com/SDS/Potassium%20Ferrocyanide%200.2M%20(PF4182SS)_GHSUnitedStatesSDS_en_2020-08-11.pdf",
+      "quote": "§7: Do not store together with acids. §10: Contact with acids releases toxic gases. Incompatible materials: Acids. Hazardous decomposition products: Under fire conditions only: Hydrogen cyanide (prussic acid); Metal oxide smoke. (CAS 14459-95-1, potassium ferrocyanide, 8.0% in solution.)",
+      "type": "SDS（厂商，一手；单一供应商，溶液 0.2 M）",
+      "access": "curl全文（PDF，pdftotext），本轮 2026-11-01 逐字核对",
+      "date": "Revision June 15, 2020"
+    },
+    {
+      "id": "S24",
+      "title": "Potassium Ferrocyanide (CID 9605257) PubChem - Hazards Summary and GHS (aggregated)",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug_view/data/compound/9605257/JSON",
+      "quote": "Hazards Summary: May cause irritation; [MSDSonline] Practically nontoxic because strong bonding between cyanide and iron; Decomposes slowly producing cyanide ions when irradiated with UV light; [Ullmann] See CYANIDES. GHS: H411 (72.6%), H412 (11.6%) aquatic hazards (ECHA C&L aggregated, 215 reports, 11 notifications).",
+      "type": "数据库聚合（引 Ullmann；原条目未读）",
+      "access": "API（本轮 curl 读取）",
+      "date": "2026-11-01 读取"
+    },
+    {
+      "id": "S25",
+      "title": "Prussian blue (CID 2724251) PubChem - Ullmann citation for alkali fastness",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug_view/data/compound/2724251/JSON",
+      "quote": "'Apart from poor fastness toward alkalies, its general fastness is good.' Cited: Frank E, Rupp R; Ullmann's Encyclopedia of Industrial Chemistry. 7th ed. (1999-2011). Wiley; Printing Inks. Online Posting Date: 15 Jul 2006.",
+      "type": "数据库聚合（引 Ullmann；原条目未读）",
+      "access": "API（本轮 curl 全文 JSON 读取）",
+      "date": "2026-11-01 读取"
+    },
+    {
+      "id": "S26",
+      "title": "Potassium Ferrocyanide P1296 SDS - Spectrum Chemical",
+      "url": "https://www.spectrumchemical.com/MSDS/P1296_AGHS.pdf",
+      "quote": "Not readable: the server returned a JavaScript challenge page ('Please enable JS and disable any ad blocker'). Not bypassed. Search excerpt (WebSearch, not verbatim): may liberate toxic cyanide fumes when mixed with acids.",
+      "type": "SDS（不可读；搜索摘录）",
+      "access": "不可读（JS 挑战）；摘录级",
+      "date": "本轮读取 2026-11-01"
+    },
+    {
+      "id": "S27",
+      "title": "Potassium Ferrocyanide SDS - Flinn Scientific sds_631",
+      "url": "https://www.flinnsci.com/sds_631-potassium-ferrocyanide/sds_631",
+      "quote": "Not readable: the page returned an HTML shell with no SDS body text in curl output.",
+      "type": "SDS（不可读）",
+      "access": "不可读（JS 页无正文）",
+      "date": "本轮读取 2026-11-01"
+    },
+    {
+      "id": "S28",
+      "title": "WebSearch 1 call: potassium ferrocyanide SDS contact with acids liberates hydrogen cyanide (search excerpts; Fisher, Spectrum, AquaPhoenix, Flinn ferricyanide)",
+      "url": "https://www.cochise.edu/wp-content/uploads/2022/08/Science-SDS-103-Potassium-Ferrocyanide-P-236-Fisher-Apr2022.pdf",
+      "quote": "Search-excerpt paraphrase, not verbatim: Fisher ferrocyanide SDS lists acids and strong oxidizers as incompatible and names hydrogen cyanide among decomposition products. The phrase 'in contact with strong acids, may liberate toxic hydrogen cyanide fumes' came from a Flinn potassium FERRICYANIDE sheet, not a ferrocyanide sheet.",
+      "type": "搜索摘录",
+      "access": "搜索摘录（WebSearch 1 次，本轮唯一一次）",
+      "date": "本轮 2026-11-01"
+    }
+  ],
+  "negative_findings": [
+    {
+      "query": "Crossref bibliographic queries (5): 'washout-free photosensitive stop spray no washing'; 'photosensitive fabric dye stop solution without washing'; 'cyanotype stop bath no wash fixing process'; 'sun print stop spray photogram fixing'; 'vesicular diazo heat development image stabilization stop spray'",
+      "scope": "api.crossref.org works 前 5 条元数据（仅题目与期刊，未读全文）",
+      "result": "在本轮所列范围内未发现免洗停止方案的相关文献。前列结果多为无关题目。出现一条标题相关的线索 'New Stop Bath and Fixing Bath Formulas and Methods for their Revival'，未读全文，列为待查线索，不计入负结果。"
+    },
+    {
+      "query": "Google Patents XHR keyword queries (3): 'photosensitive+stop+spray+without+washing'; 'washout-free+photosensitive+composition+stop+spray'; 'no-wash+sun+print+fabric+dye+stop'",
+      "scope": "patents.google.com/xhr/query，无 CPC 或日期过滤",
+      "result": "第一条返回 125,881 条结果，过宽，未逐条筛选，不能作为负结果依据。第二、三条返回服务页（Sorry），无结果。专利检索结论：未完成，不写「无专利」。"
+    },
+    {
+      "query": "WebSearch: 'Cromalin DuPont proofing film discontinued production' (1 of 3 budget, earlier round)",
+      "scope": "搜索摘录（无全文）",
+      "result": "未找到 Cromalin 停产的来源。摘录称 DuPont 退出 proofer 硬件制造，分销转 GPS（Wifac Group），GPS 继续开发 Cromalin；另一摘录称数字打样已大体取代该工艺。日期不一致。"
+    },
+    {
+      "query": "WebSearch: 'washout-free photosensitive sun print stop spray no washing product' (2 of 3 budget, earlier round)",
+      "scope": "搜索摘录（无全文）",
+      "result": "未找到免洗停止喷剂。摘录显示标准 cyanotype 仍用水冲洗；Jacquard PrintFix 为涂层保护喷雾，不停止曝光。"
+    },
+    {
+      "query": "WebSearch (本轮 1 次): 'potassium ferrocyanide safety data sheet contact with acids liberates hydrogen cyanide gas'",
+      "scope": "搜索摘录（Fisher、Spectrum、AquaPhoenix 亚铁氰化钾 SDS 摘录；Flinn 铁氰化钾摘录）",
+      "result": "摘录显示亚铁氰化钾 SDS 列酸为不相容物，并提及氰化氢分解产物。Flinn 'may liberate toxic hydrogen cyanide fumes' 来自铁氰化钾 SDS，不是亚铁氰化钾。curl 全文仅 AquaPhoenix 可读（F13）；Spectrum 与 Flinn 不可读。未穷尽供应商，不写「所有 SDS 一致」。"
+    },
+    {
+      "query": "Prussian blue 碱（pH>7）致褪色依据：Wikipedia 'Prussian blue' 正文与 Kirby 1993 HTML 摘要页全文搜索 'alkal', 'hydroxide', 'decompos'（旧轮负结论）",
+      "scope": "上述两页",
+      "result": "【本轮修订：被反驳（部分）】两页确实无碱致褪色陈述（本轮 curl 核实）。但 PubChem CID 2724251 记录引 Ullmann's Encyclopedia（Printing Inks）'poor fastness toward alkalies'（B，二手定性，S25）。原「未找到一手或二手依据」作废。pH 阈值与时间仍无数据，需实验 4 判定。"
+    },
+    {
+      "query": "Photrio 'Pellet process' 线程（半干法细节）",
+      "scope": "photrio.com/forum/threads/...223549/ 的实时读取与两份本地旧副本",
+      "result": "旧轮三次读取均为 Cloudflare 人机验证页，不可读。本轮未重读，未绕过。半干法细节保持未验证（C 级单一来源）。"
+    },
+    {
+      "query": "Ibanez 2011 全文数值",
+      "scope": "pubs.acs.org（会话列明 403，本轮未请求）；Crossref（无摘要）；Semantic Scholar（空壳页）",
+      "result": "未能获取文中数值。仅书目可确认（本轮 Crossref 重读：vol 88 issue 8，pp 1116–1118，print 2011-08）。"
+    },
+    {
+      "query": "TiO2 官方 CLP 分类条目",
+      "scope": "echa.europa.eu（会话列明 403，本轮未请求）；仅用 PubChem 的 ECHA 通报聚合",
+      "result": "官方 CLP 条目未读。分类以通报聚合为准并标注。"
+    },
+    {
+      "query": "Dietzgen 产品列表中是否有 241 或重氮纸条目",
+      "scope": "my.dietzgen.com/bond-paper 与 /dietzgen-reprographic 的列表文本",
+      "result": "列表中未出现 241 或重氮纸条目，与数据表所写「not a stocked item, converted on a per order basis」一致。"
+    },
+    {
+      "query": "Dietzgen 241 数据表的 SHELF LIFE 起算点",
+      "scope": "241 数据表 Rev 3 全文（本轮 pdftotext 重读）",
+      "result": "未写明起算点（出厂、交付或开封）。旧轮「从生产日起」无来源，已删除。"
+    },
+    {
+      "query": "其他品牌预涂重氮纸货架期（本轮未单独检索）",
+      "scope": "本轮未执行",
+      "result": "未核实。旧轮 WebSearch 已用过，本轮额度用于 SDS 核查。"
+    },
+    {
+      "query": "Cromalin 维基条目",
+      "scope": "en.wikipedia.org/wiki/Cromalin（本轮 curl 重读）",
+      "result": "无条目，页面原文 'Wikipedia does not have an article with this exact name.'（S14，已证实）。"
+    },
+    {
+      "query": "ferricyanide（铁氰化钾）SDS 全文",
+      "scope": "本轮未 curl 读取任何铁氰化钾 SDS 全文",
+      "result": "未核实。红线结论仅依赖 WebSearch 摘录（Flinn 铁氰化钾 SDS 'in contact with strong acids, may liberate toxic hydrogen cyanide fumes'）。"
+    }
+  ],
+  "recommendations_for_matrix": [
+    {
+      "route_key": "diazo",
+      "column": "c09",
+      "text": "Dietzgen 241 数据表：SHELF LIFE 60 days，存放 10–30°C、RH 30–65%，按单生产（A，厂商数据表 Rev 3，标注 Updated 8/18；年份 2018 为推断）。起算点未写明。仅作工业重氮纸的参照，不可直接移植到拼图涂层。删除旧轮「从生产日起」的表述。"
+    },
+    {
+      "route_key": "diazo",
+      "column": "c08",
+      "text": "重氮像褪色：Wikipedia（B）转述为户外以天计、室内以月计（原始出处未核）。「数周至数月」过宽，应分户外与室内。不做年限换算。"
+    },
+    {
+      "route_key": "diazo",
+      "column": "c05",
+      "text": "241 氨熏显影：数据表未载水洗或停止步骤（A，「未记载」）。c05 写「未知（氨熏显影，无停止步骤记载）」，不写「需水洗」，也不写「免洗」。"
+    },
+    {
+      "route_key": "solarfast",
+      "column": "c05",
+      "text": "SolarFast 不满足底线 1：厂商说明书要求曝光后用 SolarFast Wash 热水洗，并至少冲洗 10 分钟（A，curl 全文）。判 ✗（底线 1，需水洗）。"
+    },
+    {
+      "route_key": "solarfast",
+      "column": "c04",
+      "text": "后处理：水洗（SolarFast Wash，热水，机洗或手洗 10 分钟以上；厂商说明书，A）。"
+    },
+    {
+      "route_key": "solarfast",
+      "column": "c12",
+      "text": "页面标价（2026-11-01 读取，全部未验证）：Dharma 4 oz 列价 $9.99（1–4 件），8 oz $14.99；Jacquard 商店 4 fl oz Sale price $9.99，1 gal 需 up to 10 business days 生产（页面无 1 gal 单价）。删除旧轮 $124.99 与 SolarFast Wash $5.24（本轮两页均未出现，未能证实）。"
+    },
+    {
+      "route_key": "solarfast",
+      "column": "c02",
+      "text": "Inkodye 已停产（A：S06 联合创始人页与 S05 零售商页）。SolarFast 为 Inkodye 配方衍生，这是厂商与创始人的说法，未独立核实。"
+    },
+    {
+      "route_key": "pellet",
+      "column": "c08",
+      "text": "成色「永久」未能证实：Price 1995 仅定性称 permanent，无数据（A，历史文献）；Kirby 1993 称现代普鲁士蓝耐光但与大量白混合褪色（A，摘录级）；Wikipedia 称光照褪色、暗处恢复（B）。写「未知：缺加速耐光数据」，不写「永久」。"
+    },
+    {
+      "route_key": "pellet",
+      "column": "c05",
+      "text": "半干法（Photrio 线程）不可读，唯一来源为 C 级单一爱好者记述，判定为未验证。历史流程（Price 1995，A）含水浴与稀酸浴，历史上不满足免洗。c05 维持「?」，不得写成 ✓。"
+    },
+    {
+      "route_key": "pellet",
+      "column": "c04",
+      "text": "历史 Pellet 显影剂为亚铁氰化钾（potassium ferrocyanide，全名）。显影后经水浴、稀酸浴、水洗（Price 1995，A）。稀酸浴与亚铁氰化钾 SDS 冲突（F13，A）：不得作为可执行步骤。现代半干擦涂为单一来源（C），未独立复刻。"
+    },
+    {
+      "route_key": "pellet",
+      "column": "c06",
+      "text": "亚铁氰化钾体系的停止：禁止以酸作为停止或中和步骤（A，AquaPhoenix SDS：Contact with acids releases toxic gases）。该禁令独立于铁氰化钾的红线，两者都须写入。"
+    },
+    {
+      "route_key": "pellet",
+      "column": "c11",
+      "text": "亚铁氰化钾：与酸接触释放有毒气体（A，SDS §10）；UV 下缓慢释放氰根（B，PubChem 聚合引 Ullmann，原条目未读）；ECHA 聚合 H411/H412（水生，API）。防护、废液与曝光场所须单独写。"
+    },
+    {
+      "route_key": "pellet",
+      "column": "c03",
+      "text": "含亚铁氰根的样张长时间 UV 曝光：氰根释放风险（B，见 F14）。曝光须通风，并记录时间。"
+    },
+    {
+      "route_key": "tio2_bleach",
+      "column": "c03",
+      "text": "Ibanez 2011：DOI 书目已确认（J. Chem. Educ.，vol 88 issue 8，print 2011-08；online 2011-06-22；Crossref，A-API）。文中数值未能核实（ACS 全文会话列明 403，Crossref 无摘要，Semantic Scholar 为空壳）。所有 Ibanez 数值须标「教学演示，未核实」，不作为曝光时长依据。"
+    },
+    {
+      "route_key": "tio2_bleach",
+      "column": "c11",
+      "text": "TiO2：IARC 2B 针对吸入粉尘（B）；PubChem 聚合的 ECHA 通报（约 72 份）中既有 H351（Warning），也有 H372（Danger，仅一组通报）与 H335、H319，分类因通报者而异（A-API 聚合，非法定 CLP 条目）。写「吸入风险 + 通报不一致，以供应商 SDS 为准」，不能只写「2B」或「无标签」。"
+    },
+    {
+      "route_key": "deep_stop_precedents",
+      "column": "c06",
+      "text": "Polaroid（US 5,667,943，A，全文）：热产酸（squaric acid 衍生物）后以碱后处理定影，属热成像介质，非光化学停止，也不是喷雾。专利原文「fixed by neutralizing all the acid generated with excess base」已逐字核实。不适用于铁氰化物或普鲁士蓝成色区。碱（pH>7）对已成色区的影响未评估，仍为独立实验。"
+    },
+    {
+      "route_key": "prussian_blue",
+      "column": "c08",
+      "text": "碱（pH>7）：二手定性依据（B，PubChem 引 Ullmann：poor fastness toward alkalies）；阈值与时间未知。方向可保留为红线，数值需实验 4 判定。"
+    },
+    {
+      "route_key": "vesicular",
+      "column": "c01",
+      "text": "Kalvar 停产未能证实：Wikipedia（B，逐字核实）写市场需求萎缩、微缩胶片现仅按需生产。改为「按需生产（B）；厂商在售状态未验证」。"
+    },
+    {
+      "route_key": "deep_stop_precedents",
+      "column": "c11",
+      "text": "Cromalin「停产」未能证实：Wikipedia 无条目（B，已证实）；搜索摘录称 DuPont 退出硬件，分销与开发转 GPS（Wifac），且有数字打样取代的说法（摘录，未验证）。写「工艺与硬件状态不清」，不作淘汰依据。"
+    },
+    {
+      "route_key": "global",
+      "column": "c05",
+      "text": "「未找到免洗产品」改为：在本轮所列范围（Crossref 元数据 5 组、Google Patents 关键词 3 组、WebSearch、厂商页与专利、SDS 摘录）内未找到免洗停止产品。不得写「无免洗产品」。已读到的近似产品（SolarFast、Pellet 历史法）均需水洗（A）；241 水洗情况未记载，不计入。"
+    }
+  ],
+  "experiment_design": "判别实验（不依赖任何待核查的数值；样张用目标纸基或灰板，各 3 条平行；仅在通风良好、备有护目与耐化学手套、并依 SDS 防护的实验室进行，禁止在家中或车库操作含亚铁氰化钾或酸的步骤）。(1) 半干法真伪与残留：Pellet 类涂层曝光至饱和后，按现代半干记述擦涂亚铁氰化钾、吸干、热风停显；对照组改为无酸的水浴+水洗（原「稀酸浴」对照已删除：亚铁氰化钾 SDS 写明接触酸释放有毒气体，含亚铁氰根的样张不得加酸）。用色差仪或色卡记录 ΔE，并以点测检查残留亚铁氰根。通过标准由团队先定，例如同组 ΔE 差 ≤ 2、残留点测阴性。(2) 成色永久性：成像样张分黑暗、室内荧光、日光直射三种存放，在 0、7、30 天测 ΔE；只报数据，不换算年限；「永久」仅在三组都无显著变化时才可使用。若样张含亚铁氰根，UV 曝光须记录时间并通风（F14）。(3) 重氮褪色分区：重氮纸样张分别置户外日光与室内荧光灯下，每日或隔日测反射密度，记录达到可见褪色所需天数，替代「数周至数月」的宽表述。(4) 碱敏感：已成色的普鲁士蓝样张分别浸入 pH 7、9、11 的缓冲液短时间后干燥，测 ΔE，判定 pH>7 红线的阈值（二手定性依据见 S25，阈值仍未知）。(5) SolarFast 免洗：不水洗样张与水洗样张对照，仅作底线 1 的确认，厂商说明书已指明需洗，可不做。",
+  "reconciliation_log": [
+    {
+      "id": "R01",
+      "item": "F03 SolarFast 旧价格 1 gal $124.99 与 SolarFast Wash $5.24",
+      "action": "删除（未能证实）",
+      "reason": "两页 curl 全文均无这两个数值，页面亦无 1 gal 单价。保留页面标价 $9.99（4 oz，未验证）。",
+      "source": "S07, S09"
+    },
+    {
+      "id": "R02",
+      "item": "F05 Pellet 成色「永久」",
+      "action": "降级为未能证实",
+      "reason": "Price 1995 'permanent' 为定性描述，无加速耐光数据。Kirby 1993 为 HTML 摘要页，等级改为 A（摘录级）。",
+      "source": "S10, S11, S12"
+    },
+    {
+      "id": "R03",
+      "item": "F06 Photrio 半干法细节",
+      "action": "维持 C；补充安全冲突",
+      "reason": "现代线程仍不可读，未绕过。历史稀酸浴与亚铁氰化钾 SDS 冲突，稀酸步骤不得移植。",
+      "source": "S18, S10, S23"
+    },
+    {
+      "id": "R04",
+      "item": "F07 Ibanez 书目日期",
+      "action": "补注日期",
+      "reason": "2011-06-22 为 online 日期；印刷卷期为 vol 88 issue 8（print 2011-08，pp 1116–1118）。数值仍未能证实。",
+      "source": "S16"
+    },
+    {
+      "id": "R05",
+      "item": "F09 Polaroid 专利 quote 与机制",
+      "action": "保留（证实）",
+      "reason": "本轮全文重读：quote 'neutralizing all the acid generated with excess base' 逐字存在。（本轮初次 grep 未命中，后经完整搜索确认，已更正为证实。）",
+      "source": "S21"
+    },
+    {
+      "id": "R06",
+      "item": "F10 Kalvar 停产",
+      "action": "改为未能证实，保留需求萎缩与按需生产（B）",
+      "reason": "Wikipedia 原文无停产字样。",
+      "source": "S13"
+    },
+    {
+      "id": "R07",
+      "item": "F11 Cromalin 停产",
+      "action": "保留未能证实，S14 已逐字核实",
+      "reason": "Wikipedia 无条目；S15 摘录未读全文，不作依据。",
+      "source": "S14, S15"
+    },
+    {
+      "id": "R08",
+      "item": "F12 「近似产品全部需要水洗」（含重氮 241）",
+      "action": "反驳并修正：241 移出需水洗列表",
+      "reason": "241 数据表全文未写水洗或停止步骤，仅列氨熏显影。SolarFast 与 Pellet 历史法的水洗判定有原文依据。",
+      "source": "S01, S08, S10"
+    },
+    {
+      "id": "R09",
+      "item": "recommendations c09「2018 年版」",
+      "action": "改为推断标注",
+      "reason": "数据表仅写 Updated 8/18，未写年份。",
+      "source": "S01"
+    },
+    {
+      "id": "R10",
+      "item": "negative_findings「Prussian blue 碱致褪色未找到依据」",
+      "action": "反驳（部分）并改写",
+      "reason": "PubChem CID 2724251 记录引 Ullmann's Encyclopedia 'poor fastness toward alkalies'（B，二手）。Wikipedia 与 Kirby 摘要确实无此内容，但负结论范围不完整。阈值仍未知。",
+      "source": "S25, S12"
+    },
+    {
+      "id": "R11",
+      "item": "experiment_design (1) 稀酸浴对照组",
+      "action": "删除，改为无酸对照",
+      "reason": "亚铁氰化钾 SDS：Contact with acids releases toxic gases；禁止共存。",
+      "source": "S23"
+    },
+    {
+      "id": "R12",
+      "item": "新增 F13：亚铁氰化钾 + 酸的 SDS 红线",
+      "action": "新增（A，单一供应商 SDS）",
+      "reason": "独立于铁氰化钾红线。Spectrum 与 Flinn 不可读，未绕过；固体 SDS 未逐家核。",
+      "source": "S23, S26, S27, S28"
+    },
+    {
+      "id": "R13",
+      "item": "新增 F14：亚铁氰化钾 UV 下释放氰根",
+      "action": "新增（B，聚合引文）",
+      "reason": "PubChem Hazards Summary 引 Ullmann；原条目未读；释放速率未知。",
+      "source": "S24"
+    },
+    {
+      "id": "R14",
+      "item": "新增 F15：普鲁士蓝碱敏感二手依据；F16 显式登记旧错误更正",
+      "action": "新增（B）；新增（A）",
+      "reason": "F16：需求书 v0.5 §5 与阶段 2 协议草稿的「铁氰化钾」应为「亚铁氰化钾」，由 Price 1995 原文证实。旧轮文字未另行改写，以本条为准。",
+      "source": "S25, S10"
+    },
+    {
+      "id": "R15",
+      "item": "S11 Kirby 1993 等级",
+      "action": "降级为 A（摘录级）",
+      "reason": "HTML 摘要页，PDF 未读；按证据纪律不得定 A（定性）。",
+      "source": "S11"
+    },
+    {
+      "id": "R16",
+      "item": "S09 URL slug 与内容不符",
+      "action": "注明",
+      "reason": "URL 名含 gallon，页面内容为 4 oz / 8 oz 列表，无 1 gal 单价。",
+      "source": "S09"
+    },
+    {
+      "id": "R17",
+      "item": "audit_evidence.md 对照",
+      "action": "未完成（文件缺失）",
+      "reason": "out/cross/ 目录仅有 audit_evidence.json，md 不存在，无法做 md 与 json 一致性核对。",
+      "source": "n/a"
+    },
+    {
+      "id": "R18",
+      "item": "WebSearch 额度",
+      "action": "记录",
+      "reason": "本轮 WebSearch 1 次（上限 1），用于亚铁氰化钾 SDS 摘录，之后全部改用 curl 与 API。",
+      "source": "n/a"
+    }
+  ]
+}

@@ -1,0 +1,650 @@
+{
+  "key": "deep_substrate",
+  "name": "拼图底材涂布与变形",
+  "verification_date": "2026-11-01",
+  "verification_note": "本修订版依据对抗式核查（deep_substrate.verify.json）。证据标注：A = 一手（curl全文或API摘要/元数据，视条目注明）；A（摘录级）= 仅搜索摘录；B = 可信二手（百科、专题站、单一作者实践）；C = 论坛或单一爱好者。事实 / 推断 / 未验证 分开标注。",
+  "findings": [
+    {
+      "id": "F01",
+      "claim_zh": "标准拼图底材以纸板为主体。Wikipedia（Jigsaw puzzle，curl全文）称现代拼图主要由互锁的纸板片制成，印刷图像粘于纸板后经冲模压切。Paperboard 条目称 chipboard 为回收的低档纸板，回收板因油墨、胶粘剂与残留物可呈灰色。ISO 口径下纸板定量高于 250 g/m²（该数值是纸板的定义阈值，不是灰板规格）。灰板的具体厚度、定量与吸水规格未找到。",
+      "label": "事实",
+      "grade": "B",
+      "sources": ["S01", "S02"],
+      "notes": "两页全文核对：'interlocking cardboard pieces'、'chipboard: a recycled, low quality board'、'colors it grey'、'grammage above 250 g/m2' 均逐字可见。'greyboard' 一词在两页中未出现。灰板与 chipboard 的对应关系仍为推断。灰板规格需向拼图底材供应商索取。"
+    },
+    {
+      "id": "F02",
+      "claim_zh": "专利 ES1074405U（西班牙实用新型，Google Patents /es 页 curl全文读取）描述传统拼图底：厚支撑层（木板、纸板或塑料）正面覆一层印有图像的薄膜；权利要求 1 限定，厚支撑层正面具有与图案相容的底色并覆一层薄聚酯涂层，背面可无粘接放置在等面积的传输板上并一同装入包装。该结构在专利文本中已有描述。",
+      "label": "事实",
+      "grade": "A",
+      "sources": ["S03"],
+      "notes": "检索口径：本轮通过单页读取发现该件；Google Patents 关键词检索未完成（多次 503），故不写作「关键词范围内发现」。Google 页面列出申请日 2010-06-21、公开日 2011-04-26（ES1074405U）、授权 2011-07-26（ES1074405Y）。法律状态 Expired - Fee Related 为页面声明的假设，非法律结论。仅说明结构存在于专利文本中，不构成自由实施或无侵权判断。"
+    },
+    {
+      "id": "F03",
+      "claim_zh": "升华转印空白拼图的面层为聚酯或聚合物涂层。Wikipedia（curl全文）称升华转印作用于 polyester 与 polymer-coated 基材，只有特殊涂层纸或特定塑料能接受升华染料。零售商 myprint 页面（curl全文，厂商声明）称拼图为纸板芯（strong, snow-white cardboard）配聚合物涂层（polymer coating）。titanjet 页面（curl全文）称空白拼图为 MDF 基材，页面未见聚酯或高光层字样。",
+      "label": "事实",
+      "grade": "B",
+      "sources": ["S04", "S20b", "S20a", "S03"],
+      "notes": "修订：原文件「纸板芯配聚酯涂层」改为「聚合物涂层」（myprint 原文用 polymer，不是 polyester）。原文件「MDF 配高光聚酯层」归因于 titanjet，经核实该页不含此说法，已撤回。零售页为厂商声明，不是规格书，不能作为涂层规格证据。未找到灰板核心或涂层规格书。"
+    },
+    {
+      "id": "F04",
+      "claim_zh": "在升华转印纸的研究中，印刷质量与涂层颜料的平滑度和亮度相关，与接触角无显著相关（Lin et al. 2016）。",
+      "label": "事实",
+      "grade": "A",
+      "sources": ["S05"],
+      "notes": "Crossref 摘要逐字核对（作者 Lin Chi-Ching 等）。研究对象是织物升华转印用涂布纸，不是拼图板。推断：感光涂层在板面的留存与成像质量可能更依赖平滑度与吸收性，而不是只看润湿角。未验证。"
+    },
+    {
+      "id": "F05",
+      "claim_zh": "Duchochois 1891 原书（Gutenberg #24016 全文，curl全文核对）要求感光层「完全形成于纸面表面」，因此需施胶，防止感光液被纸芯吸入。施胶材料包括 arrowroot、明胶、albumen（蛋白）；明胶或蛋白施胶须在涂布干燥后不溶化（insolubilized）。原书同时指出，铁、铬、铀等金属盐需要有机物（阿拉伯胶、葡萄糖、酪蛋白、酒精等）才能被光还原，有机物越充分混合，感光性越好。",
+      "label": "事实",
+      "grade": "A",
+      "sources": ["S06"],
+      "notes": "19 世纪工艺描述，不等于现代水性感光液或 Pellet 的验证。推断：胶体底涂不是纯物理隔离层，可能参与光化学还原，需与成色结果对照。"
+    },
+    {
+      "id": "F06",
+      "claim_zh": "Duchochois 原书木板段落给出感光前的封闭法（通用木板封闭，不是蓝晒专用）：明胶 5 份、阿拉伯胶 3 份、Castile 皂 3 份、水 100 份，热溶液灌入木材孔隙，凝胶后擦净表面；随后以 5% 明矾溶液不溶化；再以硫酸钡（或银白）分散于明胶/明矾溶液涂白底，最后涂 isinglass。原书目的是使感光液留在表面、不被木材吸收。",
+      "label": "事实",
+      "grade": "A",
+      "sources": ["S06"],
+      "notes": "修订：原文件「硫酸钡或明胶涂白底」改为「硫酸钡（或银白）＋明胶/明矾溶液」。本节配套的感光体系不是蓝晒：正像用 ferro-tannate（black process），负像用 cuprotype（见 F22）。因此本封闭法不能标为「蓝晒木板先例」；只能作为「先封闭、再不溶化、后感光」路线的历史来源，且其配套感光步骤须单独做红线审查。历史配方，无现代耐水、耐光或变形数据。"
+    },
+    {
+      "id": "F07",
+      "claim_zh": "蓝晒可涂在任何能吸收铁盐溶液的载体上。显影为冷水冲洗，水溶性铁盐被洗去，曝光区形成不溶的普鲁士蓝（Wikipedia，curl全文）。",
+      "label": "事实",
+      "grade": "B",
+      "sources": ["S07"],
+      "notes": "与底线 1（免洗）直接冲突：蓝晒的标准显影本身就是水洗（c04）。Wikipedia 同页另载曝光后有时使用柠檬酸或醋的酸化冲洗（见 F23）。"
+    },
+    {
+      "id": "F08",
+      "claim_zh": "Jacquard 蓝晒套装产品页（厂商原页，curl全文）声明可用于 any natural fiber/porous surface，包括 wood 与 paper。",
+      "label": "事实",
+      "grade": "A",
+      "sources": ["S08"],
+      "notes": "仅为厂商适用性声明，无木板或卡板变形测试数据，不能作为底材通过证据。"
+    },
+    {
+      "id": "F09",
+      "claim_zh": "木板蓝晒的实操文章（Fine Woodworking，2026-09-03，curl全文）称：木材湿胀，需要冲洗后的压平策略；端面与未印区需遮蔽，使用耐水胶，并给木板留出变形空间；水性溶液与水浴都会竖起木纹；干后再砂磨会擦掉图像。",
+      "label": "事实",
+      "grade": "B",
+      "sources": ["S09"],
+      "notes": "单一作者的实践记录，木板语境。对纸板或灰板的直接适用性为推断。同文另载未冲净的溶液会继续感光变蓝，以及可选 3% 过氧化氢冲洗（见 F27）。"
+    },
+    {
+      "id": "F10",
+      "claim_zh": "Photrio 论坛「cyanotype on wood」线程（只读到搜索摘录）称：蓝晒溶液渗入木材而不是浮在表面；木材中的铁件可能与溶液反应；建议先在未处理木材上试。",
+      "label": "未验证",
+      "grade": "C",
+      "sources": ["S10"],
+      "notes": "论坛证据（C）。本轮 curl 再次读取原页，返回 403 安全验证页，线程正文不可读。摘录未经核实。"
+    },
+    {
+      "id": "F11",
+      "claim_zh": "纸张湿胀（hygroexpansion）有系统研究文献，题名与元数据已核对：2017 年 J. Mater. Sci.「Factors affecting the hygroexpansion of paper」（Lindner Martina）、1994 年 J. Mater. Sci.「General formula for hygroexpansion of paper」（Uesaka T.）、1995 年 Nordic Pulp & Paper Res. J.「Biaxial hygroexpansion of newsprint paper」（Lindem Per Erik）。",
+      "label": "事实",
+      "grade": "A（元数据）",
+      "sources": ["S13", "S14", "S15"],
+      "notes": "仅证明存在性。摘要未获取（Crossref 记录无摘要，Springer 落地页无可用摘要）。下面的卷曲机理未从这些论文核实，因此内容标为未验证。"
+    },
+    {
+      "id": "F12",
+      "claim_zh": "推断机理链（未验证）：水性感光液只涂一面 → 涂布面吸水膨胀、背面不变 → 两面含水率与湿胀量不同 → 板件向涂布面相反方向卷曲；纸板纵横向湿胀各向异性，卷曲方向与纤维取向相关。缓解方向：对称涂布或双面同时润湿；涂布后压平干燥以固定应力。先涂后冲切时，冲切边为未涂裸纸，喷液时边缘吸水快，可能使边缘翘起；先冲切后涂布时，边缘涂层覆盖不均，可能形成面与边不同的吸水差。",
+      "label": "推断",
+      "grade": "B",
+      "sources": ["S09", "S13", "S01"],
+      "notes": "依赖木板单面封闭的经验（B，木材与纸板不同）与湿胀文献题名（元数据，内容未读）。本轮核查未找到灰板单面与双面涂布卷曲的直接测量数据，机理维持推断并标为未验证。Jigsaw 条目描述的商业流程（印刷图像粘于纸板后压切，见 F28）可作为切割顺序的背景，但不是湿胀证据。"
+    },
+    {
+      "id": "F13",
+      "claim_zh": "TAPPI Journal 2024 论文（DOI 10.32964/tj23.4.221，Crossref 摘要逐条核对）用改良 Cobb 测试仪测量涂布与未涂布纸板的吸水：水柱 10–500 mm，暴露 5–45 s；对象为 210 g/m² 固体漂白纸板（SBB）及其 6 g/m² 苯乙烯丙烯酸酯加碳酸钙涂层。摘要未给出吸水数值。",
+      "label": "事实",
+      "grade": "A",
+      "sources": ["S11"],
+      "notes": "证明吸水可以按时间与水柱高度分级测量。摘要无数值，灰板的吸水极限仍未知。"
+    },
+    {
+      "id": "F14",
+      "claim_zh": "Cobb 标准（ASTM D3285 记录，Crossref 题名核对）的题名为 Water Absorptiveness of Nonbibulous Paper and Paperboard（Cobb Test）。字面范围针对 nonbibulous 纸板；未施胶的灰板是否落在该范围内，需读标准全文核对（未读，未验证）。",
+      "label": "推断",
+      "grade": "A（元数据）",
+      "sources": ["S19"],
+      "notes": "修订：删除原文件「（难吸水、通常施胶）」的释义，「通常施胶」无来源支持。版本号（93r99、93r05 等）未在 Crossref 记录中出现，未验证。适用性判断为推断。"
+    },
+    {
+      "id": "F15",
+      "claim_zh": "TAPPI Journal 2022 综述（DOI 10.32964/tj21.11.589，Crossref 摘要逐字核对）称，纸板阻隔涂层开裂的文献主要关注涂层配方，较少关注基材影响。",
+      "label": "事实",
+      "grade": "A",
+      "sources": ["S12"],
+      "notes": "推断：停止剂封层若在板件弯折或湿胀后开裂，将失去对未成色区的保护（与 c02、c03 相关）。无直接数据。"
+    },
+    {
+      "id": "F16",
+      "claim_zh": "现代 PVA 类阻隔涂层有文献记录（Prog. Org. Coat. 2022-09，maleic acid crosslinked PVA/mica coating for barrier paper，Crossref 元数据）。未在可读来源中找到 PVA 作为蓝晒或 Pellet 底涂的先例。Duchochois（1891）早于 PVA 商用，无 PVA 内容。",
+      "label": "未验证",
+      "grade": "A（元数据）",
+      "sources": ["S16"],
+      "notes": "存在性为 A（API 元数据）支持；阻隔性能与感光相容性均未核实，内容未验证。"
+    },
+    {
+      "id": "F17",
+      "claim_zh": "Routledge（Focal Press 印记）《Chrysotype》（2020）有 Coating Paper（DOI 10.4324/9780429438158-9）与 Regulating Paper Humidity（DOI 10.4324/9780429438158-10）两章，另有 Paper Choice（-6）。可能包含纸张涂布与湿度控制的实践资料。",
+      "label": "未验证",
+      "grade": "A（元数据）",
+      "sources": ["S17", "S22"],
+      "notes": "存在性由 Crossref 核对（本轮补查 -10 章）。章节正文未读，作为待读线索。"
+    },
+    {
+      "id": "F18",
+      "claim_zh": "照相纸卷曲有标准测定方法，标题为 Imaging materials. Photographic film and paper. Determination of curl（BSI 记录，DOI 10.3403/02046213，Crossref 仅返回题名）。可作为判别实验卷曲量测的候选方法。",
+      "label": "事实",
+      "grade": "A（元数据）",
+      "sources": ["S18"],
+      "notes": "仅题名已核对。标准号、版次、测试温湿度与放置时间未读，实验前需获取全文确认条件。"
+    },
+    {
+      "id": "F19",
+      "claim_zh": "推断（未验证）：若空白拼图面为聚酯或聚合物涂层，水性胶体底涂（阿拉伯胶、明胶等）在该表面的润湿与附着可能较差，造成底涂脱落或不均。需要划格附着测试验证，目前无数据。",
+      "label": "推断",
+      "grade": "B",
+      "sources": ["S03", "S04"],
+      "notes": "依据是 B 级百科的聚合物涂层描述与 A 级专利的聚酯面结构。无附着测试数据。"
+    },
+    {
+      "id": "F20",
+      "claim_zh": "Wikipedia 蓝晒条目（curl全文）称，碳酸钠、氨、硼砂、Dektol 显影剂等碱性物质可降低蓝色深度（漂白），过量家用漂白剂会破坏纸基。同页另载：避免碱性缓冲纸（alkaline-buffered papers），因其会使图像随时间劣化（见 F26）。",
+      "label": "事实",
+      "grade": "B",
+      "sources": ["S07"],
+      "notes": "与项目红线（普鲁士蓝遇碱褪色）一致。若底涂或封层含碱，需单独评估（c06、c14）。"
+    },
+    {
+      "id": "F21",
+      "claim_zh": "Wikipedia 蓝晒条目（curl全文）：铁氰化钾（potassium ferricyanide）是蓝晒感光液两组分之一，显影为冷水冲洗，铁氰化钾不是显影剂。搜索摘录称蓝晒「显影用铁氰化钾」，与此不一致，摘录未能核实。Smee 从亚铁氰化钾分离出铁氰化钾，二者为不同化合物。",
+      "label": "事实",
+      "grade": "B",
+      "sources": ["S07", "S10"],
+      "notes": "修订：「不是显影剂」只能限于蓝晒语境。Duchochois 的 cuprotype 显影用 5% 铁氰化钾（见 F22），故不能泛化。Pellet 显影剂按项目红线为亚铁氰化钾（全名写出，不得与铁氰化钾混写），其 SDS 见 F24。"
+    },
+    {
+      "id": "F22",
+      "claim_zh": "Duchochois 原书木板段落的两条感光路线（curl全文核对）：正像用「black process」，即 ferro-tannate 法（Poitevin 法，铁盐＋酒石酸）；负像用 cuprotype（Burnett 法）：uranic nitrate 10 份＋cupric nitrate 2 份，显影于 5% 铁氰化钾溶液，再以盐酸微酸化水减薄，并以铂氯化物调色。",
+      "label": "事实",
+      "grade": "A",
+      "sources": ["S06"],
+      "notes": "红线命中：cuprotype 的铁氰化钾显影后以盐酸酸化水处理，即「铁氰化钾＋强酸」组合，按红线应淘汰。另含铀盐，毒性与放射性未评估，铀盐不在当前红线表中，但按安全前置须单独审查。两条路线都不是蓝晒，不得作为本项目的步骤或先例。"
+    },
+    {
+      "id": "F23",
+      "claim_zh": "Wikipedia 蓝晒条目（curl全文）称，曝光后有时使用柠檬酸或醋做酸化冲洗（acidified rinse），以清除残余未曝光铁盐、减少染色。",
+      "label": "事实",
+      "grade": "B",
+      "sources": ["S07"],
+      "notes": "原文件未提及。红线为「铁氰化钾＋强酸」，柠檬酸与醋为弱酸，不在红线字面范围内；但亚铁氰化钾 SDS 写明「酸接触放出有毒气体」（F24），因此弱酸是否安全需单独评估，不能默认安全。与 c04、c05、c06 相关。"
+    },
+    {
+      "id": "F24",
+      "claim_zh": "亚铁氰化钾（potassium ferrocyanide，CAS 14459-95-1）SDS（Fisher 产品，Revision 2021-12-24，curl全文 PDF）：GHS 标签要素「None required」；HNOC「Harmful to aquatic life with long lasting effects」；加州 Prop 65 列 Reproductive Toxicity（WARNING. Reproductive Harm）。第 10 节：不相容物为 Acids、Strong oxidizing agents、Strong acids；危险反应 'Contact with acids liberates very toxic gas'；分解产物含 Hydrogen cyanide（hydrocyanic acid）。",
+      "label": "事实",
+      "grade": "A",
+      "sources": ["S21", "S23"],
+      "notes": "本轮新增核查。该 SDS 的酸警示不限于强酸，因此亚铁氰化钾体系不能仅因红线字面写「强酸」就默认弱酸安全。与此冲突的一份 UPRM 文件（标题为铁氰化钾、正文为亚铁氰化钾）在搜索摘录中称急性毒性 Cat 2、'Danger'，未读全文，须以厂商 SDS 核实。"
+    },
+    {
+      "id": "F25",
+      "claim_zh": "Wikipedia 蓝晒条目（curl全文）称，部分流程用 1% 重铬酸钾（约每 2 ml 感光液 6 滴，引注标注 citation needed）提高反差；部分配方含重铬酸铵（ammonium dichromate），后者「toxic, carcinogenic」。",
+      "label": "事实",
+      "grade": "B",
+      "sources": ["S07"],
+      "notes": "原文件未提及。按红线「重铬酸盐出局」，这些蓝晒变体必须标为淘汰，不能作为本项目的可选步骤。"
+    },
+    {
+      "id": "F26",
+      "claim_zh": "Wikipedia 蓝晒条目（curl全文）称：(a) 避免碱性缓冲纸，因其使图像随时间劣化；(b) 印件在亮光下会逐渐褪色，存放于暗处会使褪色逆转；(c) 感光液即使经水洗去掉多余部分，仍保有一定程度的感光性。",
+      "label": "事实",
+      "grade": "B",
+      "sources": ["S07"],
+      "notes": "与 c06（停止无天然机制）、c07、c08 相关。暗处逆转只是暂停，不是停止，不能作为停止机制写入矩阵。(c) 说明蓝晒没有天然的化学停止，需要依赖洗净或外加停止剂。加速耐光数据只报数据本身，本条不换算成年限。"
+    },
+    {
+      "id": "F27",
+      "claim_zh": "Fine Woodworking（2026-09-03，curl全文）称：未冲净的溶液会继续感光变蓝，因此需冷水冲洗至水清（rinse, not scrub）；可选用 3% 过氧化氢的水做最后冲洗，以加速氧化、更快显色。",
+      "label": "事实",
+      "grade": "B",
+      "sources": ["S09"],
+      "notes": "与 F26(c) 一致，佐证蓝晒缺少天然停止机制（c06）。过氧化氢冲洗是额外步骤，需计入 c05 的步骤数与安全评估（c11）。单一作者实践。"
+    },
+    {
+      "id": "F28",
+      "claim_zh": "Jigsaw puzzle 条目（curl全文）描述商业流程：印刷的图像照片或复制品粘于纸板后送入冲压机，由硬化钢刃冲模切穿。",
+      "label": "事实",
+      "grade": "B",
+      "sources": ["S01"],
+      "notes": "原文件未引用。与 F12 的切割顺序问题相关：商业流程为先印后切。此为生产背景，不是湿胀或涂布证据。"
+    },
+    {
+      "id": "F29",
+      "claim_zh": "Wikipedia 蓝晒条目（curl全文）称，蓝晒可用于棉、毛、阳极氧化铝等载体，并称无孔表面上的明胶施胶也曾用作载体。",
+      "label": "事实",
+      "grade": "B",
+      "sources": ["S07"],
+      "notes": "原文件未提及。与封闭与施胶路线有关，但无板材变形数据，不能支持纸板或灰板的通过结论。"
+    }
+  ],
+  "sources": [
+    {
+      "id": "S01",
+      "title": "Jigsaw puzzle - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Jigsaw_puzzle",
+      "quote": "They are now made primarily of interlocking cardboard pieces, incorporating a variety of images and artwork.; Most modern jigsaw puzzles are made of paperboard ... glued to cardboard, which is then fed into a press (puzzle die)",
+      "type": "百科",
+      "access": "curl全文",
+      "date": "页面读取 2026-11-01（核查）"
+    },
+    {
+      "id": "S02",
+      "title": "Paperboard - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Paperboard",
+      "quote": "Chipboard: a recycled, low quality board; Recycled paperboard may contain traces of inks, bonding agents and other residue which colors it grey; According to ISO standards, paperboard is a paper with a grammage above 250 g/m2",
+      "type": "百科",
+      "access": "curl全文",
+      "date": "页面读取 2026-11-01（核查）"
+    },
+    {
+      "id": "S03",
+      "title": "ES1074405U - Base para la confeccion de puzzles y similares (Google Patents)",
+      "url": "https://patents.google.com/patent/ES1074405U/es",
+      "quote": "Claim 1 (Spanish): ... por su cara vista, presenta un color compatible con el motivo grafico a insertar y un fino recubrimiento de poliester, mientras que por su cara no vista es susceptible de descansar sin adhesion sobre una placa de transporte de igual superficie ...; Google 列 Filing 2010-06-21, Publication 2011-04-26; Status Expired - Fee Related (Google 声明非法律结论)",
+      "type": "专利（实用新型）",
+      "access": "curl全文",
+      "date": "公开日 2011-04-26（Google 页面列出）；页面读取 2026-11-01（/es 变体 200，其余变体 503）"
+    },
+    {
+      "id": "S04",
+      "title": "Dye-sublimation printing - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Dye-sublimation_printing",
+      "quote": "Sublimation transfer printing ... works with polyester and polymer-coated substrates; only especially coated paper or specific plastics can accept the sublimated ink.",
+      "type": "百科",
+      "access": "curl全文",
+      "date": "页面读取 2026-11-01（核查）"
+    },
+    {
+      "id": "S05",
+      "title": "Effects of Single and Blended Coating Pigments on the Inkjet Image Quality of Dye Sublimation Transfer Printed Paper (Adv. Mater. Sci. Eng. 2016)",
+      "url": "https://api.crossref.org/works/10.1155/2016/4863024",
+      "quote": "The overall printed image quality was correlated with the smoothness and brightness of the coated paper but showed no correlation with the contact angle.",
+      "type": "论文（摘要）",
+      "access": "API",
+      "date": "2016（Crossref 核对，作者 Lin Chi-Ching 等）"
+    },
+    {
+      "id": "S06",
+      "title": "Photographic Reproduction Processes (P. C. Duchochois, 1891; Project Gutenberg #24016)",
+      "url": "https://www.gutenberg.org/cache/epub/24016/pg24016.txt",
+      "quote": "the impressions be entirely formed on the surface of the paper; Arrowroot is the best sizing ... Gelatine may be employed, albumen also, but the coating should be insolubized when applied on the paper and dry; iron, chromium, uranium and other metallic soluble salts require the presence of an organic matter (alcohol, ether, gum arabic, glucose, caseine, etc.); Printing on Wood: the solution to render impervious ... Common gelatine 5 parts, Gum arabic 3 parts, Castile soap 3 parts, Water 100 parts; alum at 5 per 100; Isinglass 3 parts; the black process (ferro-tannate); the cuprotype: Uranic nitrate 10 parts, Cupric nitrate 2 parts; develop on potassium ferricyanide at 5 per 100; reduced in water slightly acidified with hydrochloric acid",
+      "type": "历史一手文献",
+      "access": "curl全文",
+      "date": "1891（Gutenberg 版 2007）"
+    },
+    {
+      "id": "S07",
+      "title": "Cyanotype - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Cyanotype",
+      "quote": "After exposure, the paper is developed by washing in cold, running water; the water-soluble iron(III) salts are washed away; Cyanotypes can be printed on any support capable of soaking up the iron solution; cotton, wool, anodized aluminium, and even gelatin sizing on nonporous surfaces have been used; Care should be taken to avoid alkaline-buffered papers, which degrade the image over time; An acidified rinse using citric acid or vinegar is sometimes used after exposure; Sodium carbonate, ammonia, borax, Dektol photographic developer ... Household bleach ... tends to destroy the paper base; about 6 drops of 1% (w/v) solution potassium dichromate; Some formulas include ammonium dichromate ... toxic, carcinogenic; A print that has been stored or displayed in bright light will eventually fade ... Storing the cyanotypes in darkness reverses the process; the cyanotype solution ... remains photo-sensitive to some degree",
+      "type": "百科",
+      "access": "curl全文",
+      "date": "页面读取 2026-11-01（核查）"
+    },
+    {
+      "id": "S08",
+      "title": "2 Component Set for Photographic blueprints on paper and fabric (Jacquard)",
+      "url": "https://www.jacquardproducts.com/cyanotype-set",
+      "quote": "any natural fiber/porous surface, including cotton, linen, silk, canvas, wood, paper, wood and leather",
+      "type": "厂商原页",
+      "access": "curl全文",
+      "date": "页面读取 2026-11-01（核查）"
+    },
+    {
+      "id": "S09",
+      "title": "Cyanotype on Wood (Fine Woodworking, 2026-09-03)",
+      "url": "https://www.finewoodworking.com/2026/09/03/cyanotype-on-wood",
+      "quote": "Wood moves when wet. Plan for this with a post-rinse flattening strategy. Mask the end grain and unprinted areas ... use water-resistant glue; both water-based solutions and a water bath will raise the grain; You cannot sand heavily after the cyanotype process without scrubbing away your print; Any remaining solution on or in the wood will continue to activate and turn blue; Optionally, finish your rinse with some water with 3% hydrogen peroxide",
+      "type": "杂志专题（单一作者实践）",
+      "access": "curl全文",
+      "date": "2026-09-03（按 URL）"
+    },
+    {
+      "id": "S10",
+      "title": "cyanotype on wood (Photrio forum thread 38864)",
+      "url": "https://www.photrio.com/forum/threads/cyanotype-on-wood.38864",
+      "quote": "搜索摘录（非原文）：cyanotype soaks into wood rather than sitting on top; iron in wood may react with the mix; test on untreated wood first。另有'显影用铁氰化钾'的搜索摘录（与 Wikipedia 不一致，未核实）。",
+      "type": "论坛",
+      "access": "搜索摘录（原页本轮 curl 再次 403 安全验证页，不可读）",
+      "date": "未知"
+    },
+    {
+      "id": "S11",
+      "title": "Effect of pressure and time on water absorption of coated paperboard based on a modified Cobb test method (TAPPI Journal 2024)",
+      "url": "https://api.crossref.org/works/10.32964/tj23.4.221",
+      "quote": "water column heights from 10 mm to 500 mm; exposure times from 5 s to 45 s; coating weight was 6 g/m2 applied on 210 g/m2 solid bleached board (SBB)",
+      "type": "论文（摘要）",
+      "access": "API",
+      "date": "2024-04-30（Crossref 核对）"
+    },
+    {
+      "id": "S12",
+      "title": "Review of coating cracking and barrier integrity on paperboard substrates (TAPPI Journal 2022)",
+      "url": "https://api.crossref.org/works/10.32964/tj21.11.589",
+      "quote": "The literature on coating cracking provides knowledge mostly on the effects of coating formulations and to a lesser extent on substrate effects.",
+      "type": "综述（摘要）",
+      "access": "API",
+      "date": "2022-12-01（Crossref 核对）"
+    },
+    {
+      "id": "S13",
+      "title": "Factors affecting the hygroexpansion of paper (J. Mater. Sci., 2017)",
+      "url": "https://api.crossref.org/works/10.1007/s10853-017-1358-1",
+      "quote": "（仅题名与元数据，Crossref 无摘要；作者 Lindner Martina）",
+      "type": "论文（元数据）",
+      "access": "API",
+      "date": "2017-08-01"
+    },
+    {
+      "id": "S14",
+      "title": "General formula for hygroexpansion of paper (J. Mater. Sci., 1994)",
+      "url": "https://api.crossref.org/works/10.1007/bf00363429",
+      "quote": "（仅题名与元数据；作者 Uesaka T.）",
+      "type": "论文（元数据）",
+      "access": "API",
+      "date": "1994-05"
+    },
+    {
+      "id": "S15",
+      "title": "Biaxial hygroexpansion of newsprint paper (Nordic Pulp & Paper Res. J., 1995)",
+      "url": "https://api.crossref.org/works/10.3183/npprj-1995-10-03-p167-173",
+      "quote": "（仅题名与元数据；作者 Lindem Per Erik）",
+      "type": "论文（元数据）",
+      "access": "API",
+      "date": "1995-08-01"
+    },
+    {
+      "id": "S16",
+      "title": "Preparation and application of maleic acid crosslinked polyvinyl alcohol/mica coating for barrier paper (Prog. Org. Coat., 2022)",
+      "url": "https://api.crossref.org/works/10.1016/j.porgcoat.2022.106937",
+      "quote": "（仅题名与元数据，摘要缺失；作者 Jiang Kexin、Wang Xiwen）",
+      "type": "论文（元数据）",
+      "access": "API",
+      "date": "2022-09"
+    },
+    {
+      "id": "S17",
+      "title": "Chrysotype: chapter 'Coating Paper' (Routledge / Focal Press, 2020)",
+      "url": "https://api.crossref.org/works/10.4324/9780429438158-9",
+      "quote": "（章节题名元数据；作者 McPhee Leanne；正文未读）",
+      "type": "书籍章节（元数据）",
+      "access": "API",
+      "date": "2020-10-06"
+    },
+    {
+      "id": "S18",
+      "title": "Imaging materials. Photographic film and paper. Determination of curl (BSI record)",
+      "url": "https://api.crossref.org/works/10.3403/02046213",
+      "quote": "（标准题名元数据；条件与版次未读）",
+      "type": "标准（元数据）",
+      "access": "API",
+      "date": "未知（Crossref 无日期）"
+    },
+    {
+      "id": "S19",
+      "title": "Test Method for Water Absorptiveness of Nonbibulous Paper and Paperboard (Cobb Test) (ASTM D3285)",
+      "url": "https://api.crossref.org/works/10.1520/d3285",
+      "quote": "Test Method for Water Absorptiveness of Nonbibulous Paper and Paperboard (Cobb Test)（版本号未在记录中出现）",
+      "type": "标准（元数据）",
+      "access": "API",
+      "date": "未知"
+    },
+    {
+      "id": "S20a",
+      "title": "20cm Round MDF Puzzle 16 piece (titanjet.co.za, retail product page)",
+      "url": "https://titanjet.co.za/20cm-round-mdf-puzzle-16-piece/",
+      "quote": "The 20cm Round MDF Puzzle 16 Piece is a premium sublimation blank ... Made from durable MDF. 全文不含 polyester、gloss、coat、layer 字样。",
+      "type": "零售商（厂商声明）",
+      "access": "curl全文",
+      "date": "页面读取 2026-11-01；价格未查"
+    },
+    {
+      "id": "S20b",
+      "title": "Puzzles for sublimation (myprint.ua, retail product page)",
+      "url": "https://myprint.ua/en/zagotovki-dlia-sublimatsii/pazly-dlia-sublimatsii",
+      "quote": "They are coated with a polymer coating that absorbs sublimation ink. They are made of strong, snow-white cardboard with a slight pearl shade.",
+      "type": "零售商（厂商声明）",
+      "access": "curl全文",
+      "date": "页面读取 2026-11-01；价格未查"
+    },
+    {
+      "id": "S21",
+      "title": "SAFETY DATA SHEET: Potassium Ferrocyanide Trihydrate (Certified ACS), Fisher, Rev. 2021-12-24 (hosted by cochise.edu)",
+      "url": "https://www.cochise.edu/_resources/pdfs/sds-library/science-sv/Science-SDS-103-Potassium-Ferrocyanide-P236-Fisher-Apr2022.pdf",
+      "quote": "Label Elements: None required. HNOC: Harmful to aquatic life with long lasting effects. Prop 65: Reproductive Toxicity. Incompatible: Acids, Strong oxidizing agents, Strong acids. Hazardous Reactions: Contact with acids liberates very toxic gas. Decomposition: Hydrogen cyanide (hydrocyanic acid)",
+      "type": "SDS（厂商）",
+      "access": "curl全文（PDF，pdftotext）",
+      "date": "Revision Date 24-Dec-2021（页面读取 2026-11-01）"
+    },
+    {
+      "id": "S22",
+      "title": "Crossref bibliographic query: Chrysotype chapters (Regulating Paper Humidity, DOI -10; Paper Choice, DOI -6)",
+      "url": "https://api.crossref.org/works?query.bibliographic=Regulating+Paper+Humidity+Chrysotype&rows=3",
+      "quote": "10.4324/9780429438158-10 | Regulating Paper Humidity | Chrysotype | Focal Press; 10.4324/9780429438158-6 | Paper Choice | Chrysotype | Focal Press",
+      "type": "书籍章节（元数据）",
+      "access": "API",
+      "date": "页面读取 2026-11-01（首次 429，重试成功）"
+    },
+    {
+      "id": "S23",
+      "title": "WebSearch 摘录：potassium ferrocyanide SDS（本轮唯一一次 WebSearch）",
+      "url": "https://www.uprm.edu/citai/wp-content/uploads/sites/222/2021/06/Potassium-ferricyanide.pdf （UPRM 文件，未读全文）；另见 S21",
+      "quote": "（搜索摘录）大多数亚铁氰化钾 SDS 分类较弱；Cochise SDS 称接触酸放出有毒气体；Westliberty SDS 列 HCN 为分解产物；UPRM 文件（标题为 ferricyanide、正文为 ferrocyanide）列急性毒性 Cat 2 'Danger'，需以厂商 SDS 核实",
+      "type": "搜索摘录",
+      "access": "搜索摘录（A（摘录级））",
+      "date": "2026-11-01"
+    }
+  ],
+  "negative_findings": [
+    {
+      "query": "alternativephotography.com 站内搜索 wood cyanotype（?s=wood+cyanotype）",
+      "scope": "alternativephotography.com 站内搜索页",
+      "result": "403 Forbidden，不可读，未绕过。"
+    },
+    {
+      "query": "alternativephotography.com 文章页 paper-and-artpaper、cyanotype-books",
+      "scope": "两页均返回 403。首页（200）链接中按 cyano/pellet/wood/board/paper/card/coat/gum 筛选，仅得 7 条，无可读的木板或卡板感光文章。",
+      "result": "未找到可读的蓝晒或 Pellet 木板、卡板先例。"
+    },
+    {
+      "query": "photrio.com 首页与 cyanotype-on-wood.38864 线程",
+      "scope": "Photrio 论坛（首页与线程页）。本轮 curl 再次读取线程页，返回 403 安全验证页（约 15 KB）。",
+      "result": "不可读。只能用 WebSearch 摘录（C 级，未验证）。"
+    },
+    {
+      "query": "Getty Atlas of Analytical Signatures: cyanotype PDF（搜索结果中的链接）",
+      "scope": "getty.edu 出版物 PDF",
+      "result": "404，链接失效。"
+    },
+    {
+      "query": "WebSearch: Pellet process direct positive cyanotype ferric ferricyanide wood board cardboard（standard）",
+      "scope": "搜索引擎结果（原轮第 1 次 WebSearch）",
+      "result": "未发现 Pellet 在木板或卡板上的先例；只得到通用蓝晒与 Jacquard 声明。搜索摘录中的'显影用铁氰化钾'与 Wikipedia 不一致，已在 F21 更正。"
+    },
+    {
+      "query": "WebSearch: sublimation blank jigsaw puzzle polymer coated surface greyboard construction（standard）",
+      "scope": "搜索引擎结果（原轮第 2 次 WebSearch）",
+      "result": "零售结果未提及灰板（greyboard）核心，无涂层规格书。"
+    },
+    {
+      "query": "WebSearch: cyanotype on wood or mat board warping after wet process sealing（standard）",
+      "scope": "搜索引擎结果（原轮第 3 次 WebSearch）",
+      "result": "未发现 mat board（卡板）蓝晒变形的讨论，卡板无先例。"
+    },
+    {
+      "query": "WebSearch（核查轮）：potassium ferrocyanide safety data sheet hazard statements hydrogen cyanide acid",
+      "scope": "搜索引擎结果（核查轮唯一一次）。返回的 SDS 摘录与 curl 读取的 Fisher SDS 一致；UPRM 文件内容与标题不符。",
+      "result": "找到亚铁氰化钾酸接触放出有毒气体的 SDS 依据（已 curl 核对，见 F24）；未核对 UPRM 全文。"
+    },
+    {
+      "query": "Google Patents 关键词：jigsaw puzzle photosensitive（xhr 接口）与 ES1074405U 页面",
+      "scope": "patents.google.com。核查轮：无后缀与 /en 变体持续 503；/es 变体在数次重试后返回 200。",
+      "result": "关键词检索仍未完成，因此专利结论仅限于本轮通过单页读取发现的 1 件（ES1074405U）。"
+    },
+    {
+      "query": "Springer 落地页 10.1007/s10853-017-1358-1 摘要",
+      "scope": "link.springer.com",
+      "result": "页面可访问但无可用摘要。"
+    },
+    {
+      "query": "Crossref: cyanotype wood board substrate（首次查询）；核查轮 Chrysotype 章节查询（首次）",
+      "scope": "api.crossref.org",
+      "result": "429 限流。改换或重试后获得结果，但仍只有题名，未发现板材变形数据。"
+    },
+    {
+      "query": "dietzgen.com 首页（蓝图纸规格）",
+      "scope": "dietzgen.com",
+      "result": "返回内容与 Dietzgen 不符（显示为 Sihl 产品列表），未采用，未获得 Dietzgen 规格。"
+    },
+    {
+      "query": "灰板（greyboard）吸水率 Cobb 值、定量、厚度、卷曲数据",
+      "scope": "本轮全部可读来源（百科、专利、Crossref 元数据、零售页面、SDS）",
+      "result": "未找到任何数值。"
+    },
+    {
+      "query": "喷雾量级与板材吸水极限的直接数值",
+      "scope": "本轮全部可读来源",
+      "result": "未找到。Cobb 类方法存在（S11），但摘要无数值。"
+    },
+    {
+      "query": "水性感光液（含胶体）在纸板或灰板上的卷曲测量",
+      "scope": "本轮全部可读来源",
+      "result": "未找到实验数据，仅有湿胀文献题名（S13 至 S15）。"
+    },
+    {
+      "query": "PVA 作为蓝晒或 Pellet 底涂的应用",
+      "scope": "Duchochois 1891 全文；Crossref PVA 阻隔涂层条目",
+      "result": "未找到。Duchochois 早于 PVA 商用，无 PVA 内容；现代 PVA 文献只有阻隔涂层题名。"
+    },
+    {
+      "query": "Pellet 1877 原始专利",
+      "scope": "patents.google.com（本轮未检索）与 Duchochois 全文",
+      "result": "未读到 Pellet 原始专利，相关化学口径未核实。"
+    },
+    {
+      "query": "BSI 卷曲标准全文（10.3403/02046213）",
+      "scope": "Crossref 元数据",
+      "result": "仅题名，无全文，条件未知。"
+    }
+  ],
+  "recommendations_for_matrix": [
+    {
+      "route_key": "substrate_common",
+      "column": "c10",
+      "text": "把「真实拼图底材」拆成四类测试对象：A 灰板＋印刷纸（无覆膜）；B 同 A 加覆膜；C 升华空白（纸板芯＋聚合物或聚酯面，F03、F01）；D 木质 MDF 对照。灰板的厚度、定量与吸水规格未找到（F01），不得把 ISO 250 g/m² 当作灰板规格。C 类的涂层描述只有 B 级百科与厂商声明（S20b、S04），titanjet 页面不支持聚酯说法（S20a）。"
+    },
+    {
+      "route_key": "substrate_common",
+      "column": "c10",
+      "text": "对每个感光路线，底线 5（真实拼图底材上不变形、干后能拼合）需要单独设预测试，不能用木板或纸样替代。可引用的变形机理仅为推断链（F12，未验证）。缓解手段（双面对称润湿、压平干燥）的效果未有数据，应列为待测条件而不是已知有效。"
+    },
+    {
+      "route_key": "substrate_common",
+      "column": "c05",
+      "text": "底线 1（免洗）与底线 5（不变形）存在潜在冲突：只要含水显影、冲洗或喷水步骤存在，板件就会吸水（F07、F09）。c05 判定时应分别写明「显影是否需要水洗」「酸化冲洗是否需要」「水洗或喷水后板件是否卷曲」，不能只判定免洗。"
+    },
+    {
+      "route_key": "substrate_common",
+      "column": "c13",
+      "text": "底材相关证据应分级处理：Cobb 方法（S11，摘要）可定为 A（API）但只证明测量方法存在；湿胀文献（S13 至 S15）与涂层开裂综述（S12）中，湿胀文献只有题名，应标「A（元数据，仅存在性）」，内容未读；不能据此支持任何卷曲结论。"
+    },
+    {
+      "route_key": "substrate_common",
+      "column": "c14",
+      "text": "关键未知（底材侧）：(1) 灰板的吸水率与卷曲量（无数据）；(2) 喷雾用量与板件吸水的关系（无数据）；(3) 聚合物或聚酯面上的水性胶体底涂附着（推断，F19）；(4) 碱性底涂或封层对已成色普鲁士蓝的影响（F20，B 级依据）；(5) 亚铁氰化钾体系中弱酸（含柠檬酸、醋）是否释放有毒气体（F23、F24）。其中 (3)、(4)、(5) 可能直接翻盘。"
+    },
+    {
+      "route_key": "substrate_common",
+      "column": "c15",
+      "text": "最快的判别实验：同一批灰板，一半单面涂布、一半双面涂布，各喷同一水量，平放 24 小时，测四边与中心的翘起高度。若单面涂布的翘起显著大于双面涂布，则证实「单面涂布导致卷曲」（推断链 F12 成立）；若两者无差异，则该机理不成立。翘起阈值需由项目先行定义，本轮未定。"
+    },
+    {
+      "route_key": "substrate_common",
+      "column": "c11",
+      "text": "Duchochois 的 cuprotype 路线（显影于 5% 铁氰化钾，再以盐酸酸化水减薄，另含铀盐）命中「铁氰化钾＋强酸」红线，应淘汰（F22）。Duchochois 木板封闭法（F06）可作为历史事实引用，但不得与该感光步骤一并采用。"
+    },
+    {
+      "route_key": "cyanotype",
+      "column": "c10",
+      "text": "蓝晒在木板上的可读先例为 B 级实践记录（F09，单一作者，木板语境）与厂商适用性声明（F08，无测试数据）。Duchochois 木板封闭法（F06）不是蓝晒先例，不得引用为蓝晒先例。卡板（mat board、cardboard）没有可读先例（见负结果），对卡板路线，应标为「未知 + 缺 Photrio 或 APUG 线程全文与板材实测」，不能借用木板结论。"
+    },
+    {
+      "route_key": "cyanotype",
+      "column": "c04",
+      "text": "蓝晒标准显影为冷水冲洗（F07，B）。若采用此路线，c04 应标为「水洗」，并注明它与底线 1 冲突。可选的 3% 过氧化氢冲洗（F27）与柠檬酸或醋的酸化冲洗（F23）都是额外的液体步骤，需分别评估，不得默认为安全。Jacquard 的「wood 与 paper 适用」（F08）是厂商声明，不能作为底材通过依据。"
+    },
+    {
+      "route_key": "cyanotype",
+      "column": "c06",
+      "text": "蓝晒没有天然的化学停止机制（F26(c)、F27）。未冲净的感光剂会继续感光变蓝。暗处保存会使褪色逆转（F26(b)），但这只是暂停，不能写入停止栏。若要停止，需要洗净或外加停止剂，两者都需按 c05 与红线重新评估。"
+    },
+    {
+      "route_key": "cyanotype",
+      "column": "c11",
+      "text": "蓝晒的重铬酸盐变体（钾盐 1% 滴加法；铵盐配方）命中「重铬酸盐出局」红线（F25），应在矩阵中标为淘汰，不能作为可选步骤。碱性缓冲纸会使图像劣化（F26(a)），与普鲁士蓝遇碱褪色红线相关。"
+    },
+    {
+      "route_key": "pellet",
+      "column": "c10",
+      "text": "Pellet 在木板或卡板上的先例在本轮可读来源中为零。推断：Duchochois 的阿拉伯胶、明胶底涂若用于 Pellet，会同时参与光还原（F05），因此底涂本身可能改变成色，需与无底涂对照组比较，不能只比较变形。Duchochois 原书中的木板感光步骤不是 Pellet（F22）。"
+    },
+    {
+      "route_key": "pellet",
+      "column": "c06",
+      "text": "碱性底涂或封层（如碳酸钠、氨、硼砂）会漂白普鲁士蓝（F20，B 级）。若 Pellet 路线采用碱性底材处理，须在 c06 或 c14 中单独评估对已成色区的影响。"
+    },
+    {
+      "route_key": "pellet",
+      "column": "c09",
+      "text": "PVA 底涂若要纳入 Pellet 的预涂介质评估，目前无感光相容性数据（F16，未验证）。c09 应写「未知 + 缺 PVA 与铁盐相容性实验」。"
+    },
+    {
+      "route_key": "pellet",
+      "column": "c11",
+      "text": "Pellet 显影剂亚铁氰化钾（全名写出，不得与铁氰化钾混写）的 SDS（F24）：GHS 标签无要求，但 HNOC 为水生毒性，Prop 65 列生殖毒性；第 10 节写明接触酸放出有毒气体，分解产物含 HCN。c11 须写明该 SDS，并以此为起点做 PPE 与通风评估，不能只沿用「强酸」字样。UPRM 文件的冲突分类（Cat 2, Danger）需以厂商 SDS 核实。"
+    }
+  ],
+  "experiment_design": "判别实验（底材 × 涂布 × 喷雾 × 干燥，测平整度）。(1) 底材四类：A 灰板＋印刷纸（无膜）；B 灰板＋印刷纸＋覆膜；C 升华空白（纸板芯＋聚合物或聚酯面）；D 木质 MDF 对照。(2) 涂布顺序：先涂后冲切，先冲切后涂，两者各设单面与双面涂布。(3) 喷雾量：0（对照）、低、中、高三档，档位由预试确定，本设计不预设具体数值，以喷后板件质量增量（g/m²）记录。(4) 干燥：平放压重与自由悬挂两种；压重质量（推断，如 1–2 kg 玻璃板）待项目确认。(5) 测量：涂布前、喷后即时、喷后 24 小时，在项目确定的标准温湿度（推断，如 23 °C、50% RH）平衡后，用平直尺或光学轮廓仪测四边与中心的翘起高度（mm），并参考卷曲测试标准 F18 的条件（标准全文待取）。(6) 判据：翘起高度超过项目预设阈值即判底线 5 不通过；拼合测试的 ±0.5 mm 为推断参考值，阈值待项目定义。(7) 每组至少 3 片，设空白板对照。(8) 对 C 类板加做划格附着测试，验证 F19。(9) 本实验不纳入任何含酸、铁氰化物或铀盐的显影或停止步骤，除非经安全审查。上述数值档位、压重、温湿度与阈值均为推断，未经来源核实。",
+  "reconciliation_log": [
+    {"id": "R01", "finding": "F02 / md 一.1、二", "action": "修正", "detail": "「关键词范围内发现 1 件」改为「本轮单页读取发现 1 件；关键词检索未完成」。（对应 verify 结构问题 1）"},
+    {"id": "R02", "finding": "F02", "action": "修正", "detail": "「公开日未核定」改为 Google 页面列出的 2011-04-26（公开）、2010-06-21（申请）、2011-07-26（授权），法律状态注明为页面假设。（verify 结构问题 2）"},
+    {"id": "R03", "finding": "F03 / S20", "action": "修正与撤回", "detail": "撤回 titanjet 页「MDF 配高光聚酯层」归因（页面无此字样）；myprint 页「聚酯涂层」改为「聚合物涂层」；S20 拆为 S20a、S20b 并改 access 为 curl全文。（verify 结构问题 3）"},
+    {"id": "R04", "finding": "F06 / md 一.4 / c10 蓝晒路线", "action": "改写", "detail": "Duchochois 木板封闭法不再作为蓝晒先例，改为通用木板封闭（事实，A）；白底修正为硫酸钡（或银白）＋明胶/明矾溶液；同节感光步骤（ferro-tannate、cuprotype）单列为 F22。（verify 反驳 F06 适用性）"},
+    {"id": "R05", "finding": "F21", "action": "限定", "detail": "「铁氰化钾不是显影剂」限定为蓝晒语境，注明 cuprotype 以铁氰化钾显影。（verify 结构问题 6）"},
+    {"id": "R06", "finding": "F22（新增）", "action": "新增（安全红线）", "detail": "Duchochois cuprotype 的铁氰化钾显影与盐酸酸化还原命中红线，并含铀盐，须单独审查。原文件未提及。（verify 结构问题 4）"},
+    {"id": "R07", "finding": "F23（新增）", "action": "新增", "detail": "蓝晒酸化冲洗（柠檬酸、醋）的安全边界未评估，列为 c04、c06 与 c14 的未知项。（verify 结构问题 14）"},
+    {"id": "R08", "finding": "F24（新增）", "action": "新增（SDS 核查）", "detail": "亚铁氰化钾 SDS（Fisher，curl全文）：酸接触放出有毒气体，分解产物含 HCN；HNOC 为水生毒性；Prop 65 生殖毒性。红线字面只写强酸，SDS 未限定，故不能默认弱酸安全。（verify 缺失项 1）"},
+    {"id": "R09", "finding": "F25（新增）", "action": "新增（红线出局）", "detail": "蓝晒的重铬酸盐变体（Wikipedia 记载）命中「重铬酸盐出局」，明确标为淘汰。（verify 缺失项 4）"},
+    {"id": "R10", "finding": "F26、F27（新增）", "action": "新增", "detail": "蓝晒碱性纸劣化、亮光褪色与暗处逆转（暂停不计为停止）、残余感光性、未冲净溶液继续感光、可选过氧化氢冲洗。与 c05、c06、c08 相关。（verify 缺失项 6、7）"},
+    {"id": "R11", "finding": "F28、F29（新增）", "action": "新增（背景）", "detail": "商业流程先印后压切（与 F12 切割顺序相关）；蓝晒可用载体与明胶施胶的 Wikipedia 记载（无板材数据）。（verify 缺失项 8、9）"},
+    {"id": "R12", "finding": "F12 / F19", "action": "降级标注", "detail": "维持推断，明确标为未验证（不能支持卷曲或附着结论）。（verify 未能证实项）"},
+    {"id": "R13", "finding": "F14", "action": "修正", "detail": "删除「（难吸水、通常施胶）」释义；版本号标为未验证。（verify 结构问题 9）"},
+    {"id": "R14", "finding": "F16 / F11 / F17 / F18", "action": "分级拆分", "detail": "存在性（A 元数据）与内容（未验证）分开标注；F17 补充 DOI -10 章节（S22）。（verify 结构问题 10、11）"},
+    {"id": "R15", "finding": "F10", "action": "维持", "detail": "本轮 curl 再次 403，维持未验证（C）。"},
+    {"id": "R16", "finding": "recommendations c10", "action": "修正", "detail": "删除把 ISO 250 g/m² 当作灰板规格的表述；测试对象统一为四类。（verify 结构问题 6、7）"},
+    {"id": "R17", "finding": "experiment_design", "action": "修正", "detail": "「底材三类」改为「四类」，与列表一致；(3) 声明不预设数值，(4)–(6) 的数值标为推断待项目确认；新增 (9) 不纳入含酸、铁氰化物、铀盐的步骤。（verify 结构问题 7、8）"},
+    {"id": "R18", "finding": "S17 / S19", "action": "修正", "detail": "S17 补充 DOI -10 URL（S22）；S19 版本号与 F14 释义不在 Crossref 记录中，已标未验证。（verify 结构问题 10、11）"},
+    {"id": "R19", "finding": "md（未在本轮改写，需编排程序同步）", "action": "待同步", "detail": "需同步修改：一.1 与二中的「关键词范围内发现」；一.4 中「蓝晒木板先例」；三.1 中灰板 ISO 句；「额度已用完」应删除（WebSearch 额度耗尽的判据为返回「Web search was not performed」，本轮 WebSearch 正常返回）；公开日更新。"},
+    {"id": "R20", "finding": "WebSearch 计数", "action": "记录", "detail": "核查轮使用 1 次 WebSearch（亚铁氰化钾 SDS 摘录），结果已用 curl 对 Fisher SDS 核实；原轮 3 次 WebSearch 记录保留。"}
+  ]
+}

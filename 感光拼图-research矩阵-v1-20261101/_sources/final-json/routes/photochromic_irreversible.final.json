@@ -1,0 +1,777 @@
+{
+  "key": "photochromic_irreversible",
+  "name_zh": "不可逆光致变色 / UV 剂量指示墨",
+  "name_en": "irreversible photochromic and UV-dose indicator inks",
+  "status": "淘汰（当前证据下；附重开条件）",
+  "columns": {
+    "c01_机制": {
+      "text": "两条已在一手全文中证实的不可逆成色化学，另有一条由专利全文支持。(i) 光致产酸 + 荧烷隐色染料：MBTT（2-(4-甲氧基苯乙烯基)-4,6-双(三氯甲基)-1,3,5-三嗪，373 nm 吸收）光解使 C–Cl 键断裂并生成 Cl•，Cl• 与溶剂或宿主聚合物反应，最终生成 H+（原文措辞；「与聚苯乙烯 H 抽取」为推断，未证实）；H+ 开启 Black305 荧烷的内酯环，黄膜变黑（原文用 X 射线与 360 nm UV 验证）。(ii) 氧化或还原型：LCV（隐色结晶紫）→ 蓝紫，原文以醌式碳正离子解释；LMG → 绿；TTC 还原为 formazan → 红橙（原文引用辐射化学文献）。(iii) 光引发剂触发 UV-C 敏感聚合物降解、释放酸性化合物，使 pH 敏感染料变色（US11795340B2 权利要求与正文，仅 UV-C）。未阐明：LCV 的光触发路径（原文未给出光氧化剂）以及 TCAA 在配方中的作用。",
+      "grade": "A（(i)(ii) 原文）；A（专利全文，(iii)）；推断部分已标注",
+      "label": "事实（实验室体系）；H 抽取为推断（未验证）；LCV 光触发路径与 TCAA 作用为未知",
+      "source_ids": ["S02", "S03", "S01", "S24"]
+    },
+    "c02_极性色调": {
+      "text": "正像（无色→有色）。单色相：LCV 蓝紫，LMG 绿，TTC 红橙，Black305 黄→黑。连续色调：深浅随剂量单调增加直至饱和（LCV 约 0.5 J/cm² 饱和，LMG 约 2.5 J/cm² 饱和，TTC 在 UVA/UVB/UVC 分别于 0.5/0.1/0.2 J/cm² 达最大）；高剂量时反射率回升，原文称「could be related to bleaching」（推测，未验证）。多色：单层、双层、三层叠印（LCV/LMG/TTC）可得蓝、紫、灰、棕；原文称四氮唑盐无法得到蓝+绿，二乙炔无法得到红+黄，故色域受限。",
+      "grade": "A",
+      "label": "事实（UV 实验室，单层/双层/三层印刷）；高剂量漂白为原文推测",
+      "source_ids": ["S02"]
+    },
+    "c03_曝光条件": {
+      "text": "实验光源为 8 W UVA/UVB/UVC 固化箱（UVC 为 253.7 nm），剂量范围 0–10 J/cm²；论文未报告灯的辐照度（全文无 mW/cm² 数值），无法换算为日光或时间。阈值与饱和点见 c02。LCV 在 0.1 J/cm² 处 UVA 灵敏度最低（与 UVB 相差约 63%）。日光与 UV 灯未作对照。与 30 分钟目标的关系：未验证推断——若正午 UVA 辐照度为数 mW/cm² 量级（本轮未核实该数值），0.1–0.5 J/cm² 约需数十秒至两分钟；但这一换算依赖未经核实的辐照度，不能作为可行性依据，需实测。",
+      "grade": "A（剂量数据）；未验证（时间换算）",
+      "label": "事实（剂量）+ 未验证（换算，不作为依据）",
+      "source_ids": ["S02", "S03"]
+    },
+    "c04_显影后处理": {
+      "text": "无显影或后处理。论文印花布经 30 °C 烘干 60 min 后遮光保存，随后直接 UV 曝光成像，无水洗、擦涂、蒸气、喷雾或热固定。丝网感光版的曝光与冲洗属于制版步骤，不属于产品处理。ACS Omega 膜同样为曝光即成色。SpotSee Thermostrip UV 为曝光即显色、无显影。",
+      "grade": "A",
+      "label": "事实",
+      "source_ids": ["S02", "S03", "S05"]
+    },
+    "c05_免洗真实程度": {
+      "text": "不适用：该路线没有喷停止剂步骤，因此无法判断「喷后免洗」。曝光后无水洗只说明没有额外步骤，不构成免洗证据。六条底线逐条见顶层 c05_免洗核验。",
+      "grade": "A",
+      "label": "事实 + 判断（原 ✓ 撤回）",
+      "source_ids": ["S02"]
+    },
+    "c06_停止机制": {
+      "text": "未找到已验证的停止机制。候选逐项评估：(a) 碱性喷雾淬灭（中和光生酸）：S03 原文（溶液相）称 Black305 有色形式「does not return to the colorless leuco form unless OH– is added to the solution」，这是四氯乙烯溶液中的酸化实验。据此推断：碱性停止可能使固相已成色区褪色（推断，固相未测）。判为高风险、未证实，不写作「已证实不可行」。(b) 胺类或弱碱蒸气：同理（推断，未测）。(c) UV 吸收罩、封层或阻氧阻湿：未测，且不属于避光（避光只是暂停）。(d) 剂量耗尽：曝光中颜色饱和，但高剂量反射率回升（原文称可能与漂白有关）。另有曝光后漂移：0.1 J/cm² 曝光后暗存 30 天，LCV 的 UVA 变化 14.9%。结论：停止机制未知；最直观的化学停止方式（碱）存在溶液相冲突证据。",
+      "grade": "A（溶液相原文）；固相碱致褪色为推断（未验证）；其余为推断",
+      "label": "未知 + 缺证据；碱性停止为高风险、未证实",
+      "source_ids": ["S03", "S02"]
+    },
+    "c07_白区稳定性": {
+      "text": "未曝光印迹避光 30 天：LCV 变化 13.7%（论文归因于 LCV 自发转化，并提出加底涂、调 pH、加 UV 缓冲剂，均未测）；LMG 0.7%；TTC 2.3%；双色与三色为 6.7%–10.9%。LCV 印迹不稳定，LMG 最稳定。ACS Omega 体系未曝光膜「至少 1 年无变化」为作者声明（无测量细节）；原文称曝光后稳定性未作详细研究，但同段报告了 X 射线曝光后暗态 610 nm 反射率 40 h 无变化（Figure 5c）。未验证推断：LCV 与 LMG 溶液中所加的 TCAA（2.21% 与 1.37%）可能驱动暗态漂移。以上均为无停止剂的暗态数据，不能替代白区停止后的测试。",
+      "grade": "A（数据）；1 年声明为作者声明；其余为推断",
+      "label": "事实（单一实验室，无停止剂，仅暗态）",
+      "source_ids": ["S02", "S03"]
+    },
+    "c08_成色耐光": {
+      "text": "仅有暗态后效数据，没有日光或氙灯耐光数据。0.1 J/cm² 曝光后暗存 30 天：LCV 变化 14.9%（UVA）、2.1%（UVB）、1.4%（UVC）；LMG 不超过 1.4%（UVA）；TTC 不超过 1.5%（UVA）。以上为数据本身（反射率变化百分比），不换算为保存年限。S03 原文（引文 22，未读全文）称固相中的 zwitterionic dye form「records on media slowly fade over the years」，即成色的长期稳定性存在已知的缓慢褪色线索。背景线索（未读全文，仅 Crossref 元数据）：三芳甲烷染料的光褪色研究（Allen 1981；Duxbury 1993 综述）。专利背景段（US8501053 引述 US5612541）称某 Lewis 酸成色体系在阳光下数小时内色深下降。",
+      "grade": "A（数据本身）；缓慢褪色线索 A（原文陈述，细节未核）",
+      "label": "事实（暗态后效）；耐光未知；长期褪色未量化",
+      "source_ids": ["S02", "S03", "S18", "S19", "S20", "S07"]
+    },
+    "c09_预涂货架期": {
+      "text": "区分两种形态。出厂预涂：SpotSee Thermostrip UV（不可逆 UV 标签，非墨液）标注货架期 12 个月（自发票日起算，21 °C / 50% RH 保存），为厂商标注。现涂：论文配方（Helizarin 粘合剂 + Lutexal Hit + 0.1% 显色前体；LCV 与 LMG 溶液另加 TCAA 与 Triton X-100）的混合液寿命未报告，未知。已印迹的 LCV 在 30 天内漂移，提示 LCV 体系的货架期较差（推断）。湿度：仅 S03 指出水含量「can affect the dosimeter response」，湿度的影响「will need to be considered in the future」；S02 未涉及湿度与剂量响应；均未量化。",
+      "grade": "A（厂商标注）/ 未知",
+      "label": "事实（出厂）+ 未知（现涂）",
+      "source_ids": ["S05", "S02", "S03"]
+    },
+    "c10_底材适配": {
+      "text": "论文印在漂白、丝光、预缩的棉斜纹布（250 g/m²）上，粘合剂烘干。未测纸板、灰板或拼图纸基，未测形变与干后拼合。ACS Omega 为 200 μm 聚苯乙烯膜。SEM（仅空白与三色样品，UVB 辐照前后）：印后可见糊料填充织物结构，UVB 辐照后织物无可见变化（补充图 S1）。封层兼容性未测。",
+      "grade": "A",
+      "label": "事实（仅棉布）；纸基与拼图底材未知",
+      "source_ids": ["S02", "S03"]
+    },
+    "c11_安全法规": {
+      "text": "来源为 PubChem 聚合的 GHS 分类（API，非厂商 SDS，需 SDS 核实；H-code 集合已于 2026-11-01 核对）。LMG（CID 67215）：H302、H311、H315、H331、H332、H341、H351、H361、H372、H373、H400（Danger）。PubChem 同页给出通知者占比：H302、H400 为 96.2%；H311、H315、H331、H332 为 15.4%；H341、H351、H361、H372 占比未在所读页面显示。TCAA（CID 6421）：H303、H314、H318、H336、H341、H351、H361、H371、H400、H410（Danger）；H314 为 100%。LCV（CID 69048）：H315、H319、H335、H400、H410。TTC（CID 9283）：H228、H315、H319、H335（Danger）。MBTT（CID 170671）：H315、H319、H335。三芳基硫鎓三氟甲磺酸盐（CID 11729320）：H301、H315、H319、H335（Danger）。Crystal violet lactone（CID 73773）：H315、H319、H335。遗漏项：(1) S02 原文提示所用 leuco 染料可能引起皮肤刺激，并引用了注射毒性研究；(2) MBTT 光解经 Cl• 生成 H+（酸性物质，推断为 HCl 类），其吸入与皮肤风险未评估。CAS 号、PPE 与标签级别未在本轮抽取。ASTM D-4236 / LHAMA 清单未核查。家用或车库、通风有限条件下，含 H314 腐蚀性酸与 H341/H351/H361 的 LMG 与 TCAA 体系倾向不具备现实安全性（推断，待 SDS 与 LHAMA 核实）。",
+      "grade": "A（API，聚合分类）；现实安全性结论为未验证推断",
+      "label": "事实（聚合分类）；LHAMA 未验证；家用安全性结论为推断",
+      "source_ids": ["S11", "S12", "S13", "S14", "S15", "S16", "S17", "S02"]
+    },
+    "c12_供应成本": {
+      "text": "试剂级：论文方法段称 LCV、LMG、TTC、TCAA 购自 Sigma-Aldrich（2023 年文献；当前在售与价格未验证，Sigma 站点本轮未读）。消费渠道：Dharma 站内搜索 'photochromic'（页面标题 4 results，已核对）均为相关性匹配（Procion 染料、Sodium Hydrosulfite、Speedball DIAZO 乳剂套件），页面同时印有「No search result for photochromic」。'uv color changing' 页面标题为 78 results，但同页又印「No search result for uv color changing」，计数自相矛盾，结论仅依据商品名检查（无 UV 或光致变色商品名）。Jacquard 站内搜索页为静态壳，无商品列表（不可判定）。SpotSee 不单独出售原料染料、油墨或母粒（A 级全文）。紫外指示标签（非墨液）存在：MRSA-UV 强度标签 50 张加卡 50 张标价 $95（页面版权 2019，价格未验证，读取日期 2026-11-01）。",
+      "grade": "B / 未验证（价格、库存）",
+      "label": "未验证（价格、库存）；消费墨液渠道无货；UV 指示标签存在",
+      "source_ids": ["S08", "S09", "S10", "S04", "S06", "S02", "S26"]
+    },
+    "c13_证据等级": {
+      "text": "关键主张 11 条，逐条标注：(1) 光致产酸 + 荧烷隐色染料形成不可逆成色，事实，A（S03）。(2) LCV/LMG/TTC 印花布呈剂量依赖的单色相深浅，事实，A（S02）。(3) 达饱和后高剂量反射率回升，原文称「could be related to bleaching」，原文推测，非事实（S02）。(4) 未曝光 LCV 印迹 30 天漂移 13.7%，事实，A（S02）。(5) 0.1 J/cm² 曝光后暗存 30 天 LCV 变化 14.9%，事实，A（S02）。(6) OH– 使有色染料回到无色，事实（溶液相，A，S03）；用于喷雾淬灭的推论，推断。(7) SpotSee 对不可逆染料的定义，且不单独出售原料，事实，A（S04）。(8) Thermostrip UV 货架期 12 个月，厂商标注，A（S05）。(9) LMG 与 TCAA 危害分类，事实（聚合 API 分类，A-API，S12、S13）。(10) US8501053 权利要求 1 为光活性墨（有机聚合物 + 螺吡喃类光致变色物（可逆）+ 受阻酚类光潜酸 + 酸敏显色剂）；颜色与剂量相关，事实（专利正文与权利要求，A）；全文无不可逆表述，不能作为不可逆证据；法律状态 Google 显示 2013-08-06 授权、Expired - Fee Related（非法律结论）。(11) US11795340B2：UV-C 不可逆墨（UV-C 敏感聚合物 + 酸清除剂 + 光引发剂 + pH 敏感染料），专利正文，A；仅 UV-C。",
+      "grade": "A（多数）",
+      "label": "事实 / 推断 / 未验证 已分开；(3) 改为原文推测",
+      "source_ids": ["S02", "S03", "S04", "S05", "S06", "S07", "S11", "S12", "S13", "S24"]
+    },
+    "c14_关键未知": {
+      "text": "1. 停止机制：不存在已验证的停止方案；碱性淬灭与 S03 溶液相陈述冲突，固相未测，剂量耗尽后的成色能否被固定仍未知。2. 安全替代：绿色显色剂 LMG 与酸性 TCAA 的 API 级危害分类不利；能否换成低危害显色剂并保持单色相与剂量梯度，未知。3. 长期成色：S03 引文 22 称固相染料形式「slowly fade over the years」，未被量化。补充缺口：日光与 UV 灯的辐照度、纸基形变与拼合、耐光数据、LHAMA 核查、MBTT 光解酸的家用安全性。",
+      "grade": "—",
+      "label": "未知",
+      "source_ids": ["S12", "S13", "S02", "S03", "S24"]
+    },
+    "c15_判别实验": {
+      "text": "在纸板上印 TTC 单色（保留与去除 TCAA 两组，并设原配方对照），用辐照计标定 J/cm²，设 0.1、0.5、2 J/cm² 三剂量，测立即、24 小时、30 天的色差 ΔE；同时做碱性或胺蒸气停止对照，若有色区回退，则碱性停止证伪。",
+      "grade": "—",
+      "label": "设计草图（未执行）",
+      "source_ids": ["S02", "S03"]
+    }
+  },
+  "c05_免洗核验": {
+    "验收": {
+      "1_喷后免洗": "不适用（无喷停止剂步骤；原 ✓ 撤回，不构成免洗证据）",
+      "2_白区停得住": "?（未测：无停止剂；LMG 0.7%、TTC 2.3%、LCV 13.7% 为暗态、未喷停止剂的数据，不能替代白区测试；「可接受」阈值未定义）",
+      "3_成色留得住": "?（无停止剂，无耐光数据；0.1 J/cm² 下 30 天暗态数据 LMG 1.4%、TTC 1.5%、LCV 14.9% 仅为暗态）",
+      "4_少量喷液": "?（无喷液步骤，未测）",
+      "5_底材不变形": "?（仅棉斜纹布；纸基与拼合未测）",
+      "6_安全前置": "✗（倾向，基于 PubChem 聚合 GHS；SDS、ASTM D-4236 与 LHAMA 未核查，属未验证推断）"
+    },
+    "说明": "底线 6 对已测配方倾向不达标；底线 2、3、4、5 无数据；底线 1 不适用。当前无任何底线被证实通过。"
+  },
+  "verdict": {
+    "status": "淘汰（当前证据下；附重开条件）",
+    "reasons": [
+      "已测 LCV/LMG/TTC 印花体系确有剂量依赖的单色相成色（S02 全文）。不可逆性由 S03（溶液与 X 射线膜）明述；S02 与 S07 均不含「不可逆」一词，不能用于证明不可逆。",
+      "没有已验证的停止方案。唯一候选（碱性淬灭）与 S03 溶液相陈述冲突，固相未测；胺蒸气、封层、阻氧等候选无数据。",
+      "底线 1 不适用；底线 2、3、4、5 无数据；底线 3 的耐光数据完全缺失。以当前证据，没有任何底线被证实通过。",
+      "已测配方的 LMG 与 TCAA 在 PubChem 聚合 GHS 中有 H341、H351、H361、H314 等代码，倾向不满足家用小量、通风有限下的现实安全性；待 SDS 与 LHAMA 核实。",
+      "光致产酸的 MBTT 光解释放酸性物质，其家用安全性未评估。",
+      "消费墨液渠道未发现光致变色或 UV 变色墨产品（Dharma 已核对；Jacquard 不可判定）；UV 指示标签（SpotSee、MRSA-UV）存在但不是墨液。",
+      "新发现的不可逆路线（US11795340，UV-C 聚合物释酸）仅对 UV-C 有效，白区与成色稳定性未测；US7553603 为光致产碱路线，不是 PAG 路线。",
+      "重开条件：(1) 替代显色剂的 SDS 与 LHAMA 核查通过；(2) 找到不依赖碱的停止方案，并在固相上测得白区与成色稳定性；(3) 日光与 UV 灯辐照度实测，换算才可用于 30 分钟判断。"
+    ],
+    "red_line_hits": [
+      "未命中硬红线：已测配方无铁氰化钾、亚铁氰化钾、重铬酸盐、普鲁士蓝。",
+      "new_routes 中的新线索（如 Speedball DIAZO 乳剂套件）未做红线核查（SDS 未读），不得视为通过。",
+      "命中「家用小量 / 通风有限」现实安全性评估：倾向不通过（LMG、TCAA），待 SDS 与 LHAMA 核实。",
+      "碱性停止方案与溶液相证据冲突（非红线，但阻断了停止方案）。"
+    ]
+  },
+  "baseline_challenges": [
+    {
+      "round": "轮1",
+      "old_claim": "可逆型：紫外下显色、离开光源后褪回（Wikipedia；SpotSee PDS）",
+      "agree": "agree",
+      "my_evidence": "SpotSee 光致变色页（S04，A 级全文）：可逆型 clear→color，离开 UV 后褪回，'cycle thousands of times'。Wikipedia 亦称可逆转换由光驱动（S01，B 级）。",
+      "strength": "A（厂商全文）vs B（百科）"
+    },
+    {
+      "round": "轮1",
+      "old_claim": "不可逆型只有阈值指示标签（轮1 与轮4）",
+      "agree": "disagree",
+      "my_evidence": "S02（A 全文）给出剂量梯度的单色相成色，但全文不含「不可逆」一词；S03（A 全文）明述 dye form 不可逆（溶液，除非加 OH–）。S07（A 专利文本）的剂量相关性得到支持，但权利要求含可逆螺吡喃，不能单独作为不可逆证据。阈值标签确实存在（S04、S05），但不是唯一形态。",
+      "strength": "A（S02 剂量梯度）+ A（S03 不可逆）；S07 不支持不可逆"
+    },
+    {
+      "round": "轮1",
+      "old_claim": "可逆性是固有的；UV 下图像本身不稳定，除非撤光（'no washing ... inherently non-permanent'）",
+      "agree": "disagree（部分）",
+      "my_evidence": "S03 明述 dye form 不回到 leuco 形式（溶液中，除非加 OH–），X 射线膜暗态 40 h 无变化；但 S03 引文 22 称固相记录「slowly fade over the years」。S02 未做撤光后回退测试。因此「撤光后不褪回」只能部分证实；「永久性」的问题在于停止与长期褪色，而非固有可逆性。",
+      "strength": "A（S03，溶液与 X 射线膜）；长期褪色未量化"
+    },
+    {
+      "round": "轮1",
+      "old_claim": "SpotSee PDS-068：阳光下约 20–60 s 全色变化；可溶于墨水",
+      "agree": "unverified",
+      "my_evidence": "本轮未读 PDS-068 PDF，未核实时间数值。",
+      "strength": "未核查"
+    },
+    {
+      "round": "轮1",
+      "old_claim": "SM305 plastisol：显色 15 s，室内 5 min 褪回",
+      "agree": "unverified",
+      "my_evidence": "本轮未读，未核实。与本路线（不可逆）关系较弱。",
+      "strength": "未核查"
+    },
+    {
+      "round": "轮1",
+      "old_claim": "MDPI 传感器论文：200 次循环无变化；厂商保证 10,000 次",
+      "agree": "unverified",
+      "my_evidence": "mdpi.com 为 403 类（不可读，未绕过）。与不可逆路线无直接关系。",
+      "strength": "不可读"
+    },
+    {
+      "round": "轮1",
+      "old_claim": "pburch.net：微胶囊水性墨，瞬时变色，可用于 UV 警示",
+      "agree": "unverified",
+      "my_evidence": "C 级个人博客，本轮未读。",
+      "strength": "C（未核查）"
+    },
+    {
+      "round": "轮4",
+      "old_claim": "SpotSee 不出售原料染料、油墨或母粒",
+      "agree": "agree",
+      "my_evidence": "SpotSee 光致变色页全文（S04）：'SpotSee does not supply raw photochromic dye, ink, or masterbatch as a standalone material'。",
+      "strength": "A（厂商全文）"
+    },
+    {
+      "round": "轮4",
+      "old_claim": "Thermostrip UV 为不可逆紫外曝光标签，货架期 12 个月，用于灭菌监测",
+      "agree": "agree",
+      "my_evidence": "PDS083 Rev 00 全文 PDF（S05）：Irreversible UV Light Exposure Label；12 months from invoice date（21 °C / 50% RH）；germicidal disinfection。",
+      "strength": "A（厂商全文）"
+    },
+    {
+      "round": "轮4",
+      "old_claim": "MRSA-UV 强度标签：黄→深绿，与能量相关；50 张加卡 $95",
+      "agree": "agree（颜色与剂量相关；UVC 标签）/ 价格为页面显示值（未验证现价）",
+      "my_evidence": "厂商 brochure 全文（S06）：'gradual color change ... directly related to energy received'，'UVC Labels (50) and Cards (50) Total $95'，并提示'observe color change immediately after exposure'（暗示曝光后仍漂移，属推断）。价格为 2019 版权页面显示值。",
+      "strength": "A（厂商全文）"
+    },
+    {
+      "round": "轮4",
+      "old_claim": "American Ultraviolet UVC 剂量计：光致墨 黄→橙→粉",
+      "agree": "unverified",
+      "my_evidence": "未找到可读的厂商页；WebSearch 未返回该产品页。",
+      "strength": "未核查"
+    },
+    {
+      "round": "轮4",
+      "old_claim": "结构上，曝光本身即成色步骤，无单独显影或后处理",
+      "agree": "agree",
+      "my_evidence": "论文（S02）与 ACS Omega（S03）均无显影步骤；SpotSee 亦然（S05）。",
+      "strength": "A"
+    },
+    {
+      "round": "轮4",
+      "old_claim": "按定义不适用于 expose-then-develop 产品（fails expose-then-develop by definition）",
+      "agree": "disagree",
+      "my_evidence": "本路线的问题在于停止与暗态稳定性（c06、c07），而非显影步骤的有无。'按定义'不成立，需要用白区与成色数据判断。",
+      "strength": "A（推理链）"
+    },
+    {
+      "round": "轮4",
+      "old_claim": "连续色调：剂量梯度可能，但被设计为阈值指示器，而非照相色调",
+      "agree": "disagree",
+      "my_evidence": "论文（S02，A）给出 0–0.5 或 0–2.5 J/cm² 内单调的深浅梯度；专利（S07，A）称 'the amount of color developed is related to the UV dose'。",
+      "strength": "A"
+    },
+    {
+      "round": "轮4",
+      "old_claim": "耐光：无永久性声明；可逆型按设计褪色；光致变色疲劳（推断）",
+      "agree": "agree",
+      "my_evidence": "可逆型褪色与疲劳属实（S04）。不可逆型未做任何耐光测量（S02、S03），故只能说未知。",
+      "strength": "A（可逆）；不可逆未知"
+    },
+    {
+      "round": "轮4",
+      "old_claim": "安全：水性，无害（water-based; benign）",
+      "agree": "disagree",
+      "my_evidence": "PubChem 聚合 GHS（S12、S13）：LMG 含 H341、H351、H361、H372；TCAA 含 H314、H341、H351。论文配方含这两者（S02）。另 S02 提示所用 leuco 染料可能引起皮肤刺激。",
+      "strength": "A（API）"
+    },
+    {
+      "round": "轮4",
+      "old_claim": "IP：光致变色化合物广泛专利化；指示器格式为专有",
+      "agree": "agree（部分）",
+      "my_evidence": "关键词范围内发现 US8501053B2（全文已读；Google 显示 2013-08-06 授权、Expired - Fee Related，非法律结论）。US5296275、US7553603、US20120137958、US11795340 现均可读全文（此前 503/403 为间歇失败）：US7553603 为光致产碱路线；US11795340 为 UV-C 释酸不可逆墨；US20120137958 为 'substantially irreversible' 剂量响应指示器；US5296275 为 photoacid/photobase progenitor 墨。'专有'未检验。",
+      "strength": "A（全文）；法律状态未验证"
+    },
+    {
+      "round": "轮1/轮4",
+      "old_claim": "无原料零售（no raw material retail）",
+      "agree": "disagree（研究试剂层面）/ agree（消费渠道层面）",
+      "my_evidence": "论文方法段（S02）称 LCV、LMG、TTC、TCAA 购自 Sigma-Aldrich，即研究试剂可得；消费渠道 Dharma 站内检索无光致变色或 UV 变色墨（S08、S09），Jacquard 无列表（S10）。",
+      "strength": "A（论文方法）；B（站内检索）"
+    },
+    {
+      "round": "轮1/轮4",
+      "old_claim": "作为研究路线：image 不稳定或单次阈值，puzzle 不适用（unsuitable）",
+      "agree": "disagree（部分）",
+      "my_evidence": "LMG 与 TTC 在暗态 30 天内变化低于 2.5%（S02），说明'不稳定'只对 LCV 成立；但停止机制、安全与白区数据仍不通过，因此改判为淘汰（当前证据下）。",
+      "strength": "A"
+    }
+  ],
+  "sources": [
+    {
+      "id": "S01",
+      "title": "Leuco dye (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Leuco_dye",
+      "type": "B（百科）",
+      "access": "curl全文（重试后成功；引文已核对）",
+      "date": "2026-11-01 读取",
+      "quote": "Irreversible transformations typically involve reduction or oxidation."
+    },
+    {
+      "id": "S02",
+      "title": "Multi-Color Printed Textiles for Ultraviolet Radiation Measurements, Creative Designing, and Stimuli-Sensitive Garments (Materials 2023)",
+      "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10456908/（DOI 10.3390/ma16165622；经 eutils efetch 读取全文 XML，已核对）",
+      "type": "A（同行评审全文）",
+      "access": "curl全文（PMC XML，已核对）",
+      "date": "2023-08-14",
+      "quote": "The intensity of the blue color reaches a plateau above 0.5 J/cm2"
+    },
+    {
+      "id": "S03",
+      "title": "Leuco-Based Composite Resin Dosimeter Film (ACS Omega 2019)",
+      "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6648168/（DOI 10.1021/acsomega.9b00435；经 eutils efetch 读取全文 XML，已核对）",
+      "type": "A（同行评审全文）",
+      "access": "curl全文（PMC XML，已核对）",
+      "date": "2019-06-30",
+      "quote": "the colored dye form is irreversible and does not return to the colorless leuco form unless OH– is added to the solution（溶液相）"
+    },
+    {
+      "id": "S04",
+      "title": "Photochromic Dye: UV-Activated Indicator Technology (SpotSee)",
+      "url": "https://spotsee.io/technologies/photochromic-dye/",
+      "type": "A（厂商页面）",
+      "access": "curl全文（HTML，已核对）",
+      "date": "2026-11-01 读取（页面日期未标注）",
+      "quote": "SpotSee does not supply raw photochromic dye, ink, or masterbatch as a standalone material"
+    },
+    {
+      "id": "S05",
+      "title": "Thermostrip UV Light Exposure Label, Product Data Sheet PDS083 Rev 00 (SpotSee/Hallcrest)",
+      "url": "https://spotsee.io/wp-content/uploads/2021/04/PDS083-Rev-00-Thermostrip-UV-Light-Indicator-Label.pdf",
+      "type": "A（厂商 PDS）",
+      "access": "curl全文（PDF，pdftotext，已核对）",
+      "date": "PDS 2021（上传路径）",
+      "quote": "Irreversible UV Light Exposure Label; Shelf Life 12 months from invoice date when stored at room temperature (21ºC (70ºF) & 50% relative humidity)"
+    },
+    {
+      "id": "S06",
+      "title": "MRSA-UV UVC Intensity Labels brochure",
+      "url": "https://www.mrsa-uv.com/uploads/8/9/7/2/8972491/intensity_labels-uvc_brochure.pdf",
+      "type": "A（厂商 brochure）",
+      "access": "curl全文（PDF，pdftotext，已核对）",
+      "date": "© 2019",
+      "quote": "gradual color change from yellow to dark green that is directly related to energy received; UVC Labels (50) and Cards (50) Total $95"
+    },
+    {
+      "id": "S07",
+      "title": "US8501053B2 Multi color, photoactive, color changing compositions and UV dosimeters (BASF SE)",
+      "url": "https://patents.google.com/patent/US8501053",
+      "type": "A（专利全文；Google 法律状态非法律结论）",
+      "access": "curl全文（Google Patents，已核对；Google 显示 2013-08-06 授权、Expired - Fee Related）",
+      "date": "授权 2013-08-06（Google Patents）；优先权 2008-10-02；申请人 BASF SE",
+      "quote": "the amount of color developed is related to the UV dose"
+    },
+    {
+      "id": "S08",
+      "title": "Dharma Trading 站内搜索 'photochromic'（页面标题 4 results）",
+      "url": "https://www.dharmatrading.com/search?q=photochromic",
+      "type": "零售站内检索",
+      "access": "curl全文（HTML，静态，已核对）",
+      "date": "2026-11-01 读取",
+      "quote": "Results for 'photochromic' (4 products): Procion dyes, Sodium Hydrosulfite, Speedball DIAZO Photo Emulsion Kit ($25.75); page also prints 'No search result for photochromic'"
+    },
+    {
+      "id": "S09",
+      "title": "Dharma Trading 站内搜索 'uv color changing'（页面标题 78 results）",
+      "url": "https://www.dharmatrading.com/search?q=uv+color+changing",
+      "type": "零售站内检索",
+      "access": "curl全文（HTML，已核对；计数自相矛盾）",
+      "date": "2026-11-01 读取",
+      "quote": "78 results found for 'uv color changing' (header); the same page also prints 'No search result for uv color changing'; product names contain no UV or photochromic items"
+    },
+    {
+      "id": "S10",
+      "title": "Jacquard Products 站内搜索 'uv color changing' / 'photochromic'",
+      "url": "https://www.jacquardproducts.com/search?q=uv+color+changing",
+      "type": "零售站内检索",
+      "access": "curl全文（HTML，静态壳，已核对）",
+      "date": "2026-11-01 读取",
+      "quote": "静态 HTML 仅含导航与分类，无商品列表与结果计数（不可判定）"
+    },
+    {
+      "id": "S11",
+      "title": "PubChem CID 69048 Leucocrystal violet",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/69048",
+      "type": "A（API，聚合 GHS）",
+      "access": "API（PubChem pug_view GHS，已核对）",
+      "date": "2026-11-01 读取",
+      "quote": "GHS H315, H319, H335, H400, H410 (Warning)"
+    },
+    {
+      "id": "S12",
+      "title": "PubChem CID 67215 Leucomalachite green",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/67215",
+      "type": "A（API，聚合 GHS）",
+      "access": "API（PubChem pug_view GHS，已核对；含通知者占比）",
+      "date": "2026-11-01 读取",
+      "quote": "GHS H302 (96.2%), H311 (15.4%), H315 (15.4%), H331 (15.4%), H332 (15.4%), H341, H351, H361, H372, H373, H400 (96.2%) (Danger)"
+    },
+    {
+      "id": "S13",
+      "title": "PubChem CID 6421 Trichloroacetic acid",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/6421",
+      "type": "A（API，聚合 GHS）",
+      "access": "API（PubChem pug_view GHS，已核对；H314 为 100%）",
+      "date": "2026-11-01 读取",
+      "quote": "GHS H303, H314 (100%), H318, H336, H341, H351, H361, H371, H400 (98.8%), H410 (99.1%) (Danger)"
+    },
+    {
+      "id": "S14",
+      "title": "PubChem CID 9283 2,3,5-Triphenyltetrazolium chloride",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/9283",
+      "type": "A（API，聚合 GHS）",
+      "access": "API（PubChem pug_view GHS，已核对）",
+      "date": "2026-11-01 读取",
+      "quote": "GHS H228, H315, H319, H335 (Danger)"
+    },
+    {
+      "id": "S15",
+      "title": "PubChem CID 170671 MBTT (2-(4-methoxystyryl)-4,6-bis(trichloromethyl)-1,3,5-triazine)",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/170671",
+      "type": "A（API，聚合 GHS）",
+      "access": "API（PubChem pug_view GHS，已核对）",
+      "date": "2026-11-01 读取",
+      "quote": "GHS H315, H319, H335 (Warning)"
+    },
+    {
+      "id": "S16",
+      "title": "PubChem CID 11729320 Triphenylsulfonium triflate",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/11729320",
+      "type": "A（API，聚合 GHS）",
+      "access": "API（PubChem pug_view GHS，已核对）",
+      "date": "2026-11-01 读取",
+      "quote": "GHS H301, H315, H319, H335 (Danger)"
+    },
+    {
+      "id": "S17",
+      "title": "PubChem CID 73773 Crystal violet lactone",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/73773",
+      "type": "A（API，聚合 GHS）",
+      "access": "API（PubChem pug_view GHS，已核对）",
+      "date": "2026-11-01 读取",
+      "quote": "GHS H315, H319, H335 (Warning)"
+    },
+    {
+      "id": "S18",
+      "title": "LCV-Pluronic F-127 dosimeter for UV light dose distribution measurements (J. Photochem. Photobiol. A, 2021; Kozicki et al.)",
+      "url": "https://doi.org/10.1016/j.jphotochem.2020.112930",
+      "type": "A（元数据，Crossref）",
+      "access": "API（Crossref 元数据，已核对；全文未读）",
+      "date": "2021",
+      "quote": "（仅标题与期刊信息；摘要与全文未获取）"
+    },
+    {
+      "id": "S19",
+      "title": "The photochemistry and photophysics of triphenylmethane dyes in solid and liquid media (Chem. Rev. 1993; Duxbury)",
+      "url": "https://doi.org/10.1021/cr00017a018",
+      "type": "A（元数据，Crossref）",
+      "access": "API（Crossref 元数据，已核对；全文未读）",
+      "date": "1993",
+      "quote": "（仅标题与期刊信息；全文未读）"
+    },
+    {
+      "id": "S20",
+      "title": "Photofading of basic triphenylmethane dyes: Evidence for electron transfer (Dyes and Pigments 1981; Allen et al.)",
+      "url": "https://doi.org/10.1016/0143-7208(81)80004-6",
+      "type": "A（元数据，Crossref）",
+      "access": "API（Crossref 元数据，已核对；全文未读）",
+      "date": "1981",
+      "quote": "（仅标题与期刊信息；全文未读）"
+    },
+    {
+      "id": "S21",
+      "title": "US5296275A Phototranschromic ink（全文已读）",
+      "url": "https://patents.google.com/patent/US5296275",
+      "type": "A（专利全文；Google Patents）",
+      "access": "curl全文（Google Patents，重试后可读，已核对）",
+      "date": "1994（公开）",
+      "quote": "a photoacid or photo base progenitor (which releases or takes up protons upon exposure to a desired light, e.g., ultraviolet light), a pH sensitive dye; ortho-nitrobenzaldehyde as example progenitor"
+    },
+    {
+      "id": "S22",
+      "title": "US7553603B2 Inkless printing paper and method（全文已读；US7588878 未读）",
+      "url": "https://patents.google.com/patent/US7553603B2/en",
+      "type": "A（专利全文；Google 法律状态非法律结论）",
+      "access": "curl全文（Google Patents，已核对；Google 显示授权 2009-06-30、Expired - Fee Related）",
+      "date": "授权 2009-06-30（Google Patents）",
+      "quote": "an imaging layer comprising a photobase generator and an acid-base indicator, which composition can be dispersed in a polymer as a dry coating（已更正：原先写作 photoacid generator，全文中无此词组）"
+    },
+    {
+      "id": "S23",
+      "title": "US20120137958A1 DOSE RESPONSIVE UV INDICATOR（全文已读；已授权为 US9097588B2）",
+      "url": "https://patents.google.com/patent/US20120137958A1/en",
+      "type": "A（专利全文；Google 法律状态非法律结论）",
+      "access": "curl全文（Google Patents，已核对；Google 显示 2015-08-04 授权、Active，调整后到期 2031-01-15）",
+      "date": "2012（公开）",
+      "quote": "the first and second UVR sensitive material displays an altered characteristic upon UV radiation exposure, which is substantially irreversible"
+    },
+    {
+      "id": "S24",
+      "title": "US11795340B2 Composition sensitive to UV-C radiation and UV-C sterilization or disinfection dosimeter (Terragene LLC)（全文已读）",
+      "url": "https://patents.google.com/patent/US11795340B2/en",
+      "type": "A（专利全文；Google 法律状态非法律结论）",
+      "access": "curl全文（Google Patents，已核对；Google 显示 2023-10-24 授权，优先权 2020-09-02）",
+      "date": "授权 2023-10-24（Google Patents）",
+      "quote": "A reactive ink composition comprising a UV-C radiation sensitive polymer, an acid scavenger, a photoinitiator, and a pH-sensitive dye; the reaction is advantageously rendered irreversible"
+    },
+    {
+      "id": "S25",
+      "title": "Advanced conjugated functional polydiacetylene-based irreversible colorimetric indicator for anti-counterfeiting applications (Adv. Compos. Hybrid Mater., 2025)",
+      "url": "https://doi.org/10.1007/s42114-025-01564-y",
+      "type": "A（元数据，Crossref；全文未读）",
+      "access": "API（仅元数据）",
+      "date": "2025",
+      "quote": "（仅标题；路线线索，未展开）"
+    },
+    {
+      "id": "S26",
+      "title": "Speedball DIAZO Photo Emulsion Kit（Dharma 站内价格，搜索结果页内列出）",
+      "url": "https://www.dharmatrading.com/search?q=photochromic",
+      "type": "零售（价格未验证；SDS 未读）",
+      "access": "curl全文（搜索结果页内列出，已核对）",
+      "date": "2026-11-01 读取",
+      "quote": "Speedball DIAZO Photo Emulsion Kit $25.75（价格未验证）"
+    },
+    {
+      "id": "S27",
+      "title": "Schott M. (2006) The colors of polydiacetylenes: a commentary, J. Phys. Chem. B（经 S02 参考文献列表）",
+      "url": "DOI 由参考文献文本推定：10.1021/jp0638437（未经 Crossref 核实）",
+      "type": "A（引用线索，未读全文）",
+      "access": "本地参考文献文本（来自 S02，已核对于 PMC XML）",
+      "date": "2006",
+      "quote": "（参考文献条目；仅路线线索）"
+    }
+  ],
+  "negative_findings": [
+    {
+      "query": "Google Patents 关键词检索 'irreversible UV indicator leuco photoacid'（xhr 接口）",
+      "scope": "patents.google.com（关键词范围）",
+      "result": "返回 Google 'Sorry' 页（503，机器人拦截/间歇失败）；无法获得结果列表。"
+    },
+    {
+      "query": "patents.google.com 单篇专利页 US5296275、US7553603、US20120137958A1、US11795340B2",
+      "scope": "一手专利全文",
+      "result": "原始检索首次及两次重试为 503；后续重试全文可读，已读取 US5296275A、US7553603B2、US20120137958A1、US11795340B2 全文（此前'未读全文'的说法已过时）。US8501053 同样可读。"
+    },
+    {
+      "query": "patents.justia.com 专利页（8501053、5296275、20120137958、7553603）",
+      "scope": "Justia 镜像",
+      "result": "403（策略拒绝），未绕过，记为不可读。"
+    },
+    {
+      "query": "WebSearch（2 次）：'irreversible UV indicator ink photoacid generator leuco dye color change patent'；'UV dosimeter ink irreversible color change product supplier UVA UVB dose indicator'",
+      "scope": "公开网页（搜索摘录）",
+      "result": "未找到不可逆 UVA/UVB 剂量墨的供应商；专利与学术结果多为摘录级。（原表述「未见 PAG + leuco 的单篇权利要求同时包含三要素」撤回：US8501053 权利要求 1 同时含酚类光潜酸与酸敏显色剂，US7553603 含光致产碱与酸碱指示剂。）"
+    },
+    {
+      "query": "PubMed: 'photoacid generator AND leuco'；'UV dosimeter AND leuco'；'irreversible UV indicator ink'",
+      "scope": "PubMed（eutils）",
+      "result": "分别 2、1、4 条；相关者仅 Materials 2023（PMID 37629913）与 ACS Omega 2019（PMID 31460086），其余为离题（PAG 光电子、氧指示墨、光致变色 COP）。"
+    },
+    {
+      "query": "PMC: 'photoacid generator AND leuco'；'UV indicator ink photoacid leuco'；'photochromic irreversible ink printing'（119 条）",
+      "scope": "PMC（eutils）",
+      "result": "前两条相关性低；第三条 119 条未逐条读取，仅抽样为离题（2026 年 MDPI/ACS 论文）。"
+    },
+    {
+      "query": "Crossref: 'irreversible UV indicator ink photoacid leuco dye'、'UV dosimeter irreversible color change leuco dye'、'irreversible photochromic ink UV indicator'、'polydiacetylene UV irreversible colorimetric indicator'",
+      "scope": "Crossref（API，元数据）",
+      "result": "多为离题（酸释放、EUV PAG、热致不可逆指示器、电致变色等）；与本路线直接相关者为 S18（Kozicki 2021）与 S25（PDA 2025）。"
+    },
+    {
+      "query": "Dharma 站内搜索 'photochromic' 与 'uv color changing'",
+      "scope": "Dharma Trading 站内（零售）",
+      "result": "'photochromic' 4 条均为相关性匹配（非光致变色商品）；'uv color changing' 页面标题 78 条，但同页印有 No search result 文字，计数不可靠；商品名中无 UV 或光致变色商品。"
+    },
+    {
+      "query": "Jacquard 站内搜索 'uv color changing' 与 'photochromic'",
+      "scope": "Jacquard Products（零售）",
+      "result": "静态 HTML 仅含导航，无商品列表；不可判定（可能为 JS 渲染）。"
+    },
+    {
+      "query": "Wikipedia 'Leuco dye'",
+      "scope": "en.wikipedia.org",
+      "result": "首次 429，重试后读取（B 级）。"
+    },
+    {
+      "query": "PubMed 检索 LCV-Pluronic dosimeter、leucocrystal violet UV dosimeter、triphenylmethane dye photofading",
+      "scope": "PubMed",
+      "result": "0 条；Kozicki 2021 与三芳甲烷光褪色文献仅得 Crossref 元数据，无摘要。"
+    },
+    {
+      "query": "SpotSee 'Photochromic Dye' 中的 Dye Formats 与 Irreversible 产品",
+      "scope": "spotsee.io",
+      "result": "页面列出 dyes、slurries、microencapsulated、masterbatch 为行业形态，但 SpotSee 不供应原料；未找到可零售的不可逆原料染料。"
+    },
+    {
+      "query": "ASTM D-4236 / LHAMA 清单检索",
+      "scope": "本轮未访问 cpsc.gov LHAMA 清单",
+      "result": "未核查（范围缺口）。"
+    },
+    {
+      "query": "Sigma-Aldrich 当前在售与价格（LCV、LMG、TTC、TCAA、MBTT）",
+      "scope": "sigmaaldrich 站点",
+      "result": "本轮未读（不在可读清单，未尝试绕过）；供应仅据论文方法段（2023）。"
+    },
+    {
+      "query": "Speedball DIAZO Photo Emulsion Kit 的 SDS 与红线（重铬酸盐等）核查",
+      "scope": "本轮未读 SDS（new_routes 线索）",
+      "result": "未核查；该线索不得视为通过红线。"
+    },
+    {
+      "query": "EP0272298 Plessey 'Irreversible photochromic markings' 全文",
+      "scope": "EPO 出版物服务（未读）",
+      "result": "未核查；仅保留标题与摘录级信息。"
+    }
+  ],
+  "key_unknowns": [
+    "停止机制：不存在已验证的停止方案。碱性淬灭与 S03 溶液相陈述冲突，固相中碱或胺蒸气是否使已成色区褪色，未测（仅溶液相证据）。",
+    "长期成色：S03 引文 22 称固相染料形式「slowly fade over the years」，其时间尺度与幅度未被量化。",
+    "安全替代：绿色显色剂 LMG 与酸性 TCAA 的 API 级危害分类不利；能否换成低危害显色剂并保持单色相与剂量梯度，未知。",
+    "日光与 UV 灯的辐照度缺失，无法把 J/cm² 换算为 30 分钟内的可行性。",
+    "耐光数据完全缺失（只有暗态后效）；曝光后的时间漂移机制未知。",
+    "纸基与拼图底材的形变、干后拼合与封层兼容性未测。",
+    "LHAMA / ASTM D-4236 核查与 CAS、PPE 级别未完成；MBTT 光解酸的家用安全性未评估。",
+    "US11795340 类 UV-C 释酸路线在日光与消费 UV 灯下的表现，白区与成色稳定性未测。",
+    "专利法律状态：Google Patents 显示的状态（Expired - Fee Related、Active 等）均为非法律结论，需以官方记录核实。"
+  ],
+  "discriminating_experiment": {
+    "one_liner": "在纸板上印 TTC 单色（保留与去除 TCAA 两组，并设原配方对照），用辐照计标定，设 0.1、0.5、2 J/cm² 三剂量，测立即、24 小时、30 天的 ΔE；同时做碱性或胺蒸气停止对照，若有色区回退，则碱性停止证伪。",
+    "design_sketch": "1) 用 UVA/UVB 辐照计标定各灯的 mW/cm²，把 J/cm² 换算为秒与分钟，检验 30 分钟目标是否可行（若辐照度不可测，则以日光与消费 UV 灯的实测时间计）。2) 配方：TTC 单色 0.1%，两组（保留 TCAA 与去除 TCAA），另设原配方（LCV/LMG/TTC + TCAA）对照；粘合剂与论文一致。3) 样品：纸板与棉布各一组，印单色与梯度块。4) 测量：立即、24 小时、30 天在避光条件下测 ΔE（分光测色）；另取一批在 30%、70% RH 下存放。5) 停止对照：喷弱碱或胺蒸气后，立即与 24 小时测 ΔE；若有色区下降即证伪碱性停止。6) 耐光：以日光或氙灯做时间序列，只报数据，不换算年限。7) 安全：TTC 的 SDS 与 LHAMA 核查须在印制前完成。"
+  },
+  "new_routes_spotted": [
+    {
+      "name": "聚二乙炔（polydiacetylene）UV 不可逆显色",
+      "why": "UV 聚合形成不可逆蓝/红相；S02 参考文献 23 与 S25（2025）提示。S02 原文确认四氮唑盐与二乙炔各自的色域限制（无蓝+绿、无红+黄）。全文未读。",
+      "lead_url": "https://doi.org/10.1007/s42114-025-01564-y"
+    },
+    {
+      "name": "光致产碱 + 酸碱指示剂的干涂层（inkless printing paper，US7553603）",
+      "why": "US7553603 全文（已核对）：成像层为 photobase generator（光致产碱）+ acid-base indicator，多数组合形成永久图像（作者陈述）。方向与 PAG 路线相反，本身产碱，因此碱性停止的冲突不适用，但需另行评估其白区稳定性。原先写作 PAG 为误述。",
+      "lead_url": "https://patents.google.com/patent/US7553603B2/en"
+    },
+    {
+      "name": "光致产酸或产碱的 phototranschromic 墨（邻硝基苯甲醛类前体，US5296275）",
+      "why": "US5296275 全文（已核对）：photoacid 或 photobase progenitor + pH 敏感染料；示例为 ortho-nitrobenzaldehyde + bromophenol blue。正文未说明可逆性或停止方式；与碱性停止的兼容性需查证。",
+      "lead_url": "https://patents.google.com/patent/US5296275"
+    },
+    {
+      "name": "重氮（Speedball DIAZO）光敏乳剂类配方",
+      "why": "Dharma 上有售（$25.75，未验证）；属于 expose-then-develop 家族，可能与本路线的停止问题形成对照。SDS 未读，红线（重铬酸盐等）未核查，不得视为通过。非本路线，仅记录。",
+      "lead_url": "https://www.dharmatrading.com/products/speedball-diazo-photo-emulsion-kit"
+    },
+    {
+      "name": "EP0272298 Plessey 'Irreversible photochromic markings'（1,2-二氢喹啉潜像）",
+      "why": "标题与权利要求片段（摘录）：潜像经 UV 显现，声称不可逆；未读全文，机理未核实。",
+      "lead_url": "https://data.epo.org/publication-server/rest/v1.2/patents/EP0272298NWB1/document.pdf"
+    },
+    {
+      "name": "UV-C 敏感聚合物释酸的不可逆墨（US11795340B2）",
+      "why": "US11795340B2 全文（已核对）：UV-C 敏感聚合物 + 酸清除剂（0.25–0.75 wt%）+ 光引发剂（9–15 wt%）+ pH 敏感染料；光引发剂触发聚合物降解释酸，专利陈述该反应不可逆。仅 UV-C；白区与成色稳定性未测；与日光或消费 UV 灯目标的关系未知。",
+      "lead_url": "https://patents.google.com/patent/US11795340B2/en"
+    },
+    {
+      "name": "双 UVA/UVB 敏感材料的剂量响应指示器（US20120137958 / US9097588B2）",
+      "why": "US20120137958A1 全文（已核对）：两种 UVR 敏感材料对 UVA、UVB 的响应不同，颜色变化「substantially irreversible」，配方含 UV 滤光剂；可区分两个波段。权利要求部分读取，配方细节未核。",
+      "lead_url": "https://patents.google.com/patent/US20120137958A1/en"
+    }
+  ],
+  "search_budget_used": {
+    "websearch": 2,
+    "curl_reads": 46,
+    "verifier": {
+      "websearch": 0,
+      "curl_reads": 24
+    }
+  },
+  "reconciliation_log": [
+    {
+      "item": "verdict.status（观察线）",
+      "change": "改为「淘汰（当前证据下；附重开条件）」",
+      "why": "无可信停止方案；唯一候选（碱）与 S03 溶液相证据冲突；已测配方倾向不通过底线 6；底线 2、3、4、5 无数据。观察线需要可信的通过路径，本文件没有提供。按冲突取保守一方。"
+    },
+    {
+      "item": "c01 — 「经与宿主聚苯乙烯的 H 抽取生成 H+」",
+      "change": "删去 H 抽取，改为原文措辞（Cl• 与溶剂或宿主聚合物反应生成 H+），并注明 H 抽取为未证实推断",
+      "why": "S03 原文只说「reacts with the solvent or host polymer」，没有指明 H 抽取。"
+    },
+    {
+      "item": "c01 — 第三条机制",
+      "change": "新增 (iii)：光引发剂触发 UV-C 敏感聚合物降解、释放酸性化合物（US11795340B2，来源 S24）",
+      "why": "全文已读，为研究未收录的不可逆机制；仅 UV-C。"
+    },
+    {
+      "item": "c02 与 c13(3) — 「高剂量漂白」",
+      "change": "由「事实」改为「原文推测（could be related to bleaching）」",
+      "why": "S02 原文为推测性措辞，并非定论。"
+    },
+    {
+      "item": "c05 底线 1（✓）",
+      "change": "改为「不适用」，c05_免洗真实程度 同步改写",
+      "why": "路线无喷停止剂步骤；研究文本自己写「不构成停止证据」。"
+    },
+    {
+      "item": "c05 底线 3（倾向 ✓）",
+      "change": "改为「?」",
+      "why": "底线 3 指停止剂不使图案褪色；路线无停止剂，也没有耐光数据。"
+    },
+    {
+      "item": "c05 底线 2（「LMG 0.7%、TTC 2.3% 可接受」）",
+      "change": "改为「?（未测）」，删除「可接受」",
+      "why": "底线阈值未定义，且无停止剂。"
+    },
+    {
+      "item": "c05 底线 6（✗）",
+      "change": "保留为「倾向 ✗」，明确标注为未验证推断",
+      "why": "依据为 PubChem 聚合 GHS；SDS 与 LHAMA 未核查。"
+    },
+    {
+      "item": "c06 — 碱致褪色「证据等级 A」与「判为不可行」",
+      "change": "等级改为「A（溶液相原文）；固相为推断（未验证）」；「不可行」改为「高风险、未证实」",
+      "why": "S03 的碱致褪色陈述来自四氯乙烯溶液中的 Black305 实验，固相未测。"
+    },
+    {
+      "item": "c07 / c08 — S03 的长期与曝光后稳定性",
+      "change": "补充 X 射线曝光后暗态 40 h 无变化（Figure 5c）；补充 S03 引文 22 称固相染料形式「slowly fade over the years」",
+      "why": "原文有这两项数据，与「成色留得住」直接相关；研究原先遗漏，且把「曝光后稳定性未研究」写得过于绝对。"
+    },
+    {
+      "item": "c09 — 「原文与 ACS Omega 均指出湿度会影响剂量响应」",
+      "change": "删去「原文（S02）」，改为仅 S03 提及水含量可影响响应、湿度影响待研究",
+      "why": "S02 全文没有湿度与剂量响应的关联表述。"
+    },
+    {
+      "item": "c10 — 「SEM 显示印前后无明显形貌变化」",
+      "change": "改为「印后可见糊料填充织物结构；UVB 辐照后织物无可见变化（仅空白与三色样品）」",
+      "why": "S02 原文的描述与研究不一致。"
+    },
+    {
+      "item": "c11 — 安全结论与遗漏",
+      "change": "补充 PubChem 通知者占比（H302、H400 为 96.2%；H311、H315、H331、H332 为 15.4%）；补充 S02 的皮肤刺激提示；补充 MBTT 光解酸的未评估风险；把「不具备现实安全性」改为「倾向不具备（推断，待 SDS 与 LHAMA）」",
+      "why": "PubChem 页面与 S02 原文；结论依赖 API 聚合分类，不能作为已证实的结论。"
+    },
+    {
+      "item": "c12 — Dharma 'uv color changing' 计数",
+      "change": "注明页面标题 78 results 与同页 No search result 文字自相矛盾，结论仅依据商品名检查",
+      "why": "页面文本本身不一致。"
+    },
+    {
+      "item": "c13(10) — US8501053 权利要求 1",
+      "change": "补入第四组分（酸敏显色剂 c）与可逆螺吡喃；删去以其作不可逆证据的用法；补入 Google 法律状态（非法律结论）与授权日期 2013-08-06",
+      "why": "权利要求全文已读；全文大小写不敏感检索「irreversib」为 0 次。"
+    },
+    {
+      "item": "baseline 轮1 「不可逆阈值」行与 「可逆性固有」行",
+      "change": "删去 S02 与 S07 对「不可逆」的支持，只保留 S03 的不可逆陈述；「撤光后不褪回」改为部分证实",
+      "why": "S02 与 S07 全文不含「irreversible」；S03 引文 22 提示固相长期褪色。"
+    },
+    {
+      "item": "baseline 轮4 「IP」行与 S21–S24 的访问状态",
+      "change": "S21、S22、S23、S24 由「搜索摘录」升为「curl 全文」，并据全文更正内容",
+      "why": "Google Patents 全文在后续重试中可读（此前 503 为间歇失败）。"
+    },
+    {
+      "item": "S22 与 new_routes #2 — 「photoacid generator」",
+      "change": "改为 photobase generator（光致产碱）+ acid-base indicator；new_routes #2 方向修正",
+      "why": "US7553603 全文中无 photoacid generator 词组；研究原先误述。"
+    },
+    {
+      "item": "c08 — 「Duxburry」",
+      "change": "改为「Duxbury」",
+      "why": "Crossref 元数据（S19）。"
+    },
+    {
+      "item": "c03 — LCV 在 0.1 J/cm² 处 UVA 灵敏度最低",
+      "change": "保留，补充与 UVB 相差约 63% 的数值",
+      "why": "已由 S02 核对证实。"
+    },
+    {
+      "item": "negative_findings — 503 与「未见三要素」",
+      "change": "更新专利读取结果；撤回「未见 PAG+leuco 三要素」的表述；新增 Speedball DIAZO SDS 与 EP0272298 全文未核查条目",
+      "why": "全文可读；US8501053 含相应组分；新线索未做红线核查。"
+    },
+    {
+      "item": "c15 — 判别实验",
+      "change": "增加 TCAA 有/无两组与原配方对照；删去「以 LCV 为显色剂」的设计",
+      "why": "TCAA 作用未知，去除 TCAA 会与停止实验混杂；LCV 暗态漂移最大（13.7%）。"
+    },
+    {
+      "item": "new_routes_spotted",
+      "change": "修正 #2 的方向；新增 #6（UV-C 释酸不可逆墨）与 #7（双 UVA/UVB 剂量响应指示器）；标注 Speedball DIAZO 红线未核查",
+      "why": "全文核查的新发现；原线索的误述。"
+    },
+    {
+      "item": "c12 / 消费渠道表述",
+      "change": "注明 UV 指示标签（SpotSee Thermostrip UV、MRSA-UV UVC 标签）存在，但不是墨液；「无消费渠道」仅指墨液",
+      "why": "S04、S06 显示标签产品存在。"
+    },
+    {
+      "item": "key_unknowns",
+      "change": "新增固相碱褪色、长期褪色量化、MBTT 酸的安全性、UV-C 释酸路线的稳定性、专利法律状态核实",
+      "why": "核查中的新发现。"
+    }
+  ]
+}

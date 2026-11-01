@@ -1,0 +1,290 @@
+{
+  "key": "viologen",
+  "name_zh": "viologen 光氧化还原（紫精）",
+  "name_en": "viologen photoredox imaging",
+  "status": "淘汰",
+  "columns": {
+    "c01_机制": {
+      "text": "紫精二价阳离子 V2+ 得到一个电子生成单价自由基阳离子 V•+，在约 598 nm 有强吸收（S02 原文为 green，『蓝绿色』为 MV•+ 的一般描述）。S02 体系的电子来源为反离子（'electron transference from a counterion to viologen'），并将环境氨列为电子供体。V•+ 遇空气中 O2 再氧化（S15 摘要，甲基紫精自由基在电化学酶催化体系中的一般现象）对 S02 片材的暗态回落而言是推断，S02 未讨论 O2。自由基二聚（S19：σ-(MV+)2；S18：free radical viologens 的不可逆聚集）会消耗紫精并使颜色消失，属消色而非固定。",
+      "grade": "A（S02 全文；S15、S18、S19 摘要）；O2 机制对片材为推断",
+      "label": "事实（反离子电子转移，598 nm，自由基二聚）；推断（O2 再氧化对片材的适用性）；未验证（EDTA 作为供体，见 c04）",
+      "source_ids": ["S02", "S15", "S18", "S19"]
+    },
+    "c02_极性与色调": {
+      "text": "直接正像（曝光区成色）。S02 体系（紫精聚合物 VP6 嵌入 PVA/TCC 水凝胶，印于纸）未曝光区为橙色（430 nm 弱吸收，原文 orange hue），并非无色；曝光后转为绿色（598 nm）。即橙→绿双色切换，不是单色相深浅渐变。研究稿『未曝光区为无色 V2+』与『单色相』两条不适用于该体系。单色相体系需另找。多色：S18（Small 2023）摘要称三种烯基紫精得到蓝、绿、品红，但仅在电致变色有机凝胶器件中报告。连续色调：598 nm 吸光度随辐照时间延长而升高，作者用 probably 表示推测（S02，定性证据）。",
+      "grade": "A",
+      "label": "事实（橙→绿双色，598 nm 随辐照增长）；反驳原文对 S02 的『无色』与『单色相』描述",
+      "source_ids": ["S02", "S18"]
+    },
+    "c03_曝光条件": {
+      "text": "光源：S02 正文仅写 ultraviolet lamp，未报波长、强度与剂量（mJ/cm2）；循环试验为 UV 照射 100 s 后转入暗室（S02 原文）。未报日光条件，未测日光与消费级 UV 灯的分别剂量。与 30 分钟目标的关系：100 s 量级即可观察到 598 nm 吸收增加（定性），曝光时长不是障碍；真正的障碍是暗态回落（见 c07、c08）。",
+      "grade": "A",
+      "label": "事实（定性）；光源参数未验证",
+      "source_ids": ["S02"]
+    },
+    "c04_后处理": {
+      "text": "无显影，属直接成色（print-out 型）。S02 配方：紫精聚合物纳米颗粒分散于 PVA/TCC 水凝胶墨，压印于滤纸（S02）。S02 的电子来源为反离子与环境氨，正文未出现 EDTA；『若用供体体系还需 EDTA 类供体』未能证实（EDTA 的唯一来源 S24 不可复现，见 c13）。成色后无需水洗（推断，S02 未报成色后处理）；若要停止则需另加步骤（见 c06）。",
+      "grade": "A",
+      "label": "事实（配方）；推断（无需水洗）；未验证（EDTA 供体）",
+      "source_ids": ["S02", "S24"]
+    },
+    "c05_免洗真实程度": {
+      "text": "不适用：路线没有已核验的停止步骤，无法判定严格免洗、半干或名义免洗。没有显影步骤使其理论上接近严格免洗，但白区与成色两条底线未满足（见 c05_免洗核验）。若采用 S17 式光聚合固定，则需丙酮与乙腈洗涤去除未反应单体（S17 原文），不满足底线 1。",
+      "grade": "推断（依据 S02、S15、S16、S17）",
+      "label": "推断",
+      "source_ids": ["S02", "S15", "S16", "S17"]
+    },
+    "c06_停止机制": {
+      "text": "未找到已核验的天然停止机制（本轮检索范围内：PubMed 摘要级检索、Crossref 元数据、WebSearch 4 次；范围外未覆盖）。O2 与 H2O2 能使紫精自由基回氧化或使颜色擦除，属擦除而非停止：S15 为 O2 在电化学酶体系中的一般现象；S16 为 POM-紫精离子液体体系在 H2O2 氛围中 3 h 完全脱色（体系不同，外推到紫精纸基需标注）。候选：(a) 除去或钝化供体（需洗涤或封层，未验证；洗涤不满足底线 1）；(b) 光致聚合固定：苯乙烯基紫精在 UV 下于空气中聚合（S17，无需惰性气体），但 S17 使用 DMPA 光引发剂，并以丙酮与乙腈洗涤去除未反应单体，仅报告电致变色图形，未测白区与成色保存；DMPA 与苯乙烯的 SDS 未读（未验证）；(c) 主客体或 COF 包封（S13、S14）只延长自由基寿命，仍可逆；S12 摘要称 CNC/DES 凝胶可在有氧环境中支持长寿命紫精自由基（未量化，见 c14）。避光不算停止。红线核查：未涉及铁氰化物、重铬酸盐或碱性条件。",
+      "grade": "A（摘录级）+ 推断",
+      "label": "推断；未验证（候选 b 的安全数据与洗涤步骤）",
+      "source_ids": ["S12", "S13", "S14", "S15", "S16", "S17"]
+    },
+    "c07_白区稳定性": {
+      "text": "未知，且有反证。未曝光区在暗态与室内光下的长期数据缺失。S02 体系对环境敏感：70 °C 下可逆热致变绿（S02 摘要与正文图 11），NH3 低至 0.5 ppm 即在 598 nm 出现吸收（S02 原文，NH3(aq)）。因此『无光、无还原剂时热稳定』的推断不适用于该体系，白区环境稳定性应视为高风险。无色 V2+ 体系的暗态与室内光数据仍缺。缺：含供体涂层的白区吸光度在室内光与暗态下 30 天以上的变化，以及环境氨与温升暴露实验。",
+      "grade": "未知（S02 A 全文提供反证）",
+      "label": "未验证；对 S02 体系的热稳定推断被反驳",
+      "source_ids": ["S02"]
+    },
+    "c08_成色耐光": {
+      "text": "只报数据本身：S02 正文报告 100 s UV 照射后暗室放置、循环『without fatigue』，正文未报次数与吸光度数值；图 7 题注为 598 nm 与 430 nm 多次 UV/可见光循环的吸光度（图本身未读，数据未核对）。S02 摘要称『strong photostability』，为定性描述，无定量数据。无加速耐光数据。暗态回落本身是 c08 的主要问题（见 c03、c07）。",
+      "grade": "A",
+      "label": "事实（定性）；未读图 7",
+      "source_ids": ["S02"]
+    },
+    "c09_预涂货架期": {
+      "text": "出厂预涂：S02 为印涂干燥后的水凝胶涂层，未报储存与货架期。现涂：未报混合液寿命；含供体的混合液寿命未知（供体 EDTA 未证实）。缺：预涂膜避光 25 ℃ 下 0、30、90 天的成色与白区对比。",
+      "grade": "未知",
+      "label": "未验证",
+      "source_ids": ["S02"]
+    },
+    "c10_底材适配": {
+      "text": "纸基：S02 滤纸涂布后，拉伸强度与杨氏模量随紫精含量由 VP1 升至 VP6 上升，VP6 至 VP8 不再上升；仅涂粘结剂（VP0）即使相对空白纸使拉伸指数上升。颜色分布均匀（EDX 与 SEM，S02）。PVA/TCC 涂层在 95% RH 下两片接触后融合成整体并可承受 100 g（S02），提示湿敏与粘连风险。灰板与拼图底材、吸湿变形、干后拼合：未测。",
+      "grade": "A",
+      "label": "事实（纸基）；未验证（拼图底材）",
+      "source_ids": ["S02"]
+    },
+    "c11_安全与法规": {
+      "text": "甲基紫精二氯化物即百草枯（paraquat dichloride，CAS 1910-42-5，PubChem CID 15938；CID 15939 为 paraquat 相关记录，CAS 4685-14-7）。ECHA 汇总（CID 15938，236 份报告、12 份通报；括号为通报占比）：Signal Danger；H330（100%）、H372（99.6%）、H335（99.6%）、H311（83.5%）、H301+H311（72.5%）、H301（100%）、H315（100%）、H319（100%）、H400（100%）、H410（100%），另 H310（16.5%）、H290（13.6%）。CID 15939（28 份报告，1 份通报）：Signal Danger；H330、H372、H301+H311、H311、H335 等均 100%，并含 H290、H315、H319、H400、H410；另一组通报条目还列出 H314、H318。敌草快（CID 6795）：Signal Danger；H330（100%）、H372（100%），另含 H302、H317、H335 等 Warning 类（S05）。苄基紫精二氯化物（CID 14195，CAS 1102-19-8）：Signal Warning；H302、H312、H315、H319、H332（100%）、H335（97.4%）（S06）。大鼠口服 LD50 57 mg/kg（S07，B 级）；欧盟自 2007 年禁用（S07，B 级）。成人美术材料可达性（ASTM D-4236、LHAMA）未查（未验证）；含铅变体（S10）的铅限量需另评（推断）。",
+      "grade": "A（API，PubChem/ECHA 汇总）；B（百科）",
+      "label": "事实（分类通报）；未验证（法规可达性）",
+      "source_ids": ["S03", "S04", "S05", "S06", "S07", "S10"]
+    },
+    "c12_供应与成本": {
+      "text": "未知。本轮未读到可访问的价格或库存页（tcichemicals 返回 403；amazon 禁止访问，未读）。旧轮次称紫精盐仅为研究化学品（G8），本轮未核验。价格：未验证，未抓取（尝试日期 2026-11-01）。",
+      "grade": "未知",
+      "label": "未验证",
+      "source_ids": []
+    },
+    "c13_证据等级": {
+      "text": "关键主张 10 条（核查后）：(1) 1987 专利 EP0248907 背景陈述「discoloration proceeds within hours while consuming viologen」，A（专利背景陈述，非对照实验；核查证实原文），事实；(2) S02 暗态回落至原状，A（全文，核查证实），事实；(3) S02「without fatigue」为正文定性描述，图 7 有循环数据（未读图），A（全文），事实；(4) O2 再氧化 V•+，A（API，S15 为电化学酶体系摘要），一般事实，对 S02 体系为推断；(5) VCB COF 7 天 EPR 信号保留 72% 对 22%，A（全文，核查证实），事实，但为自由基信号而非颜色；(6) CNC 凝胶中自由基生成「fully reversible」，A（API，核查证实），事实；摘要另称氧保护环境支持长寿命自由基（未量化，列为 c14 线索）；(7) POM-MV 体系 2 年寿命，A（API，核查证实为作者声明），作者声明，未验证；(8) 苄基与甲基紫精的 ECHA 分级差异，A（API，核查证实），事实；(9) 甲基紫精含 H330、H372，A（API，核查证实），事实；(10) styrene 光聚合固定仅用于电致变色，A（全文，核查证实），事实，但该文同时报告了丙酮与乙腈洗涤步骤。另：EDTA 不可逆消耗（S24）降为未验证（页面 404，不可复现，等级 C）；PBB/sciepub 来源未核验（未验证）；S25、S26、S27 不可复现或不可读，未用于结论。",
+      "grade": "A（多数）；B（百科）；C（search-excerpt，不可复现者）",
+      "label": "事实为主；7 处标注未验证，8 处标注推断与体系边界",
+      "source_ids": ["S01", "S02", "S03", "S04", "S06", "S07", "S12", "S13", "S14", "S15", "S16", "S11", "S17", "S24"]
+    },
+    "c14_关键未知": {
+      "text": "最可能翻盘的两点：(1) 是否存在在空气与室内光下，颜色（非 EPR）保持数天以上、且停止时不擦除白区的紫精体系。目前最接近的两条线索：COF/CB[8] 包封（S13，只有 EPR 数据，无颜色数据）与 CNC/DES 凝胶（S12 摘要：氧保护环境支持长寿命紫精自由基，未给寿命数字与颜色数据）。两者都未给颜色数据。(2) POM 电荷分离体系（S11）作者声称 2 年寿命（摘要称 O 到 Mo 的电子转移伴随 colorless→blue），若属实则可能另开新路线，但其着色来源为钼氧簇（摘要支持的推断），须全文核验。",
+      "grade": "A（API）",
+      "label": "未验证",
+      "source_ids": ["S11", "S12", "S13"]
+    },
+    "c15_判别实验": {
+      "text": "在纸基与灰板涂层上做 UV 曝光后，分别置于暗室与室内光下，每 1 h 测 598 nm 吸光度，持续 72 h。24 h 内回落超过一半则淘汰成立；若 72 h 内回落不足 20%，则『成色留得住』假设未被证伪，转入停止实验。",
+      "grade": "—",
+      "label": "设计",
+      "source_ids": []
+    }
+  },
+  "c05_免洗核验": {
+    "验收": {
+      "1_喷后免洗": "? 无显影步骤，理论上可免洗；但没有已核验的停止喷剂，无法判定。若采用 S17 式光聚合固定，需丙酮与乙腈洗涤（S17 原文），则 ✗（不满足底线 1）",
+      "2_白区停得住": "? 倾向 ✗（对 S02 类体系）：未曝光区为橙色（430 nm），非白色；S02 报告 70 °C 下可逆热致变绿，NH3 低至 0.5 ppm 即在 598 nm 出现吸收（S02 原文，A 全文）。无色 V2+ 体系的白区暗态稳定性仍无数据。",
+      "3_成色留得住": "✗ 暗态回落至原状（S02，A 全文，单一体系）；1987 专利背景陈述称数小时内消色并消耗紫精（S01）；EPR 级稳定化（S13、S12）未给颜色保存数据。",
+      "4_少量喷液": "? 无停止喷剂方案；若用 H2O2 或空气停止，会擦除已成色区（S16 为 POM-紫精体系，外推需标注；S15 为 O2 回氧化的一般现象）。",
+      "5_底材不变形": "? 纸基涂布后拉伸强度与杨氏模量随紫精含量（VP1 至 VP6）上升（S02）；PVA/TCC 涂层在 95% RH 下两片粘连成整体（S02），湿敏风险。灰板与拼图板未测。",
+      "6_安全前置": "✗（甲基紫精二氯化物即百草枯，及敌草快）：ECHA 汇总含 H330（吸入致命，100%）与 H372（S03、S04、S05）；苄基紫精二氯化物为 Warning 级（S06：H302、H312、H315、H319、H332、H335），ASTM D-4236 / LHAMA 未查，不能一概而论。"
+    },
+    "说明": "本路线无已核验的停止步骤，c05 类型判为「不适用」。六条底线中 3 与 6 明确不达标（3 基于 S02 单一体系；6 基于甲基类），1 与 2 倾向不达标（1 依赖停止方案是否洗涤；2 对 S02 类体系倾向 ✗），4、5 为未知而非通过。安全前置的不达标结论只适用于甲基紫精（百草枯）与敌草快类，苄基类需按 LHAMA/ASTM 另评。"
+  },
+  "verdict": {
+    "status": "淘汰",
+    "reasons": [
+      "G3 成色留得住失败（主要依据）：S02 全文显示 UV 生成的 598 nm 吸收在暗态回落至原状（A 全文）。这是 S02 单一纸基聚合物体系的证据，不能外推到所有紫精体系。",
+      "无已核验的停止机制：在本轮检索范围内未找到不擦除白区、免洗且可停止成色的方案；O2 与 H2O2 能擦除而非停止（S15 为一般现象，S16 为 POM-紫精体系外推，需标注）。",
+      "稳定化的体系仍可逆或只有 EPR 数据：COF/CB[8] 包封（S13、S14）与 CNC/DES 凝胶（S12）均未给出颜色留存数据。",
+      "光聚合固定（S17）确实能产生图形，但其洗涤步骤不满足免洗底线，且光引发剂 DMPA 与溶剂的安全性未核验；因此淘汰理由是底线 1 与安全，而非『不成像』。",
+      "白区环境敏感（新增）：S02 体系未曝光区为橙色，且对 70 °C 热致变色与 NH3 低至 0.5 ppm 有响应，进一步不利于白区底线。",
+      "毒性：甲基紫精（百草枯）与敌草快为 Danger 级（H330、H372）；苄基类为 Warning 级（S06）。G7 失败仅对甲基类与敌草快类成立，不能一概套用到全部紫精。"
+    ],
+    "red_line_hits": [
+      "未直接命中三条化学红线（铁氰化物/HCN、重铬酸盐、普鲁士蓝遇碱）；全文未出现铁氰化钾或亚铁氰化钾，不存在混写问题。第四项（家庭或车库现实安全）见下。",
+      "家庭或车库通风条件下，甲基紫精类（百草枯）含 H330（吸入致命）与 H372，现实安全性不通过（推断）。",
+      "含铅的 perovskite-like 变体（S10，(AeBpy)2Pb3Cl10）需评估铅含量，未核验限量（推断）。"
+    ]
+  },
+  "baseline_challenges": [
+    {
+      "round": "轮5（notes/H-viologen.md）",
+      "old_claim": "紫精光还原机理，以 spj.science.org 综述与 RSC 2023 光刻论文为依据",
+      "agree": "部分同意",
+      "my_evidence": "机理同意（S02、S14，A 全文）。RSC 2023 论文（S17）实为苯乙烯光聚合图形化，用于电致变色，不支持光致变色成色机理（核查证实）；spj 综述未找到（见负结果）。",
+      "strength": "机理：中；引用：弱"
+    },
+    {
+      "round": "轮5",
+      "old_claim": "纸上 UV 可逆变色（MDPI Sensors 2024 / PMC11548534）",
+      "agree": "同意（附条件）",
+      "my_evidence": "S02 全文证实纸基紫精聚合物涂层 UV 变色且暗态回落（核查证实）。但该体系未曝光区为橙色（430 nm）而非无色，曝光后为橙→绿双色切换；'可逆' 指暗态回落到原状，不是颜色保留；S02 同时报告 70 °C 热致变色与 NH3 0.5 ppm 响应。",
+      "strength": "强（对该体系）；外推：弱"
+    },
+    {
+      "round": "轮5",
+      "old_claim": "EP 0248907：数小时内消色，紫精无法长期或反复使用（旧引用 data.epo.org）",
+      "agree": "部分同意",
+      "my_evidence": "S01 经 patents.google.com 全文核验，原句为 discoloration proceeds within hours while consuming viologen（核查证实）。这是 1987 年申请人的背景陈述，未报对照条件。『in principle』的全面否定被 2017 至 2026 年的主客体与凝胶稳定化数据（S12、S13、S14）削弱，应改为『非包封的游离紫精在空气中数小时消色（背景陈述）』。",
+      "strength": "专利陈述：中（A，背景陈述）；过度概括：弱"
+    },
+    {
+      "round": "轮5",
+      "old_claim": "EDTA 不可逆消耗（PBB 光电化学池，sciepub）",
+      "agree": "未验证（原『部分同意』降级）",
+      "my_evidence": "核查：S24 指定 URL 返回 404 页面，EDTA 与 proflavine 文字未找到；sciepub 检索无结果；PBB 光电化学池未核验。该主张降为未验证，等级不高于 C。",
+      "strength": "无（不可复现）"
+    },
+    {
+      "round": "轮5",
+      "old_claim": "自由基仍会二聚或褪色，即使供体被不可逆消耗",
+      "agree": "同意",
+      "my_evidence": "S18（Small 2023）摘要：irreversible aggregation of free radical viologens（核查证实）；S19（Nat Nanotechnol 2021）：σ-(MV+)2 二聚体（核查证实）；S01 亦记载消耗紫精。",
+      "strength": "中（API 摘要，核查证实）"
+    },
+    {
+      "round": "轮5",
+      "old_claim": "未找到不可逆成像体系（负结果）",
+      "agree": "同意（范围限定）",
+      "my_evidence": "PubMed 与 Crossref 检索（见负结果）未发现不可逆成像体系；S17 的固定属于电致变色图形化，并需洗涤。本轮检索覆盖面有限，只读了摘要与标题，未重跑检索。",
+      "strength": "中"
+    },
+    {
+      "round": "轮5",
+      "old_claim": "紫精为百草枯类似物，毒性旗，G7 红灯",
+      "agree": "反驳（措辞）；部分同意（范围）",
+      "my_evidence": "甲基紫精二氯化物即百草枯（PubChem CID 15938，CAS 1910-42-5），是同一物质，不是类似物。甲基类（S03、S04）与敌草快（S05）为 Danger 级、含 H330 与 H372；苄基紫精二氯化物（S06）为 Warning 级（H302、H312、H332）。毒性结论只适用于甲基类，不能一概而论。",
+      "strength": "强（PubChem/ECHA 汇总，API）；类比范围：中"
+    },
+    {
+      "round": "轮5",
+      "old_claim": "G8：无现成成品，仅研究化学品",
+      "agree": "未验证",
+      "my_evidence": "本轮未读到可访问的价格或供应页（TCI 403，未读 Sigma 与其他供应商），无法核验。",
+      "strength": "无"
+    },
+    {
+      "round": "轮5",
+      "old_claim": "裁定 FAIL：G3 被专利文献否定（数小时消色）",
+      "agree": "同意结论，修正依据",
+      "my_evidence": "淘汰结论成立，但依据应以 S02 暗态回落（A 全文）为主，专利 S01 只作旁证（背景陈述）。另须补充：S17 光聚合固定需洗涤，不满足免洗；S02 体系的白区对热与 NH3 敏感。『数小时』不能当作所有紫精体系的上限（S13 的 7 天 EPR 数据不是颜色数据）。",
+      "strength": "强"
+    }
+  ],
+  "sources": [
+    {"id": "S01", "title": "EP0248907A1 Photochromic material, photochromic element and method of recording and erasing data（Osaka Cement / Shimadzu / Research Development Corp of Japan）", "url": "https://patents.google.com/patent/EP0248907A1/en", "type": "patent", "access": "curl全文（patents.google.com，核查 2026-11-01）", "date": "公开 1987-12-16（申请 1986-11-06，JP 优先权 1985-11-06）", "quote": "discoloration proceeds within hours.while consuming viologen（背景陈述，核查证实）"},
+    {"id": "S02", "title": "Multi-Stimuli Responsive Viologen-Imprinted PVA and Tricarboxy Cellulose Nanocomposite Hydrogels（Sensors 2024, PMC11548534）", "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11548534/", "type": "paper", "access": "curl全文（eutils efetch XML，核查 2026-11-01）", "date": "2024-10-25（DOI 10.3390/s24216860）", "quote": "returned to its pre-irradiated condition after ultraviolet irradiation；unexposed layer orange (430 nm)；NH3 0.5 ppm 出现 598 nm；70 °C reversibly initiate colour change（核查证实）"},
+    {"id": "S03", "title": "PubChem CID 15938 Paraquat dichloride GHS 分类（ECHA C&L 汇总，236 份报告）", "url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug_view/data/compound/15938/JSON?heading=GHS+Classification", "type": "database", "access": "API（PubChem pug_view，核查 2026-11-01）", "date": "读取 2026-11-01", "quote": "Signal Danger；H330（100%）、H372（99.6%）、H335（99.6%）、H311（83.5%）、H301+H311（72.5%）等（补全后）"},
+    {"id": "S04", "title": "PubChem CID 15939 Paraquat GHS 分类（ECHA C&L 汇总，28 份报告，1 份通报）", "url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug_view/data/compound/15939/JSON?heading=GHS+Classification", "type": "database", "access": "API（PubChem pug_view，核查 2026-11-01）", "date": "读取 2026-11-01", "quote": "H330 (100%): Fatal if inhaled [Danger]；H372 (100%)；H301+H311 (100%)；Signal Danger"},
+    {"id": "S05", "title": "PubChem CID 6795 Diquat GHS 分类", "url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug_view/data/compound/6795/JSON?heading=GHS+Classification", "type": "database", "access": "API（PubChem pug_view，核查 2026-11-01）", "date": "读取 2026-11-01", "quote": "H330 (100%): Fatal if inhaled；H372 (100%)；Signal Danger"},
+    {"id": "S06", "title": "PubChem CID 14195（4,4'-Bipyridinium, 1,1'-dibenzyl-, dichloride）GHS 分类", "url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug_view/data/compound/14195/JSON?heading=GHS+Classification", "type": "database", "access": "API（PubChem pug_view，核查 2026-11-01）", "date": "读取 2026-11-01", "quote": "H302、H312、H315、H319、H332（100%）；H335（97.4%）；Signal Warning"},
+    {"id": "S07", "title": "Paraquat（Wikipedia 英文条目，含 LD50 与欧盟禁用信息）", "url": "https://en.wikipedia.org/wiki/Paraquat", "type": "encyclopedia", "access": "curl全文（核查 2026-11-01）", "date": "读取 2026-11-01", "quote": "LD50 = 57 mg/kg (rat, oral)；paraquat has been banned in the European Union since 2007"},
+    {"id": "S08", "title": "Viologen（Wikipedia 英文条目）", "url": "https://en.wikipedia.org/wiki/Viologen", "type": "encyclopedia", "access": "curl全文（核查 2026-11-01）", "date": "读取 2026-11-01", "quote": "Viologens have been commercialized as electrochromic systems because of their highly reversible and dramatic change of color"},
+    {"id": "S09", "title": "Counteranion-Regulated Thermo-, Photo-, and Electrochromism in Viologen-Based Crystalline Solids（Inorg Chem 2026）", "url": "https://pubmed.ncbi.nlm.nih.gov/42372123/", "type": "paper", "access": "API（本轮未核查）", "date": "2026（DOI 10.1021/acs.inorgchem.6c02858）", "quote": "crystal-packing-mediated radical stabilization（未核查）"},
+    {"id": "S10", "title": "Water-Operable Photochromic Perovskite-Like Materials for Rewritable Anti-Counterfeiting and Display（Chemistry 2026，含 Pb）", "url": "https://pubmed.ncbi.nlm.nih.gov/42076919/", "type": "paper", "access": "API（PubMed efetch XML，核查 2026-11-01）", "date": "2026（Chemistry 32(27)，DOI 10.1002/chem.71107；研究稿原 DOI 10.1002/anie.202520855 有误）", "quote": "complete thermal decoloration achieved at 160°C within 10 min（核查证实）"},
+    {"id": "S11", "title": "Photochromic Molybdate for Advancing Anode Capacity of Lithium-Ion Battery（Adv Sci 2026，MV[Mo9O28]）", "url": "https://pubmed.ncbi.nlm.nih.gov/41319300/", "type": "paper", "access": "API（PubMed efetch XML，核查 2026-11-01）", "date": "2026（DOI 10.1002/advs.202519866）", "quote": "ultra-stable charge-separated state with a lifetime of up to 2 years under ambient conditions（作者声明，核查证实）；electron transfer from O to Mo"},
+    {"id": "S12", "title": "Cellulose nanocrystal gels as radical reservoirs（Nanoscale 2026）", "url": "https://pubmed.ncbi.nlm.nih.gov/42132907/", "type": "paper", "access": "API（PubMed efetch XML，核查 2026-11-01）", "date": "2026（DOI 10.1039/d6nr00599c）", "quote": "viologen radical formation is fully reversible and coupled to optical and mechanical responses；oxygen-resistant environment ... long-lived viologen radicals（核查证实）"},
+    {"id": "S13", "title": "Mechanically Interlocked Double-Walled COF with Cucurbit[8]Uril-Stabilized Viologen Radical Dimers（JACS 2026，DOI 10.1021/jacs.6c01520）", "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13449948/", "type": "paper", "access": "curl全文（eutils efetch XML，核查 2026-11-01）", "date": "2026-07-23", "quote": "VCB retains over 72% of its radical signal after 7 days of air exposure, compared to just 22%（核查证实；TpV loses approximately 78%）"},
+    {"id": "S14", "title": "Reversible 2D Supramolecular Organic Frameworks encompassing Viologen Cation Radicals and CB[8]（Sci Rep 2018）", "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5778010/", "type": "paper", "access": "curl全文（eutils efetch XML，核查 2026-11-01）", "date": "2018-01-22（DOI 10.1038/s41598-018-19739-7）", "quote": "depolymerized by oxidation in air and again can be polymerized by reduction under inert atmosphere（核查证实）"},
+    {"id": "S15", "title": "Efficient and Selective Electrochemically Driven Enzyme-Catalyzed Reduction of CO2 to Formate（Acc Chem Res 2019）", "url": "https://pubmed.ncbi.nlm.nih.gov/30741524/", "type": "paper", "access": "API（PubMed efetch XML，核查 2026-11-01）", "date": "2019（DOI 10.1021/acs.accounts.8b00551）", "quote": "avoiding the adventitious reoxidation of the methyl viologen radical cation by molecular oxygen（核查证实；电化学酶催化语境）"},
+    {"id": "S16", "title": "Multi-stimulus responsive polyoxometalate-viologen hybrid ionic liquids for rewritable inkless printing and environmental monitoring（RSC Advances 2025，DOI 10.1039/d5ra05884h）", "url": "https://pubmed.ncbi.nlm.nih.gov/41140505/", "type": "paper", "access": "API（PubMed efetch XML，核查 2026-11-01）", "date": "2025（RSC Adv；研究稿所称 DOI 与期刊不一致未复现）", "quote": "Exposure to an H2O2 atmosphere for 3 hours resulted in the complete decolorization of C12-PMo12（POM-紫精离子液体体系）"},
+    {"id": "S17", "title": "Photolithographic patterning of viologens containing styrene groups（RSC Adv 2023，DOI 10.1039/d3ra02287k）", "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10230511/", "type": "paper", "access": "curl全文（eutils efetch XML，核查 2026-11-01）", "date": "2023-05-31", "quote": "polymerization occurred only in places that were irradiated ...；formation of polymer observed under normal atmosphere；washed with acetone and acetonitrile to remove unreacted monomers（核查证实）"},
+    {"id": "S18", "title": "Synergistic Interaction of Dual-Polymer Networks Containing Viologens-Anchored Poly(ionic liquid)s（Small 2023）", "url": "https://pubmed.ncbi.nlm.nih.gov/37140104/", "type": "paper", "access": "API（PubMed efetch XML，核查 2026-11-01）", "date": "2023（DOI 10.1002/smll.202301742）", "quote": "irreversible aggregation of free radical viologens；blue, green, and magenta colors（核查证实；EC 语境）"},
+    {"id": "S19", "title": "Nanoparticle surfactants for kinetically arrested photoactive assemblies（Nat Nanotechnol 2021）", "url": "https://pubmed.ncbi.nlm.nih.gov/34475556/", "type": "paper", "access": "API（PubMed efetch XML，核查 2026-11-01）", "date": "2021（DOI 10.1038/s41565-021-00949-6）", "quote": "formation of elusive σ-(MV+)2 dimeric species（核查证实）"},
+    {"id": "S20", "title": "A photochromic Zn(II) coordination polymer for amine, Fe3+, and Al3+ sensing and rewritable patterns（2025）", "url": "https://pubmed.ncbi.nlm.nih.gov/41274029/", "type": "paper", "access": "API（本轮未核查）", "date": "2025（DOI 10.1016/j.saa.2025.127224）", "quote": "patterns that fade within minutes upon water vapor exposure（未核查）"},
+    {"id": "S21", "title": "Organic solid photochromism via a photoreduction mechanism. Photochromism of viologen crystals（Chem Commun 1985，仅元数据）", "url": "https://api.crossref.org/works/10.1039%2Fc39850000525", "type": "metadata", "access": "API（Crossref 元数据，无摘要；pubs.rsc.org 403 未读）", "date": "1985", "quote": "题名级证据，未读全文"},
+    {"id": "S22", "title": "Correlation between crystal structure and color fading in the solid-state photochromism of viologen derivatives（Struct Chem 2026，仅元数据）", "url": "https://api.crossref.org/works/10.1007%2Fs11224-026-02723-7", "type": "metadata", "access": "API（Crossref 元数据，无摘要）", "date": "2026-01-17", "quote": "题名级证据：固态紫精褪色被单独研究，未读全文"},
+    {"id": "S23", "title": "Colorimetric determination of trace levels of oxygen in gases with the photochemically generated methyl viologen radical-cation（Anal Chem 1967，仅元数据）", "url": "https://api.crossref.org/works/10.1021%2Fac60252a033", "type": "metadata", "access": "API（Crossref 元数据，无摘要）", "date": "1967-07-01", "quote": "题名级证据：甲基紫精自由基与 O2 反应是分析基础，未读全文"},
+    {"id": "S24", "title": "Wuppertal 博士论文页与 proflavine-EDTA-MV 光电化学文献（检索摘录，未能复现）", "url": "https://chemiedidaktik.uni-wuppertal.de/en/workgroup/doctoral-theses/maria-heffen/", "type": "search-excerpt", "access": "搜索摘录；核查：指定 URL 2026-11-01 返回 404 页面，未找到原句，降为未验证（等级 C）", "date": "检索日 2026-11-01", "quote": "（未能复现）EDTA is irreversibly consumed during irradiation, whereas proflavine goes through many turnovers"},
+    {"id": "S25", "title": "Stabilizing benzyl viologen radical cation by cucurbit[7]uril rotaxanation（Dyes Pigments 2017，检索摘录）", "url": "https://www.sciencedirect.com/science/article/abs/pii/S0143720816313523", "type": "search-excerpt", "access": "搜索摘录；核查：页面文本不含 viologen，未能复现；未用于结论", "date": "2017-10", "quote": "（未能复现）R3 radical cation formed under reductive conditions shows good stability（还原稳定性，非空气半衰期）"},
+    {"id": "S26", "title": "A Universal Strategy for Reversible Photochromism of Viologen Derivatives in Solutions（Adv Opt Mater 2024，来源难以确认的摘录）", "url": "https://advanced.onlinelibrary.wiley.com/doi/abs/10.1002/adom.202401791", "type": "search-excerpt", "access": "搜索摘录；核查：Cloudflare 人机验证页，不可读，未绕过；未用于结论", "date": "2024", "quote": "（未能复现）adding triethylamine as an electron donor enables reversible photochromism of viologen derivatives（转引摘录）"},
+    {"id": "S27", "title": "Inverse photochromism in viologen-tetraarylborate ion-pair complexes: optical write/microwave erase switching in polymer matrices（RSC Mater Adv，仅题名）", "url": "https://pubs.rsc.org/ma/article/3/9/3862/731578/Inverse-photochromism-in-viologen-tetraarylborate", "type": "search-excerpt", "access": "搜索摘录；核查：Cloudflare 人机验证页，不可读，未绕过；仅题名", "date": "未核实", "quote": "（未能复现）题名级证据，未读全文"}
+  ],
+  "negative_findings": [
+    {"query": "PubMed esearch: viologen[TIAB] AND (photochromic OR photochromism)[TIAB]，129 条命中", "scope": "按相关度取前 40 条，读取标题与摘要（2021 至 2026 年）；本核查未重跑检索", "result": "未发现不可逆或永久成像体系；所有摘要均描述可逆、可擦除或可重写（如 S20、S16、S12）。"},
+    {"query": "PubMed esearch: viologen AND (oxygen OR irreversible OR fatigue) AND (radical OR photoreduction)，74 条命中", "scope": "读取前 25 条摘要；本核查未重跑检索", "result": "未发现成像应用；发现 O2 再氧化（S15）、不可逆聚集（S18）、σ 二聚（S19）。"},
+    {"query": "Crossref query.bibliographic：viologen photochromism irreversible solid state；viologen photoreduction oxygen reoxidation radical cation fading", "scope": "各 8 条元数据，无摘要", "result": "标题多为 erasable、reversible、solid-state fading，未见不可逆图像；ACS、Elsevier 与 RSC 条目无摘要，未读全文。"},
+    {"query": "Crossref query.bibliographic：viologen photolithographic patterning paper", "scope": "8 条元数据", "result": "无紫精光刻条目；2023 年 RSC 论文改由 WebSearch 与 PMC 定位（S17）。"},
+    {"query": "WebSearch #1（额度 1/4）：viologen photoreduction photochromic irreversible permanent image paper photolithographic patterning 2023", "scope": "搜索摘录", "result": "未发现永久光致变色成像纸；最接近的是 RSC 2023 苯乙烯光聚合（电致变色）与 ZnO/紫精可逆纸（J Mater Chem C 2023，摘录，未读全文）。"},
+    {"query": "WebSearch #2（额度 2/4）：viologen photogalvanic cell EDTA sacrificial donor irreversible photoreduction sciepub", "scope": "搜索摘录", "result": "检索结果中无 sciepub 页面；PBB 光电化学池说法未核验。EDTA 不可逆消耗的支持（S24）在核查时不可复现。"},
+    {"query": "WebSearch #3（额度 3/4）：spj.science.org viologen photochromism review radical cation reversible irreversible", "scope": "搜索摘录", "result": "无 spj.science.org 结果；旧笔记引用的 spj 综述未找到，未验证。"},
+    {"query": "WebSearch #4（额度 4/4）：stabilizing benzyl viologen radical cation cucurbit[7]uril rotaxanation half-life air stability", "scope": "搜索摘录", "result": "未找到 CB[7] 体系的空气半衰期；Dyes Pigments 2017 全文（ScienceDirect）未读，核查时页面不含 viologen 文本（S25 未能复现）。"},
+    {"query": "Crossref query.bibliographic：photogalvanic cell viologen EDTA sacrificial donor（首次 429，重试 200）", "scope": "6 条元数据", "result": "命中物为 phenosafranine-EDTA、FMN-EDTA 等，未找到 PBB 紫精光电化学池论文。"},
+    {"query": "pubs.rsc.org 1985 Chem Commun（10.1039/c39850000525）；Crossref dyepig.2017.02.042", "scope": "单次读取", "result": "RSC 页面 403，未绕过；Crossref 请求 400，未取得摘要。两者均记为未读。"},
+    {"query": "PubChem name: heptyl viologen", "scope": "单次查询", "result": "404，无 CID，未能比较庚基紫精。（S08 提及 N-heptyl viologen 用于部分电致变色应用，未涉及成像。）"},
+    {"query": "价格与供应（紫精盐）", "scope": "未读任何可读价格页（tcichemicals 403；amazon 禁止访问）", "result": "未验证，未抓取价格。"},
+    {"query": "ASTM D-4236 / LHAMA 与紫精的可达性", "scope": "本轮未检索", "result": "未查，记为未验证。"},
+    {"query": "核查（2026-11-01）：curl 复核 S24、S25、S26、S27 与 PMID 41140505、42076919 元数据", "scope": "6 个页面或记录", "result": "S24 为 404；S25 无 viologen 文本；S26、S27 为 Cloudflare 人机验证页（不可读，未绕过）；PMID 41140505 的期刊（RSC Adv）与 DOI（10.1039/d5ra05884h）一致；PMID 42076919 的文章 DOI 为 10.1002/chem.71107，研究稿所列 DOI 有误。"},
+    {"query": "核查（2026-11-01）：全文 grep 铁氰化钾、亚铁氰化钾、重铬酸盐、普鲁士蓝、碳酸盐", "scope": "研究稿 json 与 md 全文", "result": "未出现相关表述，红线项未命中，无混写问题。"}
+  ],
+  "key_unknowns": [
+    "空气与室内光下，颜色（非 EPR 自由基信号）能保持数天以上的紫精体系是否存在；目前 COF/CB[8] 包封（S13）只有 EPR 数据，CNC/DES 凝胶（S12）只有摘要级『长寿命』描述。",
+    "能否找到不擦除白区、又能停止成色反应的方法（O2、H2O2 都会擦除；光聚合固定只见于电致变色场景，且需洗涤，S17）。",
+    "S02 类纸基聚合物体系对热（70 °C）与环境 NH3（0.5 ppm）的敏感性，能否通过封装消除；白区在室内氨环境下的稳定性未测。",
+    "POM-MV 电荷分离体系（S11）的 2 年寿命是否属实，且着色来源是否确实是钼氧簇而非紫精（需全文）。",
+    "苄基或庚基等非甲基紫精在成人美术材料法规下的可达性（ASTM D-4236、LHAMA 未查）。",
+    "含铅 perovskite-like 紫精（S10）若要用，铅含量的限量是否可满足（未查）。"
+  ],
+  "discriminating_experiment": {
+    "one_liner": "在纸基与灰板涂层上做 UV 曝光后，分别置于暗室与室内光下，每 1 h 测 598 nm 吸光度，持续 72 h；24 h 内回落超过一半则淘汰成立；若 72 h 内回落不足 20%，则『成色留得住』假设未被证伪，转入停止实验。",
+    "design_sketch": "材料：苄基紫精二氯化物（甲基紫精作对照，仅限通风橱内操作，H330 物质，不宜家庭实验），溶于 PVA/TCC 水凝胶（参照 S02 配方，先不加 EDTA，因其未证实），涂布在滤纸与灰板。曝光：UV 灯（波长与辐照度需先实测，S02 未报），100 s 与 1800 s 两个梯度，记录光源功率与剂量。对照：未曝光白区、H2O2 与空气两种『停止』处理。读数：598 nm 吸光度与色坐标，每 1 h 一次，持续 72 h。判据：24 h 内回落超过一半，或停止处理后白区同时变色，则淘汰成立；若 72 h 内回落不足 20% 且白区不变色，转入停止实验。同时用 EPR 复核自由基信号，区分『颜色消失』与『自由基消失』。"
+  },
+  "new_routes_spotted": [
+    {"name": "多金属氧酸盐-紫精（POM）电荷分离光致变色", "why": "S11 摘要称 MV[Mo9O28] 光照后形成电荷分离态，伴随 O→Mo 电子转移，作者声称环境下寿命达 2 年；着色来源疑为钼氧簇（摘要支持的推断），若属实与紫精路线不同，但需全文核验。S16 显示 POM-紫精离子液体可被 H2O2 完全脱色，说明其可逆性。", "lead_url": "https://pubmed.ncbi.nlm.nih.gov/41319300/"},
+    {"name": "紫精-四芳基硼酸盐离子对：光写入与微波擦除", "why": "S27 仅题名可见（核查时页面不可读），题名显示写入态在聚合物基体中可由微波擦除，写入态存留时间未知。未能复核，降为未验证线索。", "lead_url": "https://pubs.rsc.org/ma/article/3/9/3862/731578/Inverse-photochromism-in-viologen-tetraarylborate"},
+    {"name": "苯乙烯基紫精光聚合固定（需洗涤）", "why": "S17 显示 UV 在空气中可使苯乙烯紫精聚合并固定图形，但需丙酮与乙腈洗涤去除未反应单体，并使用 DMPA 光引发剂；本轮只见电致变色用途，未测光致变色成色保存与安全性（DMPA、苯乙烯的 SDS 未读）。不满足免洗底线，仅作为备选记录。", "lead_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10230511/"},
+    {"name": "CNC/DES 凝胶中氧保护的紫精自由基（新增）", "why": "S12 摘要称 DES 形成的氧保护环境支持有氧条件下长寿命紫精自由基，并可产生光响应；寿命与颜色保存数据未量化，需全文核验。与 c14 的 COF/CB[8] 线索并列为最接近的稳定化候选。", "lead_url": "https://pubmed.ncbi.nlm.nih.gov/42132907/"}
+  ],
+  "search_budget_used": {
+    "websearch": 4,
+    "curl_reads": 45,
+    "verifier_websearch": 0,
+    "verifier_curl_reads": 27
+  },
+  "reconciliation_log": [
+    {"item": "c02 『未曝光区为无色 V2+』", "change": "改为：S02 体系未曝光区为橙色（430 nm）；『无色』仅适用于简单紫精", "why": "S02 原文：faint absorption at 430 nm corresponds to the printed orange hue"},
+    {"item": "c02 『单色相』", "change": "改为：S02 为橙→绿双色切换；单色相需另找体系", "why": "S02 摘要：orange layer switched to green"},
+    {"item": "c08 『无次数与吸光度数据』", "change": "改为：正文未报次数；图 7 为多次循环吸光度图（未读图）", "why": "S02 图 7 题注：Reversibility of absorbance over numerous cycles"},
+    {"item": "c08 光致稳定性", "change": "补入 S02 摘要『strong photostability』为定性描述、无定量数据", "why": "S02 摘要原文"},
+    {"item": "c01 O2 再氧化作为 S02 事实", "change": "对 S02 体系改为推断；O2 一般现象仅由 S15 摘要支持", "why": "S02 全文未讨论 O2"},
+    {"item": "c01、c04、c09 EDTA 供体", "change": "降为未验证；反离子与环境 NH3 为 S02 支持的电子来源", "why": "S02 全文无 EDTA；S24 指定页面 404"},
+    {"item": "c07 『热稳定』推断", "change": "反驳并改写：S02 体系 70 °C 可逆热致变绿", "why": "S02 摘要与图 11"},
+    {"item": "c07 白区环境敏感性（缺失）", "change": "补入 NH3 0.5 ppm 出现 598 nm 吸收的证据，白区风险升高", "why": "S02 原文 NH3(aq) 0.5–300 ppm 梯度"},
+    {"item": "c10 『拉伸指数随紫精含量上升』", "change": "改为拉伸强度与杨氏模量随 VP1 至 VP6 上升；VP6 至 VP8 不再上升", "why": "S02 原文 3.3 节"},
+    {"item": "c06 『没有可用的天然停止机制』", "change": "限定为本轮检索范围内未找到已核验的停止机制", "why": "绝对否定未附搜索范围；本核查未重跑检索"},
+    {"item": "c06 『O2 与 H2O2 回氧化擦除成色』", "change": "标注 S16 为 POM-紫精离子液体体系，擦除机制未核验", "why": "S16 摘要未给 V•+ 机制"},
+    {"item": "c06 候选 (b) 光聚合固定条件", "change": "补入丙酮与乙腈洗涤步骤，判为不满足底线 1；DMPA 的 SDS 未读", "why": "S17 原文 washed with acetone and acetonitrile"},
+    {"item": "verdict.reasons 4 『固定路线不成像』", "change": "删除『不成像』，改为淘汰理由：洗涤（免洗）与安全未核验", "why": "S17 确实产生图形（photomask 图案），只是用途为电致变色"},
+    {"item": "c05 1 与 2 的标记", "change": "1 注明洗涤方案下 ✗；2 对 S02 类体系倾向 ✗", "why": "S17 洗涤；S02 橙色底色与热、氨敏感"},
+    {"item": "c11 CID 15938 H 码列表", "change": "补全 H372、H335、H311、H301+H311、H310、H290 及通报占比", "why": "PubChem ECHA 汇总（236 份报告）"},
+    {"item": "c11 CID 14195 H 码", "change": "补入 H335（97.4%）", "why": "PubChem pug_view"},
+    {"item": "c11 CID 15939 与敌草快 H 码", "change": "补全子集，注明 H314、H318 出现于其他通报条目", "why": "PubChem pug_view"},
+    {"item": "baseline 第 7 条『紫精为百草枯类似物』", "change": "改为同一物质；毒性结论仅适用于甲基类", "why": "PubChem CID 15938 Paraquat dichloride，CAS 1910-42-5"},
+    {"item": "S10 DOI 与期刊", "change": "改为 DOI 10.1002/chem.71107，期刊 Chemistry（2026，卷 32，期 27）", "why": "PubMed 42076919 记录"},
+    {"item": "negative_findings：PMID 41140505 期刊与 DOI 不一致", "change": "删除该数据质量备注（本次记录一致）", "why": "PubMed efetch：RSC Adv，10.1039/d5ra05884h"},
+    {"item": "S24 EDTA 不可逆消耗（A 摘录级）", "change": "降为未验证，等级 C；c13、baseline 第 4 条同步", "why": "指定 URL 404，未找到原句"},
+    {"item": "S25 CB[7] 还原稳定性（搜索摘录）", "change": "降为未验证；不用于结论", "why": "页面无 viologen 文本"},
+    {"item": "S26、S27 搜索摘录", "change": "标注不可读（Cloudflare 人机验证），降为未验证；new_routes 第 2 条降为线索", "why": "页面不可读，未绕过"},
+    {"item": "c13 证据等级汇总", "change": "逐条标注核查结果；S17 洗涤步骤与 S02 图 7 注记入", "why": "核查结果"},
+    {"item": "c14 关键未知", "change": "补入 S12 氧保护凝胶线索，并注明两条线索均缺颜色数据", "why": "S12 摘要"},
+    {"item": "c15 判别实验判据", "change": "修正逻辑方向：24 h 回落超过一半则淘汰成立；回落不足 20% 转入停止实验；甲基类限通风橱内", "why": "原文『证伪、淘汰成立』表述相反"},
+    {"item": "new_routes 新增 CNC/DES 氧保护凝胶", "change": "新增一条线索，需全文核验", "why": "S12 摘要"},
+    {"item": "verdict 裁定", "change": "状态保持『淘汰』；理由重组为 G3（S02 单一体系）、无已核验停止（范围内）、白区环境敏感、洗涤与安全、甲基类毒性", "why": "核查后更保守的一方（淘汰）；未发现使裁定翻转的证据"}
+  ]
+}

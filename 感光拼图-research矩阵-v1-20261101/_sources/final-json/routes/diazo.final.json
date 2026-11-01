@@ -1,0 +1,739 @@
+{
+  "key": "diazo",
+  "name_zh": "重氮晒图（whiteprint）",
+  "name_en": "diazo / whiteprint (diazonium salt + coupler, ammonia or alkaline development)",
+  "status": "淘汰",
+  "read_date": "2026-11-01",
+  "verified_date": "2026-11-01",
+  "revision_note": "核查后修订版；结构同 research.json，新增 reconciliation_log。逐条核查结果见 diazo.verify.json。",
+  "columns": {
+    "c01_机制": {
+      "text": "光化学：UV 使曝光区的重氮盐（ArN2+）光解：ArN2+ + hν → Ar+ + N2，随后 Ar+ + H2O → ArOH + H+，生成酸（S02 式 3–4）。未曝光区的重氮盐在酸性条件下被抑制偶合；显影时氨蒸气中和酸，残留重氮盐与偶合剂发生偶氮偶合，生成偶氮染料，形成直接正像（线条显色、底白）（S02；S03 §1）。",
+      "grade": "A",
+      "label": "事实（S02 式 3–4 已核）",
+      "source_ids": ["S02", "S03"]
+    },
+    "c02_极性与色调": {
+      "text": "直接正像（透明原稿线条转为色线）。色相由偶合剂决定：Parmeggiani 三种偶合剂（β-萘酚、间苯二酚、H-acid）与重氮盐得红、深黄、紫（A，S02）；Kodak Diazo D 为黄+蓝染料形成中性黑，Diazo C 为蓝（A 厂商，S04）；PSAP 称重氮图常见深蓝或紫，也有黑或棕（A，S05）。单色相为主；多色需分区用不同偶合剂，未见成人套装化实测。连续色调：Kodak 声明 Diazo D 可用于复制连续调底片，这是输入端用途，未声明输出为连续色调（S04）。输出色调范围有限（Wikipedia，B，S06）。纸基连续色调现行产品未找到。连续色调输出：未验证。",
+      "grade": "A",
+      "label": "事实（极性、色相已核）；未验证（连续色调输出）",
+      "source_ids": ["S02", "S04", "S05", "S06"]
+    },
+    "c03_曝光条件": {
+      "text": "UV 灯：Parmeggiani 演示用 366 nm UV 灯照射 20 分钟，仅得 'only a faint image is visible'，再经氨蒸气显影约 5 分钟（演示级，A，S02）。日光：同一演示用日光 2 小时（A，S02）。工业机：Kodak 胶片汞灯曝光约 2.5（Diazo C）–3.2（Diazo D）×10^6 erg/cm²，即约 250–320 mJ/cm²（本文换算；胶片剂量，纸未测；S04）。与 30 分钟目标：UV 灯 20 分钟只得弱像，可用密度与梯度未测，'可达'未能证实；日光 2 小时超出目标。",
+      "grade": "A",
+      "label": "事实（演示弱像、胶片剂量）；未验证（可用成像时长）",
+      "source_ids": ["S02", "S04"]
+    },
+    "c04_显影或后处理": {
+      "text": "无水洗。三类：(1) 氨蒸气（A）：Parmeggiani 在密闭 TLC 槽或培养皿内放浓氨水（不接触纸），约 5 分钟显色（S02）。Kodak 工业机：无水氨约 1 s、483–552 kPa，Diazo C 约 60–93 °C、Diazo D 约 66–73 °C；水氨蒸气 9–10 s（S04，A 厂商）。氨残留：US4343884 背景称氨显影后残留氨附着于成品并释放（S11，A 专利原文）。(2) 辊涂液体（专利或历史级）：Océ 1927 分裂式工艺以水基偶合显影液于曝光后辊施加（S10，B）；US4343884（Google 显示 Expired - Fee Related，Google 注明非法律结论）称 0.6–4.5 g/m² 近无水（<5% 水）、无味液体显影剂辊涂，并称传统涂层重氮纸经湿显影产生明显卷曲（S11，A）。(3) 热显影与蒸汽：US3046128（热显影重氮，Expired - Lifetime）、US3515554（加热释放氨，Expired - Lifetime）、US2789904（Diazo print process，含热处理，Expired - Lifetime）（S23，A 原页）；US4452876 'Steam, water or heat developing diazotype material'（Expired - Lifetime，S24）属蒸汽或水显影类别，正文未评估。现行产品未找到（1 次 WebSearch 摘录级，未验证）。",
+      "grade": "A",
+      "label": "事实（氨蒸气、辊涂、专利标题与状态）；未验证（现行产品；蒸汽显影正文）",
+      "source_ids": ["S02", "S04", "S10", "S11", "S23", "S24"]
+    },
+    "c05_免洗核验": {
+      "text": "见顶层 c05_免洗核验（已修订）。",
+      "grade": "A",
+      "label": "事实+推断",
+      "source_ids": ["S02", "S03", "S04", "S05"]
+    },
+    "c06_停止机制": {
+      "text": "无原生'停止剂'。显影靠氨挥散或中和而结束；Wikipedia 称氨阶段反应持续至完成（B，S06）。显色区残留的重氮盐仍光敏（推断，S06 称曝光不足的蓝线'fade at an increased rate'，S05 称残留化学物与光共同致黄，为间接支持）。候选（推断，未验证）：酸性复原（酸蒸气或酸性喷液）恢复酸性 pH，抑制残留偶合。机理依据：S02 'acid ... prevents the coupling reaction'，S03 'an acid stabilizer'；效果无来源测试。Kodak 推荐 1:5 稀释的 Indicator Stop Bath 吸收过量氨，用于水性或酸性托盘（A 厂商，S04）；此为浸渍托盘，属湿法，不符合免洗。红线：体系不含铁氰化钾（ferricyanide），未触发'铁氰化物 + 强酸'红线；亚铁氰化钾（potassium ferrocyanide）亦不在配方中。若与铁盐或铁氰化物体系共处则须禁用酸。避光只是暂停。",
+      "grade": "B",
+      "label": "推断（酸性停止，未验证）；事实（Kodak 酸浴、氨阶段反应）",
+      "source_ids": ["S02", "S03", "S04", "S05", "S06"]
+    },
+    "c07_白区长期稳定性": {
+      "text": "未成色区（白区）在光与湿度下黄化。Glaser（当代 Océ Blueline X-Fast Speed，印 4 级楔形，近白阶 D，L* 约 89–92）约 40 天：光下 Δb* 1.63（30% RH）、2.02（50%）、3.77（70%）、9.87（90%）；暗 90% RH Δb* 3.40；暗态 30–70% RH 变化较小（S03 Table 3，A 一手测量）。D 点光下 ΔE* 1.84（30%）、2.14（50%）、3.79（70%）、10.05（90%）；暗 30–50% RH ΔE* 0.26–0.70。Wessling 历史纸（无图像的成品纸）光照后向黄、红偏移，作者判断纸基与添加剂先变色（S03 §6，A）。PSAP：残留化学物与光共同造成黄褐化（A，S05）。UV 阻隔：封入 UV 滤光亚克力（并控湿）的样本变化不低于未封样（光照组 ΔE* 4.42–4.91 对 4.10–4.34），作者称封装在展示中可能无益（S03 Table 1、§6，A）。推断：钨丝灯 UV 含量低，可见光也驱动变化，UV 阻隔不足以保护（推断）。未测：241 或任何家用可得产品；荧光增白剂（PSAP 称重氮涂层含 optical brighteners，S05）的光致黄化作用未评估。结论：白区 ✗。光照下 30–90% RH 均有可测变化；数据来自 Océ 与历史纸，路线级外推须注明。",
+      "grade": "A",
+      "label": "事实（测量）；推断（UV 阻隔不足、机理归因）",
+      "source_ids": ["S03", "S05"]
+    },
+    "c08_成色长期耐光": {
+      "text": "只报数据，不换算年限。Wessling（无图像的历史成品纸，钨丝灯，37 天，平均约 75 fc，总约 65,700 fc·h；S03 §2.1）：空气+光 密度变化区 ΔE* 4.10–4.34；暗 0.52–0.64。Glaser（Océ Blueline X-Fast Speed 印 4 级楔形，约 40 天，约 72,000 fc·h；S03 §3.1）：光 30/50/70/90% RH 下 ΔE*（A–D 四点）为 1.84–3.34 / 1.97–2.88 / 3.06–4.29 / 7.38–11.11；暗 30/50/70/90% RH 下为 0.26–0.52 / 0.57–0.76 / 1.11–1.31 / 2.35–3.47。正文称暗 90% ΔE 为 3.0–3.5，与表格不符，以表为准（S03）。显微褪色（microfade，S03 §4）：历史纸初始接近 BW3，2 分钟后升至 BW2；当代纸除最浅处外敏感度上升，作者称可能在 BW1 以上。Kodak（厂商）：Diazo D 为 Class A、Diazo C 为 Class B（ISO 18905）；厂商语境为'storage prints ... utilized infrequently for viewing (primarily as a record)'（S04）。",
+      "grade": "A",
+      "label": "事实（测量数据）",
+      "source_ids": ["S03", "S04"]
+    },
+    "c09_预涂介质货架期": {
+      "text": "出厂预涂：Dietzgen 241（20LB 蓝线纸）数据表原文 '241 is not a stocked item and is converted on a per order basis'，SHELF LIFE 60 days，存放 10–30 °C、RH 30–65%（A，S01，curl 全文）。数据表未写起算点；D1 清单'从生产日起'无来源（未验证）。数据表另写 'Compatible with or PD activators'（厂商声明，未定义 PD，见 c14）。Kodak 胶片未开封原包装 6 个月（21 °C、RH 50% 以下；更长期需 10 °C 以下，A 厂商，S04）。Parmeggiani 2014：商用感光纸 'almost impossible to obtain now'（A，S02）。现涂：自配重氮盐（BF4 盐）纯、干时可长期存放，避光（A，S02）；涂好的滤纸货架期未给出（未验证）。",
+      "grade": "A",
+      "label": "事实；涂布货架期未知",
+      "source_ids": ["S01", "S02", "S04"]
+    },
+    "c10_底材适配": {
+      "text": "已知底材：纸基（Dietzgen 241 为 4 mil、105 g/m²，S01）、聚酯片基（Kodak 胶片，S04）、滤纸（演示，S02）。PSAP 重氮条目：纸基 'will likely be brittle due to residual chemicals, and the edges may also be discolored'（A，S05）。湿度：90% RH 显著黄变（A，S03）。湿显影卷曲：US4343884 背景称传统涂层重氮纸经湿显影产生明显卷曲（S11，A 专利原文）。厚卡或板材：未找到重氮纸上厚卡或板材的先例（负结果，搜索范围有限，未验证）。Soho 的 65# card stock 用于 Xerox 复印而非重氮（B/C）。Paschke（2011）的 Gatorfoam 装裱案例中的 blackline 为 plotter 墨粉，不能作为重氮先例（B/C）。封层兼容：未验证。",
+      "grade": "A",
+      "label": "事实（纸基脆化、卷曲、湿度）；未验证（厚卡、封层）",
+      "source_ids": ["S01", "S03", "S05", "S11", "S19b", "S20"]
+    },
+    "c11_安全与法规": {
+      "text": "SDS：未读到 241 或任何现行重氮纸 SDS；数据表无危害语句（S01）→ 未知。氨：Wikipedia 称家用氨水 5–10%（w/w），商用约 26 Bé（约 30%），中度毒性、刺激黏膜（B，S09）。限值（二次来源，B；NIOSH 原页 403，未直接读）：PEL 50 ppm（ACGIH-TLV 25 ppm；STEL 35 ppm）、REL TWA 25 ppm、STEL 35 ppm、IDLH 300 ppm（S08）。Parmeggiani（A，S02）：浓氨须充分通风（'Adequate ventilation must be provided'）；重氮盐（BF4）应视为潜在爆炸物；偶合剂避开 α-萘酚、N,N-二甲基苯胺、萘胺。PPE：论文仅写 'suitable gloves'（S02）；未见丁腈或护目镜的来源。CAS：未查到。ASTM D-4236 与 LHAMA：未查到评审记录，检索词与范围未记录（未验证）。",
+      "grade": "A",
+      "label": "未知（产品 SDS）；事实（论文安全要求）；事实（限值为二次来源）",
+      "source_ids": ["S01", "S02", "S08", "S09"]
+    },
+    "c12_供应与成本": {
+      "text": "未读到可靠价格。S01 无价格。Dietzgen 在线目录（2026-11-01 读取）：静态 HTML 仅显示类目名，无商品列表；'无 241 SKU'的结论不可靠（疑为 JS 渲染，未核实）。Freedom Paper 241BF 产品页 2026-11-01 返回 404（S21，研究读取，本核查未复核）。Diazit 公开页无纸或显影液 SKU（S18，研究读取，本核查未复核）。EngineerSupply（403）、BCI Imaging（连接失败）、GS Direct（仅 JS 跳转页）未读取到 SKU 或价格（研究记录，本核查未复核）。搜索摘录中的 Diazit 无氨显影液（4×250 ml，约 12 年前）为摘录级，原页两次连接失败（S22，不可读，不作负结果支撑）。所有价格：未验证（读取日期 2026-11-01）。",
+      "grade": "C",
+      "label": "未验证",
+      "source_ids": ["S01", "S16", "S18", "S21", "S22"]
+    },
+    "c13_证据等级": {
+      "text": "关键主张 10 条：(1) 241 按单生产、60 天货架期，数据表原文（A，事实，S01，已核）；(2) 商用感光纸 'almost impossible to obtain'（A，事实，S02，已核）；(3) 氨蒸气显影、无水洗（A，事实，S02、S04，已核）；(4) 光+湿度 ΔE*/Δb* 测量（A，事实，S03，已核）；(5) Kodak Diazo D/C 为 ISO 18905 Class A/B（A 厂商声明，事实）；ISO 18905 范围条款未能核实（S14 原页 403，仅搜索摘录，降为未验证，等级不高于 B）；(6) 'months indoors / days outdoors'（B，未验证，S06，已核存在但无出处）；(7) 无现行零售无氨显影液（负结果，C，搜索范围内未发现；静态目录页不可靠；S22 不可读，不作支撑）；(8) 现行热显影产品（负结果，C，搜索范围内未发现；仅 1 次 WebSearch）；(9) 重氮纸用于厚卡或板材的先例（负结果，未验证）；(10) 反证（已读）：Océ 页 'Diazo dyes are very stable'（B）与 Kodak D-41 'excellent resistance to high humidity'（A 厂商，但为聚酯片基，不适用于纸）；两者未能推翻纸基测量数据。",
+      "grade": "A/B/C",
+      "label": "见条目",
+      "source_ids": ["S01", "S02", "S03", "S04", "S05", "S06", "S10", "S14", "S15", "S16", "S22"]
+    },
+    "c14_关键未知": {
+      "text": "1) 2026 年是否存在可零售、可家用的非氨液体或辊涂显影液，且其显影后白区与成色稳定性优于氨蒸气。未读到现行来源。线索：S01 数据表称 241 'Compatible with or PD activators'（A 厂商声明；'PD' 未定义，未查到现行 PD 产品）；S11 所述辊涂近无水液体显影剂（已失效）；S22 摘录称 Diazit 无氨显影液（不可读）。若存在可用非氨显影液，本路线可能转为观察线。2) 现行重氮纸（241 或其他）的在售状态、SDS 与起算货架期：所有读取点未确认在售 SKU；静态目录页不可靠。3) 不同纸基或含荧光增白剂的产品，白区稳定性是否不同（未测）。",
+      "grade": "C",
+      "label": "未知",
+      "source_ids": ["S01", "S05", "S11", "S16", "S21", "S22"]
+    },
+    "c15_判别实验": {
+      "text": "用同批氨蒸气显影样（通风）在钨丝灯下（与 Glaser、Wessling 同光源），50% 与 70% RH 各放置约 40 天，测白区 Δb* 与图案 ΔE*。阈值须预先定义（例如 ΔE* ≥ 2 或 Δb* ≥ 2 作为可察觉的初筛线，为设计选择，非标准）；白区或图案越过阈值即淘汰。14 天、荧光灯仅作快速初筛，不作同口径对照（S03 光源；S04 警示白色荧光灯等富 UV 光源会使胶片灰雾）。",
+      "grade": "A",
+      "label": "推断（设计）",
+      "source_ids": ["S03", "S04"]
+    }
+  },
+  "c05_免洗核验": {
+    "验收": {
+      "1_喷后免洗": "✗（修订；原为 ?）。底线 1 定义为'无需水洗或任何额外处理步骤'。本路线曝光后须另加氨蒸气显影（密闭腔、浓氨、约 5 分钟，'Adequate ventilation must be provided'，S02；工业机 1 s 或 9–10 s，S04）。这超出'曝光成像 + 喷停止剂'的产品流程。不水洗只满足'无需水洗'一半。（'喷后'的时间限定会使此条不适用；本核查取保守解读，研究原文亦写明字面下为 ✗。）",
+      "2_白区停得住": "✗（光照下白区持续变色：D 点 ΔE* 1.84–10.05，Δb* 1.63–9.87，30–90% RH，约 40 天；S03 Table 3。暗态 30–50% RH 接近不变。数据来自 Océ 纸与历史纸，非 241。）",
+      "3_成色留得住": "✗（修订框架）。底线 3 字面为'停止剂不使图案明显褪色'；本路线无停止剂，字面不适用。按底线目的（成色长期留存），图案在光下持续衰减：光下 A–C 点 ΔE* 1.97–11.11（约 40 天，S03 Table 3）；microfade 显示连续褪色（S03 §4）。判 ✗。注：此为长期耐光问题，不是停止剂导致的褪色。",
+      "4_少量喷液": "?（基本不适用：无停止喷液步骤；酸性复原未测；辊涂显影 0.6–4.5 g/m² 仅有专利级证据，S11）",
+      "5_底材不变形": "?（纸基 105 g/m²，S01；湿显影致卷曲有专利背景，S11，故湿法路线倾向 ✗；氨蒸气路线未测；厚卡无先例；90% RH 致黄变，S03）",
+      "6_安全前置": "?（未找到 ASTM D-4236 与 LHAMA 评审，也无 SDS；S02 要求充分通风，与家用或车库通风有限的条件冲突；不能判 ✓）"
+    },
+    "说明": "修订后：底线 1 ✗、底线 2 ✗、底线 3 ✗（按目的）。任一底线 ✗ 即不达标，足以淘汰。底线 4、5、6 为 ?，不能判 ✓。"
+  },
+  "baseline_challenges": [
+    {
+      "round": "R4-A（report A 节）",
+      "old_claim": "唯一真干式路线（氨蒸气、碱性液、热显影）",
+      "agree": "disagree",
+      "my_evidence": "无水洗的氨蒸气显影有一手依据（S02、S04、S05），此部分成立。但'现行碱性液'未找到产品；热显影仅见已失效专利（S23，US3046128、US3515554、US2789904），蒸汽或水显影专利 US4452876 亦已失效且未评估。",
+      "strength": "A（氨蒸气）；专利级 / 未发现（热显影、现行碱性液）"
+    },
+    {
+      "round": "R4-A（report A 节）",
+      "old_claim": "有预涂介质在售（Dietzgen 241 等）",
+      "agree": "disagree",
+      "my_evidence": "数据表原文为 'not a stocked item ... converted on a per order basis'（S01，A）；2014 年论文称商用感光纸几乎无法获得（S02，A）。静态目录页无 241 不作为证据（见 negative_findings）。",
+      "strength": "A"
+    },
+    {
+      "round": "R4-A（report A 节）",
+      "old_claim": "连续色调有据",
+      "agree": "disagree",
+      "my_evidence": "Kodak 声明的是输入端用途：'can also be used to duplicate ... continuous-tone negatives'（S04，A 厂商）。输出连续色调未被声明；Wikipedia 称色调范围 'limited'（S06，B，反证）。改为'输出连续调未证实'。",
+      "strength": "A（输入用途，厂商）；B（输出色调有限，反证）"
+    },
+    {
+      "round": "R4-A（report A 节）",
+      "old_claim": "硬伤：成像数周至数月褪色",
+      "agree": "agree",
+      "my_evidence": "方向被测量数据支持（S03：光下约 40 天，ΔE* 1.8–11）。'数周'可能偏乐观：百科称'months indoors / days outdoors'（S06，B，无出处）。",
+      "strength": "A（测量）；B（百科，未验证）"
+    },
+    {
+      "round": "R4-A 与 D1 清单",
+      "old_claim": "预涂纸货架期约 60 天（Dietzgen 数据表）",
+      "agree": "agree",
+      "my_evidence": "数字与原文一致（S01）。数据表未写起算点；D1 清单'从生产日起'未经验证。",
+      "strength": "A"
+    },
+    {
+      "round": "R4-A（notes）",
+      "old_claim": "Diazo D = ISO 18905 Class A 长期；Diazo C = Class B；100 年暗态归档",
+      "agree": "disagree",
+      "my_evidence": "Class 为厂商声明（S04，A）。'100 年'是 Kodak Record film 在 ISO 18911 归档条件下的厂商声明（S04），不适用于展示。ISO 18905 范围条款未能在原页核实（S14 403）。",
+      "strength": "A（厂商）；未验证（ISO 范围）"
+    },
+    {
+      "round": "R4-A（notes）",
+      "old_claim": "IMAGELINK 膜未开封存放 6 个月（21 °C、50% RH）",
+      "agree": "agree",
+      "my_evidence": "与 Kodak D-41 数据表（2009，第三方转载，S04）一致；更长期需 10 °C 以下。现行库存未确认。",
+      "strength": "A（厂商，2009）"
+    },
+    {
+      "round": "R4-A（report A 节）",
+      "old_claim": "无消费级无氨显影液；Diazit 等供应商提供耗材",
+      "agree": "partial",
+      "my_evidence": "Diazit 公开页只列载体条与备件（S18，研究读取）。无氨显影液的零售负结果依赖静态目录页（不可靠）与不可读的 S22；因此'无'未能证实，仅能写为'搜索范围内未发现'。S01 称 241 兼容 PD activators（A，厂商），提示非氨活化剂品类存在，未查到现行产品。",
+      "strength": "C（负结果，范围有限）；未证实"
+    },
+    {
+      "round": "R1-D（report D 节）",
+      "old_claim": "NO wet processing；显影为蒸气相 pH 变化",
+      "agree": "disagree",
+      "my_evidence": "氨蒸气路线成立（S02、S04）。但 1927 年 Océ 分裂式工艺以水基偶合显影液、湿辊施加（S10，B）；US4343884 亦为近无水液体辊涂（S11，A）。'无湿法'只适用于氨蒸气路线。",
+      "strength": "A（氨蒸气）；B／A（湿法变体）"
+    },
+    {
+      "round": "R1-D（report D 节）",
+      "old_claim": "市场衰退（largely obsolete）；PSAP prevalence 为 Moderately rare",
+      "agree": "partial",
+      "my_evidence": "市场衰退被多来源支持（S06、S10 与 S05 的历史语境）。PSAP 重氮条目写 Prevalence: Common（收藏语境，S05，A），与 'Moderately rare' 不符；R1 引文页未重读。",
+      "strength": "B／A（语境不同）"
+    },
+    {
+      "round": "D1 清单（D1 节）",
+      "old_claim": "没有无氨显影液瓶装产品可买",
+      "agree": "unverified",
+      "my_evidence": "研究在所列范围内未发现。但静态目录页不显示商品列表（S16 不可靠），S22 不可读。结论不能作为'没有'的证据，只能作'搜索范围内未发现'。",
+      "strength": "C（负结果，范围有限）"
+    },
+    {
+      "round": "D1 清单（D1 节）",
+      "old_claim": "Dietzgen 60 天保质期'从生产日起'",
+      "agree": "disagree",
+      "my_evidence": "数据表原文未写起算点（S01）。该说法没有来源。",
+      "strength": "A"
+    },
+    {
+      "round": "D1 清单（D 节）",
+      "old_claim": "2026 年在售供应商已核实三家（EngineerSupply、BCI Imaging、GS Direct）；GS Direct 10AE 约 $97.25 起",
+      "agree": "disagree",
+      "my_evidence": "研究记录核实失败：EngineerSupply 403，BCI 连接失败，GS Direct 仅 JS 跳转页（研究读取，本核查未复核）。价格未验证，不得引用。",
+      "strength": "A（失败记录）；价格未验证"
+    },
+    {
+      "round": "R4 / S17 Dietzgen 母公司",
+      "old_claim": "Dietzgen 母公司已改为 SIHL",
+      "agree": "disagree",
+      "my_evidence": "sihlinc.com（2026，curl 200）显示 'Dietzgen Bond Paper' 品牌与 '© 2026 SIHL INC.'；未见'母公司'或'改为'的表述。关系未证实。",
+      "strength": "未能证实（页面仅品牌与版权行）"
+    }
+  ],
+  "sources": [
+    {
+      "id": "S01",
+      "title": "Dietzgen 241 20LB Blueline Paper, Product Data Sheet (Rev 3, updated 8/18)",
+      "url": "https://my.dietzgen.com/img/category/description/Data%20Sheets/241_Dietzgen_ProductDataSheet.pdf",
+      "type": "厂商数据表",
+      "access": "curl全文（本核查复核）",
+      "date": "2018-08（Rev 3）",
+      "quote": "241 is not a stocked item and is converted on a per order basis. SHELF LIFE 60 days. Compatible with or PD activators.（核查新增后半句）"
+    },
+    {
+      "id": "S02",
+      "title": "Parmeggiani F., Fear of the Dark: Diazo Printing by Photochemical Decomposition of Aryldiazonium Tetrafluoroborates, J. Chem. Educ. 2014, 91, 692-695（开放获取 post-print，Politecnico di Milano IRIS）",
+      "url": "https://re.public.polimi.it/handle/11311/816119",
+      "type": "论文（教学演示，一手）",
+      "access": "curl全文（post-print，本核查复核）",
+      "date": "2014-02-28",
+      "quote": "commercially available photosensitive paper, which is almost impossible to obtain now; ... potentially explosive materials"
+    },
+    {
+      "id": "S03",
+      "title": "Wessling M., Glaser G., Sanderson K., Technical Investigation of the Effects of Light and Humidity on Diazotypes, Topics in Photographic Preservation vol. 16 (2015)",
+      "url": "https://resources.culturalheritage.org/wp-content/uploads/sites/9/2019/05/8-T-16-Wessling-Glaser-and-Sanderson_paginated.pdf",
+      "type": "保护技术研究（一手测量）",
+      "access": "curl全文（本核查逐表核对）",
+      "date": "2015（实验 2011–2012）",
+      "quote": "A relative humidity level of 90% can significantly change the color of the paper, even in the dark."
+    },
+    {
+      "id": "S04",
+      "title": "Kodak Diazo C and D Microfilm datasheet D-41（2009-11，第三方转载）",
+      "url": "https://www.shopscan.com.br/wp-content/uploads/2011/02/D411.pdf",
+      "type": "厂商数据表（转载）",
+      "access": "curl全文（本核查复核）",
+      "date": "2009-11",
+      "quote": "Diazo D films meet the image stability limits ... as a Class A long-term film outlined in ISO 18905.（注：'Store ... 6 months' 为另一段，研究拼接省略；原文分属不同段落）"
+    },
+    {
+      "id": "S05",
+      "title": "University of Illinois Preservation Self-Assessment Program (PSAP), Architectural Drawing Reproductions: Diazo Print (Architecture)",
+      "url": "https://psap.library.illinois.edu/collection-id-guide/archdrawingrepro",
+      "type": "保护指南",
+      "access": "curl全文（本核查复核，diazo 条目）",
+      "date": "未注明",
+      "quote": "Paper will likely be brittle due to residual chemicals, and the edges may also be discolored. Prevalence: Common. Alkaline storage enclosures are not advised for diazo prints."
+    },
+    {
+      "id": "S06",
+      "title": "Wikipedia: Whiteprint",
+      "url": "https://en.wikipedia.org/wiki/Whiteprint",
+      "type": "百科（B）",
+      "access": "curl全文（本核查复核）",
+      "date": "（oldid 1374296377）",
+      "quote": "can reproduce only limited tonal range and no color; ... the chemical reaction in the ammonia phase continues until the process is completed"
+    },
+    {
+      "id": "S07",
+      "title": "Wikipedia: Heliographic copier",
+      "url": "https://en.wikipedia.org/wiki/Heliographic_copier",
+      "type": "百科（B）",
+      "access": "curl全文（本核查复核）",
+      "date": "未注明",
+      "quote": "A blue-line print is not permanent and will fade if exposed to light for weeks or months."
+    },
+    {
+      "id": "S08",
+      "title": "Wikipedia: Ammonia（化学框，二次来源）",
+      "url": "https://en.wikipedia.org/wiki/Ammonia",
+      "type": "百科（B，二次）",
+      "access": "curl全文（本核查复核，wikitext 化学框）",
+      "date": "未注明",
+      "quote": "PEL = 50 ppm (25 ppm ACGIH-TLV; 35 ppm STEL); REL TWA 25 ppm ST 35 ppm; IDLH 300 ppm"
+    },
+    {
+      "id": "S09",
+      "title": "Wikipedia: Ammonia solution",
+      "url": "https://en.wikipedia.org/wiki/Ammonia_solution",
+      "type": "百科（B）",
+      "access": "curl全文（本核查复核，部分）",
+      "date": "未注明",
+      "quote": "Moderately toxic and irritating towards mucous membranes; 26 degrees Baumé (about 30% of ammonia by weight) typical high-concentration commercial"
+    },
+    {
+      "id": "S10",
+      "title": "Océ Museum: Diazo, also known as light printing（Van der Grinten 1927 分裂式工艺）",
+      "url": "https://www.ocemuseum.nl/blueprint-also-known-as-light-printing/?lang=en",
+      "type": "博物馆页（B）",
+      "access": "curl全文（本核查复核）",
+      "date": "未注明",
+      "quote": "the coupler is added as a (water-based) developing liquid after exposure; Diazo dyes are very stable; Copies from around 1920 are still easy to read"
+    },
+    {
+      "id": "S11",
+      "title": "US4343884A: Diazotype developing process and acidic developer with amine base salt（Andrews Paper; Google 显示 Expired - Fee Related，非法律结论）",
+      "url": "https://patents.google.com/patent/US4343884A/en",
+      "type": "专利（一手）",
+      "access": "curl全文（本核查复核）",
+      "date": "约 1980 申请",
+      "quote": "odorless and curlfree with 0.6-4.5 g/m2 ... substantially water free liquid developer in a pressure development or transfer roller apparatus; Conventionally coated one component diazotype papers would produce a pronounced curl"
+    },
+    {
+      "id": "S12",
+      "title": "US3628954A: Diazo material and visible light development process therefor（Keuffel & Esser; Google 显示 Expired - Lifetime）",
+      "url": "https://patents.google.com/patent/US3628954A/en",
+      "type": "专利（一手）",
+      "access": "curl全文（本核查复核）",
+      "date": "1971",
+      "quote": "semiconductor pigment ... include zinc oxide and cadmium sulfide"
+    },
+    {
+      "id": "S13",
+      "title": "US4419431A: One- or two-component diazo-type material with diphenyl diamine as light fade inhibitor（Filmfabrik Wolfen; Google 显示 Expired - Fee Related）",
+      "url": "https://patents.google.com/patent/US4419431A/en",
+      "type": "专利（一手）",
+      "access": "curl全文（本核查复核，首次 503，重试 200）",
+      "date": "优先权 1981-11-30；授权 1983-12-06",
+      "quote": "One- or two-component diazo-type material with diphenyl diamine as light fade inhibitor"
+    },
+    {
+      "id": "S14",
+      "title": "ISO 18905:2002 Imaging materials - Ammonia-processed diazo photographic film - Specifications for stability（页面 403，范围仅来自搜索摘录）",
+      "url": "https://www.iso.org/standard/31929.html",
+      "type": "标准（范围，未能核实）",
+      "access": "curl 403（不可读，未绕过）；搜索摘录",
+      "date": "2002（取代 ISO 8225:1995）",
+      "quote": "（未能在原页核实）applicable only to diazo photographic films intended for and used as LE-10 and LE-100 storage copies"
+    },
+    {
+      "id": "S15",
+      "title": "BSI 10.3403/02686606（Crossref 元数据）：Imaging materials. Ammonia-processed diazo photographic film. Specifications for stability",
+      "url": "https://api.crossref.org/works/10.3403/02686606",
+      "type": "元数据（API）",
+      "access": "API（本核查复核）",
+      "date": "未注明",
+      "quote": "标题确认；无摘要（abstract 字段不存在）"
+    },
+    {
+      "id": "S16",
+      "title": "Dietzgen 在线目录：Bond Paper 与 Dietzgen Reprographic 类目",
+      "url": "https://my.dietzgen.com/bond-paper ; https://my.dietzgen.com/dietzgen-reprographic",
+      "type": "厂商目录（负结果范围，静态页不可靠）",
+      "access": "curl 200（静态 HTML，本核查复核：无商品列表）",
+      "date": "2026-11-01 读取",
+      "quote": "类目名：Bond Paper、Engineering Bond Paper、Film、Vellum（无商品项；原始 HTML 无 '241'、'blue line'、'developer'）"
+    },
+    {
+      "id": "S17",
+      "title": "SIHL Inc.（Dietzgen 官网跳转目标）",
+      "url": "https://www.sihlinc.com/",
+      "type": "厂商（官网）",
+      "access": "curl全文（本核查复核）",
+      "date": "2026-11-01 读取",
+      "quote": "Dietzgen Bond Paper / Sihl Media; © 2026 SIHL INC.（母公司关系未见）"
+    },
+    {
+      "id": "S18",
+      "title": "Diazit Company 首页",
+      "url": "https://www.diazit.com/",
+      "type": "厂商（公开页）",
+      "access": "curl全文（研究读取，本核查未复核）",
+      "date": "2026-11-01 读取",
+      "quote": "While we no longer manufacture blueprint machines we still carry most major spare parts ... CARRIER STRIPS / SPARE PARTS"
+    },
+    {
+      "id": "S19",
+      "title": "The Drawing Centre（TDC Print Solutions）首页",
+      "url": "https://www.thedrawingcentre.ca/",
+      "type": "服务商（公开页）",
+      "access": "curl全文（研究读取，本核查未复核）",
+      "date": "2026-11-01 读取",
+      "quote": "a printing service company which specializes in large format architectural/engineering drawings（首页无重氮产品）"
+    },
+    {
+      "id": "S19b",
+      "title": "Soho Reprographics Repro Services 页",
+      "url": "https://sohorepro.com/repro-services/",
+      "type": "服务商（B/C）",
+      "access": "curl全文（研究读取，本核查未复核）",
+      "date": "未注明",
+      "quote": "Opaque paper is available in blue line only ... 65# card stock（Xerox 复印语境）"
+    },
+    {
+      "id": "S20",
+      "title": "Chris Paschke, Blueprints Then and Now（Designs Ink 文章库）",
+      "url": "https://www.designsinkart.com/library/M-Blueprints201108.htm",
+      "type": "行业文章（B/C）",
+      "access": "curl全文（研究读取，本核查未复核）",
+      "date": "2011-08",
+      "quote": "Avoid all buffered boards, dry mounting and laminating（针对 cyanotype，不能直接迁移）"
+    },
+    {
+      "id": "S21",
+      "title": "Freedom Paper 产品页：Fast Speed Blue Line Diazo 241BF",
+      "url": "https://www.freedompaper.com/fast-speed-blue-line-diazo-241bf",
+      "type": "供应商页",
+      "access": "curl 404（研究读取 2026-11-01，本核查未复核）",
+      "date": "2026-11-01 读取",
+      "quote": "The page you were looking for does not exist."
+    },
+    {
+      "id": "S22",
+      "title": "Wide-Format-Paper 30x42 250 张 listing（Diazit 无氨显影液，搜索摘录）",
+      "url": "https://www.wide-format-paper.com/blueprint-paper/20-lb/30-x-42/250-sheets/",
+      "type": "零售 listing（摘录级，C）",
+      "access": "搜索摘录；原页两次连接失败（HTTP 000），前轮 502，均不可读",
+      "date": "约 12 年前（摘录称）",
+      "quote": "owners of certain Diazit ammonia-free machines may need that brand's developer fluid, 4 bottles (250ml) in one carton（摘录，未核）"
+    },
+    {
+      "id": "S23",
+      "title": "专利标题与正文（Google Patents）：US2789904A（Diazo print process，1957）、US3046128A（Thermally developable diazotype photoprinting material，1962）、US3515554A（Diazo type paper and new high speed diazo reproduction process，1970）、US4452876A（见 S24）",
+      "url": "https://patents.google.com/patent/US2789904A/en ; https://patents.google.com/patent/US3046128 ; https://patents.google.com/patent/US3515554A/en",
+      "type": "专利（一手，原页已读）",
+      "access": "curl全文（本核查复核，由搜索摘录升级）",
+      "date": "1957–1970（授权年份未逐一核对）",
+      "quote": "US3046128A 标题 'Thermally developable diazotype photoprinting material'；US3515554A 'ammonia vapors may be generated by heating ... to liberate free ammonia gas'；US2789904A 标题 'Diazo print process'，CPC G03C5/18 含 thermal development，正文含 heat treatment"
+    },
+    {
+      "id": "S24",
+      "title": "US4452876A: Steam, water or heat developing diazotype material（International Diazo Chapel; Google 显示 Expired - Lifetime）",
+      "url": "https://patents.google.com/patent/US4452876A/en",
+      "type": "专利（一手，标题与状态已读，正文未评估）",
+      "access": "curl全文（本核查新增）",
+      "date": "约 1984（未逐一核对）",
+      "quote": "Steam, water or heat developing diazotype material"
+    }
+  ],
+  "negative_findings": [
+    {
+      "query": "WebSearch: ammonia-free diazo developer liquid PD activator blueline paper retail buy small quantity",
+      "scope": "全网搜索摘录（2026-11-01），1 次",
+      "result": "未找到零售 PD 显影液小包装 SKU。摘录提到 Diazit 无氨显影液 4×250 ml（约 12 年前）与 Freedom Paper 241BF 页 no longer available。",
+      "verifier_note": "摘录级；S22 原页不可读。结论只能写为'搜索范围内未发现'。"
+    },
+    {
+      "query": "curl my.dietzgen.com/bond-paper 与 /dietzgen-reprographic 类目页",
+      "scope": "Dietzgen 在线目录（2026-11-01）",
+      "result": "研究称无 241、无蓝线或重氮纸、无显影液 SKU。",
+      "verifier_note": "本核查复核：两页静态 HTML 仅含类目名，无商品列表；原始 HTML 中 '241'、'blue line'、'developer' 均为 0 次，含 16–17 个 script 标签（疑为 JS 渲染）。该负结果不可靠，降为'静态页未显示，未核实'。"
+    },
+    {
+      "query": "curl diazit.com 首页与元数据",
+      "scope": "公开页文本（2026-11-01，研究读取）",
+      "result": "只列载体条与备件；无纸或显影液 SKU。",
+      "verifier_note": "未复核；可作为'公开页未列'的弱负结果。"
+    },
+    {
+      "query": "curl freedompaper.com 241BF 产品页",
+      "scope": "2026-11-01，两次尝试（研究）",
+      "result": "HTTP 404；此前两次返回 429。",
+      "verifier_note": "未复核。"
+    },
+    {
+      "query": "curl engineersupply.com、bciimaging.com、gsdirect.com（D1 清单三家）",
+      "scope": "D1 清单供应商核实（研究）",
+      "result": "403 / 连接失败 / 仅 JS 跳转 lander 页。三家在售与价格未核实。",
+      "verifier_note": "未复核；价格不得引用。"
+    },
+    {
+      "query": "WebSearch: heat developed diazo paper dry process no ammonia currently manufactured thermal development diazo whiteprint 2025",
+      "scope": "搜索摘录，1 次；无 2025 市场来源",
+      "result": "只找到已失效专利（US2789904A 1957，US3046128A 1962，US3515554A 1970）；无现行热显影产品或厂商。",
+      "verifier_note": "专利标题与正文已在原页核对（S23）。遗漏 US4452876A（蒸汽、水、热显影，S24），应列出。'无现行产品'仅限搜索范围。"
+    },
+    {
+      "query": "WebSearch: diazo blueline print on cardstock or mounting board precedent",
+      "scope": "搜索摘录，1 次；PSAP 支撑材料列表",
+      "result": "未找到重氮纸在厚卡或板材上的先例。Paschke 2011 的 Gatorfoam 装裱为 plotter 墨粉 blackline，不能作为重氮先例。",
+      "verifier_note": "未复核；搜索词与范围仅此一次。"
+    },
+    {
+      "query": "WebSearch（ISO 18905 褪色）+ curl iso.org/standard/31929.html",
+      "scope": "搜索摘录，1 次；ISO 页 403",
+      "result": "未找到 Class A/B 数值门限与褪色试验条件；ANSI IT9.5 文本未读。",
+      "verifier_note": "本核查再次确认 iso.org 返回 403，不可读。ISO 范围条款未核实。"
+    },
+    {
+      "query": "curl cdc.gov/niosh/npg/npgd0029.html；PubChem pug_view ammonia OEL",
+      "scope": "一手职业限值",
+      "result": "NIOSH 403；PubChem 503。限值仅有 Wikipedia 二次来源（S08，B）。",
+      "verifier_note": "未复核。"
+    },
+    {
+      "query": "curl p2infohouse.org 'PD ammonia-free machines' 事实单（搜索命中）",
+      "scope": "搜索命中页",
+      "result": "TLS 自签名证书错误；未绕过，未读取。",
+      "verifier_note": "保留原结论。"
+    },
+    {
+      "query": "curl iloencyclopaedia.org 重复复制条目（R1 来源）",
+      "scope": "R1 来源页",
+      "result": "连接失败；'<10 ppm' 未验证，未列入 baseline_challenges。",
+      "verifier_note": "保留原结论。"
+    },
+    {
+      "query": "curl draftingmanuals.tpub.com（R4 来源）",
+      "scope": "R4 来源页",
+      "result": "DNS 失败；仅 R4 摘录，未验证。",
+      "verifier_note": "保留原结论。"
+    },
+    {
+      "query": "curl wide-format-paper.com listing（Diazit 显影液 4×250 ml）",
+      "scope": "搜索命中页",
+      "result": "502（两次）；仅摘录级（S22）。",
+      "verifier_note": "本核查再试 1 次：HTTP 000（连接失败）。仍不可读，不作负结果支撑。"
+    },
+    {
+      "query": "Image Permanence Institute（IPI）重氮纸资料",
+      "scope": "未搜索",
+      "result": "未查（本轮预算与来源优先级所限）。",
+      "verifier_note": "未查。"
+    },
+    {
+      "query": "Endicott Microfilm IMAGELINK 现行库存",
+      "scope": "未重读 R4 的 2015 页",
+      "result": "现行库存未确认，沿用 R4 结论。",
+      "verifier_note": "未确认。"
+    },
+    {
+      "query": "中国'无氨重氮纸' MOQ 50–2000 件（R1/R4 摘录）",
+      "scope": "Alibaba 等未开启",
+      "result": "未读，仅摘录级，未验证。",
+      "verifier_note": "未验证。"
+    },
+    {
+      "query": "ASTM D-4236 与 LHAMA 评审；CAS 查询（c11）",
+      "scope": "研究未记录检索词、URL 或范围",
+      "result": "'未查到任何评审记录' 与 'CAS 未查到'。",
+      "verifier_note": "检索范围未记录，不能作为负结果。改为'未检索或未能证实'。"
+    }
+  ],
+  "verdict": {
+    "status": "淘汰（核查后维持）",
+    "reasons": [
+      "底线 2（白区停得住）✗：光照下白区持续变色，D 点 ΔE* 1.84–10.05、Δb* 1.63–9.87（30–90% RH，约 40 天；S03 Table 3）。暗态 30–50% RH 接近不变。数据来自 Océ 纸与历史纸，未测 241 或家用产品。",
+      "底线 1 ✗（修订，原为 ?）：氨蒸气显影是曝光后的额外处理步骤，超出'曝光成像 + 喷停止剂'的产品流程；不水洗不足以满足底线。",
+      "底线 3 ✗（修订框架）：字面条款针对停止剂，本路线无停止剂。按底线目的，图案在光下持续衰减（A–C 点 ΔE* 1.97–11.11，约 40 天；S03）。",
+      "出厂预涂纸按单生产，60 天货架期，起算点未写（S01）；2014 年文献称商用感光纸几乎无法获得（S02）；2026 年在售状态未确认。",
+      "底线 4、5、6 为 ?：无停止喷剂步骤；底材仅纸基数据，湿显影致卷曲（S11）；无 SDS，无 ASTM D-4236 或 LHAMA 评审；论文要求充分通风（S02）。"
+    ],
+    "red_line_hits": [
+      "红线未命中：不含铁氰化钾（potassium ferricyanide）、重铬酸盐、普鲁士蓝。亚铁氰化钾（potassium ferrocyanide）亦不在本路线配方中，不触发。",
+      "非红线高风险：家庭或车库氨蒸气显影，通风有限（S02 要求充分通风；氨 IDLH 300 ppm，S08，B）。",
+      "非红线高风险：自制重氮 BF4 盐（conc. HBF4 + NaNO2；论文称应视为潜在爆炸物，S02），不可作为家庭方案。"
+    ]
+  },
+  "key_unknowns": [
+    "2026 年是否存在可零售、可家用的非氨液体或辊涂显影液（含 S01 所称 PD activators），且其显影后白区与成色稳定性优于氨蒸气（无已读的现行来源）。",
+    "现行重氮纸（Dietzgen 241 或其他）的在售状态、SDS 与起算货架期（所有读取点未确认在售 SKU；静态目录页不可靠）。"
+  ],
+  "discriminating_experiment": {
+    "one_liner": "用同批氨蒸气显影样在钨丝灯（与 Glaser、Wessling 同光源）下，50% 与 70% RH 各放置约 40 天，测白区 Δb* 与图案 ΔE*；阈值须预先定义（例如 ΔE* ≥ 2，设计选择非标准）；白区或图案越过阈值即淘汰。",
+    "design_sketch": "材料：同批蓝线纸（241 或同类）若干张。分组：A 氨蒸气显影（密闭槽，约 5 分钟，通风）；B 同 A 后加酸性复原（推断的停止候选）；C 未显影对照。湿度：50% 与 70% RH。光源：钨丝灯，光照强度按 Wessling 的 75 fc 或同级设定。测量：CIE L*a*b*，每组 5 点。与 Glaser 同口径定性对照（不作换算）。荧光灯 14 天仅作快速初筛，不计入同口径结论。"
+  },
+  "new_routes_spotted": [
+    {
+      "name": "二次波长（可见光）干式显影重氮",
+      "why": "无化学显影液；需含半导体颜料的特制片，claims 与正文提及 zinc oxide 与 cadmium sulfide（S12，已读）；CdS 毒性须核查；专利 Expired - Lifetime（Google 显示，非法律结论）。",
+      "lead_url": "https://patents.google.com/patent/US3628954A/en"
+    },
+    {
+      "name": "辊涂近无水液体显影（胺基与二乙二醇体系）",
+      "why": "0.6–4.5 g/m²，无味、不卷曲，含水少于约 5%（S11，已读）；可能是非氨显影候选；成分安全性与现行产品未查。",
+      "lead_url": "https://patents.google.com/patent/US4343884A/en"
+    },
+    {
+      "name": "重氮纸光稳定剂（二苯二胺类）",
+      "why": "针对显影后成色褪色的化学缓解（S13，标题已读）；Google 显示 Expired - Fee Related，非法律结论；可作研究对照，不进首单。",
+      "lead_url": "https://patents.google.com/patent/US4419431A/en"
+    },
+    {
+      "name": "Océ / Van der Grinten 1927 分裂式工艺（水基辊涂显影）",
+      "why": "历史上的水基辊涂显影变体（S10，B）；可判断非氨路线的历史可行性。",
+      "lead_url": "https://www.ocemuseum.nl/blueprint-also-known-as-light-printing/?lang=en"
+    },
+    {
+      "name": "非致癌前体的重氮盐替代（乙氧基苯重氮盐，偶合剂 β-萘酚、间苯二酚、H-acid 得红、黄、紫）",
+      "why": "色域线索（S02，已读）；论文称前体'non-carcinogenic, much less toxic than the corresponding amines'（论文声明，毒理未核）。自制重氮盐仍属高危，不可进入家庭方案。",
+      "lead_url": "https://re.public.polimi.it/handle/11311/816119"
+    },
+    {
+      "name": "蒸汽、水或热显影重氮（US4452876A）",
+      "why": "非氨显影的一个类别（标题 'Steam, water or heat developing diazotype material'，Google 显示 Expired - Lifetime）；研究原文未评估。正文未读，不能判断是否免洗或可家用。",
+      "lead_url": "https://patents.google.com/patent/US4452876A/en"
+    }
+  ],
+  "search_budget_used": {
+    "websearch": 0,
+    "curl_reads": 27
+  },
+  "reconciliation_log": [
+    {
+      "item": "c02 / R4 连续色调",
+      "change": "由'连续调有据（A）'改为'输入端用途（A 厂商）；输出连续调未证实；输出色调有限（B 反证）'",
+      "why": "S04 原文只声明可用于复制连续调底片（输入），未声明输出连续色调；S06 称 limited tonal range。"
+    },
+    {
+      "item": "c03 '20 分钟在演示级可达'",
+      "change": "改为'20 分钟仅得弱像，可用密度与梯度未测'",
+      "why": "S02 原文 'only a faint image is visible'；未报告可用密度。"
+    },
+    {
+      "item": "c04 Kodak 氨显影温度 60–93 °C",
+      "change": "分列：Diazo C 约 60–93 °C；Diazo D 约 66–73 °C",
+      "why": "S04 参数分列；研究把 C 的范围用于全部。"
+    },
+    {
+      "item": "c04 热显影与蒸汽路线分类",
+      "change": "补列 US4452876A（蒸汽/水/热显影，Expired - Lifetime）为未评估线索；US2789904A 注明标题为 Diazo print process，热处理依据来自正文与 CPC",
+      "why": "S23、S24 原页；研究遗漏蒸汽或水显影类别。"
+    },
+    {
+      "item": "c04 / new_routes '已失效'",
+      "change": "改写为'Google Patents 显示 Expired（Google 注明非法律结论）'",
+      "why": "US4343884、US4419431 等页面的法律状态声明为假设。"
+    },
+    {
+      "item": "c04 氨显影残留（新增证据）",
+      "change": "补入 US4343884 背景：氨显影后残留氨附着于成品；传统涂层重氮纸湿显影产生明显卷曲",
+      "why": "S11 原文；与 c05 底线 1、底线 5 相关。"
+    },
+    {
+      "item": "c05 底线 1 '?'",
+      "change": "改为 ✗（保守解读；'喷后'字面时间限定会使其不适用，已注明）",
+      "why": "底线 1 定义为'无需水洗或任何额外处理步骤'；氨蒸气显影为曝光后的额外处理步骤，超出产品流程；研究原文亦写明字面下为 ✗。"
+    },
+    {
+      "item": "c05 底线 3 ✗ 理由",
+      "change": "保留 ✗，理由由'停止剂相关'改为'按底线目的：长期耐光'，注明字面条款不适用",
+      "why": "研究自述'与停止剂无关'，理由与条款不一致；数据本身（S03 Table 3）成立。"
+    },
+    {
+      "item": "c05 底线 2 证据",
+      "change": "补列 30%、50% RH 光照数据（D 点 ΔE* 1.84、2.14；Δb* 1.63、2.02），并注明 ΔL* 变化很小、以 Δb* 为主；注明数据来源为 Océ 与历史纸",
+      "why": "S03 Table 3 中研究未列全部 RH 行；外推至 241 需注明。"
+    },
+    {
+      "item": "c07 / c13 Wessling 数据来源描述",
+      "change": "明确 Wessling 样本为'无图像的历史成品纸，密度变化区'",
+      "why": "S03 §2.1 'The historic sample diazotype paper contained no image'。"
+    },
+    {
+      "item": "c08 Wessling '图像区'",
+      "change": "改为'密度变化区（无图像的历史成品纸）'",
+      "why": "同上；数值（ΔE* 4.10–4.34；暗 0.52–0.64）已核。"
+    },
+    {
+      "item": "c08 / c13(5) ISO 18905 范围（A 摘录）",
+      "change": "降为未验证，等级不高于 B；保留 Kodak 'storage prints' 厂商语境作为依据",
+      "why": "iso.org 403，不可读；S15 无摘要。"
+    },
+    {
+      "item": "c08 '100 年'",
+      "change": "补充为'Kodak Record film 在 ISO 18911 归档条件下的厂商声明'",
+      "why": "S04 原文语境；研究未换算、未用于展示，合规。"
+    },
+    {
+      "item": "c09 Kodak 6 个月",
+      "change": "补充长期存放需 10 °C 以下",
+      "why": "S04 原文。"
+    },
+    {
+      "item": "c09 / c14 数据表 PD activators 声明",
+      "change": "新增为未核查线索，写入 c14 与 baseline（R4 无消费级无氨显影液）",
+      "why": "S01 原文 'Compatible with or PD activators'（厂商声明）；研究未记录。"
+    },
+    {
+      "item": "c10 PSAP 光增白剂",
+      "change": "新增为未评估机理线索（optical brighteners）",
+      "why": "S05 diazo 条目：sensitizing solution 含 optical brighteners。"
+    },
+    {
+      "item": "c11 PPE '丁腈手套、护目镜'",
+      "change": "删除；改为论文原文 'suitable gloves' 与 'Adequate ventilation'",
+      "why": "S02 HAZARDS 原文未提丁腈或护目镜。"
+    },
+    {
+      "item": "c11 负结果 ASTM D-4236 / LHAMA / CAS",
+      "change": "改为'未检索或未能证实'，并注明检索范围未记录",
+      "why": "负结果须写明搜索词、URL、范围；研究未记录。"
+    },
+    {
+      "item": "c12 / c14 / negative_findings：Dietzgen 无 241 SKU",
+      "change": "降为'静态页未显示，未核实'；baseline 'D1 没有无氨显影液可买' 改为 unverified",
+      "why": "两个类目页静态 HTML 无商品列表（0 次 '241'、'blue line'、'developer'），含 16–17 个 script 标签。"
+    },
+    {
+      "item": "c12 / c13(7)：S22 作为负结果支撑",
+      "change": "删除该支撑；S22 只作摘录级线索（C）",
+      "why": "原页两次连接失败（HTTP 000），前轮 502，未读。"
+    },
+    {
+      "item": "baseline S17 'Dietzgen 母公司已改为 SIHL'",
+      "change": "改为'SIHL 官网列出 Dietzgen Bond Paper 品牌（关系未证实）'",
+      "why": "sihlinc.com 页面仅显示品牌与 '© 2026 SIHL INC.'。"
+    },
+    {
+      "item": "baseline R1 PSAP prevalence 'Moderately rare'",
+      "change": "市场衰退 agree；PSAP 'Moderately rare' disagree（S05 diazo 条目 Common）",
+      "why": "S05 原文 'Prevalence Common'（收藏语境）。"
+    },
+    {
+      "item": "c13 证据等级",
+      "change": "保留 10 条；S23 由搜索摘录升级为 curl全文；新增 (10) 反证（Océ 'very stable'；Kodak 'excellent resistance to high humidity'，聚酯片基）",
+      "why": "平衡证据；Kodak 反证不适用于纸基，不推翻 Glaser 数据。"
+    },
+    {
+      "item": "c15 判别实验 '荧光灯，参照 Glaser 同口径'",
+      "change": "改为钨丝灯同光源、约 40 天、预先定义阈值；荧光灯 14 天仅作初筛",
+      "why": "S03 光源为钨丝灯；S04 警示白色荧光灯等富 UV 光源使胶片灰雾。"
+    },
+    {
+      "item": "c03 / 数据表 '60 天' 等",
+      "change": "无改动，已核",
+      "why": "S01 原文一致。"
+    },
+    {
+      "item": "c04 Océ、US4343884、Parmeggiani 数值与引文",
+      "change": "无改动，已核",
+      "why": "S02、S10、S11 原文一致。"
+    },
+    {
+      "item": "verdict 淘汰结论",
+      "change": "维持淘汰；理由由 3 条修订（底线 1、底线 2 证据范围、底线 3 理由框架）",
+      "why": "任一底线 ✗ 即淘汰；底线 2 ✗ 数据成立；底线 1 与 3 的 ✗ 在保守与目的解读下成立。"
+    }
+  ]
+}

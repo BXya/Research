@@ -1,0 +1,516 @@
+{
+  "key": "pellet",
+  "reconciliation_log": [
+    {"item": "c02 与 c13 第6条：S3（Getty）连续色调摘录", "change": "由 A（摘录级）降为未验证；不再作为与 S2 冲突的 A 级证据", "why": "原 PDF 四次 curl 均 404；WebSearch 仅返回链接，未见 continuous transparent images 原句，S3 不可核"},
+    {"item": "c03 阴天与荫处曝光倍数", "change": "改为：晴天荫处约 5 倍；阴天约 30 分钟至 1 小时以上", "why": "S1 pp.38–39 原文中 5 倍指晴天荫处，阴天未给倍数；原稿将二者合并"},
+    {"item": "c07 历史旁证的“水浴”去除蓝斑", "change": "删去“水浴”，仅保留草酸盐 blue salving", "why": "S1 p.40 只写草酸盐 blue salving 擦除蓝斑；水洗是常规步骤，不是蓝斑去除法"},
+    {"item": "c13 第2条与 baseline IP 行：1877 日期引注", "change": "日期改引 S2、S5；S1 p.36 仅引阿拉伯胶为 Pellet 的建议与 capital improvement", "why": "S1 原书全文无 1877 字样；S2 写 Pellet 与 Poitevin 于 1877 年取得专利，S5 亦记 1877"},
+    {"item": "baseline IP：1877 年专利已过期，无 IP 风险", "change": "“已过期”标为未能证实（无来源，属推断）；“无 IP 风险”仅为关键词层未发现", "why": "未找到任何已过期的来源；检索范围仅 WebSearch 与 Google Patents XHR"},
+    {"item": "c06(iii) 碳酸盐中和的碱侧证据", "change": "补充 S5（B）：碳酸钠与氨列为蓝晒减色（漂白）剂", "why": "S5 cyanotype 页 Bleaching 段；原稿已引 S5 但未用此段，该段支持不得默认迁移"},
+    {"item": "new_routes：草酸盐 blue salving 作为白区补救", "change": "由“可作为补救对照”改为“不可作为无损补救”，仅作破坏性对照", "why": "S1 p.35 原配方为草酸与苛性钾（碱性），原文称其 dissolves the blue，会同时溶去已成色区域"},
+    {"item": "discriminating_experiment：稀酸清除对照与碱组", "change": "稀酸清除臂限定为具备专业通风与 HCN 监测的实验室，且 SDS/HCN 核查通过后执行；碱组限实验室；家用或车库不得执行", "why": "设计含对亚铁氰化物显影片施加稀酸的操作，与“铁氰化物体系附近禁强酸停止方案”的红线原则冲突"},
+    {"item": "c11 稀硫酸释放 HCN 的条件", "change": "补入 S7 条件：加热与强酸；浓硫酸不发生；亚铁氰化物的酸释放仍未核", "why": "S7 原文为 under heating 与 very strongly acidic；原稿缺少条件与浓酸例外"},
+    {"item": "c11 氯化铁 H290/H302/H314 归属", "change": "由“无水品”改为“S9 infobox 未标注水合形态”", "why": "S9 infobox 列出 H-codes，但未注明对应哪一形态"},
+    {"item": "c03 Photrio UV 灵敏度；c04、c05、c09、c10、c06(iii) 的 S4 主张", "change": "保持未验证，标为未能证实；等级保持 C", "why": "本轮 curl 复核 S4 仍为 HTTP 403 安全验证页，未绕过；S4 是“免洗”与“碳酸盐设想”的唯一来源"},
+    {"item": "S16 Chem-Impex（亚铁氰化钾三水）", "change": "quote 更新为本轮 curl 读取结果：CAS 14459-95-1、ACS reagent、$18.50/100G；价格与库存仍标未验证", "why": "原页可读，身份与页面标价可核；价格与库存依规则保持未验证"},
+    {"item": "S3 access 字段", "change": "记录本轮核查过程（404 四次，WebSearch 无摘录）", "why": "使 access 与实际核查结果一致"},
+    {"item": "c01 label：机制一致性", "change": "一致性依据限于 S1、S2 原文；S3 仅为未核摘录", "why": "S3 不可读，不能作为机制交叉印证"},
+    {"item": "c05 结构说明", "change": "说明逐条 ✓/✗/? 位于 c05_免洗核验 键，c05 列仅给半干判定", "why": "结构一致性；内容不变（六条均为 ?，无 ✓）"},
+    {"item": "verdict 与 status", "change": "观察线（收紧）：在获得经证实的停止方案并通过白区实验前，不得推进为保留线", "why": "c06 承认无已证实停止方案；底线 1、4 目前无法判定通过；白区为决定性测试；裁定冲突取更保守一方"},
+    {"item": "未改动项：红线结论、价格未验证、无年限换算、无专利结论", "change": "维持原稿", "why": "核查未发现违规；亚铁氰化钾与铁氰化钾已区分；c12 价格均标未验证"}
+  ],
+  "name_zh": "Pellet 直接正像蓝晒",
+  "name_en": "Pellet direct-positive cyanotype (cyanofer / gummoferric)",
+  "status": "done: 观察线",
+  "as_of": "2026-11-01",
+  "columns": {
+    "c01_机制": {
+      "text": "曝光时光化学还原：Fe(III)（氯化铁或柠檬酸铁铵）被光还原为 Fe(II)；涂层中的酒石酸与阿拉伯胶等胶体在 Fe(III) 存在处保持不溶，在曝光区随 Fe(II) 生成而重新溶解。显影时亚铁氰化钾（ferrocyanide，Fe(II) 型）只与未曝光区残留的 Fe(III) 反应生成普鲁士蓝（ferric ferrocyanide），形成白底蓝线正像。Poitevin 1863 年发现铁盐使有机物不溶、光还原后又可溶（S1 p.36）。具体中间体与速率数据未查到。",
+      "grade": "A",
+      "label": "事实（机制在 S1、S2 原文间一致；S3 仅为未核摘录）；中间体细节未验证",
+      "source_ids": ["S1", "S2", "S3", "S4"]
+    },
+    "c02_极性与色调": {
+      "text": "直接正像：正稿线条处形成蓝线、白底（S1 p.36：“blue impressions on a white ground from positive clichés”）。单色相：普鲁士蓝，无多色扩展证据；黑色调处理效果差（S1 p.41，“seldom good”）。连续色调：Getty 摘录称可用“continuous transparent images”曝光（S3；本轮核查：原 PDF 持续 404，WebSearch 仅返回链接，摘录未见，降为未验证）；但 Price 1995 称这类工艺“designed for linear rather than half tone reproduction”（S2，A）。两者表述冲突且 S3 不可核，无灰阶数据，连续色调未证实。",
+      "grade": "A（正像与单色）/ 未验证（连续色调）",
+      "label": "正像与单色：事实；连续色调：未验证（来源冲突）",
+      "source_ids": ["S1", "S2", "S3"]
+    },
+    "c03_曝光条件": {
+      "text": "日光：透过描图纸原稿约 0.5–2 分钟（S1 p.38），与光强、涂层厚度强相关；晴天荫处约为日光的 5 倍；阴天约 30 分钟至 1 小时以上，线条锐度差（S1 pp.38–39）。与 30 分钟目标：日光可满足，阴天或室内不稳定。消费级 UV 灯：无数据；Photrio 称涂层对蓝、绿光敏感（S4，C；原页 HTTP 403，未能证实）。mJ/cm²：未找到任何剂量数据。曝光终点可用抽边试纸条蘸显影液判定（S1 p.39）。",
+      "grade": "A（日光）/ C（UV 灯）",
+      "label": "日光：事实（历史数据）；UV 灯与剂量：未知",
+      "source_ids": ["S1", "S4"]
+    },
+    "c04_显影或成像后处理": {
+      "text": "历史（浸没式）：近饱和亚铁氰化钾溶液浮显（S1 p.39）→ 清水 → 3% 稀硫酸浴约 3–4 分钟，使蓝色加深、白区提亮并溶去残留铁盐 → 多次水洗 → 晾干（S1 p.40；S2“dilute acid bath ... clearing the highlights”）。现代（单一来源，半干）：蘸亚铁氰化钾的纸或泡沫刷轻刷，约 5 秒出像、20–30 秒到最大反差，纸巾吸干并热风吹干以停显，全程不水洗（S4，C）。现代变体的“停显”依靠干燥，不是化学终止。",
+      "grade": "A（历史）/ C（现代）",
+      "label": "历史流程：事实；现代半干法：单一来源，未验证",
+      "source_ids": ["S1", "S2", "S4"]
+    },
+    "c05_免洗真实程度": {
+      "text": "半干、显影步骤不水洗（S4，C）。但路线没有独立的“喷后停止”步骤：显影本身是湿涂亚铁氰化钾，且作者自述纸上仍残留未清除的化学品（S4）。真实含义是“不水洗的湿显影”，不是“免洗成品”。若采用碳酸盐中和（作者设想），则增加一道额外处理，违反底线 1 的“无额外处理步骤”。综合判定：半干，名义免洗、实际残留。",
+      "grade": "C",
+      "label": "事实（单一来源）；免洗程度：未验证",
+      "source_ids": ["S4", "S1", "S2"]
+    },
+    "c06_停止机制": {
+      "text": "无天然停止机制。曝光后白区残留的 Fe(II) 与未消耗的亚铁氰化物仍有反应活性（推断）。候选方案：(i) 水洗去除可溶物，历史做法，与免洗相悖；(ii) 稀酸清除，历史做法，但含亚铁氰化物时的 HCN 风险待核（见 c11）；(iii) 干燥后碳酸盐中和，作者未验证的设想（S4；需求书线索二 S14），与普鲁士蓝遇碱的红线冲突（S1 p.35：2% 氨水使蓝色消失、转为红褐色氢氧化铁；S5（B）另列碳酸钠与氨为蓝晒减色剂），不得默认迁移；(iv) 封层或螯合类方案，未找到证据。避光只是暂停，不计入。",
+      "grade": "C（碳酸盐设想）/ A（碱效应）",
+      "label": "未知 + 缺证据：白区停止机制无已证实方案",
+      "source_ids": ["S1", "S2", "S4", "S14", "S6"]
+    },
+    "c07_白区长期稳定性": {
+      "text": "机理推断：白区残留的 Fe(II) 与亚铁氰化物可形成无色的亚铁氰化物白色固体（Prussian white 类，即 Berlin white / Everett 盐类）；该白色固体氧化后生成普鲁士蓝（S6）。因此不水洗时，白区可能在放置或光照后缓慢蓝化。历史旁证：白区蓝斑以草酸盐“blue salving”擦除（S1 p.40；“水浴”去除蓝斑未见于 S1）；即使历史水洗后，白区仍可能有“occasional blue specks”（S2）。未找到 Pellet 白区长期稳定性的数据。",
+      "grade": "A / B（机理与历史旁证）",
+      "label": "推断（机理链）；长期数据：未验证",
+      "source_ids": ["S6", "S1", "S2"]
+    },
+    "c08_成色长期耐光": {
+      "text": "加速耐光数据：未找到 Pellet 成色的加速耐光数据，本条只报告这一事实，不做换算。定性陈述：Price 1995 称“positive and permanent blue line image”（S2，无数据）；NG 1993 摘要称现代普鲁士蓝“lightfast, except when mixed with an abundance of white”（S10）；Wikipedia 称普鲁士蓝见光褪色、暗处可恢复（S6，B）；同色料的蓝晒（非 Pellet）日照下漂白、阴处数周恢复（S1 p.36）。",
+      "grade": "A（定性）",
+      "label": "未验证（无加速数据）",
+      "source_ids": ["S2", "S10", "S6", "S1"]
+    },
+    "c09_预涂介质货架期": {
+      "text": "出厂预涂：当代未找到在售 Pellet 预涂纸或套装；搜索结果只有普通蓝晒涂层纸（S17）。历史上存在过 Joltrain 的 Papier Gummoferric，1881 年前（S2）。现涂：主配方混合液“does not keep, and should be employed the day it is made if possible”（S1 p.38）；Pizzighelli 配方混合液“keeps well for two or three days”（S1 p.41）。涂纸：作者实践观察，铁盐与施胶有机物在暗处久置后使涂膜渐不溶，新涂纸更灵敏、白更干净（S1 pp.40–41），一手但为主观观察、未定量。Photrio 称纸“keeps quite well”（S4，C）。定量货架期：无。",
+      "grade": "A",
+      "label": "混合液：事实；涂纸货架期：推断（作者观察，未定量）",
+      "source_ids": ["S1", "S2", "S4", "S17"]
+    },
+    "c10_底材适配": {
+      "text": "历史要求纸张施胶良好并压光（well sized and calendered），吸收过多时需淀粉上浆（S1 p.38）；涂层过厚需更长曝光，且白区易发蓝（S1 p.38）。阿拉伯胶作为胶体把涂层留在纸面，被 Duchochois 称为 Pellet 的“capital improvement”（S1 p.36）；Photrio 称无胶涂层会渗入纸内（S4，C）。拼图底材（白卡、升华涂层纸板）未测；涂布附着、湿刷引起的翘曲、与封层的兼容性均未知。",
+      "grade": "A（历史条件）/ C（现代）",
+      "label": "事实（历史条件）；拼图底材适配：未验证",
+      "source_ids": ["S1", "S4"]
+    },
+    "c11_安全与法规": {
+      "text": "亚铁氰化钾（显影剂）：CAS 13943-58-3（无水）/ 14459-95-1（三水）。维基 GHS 标签仅 H411，P273/P391/P501；大鼠 LD50 1.6–3.2 g/kg，靶器官为肾（S8，B；未读 SDS）。氯化铁：CAS 7705-08-0（无水）/ 10025-77-1（六水）；H290/H302/H314（S9 infobox，未标注水合形态），无水品与浓溶液“highly corrosive”（S9，B）。酒石酸：CAS 87-69-4（S18）。铁氰化钾（对照，本路线不用）：CAS 13746-66-2；H302/H315/H319/H332/H335；S7 称稀硫酸在加热时与铁氰化物反应生成 HCN，浓硫酸不发生此反应（S7，B）；亚铁氰化物的酸释放数据未核（S8 无）。历史 3% 硫酸浴与亚铁氰化物接触，属于需核查的近红线操作。ASTM D-4236 / LHAMA：未找到 Pellet 相关记录。成人可达性：化学品为通用试剂，可小包装购买（见 c12）。SDS 原文未读取。",
+      "grade": "B（维基 GHS）",
+      "label": "事实（GHS 摘录，未核 SDS）；ASTM 与 SDS 评估：未验证",
+      "source_ids": ["S8", "S9", "S18", "S7", "S1"]
+    },
+    "c12_供应与成本": {
+      "text": "以下全部为 2026-11-01 搜索摘录，未验证，页面日期与库存未核对：亚铁氰化钾三水 100 g：Chem-Impex 约 $18.50（S16）；Chemsavers（eBay）$49.95 免邮（摘录）；MP Biomedicals 约 $56.56；Glentham £14.60（页面标注的发货日已过）；Sigma 经 ChemicalBook 聚合页 $130（标注 2026-04-30）；Lab Alley 125 g $79.31。首单清单记录的 eBay 50 g $19.95（2026-10-19）本轮无法复核（eBay 访问受限，S15）。氯化铁、酒石酸、阿拉伯胶：本轮未查价格。Pellet 预涂套装：无货源。",
+      "grade": "搜索摘录（未验证）",
+      "label": "未验证（价格、库存、在售状态均未核实）",
+      "source_ids": ["S16", "S15", "S17"]
+    },
+    "c13_证据等级": {
+      "text": "1) 显影剂为亚铁氰化钾（Fe(II)）而非铁氰化钾：A（S1 pp.39–40；S2；S4 配方）；事实。2) 1877 年 Pellet 与 Poitevin 相关专利（S2；S5 亦记 1877），阿拉伯胶为 Pellet 的改良（S1 p.36）：A；事实，原件未见。3) 白底蓝线正像、单色普鲁士蓝：A（S1 p.36；S2）；事实。4) 历史流程含亚铁氰化钾显影、水浴、3% 稀硫酸浴、水洗：A（S1 pp.39–40；S2）；事实。5) 现代半干法不水洗：C（S4 单一爱好者）；未验证。6) 连续色调可用于曝光：S3 摘录（原页不可读，降为未验证）与 S2 表述冲突；未验证。7) 成色“永久”：A 定性（S2），无数据；未验证。8) 混合液当天用完：A（S1 p.38）；事实。9) 涂纸暗处渐不溶：A 一手观察（S1 pp.40–41）；推断，未定量。10) 碳酸盐中和可行：C 设想（S4）；与 A 级碱效应（S1 p.35）相反；未验证，风险高。11) 亚铁氰化物低毒：B（S8）；SDS 未核；未验证。",
+      "grade": "A / B / C（分项见 text）",
+      "label": "分项标注：事实 / 推断 / 未验证",
+      "source_ids": ["S1", "S2", "S3", "S4", "S6", "S8", "S10"]
+    },
+    "c14_关键未知": {
+      "text": "1) 不水洗的白区是否在暗处或光照后蓝化。这是最可能翻盘的一项：若稳定，路线进入观察；若蓝化且不可逆，则直接淘汰。2) 碱（碳酸盐）对已成色普鲁士蓝的速率与可逆性。需求书与协议称“不可逆”，本轮未找到直接证据。",
+      "grade": "未知",
+      "label": "未验证",
+      "source_ids": ["S1", "S6", "S14", "S15"]
+    },
+    "c15_判别实验": {
+      "text": "一句话：不水洗的白区若在暗处放置 7 天后即出现可见蓝斑，则路线白区不过关，直接淘汰。",
+      "grade": "设计",
+      "label": "待执行",
+      "source_ids": ["S1", "S4"]
+    }
+  },
+  "c05_免洗核验": {
+    "验收": {
+      "1_喷后免洗": "? 半干、显影不水洗（S4，C，单一来源）；但显影本身是湿涂亚铁氰化钾，且无独立停止步骤；若加碳酸盐中和则违反“无额外处理”。",
+      "2_白区停得住": "? 倾向 ✗。白区残留 Fe(II) 与亚铁氰化物，可生成无色白色盐并氧化为普鲁士蓝（S6）；历史流程靠水浴与酸浴清除白区（S1 p.40，S2）。推断，未经实验。",
+      "3_成色留得住": "? 普鲁士蓝一般耐光但遇白褪色、见光褪色、暗处可恢复（S10、S6）；遇碱有红线风险（S1 p.35）；稀酸使蓝色加深（S1 p.40）。无 Pellet 加速数据。",
+      "4_少量喷液": "? 显影为湿刷、约 5–30 秒需监控（S4，C），无“喷一次即停止”的设计；倾向不满足单次少量喷液的概念。",
+      "5_底材不变形": "? 历史要求施胶压光纸（S1 p.38）；湿刷与热风干燥对纸板的翘曲风险未测。",
+      "6_安全前置": "? 无 ASTM D-4236 / LHAMA 评估记录；亚铁氰化钾维基 GHS 仅 H411（S8，B）；氯化铁无水品 H290/H302/H314（S9，B）；历史 3% 硫酸浴需红线核查。"
+    },
+    "说明": "六条底线中没有一条已被证实通过；底线 2 有强推断失败风险；底线 1、3、4、5、6 全部为未验证。（结构注：逐条 ✓/✗/? 位于本键；c05 列本身只给半干判定。）"
+  },
+  "verdict": {
+    "status": "观察线（收紧：无已证实停止方案前不得推进）",
+    "reasons": [
+      "无直接红线命中：显影剂是亚铁氰化钾而非铁氰化钾，未用重铬酸盐。",
+      "底线 2（白区停得住）有强推断失败风险：不水洗时白区残留 Fe(II) 与亚铁氰化物，机理上可导致缓慢蓝化（S6，S1）。这是决定性待测点。",
+      "底线 1（免洗）仅有单一爱好者来源（S4，C），且显影本身为湿涂步骤，没有独立的停止步骤。",
+      "底线 3–6 全部未验证；ASTM D-4236 / LHAMA 无记录。",
+      "不列为保留：证据不足，且白区机理风险未排除。不列为淘汰：未出现已证实的红线命中，碳酸盐中和只是未测设想。收紧（核查新增）：目前没有已证实的停止方案，底线 1 与 4 无法判定通过；在获得经证实的停止方案并通过白区实验前，不得推进为保留线。若白区实验失败，则淘汰。"
+    ],
+    "red_line_hits": [
+      "铁氰化钾 + 强酸：未直接命中（显影剂为亚铁氰化钾）；但历史流程含 3% 稀硫酸浴（S1 pp.39–40），与亚铁氰化物共存，需按近红线处理，直到 SDS 与 HCN 实测排除。需求书线索一与协议草稿写作“铁氰化钾”，若照此执行将直接触发红线。",
+      "重铬酸盐：未命中。",
+      "普鲁士蓝遇碱（pH>7）：近红线，命中风险高。碳酸盐中和候选与 2% 氨水实验（S1 p.35）相冲突，需单独评估，不得默认迁移。",
+      "家用小量与通风：中等风险。氯化铁腐蚀性强，历史酸浴与热风干燥需要通风控制。"
+    ]
+  },
+  "baseline_challenges": [
+    {
+      "round": "需求书 v0.5 §5 线索一（S14）；阶段2 实验协议草稿 L16、L30（S15）",
+      "old_claim": "显影用铁氰化钾（potassium ferricyanide）",
+      "agree": false,
+      "my_evidence": "S1 pp.39–40 与 S2 均为亚铁氰化钾（ferrocyanide，Fe(II)）；S4 配方亦为亚铁氰化钾。此条为错误。铁氰化物 + 酸正是红线（S7）；若按此执行会误触红线。",
+      "strength": "强（A 对 A，且有红线后果）"
+    },
+    {
+      "round": "轮4 report.md B 节；notes/case-B-pellet.md（S13）",
+      "old_claim": "半干式亚铁氰化钾擦涂显影，不用水洗，现代可行",
+      "agree": "部分",
+      "my_evidence": "现代半干法的唯一来源是单一爱好者（S4，C）；历史全流程含水洗与稀酸浴（S1 pp.39–40，S2）；未找到第二个独立复刻。",
+      "strength": "弱至中（C 对 A 的历史流程）"
+    },
+    {
+      "round": "轮4 report.md B 节（Lightfastness）；需求书 §5",
+      "old_claim": "成色永久（Price 1995）",
+      "agree": "部分",
+      "my_evidence": "S2 只有定性“permanent”，无数据；S10 称普鲁士蓝一般耐光但与大量白混合时褪色；S6 称见光褪色、暗处可恢复。无 Pellet 加速数据。",
+      "strength": "弱（双方均无数据）"
+    },
+    {
+      "round": "轮4 report.md B 节（Continuous tone）",
+      "old_claim": "连续色调有据",
+      "agree": "部分",
+      "my_evidence": "S3 摘录称可用 continuous transparent images 曝光（A 摘录）；S2 称这类工艺“designed for linear rather than half tone reproduction”（A）。两者冲突，无灰阶数据。",
+      "strength": "中（A 对 A，存在冲突）"
+    },
+    {
+      "round": "轮4 report.md B 节（Ready-made media）",
+      "old_claim": "无预涂介质、无 kit，只能自配",
+      "agree": true,
+      "my_evidence": "本轮 WebSearch 一次查询（S17）未见 Pellet 套装，只见普通蓝晒涂层纸。S2 证实历史上有 Papier Gummoferric（1881 年前），今天无在售。",
+      "strength": "中（范围有限：一次搜索加资料包）"
+    },
+    {
+      "round": "轮4 report.md B 节（Safety）；需求书 §5 注意条",
+      "old_claim": "强酸红线不触发（半干变体无需强酸）",
+      "agree": "部分",
+      "my_evidence": "现代变体确无强酸（S4）。但历史流程含 3% 硫酸浴（S1 pp.39–40，S2）。S7 显示稀硫酸加热会从铁氰化物释放 HCN；亚铁氰化物的酸释放数据未找到（S8 无此项）。“不触发”只对现代变体成立。",
+      "strength": "中"
+    },
+    {
+      "round": "需求书 §5 线索二（S14）；协议草稿 L16–17（S15）；轮4 notes（S13）",
+      "old_claim": "碳酸盐中和是唯一有真实实验者提出的原地灭活设想，可作为候选",
+      "agree": "部分",
+      "my_evidence": "设想确为作者提出（S4，“could try”），未做实验。但 S1 p.35 显示 2% 氨水使普鲁士蓝转为红褐色氢氧化铁；S1 p.33 显示含钙盐（碳酸盐）的水使铁转为碳酸盐、致赭色；S5 称 cyanotype 不耐碱环境。默认迁移风险高。",
+      "strength": "中（A 反证，但不是同一步骤）"
+    },
+    {
+      "round": "协议草稿 L17（S15）",
+      "old_claim": "碱（pH>7）不可逆漂白普鲁士蓝",
+      "agree": "部分",
+      "my_evidence": "方向得到 S1 p.35 支持（氨水使蓝色消失并转为红褐色）。“不可逆”未找到直接证据；S5 称褪色的 cyanotype 可在暗处部分恢复。",
+      "strength": "中（方向对，不可逆性未证）"
+    },
+    {
+      "round": "需求书 §5 线索一（S14）",
+      "old_claim": "有爱好者在 2026 年仍在复刻（来源：photrio 复刻帖，以及 earlyphotography.co.uk 工艺词条）",
+      "agree": false,
+      "my_evidence": "earlyphotography 词条是历史工艺术语总览（资料包 S12 自己的归类，S21），不是 2026 年复刻。本轮该站连接失败（HTTP 000），未能核对原文。",
+      "strength": "中（来源归属错误）"
+    },
+    {
+      "round": "资料包 Pellet原始来源包 §一（S12）；轮4 notes（S13）",
+      "old_claim": "Photrio 配方：10 ml 水 + 0.75 g FeCl3 + 0.5 g 酒石酸（感光剂，列表中无胶）",
+      "agree": "内部不一致",
+      "my_evidence": "同一帖又称无阿拉伯胶涂层会渗入纸内（S4）；S1 p.36 称阿拉伯胶是 Pellet 的关键改良。所列配方缺胶，需追原帖核对。本轮无法读取 S4 原帖。",
+      "strength": "中（单一来源）"
+    },
+    {
+      "round": "轮4 report.md Verdict（S13）",
+      "old_claim": "被助理排为主线",
+      "agree": false,
+      "my_evidence": "本地 轮4 report.md 的 Verdict 表把 A 重氮排第 1、B Pellet 排第 2（S13）。本地文件中未找到“主线”的原文。",
+      "strength": "弱（元信息，无法核实原说法）"
+    },
+    {
+      "round": "轮4 notes（IP）；需求书 §5 线索一",
+      "old_claim": "1877 年专利已过期，无 IP 风险",
+      "agree": "部分",
+      "my_evidence": "1877 年日期在 S2 与 S5 中一致（S1 原书无 1877 字样）。原件未找到（WebSearch 与 Google Patents XHR 均无结果，见 negative_findings）。“专利已过期”无来源，属推断；“无 IP 风险”仅为关键词层面未发现，不构成无专利结论。",
+      "strength": "中（日期一致，原件缺）"
+    },
+    {
+      "round": "轮4 report.md B 节（Hues）",
+      "old_claim": "只有普鲁士蓝一种色相",
+      "agree": "部分",
+      "my_evidence": "单色相成立（S1 p.36）。但 S1 p.41 记载黑色调处理效果差。Colas 黑墨体系不属于 Pellet。",
+      "strength": "弱"
+    }
+  ],
+  "sources": [
+    {
+      "id": "S1",
+      "title": "P.C. Duchochois, Photographic Reproduction Processes (1891), 'The Cyanofer (Pellet's Process)' pp.36-41; cyanotype section pp.33-35; ferro-tannate section pp.41-43",
+      "url": "https://www.gutenberg.org/cache/epub/24016/pg24016-images.html",
+      "type": "A 一手（原书）",
+      "access": "curl全文（本轮下载并抽取正文）",
+      "date": "1891（Gutenberg 2007-12-24 发布）",
+      "quote": "“does not keep, and should be employed the day it is made if possible.”"
+    },
+    {
+      "id": "S2",
+      "title": "Lois Olcott Price, 'The History and Identification of Photo-Reproductive Processes Used for Architectural Drawings Prior to 1930', Topics in Photographic Preservation vol. 6 (AIC, 1995)",
+      "url": "https://resources.culturalheritage.org/pmgtopics/1995-volume-six/06_03_Price.html",
+      "type": "A 一手（学术文章，史料综合）",
+      "access": "curl全文",
+      "date": "1995",
+      "quote": "“positive and permanent blue line image directly from a tracing”"
+    },
+    {
+      "id": "S3",
+      "title": "Stulik & Kaplan, The Atlas of Analytical Signatures of Photographic Processes: Cyanotype (Getty Conservation Institute, 2013)",
+      "url": "https://www.getty.edu/conservation/publications_resources/pdf_publications/pdf/atlas_cyanotype.pdf",
+      "type": "A 一手（学术图册）",
+      "access": "搜索摘录（核查：原 PDF curl 404 四次；WebSearch 1 次仅返回该 URL，未见摘录原句；原页不可读）",
+      "date": "2013",
+      "quote": "“line drawings, continuous transparent images, or translucent positive images”"
+    },
+    {
+      "id": "S4",
+      "title": "Photrio forum thread: Looking for Pellet's Process — Direct Positive Cyanotype",
+      "url": "https://www.photrio.com/forum/threads/looking-for-pellets-process-direct-positive-cyanotype.223549/",
+      "type": "C 论坛（单一爱好者）",
+      "access": "本地资料包与轮4 notes 摘录；本轮 curl 返回安全验证页（HTTP 403），未绕过",
+      "date": "帖子活跃，最近帖约 2026-10-13（轮4 notes）",
+      "quote": "“paper soaked in K-Ferro or foam-brush lightly going over it”"
+    },
+    {
+      "id": "S5",
+      "title": "Wikipedia: Cyanotype",
+      "url": "https://en.wikipedia.org/wiki/Cyanotype",
+      "type": "B 百科",
+      "access": "curl全文",
+      "date": "2026-11-01 读取",
+      "quote": "“An acidified rinse using citric acid or vinegar is sometimes used after exposure”"
+    },
+    {
+      "id": "S6",
+      "title": "Wikipedia: Prussian blue (含 Prussian white / Berlin white 与稳定性段落)",
+      "url": "https://en.wikipedia.org/wiki/Prussian_blue",
+      "type": "B 百科",
+      "access": "curl全文",
+      "date": "2026-11-01 读取",
+      "quote": "“Prussian blue is produced by oxidation of ferrous ferrocyanide salts.”"
+    },
+    {
+      "id": "S7",
+      "title": "Wikipedia: Potassium ferricyanide（含 HCN 释放段落与 GHS）",
+      "url": "https://en.wikipedia.org/wiki/Potassium_ferricyanide",
+      "type": "B 百科",
+      "access": "curl全文",
+      "date": "2026-11-01 读取",
+      "quote": "“it will react with diluted sulfuric acid under heating forming ... hydrogen cyanide”"
+    },
+    {
+      "id": "S8",
+      "title": "Wikipedia: Potassium ferrocyanide（GHS、毒性段落）",
+      "url": "https://en.wikipedia.org/wiki/Potassium_ferrocyanide",
+      "type": "B 百科",
+      "access": "curl全文",
+      "date": "2026-11-01 读取",
+      "quote": "“The toxicity in rats is low, with lethal dose (LD50) at 1.6—3.2g/kg.”"
+    },
+    {
+      "id": "S9",
+      "title": "Wikipedia: Ferric chloride（GHS、腐蚀性段落）",
+      "url": "https://en.wikipedia.org/wiki/Ferric_chloride",
+      "type": "B 百科",
+      "access": "curl全文",
+      "date": "2026-11-01 读取",
+      "quote": "“anhydrous iron(III) chloride, as well as concentrated FeCl3 aqueous solution, is highly corrosive”"
+    },
+    {
+      "id": "S10",
+      "title": "National Gallery London, Technical Bulletin: 'Kirby 1993' Fading and colour change of Prussian blue（摘要页）",
+      "url": "https://www.nationalgallery.org.uk/technical-bulletin/kirby1993",
+      "type": "A 一手（机构技术公报摘要）",
+      "access": "curl全文（仅摘要页，约 3.7 KB）",
+      "date": "1993（页面读取 2026-11-01）",
+      "quote": "“The modern pigment is lightfast, except when mixed with an abundance of white.”"
+    },
+    {
+      "id": "S11",
+      "title": "Stulik (AIC 2013), 'The Atlas of Analytical Signatures of Photographic Processes' summary article, Topics in Photographic Preservation vol. 15 (8 pp.)",
+      "url": "https://resources.culturalheritage.org/pmgtopics/2013-volume-fifteen/37-T15_Stulik.pdf",
+      "type": "A 一手（学术文章）",
+      "access": "curl全文（PDF 8 页）",
+      "date": "2013",
+      "quote": "（全文无 Pellet / cyanofer 提及，作为负结果）"
+    },
+    {
+      "id": "S12",
+      "title": "本地资料包：Pellet原始来源包-20261017.md（2026-10-17 汇编；含 2026-10-18 增补 S9–S12）",
+      "url": "本地文件：photosensitive-puzzle-research-pack-20261031/原始资料/03-研究轮次/Pellet原始来源包-20261017.md",
+      "type": "本地资料包（转引）",
+      "access": "本地资料包",
+      "date": "2026-10-17 / 10-18",
+      "quote": "（转引 Photrio、Getty、Price、earlyphotography、Chest of Books 等；本轮未逐一复核）"
+    },
+    {
+      "id": "S13",
+      "title": "本地旧轮次：轮4 report.md（B 节与 Verdict）与 notes/case-B-pellet.md",
+      "url": "本地文件：轮4-先曝光后显影矩阵-20261018/report.md；notes/case-B-pellet.md",
+      "type": "本地（旧轮次主张）",
+      "access": "本地资料包",
+      "date": "2026-10-18",
+      "quote": "（B 节：“Development in potassium ferrocyanide”；Verdict 表：A 重氮 #1，B Pellet #2）"
+    },
+    {
+      "id": "S14",
+      "title": "本地：阶段1产品需求书 v0.5 §5（线索一、二、注意条）",
+      "url": "本地文件：01-需求与章程/阶段1产品需求书-v0.5-20261013.pdf（pdftotext 读取）",
+      "type": "本地（旧轮次主张）",
+      "access": "本地资料包",
+      "date": "2026-10-13",
+      "quote": "（“显影用铁氰化钾”；“碳酸盐中和…是目前唯一找到的…设想”）"
+    },
+    {
+      "id": "S15",
+      "title": "本地：阶段2 实验协议草稿（E1b，L16–17、L30）与首单购物清单 A 节",
+      "url": "本地文件：04-阶段2实验包/实验协议-DRAFT.md；首单清单-DRAFT-未批准未下单.md",
+      "type": "本地（旧轮次主张）",
+      "access": "本地资料包",
+      "date": "2026-10-14 至 10-19",
+      "quote": "（协议草稿 L30：“铁氰化钾显影”；首单清单 A 节已改为亚铁氰化钾）"
+    },
+    {
+      "id": "S16",
+      "title": "Chem-Impex: Potassium ferrocyanide trihydrate（产品页，搜索摘录）",
+      "url": "https://www.chemimpex.com/products/01250",
+      "type": "厂商页（摘录）",
+      "access": "搜索摘录；价格未验证",
+      "date": "2026-11-01（摘录读取）",
+      "quote": "（核查：2026-11-01 curl 读取原页，显示 CAS 14459-95-1、ACS reagent、$18.50/100G；价格与库存仍未验证）"
+    },
+    {
+      "id": "S17",
+      "title": "普通蓝晒涂层纸与套装搜索摘录（非 Pellet 体系）：Parallax Photographic Co-op；Etsy 5x7 kit；eBay 20 张 8x10 refill",
+      "url": "https://parallaxphotographic.coop/product-category/processes/cyanotype/",
+      "type": "搜索摘录（负结果参照）",
+      "access": "搜索摘录；价格未验证",
+      "date": "2026-11-01（摘录读取）",
+      "quote": "（均为 ferric citrate + ferricyanide 类普通蓝晒，不是 Pellet）"
+    },
+    {
+      "id": "S18",
+      "title": "Wikipedia: Tartaric acid（CAS 字段）",
+      "url": "https://en.wikipedia.org/wiki/Tartaric_acid",
+      "type": "B 百科",
+      "access": "curl全文",
+      "date": "2026-11-01 读取",
+      "quote": "（CASNo1 = 87-69-4）"
+    },
+    {
+      "id": "S21",
+      "title": "Early Photography 术语表 gloss3（铁盐印相工艺总览）",
+      "url": "http://www.earlyphotography.co.uk/site/gloss3.html",
+      "type": "二手（术语表）",
+      "access": "本轮连接失败（HTTP 000，http 与 https 均失败）；仅资料包摘录",
+      "date": "未知",
+      "quote": "（资料包 S12 摘录：“曝光后再施加铁氰化钾…Pellet 改良…白底”；该站个别段落 ferri/ferro 用词不一致）"
+    }
+  ],
+  "negative_findings": [
+    {
+      "query": "WebSearch: Atlas of Analytical Signatures CYANOTYPE Getty pdf Pellet's process positive cyanotype",
+      "scope": "WebSearch 摘要；curl 直读 getty.edu PDF；getty item 页 2K7KZW",
+      "result": "搜索结果给出 atlas_cyanotype.pdf 的 URL，但 curl 返回 404；item 页可读但无 PDF 链接。摘录未提及 Pellet，Pellet 专节未核实。"
+    },
+    {
+      "query": "WebSearch: Henri Pellet 1877 brevet cyanotype positif gomme arabique fer procédé Poitevin",
+      "scope": "WebSearch 摘要（1 次）",
+      "result": "未找到 1877 年专利原文或专利号。摘要只重复了 Price 1995 与 Duchochois 的表述。"
+    },
+    {
+      "query": "Google Patents XHR（patents.google.com/xhr/query，before priority:18900101）：'cyanotype gum arabic ferric tartaric ferrocyanide'；'Poitevin ferric gum'；'Pellet gum iron positive print'",
+      "scope": "Google Patents 索引，1890 年前",
+      "result": "前两条各 0 条结果；第三条返回 503（一次）。未查 INPI、Gallica 与法国原件。INPI 在线库只覆盖 1978 年后公布的专利（资料包 S12 转述）。"
+    },
+    {
+      "query": "WebSearch: Pellet cyanofer direct positive cyanotype pre-coated paper kit for sale",
+      "scope": "WebSearch 前 10 条摘要",
+      "result": "未找到 Pellet 预涂纸或套装。结果均为普通蓝晒涂层纸或套装（Etsy 5x7 $19；eBay 20 张 8x10 $33.67；Parallax 8x10 20 张 £18.95），不是 Pellet 体系。"
+    },
+    {
+      "query": "WebSearch: potassium ferrocyanide trihydrate 100g price photographic chemicals supplier 2026",
+      "scope": "WebSearch 摘要",
+      "result": "价格摘要见 c12，全部未验证。eBay 页面不可读（访问策略限制）。"
+    },
+    {
+      "query": "Crossref API query.bibliographic：'cyanofer positive cyanotype Pellet'；'Prussian blue alkali decomposition ferric hydroxide cyanotype'",
+      "scope": "Crossref 元数据（约 4 次请求）",
+      "result": "第一条命中的均为 2019–2023 年现代蓝晒书章，没有 Pellet 相关条目。第二条两次返回非 JSON，失败。"
+    },
+    {
+      "query": "PubChem PUG REST：CID 与 GHS，覆盖 potassium ferrocyanide、potassium ferricyanide、ferric chloride、tartaric acid、ferric ammonium citrate、sodium carbonate、gum arabic",
+      "scope": "pubchem.ncbi.nlm.nih.gov，约 7 次尝试",
+      "result": "全部 503 PUGREST.ServerBusy，未获取。GHS 与 CAS 改用 Wikipedia infobox（B 级）。"
+    },
+    {
+      "query": "Photrio 本帖 Pellet's Process thread",
+      "scope": "photrio.com",
+      "result": "HTTP 403，返回安全验证页（JS 与 cookie 挑战）。未绕过，仅依赖资料包与轮4 notes 摘录。"
+    },
+    {
+      "query": "earlyphotography.co.uk gloss3（Pellet 与 delayed ferricyanide 变体）",
+      "scope": "http 与 https 两种协议",
+      "result": "连接失败（HTTP 000）。未读，资料包摘录仅作参考。"
+    },
+    {
+      "query": "Stulik 2013 AIC summary（Topics vol.15）全文检索 'pellet|cyanofer'",
+      "scope": "resources.culturalheritage.org 8 页文章",
+      "result": "零命中，无 Pellet 提及（S11）。"
+    },
+    {
+      "query": "Duchochois 全文检索 'cyanofer|pellet|ferrocyan'（Gutenberg 24016）",
+      "scope": "全书约 1474 行文本",
+      "result": "Pellet 专章在 pp.36–41；其余处的 ferrocyanide 属于 cyanotype 与 Colas 显影。未见 Pellet 的 HCN 或碱数据。资料包所称的 Chest of Books“阿拉伯胶曝光区不溶、排斥显影液”原文未读，未核实。"
+    },
+    {
+      "query": "未读来源：Chest of Books 'Chemical Copying Methods'；Surplus Camera Gear 'Pellet's Process' 免费全文；pigment.informational.ca 'Cyanofer Pellet's Process'；Gutenberg 'Workshop Receipts'",
+      "scope": "资料包与 WebSearch 线索",
+      "result": "本轮未读（预算与时间）。资料包转述的机理与配方仅记为未核实。"
+    },
+    {
+      "query": "eBay 价格（亚铁氰化钾 50 g $19.95；Chemsavers 100 g $49.95）；Freestyle Photo；academia.edu（Getty 摘录页）",
+      "scope": "访问策略限制（eBay、Freestyle 返回 403 或不在可读范围），或仅为摘录",
+      "result": "未读。价格只有摘录或资料包记录，未验证。"
+    }
+  ],
+  "key_unknowns": [
+    "不水洗的白区在暗处与光照后是否蓝化（最可能翻盘或淘汰的一项）。",
+    "碱（碳酸盐，pH>7）对已成色普鲁士蓝的速率与可逆性；需求书和协议称“不可逆”，无直接证据。",
+    "亚铁氰化物与残留酸（含历史 3% H2SO4 浴）的 HCN 释放量与 SDS 数据；亚铁氰化物的酸释放未找到一手依据。",
+    "连续色调的真实灰阶范围：Getty 摘录与 Price 1995 的表述冲突。",
+    "涂层与拼图底材（白卡、升华涂层纸板）的附着、翘曲与封层兼容性。",
+    "消费级 UV 灯下的曝光剂量（mJ/cm²）与 30 分钟可行性；本轮无任何剂量数据。",
+    "1877 年原始专利的配方细节（是否含胶、是否设计为免洗）。",
+    "2026 年氯化铁、酒石酸、阿拉伯胶的小包装价格与库存（本轮未查；亚铁氰化钾价格均未验证）。",
+    "Photrio 原帖配方是否遗漏阿拉伯胶（所列感光剂无胶）。"
+  ],
+  "discriminating_experiment": {
+    "one_liner": "不水洗的白区若在暗处放置 7 天后即出现可见蓝斑，则路线白区不过关，直接淘汰。",
+    "design_sketch": "A4 纸涂布，含胶与不含胶两组对照；每组分日光曝光 1–2 分钟与 UV 灯两档；显影后分三组：不水洗（主组）、稀酸清除（对照；仅限具备专业通风与 HCN 监测的实验室，且 SDS/HCN 核查通过后执行；家用或车库不得执行）、清水洗（对照）。每组留一份暗处 7 天、另一份光照 24 小时，与未显影白纸对比，用 1–5 级白区蓝化评分与色差仪记录；碱组（碳酸钠溶液，仅限实验室）单独做 pH 梯度（pH 8 / 10 / 11）测已成色的褪色速率。安全：通风柜、丁腈手套、护目镜，禁止强酸与任何铁氰化物同处。"
+  },
+  "new_routes_spotted": [
+    {
+      "name": "Poitevin / Colas 铁-没食子酸（或单宁）黑像，无氰",
+      "why": "S1 pp.41–43：Fe(III) + 酒石酸 + 没食子酸或单宁显影成黑像；水洗使用含白垩（碳酸钙）悬浮液；Fisch 建议取消预水洗；涂纸存放期约 10–15 天（吸湿）。不含氰化物，但是否可用需核 SDS，且碳酸钙步骤的作用需单独评估。",
+      "lead_url": "https://www.gutenberg.org/cache/epub/24016/pg24016-images.html"
+    },
+    {
+      "name": "Mike Ware 1994 单液草酸铁铵蓝晒（货架期改良）",
+      "why": "S5 称以 ammonium iron(III) oxalate 替代柠檬酸铁铵，形成单一储备液，货架期更好。该体系仍含铁氰化钾，需核红线，属于经典蓝晒线，不是 Pellet。",
+      "lead_url": "https://en.wikipedia.org/wiki/Cyanotype"
+    },
+    {
+      "name": "草酸盐“blue salving”作为白区蓝斑补救对照（不是停止剂）",
+      "why": "S1 p.40 记载 potassic oxalate 用于清除蓝斑。不可作为白区失败后的无损补救：S1 p.35 的草酸钾溶液由草酸与苛性钾配成（碱性），原文称其“dissolves the blue”，同时会溶去已成色区域的蓝；仅可作为破坏性对照，需单独核查。",
+      "lead_url": "https://www.gutenberg.org/cache/epub/24016/pg24016-images.html"
+    },
+    {
+      "name": "Burnett 铀盐 / cuprotype（只记录，倾向出局）",
+      "why": "S1 中有铀盐与铜盐的显影体系。铀盐毒性高，风险大于收益，仅作记录。",
+      "lead_url": "https://www.gutenberg.org/cache/epub/24016/pg24016-images.html"
+    }
+  ],
+  "narrative_zh": "一、机制与正像。Pellet 体系以铁盐（氯化铁或柠檬酸铁铵）加酒石酸与阿拉伯胶涂布。曝光使 Fe(III) 还原为 Fe(II)，曝光区胶体重新溶解；显影用亚铁氰化钾，只与未曝光区残留的 Fe(III) 生成普鲁士蓝，形成白底蓝线正像（S1 p.36；S2）。Duchochois（1891）、Price（1995）与 Getty 摘录的机理表述一致。\n\n二、显影剂名称（旧错误核查）。Duchochois 原书写作 potassium ferrocyanate（即亚铁氰化钾，Fe(II) 型，S1 pp.39–40）；Price 1995 与 Photrio 配方同样是亚铁氰化钾（S2、S4）。需求书 v0.5 §5 线索一与阶段2 协议草稿 E1b（L16、L30）写作“铁氰化钾”，属于错误。铁氰化物加酸正是红线（S7）。首单清单 A 节已修正为亚铁氰化钾，但需求书与协议未同步。\n\n三、历史显影与稀酸浴。历史流程是浸没式：亚铁氰化钾浮显，清水，再以 3% 稀硫酸浴约 3–4 分钟，使蓝色加深、白区提亮并溶去残留铁盐，最后多次水洗（S1 pp.39–40；S2）。Wikipedia 也说酸性漂洗用于清除残留的未曝光铁化合物（S5，B）。酸的作用是清除与提亮，不是化学停止。现代变体不用强酸（S4），但历史酸浴与亚铁氰化物共存，必须按近红线处理，直到 SDS 与 HCN 实测排除。\n\n四、半干不水洗与白区。现代复刻（单一爱好者，S4，C）称半干刷涂、热风吹干、不水洗，但作者自认纸上残留化学品未清除。历史资料都以水洗清除可溶物（S1 p.40），即使水洗后白区仍可能有“occasional blue specks”（S2）。Wikipedia 指出亚铁氰化物白色态氧化后生成普鲁士蓝（S6）。因此不水洗时，白区残留的 Fe(II) 与亚铁氰化物存在缓慢蓝化的机理风险（推断）。这是本路线的决定性待测点，未找到任何长期白区数据。\n\n五、碳酸盐中和。这只是 Photrio 作者的未验证设想（S4），需求书把它列为线索二（S14）。反证据：Duchochois 记载 2% 氨水使普鲁士蓝转为红褐色氢氧化铁（S1 p.35）；含钙盐的水使铁转为碳酸盐、致赭色（S1 p.33，属 cyanotype 水洗，是类比而非同一步骤）；Wikipedia 称 cyanotype 不耐碱环境（S5）。碳酸盐中和不能默认迁移，且有碱对已成色的红线风险。\n\n六、保存期。主配方混合液“不耐放，当天用完”（S1 p.38）；Pizzighelli 配方可放 2–3 天（S1 p.41）。作者称涂纸在暗处久置后，铁盐与施胶有机物作用使涂膜渐不溶，新涂纸更灵敏、白更干净（S1 pp.40–41）。这是对阶段5 涂布货架期门的直接一手证据，但未定量。\n\n七、耐光与连续色调。Price 称“permanent”（S2，无数据）。NG 摘要称现代普鲁士蓝耐光，但与大量白混合时褪色（S10，A 摘录级）。无 Pellet 加速耐光数据，不做年限换算。Getty 摘录称可用连续调透明原稿曝光（S3，A 摘录级），而 Price 称这类工艺“designed for linear rather than half tone reproduction”（S2）。两者冲突，连续色调未证实。\n\n八、供应。当代没有 Pellet 预涂纸或套装；历史上 Papier Gummoferric 存在于 1881 年前（S2）。亚铁氰化钾 100 g 的搜索摘录价约 $18.50–130 不等（S16 等，未验证；eBay 页面不可读）。\n\n九、安全。亚铁氰化钾维基 GHS 仅 H411，大鼠 LD50 1.6–3.2 g/kg（S8，B）。无水氯化铁 H290/H302/H314（S9）。稀硫酸加热会从铁氰化物释放 HCN（S7）。未读到 SDS；ASTM D-4236 与 LHAMA 无 Pellet 记录。\n\n十、判定：观察线。无直接红线命中（显影剂不是铁氰化钾，未用重铬酸盐）。但底线 2（白区）有强推断失败风险；底线 1 仅有单一来源；底线 3–6 未验证。若白区实验失败，则淘汰。\n\n十一、负结果与新线索。详见 negative_findings。新线索：Poitevin/Colas 铁-没食子酸黑像（无氰，含碳酸钙水洗步骤，S1 pp.41–43）；Ware 1994 草酸铁铵单液（S5，仍含铁氰化钾）。"
+}

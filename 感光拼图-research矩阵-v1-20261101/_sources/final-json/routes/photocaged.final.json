@@ -1,0 +1,615 @@
+{
+  "key": "photocaged",
+  "name_zh": "光笼活化（o-硝基苄基等 caged 化合物释放活化剂）",
+  "name_en": "photocaged activator release using o-nitrobenzyl cages",
+  "status": "观察线（倾向淘汰）",
+  "columns": {
+    "c01_机制": {
+      "text": "光化学：2-硝基苄基（oNB）酯、醚或碳酸酯经分子内氢迁移生成 aci-硝基中间体，环化后释放被保护的酸、醇或胺，同时生成 2-亚硝基苯甲醛（副产物）。专利体系（US 6,958,181 B1）中，活化剂为酚、羧酸、环状磺酰胺或质子酸（权利要求 3）；其受保护形式由「脱保护剂」（实施例为 2-羟基-1-氨基丙烷）在能量作用下去除，游离酸使无色 leuco 染料（荧烷等）开环显色。专利独立权利要求 1、18、25 写 energy（未限定热），方法权利要求 26–33 与全部实施例限定为热；光驱动版本在专利中未被实证。",
+      "grade": "A",
+      "label": "事实（光化学机制与专利机制，已逐条核对）；推断（光驱动的专利实现）",
+      "source_ids": ["S1", "S2", "S4"]
+    },
+    "c02_成像极性与色调能力": {
+      "text": "正像：曝光区显色，与产品定义（成色区 / 白区）一致。单色相：由所选 leuco 染料决定；专利实施例 1 为荧烷 S-205 形成黑色，OD greater than 1.0（含 0.5 wt% IR780 吸收剂，激光热脉冲）；实施例 2 为同类反应，OD less than 1.0。连续色调：说明书给出热通量 0.05–5.0 J/cm²（一种实施方式）与 0.3–0.5 J/cm²（第二种，亦为权利要求 27），无灰阶数据；「剂量依赖的连续调」仅为推断，未验证。多色：专利未给多色实例。另见 US 10,029,502（DataLase）权利要求 1 为双显色剂多色体系（activatable diacetylene 与 thermal acid generator + yellow leuco dye），属多色扩展线索，同构关系未核实。",
+      "grade": "A",
+      "label": "事实（单色、OD 与热通量范围，已核对）；推断（连续调与多色）；未验证（多色实际可行性）",
+      "source_ids": ["S1", "S18"]
+    },
+    "c03_曝光条件": {
+      "text": "光源：oNB 类 aci-硝基中间体 λmax 约 400 nm（综述，NPE 类）；甲氧基取代的 NV 类在 Rayonet 420 nm 灯下仍有合理速率（综述，实验室灯、溶液条件）。消费 UV 灯（常用 365 nm）与日光 UVA 有重叠（推断）。量子产率（综述原文）：聚合物基质中的新戊酸酯（57）Φ=0.04，同一化合物在 MeCN 中为 0.13；新戊酸酯 66 固相 Φ=0.09，MeCN 中为 0.64。由此算得固相约为溶液的 0.3 与 0.14 倍，但综述明确说明溶液 Φ 不能直接外推到固相，因此「固相效率约降为溶液的 1/3 至 1/7」仅为推断（两点数据）。苄位修饰衍生物 61 的 Φ=0.2 为乙酸释放（溶剂未核实），不是母体 oNB 乙酸酯。剂量（mJ/cm²）：无涂层实测数据，未知。与 30 分钟目标的关系：不可判定，缺辐照度数据与固相 Φ 的实测。",
+      "grade": "A",
+      "label": "事实（量子产率与吸收，已核对）；推断（固相与溶液比值、消费光源匹配）；未验证（剂量、日光 UVA 强度）",
+      "source_ids": ["S2", "S4", "S1"]
+    },
+    "c04_显影或成像后处理": {
+      "text": "专利显影为干式：激光热脉冲（实施例 1、2）与权利要求 26 b 段（heat sufficient to remove the protection leaving group without decomposing the color forming composition）；未见水洗、擦涂或蒸气步骤。显影前的预处理：实施例 1 为真空干燥成膜，实施例 2 为 UV 固化。结论：显影阶段倾向「无后处理」，但产品定义必需的停止步骤未在专利中出现。",
+      "grade": "A",
+      "label": "事实（专利描述与实施例，已核对）；推断（显影阶段免后处理）",
+      "source_ids": ["S1"]
+    },
+    "c05_免洗的真实程度": {
+      "text": "显影阶段干式、无水洗（推断为严格免洗）；但停止喷剂步骤未定义，免洗是否成立取决于停止剂的性质。六条底线：1 ?；2 ?（倾向 ✗，推断）；3 ?；4 ?；5 ?；6 ?（倾向 ✗，未证实）。详见顶层 c05_免洗核验。",
+      "grade": "A（专利描述）+ 推断",
+      "label": "推断为主；停止剂未定义",
+      "source_ids": ["S1"]
+    },
+    "c06_停止机制": {
+      "text": "专利无停止步骤。未曝光区保留未光解的笼化活化剂，本质上是潜伏显影源；避光只是暂停，不是停止。候选：(a) 碱性喷剂中和游离酸以终止显色。推断：若显色为可逆的酸碱平衡，碱可能使已成色区褪色，需单独评估（碱性方案按红线单独评估）。(b) 选择性灭活未曝光区的笼化物：未找到证据。(c) 外涂层：专利称彩色外涂层有助于环境光稳定性（第 11 栏，摘录级，文本经 2007 年更正）。(d) 定影剂：US 7,993,807 以路易斯酸或过渡金属盐作定影剂抑制已成色区褪色（A）；它稳定已成色区，不能停止未曝光区的潜伏活化剂，不能直接作为停止方案。未找到天然停止机制。",
+      "grade": "A（专利）+ 未验证（候选停止方案）",
+      "label": "未知；缺证据：选择性灭活；碱性停止对已成色的影响；定影剂对未曝光区无作用的证据",
+      "source_ids": ["S1", "S2", "S12"]
+    },
+    "c07_白区长期稳定性": {
+      "text": "机理：未曝光区存在笼化活化剂，日光 UVA 可能触发缓慢显色（推断）。专利背景称 leuco 组合物在环境光下「不够稳定」（第 1 栏，A）；稳定剂清单（多羟基二苯甲酮、羟胺、三芳基咪唑、羟苯基苯并三唑）列于「其他可选成分」（第 10 栏），未给任何数据，且可置于相邻层。推断：这些稳定剂若与活化层混合，可能吸收 365 nm 光子，削弱正常曝光灵敏度，形成与曝光灵敏度的取舍；分层放置可能绕开该取舍，待验证。",
+      "grade": "A（专利文本）+ 推断",
+      "label": "未验证（无白区老化数据）；推断（稳定剂与曝光波长的冲突，分层可能绕开）",
+      "source_ids": ["S1"]
+    },
+    "c08_成色长期耐光": {
+      "text": "未知。本轮未读到显色产物的加速耐光数据，专利也未给出耐光数据。补充（A 级定性）：US 7,993,807 描述 leuco 显色为可逆反应（may be easily reversible causing the loss of color），并称此类涂层可能褪色、以定影剂抑制；这说明成色留得住取决于显色产物的稳定化，本身并非耐光数据。旧轮次「接近永久」的说法只是类比，未验证。按规则只报数据本身：无数据。",
+      "grade": "未知（补充 A 级定性描述）",
+      "label": "未验证（缺加速耐光数据）",
+      "source_ids": ["S1", "S12"]
+    },
+    "c09_预涂介质货架期": {
+      "text": "出厂预涂形态：专利描述为溶剂（MEK、醇类）涂布后干燥的涂层，单层中同时含 leuco 染料、受保护活化剂、脱保护剂与吸收剂（第 11 栏），货架期无数据。用户现涂形态：专利未涉及，无混合液寿命数据。参考：笼化化合物纯品（Thermo A1048，NPE-caged ATP）的厂商要求为冷冻保存（-5 至 -30 °C）并避光（curl 读取，A），提示笼化物本身需要冷藏避光；涂层体系货架期未知。",
+      "grade": "A（厂商储存条件与专利涂层描述）+ 未知（涂层货架期）",
+      "label": "事实（纯品储存条件；涂层形态）；未知（涂层货架期）",
+      "source_ids": ["S1", "S9"]
+    },
+    "c10_底材适配": {
+      "text": "专利底材以光盘为主，并列出玻璃、陶瓷和纸（cellulose papers）等可选底材（第 11 栏）。纸基涂布的吸湿变形、封层兼容性均无数据。缺证据：纸基涂布后的尺寸稳定性与封层相容性。",
+      "grade": "A（专利列举）；其余未知",
+      "label": "事实（可选底材列举）；未知（纸基适配）",
+      "source_ids": ["S1"]
+    },
+    "c11_安全与法规": {
+      "text": "2-硝基苄醇（CAS 612-25-9，CID 11923 身份已核对）：ECHA C&L 聚合通知（6 份报告、3 份通知，已核对）含 H302（33.3%）、H312（33.3%）、H315（83.3%）、H319（83.3%）、H332（33.3%）、H335（83.3%）。2-亚硝基苯甲醛（CID 542808，身份已核对）：PubChem 无 GHS 数据（PUGVIEW.NotFound，此为负结果，不等于无危害）；综述称其「潜在毒性、强吸收」。2-硝基苄基甲苯磺酸酯（CID 561663，身份已核对）：GHS 负结果本轮未复核。PPE 与标签级别：未知。成人美术材料可达性：未知，ASTM D-4236 与 LHAMA 未查。",
+      "grade": "A（API、综述）；其余未知",
+      "label": "事实（前体 GHS、身份）；未知（副产物毒理、标签级别、LHAMA）",
+      "source_ids": ["S5", "S6", "S7", "S8", "S2"]
+    },
+    "c12_供应与成本": {
+      "text": "商品化 caged 化合物均为生物试剂，非涂层用途。价格全部未验证，读取日 2026-11-01：Thermo A1048 NPE-caged ATP 5 mg，curl 页面显示 $311.60（促销价，页面注明 Ends 31-Dec-2026）与 $380.00（列价）；搜索摘录中的 $333.65 与 $337.00 在原页未见，无法核对。Cenmed NPEC-caged dopamine 100 mg 约 $2,777（搜索摘录；原页 403 人机验证，不可读，交期 28–56 天未核实）；R&D/Tocris DMNPE-4 AM caged calcium 5 mg 为 $411（搜索摘录；原页连接失败，未核实）。换算约 $28–82/mg（未验证）。2-硝基苄基甲苯磺酸酯：未找到供应商页面（PubChem 供应商章节为空，枚举未完成）。",
+      "grade": "未验证",
+      "label": "未验证（价格、库存、在售状态；促销价有效期见页面）",
+      "source_ids": ["S9", "S13", "S14", "S15"]
+    },
+    "c13_证据等级": {
+      "text": "关键主张（逐条）：(1) 专利权利要求 26–33 与全部实施例限定为热；独立权利要求 1、18、25 为 energy。A（PDF 与 Google Patents 双核对），事实（已修正）。(2) 专利摘要含「heat or light」表述，A，S1，事实（已核对）。(3) oNB 光化学（aci-硝基、副产物）机制，A，S2，事实（已核对）。(4) 固相量子产率低于溶液，A（数值），S2，事实；比值外推为推断。(5) 光解副产物「潜在毒性、强吸收」，A，S2，事实（已核对）。(6) 2-硝基苄醇 GHS，A（API），S6，事实（已核对）。(7) 「显著光解细胞毒性」陈述，A（引文陈述，全文 XML 已核对），S3，事实范围有限（作者未测 nitrosobenzyl 本身的毒性）。(8) NPE-caged ATP 储存条件，A（厂商页，已核对），S9，事实。(9) 365 nm 与第二硝基提高 Φ（0.033 至 0.12，对象为 2,6-二硝基苄基碳酸酯），B（Wikipedia），S4，事实。(10) 商品化价格与供应，未验证，S9、S13–S15，未验证。另：BenchChem「365 nm 最优」未验证（未读）；US 7,993,807 摘录已由 Google Patents 全文核对（A）。",
+      "grade": "A 为主；B（百科）；未验证（价格、BenchChem）",
+      "label": "事实 / 推断 / 未验证 分列见条目",
+      "source_ids": ["S1", "S2", "S3", "S4", "S6", "S9", "S12", "S13", "S14", "S15"]
+    },
+    "c14_关键未知": {
+      "text": "1. 白区停止机制（最可能翻盘）：未曝光区的笼化活化剂如何在不显色的前提下被「停止」；选择性灭活与碱性中和是否伤及已成色区。定影剂只稳定已成色区，不解决未曝光区。若无解，路线出局。2. 固相光化学效率与曝光剂量（第二）：固相 Φ 比溶液低 3–7 倍的说法是推断，需实测；涂层能否在 30 分钟内成像未知。次要：亚硝基副产物在涂层中的定量与毒理；leuco 显色产物的耐光数据；稳定剂分层放置能否绕开白区取舍，未知。",
+      "grade": "A（Φ 数据来源）；其余未知",
+      "label": "未知；缺证据",
+      "source_ids": ["S2", "S1", "S12"]
+    },
+    "c15_判别实验": {
+      "text": "在玻璃与纸基上涂布 leuco 染料加笼化活化剂（2-硝基苄基甲苯磺酸酯，或自制的 2-硝基苄醇衍生物）薄膜，分别做 365 nm 曝光梯度（0、5、15、30 min）并记录 OD；随后暗置 24 h，再做 2 h 日光模拟，测未曝光区 ΔOD。若白区 ΔOD 超出肉眼阈值，则该配方（该笼化物加该染料）淘汰；淘汰整条 photocaged 路线需要多个配方或多个笼化物的一致结果。",
+      "grade": "推断（实验设计）",
+      "label": "判别实验（设计，未执行）",
+      "source_ids": []
+    }
+  },
+  "c05_免洗核验": {
+    "验收": {
+      "1_喷后免洗": "? 显影本身为干式、无水洗（专利描述与实施例，A）；但产品定义的「停止喷剂」性质未定，免洗是否成立取决于停止剂。",
+      "2_白区停得住": "? 倾向 ✗（推断，无数据）。未曝光区保留可光解的笼化活化剂（推断）；专利称稳定剂可减少环境光下的非预期显影，但无数据；稳定剂可置于相邻层（专利第 10 栏），与 365 nm 的争用并不必然发生。",
+      "3_成色留得住": "? 显色产物为 leuco 染料与酸形成的开环离子形式（专利与 US 7,993,807 机制，A）；US 7,993,807 称该反应可逆、颜色可能褪去，并以定影剂抑制（A）；耐光数据未读到。",
+      "4_少量喷液": "? 停止剂的种类与用量未定义，无法判断。",
+      "5_底材不变形": "? 专利底材以光盘为主，并列出玻璃、陶瓷与纸基（第 11 栏），纸基变形无数据；载体为 MEK 或醇类（专利，A）。",
+      "6_安全前置": "? 倾向 ✗（未证实为 ✗）。依据：综述称光解副产物 o-亚硝基苯甲醛为「潜在毒性、强吸收」（A，定性）；前体 2-硝基苄醇的 ECHA 聚合通知含 H302、H312、H315、H319、H332、H335（A，API）。ASTM D-4236 与 LHAMA 未查，无标准测试结论。"
+    },
+    "说明": "六条底线中 ✓ 为 0 条，? 为 6 条（其中第 2、6 条倾向 ✗），已证实 ✗ 为 0 条。验收底线规则为不达标即淘汰：若第 6 条证实为 ✗ 则淘汰；本核查未能证实该 ✗，故保留观察线，但倾向淘汰。"
+  },
+  "verdict": {
+    "status": "观察线（倾向淘汰）",
+    "reasons": [
+      "商品化：在本轮搜索范围内未发现成像涂层用的商品化笼化显色活化剂；已读的 Thermo A1048 为生物试剂；Cenmed 与 Tocris 原页不可读，价格仍未验证；2-硝基苄基甲苯磺酸酯未找到供应商页面（枚举未完成，不代表无供应商）。",
+      "核心专利 US 6,958,181 B1：方法权利要求 26–33 与全部实施例限定为热（IR 激光）显影；独立权利要求 1、18、25 为 energy（未限定热）；摘要与定义（第 3–4 栏）写 heat or light；保护基列表（第 6 栏）含 o-硝基苄基醚与 o-硝基苄氧羰基。无光致实施例，光致路线未被实证。旧轮次把它当作「光-热双触发」的最近现有技术，字面上摘要与定义支持该说法，但实施例与方法权利要求为热。",
+      "白区：未曝光区保留潜伏笼化活化剂，日光 UVA 可能缓慢触发（推断）；未找到选择性停止方法；稳定剂与 365 nm 曝光的争用为推断，且专利允许分层放置。",
+      "安全：光解副产物 o-亚硝基苯甲醛被综述列为潜在毒性、强吸收物（A，定性）；无副产物 GHS 数据；前体 2-硝基苄醇的 ECHA 聚合通知含多项危害语句（A，API）。安全前置（第 6 条）按现有证据不能证明达标，倾向不达标；ASTM D-4236 与 LHAMA 未查。",
+      "保留观察理由：机制成熟；固相量子产率非零（推断）；US 7,993,807 的可逆显色与定影剂线索、US 10,029,502 的多色双剂线索可作参考；可转向「光致碱释放的脱保护剂」或「光致产酸」等变体，但需单独立项验证。白区停止与安全前置两项均无证据支持通过，故倾向淘汰；不进入 bench 候选首位。"
+    ],
+    "red_line_hits": [
+      "未命中：专利与综述所列组分不含铁氰化钾、亚铁氰化钾或强酸释放 HCN 的组合（已核对）。",
+      "未命中：未涉及重铬酸盐与普鲁士蓝（已核对）。若采用碱性停止剂，需按规则单独评估对已成色区的影响（待评估）。",
+      "待评估：2-硝基苄基甲苯磺酸酯光解释放甲苯磺酸（强酸），无铁氰化物，不触发 HCN 组合，但需 SDS 核查。自制磺酸酯或苄基卤化物需要磺酰化或溴代苄试剂，属于家庭或车库小量操作风险较高的类别，SDS 未核查（未验证）。"
+    ]
+  },
+  "baseline_challenges": [
+    {
+      "round": "轮5",
+      "old_claim": "需定制合成（商品化不可得）",
+      "agree": "同意",
+      "my_evidence": "未找到成像涂层用的商品化笼化活化剂，只有生物试剂与 2-硝基苄醇等建筑块（CAS 612-25-9，S7，身份已核对）；2-硝基苄基甲苯磺酸酯无供应商页面（搜索，S15，原页不可读）。负结果受搜索范围限制。",
+      "strength": "中"
+    },
+    {
+      "round": "轮5",
+      "old_claim": "副产物 nitrosobenzaldehyde 有细胞毒性",
+      "agree": "部分同意",
+      "my_evidence": "综述（S2，A，全文 XML）称其 potentially toxic and strongly absorbing，为定性陈述；PMC5808866（S3，A）引用 ref 8a 称 significant photolysis-induced cytotoxicity，属引文陈述，作者未测 nitrosobenzyl 本身的毒性。定量数据缺。",
+      "strength": "定性中；定量弱"
+    },
+    {
+      "round": "轮5",
+      "old_claim": "无介质（无现成产品）",
+      "agree": "同意",
+      "my_evidence": "US 6,958,181 为 HP 光盘标签体系；US 7,993,807 为荧烷加吸收天线的涂层（Google Patents 全文，A）。两者均未见商品化成像涂层。",
+      "strength": "中"
+    },
+    {
+      "round": "轮5",
+      "old_claim": "观察线（非短名单）",
+      "agree": "同意",
+      "my_evidence": "修订后裁定为观察线（倾向淘汰），理由见 verdict。",
+      "strength": "中"
+    },
+    {
+      "round": "轮5 (G 笔记)",
+      "old_claim": "US 6,958,181 是「光或热」双触发（dry, light-or-heat developed）的最近现有技术",
+      "agree": "部分同意（修正）",
+      "my_evidence": "全文阅读（S1，PDF 12 页，并经 Google Patents 交叉核对）：摘要与定义字面写 energy in the form of heat or light，独立权利要求 1、18、25 写 energy（未限定热）；但方法权利要求 26–33 与全部实施例为热（IR 激光）显影，光致实施例未见。原研究写「权利要求全部为热」的说法不成立，应降为「实施例与方法权利要求为热」。",
+      "strength": "中（原记为强，已降级）"
+    },
+    {
+      "round": "轮5 (G 笔记)",
+      "old_claim": "胶囊式隔离（compartmentalization）带来 G4 货架期优势",
+      "agree": "不同意（未证明）",
+      "my_evidence": "专利全文（第 1–12 栏）无货架期数据；稳定剂只列名称，并允许置于相邻层。笼化纯品厂商要求冷冻避光（S9），不能推出涂层货架期良好。",
+      "strength": "弱"
+    },
+    {
+      "round": "轮5 (G 笔记)",
+      "old_claim": "连续色调可行（energy-dose-dependent，推断）",
+      "agree": "部分同意（仍为推断）",
+      "my_evidence": "第 12 栏给出热通量 0.05–5.0 J/cm² 与 0.3–0.5 J/cm²，无灰阶数据（S1）；综述显示固相 Φ 对基质高度敏感（S2）。",
+      "strength": "弱"
+    },
+    {
+      "round": "轮5 (G 笔记)",
+      "old_claim": "o-硝基苄基在 365 nm 为「最优」（BenchChem 二手来源）",
+      "agree": "未能核实",
+      "my_evidence": "BenchChem 页面不在可读清单内，本轮未访问。综述（S2）显示 aci 中间体 λmax 约 400 nm，甲氧基取代可用到约 420 nm（实验室灯）；365 nm 是合理工作点，但未见「最优」的依据。",
+      "strength": "弱（来源级别低）"
+    },
+    {
+      "round": "轮5 (G 笔记)",
+      "old_claim": "US 10,029,502（DataLase TAG + leuco）为同构的热型对应物",
+      "agree": "部分同意（热型部分成立，同构未证实）",
+      "my_evidence": "Google Patents HTML（S18，摘要与权利要求 1 已读）：第一显色剂为 activatable diacetylene，第二显色剂为 thermal acid generator 与 yellow leuco dye，施加 energy；可形成多色。与 HP 双剂体系结构不同；描述以激光为主（laser 出现 69 次，heat 21 次）。全文未逐段阅读。",
+      "strength": "中"
+    },
+    {
+      "round": "轮5 (G 笔记)",
+      "old_claim": "garage 可行性 LOW（需定制合成，需合成伙伴）",
+      "agree": "同意（推断）",
+      "my_evidence": "需要磺酰化或卤代苄试剂，前体 2-硝基苄醇带 ECHA 聚合危害通知（S6）；未见小量安全操作路径。",
+      "strength": "中（推断）"
+    }
+  ],
+  "sources": [
+    {
+      "id": "S1",
+      "title": "US 6,958,181 B1 Protected activators for use in leuco dye compositions（Gore，HP；申请 2003-09-05）",
+      "url": "https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/6958181",
+      "type": "专利（一手）",
+      "access": "curl全文（USPTO PDF 共 12 页：第 1–9 页图像阅读为专利正文与权利要求；第 10–12 页为 2007-01-30 Certificate of Correction，更正第 9–11 栏文字）；Google Patents HTML 交叉核对权利要求",
+      "date": "2005-10-25",
+      "quote": "removing the protection leaving group upon application of energy in the form of heat or light（摘要，已核对）"
+    },
+    {
+      "id": "S2",
+      "title": "Klán P. et al., Photoremovable Protecting Groups in Chemistry and Biology: Reaction Mechanisms and Efficacy, Chem. Rev. 2013, 113, 119; DOI 10.1021/cr300177k",
+      "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3557858/",
+      "type": "综述（一手）",
+      "access": "curl全文（eutils PMC XML；DOI 已核对）",
+      "date": "2013",
+      "quote": "forms potentially toxic and strongly absorbing byproducts such as o-nitrosobenzaldehyde（已核对）"
+    },
+    {
+      "id": "S3",
+      "title": "Development of Photoactivated Fluorescent N-Hydroxyoxindoles and Their Application for Cell-Selective Imaging, Chem. Eur. J. 2016; DOI 10.1002/chem.201600547（即 PMC5808866）",
+      "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5808866/",
+      "type": "论文（引用陈述，非细胞毒性原始数据）",
+      "access": "API（eutils efetch 全文 XML，已核对）；首次直接访问 PMC 页面遇到人机验证",
+      "date": "2016-03-23（epub）",
+      "quote": "significant photolysis-induced cytotoxicity due to ... highly reactive o-nitrosobenzyl products（引用其 ref 8a，未读，已核对原句）"
+    },
+    {
+      "id": "S4",
+      "title": "Wikipedia: Photolabile protecting group",
+      "url": "https://en.wikipedia.org/wiki/Photolabile_protecting_group",
+      "type": "百科（二手，B）",
+      "access": "curl全文（首次 429，退避重试后 200）",
+      "date": "2026-11-01（读取日）",
+      "quote": "yielding 2-nitrosobenzaldehyde and a carboxylic acid；Φ = 0.033 to Φ = 0.12 when releasing a carbonate at 365 nm（对象为 2,6-二硝基苄基碳酸酯，已核对）"
+    },
+    {
+      "id": "S5",
+      "title": "PubChem CID 542808 (2-nitrosobenzaldehyde) GHS Classification",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug_view/data/compound/542808/JSON?heading=GHS+Classification",
+      "type": "数据库",
+      "access": "API（身份已核对：Benzaldehyde, 2-nitroso-；pug_view 返回 NotFound）",
+      "date": "2026-11-01（读取日）",
+      "quote": "PUGVIEW.NotFound: No data found"
+    },
+    {
+      "id": "S6",
+      "title": "PubChem CID 11923 (2-nitrobenzyl alcohol) GHS Classification（ECHA C&L 聚合通知）",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug_view/data/compound/11923/JSON?heading=GHS+Classification",
+      "type": "数据库（监管通知聚合）",
+      "access": "API（已核对）",
+      "date": "2026-11-01（读取日）",
+      "quote": "H315 (83.3%): Causes skin irritation；aggregated per 6 reports from 3 notifications（已核对）"
+    },
+    {
+      "id": "S7",
+      "title": "PubChem CID 11923 CAS 标识符",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug_view/data/compound/11923/JSON?heading=CAS",
+      "type": "数据库",
+      "access": "API（已核对；标题 2-Nitrobenzyl alcohol）",
+      "date": "2026-11-01（读取日）",
+      "quote": "612-25-9"
+    },
+    {
+      "id": "S8",
+      "title": "PubChem CID 561663 (2-nitrobenzyl tosylate) 标识与 GHS 负结果",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/name/2-nitrobenzyl%20tosylate/property/MolecularFormula,IUPACName/JSON",
+      "type": "数据库",
+      "access": "API（身份已核对：2-Nitrobenzyl tosylate；GHS 负结果本轮未复核）",
+      "date": "2026-11-01（读取日）",
+      "quote": "2-Nitrobenzyl tosylate（C14H13NO5S）"
+    },
+    {
+      "id": "S9",
+      "title": "Thermo Fisher 产品页 A1048 NPE-caged ATP",
+      "url": "https://www.thermofisher.com/order/catalog/product/A1048",
+      "type": "厂商页",
+      "access": "curl全文（HTML，已核对；价格为促销价，页面注明 Ends 31-Dec-2026，价格字段仍标未验证）",
+      "date": "2026-11-01（读取日）",
+      "quote": "Store in freezer -5°C to -30°C and protect from light.；Price (USD) 311.60（促销），380.00（列价）未验证"
+    },
+    {
+      "id": "S10",
+      "title": "Crossref 元数据：The Retrospective on 2-Nitrobenzyl Sulfonate Photoacid Generators, J. Imaging Sci. Technol. 1997; DOI 10.2352/j.imagingsci.technol.1997.41.1.art00006",
+      "url": "https://api.crossref.org/works/10.2352/j.imagingsci.technol.1997.41.1.art00006",
+      "type": "期刊论文（元数据）",
+      "access": "API（标题、期刊、年份、DOI 已核对；Crossref 无摘要，'248 nm' 内容描述未核实）",
+      "date": "1997",
+      "quote": "The Retrospective on 2-Nitrobenzyl Sulfonate Photoacid Generators（元数据已核对）"
+    },
+    {
+      "id": "S11",
+      "title": "US 4,705,741 Processless color imaging and film therefor（Lewis & Kuszewski，GAF；申请 1986-03-14）",
+      "url": "https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/4705741",
+      "type": "专利（一手）",
+      "access": "curl全文（原研究：仅第 1 页；本核查未复核）",
+      "date": "1987-11-10",
+      "quote": "developed in distinguishable colors by kinetic energy imparted by radiant beam exposure（原记录，未复核）"
+    },
+    {
+      "id": "S12",
+      "title": "US 7,993,807 B2 Compositions, systems, and methods for imaging（荧烷 leuco + 活化剂 + 吸收天线 + 定影剂）",
+      "url": "https://patents.google.com/patent/US7993807",
+      "type": "专利（一手，全文 HTML；原为搜索摘录，已升级）",
+      "access": "curl全文（Google Patents HTML，2026-11-01 读取）",
+      "date": "2026-11-01（读取日）",
+      "quote": "the lactone ring of the leuco dye opens upon the transfer of a proton from the activator（已核对原句）；A fixer is employed to retard the fading of the mark（摘要）；Such coatings may fade over time（描述）"
+    },
+    {
+      "id": "S13",
+      "title": "Cenmed NPEC-caged dopamine（100 mg）",
+      "url": "https://cenmed.com/npec-caged-dopamine-c007b-606162/",
+      "type": "搜索摘录（供应商）",
+      "access": "搜索摘录；本核查 curl 返回 HTTP 403 人机验证页，不可读，未绕过，仍未核实",
+      "date": "2026-11-01（搜索日）",
+      "quote": "100 mg 价格 $2,777.03，Shipping Lead-Time 28–56 Days（价格未验证）"
+    },
+    {
+      "id": "S14",
+      "title": "Tocris/R&D DMNPE-4 AM-caged calcium（5 mg）",
+      "url": "https://www.tocris.com/cn/products/dmnpe-4-am-caged-calcium_5948",
+      "type": "搜索摘录（供应商）",
+      "access": "搜索摘录；本核查 curl 两次连接失败，未能读取，仍未核实",
+      "date": "2026-11-01（搜索日）",
+      "quote": "5 mg $411（价格未验证）"
+    },
+    {
+      "id": "S15",
+      "title": "Bell Labs，An evaluation of nitrobenzylester chemistry for chemical amplification resist process（2-硝基苄基甲苯磺酸酯）",
+      "url": "https://nokia.com/bell-labs/publications-and-media/publications/an-evaluation-of-nitrobenzylester-chemistry-for-chemical-amplification-resist-process",
+      "type": "论文摘录",
+      "access": "搜索摘录（转述）；本核查 curl 返回 HTTP 403 Access Denied，未能读取，仍未核实",
+      "date": "未确定",
+      "quote": "2-nitrobenzyl tosylate evaluated as photoprotected toluene sulfonic acid source（转述，未核实）"
+    },
+    {
+      "id": "S16",
+      "title": "US 6,890,614 Metal salt activators for use in leuco dye compositions（HP 同族，线索）",
+      "url": "https://patents.google.com/patent/US6890614",
+      "type": "专利（仅标题，线索）",
+      "access": "搜索摘录（本核查未读）",
+      "date": "未确定",
+      "quote": "标题：Metal salt activators for use in leuco dye compositions"
+    },
+    {
+      "id": "S17",
+      "title": "US 7,462,443 Leuco dye-containing coating compositions（线索）",
+      "url": "https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/7462443",
+      "type": "专利（仅标题，线索）",
+      "access": "搜索摘录（本核查未读）",
+      "date": "未确定",
+      "quote": "标题：Leuco dye-containing coating compositions"
+    },
+    {
+      "id": "S18",
+      "title": "US 10,029,502 B2 Method of forming an image on a substrate（DataLase）",
+      "url": "https://patents.google.com/patent/US10029502B2/en",
+      "type": "专利（一手，全文 HTML，部分读取）",
+      "access": "curl全文（Google Patents HTML；摘要与权利要求 1 已读，描述未逐段阅读）",
+      "date": "2026-11-01（读取日）",
+      "quote": "claim 1: activatable diacetylene（第一显色剂）；thermal acid generator and a yellow leuco dye（第二显色剂）；applying energy to the substrate"
+    },
+    {
+      "id": "S19",
+      "title": "US 6,958,181 B1（Google Patents HTML，交叉核对）",
+      "url": "https://patents.google.com/patent/US6958181B1/en",
+      "type": "专利（一手，HTML）",
+      "access": "curl全文（HTML；权利要求 1、26、27、30 与 PDF 一致）",
+      "date": "2026-11-01（读取日）",
+      "quote": "26 ... applying heat sufficient to remove the protection leaving group without decomposing the color forming composition；27 ... from about 0.3 to about 0.5 J/cm2"
+    }
+  ],
+  "negative_findings": [
+    {
+      "query": "WebSearch（standard）：caged compound NPE-caged DMNB-caged buy price per mg supplier",
+      "scope": "通用网页检索，US 地区；未覆盖 Sigma、TCI（403）",
+      "result": "只返回生物试剂：Thermo A1048、Tocris/R&D DMNPE-4 AM 与 DMNB-caged serine、Cenmed NPEC-caged dopamine、TargetMol DMNPE、Aladdin NPEC-(S)-AMPA、adooq DMNPE-caged luciferin。无成像涂层用商品化笼化显色活化剂。（本核查：Cenmed 与 Tocris 原页不可读，见 S13、S14）"
+    },
+    {
+      "query": "WebSearch（standard）：2-nitrobenzyl tosylate photoacid generator supplier buy",
+      "scope": "通用网页检索",
+      "result": "未找到 2-硝基苄基甲苯磺酸酯的供应商列表；只有文献（Bell Labs 评估，本核查原页 403，见 S15；JIST 1997 综述元数据已核对，见 S10）与专利（US 6,159,665 等）。TCI 的 2-硝基苄基环己基氨基甲酸酯为光碱产生剂，不是同一化合物。"
+    },
+    {
+      "query": "WebSearch（standard）：patent photocaged leuco dye o-nitrobenzyl protected activator imaging coating light-induced color formation",
+      "scope": "通用网页检索，专利关键词范围",
+      "result": "关键词范围内未发现同时含 o-硝基苄基笼化活化剂与 leuco 染料的专利。最接近：US 6,384,264 与 US 6,171,756（光产胺，抗蚀剂型）；US 8,679,776 B2（oNB 笼化荧光染料，非 leuco）；US 4,705,741（GAF，辐射产生卤化氢）；US 7,993,807 B2（荧烷 + 吸收天线，已全文核对）。此为范围限定的未发现，不是无专利结论。"
+    },
+    {
+      "query": "patents.google.com/patent/US6958181 与 /US6958181B2/en",
+      "scope": "全文专利（原研究两次尝试）",
+      "result": "原研究两次返回 Google 自动化流量拦截页。本核查（2026-11-01）对 /US6958181B1/en 返回 HTTP 200 并可读，原拦截未能复现，视为间歇性。PDF 全文已读（S1）。"
+    },
+    {
+      "query": "patents.justia.com/patent/6958181",
+      "scope": "专利全文镜像",
+      "result": "返回 Cloudflare 人机验证页（Just a moment...），未读；不绕过。"
+    },
+    {
+      "query": "freepatentsonline.com/6958181.html",
+      "scope": "专利全文镜像",
+      "result": "TLS 连接被中断（SSL_ERROR_SYSCALL），未读。"
+    },
+    {
+      "query": "PubChem pug_view GHS Classification：CID 542808（2-亚硝基苯甲醛）与 CID 561663（2-硝基苄基甲苯磺酸酯）",
+      "scope": "PubChem 聚合 GHS 数据",
+      "result": "两者均返回 PUGVIEW.NotFound（No data found）。CID 542808 身份已核对；CID 561663 的 GHS 负结果本核查未复核。"
+    },
+    {
+      "query": "PubChem pug_view Chemical Vendors：CID 11923 与 CID 561663",
+      "scope": "PubChem 供应商列表",
+      "result": "章节存在，但 pug_view 未返回供应商条目（空列表）；供应商枚举未完成。这是方法限制，不代表无供应商。"
+    },
+    {
+      "query": "eutils esearch（pubmed）：o-nitrobenzyl photolysis nitrosobenzaldehyde（自动词映射）",
+      "scope": "PubMed 全部字段",
+      "result": "计数 0。受自动词映射限制，不代表文献中不存在相关论文。"
+    },
+    {
+      "query": "Crossref api：o-nitrobenzyl photoacid generator（rows 8）",
+      "scope": "Crossref 元数据",
+      "result": "仅返回 PAG 相关条目（光刻、光酸产生剂综述等），未返回 caged leuco 活化剂的文献。"
+    },
+    {
+      "query": "本核查新增：Cenmed、Tocris、Bell Labs（nokia.com）原页读取",
+      "scope": "供应商与文献页面的原文核对",
+      "result": "Cenmed 返回 403 人机验证；Tocris 两次连接失败；nokia.com 返回 403 Access Denied。未绕过。相关价格与文献描述保持未验证。"
+    },
+    {
+      "query": "未执行：BenchChem（pdf.benchchem.com）、CPSC 与 LHAMA 标签要求",
+      "scope": "旧轮次与安全线索",
+      "result": "未访问（BenchChem 不在可读清单内；LHAMA 未在预算内查询）。未核实，不作负结果计入。DataLase US 10,029,502 已部分读取（S18）。"
+    }
+  ],
+  "key_unknowns": [
+    "白区停止机制：未曝光区的笼化活化剂在不显色的前提下如何被停止；选择性灭活与碱性中和是否伤及已成色区；定影剂只稳定已成色区，不解决未曝光区。",
+    "固相光化学效率与曝光剂量：固相 Φ 比溶液低 3–7 倍的说法是推断；30 分钟内能否成像未知；mJ/cm² 无数据。",
+    "稳定剂与曝光波长的冲突：稳定剂为紫外吸收类（推断）；专利允许置于相邻层，取舍能否绕开未知。",
+    "亚硝基副产物在涂层中的定量、毒理与是否与 leuco 染料或胺类脱保护剂反应（综述称其与硫醇、伯胺反应）。",
+    "显色产物的加速耐光数据（c08）：无数据；可逆褪色的程度未知。",
+    "纸基底材适配、封层兼容与吸湿变形：无数据。",
+    "价格与在售状态：全部未验证，且同一产品的两处价格不一致；促销价有效期至 2026-12-31（页面所示）。",
+    "US 10,029,502 的双显色剂多色体系能否与光致路线兼容：未知。"
+  ],
+  "discriminating_experiment": {
+    "one_liner": "在玻璃与纸基上涂布 leuco 染料加 2-硝基苄基甲苯磺酸酯类活化剂薄膜，365 nm 曝光梯度后，若暗置加日光模拟后白区 ΔOD 超出肉眼阈值，则该配方淘汰（不足以淘汰整条路线）。",
+    "design_sketch": "样品：leuco 染料（如荧烷类）与 2-硝基苄基甲苯磺酸酯（或自制 2-硝基苄醇衍生物）的 MEK 溶液涂布于玻璃与纸基，干燥。曝光：365 nm LED，0、5、15、30 min 梯度，记录每点 OD。白区稳定：曝光后暗置 24 h，再 2 h 日光模拟，测未曝光区 ΔOD。对照：同一配方 60 °C 热处理（检验热脱保护），以及稳定剂混合与分层两组（检验稳定剂对 365 nm 灵敏度的影响及分层是否绕开取舍）。判据：该配方白区 ΔOD 超过阈值即淘汰；多个配方一致才足以淘汰路线。"
+  },
+  "new_routes_spotted": [
+    {
+      "name": "光致碱释放的脱保护剂驱动热脱保护型显色",
+      "why": "HP 专利的脱保护剂为胺（权利要求 12–13，实施例为 2-羟基-1-氨基丙烷）；若由 o-硝基苄基氨基甲酸酯光致释放胺，可把光触发接入已有显色架构。综述称固相中 oNB 氨基甲酸酯释放胺 Φ=0.13，第二硝基可升到 0.62（S2，化合物 58 的 oNB 身份为推断）。",
+      "lead_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3557858/"
+    },
+    {
+      "name": "卤代粘结剂的辐射产酸（无笼化合成）",
+      "why": "GAF 专利（US 4,705,741）利用辐射使卤代粘结剂脱卤化氢，与 leuco 碱形成卤盐染料，不需要笼化合成；可能与 pag_halochromic 路线重叠，需要归并。本核查未复核该专利。",
+      "lead_url": "https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/4705741"
+    },
+    {
+      "name": "金属盐活化剂 leuco 体系（HP 同族）",
+      "why": "同一 HP 家族的 US 6,890,614 为金属盐活化剂，可能提供不依赖有机笼化的活化方式；本轮仅有标题，未读全文。",
+      "lead_url": "https://patents.google.com/patent/US6890614"
+    },
+    {
+      "name": "leuco 染料涂层 + 吸收天线（光或红外能量转化）加定影剂",
+      "why": "US 7,993,807 B2 全文已核对（A）：荧烷 leuco 与活化剂、吸收天线配合，由激光或红外光能量转化显色；描述显色可逆、涂层可能褪色，并以定影剂（路易斯酸或过渡金属盐）抑制褪色。与光热路线重叠，定影剂可作为稳定线索，但不是停止未曝光区的方案。",
+      "lead_url": "https://patents.google.com/patent/US7993807"
+    },
+    {
+      "name": "双显色剂多色体系（DataLase 线索）",
+      "why": "US 10,029,502 权利要求 1：activatable diacetylene 第一显色剂与 thermal acid generator + yellow leuco dye 第二显色剂的双剂体系，施加 energy 后可形成多色。与 c02 的多色问题相关；描述以激光为主，同构关系未证实。",
+      "lead_url": "https://patents.google.com/patent/US10029502B2/en"
+    }
+  ],
+  "search_budget_used": {
+    "websearch": 4,
+    "curl_reads": 18,
+    "verifier_websearch": 0,
+    "verifier_curl_reads": 24
+  },
+  "reconciliation_log": [
+    {
+      "item": "c02 与 md：全部实施例 OD>1.0",
+      "change": "改为 实施例 1 OD greater than 1.0（含 0.5 wt% IR780）；实施例 2 OD less than 1.0。",
+      "why": "PDF 第 7–8 栏原文核对；第 8 栏经 144 dpi 裁切放大复核，确认 less than 1.0。"
+    },
+    {
+      "item": "c13 第 1 条与 verdict 第 2 条：核心专利权利要求与全部实施例为热",
+      "change": "改为 方法权利要求 26–33 与全部实施例为热；独立权利要求 1、18、25 为 energy（未限定热）。",
+      "why": "权利要求页图像阅读与 Google Patents HTML 交叉核对，claim 1、18、25 文字为 upon application of energy。"
+    },
+    {
+      "item": "verdict 第 2 条与 md：光致路线在专利中只有摘要中的一般表述",
+      "change": "改为 光的一般表述见摘要、背景与概述、定义（第 3–4 栏 heat or light），并列出 o-硝基苄基醚与 o-硝基苄氧羰基作为保护基（第 6 栏）；无光致实施例。",
+      "why": "第 2–6 栏原文核对，原表述低估了已公开的一般表述。"
+    },
+    {
+      "item": "baseline 轮5 G 笔记：US 6,958,181 光或热双触发 不同意（强）",
+      "change": "改为 部分同意（修正），强度 中。",
+      "why": "摘要与定义字面为 heat or light，但实施例与方法权利要求为热；'强' 的理由不足。"
+    },
+    {
+      "item": "c01：活化剂 酚、羧酸或磺酸类",
+      "change": "改为 酚、羧酸、环状磺酰胺或质子酸（权利要求 3）。",
+      "why": "权利要求 3 与第 5 栏原文；磺酸仅以 bisphenolsulfonic acids 出现。"
+    },
+    {
+      "item": "c03：固相效率约降为溶液的 1/3 至 1/7（列为事实）",
+      "change": "改为 推断（两点数据）；注明综述警告溶液 Φ 不能直接外推到固相。",
+      "why": "综述原文 Solution-phase quantum yields cannot be directly extrapolated to those of the solid phase。"
+    },
+    {
+      "item": "c03：oNB 乙酸释放类 Φ=0.2",
+      "change": "改为 苄位修饰衍生物 61 的 Φ=0.2（溶剂未核实），不是母体 oNB 乙酸酯。",
+      "why": "综述原文 61 and 62 ... Φ = 0.2 for 61，位于 Substitution at the Benzylic Position 小节。"
+    },
+    {
+      "item": "c03 与 new_routes：oNB 氨基甲酸酯 Φ=0.13 与 0.62 中的化合物 58 身份",
+      "change": "数值保留；注明 58 的 oNB 身份由上下文推断，原文该句未明写。",
+      "why": "综述原文 78 vs 58 的上下文。"
+    },
+    {
+      "item": "c07：稳定剂清单列于 专利背景；直接取舍",
+      "change": "清单改为 第 10 栏 其他可选成分；取舍改为 推断，并注明专利允许分层放置。",
+      "why": "PDF 第 10 栏原文核对。"
+    },
+    {
+      "item": "c05 第 6 条：安全前置 ✗（按现有证据）；说明中 ✗ 为 1 条",
+      "change": "改为 ? 倾向 ✗（未证实为 ✗）；说明改为 已证实 ✗ 为 0 条。",
+      "why": "ASTM D-4236 与 LHAMA 未查；证实 ✗ 需要不达标证据，现有证据为定性与前体数据。"
+    },
+    {
+      "item": "c05 第 6 条：定制合成的活化剂不在任何成人美术材料清单内（本轮未查 LHAMA）",
+      "change": "删除该断言。",
+      "why": "未经核实的断言，且与'本轮未查 LHAMA'自相矛盾。"
+    },
+    {
+      "item": "c05 第 2 条：白区 倾向 ✗ 的依据：稳定剂与 365 nm 争用",
+      "change": "保留为 ? 倾向 ✗（推断），补充分层放置可能绕开争用。",
+      "why": "第 10 栏原文；争用不必然发生。"
+    },
+    {
+      "item": "verdict 状态：观察线",
+      "change": "改为 观察线（倾向淘汰）。",
+      "why": "白区停止与安全前置两项均无证据支持通过；'不达标即淘汰'规则未被证实触发，但两项为倾向不达标。"
+    },
+    {
+      "item": "verdict 第 1 条：没有成像涂层用的商品化笼化显色活化剂（绝对化）",
+      "change": "改为 在本轮搜索范围内未发现。",
+      "why": "负结果受搜索范围与不可读页面限制。"
+    },
+    {
+      "item": "c08：耐光与成色稳定性",
+      "change": "补充 US 7,993,807 的可逆显色与褪色定性描述（A 级），仍标无耐光数据。",
+      "why": "Google Patents 全文 HTML 原文核对。"
+    },
+    {
+      "item": "c06：停止机制候选",
+      "change": "新增 (d) 定影剂：稳定已成色区，不能停止未曝光区，不直接作为停止方案。",
+      "why": "US 7,993,807 摘要与描述原文。"
+    },
+    {
+      "item": "c12：Thermo 价格",
+      "change": "注明促销价有效期 Ends 31-Dec-2026；搜索摘录 $333.65 与 $337.00 在原页未见，标未核对；价格仍未验证。",
+      "why": "Thermo 页面 curl 读取。"
+    },
+    {
+      "item": "c12 与 S13、S14、S15：Cenmed、Tocris、Bell Labs 搜索摘录",
+      "change": "保持未验证；注明原页 403、连接失败、403，未绕过。",
+      "why": "curl 结果；不得绕过人机验证或访问拒绝。"
+    },
+    {
+      "item": "S12：US 7,993,807（搜索摘录）",
+      "change": "升级为 curl 全文（A）；摘录原句已核对一致。",
+      "why": "Google Patents HTML 可读，原句 the lactone ring of the leuco dye opens upon the transfer of a proton from the activator 一致。"
+    },
+    {
+      "item": "S1 与 md：专利第 10–12 页未读",
+      "change": "改为 第 10–12 页为 2007-01-30 Certificate of Correction，更正第 9–11 栏文字；引用 第 11 栏时注明为更正后文本。",
+      "why": "PDF 第 10–12 页图像阅读。"
+    },
+    {
+      "item": "c04：显影流程描述",
+      "change": "补充 实施例 1 真空干燥成膜、实施例 2 显影前 UV 固化；均非显影后步骤。",
+      "why": "PDF 第 7–8 栏原文。"
+    },
+    {
+      "item": "c13 第 9 条：365 nm 第二硝基提高 Φ",
+      "change": "注明对象为 2,6-二硝基苄基碳酸酯。",
+      "why": "Wikipedia 原文。"
+    },
+    {
+      "item": "c15：判别实验判据",
+      "change": "淘汰范围改为 该配方；整条路线需多配方或多笼化物一致结果。",
+      "why": "单一配方结果不足以淘汰整条路线。"
+    },
+    {
+      "item": "baseline 轮5：US 10,029,502 为同构的热型对应物（未复核）",
+      "change": "改为 部分同意（热型部分成立，同构未证实），新增 S18 证据。",
+      "why": "Google Patents HTML 摘要与权利要求 1 已读；结构不同（双剂多色）。"
+    },
+    {
+      "item": "negative_findings：patents.google.com US6958181 两次拦截",
+      "change": "注明 本核查返回 HTTP 200，拦截未能复现，视为间歇性。",
+      "why": "curl 读取结果。"
+    },
+    {
+      "item": "sources S2、S4、S10：访问方式与核对范围",
+      "change": "S2 注明 DOI 已核对；S4 注明首次 429 后重试成功；S10 注明 Crossref 无摘要，248 nm 内容未核实。",
+      "why": "curl 与 API 结果。"
+    },
+    {
+      "item": "c11：CID 身份与 ECHA 聚合",
+      "change": "注明 CID 542808、561663、11923 身份已核对；ECHA 6 报告 3 通知已核对。",
+      "why": "PubChem 结果。"
+    }
+  ]
+}

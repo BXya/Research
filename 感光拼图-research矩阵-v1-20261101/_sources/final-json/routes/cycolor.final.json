@@ -1,0 +1,723 @@
+{
+  "key": "cycolor",
+  "name_zh": "Cycolor 微胶囊（光硬化胶囊 + 压力显影）",
+  "name_en": "Cycolor photohardenable microcapsule imaging",
+  "status": "淘汰",
+  "as_of": "2026-11-01",
+  "verification": {
+    "verify_file": "scratchpad/out/routes/cycolor.verify.json",
+    "status_after_verification": "淘汰（维持）",
+    "note": "核查修订版。被反驳的主张已改写或删除；未能证实的主张降为未验证且等级不高于 B；裁定冲突取更保守一方。"
+  },
+  "columns": {
+    "c01_机制": {
+      "text": "光引发（自由基）使胶囊内丙烯酸酯单体硬化：1989 年文献示例溶剂为 TMPTA，光引发剂为酮/胺或菁-硼酸盐体系（S04）。氧阻聚形成诱导期，诱导期结束前图像密度无可见变化（S04）。未曝光的软胶囊在压力下破裂，释放溶于单体中的隐色染料，与受像层显色剂反应显色。'约 1–2% 反应即达凝胶点' 是 S04 对多官能丙烯酸酯的一般性陈述，未见 Cycolor 体系实测，本修订不作为 Cycolor 事实。",
+      "grade": "A（机理与极性）；凝胶点条目 B（一般性陈述）",
+      "label": "事实（机理与极性）；1–2% 凝胶点为一般性陈述，未验证为 Cycolor 实测",
+      "source_ids": ["S04", "S03"]
+    },
+    "c02_成像极性与色调能力": {
+      "text": "负性光作用：曝光区胶囊硬化、压裂后不显色；未曝光的软胶囊释放染料，经压力转印得到直接正像（S04 原文 'direct positive'）。全彩靠三套 R/G/B 敏化胶囊（青/品红/黄隐色染料分别对应红/绿/蓝光引发剂，S04 与 S03 一致）。连续色调由混合不同感度胶囊控制 gamma 与色调范围（S04，Fig.5）。单色相深浅渐变可由单套胶囊的感度分布实现：推断，已读文献未给出单套胶囊单色相实例，保持未验证。",
+      "grade": "A（极性、全彩、gamma）；单色相渐变 未验证",
+      "label": "事实（极性、全彩、gamma）；单色相渐变为推断，未能证实",
+      "source_ids": ["S04", "S03"]
+    },
+    "c03_曝光条件": {
+      "text": "源文献未给出 mJ/cm² 或日光、UV 灯的剂量。2002 年成品（S03）的曝光装置为 Telegen 荧光粉线性头（R/G/B 三行，设备曝光，非日光）；LED 扫描仅是 S03 另行展示的能力，不是 2002 成品的曝光装置（已修正）。S03 中 '4×6 照片约 20 秒' 是设计指标（Design criteria），不是测得的成品曝光时间（已修正）。S04：长曝光时氧经胶囊壁缓慢扩散，灵敏度下降；高强度短时间的互易律失效在蓝敏胶囊约 1 ms 曝光下约 1–2 档灵敏度损失（已补充限定）。与 30 分钟目标的关系：未知；日光长时低强度曝光可能落在氧扩散受限区（推断）。",
+      "grade": "A（设备与文献定性）；20 秒 为设计指标，未验证为成品值",
+      "label": "事实（设备条件、文献定性）；日光与 UV 剂量未知；20 秒 为设计指标",
+      "source_ids": ["S03", "S04"]
+    },
+    "c04_显影或成像后处理": {
+      "text": "干式，无水洗、非喷雾：压辊压力使未硬化胶囊破裂，再以短时加热加速显色并定影（S03 原文：'Heat is applied to accelerate the color development process and fix the image'；定影机制未说明）。1989 年（S04）为二片式转印，需受像片。2002 年商业成品（S03）为单片膜，胶囊与显影剂颗粒同层精涂于聚酯膜。自包含（同层显影剂）变体的文献来源为 Mead US 4,440,846（据 US 6,127,084 背景段），Kodak 仅为 US 6,127,084 的 2003 年受让人，不是该变体的来源（已修正）。",
+      "grade": "A",
+      "label": "事实（归属已修正）",
+      "source_ids": ["S03", "S04", "S16", "S19"]
+    },
+    "c05_免洗的真实程度": {
+      "text": "干式、无水洗，但不属于喷后型：显影需压辊加压与短时加热两道额外处理步骤（S03 三步流程）。严格免洗（无水洗）成立；按底线 1 括注'无需水洗或任何额外处理步骤'判 ✗（有一手依据）。",
+      "grade": "A",
+      "label": "事实 + 推断",
+      "source_ids": ["S03", "S04"],
+      "c05_免洗核验": {
+        "验收": {
+          "1_喷后免洗": "✗（有一手依据）：无喷雾且无水洗，但显影需压辊加压与短时加热两道额外处理（S03 三步流程）。",
+          "2_白区停得住": "?：白区（未成色区）指曝光硬化胶囊，机理上应稳定（推断）；但成色区（未硬化软胶囊）在曝光后到压显影前，可能受环境光继续硬化而密度漂移（推断，未验证）。",
+          "3_成色留得住": "?：未找到成色耐光或显影后稳定性数据。",
+          "4_少量均匀喷液": "不适用：无喷液步骤。底线 4 需要替代指标（压力均匀性）；旧笔记称中间调斑驳，未验证。（记号已统一为'不适用'）",
+          "5_底材不变形": "?：2002 成品为聚酯膜加白色聚酯背衬加胶黏层（S03）；1989 文献称底材可为纸或膜（S04）；灰板或纸基压辊形变无数据。",
+          "6_安全前置": "✗（保守保留，理由已修正）：无可送检的完整配方，前置评估无法完成。已知组分 TMPTA（PubChem 聚合分类含 H317、H351，另一组含 H336、H360）与 CVL（H315/H319/H335）存在标签级警示。仅凭已知组分的聚合分类，尚不足以证明不能通过 ASTM D-4236 / LHAMA。"
+        },
+        "说明": "无化学停止剂，也无喷液步骤。整体结论：免洗但非喷后型；底线 1 有一手依据判 ✗；白区与成色稳定性未证实；底线 6 因无法完成前置评估而未通过（保守）。"
+      }
+    },
+    "c06_停止机制": {
+      "text": "无化学停止：潜影以封装形式保存，显影靠压力瞬时破裂与短时加热定影。已读文献（S03、S04、Mead 专利正文）未描述任何化学停止步骤，'停止'未被证实。候选逐项核查：(a) 胶囊内去色剂（US 4,416,966）：正文显示去色剂由曝光控制释放，按图像模式与背景染料反应形成图像，属成像机制，不是残余光反应的终止剂。作为停止候选不成立，已反驳并降为成像机制参考。(b) 热定影（S03）：机制未说明，未证实。(c) '热抑制聚合（Mead 系）'：在已读 Mead 与 Sipix 正文中无来源，已删除。避光只是暂停，不计为停止。",
+      "grade": "A（已读全文，用于反驳候选）/ 未验证（停止机制本身）",
+      "label": "未验证（无已证实的停止机制；候选 a 反驳，候选 c 删除）",
+      "source_ids": ["S02", "S19", "S03", "S04", "S12", "S20", "S21", "S16"]
+    },
+    "c07_白区长期稳定性": {
+      "text": "白区定义已修正：白区（未成色区）为曝光后硬化的胶囊，硬化后不再释放隐色染料，机理上较稳定（推断）。未硬化的成色区胶囊，其隐色染料在壳内与显色剂隔离，是压前保存的前提（推断）。无老化数据。缺：未显影片的加速老化、搬运压力下误破裂率、曝光后环境光下的漂移数据。",
+      "grade": "未知",
+      "label": "未验证",
+      "source_ids": []
+    },
+    "c08_成色长期耐光": {
+      "text": "在已读的 S03、S04、S05、S06 及 Mead/Kodak/Sipix 专利正文中，未见成色耐光的加速数据（关键词检索未命中）。未知；不换算年限。",
+      "grade": "未知",
+      "label": "未验证",
+      "source_ids": []
+    },
+    "c09_预涂介质货架期": {
+      "text": "两种形态：(a) 出厂预涂（2002 年成品：胶囊与显影剂颗粒精涂于聚酯膜，S03，事实 A）；(b) 用户现涂的可行性：未验证，推断为困难。S04 描述的是水包油乳化与尿素-间苯二酚-甲醛壁材的催化缩合，未涉及家庭可行性（'不可行'已由事实改为推断）。货架期：未知，无数据。US 6,127,084 背景段称混合液含吸湿聚合物以防微胶囊在贮存中干燥，这是 Cycolor 自述，无货架期数据。",
+      "grade": "A（出厂预涂）；现涂可行性 B（推断）；货架期未知",
+      "label": "事实（出厂预涂）；现涂可行性为推断；货架期未知",
+      "source_ids": ["S03", "S04", "S16"]
+    },
+    "c10_底材适配": {
+      "text": "2002 年成品为聚酯膜、白色聚酯背衬、胶黏层，防水（S03，事实 A）；1989 年文献称底材可为纸或膜（S04），沿用碳复写纸传统。灰板或拼图纸基的吸湿形变、封层兼容性：未知。",
+      "grade": "A",
+      "label": "事实 + 未知",
+      "source_ids": ["S03", "S04", "S05"]
+    },
+    "c11_安全与法规": {
+      "text": "CVL（PubChem CID 73773，C26H29N3O2）：聚合 GHS 为 H315 (45%)、H319 (45%)、H335 (44.1%)，另有 49.1%（109/222）报告不满足分类（S09，非 SDS）。TMPTA（CID 27423）：聚合页含 H315、H317 (99.9%)、H319 (99.9%)、H351、H400、H410；另一组 'Signal: Danger' 聚合分类含 H336 与 H360（生殖毒性）（S10，非 SDS，已补充）。碳复写历史：DETA 致皮肤过敏（PubMed PMID 8222627，题录经 E-utilities 核实）；截至 2003 年，日本将碳复写纸归为 PCB 污染废弃物（S05 维基，已补充年份）。CAS、PPE 与标签级别未核验（需 SDS）。ASTM D-4236 与 LHAMA 前置：无完整配方，无法完成评估。自制胶囊需甲醛类壁材与丙烯酸酯（S04 已证实），加热步骤在 S04 中未载明（已删除'加热'为事实的表述）；家庭小量操作评估不通过为推断。",
+      "grade": "B（聚合分类，非 SDS）",
+      "label": "事实（聚合分类）；SDS、CAS、PPE 未验证",
+      "source_ids": ["S09", "S10", "S07", "S08", "S05", "S04", "S22"]
+    },
+    "c12_供应与成本": {
+      "text": "未找到任何可购成品或光硬化胶囊原料（见 negative_findings；本轮 1 次 WebSearch 仅返回专利记录，未发现产品页）。旧笔记的 accio 价格（碳复写用压敏微胶囊，约 1.85–2.00 USD，MOQ 100 kg 等）本轮未核验，标未验证，页面读取日期 2026-08-29 来自旧笔记。Crunchbase 页面返回 HTTP 403，未能读取，'permanently closed' 仍为未验证线索。",
+      "grade": "C（负结果）",
+      "label": "未验证（价格、停业）；无供应为负结果，不构成存在性结论",
+      "source_ids": ["S14", "S17", "S24"]
+    },
+    "c13_证据等级": {
+      "text": "关键主张 10 条：(1) 曝光硬化→压裂显色机制，A，事实（S03、S04）；(2) 三套 R/G/B 敏化胶囊全彩，A，事实（S03、S04）；(3) 2002 年有 Cycolor 媒体产品（S03 称 'current Cycolor media'），A，事实（S03）；(4) 加热加速显色并定影，A，事实（S03）；(5) 长曝光氧扩散致灵敏度下降，A，事实（S04）；(6) US 4,399,209 为转印系统，偏好 380–480 nm，A，事实（USPTO 扫描件首页与 Google 全文）；(7) US 4,416,966 去色剂可抑制或逆转显色（实施方式之一），A，事实，但不作为停止机制；(8) US 4,416,966 申请日 1982-08-25，授权 1983-11-22（A，事实）；到期约 2002-08-25 为推断（B）；Google 显示 'Expired - Lifetime'（非法律结论）；(9) Cycolor 已停止经营：未验证（Crunchbase 403 不可读，C）；(10) 2026 年无可购光硬化胶囊：未验证（负结果，检索不穷尽，非来源，已由 B 降级）。",
+      "grade": "A/B/C 混合（逐条等级见文本括注）",
+      "label": "见文本括注",
+      "source_ids": ["S01", "S02", "S03", "S04", "S14", "S15", "S16", "S19", "S20", "S21"]
+    },
+    "c14_关键未知": {
+      "text": "最可能翻盘的 2 个：(1) 2026 年是否仍有任何主体供应光硬化胶囊膜或胶囊分散液（本轮负结果，检索不穷尽；Polaroid IP B.V. 的微胶囊成像专利在 2025–2026 年仍有授权或公开线索，但无产品证据）；(2) 日光或 UV 灯下的剂量与时间（源文献无 mJ/cm² 数据，且存在长曝光与互易律问题）。",
+      "grade": "—",
+      "label": "未验证",
+      "source_ids": ["S24"]
+    },
+    "c15_判别实验": {
+      "text": "最快判别：向 Cycolor 相关渠道、Kodak（US 6,127,084 受让人）及 Polaroid IP B.V.（US 2023/0393459 受让人）询价，问 2026 年是否可购成品膜或光硬化胶囊分散液；若无，此路线直接淘汰。",
+      "grade": "—",
+      "label": "未验证",
+      "source_ids": []
+    }
+  },
+  "verdict": {
+    "status": "淘汰",
+    "reasons": [
+      "1 底线 1 判 ✗（有一手依据）：显影需压辊加压与短时加热两道额外处理（S03 三步流程），不满足'喷后免洗，无需任何额外处理步骤'。这是决定性依据。",
+      "2 底线 6 未通过（保守保留）：无可送检完整配方，前置评估无法完成；已知组分 TMPTA（PubChem 聚合 H317、H351；另一组含 H336、H360）与 CVL（H315/H319/H335）为聚合分类，非 SDS。",
+      "3 停止机制未证实：已读来源无化学停止步骤；US 4,416,966 去色剂为成像机制而非停止剂（已反驳）；'热抑制聚合'无来源（已删除）。",
+      "4 2026 年未找到任何可购光硬化成像胶囊成品或原料：4 次网络搜索、PubMed 与供应商检索及本轮 1 次 WebSearch 均为负结果，检索不穷尽，不构成存在性结论。",
+      "5 自制胶囊需甲醛类壁材与丙烯酸酯（S04 已证实），不符合家庭小量操作的现实安全性评估（推断；S04 未载明加热步骤）。",
+      "6 专利状态：US 4,416,966、4,399,209、4,440,846、4,576,891 在 Google Patents 显示 'Expired - Lifetime'（非法律结论，本轮可读）；US 4,416,966 按申请日推算约 2002-08-25 到期（推断）。专利状态不改变供应与底线结论。"
+    ],
+    "red_line_hits": [
+      "无铁氰化钾或亚铁氰化钾、重铬酸盐、普鲁士蓝命中（核查：已读 S03、S04、S09、S10 与 Mead/Kodak/Sipix 专利正文，路线涉及 TMPTA、CVL、cyanine borate、脲-间苯二酚-甲醛壁材，未见上述物质）。",
+      "实操层面：家庭自制胶囊（甲醛类壁材 + 丙烯酸酯 + 加热）未通过家庭小量操作评估（非字面红线，按现实安全性判定；'加热'一项为推断）。"
+    ],
+    "six_bottom_lines": {
+      "1_喷后免洗": "✗（有一手依据：S03 三步流程）",
+      "2_白区停得住": "?",
+      "3_成色留得住": "?",
+      "4_少量喷液": "不适用",
+      "5_底材不变形": "?",
+      "6_安全前置": "✗（保守保留；理由为前置评估无法完成）"
+    }
+  },
+  "baseline_challenges": [
+    {
+      "round": "轮5",
+      "old_claim": "Mead Cycolor 成像：感光微胶囊 + 显影剂，曝光硬化，压力破裂未硬化胶囊成像",
+      "agree": "agree",
+      "my_evidence": "S04（1989 年 J. Soc. Photogr. Sci. Technol. Japan 全文）与 S03（2002 年 IS&T 全文）一致；S01 与 S02 摘要也写明曝光后压裂或曝光控制释放。",
+      "strength": "强（一手全文）"
+    },
+    {
+      "round": "轮5",
+      "old_claim": "US 4,416,966 专利过期（预计 2002，状态 Expired-Lifetime），为核心 IP",
+      "agree": "partial（到期为推断；'核心'被反驳）",
+      "my_evidence": "USPTO 扫描件首页与 Google 页面一致：申请 1982-08-25，授权 1983-11-22。按申请日 20 年推算约 2002-08-25（推断）。Google 显示 'Expired - Lifetime'（非法律结论，已可读）。该专利题为 Capsular Imaging System Comprising Decolorizing Agent；其成像机制为去色剂的曝光控制释放，并与 US 4,399,209、4,440,846 并列为 Mead 光硬化成像系统（US 6,127,084 与 CN 1189330C 正文）。'核心 IP' 一说缺乏依据，应改为'同族之一'。",
+      "strength": "中（到期为推断；状态为 Google 显示）"
+    },
+    {
+      "round": "轮5",
+      "old_claim": "US 5,053,309 因未缴维持费于 1999 年失效",
+      "agree": "unverified",
+      "my_evidence": "本轮未读取，未核验。",
+      "strength": "弱（未验证）"
+    },
+    {
+      "round": "轮5",
+      "old_claim": "US 4,399,209 为转印变体，US 4,440,846 为自包含变体",
+      "agree": "agree",
+      "my_evidence": "US 4,399,209：USPTO 扫描件首页与 Google 摘要确认为 Transfer Imaging System，申请 1981-11-12，授权 1983-08-16，偏好 380–480 nm（事实，A）。US 4,440,846 的自包含归属见 US 6,127,084 背景段（Google 全文）与 US 4,440,846 正文（co-deposited on a support）。",
+      "strength": "强（一手全文）"
+    },
+    {
+      "round": "轮5",
+      "old_claim": "全彩靠三套不同波段敏化胶囊（US 4,576,891；EP 0233567）",
+      "agree": "partial",
+      "my_evidence": "机制 agree：S04 与 S03 均写明三套 R/G/B 敏化胶囊与对应光引发剂。US 4,576,891 摘要已核验：三组具有明显不同光谱敏感度的胶囊用于全彩成像（Google 全文）。EP 0233567 未核验（US 4,576,891 页面未引用，本轮未读 EP 原文）。",
+      "strength": "强（机制与 US 4,576,891）；EP 0233567 未验证"
+    },
+    {
+      "round": "轮5",
+      "old_claim": "高压压光辊致中间调斑驳（midtone mottle），设备笨重（freepatentsonline 4578340）",
+      "agree": "unverified",
+      "my_evidence": "本轮未读取 US 4,578,340。2002 年成品确有压辊显影（S03），间接支持设备复杂，但斑驳缺少文献证据。",
+      "strength": "弱"
+    },
+    {
+      "round": "轮5",
+      "old_claim": "光硬化微胶囊无处可买",
+      "agree": "agree",
+      "my_evidence": "研究稿的 4 次网络搜索与 PubMed、供应商检索均无可购来源；本轮 1 次 WebSearch 也只返回专利记录。但属检索不穷尽的负结果。另有 2002 年商业产品（S03），说明该条是 2026 年的时点判断。",
+      "strength": "中（负结果，不穷尽）"
+    },
+    {
+      "round": "轮5",
+      "old_claim": "accio 上的碳复写压敏微胶囊（MOQ 100 kg 等）为压破型，非光硬化",
+      "agree": "partial",
+      "my_evidence": "机制 agree：碳复写微胶囊为压敏破裂型（S05 维基）。价格与 MOQ 未核验，accio 本轮未读。",
+      "strength": "中（机制）；价格未验证"
+    },
+    {
+      "round": "轮5",
+      "old_claim": "压力显影在拼图件上不便",
+      "agree": "partial",
+      "my_evidence": "2002 年成品以整片膜过压辊显影（S03），拼图件切割后逐件压显影的可行性无文献（推断：不便，未验证）。",
+      "strength": "弱（推断）"
+    },
+    {
+      "round": "轮5",
+      "old_claim": "裁定：淘汰（理由：专利过期但无处可买；压力显影不便）",
+      "agree": "agree（结论）/ disagree（理由）",
+      "my_evidence": "结论保持淘汰。理由改为：底线 1 有一手依据判 ✗（压辊加压 + 短时加热）；底线 6 前置无法完成；停止机制未证实；供应为检索不穷尽的负结果。专利状态不是决定因素。",
+      "strength": "中"
+    }
+  ],
+  "sources": [
+    {
+      "id": "S01",
+      "title": "US 4,399,209 Transfer Imaging System (Sanders et al., Mead)",
+      "url": "https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/4399209",
+      "type": "专利（一手）",
+      "access": "curl全文（USPTO 扫描件，视觉核读首页与摘要，本轮复核）",
+      "date": "申请 1981-11-12；授权 1983-08-16",
+      "quote": "Preferred systems are sensitive to U.V. or blue light in the wavelength range of 380 to 480 nm"
+    },
+    {
+      "id": "S02",
+      "title": "US 4,416,966 Capsular Imaging System Comprising Decolorizing Agent (Mead)",
+      "url": "https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/4416966",
+      "type": "专利（一手）",
+      "access": "curl全文（USPTO 扫描件，视觉核读首页与摘要，本轮复核）",
+      "date": "申请 1982-08-25；授权 1983-11-22",
+      "quote": "Embodiments are also disclosed in which the decolorizing agent inhibits or reverses the color forming reaction between a dye precursor and a dye developer（引文已补全限定语）"
+    },
+    {
+      "id": "S03",
+      "title": "Exposing Cycolor Film using Telegen's New Linear Head (Camillus, Cycolor Inc.)",
+      "url": "https://library.imaging.org/admin/apis/public/api/ist/website/downloadArticle/print4fab/18/1/art00005_2",
+      "type": "会议论文（一手）",
+      "access": "curl全文（PDF 文本层）",
+      "date": "2002（IS&T NIP18）",
+      "quote": "Heat is applied to accelerate the color development process and fix the image."
+    },
+    {
+      "id": "S04",
+      "title": "An Introduction to the Panchromatic Cycolor Process (Kumagai, Mead Imaging)",
+      "url": "https://www.jstage.jst.go.jp/article/photogrst1964/52/3/52_3_249/_pdf",
+      "type": "期刊论文（一手）",
+      "access": "curl全文（PDF 文本层）",
+      "date": "1989（J. Soc. Photogr. Sci. Technol. Japan 52(3)）",
+      "quote": "Failure at long exposure times occurs because of a slow diffusion of oxygen through the walls of the cyliths"
+    },
+    {
+      "id": "S05",
+      "title": "Carbonless copy paper (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Carbonless_paper",
+      "type": "百科（B）",
+      "access": "curl全文",
+      "date": "页面读取 2026-11-01",
+      "quote": "The first dye used commercially in this application was crystal violet lactone; As of 2003, carbonless copy paper (CCP) in Japan was classified as PCB-contaminated waste"
+    },
+    {
+      "id": "S06",
+      "title": "Cycolor (Wikipedia stub)",
+      "url": "https://en.wikipedia.org/wiki/Cycolor",
+      "type": "百科（B）",
+      "access": "curl全文",
+      "date": "页面最后编辑 2026-05-01；读取 2026-11-01",
+      "quote": "the cost was significantly higher than the then emerging toner-based or ink-based systems"
+    },
+    {
+      "id": "S07",
+      "title": "PMID 8222627: Occupational allergic contact dermatitis caused by diethylenetriamine in carbonless copy paper (Contact Dermatitis, 1993)",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/8222627/",
+      "type": "文献题录（API，已核验标题）",
+      "access": "API（E-utilities esummary 题录，未读摘要）",
+      "date": "1993-09",
+      "quote": "Occupational allergic contact dermatitis caused by diethylenetriamine in carbonless copy paper."
+    },
+    {
+      "id": "S08",
+      "title": "PMID 10782193: Carbonless copy paper: a review of its chemical components and health hazards (AIHAJ, 2000)",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/10782193/",
+      "type": "文献题录（API，已核验标题）",
+      "access": "API（E-utilities esummary 题录，未读全文）",
+      "date": "2000 Mar-Apr",
+      "quote": "Carbonless copy paper: a review of its chemical components and health hazards."
+    },
+    {
+      "id": "S09",
+      "title": "PubChem CID 73773 crystal violet lactone, GHS classification (aggregated ECHA C&L)",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/73773",
+      "type": "聚合数据库（非 SDS）",
+      "access": "API（pug_view，本轮复核）",
+      "date": "2026-11-01",
+      "quote": "H315 (45%): Causes skin irritation; H319 (45%); H335 (44.1%); does not meet GHS hazard criteria for 49.1% (109 of 222) of reports"
+    },
+    {
+      "id": "S10",
+      "title": "PubChem CID 27423 trimethylolpropane triacrylate, GHS classification (aggregated ECHA C&L)",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/27423",
+      "type": "聚合数据库（非 SDS）",
+      "access": "API（pug_view，本轮复核；含 'Signal: Danger' 一组）",
+      "date": "2026-11-01",
+      "quote": "H317: May cause an allergic skin reaction; H351: Suspected of causing cancer; H336; H360 (Danger, aggregated)"
+    },
+    {
+      "id": "S11",
+      "title": "US 2023/0393459 A1 Microcapsule imaging system including non-photopolymerizable reactive diluent (Polaroid IP B.V.)",
+      "url": "https://patents.google.com/patent/US20230393459A1/en",
+      "type": "专利申请（一手，Google 全文）",
+      "access": "curl全文（Google Patents 页面，本轮读取；Justia 页面 HTTP 403 不可读）",
+      "date": "申请 2022-06-06；公开 2023-12-07；Google 显示 Granted（US12321095B2）",
+      "quote": "Multifunctional acrylates are suitable due to their superior photospeed, compatibility with leuco dyes and developers, and outdoor weatherability"
+    },
+    {
+      "id": "S12",
+      "title": "US 6,740,465 B2 Imaging media containing heat developable photosensitive microcapsules (Sipix Imaging)",
+      "url": "https://patents.google.com/patent/US6740465",
+      "type": "专利（一手，Google 全文）",
+      "access": "curl全文（Google Patents 页面，本轮可读，原研究稿为搜索摘录）",
+      "date": "申请 2000-06-01（优先权）/ 2001-05-31；授权 2004-05-25；Google 显示 Expired - Fee Related（非法律结论）",
+      "quote": "a photo-polymerizable or photocrosslinkable composition, a suitable photoinitiator and a color dye precursor as an internal phase（原稿引文用 component，已更正）"
+    },
+    {
+      "id": "S13",
+      "title": "CN1189330C Imaging media containing heat developable photosensitive microcapsule (original assignee: Sipix Imaging Inc)",
+      "url": "https://patents.google.com/patent/CN1189330C/en",
+      "type": "专利（一手，Google 全文）",
+      "access": "curl全文（Google Patents 页面，本轮可读，原研究稿 503 未读）",
+      "date": "申请 2000-06-01 / 2001-05-31；Google 显示 Expired - Fee Related（非法律结论）",
+      "quote": "comprising chromogenic precursors encapsulated in photosensitive microcapsules（原稿所称 'original assignee HIBEX IMAGE LLC' 无页面依据，已更正为 Sipix Imaging Inc）"
+    },
+    {
+      "id": "S14",
+      "title": "Crunchbase profile: Cycolor",
+      "url": "https://www.crunchbase.com/organization/cycolor",
+      "type": "聚合目录（不可读）",
+      "access": "curl 403（策略拒绝，不绕过，记为不可读）",
+      "date": "未核验",
+      "quote": "permanently closed（未能核验）"
+    },
+    {
+      "id": "S15",
+      "title": "Canada CIPO trademark 0592268 CYCOLOR (expunged)",
+      "url": "https://ised-isde.canada.ca/cipo/trademark-search/592268?wbdisable=true",
+      "type": "政府登记（本轮核验）",
+      "access": "curl全文（政府页面）",
+      "date": "注销（Automatic Expungement - Failure to renew）2006-02-09",
+      "quote": "Status EXPUNGED; Automatic Expungement - Failure to renew 2006-02-09"
+    },
+    {
+      "id": "S16",
+      "title": "US 6,127,084 Photosensitive material employing microcapsules containing a hygroscopic polymer (Cycolor Inc; assigned to Eastman Kodak)",
+      "url": "https://patents.google.com/patent/US6127084A/en",
+      "type": "专利（一手，Google 全文）",
+      "access": "curl全文（Google Patents 页面，本轮可读，原研究稿为搜索摘录）",
+      "date": "申请 1998-10-23；2003-03-14 转让给 Eastman Kodak",
+      "quote": "Assigned to EASTMAN KODAK (2003-03-14); background: a self-contained imaging sheet ... is disclosed in commonly assigned U.S. Pat. No. 4,440,846"
+    },
+    {
+      "id": "S17",
+      "title": "Local note C-cycolor-microcapsules.md (round 5, 2026-10-18)",
+      "url": "local: scratchpad/pkg/photosensitive-puzzle-research-pack-20261031/原始资料/03-研究轮次/轮5-第一性原理路线-20261019/notes/C-cycolor-microcapsules.md",
+      "type": "本地资料包（旧轮次待核查主张）",
+      "access": "本地资料包",
+      "date": "2026-10-18",
+      "quote": "Full-color: three capsule sets sensitive to different bands"
+    },
+    {
+      "id": "S18",
+      "title": "US 4,576,891 Photosensitive microcapsules useful in polychromatic imaging having radiation absorber (Mead Corp)",
+      "url": "https://patents.google.com/patent/US4576891A/en",
+      "type": "专利（一手，Google 全文，本轮新增）",
+      "access": "curl全文（Google Patents 页面）",
+      "date": "申请 1984-06-15；授权 1986-03-18；Google 显示 Expired - Lifetime（非法律结论）",
+      "quote": "three sets of microcapsules having distinctly different spectral sensitivities and individually containing color formers for full color imaging"
+    },
+    {
+      "id": "S19",
+      "title": "US 4,416,966A Capsular imaging system comprising decolorizing agent (Google Patents full text, 本轮新增)",
+      "url": "https://patents.google.com/patent/US4416966A/en",
+      "type": "专利（一手，Google 全文，本轮新增）",
+      "access": "curl全文（Google Patents 页面）",
+      "date": "申请 1982-08-25（Application US06/411,721）；授权 1983-11-22；Google 显示 Expired - Lifetime（非法律结论）",
+      "quote": "exposure of the sheet controls release of the decolorizing agent from the capsules which image-wise reacts with a dye layer and causes a color change"
+    },
+    {
+      "id": "S20",
+      "title": "US 4,440,846A Photocopy sheet employing encapsulated radiation sensitive composition and imaging process (Mead Corp, 本轮新增)",
+      "url": "https://patents.google.com/patent/US4440846A/en",
+      "type": "专利（一手，Google 全文，本轮新增）",
+      "access": "curl全文（Google Patents 页面）",
+      "date": "申请 1981-11-12；Google 显示 Expired - Lifetime（非法律结论）",
+      "quote": "chromogenic material, contained in the encapsulate or co-deposited on a support with the encapsulate, and the developer"
+    },
+    {
+      "id": "S21",
+      "title": "US 4,399,209A Transfer imaging system (Google Patents full text, 本轮新增)",
+      "url": "https://patents.google.com/patent/US4399209A/en",
+      "type": "专利（一手，Google 全文，本轮新增）",
+      "access": "curl全文（Google Patents 页面）",
+      "date": "申请 1981-11-12；授权 1983-08-16；Google 显示 Expired - Lifetime（非法律结论）",
+      "quote": "Preferred systems are sensitive to U.V. or blue light in the wavelength range of 380 to 480 nm"
+    },
+    {
+      "id": "S22",
+      "title": "PubMed E-utilities esummary: PMID 8222627 and 10782193 (本轮新增)",
+      "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esummary.fcgi?db=pubmed&id=8222627,10782193",
+      "type": "文献题录（API）",
+      "access": "API（题录）",
+      "date": "1993 Sep；2000 Mar-Apr",
+      "quote": "Occupational allergic contact dermatitis caused by diethylenetriamine in carbonless copy paper."
+    },
+    {
+      "id": "S23",
+      "title": "US 2023/0393459 Justia page",
+      "url": "https://patents.justia.com/patent/20230393459",
+      "type": "专利页面（不可读）",
+      "access": "curl 403（不可读，不绕过）",
+      "date": "—",
+      "quote": "未能读取"
+    },
+    {
+      "id": "S24",
+      "title": "WebSearch（verifier，2026-11-01）：Polaroid IP B.V. microcapsule imaging sheet leuco dye photopolymerizable acrylate product 2025 2026",
+      "url": "WebSearch 结果中的 Google Patents 与 USPTO 链接（US12321095B2、US12210282B2、US12596302B2 等）",
+      "type": "搜索摘录（仅专利记录，无产品页）",
+      "access": "搜索摘录（搜索引擎元数据，未逐页核验）",
+      "date": "授权或公开日期为搜索元数据：US12321095B2 2025-06-03；US12210282B2 2025-01-28；US12596302B2 公开 2026-04-07",
+      "quote": "Microcapsule imaging system including non-photopolymerizable reactive diluent（专利活动线索，非产品证据）"
+    }
+  ],
+  "negative_findings": [
+    {
+      "query": "photohardenable microcapsule imaging sheet pressure development Cycolor commercial product (WebSearch 1)",
+      "scope": "全网搜索引擎一次，2026-11-01",
+      "result": "无 2026 年现货或销售页；命中 Mead/Kodak 专利与 2002 年 IS&T 文献，未发现现行产品。"
+    },
+    {
+      "query": "Cycolor Inc Miamisburg Ohio digital imaging film discontinued status (WebSearch 2)",
+      "scope": "全网搜索引擎一次，2026-11-01",
+      "result": "无官方停产公告或日期。Crunchbase 页面本轮返回 HTTP 403，不可读（原摘录 'permanently closed' 未能核验）；加拿大商标 0592268 于 2006-02-09 因未续展注销（本轮 CIPO 页面核验）；PitchBook 摘录仅记 2003 年收购日期（未核验）。"
+    },
+    {
+      "query": "heat developable photosensitive microcapsule imaging material photohardenable capsule 2025 2026 product supplier (WebSearch 3)",
+      "scope": "全网搜索引擎一次，2026-11-01",
+      "result": "未发现 2025–2026 年供应商。最近的是 Sipix/HIBEX 专利族（2000 年申请；本轮核验原受让人为 Sipix Imaging Inc，HIBEX 无页面依据）。微胶囊厂商（Insilico、MicroCapsule Pigment）只售热致变色或光致变色产品。"
+    },
+    {
+      "query": "buy photosensitive microcapsules photopolymerizable acrylate capsule dispersion supplier 2026 imaging film kit (WebSearch 4)",
+      "scope": "全网搜索引擎一次，2026-11-01；原稿注明'额度已用尽'，口径待澄清（见 structural_issues）",
+      "result": "无可购光硬化胶囊分散液或成像膜套件。命中 2023 年申请与 Fuji 旧专利，无供应商页。"
+    },
+    {
+      "query": "PubMed esearch: (photocurable OR photopolymerizable OR photohardenable)[TIAB] AND microcapsul*[TIAB]",
+      "scope": "PubMed，2026-11-01，14 条 PMID",
+      "result": "无成像产品文献。多为 SLA 自修复复合材料（PMID 30675014）、光固化含磁粒与微胶囊的固化动力学（PMID 31057873）、医用或分析微囊。"
+    },
+    {
+      "query": "PubMed esearch: microcapsul*[TIAB] AND (color former* OR developer OR pressure development OR carbonless)[TIAB]",
+      "scope": "PubMed，2026-11-01，7 条 PMID",
+      "result": "无光成像产品。相关的是 2000 年碳复写纸综述（PMID 10782193）与 1993 年 DETA 致敏报告（PMID 8222627）；标题经本轮 E-utilities 核验。"
+    },
+    {
+      "query": "PubMed esearch: microcapsul*[TIAB] AND (photoinitiat* OR photopolymer*)[TIAB] AND (imag* OR print*)[TIAB]",
+      "scope": "PubMed，2026-11-01，8 条 PMID",
+      "result": "无成像产品文献。多为光聚合与微囊的材料或医用研究。"
+    },
+    {
+      "query": "Crossref REST api.crossref.org/works query.bibliographic: photohardenable microcapsule imaging pressure rupture; photosensitive microcapsule imaging",
+      "scope": "Crossref，至少 5 次重试",
+      "result": "HTTP 429，未获得任何结果。未完成。"
+    },
+    {
+      "query": "Google Patents pages: US4416966A, US4399209A, US4440846A, US4576891A, US5053309A, US4578340A, CN1189330C",
+      "scope": "patents.google.com，原稿多次 503；本轮复核可读",
+      "result": "本轮可读（200）：US4416966A、US4399209A、US4440846A、US4576891A、US6127084A、US6740465B2、CN1189330C、US20230393459A1。仍未读取：US5053309A、US4578340A（法律状态与内容未核验）。"
+    },
+    {
+      "query": "freepatentsonline.com/4416966.html",
+      "scope": "单次 curl",
+      "result": "连接失败（curl 000），未读取；已改用 Google Patents 与 USPTO PDF。"
+    },
+    {
+      "query": "accio.com 碳复写微胶囊价格页（旧笔记引用）",
+      "scope": "本轮未读取",
+      "result": "价格与 MOQ 仍为未验证，页面读取日期 2026-08-29 来自旧笔记。"
+    },
+    {
+      "query": "Mead/Kodak/Sipix patent full texts: keyword search for heat-inhibited polymerization, stop/quench/terminate, ambient-light stability, lightfastness (verifier)",
+      "scope": "US4399209、US4416966、US4440846、US4576891、US6127084、US6740465 正文（Google 全文）",
+      "result": "未发现热抑制聚合、化学停止或成色耐光加速数据；仅发现曝光前室内光操作与荧光黄褪色染料的讨论。"
+    },
+    {
+      "query": "WebSearch（verifier）：Polaroid IP B.V. microcapsule imaging sheet leuco dye photopolymerizable acrylate product 2025 2026",
+      "scope": "全网搜索引擎一次，2026-11-01",
+      "result": "仅返回专利记录（Polaroid IP B.V. 家族 US12321095B2、US12210282B2、US12596302B2 等），未发现产品页或销售信息。"
+    }
+  ],
+  "key_unknowns": [
+    "2026 年是否仍有任何主体供应光硬化胶囊膜或胶囊分散液（最可能翻盘；本轮为负结果，检索不穷尽。Polaroid IP B.V. 的微胶囊成像专利族在 2025–2026 年仍有授权或公开线索，但无产品证据）。",
+    "日光或 UV 灯下的剂量与时间（源文献无 mJ/cm² 数据；存在长曝光与互易律问题）。",
+    "曝光后到压显影前，环境光是否继续硬化软胶囊、造成成色区漂移（文献讨论了曝光前的室内光操作，未涉及曝光后至显影前）。",
+    "US 4,416,966 去色剂的成像条件与安全性（其作用为成像机制而非停止剂；化学结构未读取，无法做红线核查）。",
+    "成色的耐光与暗存稳定性（已读文献无加速数据）。",
+    "压辊加热硬件能否在家庭或小规模条件下实现，以及拼图件切割后逐件显影是否可行。",
+    "US 5,053,309、US 4,440,846 的法律状态（本轮仅确认 Google 显示 Expired - Lifetime）、US 4,578,340 的内容，以及 EP 0233567 是否存在，均未核验。"
+  ],
+  "discriminating_experiment": {
+    "one_liner": "向 Cycolor 相关渠道、Kodak 及 Polaroid IP B.V. 询价，问 2026 年是否可购成品膜或光硬化胶囊分散液；若无，此路线直接淘汰。",
+    "design_sketch": "第一步：供应询价（即时、低成本，可直接证伪「可购」）。第二步：仅当拿到样品时，取样张在 UV 灯与日光下各曝光 5、15、30 分钟，过压辊并加热显影，再测曝光后环境光 10 分钟内的密度漂移。若无样品，不自制胶囊，直接淘汰。"
+  },
+  "new_routes_spotted": [
+    {
+      "name": "热显影光敏微胶囊（heat-developable photosensitive microcapsule）",
+      "why": "以热代替压力显影：US 6,740,465 B2 摘要已核验（光硬化后加热至显影剂熔点以上，显影剂位于微胶囊外部）；CN1189330C 同族，原受让人为 Sipix Imaging Inc（非 HIBEX）。Google 显示 Expired - Fee Related（非法律结论）。未核验是否有产品或热头方案的可行性。",
+      "lead_url": "https://patents.google.com/patent/US6740465"
+    },
+    {
+      "name": "胶囊内去色剂（decolorizing agent）作为成像机制参考（不作为化学停止候选）",
+      "why": "US 4,416,966 正文显示去色剂由曝光控制释放并按图像模式与染料反应。它是成像机制，不是残余光反应的终止剂，本次已从 c06 停止候选中移除，仅作参考。",
+      "lead_url": "https://patents.google.com/patent/US4416966A/en"
+    },
+    {
+      "name": "2023 年微胶囊成像系统（非光聚合活性稀释剂，Polaroid IP B.V.）",
+      "why": "US 2023/0393459 A1 已核验：原受让人 Polaroid IP BV，申请 2022-06-06，公开 2023-12-07，Google 显示 Granted（US12321095B2）；正文称多官能丙烯酸酯因光速优势、与隐色染料及显色剂相容、户外耐候性而适用。同族 US12210282B2、US12596302B2 有 2025–2026 年线索（搜索元数据）。是否有产品未核验。",
+      "lead_url": "https://patents.google.com/patent/US20230393459A1/en"
+    },
+    {
+      "name": "Kodak 自包含成像介质（self-contained imaging media）",
+      "why": "原稿列出 US 6,326,120、6,383,707、6,544,711 等（搜索摘录）；这些数字本轮未核验。自包含（同层显影剂）的文献来源已确认为 Mead US 4,440,846（据 US 6,127,084 背景段），Kodak 为 US 6,127,084 的受让人。",
+      "lead_url": "https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/6326120"
+    },
+    {
+      "name": "热抑制光聚合（heat-inhibited polymerization）— 已删除",
+      "why": "原稿称 'Mead 系中加热区不发生光聚合'，无来源；本轮在 Mead 与 Sipix 已读正文中未找到该内容，lead 链接（US 6,740,465）也不支持。删除，不作为新路线。",
+      "lead_url": "—"
+    }
+  ],
+  "search_budget_used": {
+    "websearch": 4,
+    "curl_reads": 16,
+    "verifier_websearch": 1,
+    "verifier_curl_reads": 20
+  },
+  "reconciliation_log": [
+    {
+      "item": "verdict.reasons 排序与 status 裁定",
+      "change": "维持'淘汰'；把底线 1 的 ✗（有一手依据）改为第 1 条决定性依据，供应负结果降为第 4 条；删除'Google Patents 不可达'表述。",
+      "why": "淘汰的硬依据应是有一手证据的底线失败；供应结论是检索不穷尽的负结果；Google Patents 本轮可读，原表述已过时。"
+    },
+    {
+      "item": "c01 '约 1–2% 反应即达凝胶点'",
+      "change": "降为 B 级一般性陈述，注明为 S04 对多官能丙烯酸酯的泛指，未见 Cycolor 实测。",
+      "why": "S04 原文 'Multifunctional acrylates are known to ... reach the gel point with as little as one or two percent reaction'，不是 Cycolor 体系数据。"
+    },
+    {
+      "item": "c02 单色相深浅渐变（推断）",
+      "change": "保持推断标注，明确已读文献未给出单套胶囊单色相实例，等级降为未验证。",
+      "why": "未能证实；降级规则。"
+    },
+    {
+      "item": "c03 '4×6 照片约 20 秒'",
+      "change": "改写为设计指标（S03 Design criteria），不是测得的成品曝光时间。",
+      "why": "S03 原文将其列为设计标准，不是测量值。"
+    },
+    {
+      "item": "c03 '2002 年成品为 RGB 荧光粉或 LED 线扫描设备曝光'",
+      "change": "删除 LED 线扫描作为 2002 成品曝光装置的表述；保留 Telegen 荧光粉线性头；LED 扫描注明为另行展示的能力。",
+      "why": "S03 中 LED 扫描是 'Cycolor has also shown ...' 的展示能力，不是成品装置。"
+    },
+    {
+      "item": "c03 '高强度短时间互易律失效（约 1–2 档）'",
+      "change": "补充限定：蓝敏胶囊、约 1 ms 曝光。",
+      "why": "S04 原文限定条件；不能外推到日光长时曝光。"
+    },
+    {
+      "item": "c04 '自包含（同层显影剂）变体见 Kodak 专利族'",
+      "change": "改为：2002 年成品本身为同层涂布（S03）；自包含变体的文献来源为 Mead US 4,440,846（据 US 6,127,084 背景段）；Kodak 仅为 US 6,127,084 的受让人。",
+      "why": "归属错误（反驳）。"
+    },
+    {
+      "item": "c05 底线 4 记号",
+      "change": "由 '?（不适用）' 改为 '不适用'。",
+      "why": "与 ✓/✗/? 记号混用，易误读为未知。"
+    },
+    {
+      "item": "c05 底线 6 ✗",
+      "change": "保留 ✗（冲突取保守），但理由改为'前置评估无法完成'；删除'已知组分即不通过'的表述；补充 TMPTA 的 H336、H360。",
+      "why": "已知组分的聚合分类不足以单独证明不能通过 ASTM D-4236 / LHAMA；保守保留裁定。"
+    },
+    {
+      "item": "c06 候选 (a) 胶囊内去色剂作为化学停止",
+      "change": "反驳并移出停止候选，降为成像机制参考；grade 保持 A（已读全文）。",
+      "why": "US 4,416,966 正文：去色剂由曝光控制释放，按图像模式反应形成图像，不是停止剂。"
+    },
+    {
+      "item": "c06 候选 (c) 热抑制聚合（Mead 系）",
+      "change": "删除；new_routes_spotted #5 同步删除。",
+      "why": "无来源（无 source_id）；Mead 与 Sipix 已读正文中无此内容；lead 链接不支持。"
+    },
+    {
+      "item": "c07 '白区'定义",
+      "change": "改为：白区（未成色区）为曝光硬化胶囊；未硬化胶囊对应成色区，其隐色染料隔离是压前保存的前提（推断）。",
+      "why": "原文以未硬化胶囊描述白区，与 c05 和底线 2 的定义相反。"
+    },
+    {
+      "item": "c08 成色耐光",
+      "change": "补充检索范围（已读文献与专利正文关键词检索未见加速数据）。",
+      "why": "负结果需写明搜索范围（规则要求）。"
+    },
+    {
+      "item": "c09 '用户现涂不可行'",
+      "change": "由事实 A 改为推断 B；注明 S04 未涉及家庭可行性。",
+      "why": "未能证实为事实；'不可行'是推断。"
+    },
+    {
+      "item": "c09 Mead/Cycolor 吸湿聚合物线索",
+      "change": "新增 US 6,127,084 背景段的吸湿聚合物说明，注明为 Cycolor 自述，无货架期数据。",
+      "why": "与 c09 货架期相关的已读来源线索；不改变货架期'未知'结论。"
+    },
+    {
+      "item": "c11 TMPTA 聚合分类",
+      "change": "补充 'Signal: Danger' 一组的 H336、H360（聚合数据，非 SDS）。",
+      "why": "原稿遗漏同页更严重的分类；完整性修正。"
+    },
+    {
+      "item": "c11 '加热' 作为 DIY 胶囊步骤",
+      "change": "删除'加热'作为事实的表述；保留'甲醛类壁材与丙烯酸酯'（S04 证实）；家庭操作不通过为推断。",
+      "why": "S04 只写催化缩合，未载明加热步骤。"
+    },
+    {
+      "item": "c11 日本 PCB 废弃物",
+      "change": "补充'截至 2003 年'。",
+      "why": "S05 原文的时间限定；不能写成现行状态。"
+    },
+    {
+      "item": "c12 / c13 (9) Crunchbase 'permanently closed' 与'Cycolor 已停止经营'",
+      "change": "S14 记为不可读（HTTP 403），两项保持未验证，不写成事实。",
+      "why": "页面不可读；不绕过。"
+    },
+    {
+      "item": "c13 (8) US 4,416,966 法律状态",
+      "change": "更新为：Google 显示 'Expired - Lifetime'（非法律结论，本轮可读）；到期日仍为推断。",
+      "why": "原稿'法律状态未验证'已过时。"
+    },
+    {
+      "item": "c13 (10) '2026 年无可购'（原 B 级）",
+      "change": "降为未验证；注明是负结果、非来源。",
+      "why": "负结果不是来源，等级虚高。"
+    },
+    {
+      "item": "c15 'Sipix/HIBEX 专利族相关方'",
+      "change": "改为 Kodak（US 6,127,084）及 Polaroid IP B.V.（US 2023/0393459）。",
+      "why": "HIBEX 在已读页面中无依据；原受让人为 Sipix Imaging Inc。"
+    },
+    {
+      "item": "baseline 轮5 第 2 行 'US 4,416,966 为核心 IP'",
+      "change": "反驳 '核心'；保留到期为推断；Google 状态显示 Expired - Lifetime（非法律结论）。",
+      "why": "US 6,127,084 与 CN1189330C 正文把 4,399,209、4,416,966、4,440,846 并列为 Mead 光硬化成像系统。"
+    },
+    {
+      "item": "baseline 轮5 第 5 行 '三套敏化胶囊（US 4,576,891；EP 0233567）'",
+      "change": "US 4,576,891 证实（摘要）；EP 0233567 未验证。",
+      "why": "US 4,576,891 摘要明确三组不同光谱敏感度；EP 未在页面中出现。"
+    },
+    {
+      "item": "sources S02 引文",
+      "change": "补全限定语 'Embodiments are also disclosed'。",
+      "why": "截去的限定词使去色剂的成像实施方式看似为停止机制。"
+    },
+    {
+      "item": "sources S11 / S12 / S13 / S16 access 与内容",
+      "change": "S11 改为 Google 全文（Justia 403 记为 S23 不可读）；S12 引文 component 改为 composition；S13 原受让人改为 Sipix Imaging Inc（HIBEX 无依据）；S16 access 更新为 Google 全文并核验 2003-03-14 转让。",
+      "why": "原 access 标记为搜索摘录或 503，本轮已可读，需按实际访问方式更新。"
+    },
+    {
+      "item": "sources S14",
+      "change": "access 改为 'curl 403（不可读）'。",
+      "why": "规则：403 记为不可读，不绕过。"
+    },
+    {
+      "item": "新增 sources S18–S24",
+      "change": "新增 US 4,576,891、4,416,966、4,440,846、4,399,209（Google 全文）、PubMed E-utilities 题录、CIPO 页面核验、Justia 不可读记录，以及本轮 WebSearch 结果（搜索摘录，专利元数据）。",
+      "why": "核查过程中新读取的一手来源，需可追溯。"
+    },
+    {
+      "item": "new_routes_spotted #1 热显影",
+      "change": "由'可能绕开压辊'改为有摘要依据的表述，注明 Google 法律状态与 CN1189330C 原受让人。",
+      "why": "US 6,740,465 摘要已核验。"
+    },
+    {
+      "item": "new_routes_spotted #2 去色剂",
+      "change": "由'化学停止候选'改为'成像机制参考（不作为停止候选）'。",
+      "why": "反驳停止用途。"
+    },
+    {
+      "item": "new_routes_spotted #3 2023 年 Polaroid 系统",
+      "change": "受让人由'未核验'改为 Polaroid IP B.V.（Google 显示）；补充 2025–2026 同族线索（搜索元数据）。",
+      "why": "US 2023/0393459 A1 Google 页面已读取。"
+    },
+    {
+      "item": "new_routes_spotted #4 Kodak 自包含",
+      "change": "保留为未核验；澄清自包含的文献来源是 Mead US 4,440,846。",
+      "why": "归属更正；Kodak 具体编号仍未验证。"
+    },
+    {
+      "item": "new_routes_spotted #5 热抑制光聚合",
+      "change": "删除。",
+      "why": "无来源，lead 不支持。"
+    },
+    {
+      "item": "negative_findings #4 '额度已用尽'",
+      "change": "保留原记录并注明口径待澄清；新增 verifier 的 WebSearch 与 Mead/Sipix 正文关键词检索两条负结果。",
+      "why": "与 search_budget_used 的口径不一致；负结果需写明搜索词与范围。"
+    },
+    {
+      "item": "key_unknowns #3 '文献未涉及'",
+      "change": "改为：文献讨论了曝光前的室内光操作，未涉及曝光后至显影前。",
+      "why": "US 4,416,966、4,399,209、4,440,846 讨论室内光操作（曝光前）。"
+    },
+    {
+      "item": "red_line_hits",
+      "change": "补充核查范围与未见上述物质的依据；'加热'一项明确为推断。",
+      "why": "让红线结论可追溯。"
+    }
+  ]
+}

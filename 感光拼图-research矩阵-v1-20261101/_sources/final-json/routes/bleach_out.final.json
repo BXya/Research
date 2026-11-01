@@ -1,0 +1,556 @@
+{
+  "key": "bleach_out",
+  "name_zh": "染料漂白 bleach-out（Vogel、Utocolor、Uvachrome）",
+  "name_en": "dye bleach-out process: sensitized dye photobleaching",
+  "status": "淘汰（作为消费级成品路线）；机制先例保留为历史对照（核查后维持）",
+  "verification_status": "已核查（2026-11-01）：结论不变，但多处引用已修正，见 reconciliation_log",
+  "columns": {
+    "c01_机制": {
+      "text": "两类光化学并存（综述：Friedman 1944 第28章 pp.494-504；增敏剂事实来自 Agfa 专利 US1955898、US1850162、US1916779 与 Polgar 专利 US2319344）。(a) 光还原型：甲基蓝（methylene blue）、Victoria blue 等阳离子染料在光下被还原为无色隐色体（leuco），需要电子供体（糖、甘油、明胶等，即 anodic depolarizer）；曝光处染料被脱色，未曝光处保留，形成直接正像。Neuweiler（Friedman p.499-500，B）另载：曙红（eosin）与氧化锌也能敏化这类还原反应。(b) 光氧化型：花青类（pinacyanol）被光氧化（Mudrovcic，Friedman p.500-501，B），且被硫脲衍生物减敏。硫脲类（thiosinamine 即烯丙基硫脲、二乙基烯丙基硫脲）是 Agfa 专利中的核心增敏剂（已核全文）；Friedman p.498 称 Smith 以 thiosinamine 提高感光度，使 Utocolor 可销售（B）。增敏机理细节（烯丙基的紫外吸收是否起主要作用）为 Victor Henri 的推测（Friedman p.501 注明出处），未验证。",
+      "grade": "A（增敏剂与工艺事实，专利全文）/ B（机理综述，Friedman）",
+      "label": "事实；「显著提高脱色速率」的专利表述未能证实（已删）；机理细节为未验证",
+      "source_ids": ["S01", "S02", "S03", "S05", "S07"]
+    },
+    "c02_成像极性与色调能力": {
+      "text": "直接正像：影像由未被脱色的残留染料构成（Friedman p.494-495），因此需要正性透明原稿才能得到正像。单色相可行（Friedman p.499-501 记载单一染料的光还原或光氧化脱色，属间接证据）；三色靠混合染料或分层实现。Mudrovcic 1929 三色包用 Flavinduline O（黄）、Capri blue G ON（青）、Rosinduline 2B（品红），各 1%，分别以胶棉与明胶敏化（Friedman p.502，B）。连续色调由灰阶直接复制（Friedman p.495-496）。主要缺陷：白区不纯，Smith 1910 承认「纯白难得」，色彩对比下降（Friedman p.497-498，已核原文）。反证（未验证，厂商说法）：同一段 Pina 手册（Meister, Lucius and Bruening）列出 8 种据称可得纯白的染料（Brilliant green、Naphthol yellow、Malachite green、Naphthol green、Victoria blue、Erioglaucine、Erythrosin、Acid violet），此为厂商手册说法，未经实验验证。",
+      "grade": "B（Friedman 二手综述，已核原文）",
+      "label": "事实（二手综述）；厂商「纯白」说法为未验证反证",
+      "source_ids": ["S07"]
+    },
+    "c03_曝光条件": {
+      "text": "光源以日光为主。Mudrovcic 三色包约 15 分钟 June 阳光（Friedman p.502，已核原文）。Utocolor 需要数小时直射阳光才能完全脱色（Wikipedia 转述，B 级，已核全文）。UV 灯：未找到记录，未知。剂量 mJ/cm²：未报告，未知。与 30 分钟目标的关系：日光数据在时间上接近，但三色纯度不足，且无 UV 灯数据，结论未知。",
+      "grade": "B（日光 15 分钟，Friedman；数小时日光，Wikipedia）/ 未知（UV 与剂量）",
+      "label": "事实（有限）；与目标关系为未验证",
+      "source_ids": ["S07", "S11"]
+    },
+    "c04_显影或成像后处理": {
+      "text": "历史方案曝光后全部需要湿法或溶剂步骤，未在所读的彩色影像案例中发现干式、热或蒸气处理方案：(i) 亚硫酸或亚硫酸氢钠（或 SO2 气体）处理约 20 分钟（苯:甲醇 4:1 加饱和亚硫酸）至约 3 小时（密闭容器中亚硫酸氢钠溶液），再以沾苯的织物擦除分解油滴（US1850162，已核全文）。(ii) 苯、苯汽油或醚类溶剂抽除增敏剂（US1916779，已核全文，粘结剂须可溶胀于固定溶剂而不溶染料）；苯-甲醇混合液的表述见于 US1850162，而非 US1916779 或 US1880573。(iii) Polgar & Halmos 1943：实例 4 为曝光后 HgCl2 浴（200 g 水含 10 g HgCl2 与 1 g 盐酸，随后接硫脲洗液）；实例 5 则把 HgCl2 与增敏剂加入涂层液，曝光后水洗 15 分钟（US2319344，已核全文）。(iv) Caspar（U.S.P. 2049005，Friedman p.502-503，B，二手转述）给出两种替代浴：A 为 thiosinamine 5、NaHSO4 5、Metol 1（水 100）；B 为 Rongalite 5、thiocarbamide 5（水 200）。该专利年份 1936 未在 Friedman 中核到。",
+      "grade": "A（专利全文）/ B（Caspar，二手转述）",
+      "label": "事实；Caspar 年份未验证",
+      "source_ids": ["S02", "S03", "S05", "S07"]
+    },
+    "c05_免洗的真实程度": {
+      "text": "非严格免洗：在所读的彩色影像案例中，全部需要湿法或溶剂步骤（见 c04）。US3671251（S06）是免后处理的预敏化平版（expose-only，非彩色影像，停止步骤未描述），不计入彩色影像案例，但需单独注明。六条底线：1 喷后免洗 ✗；2 白区停得住 ✗（历史系统）；3 成色留得住 ✗；4 少量均匀喷液 ?；5 底材不变形 ?；6 安全前置 ✗（推断，危害类别已核，标准原文未核）。逐条理由见顶层 c05_免洗核验。",
+      "grade": "A（专利全文）/ B（综述）",
+      "label": "事实；判定为推断（已限定范围）",
+      "source_ids": ["S02", "S03", "S05", "S06", "S07", "S11"]
+    },
+    "c06_停止机制": {
+      "text": "历史上有四类「固定」方式：(a) 溶剂抽除增敏剂（苯、苯汽油、醚类；US1916779 全文已核）。原先的「仅对水溶性增敏剂有效」限定无来源，已删。(b) 以亚硫酸或亚硫酸氢盐破坏硫脲类增敏剂，染料不受影响（US1850162，已核全文：'without exerting any injurious influence on the dye'）。(c) 以 HgCl2 等汞盐沉淀硫脲类增敏剂使其失效（US2319344，已核全文）。(d) 硼氟酸盐（NaBF4 或其游离酸）沉淀阳离子染料：本轮核对 US1916779 全文，未见此方法，也未见「extraordinarily good fixation」一语。Friedman p.502 把 NaBF4 预处理归于 U.S.P. 1871830（未读原文）；US2319344 背景则称硼氟酸盐法「only incompletely attaining the result sought」（即不完全达到目标）。因此 (d) 只能作为未验证的既有提议保留。Utocolor 洗去催化剂，稳定但未完全固定（Wikipedia 全文，B）。避光不算停止。现代化学淬灭候选：未发现。红线核查：亚硫酸为酸性，但本路线未引入铁氰化物；汞盐与苯属于淘汰项。",
+      "grade": "A（专利，已核全文）/ B（Wikipedia 与 Friedman 综述）/ 未验证（(d) 的硼氟酸盐来源）",
+      "label": "事实；无现代候选为未验证；(d) 来源需改注 US1871830（未读）",
+      "source_ids": ["S01", "S02", "S03", "S05", "S07", "S11"]
+    },
+    "c07_白区长期稳定性": {
+      "text": "未知（无定量数据）。机理与历史证据：未曝光背景仍含染料与残余增敏剂，残余物会继续反应。1906 年柏林学会（Schultz-Hencke 报告 Ausbleichverfahren，使用 Smith 在苏黎世的 Utopapier）：把拷贝放到阳光下加速后，「影像翻转，原本较白的底色又变暗」（Photographische Mitteilungen 1907，OCR 摘录，已核德文原文：'Das Bild sprang um und der Grund ... wurde wieder dunkel'）。会议日期「1906-12-17」在所读 OCR 中未找到，标为未验证。Polgar & Halmos 1943 的引言把「亮部着色（coloration of the light parts）」「色相改变」「长时间洗涤」列为既有媒染（tannin）与铜液处理固定法的缺点（US2319344 引言，已核）。原文未把这些问题归因于增敏剂残留，因此原归因已删。",
+      "grade": "A（摘录级 OCR）/ 定性；会议日期未验证",
+      "label": "事实（定性）；定量稳定性未知；Polgar 的归因为反驳",
+      "source_ids": ["S05", "S08"]
+    },
+    "c08_成色长期耐光": {
+      "text": "只报数据本身：未发现定量加速耐光数据。定性记录：1907 年 Schultz-Hencke 对 Utocolor 拷贝的 Lichtechtheit 有保留（原文：'Einen Zweifel sprach Redner lediglich über die Lichtechtheit der Kopien aus'，同段称该法是「einen ganz bedeutenden Fortschritt」，即保留仅限于光牢度）；同卷一段评论称 Autochrom 拷贝用 Ausbleichpapier 的「Haltbarkeit der Ausbleichkopien eine unzureichende ist」（引文已核，作者未在 OCR 中确认，原「编辑」归属已改为「同卷评论者」）；Wikipedia 称处理后的 Utocolor 不宜长期展示，应放在避光相册中（已核全文）。不换算年限。",
+      "grade": "A（摘录级 OCR）/ B（Wikipedia）",
+      "label": "事实（定性）；评论者归属未验证",
+      "source_ids": ["S08", "S09", "S11"]
+    },
+    "c09_预涂介质货架期": {
+      "text": "两种形态。(a) 出厂预涂：Agfa 专利 US1955898（已核全文）把未增敏的成品层分批保存，按销售需要以蒸气、喷涂、胶液涂布或压贴转印的方式加入增敏剂，专利称在成品层之后加入可使层的稳定性「considerably increased」。Kodak 1972 预涂平版（US3671251，已核全文）为免后处理（'without additional processing'）的预敏化平版，未报告货架期与停止步骤。(b) 用户现涂：混合液寿命未报告，未知。",
+      "grade": "A（专利全文）/ 未知",
+      "label": "事实；货架期数值未知",
+      "source_ids": ["S01", "S06"]
+    },
+    "c10_底材适配": {
+      "text": "纸基：Utocolor 系列为纸基（Friedman p.497，已核；Wikipedia 全文 'Light-sensitive paper'）。US1916779（已核全文）的要点是粘结剂须可溶胀于固定溶剂而不溶染料，但全文未见 baryta 或其他纸基的具体例子，原「以 baryta paper 为例」已删。苯、醚等溶剂会溶胀纤维素与明胶粘结层，吸湿变形数据未报告，未知。封层兼容：未报告，未知。",
+      "grade": "A（专利，粘结剂原则）/ B（Friedman、Wikipedia：纸基）/ 未知（变形与封层）",
+      "label": "事实（有限）；变形与封层为未知；baryta 例子已反驳",
+      "source_ids": ["S03", "S07", "S11"]
+    },
+    "c11_安全与法规": {
+      "text": "PubChem 汇总 GHS（API，已核）：硫脲 62-56-6（CID 2723790）：H302、H315、H317、H320、H335、H351（疑似致癌）、H361d、H372/H373、H401/H411。氯化汞（CID 24085）：含 H300、H310、H314、H341、H360、H372 等。苯（CID 241）：含 H225、H340、H350 等。甲基蓝（CID 6099）：H302、H361、H370、H372。反式茴脑（CID 637563）：H317、H412。烯丙基硫脲（thiosinamine，CID 1549517，RecordTitle Allylthiourea）：GHS 含 H301（Toxic if swallowed，99.5% 通知）。原「无 GHS 条目」已更正。赤藓红（CID 3259）：API 中未发现 H 码，写为「未发现 GHS 陈述」。焦亚硫酸钠（CID 656671）：H302、H317、H318、H320、H334、H335、H372 等；注意本路线实际使用的是亚硫酸氢钠与 SO2，两者的危害未单独查询，缺证据。未查询（缺证据）：Metol、Rongalite、thiocarbamide、NaHSO4、NaBF4。ASTM D-4236 与 LHAMA 原文未核对；依 H351、H340/H350、H300/H310 等危害类别，成人美术材料路线大概率不可接受（推断，标准原文未验证）。",
+      "grade": "A（PubChem 汇总 API）/ 推断（D-4236、LHAMA）",
+      "label": "事实（SDS 汇总）；法规结论为推断（未验证）",
+      "source_ids": ["S14"]
+    },
+    "c12_供应与成本": {
+      "text": "未查询（无价格数据，未做供应商检索）。未验证。",
+      "grade": "未知",
+      "label": "未验证",
+      "source_ids": []
+    },
+    "c13_证据等级": {
+      "text": "关键主张 9 条：(1) 硫脲类增敏剂 + 亚硫酸/溶剂固定，A（US1955898、US1850162、US1916779 全文已核；事实）。(2) HgCl2 沉淀增敏剂，A（US2319344 全文已核；事实）。(3) 1906 年柏林学会：光照后白底变暗，A（摘录级 OCR，德文原文已核；事实；会议日期未验证）。(4) Utocolor 白区不纯、速率不一、编辑否定，B（Friedman p.497-499 已核原文；二手事实）。(5) 光还原与光氧化两类，硫脲对二者作用相反，B（Friedman p.499-501 已核；现代化学未验证）。(6) Uvachrome 非染料 bleach-out，B（Friedman p.336-337、p.482 已核；Eastman 馆藏页已核：dye imbibition 变体）；推断。注意 Uvachrome 中银影像确有漂白转化步骤，但不是染料脱色成像。(7) Vogel 与 bleach-out 的关系：未能证实。Friedman 中 Vogel 仅出现于 p.173 与 p.441，均为染料增感银盐，bleach-out 章（pp.494-504）未见 Vogel；这只说明所读来源未见关联，不能推出「无关」。(8) leuco-MB 在 ascorbic acid 作用下 405 nm 颜色切换，A（RSC Adv 2024 摘要，API，已核；稳定性未验证）。(9) 硫脲 H351 等 GHS，A（PubChem API，已核）。",
+      "grade": "A/B 混合",
+      "label": "事实与推断分列如上；(7) 降为未能证实",
+      "source_ids": ["S01", "S02", "S03", "S05", "S07", "S08", "S10", "S11", "S13", "S14"]
+    },
+    "c14_关键未知": {
+      "text": "最可能翻盘的两项：(1) 是否存在不含硫脲、汞、苯，且 30 分钟内以 UV 灯成像、喷后即停的增敏体系。历史与本轮检索均未找到。Neuweiler 所用的曙红与氧化锌（Friedman p.499-500）是否可替代硫脲，尚未评估。(2) 白区在室内光下能否数周保持稳定。历史只有定性记录（底色变暗），无速率数据，与 F 的背景褪色是同一个判别项。另一未知：Pina 手册所列「clear whites」染料是否真能得到纯白（厂商说法，未验证）。",
+      "grade": "未知",
+      "label": "未验证",
+      "source_ids": ["S07", "S08", "S05"]
+    },
+    "c15_判别实验": {
+      "text": "用不含硫脲、汞、苯的替代可光还原染料与电子供体组合（不引入硫脲），做 3 组纸样（曝光后无停止 / 曝光后亚硫酸类停止 / 不曝光），在室内光下放置 4 周，逐周测白区与成色 ΔE。若白区 ΔE 超过事先设定的阈值，或无停止组变色明显，则淘汰本路线方向。",
+      "grade": "设计（未执行）",
+      "label": "推断",
+      "source_ids": []
+    }
+  },
+  "c05_免洗核验": {
+    "验收": {
+      "1_喷后免洗": "✗ 所读彩色影像案例全部需要湿法或溶剂步骤（亚硫酸浴约 20 分钟至 3 小时、苯擦除、HgCl2 浴、溶剂抽除；US1850162、US1916779、US2319344 已核全文）。限定范围：US3671251（S06）为免后处理的平版，非彩色影像，不计入。",
+      "2_白区停得住": "✗ Friedman 记载 Utocolor 白区不纯（p.497-498）与 Mudrovcic 三色包白区不干净（p.502）；1906 年柏林报告中拷贝经阳光后底色变暗（德文 OCR 摘录，已核）。反证（未验证）：Pina 手册称部分染料可得纯白，属厂商说法。",
+      "3_成色留得住": "✗ Wikipedia（全文已核）称处理后的 Utocolor 不宜长期展示；1907 年有耐光存疑的记录（已核德文原文）；Autochrom 拷贝评论认为 Ausbleichkopien 的 Haltbarkeit 不足（引文已核，作者未确认）。均为定性，无定量数据。",
+      "4_少量喷液": "? 未发现喷雾式停止数据。历史停止多为浸泡（亚硫酸处理约 20 分钟至 3 小时，溶剂浴），少量喷液是否充分未知。",
+      "5_底材不变形": "? 纸基上有溶剂与水溶液处理，但未报告变形数据，未知。",
+      "6_安全前置": "✗（推断）历史方案含 HgCl2（PubChem：H300、H310、H341、H360 等）、苯（H340、H350）、硫脲（H351、H361d，另 H301）。按 ASTM D-4236 / LHAMA 的常见标签与可达性规则，大概率不可接受（推断；标准原文未核对）。"
+    },
+    "说明": "六条底线中无一条确认为 ✓。1、2、3、6 有历史证据或危害类别支持 ✗（6 为推断）；4、5 缺数据标 ?。"
+  },
+  "verdict": {
+    "status": "淘汰（作为消费级成品路线）",
+    "reasons": [
+      "喷后免洗不成立：所读彩色影像案例的固定全部是湿法或溶剂步骤（US1850162、US1916779、US2319344，已核全文）。无免后处理的彩色影像案例被读到；US3671251 为非彩色的平版，不构成反例。",
+      "白区与成色历史上不达标：Utocolor 白区不纯、底色随光变暗、耐光存疑（Friedman p.497-498、p.502；Photographische Mitteilungen 1907 OCR 摘录；Wikipedia）。Pina 手册「无实用价值」的判断已核（Friedman p.498），但同段列出的「clear whites」染料作为反证需注明为未验证。",
+      "安全前置失败（推断）：历史停止剂含 HgCl2（H300、H310、H341、H360），溶剂含苯（H340、H350），增敏剂为硫脲类（H351、H361d），烯丙基硫脲另有 H301。这些物质不适合家庭或车库小量操作，也不符合成人美术材料的常见标签规则（推断，标准原文未核对）。",
+      "机制先例仍有价值：光还原型 leuco 染料与硫脲增敏的关系（Friedman p.499-501，B），可作为对照与观察线，用于判断 F（TiO2 漂白）的背景稳定问题。"
+    ],
+    "red_line_hits": [
+      "安全红线（非铁氰化物/重铬酸盐类，但按「家庭操作、通风有限」标准命中）：HgCl2（H300/H310/H341/H360）、苯（H340/H350）、硫脲（H351，H301）。",
+      "铁氰化钾 + 强酸：本路线主要来源的显影/停止浴中未出现铁氰化物，未命中。但银-铜媒染的 Uvachrome/Traube 族在 Ger.P. 403428 中要求过量铁氰根（Friedman p.336，已核），若后续在酸性浴中引入铁氰化物，须立即按红线处理。另 Friedman p.337 的 Crabtree 浴（US1305962）用铁氰化钾、硫酸铜与碳酸铵（碱性浴）；本路线未用到，但若重开 Uvachrome 族须纳入检查。",
+      "重铬酸盐：本路线未出现（Friedman 的重铬酸盐仅见于 1895 年 Helouis 媒染与 bromoil 漂白，均非本路线）。未命中。",
+      "普鲁士蓝遇碱：本路线染料表中无普鲁士蓝，未命中。注意：Uvachrome 的铜亚铁氰化物媒染像在结构上属于亚铁氰化物/普鲁士蓝类，若重开该族须单独评估其与碱的相容性。"
+    ]
+  },
+  "baseline_challenges": [
+    {
+      "round": "old_round",
+      "old_claim": "旧轮次未覆盖 bleach-out；仅有一句：与 F 同属漂白成像，但靠增敏剂而非 TiO2。",
+      "agree": true,
+      "my_evidence": "同意「同属染料脱色成像、靠增敏剂」：Friedman 与 Agfa 专利均描述光致脱色依赖增敏剂（US1955898，A，已核全文；Friedman p.494-504，B，已核）。但「同属」只指成像原理，化学路径不同（F 为 TiO2 光催化，bleach-out 为染料光还原/光氧化），不可混用证据。",
+      "strength": "双方均为一手或可信二手：一致，强（同意）"
+    },
+    {
+      "round": "task_framing",
+      "old_claim": "标题中的 Vogel 为 bleach-out 工艺之一（任务框架，非旧轮次结论）。",
+      "agree": false,
+      "my_evidence": "Friedman 索引中 Vogel 仅出现于 p.173 与 p.441，均为染料增感银盐（已核原文）；bleach-out 章（pp.494-504）未见 Vogel。未找到 Vogel 参与 bleach-out 的一手或二手来源。该结论只限于所读来源，不能推出「无关」。",
+      "strength": "否定证据为「所读来源中未见」，并非确证；弱（中性偏反对）"
+    },
+    {
+      "round": "task_framing",
+      "old_claim": "Uvachrome 属于 bleach-out 体系（任务框架）。",
+      "agree": false,
+      "my_evidence": "Friedman 把 Uvachrome 归入染料媒染（银影像转为铜亚铁氰化物媒染，再染料染色，p.336-337，已核）；p.482 另称 Uvachrome Company 控制染料颗粒分散度（已核）。Eastman 馆藏页（已核）称 Uvachrome 为 dye imbibition 变体，1916 年引入，取代 1906 年的 Diachrome。注意：Uvachrome 中银影像确有漂白转化（silver bleach）步骤，但不是染料脱色成像，因此不属于 bleach-out。",
+      "strength": "Friedman（B）与 Eastman（B）一致指向非 bleach-out 分类：反对，中强"
+    }
+  ],
+  "sources": [
+    {
+      "id": "S01",
+      "title": "US1955898A 敏化漂白-脱色层（Sensitizing of bleaching-out layers），Wendt & Fruhlich，Agfa Ansco",
+      "url": "https://patents.google.com/patent/US1955898A/en",
+      "type": "一手：专利",
+      "access": "curl全文（本轮已重读，核对通过）",
+      "date": "授权 1934-04-24；申请 1932-08-01；优先权 1931-08-04（已核）",
+      "quote": "将硫脲类增敏剂在成品脱色层之后加入（incorporating the sensitizer in the finished bleaching-out dye layer）；'the stability of these layers is considerably increased'"
+    },
+    {
+      "id": "S02",
+      "title": "US1850162A Fixing bleaching-out pictures，Wendt & Bincer，Agfa Ansco",
+      "url": "https://patents.google.com/patent/US1850162A/en",
+      "type": "一手：专利",
+      "access": "curl全文（本轮已重读，核对通过）",
+      "date": "授权 1932-03-22；申请 1930-04-25；德国优先权 1929-05-11（已核）",
+      "quote": "亚硫酸作用于硫脲衍生物增敏剂而对染料无不良影响；约 20 分钟（苯:甲醇 4:1 加饱和亚硫酸）或约 3 小时（亚硫酸氢钠）；残余分解油滴以沾苯的织物擦除"
+    },
+    {
+      "id": "S03",
+      "title": "US1916779A Light-sensitive material，Agfa Ansco（德国优先权 1929）",
+      "url": "https://patents.google.com/patent/US1916779A/en",
+      "type": "一手：专利",
+      "access": "curl全文（本轮已重读；原研究引文不在全文中，已更正）",
+      "date": "授权 1933-07-04；申请 1930-05-09；德国优先权 1929-05-15（DE498028C，已核）",
+      "quote": "固定溶剂（benzene, other aromatic hydrocarbons, benzine and ethers）溶去增敏剂；粘结剂须可溶胀于固定溶剂而不溶解染料。原引文「硼氟酸盐使阳离子染料不溶，固定效果好」与「extraordinarily good fixation」在全文中均未找到，已删。"
+    },
+    {
+      "id": "S04",
+      "title": "US1880573A Light-sensitive material for the bleaching out process，Agfa Ansco",
+      "url": "https://patents.google.com/patent/US1880573A/en",
+      "type": "一手：专利",
+      "access": "未能复核（本轮 Google Patents 返回 503 反爬页）；原标注 curl全文 与本轮结果不符",
+      "date": "授权年未核对（约 1932）",
+      "quote": "苯汽油与苯甲醚 3:1 混合液固定（未复核，不得作为证据）；Friedman p.502 仅称此专利列有多种适用染料"
+    },
+    {
+      "id": "S05",
+      "title": "US2319344 Process for stabilizing prints obtained by photographic bleaching，Polgar & Halmos（巴黎）",
+      "url": "https://patents.google.com/patent/US2319344A/en",
+      "type": "一手：专利（Google Patents 页，本轮已读全文 OCR）",
+      "access": "curl全文（OCR，核对通过；原 USPTO PDF 页图未重读）",
+      "date": "授权 1943-05-18；申请 1939-12-15；法国优先权 1938-12-15（已核）",
+      "quote": "'the methods proposed up to now for fixing ... nearly exclusively belong to the dyeing art, as mordanting by tanin, treatment with copper solutions ... inconveniences ... consisted in the coloration of the light parts' （引言指既有媒染法的缺点，非增敏剂残留）；实例 4 为曝光后 HgCl2 浴；实例 5 为 HgCl2 加入涂层液，曝光后水洗 15 分钟"
+    },
+    {
+      "id": "S06",
+      "title": "US3671251 Sensitized pyrylium photobleachable dye in gelatin，Houle & Masseth（Eastman Kodak）",
+      "url": "https://patents.google.com/patent/US3671251A/en",
+      "type": "一手：专利",
+      "access": "curl全文（本轮已重读，核对通过）",
+      "date": "申请 1970-12-10；授权 1972-06-20（已核）",
+      "quote": "预敏化平版：可曝光后直接用于印刷，'without additional processing'；光敏层含吡喃鎓染料与硫脲增敏剂；全文未描述 stop、fix 或货架期数据"
+    },
+    {
+      "id": "S07",
+      "title": "Friedman, History of Color Photography（1944），第28章 Bleach-Out Photography，pp.494-504；另 pp.336-337、p.482 dye imbibition 段；索引 Vogel p.173、441",
+      "url": "https://archive.org/download/historyofcolorph00frierich/historyofcolorph00frierich_djvu.txt",
+      "type": "可信二手：专著（引用一手文献）",
+      "access": "curl全文（djvu 文本，本轮已重读 pp.494-504、336-337、482、索引）",
+      "date": "1944",
+      "quote": "'The failure to obtain pure whites in dye-bleach methods caused a considerable loss of color contrast'（Smith, Phot. J. 1910 p.141，转引）；Mudrovcic 三色包 'approximately fifteen minutes in a June sun'；'Ger. P. 403428 ... excess ferricyanide ions'"
+    },
+    {
+      "id": "S08",
+      "title": "Photographische Mitteilungen Jg. 44（1907），Kleine Chronik：Schultz-Hencke「Ausbleichverfahren」，Utopapier（Smith，Zürich）",
+      "url": "https://archive.org/download/photographischem4419unse/photographischem4419unse_djvu.txt",
+      "type": "一手：期刊（扫描 OCR，摘录级）",
+      "access": "curl全文（OCR，摘录级，本轮已核德文原文）",
+      "date": "1907 卷；会议日期「1906-12-17」在所读 OCR 中未找到，标为未验证",
+      "quote": "'Das Bild sprang um und der Grund, der schon verhältnismässig weiss gewesen war, wurde wieder dunkel'；'Einen Zweifel sprach Redner lediglich über die Lichtechtheit der Kopien aus'；Smith 用 Anisöl 作增敏，Neuhauss 用 H2O2"
+    },
+    {
+      "id": "S09",
+      "title": "Photographische Mitteilungen Jg. 44（1907），同卷评论段（Autochrom 拷贝的 Ausbleichpapier 评价）",
+      "url": "https://archive.org/download/photographischem4419unse/photographischem4419unse_djvu.txt",
+      "type": "一手：期刊（扫描 OCR，摘录级）",
+      "access": "curl全文（OCR，摘录级，本轮已核德文原文）",
+      "date": "1907（同卷）",
+      "quote": "'die Haltbarkeit der Ausbleichkopien eine unzureichende ist'；'Farbenwiedergabe ... noch nicht genügt'。作者未在 OCR 中确认，原「编辑」归属已改为「同卷评论者」"
+    },
+    {
+      "id": "S10",
+      "title": "George Eastman Museum：Arthur Traube/Uvachrome Collection（RRML.SC0018）",
+      "url": "https://www.eastman.org/arthur-traubeuvachrome-collection",
+      "type": "可信二手：馆藏目录",
+      "access": "curl全文（HTML，本轮已核）",
+      "date": "馆藏日期 1905-1949",
+      "quote": "'the Uvachrome process, a variation of the dye imbibition process'；Uvachrome 方法 1916 年引入，取代 1906 年专利的 Diachrome"
+    },
+    {
+      "id": "S11",
+      "title": "Wikipedia：Utocolor",
+      "url": "https://en.wikipedia.org/wiki/Utocolor",
+      "type": "可信二手：百科",
+      "access": "curl全文（HTML，本轮已重读）",
+      "date": "读取日期 2026-11-01",
+      "quote": "'rinsing out the catalyst stabilized the prints ... did not actually fix them'；'an hours-long exposure to direct sunlight'；'best kept in the protective darkness of a closed album'"
+    },
+    {
+      "id": "S12",
+      "title": "本地资料：Scientific American 1912「Color Photography on Utocolor Paper」（DOI 10.1038/scientificamerican02031912-77supp）",
+      "url": "https://api.crossref.org/works/10.1038/scientificamerican02031912-77supp",
+      "type": "一手：期刊条目（仅元数据）",
+      "access": "API（无摘要）",
+      "date": "1912-02-03",
+      "quote": "仅题名与日期；内容未读，不作为证据（不得出现在任何证据标注中）"
+    },
+    {
+      "id": "S13",
+      "title": "RSC Advances 2024：Novel photochromic system using methylene blue reduction with L-ascorbic acid（DOI 10.1039/d4ra07408d）",
+      "url": "https://api.crossref.org/works/10.1039/d4ra07408d",
+      "type": "一手：期刊摘要",
+      "access": "API（摘要，本轮已核）",
+      "date": "2024",
+      "quote": "'leucomethylene blue, reduced by L-ascorbic acid, was irradiated with 405 nm visible light, resulting in ... a colorless-to-blue transition'"
+    },
+    {
+      "id": "S14",
+      "title": "PubChem：硫脲 CID 2723790、氯化汞 CID 24085、苯 CID 241、焦亚硫酸钠 CID 656671、甲基蓝 CID 6099、反式茴脑 CID 637563、烯丙基硫脲 CID 1549517（Allylthiourea）、赤藓红 CID 3259",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug_view/data/compound/{CID}/JSON",
+      "type": "一手：SDS 汇总数据库",
+      "access": "API（JSON，本轮已核；CID 1549517 为新增更正）",
+      "date": "读取日期 2026-11-01",
+      "quote": "硫脲：H351、H361d；HgCl2：H300、H310、H341、H360；Allylthiourea（1549517）：H301（Toxic if swallowed，99.5%）；赤藓红（3259）：未发现 H 码"
+    },
+    {
+      "id": "S15",
+      "title": "Strathclyde Strathprints：Photobleaching of methylene blue sensitised by TiO2: an ambiguous system?",
+      "url": "https://strathprints.strath.ac.uk/id/eprint/17513",
+      "type": "题名与登记页（仅题名）",
+      "access": "curl（登记页，无摘要）",
+      "date": "未核对",
+      "quote": "仅题名；与 F 路线相关，内容未读（不作为证据）"
+    },
+    {
+      "id": "S16",
+      "title": "WebSearch 摘录：bleach-out 历史（Vogel 1873、Utocolor、Uvachrome）",
+      "url": "WebSearch（搜索摘录，本轮第 1 次；无 URL）",
+      "type": "搜索摘录（二手）",
+      "access": "搜索摘录（无法直接核对；间接核对：Vogel 见 Friedman 索引，Utocolor 稳定但未固定见 Wikipedia 全文，二者均与摘录一致）",
+      "date": "2026-11-01",
+      "quote": "Vogel 仅在 1873 年发现染料增感银盐；Utocolor 的催化剂冲洗『稳定但未固定』（转引 Wikipedia）"
+    }
+  ],
+  "negative_findings": [
+    {
+      "query": "en.wikipedia.org 搜索 Uvachrome / Utocolor / bleach-out photography（API 查询）",
+      "scope": "en.wikipedia.org API",
+      "result": "429 限速，未重试；改为直接读取 Utocolor 页面（找到，见 S11）；未找到 Uvachrome 或 Vogel bleach-out 独立条目"
+    },
+    {
+      "query": "Google Patents US1880572A、EP0097220B1（Uvachrome 相关与 leuco-MB 稳定化）",
+      "scope": "patents.google.com 单页",
+      "result": "原研究：503 两次失败。核查复测：EP0097220B1 再次 503（共 3 次），未读取；US1880572A 未复测。new_routes 中引用的稳定剂清单无来源，已降为未验证"
+    },
+    {
+      "query": "Google Patents US1880573A（核查复测）",
+      "scope": "patents.google.com 单页",
+      "result": "503 反爬页，本轮未能读取，原研究标 curl全文 不可复核"
+    },
+    {
+      "query": "Friedman History of Color Photography 的 archive.org 标识 historyofcolorph00frie 与 bwb_Y0-BXR-155",
+      "scope": "archive.org 文本下载",
+      "result": "401，换用 historyofcolorph00frierich（可读，已用，本轮复用）"
+    },
+    {
+      "query": "Crossref 关键词：Uvachrome；Utocolor；Ausbleichverfahren；bleaching-out；bleach-out",
+      "scope": "api.crossref.org 前 8 条",
+      "result": "Uvachrome 与 Ausbleichverfahren 无相关条目；bleach-out 429；bleaching-out 仅返回牙齿漂白等无关条目；Utocolor 仅 Scientific American 1912 元数据"
+    },
+    {
+      "query": "PubMed：(photobleaching) AND (sensitiz*) AND (dye*)；(photoreduction) AND (methylene blue)",
+      "scope": "eutils esearch 前 15 条（esummary 核对）",
+      "result": "多为生物医学光敏化疗、上转换纳米、光催化水处理；无 bleach-out 成像或纸基印相文献"
+    },
+    {
+      "query": "Crossref：photoreduction methylene blue imaging paper printing；photobleachable dye imaging layer sensitizer thiourea",
+      "scope": "api.crossref.org 前 10 条",
+      "result": "无成像纸或印相相关条目；只有 MB 光还原的水处理与化学类论文"
+    },
+    {
+      "query": "WebSearch 1：bleach-out 历史（Vogel、Utocolor、Uvachrome、增敏、失败原因）",
+      "scope": "通用网页，1 次",
+      "result": "Utocolor 与 Wikipedia、filmcolors.org、photrio 论坛（C 级，未读）；Vogel 仅 1873 年；Uvachrome 结果很少"
+    },
+    {
+      "query": "WebSearch 2：modern photobleach-out dye print sensitized photoreduction methylene blue ascorbic acid",
+      "scope": "通用网页，1 次",
+      "result": "未找到现代爱好者 bleach-out 指南；得到 RSC 2024 leuco-MB 系统、leuco-MB 稳定性专利、Strathclyde MB/TiO2 题名；无寿命或耐光数据"
+    },
+    {
+      "query": "Czapek 1907 Experiments with the Bleach-Out Printing Process（BJP）",
+      "scope": "仅由 Wikipedia 参考文献引用，未单独检索",
+      "result": "未读到原文，未验证"
+    },
+    {
+      "query": "Uvachrome 作为 bleach-out 的一手证据；Vogel 参与 bleach-out 的一手证据",
+      "scope": "本轮所有已读来源（Friedman、Eastman、Photographische Mitteilungen 1907、专利、Wikipedia）",
+      "result": "未找到。两者均与 bleach-out 不直接对应（在所读来源内）"
+    },
+    {
+      "query": "价格与供应：硫脲、烯丙基硫脲（thiosinamine）、HgCl2 作为成品",
+      "scope": "未查询",
+      "result": "未验证（c12 未做检索）"
+    },
+    {
+      "query": "核查复测：thiosinamine（CID 1549517）与赤藓红（CID 3259）的 GHS 数据",
+      "scope": "PubChem pug_view 汇总",
+      "result": "CID 1549517（Allylthiourea）含 GHS H301（原「无 GHS 条目」已更正）；CID 3259（Erythrosine）未发现 H 码（有效「未发现」）"
+    },
+    {
+      "query": "核查复测：1907 年报告的会议日期「1906-12-17」",
+      "scope": "Photographische Mitteilungen 1907 OCR（报告段落附近）",
+      "result": "未找到日期（仅见 Kleine Chronik 与 Ausbleichverfahren 标题），标为未验证"
+    },
+    {
+      "query": "核查复测：US1916779 中的硼氟酸盐（NaBF4/HBF4）与 baryta paper",
+      "scope": "US1916779 全文（Google Patents OCR，37 KB）",
+      "result": "未找到 borofluoride、fluob、extraordinarily、baryta、paper 等字样；原引文不在该专利中"
+    }
+  ],
+  "key_unknowns": [
+    "是否存在不含硫脲、汞、苯，且可在 30 分钟内以 UV 灯成像、喷后即停的增敏体系；历史与本轮检索均未找到。Neuweiler 的曙红与氧化锌（Friedman p.499-500）是否可替代硫脲，尚未评估。",
+    "白区在室内光下能否数周保持稳定；历史只有定性记录（底色随光变暗），无速率数据。这与 F 路线的背景褪色是同一个判别项。",
+    "Smith 的增敏剂在不同年份不一致：1907 年柏林报告称 Anisöl（茴油）作增敏、Neuhauss 用 H2O2（S08 已核）；Friedman p.498 称 thiosinamine 使 Utocolor 可销售。两者的先后关系未核实。",
+    "Pina 手册所列「clear whites」染料（Friedman p.498）是否真能得到纯白，未验证。"
+  ],
+  "discriminating_experiment": {
+    "one_liner": "用不含硫脲、汞、苯的替代可光还原染料与电子供体组合，做 3 组纸样（曝光后不停止 / 曝光后亚硫酸类停止 / 不曝光），在室内光下放 4 周，逐周测白区 ΔE；若白区超阈值或不停止组明显变色，则淘汰本方向。",
+    "design_sketch": "每组至少 3 个重复；曝光用同一光源与照度，并记录光强与时长；每周用比色仪或标准化相机测白区 ΔE；阈值事先设定。硫脲对照组只在有资质的实验室进行，且不在家庭或车库操作。"
+  },
+  "new_routes_spotted": [
+    {
+      "name": "leuco 染料光还原型显像（甲基蓝 + 抗坏血酸，405 nm 颜色切换）",
+      "why": "RSC Adv 2024（API 摘要，已核）报告 leuco-MB 在 L-ascorbic acid 作用下可见光切换颜色，属于光还原体系的现代版本；稳定性与耐光数据未报告。",
+      "lead_url": "https://doi.org/10.1039/d4ra07408d"
+    },
+    {
+      "name": "leuco 染料稳定化用于印刷基材",
+      "why": "原研究称专利列出柠檬酸、葡萄糖、抗坏血酸等稳定剂；核查时 EP0097220B1 三次返回 503，内容未能核对，此条仅作未验证线索。原 lead_url 中的「enExample」为损坏链接，已改为规范地址。",
+      "lead_url": "https://patents.google.com/patent/EP0097220B1/en"
+    },
+    {
+      "name": "染料破坏成色（dye destruction，Cibachrome/Ilfochrome 谱系）",
+      "why": "WebSearch 指出后续染料破坏材料的稳定性更好，因为染料在处理前已完全成型；可作为另一条相邻路线，未读原文（未验证线索）。",
+      "lead_url": "https://en.wikipedia.org/wiki/Dye_destruction"
+    },
+    {
+      "name": "Kodak expose-only 预敏化平版（吡喃鎓染料 + 硫脲）",
+      "why": "US3671251（已核全文）的免后处理曝光思路与本路线的免洗目标相关；输出为平版而非彩色影像，停止步骤未描述。",
+      "lead_url": "https://patents.google.com/patent/US3671251A/en"
+    },
+    {
+      "name": "UV/日光光致褪色指示器（比色剂量计）",
+      "why": "本地资料中的 Wang 可穿戴比色剂量计与 Kurz 2020 UV 指示器属于现代光致褪色体系，可用于测量白区与背景褪色动力学；本轮未读原文（来源未列入 sources，无法追溯）。",
+      "lead_url": "https://escholarship.org/content/qt0f01s9dj/qt0f01s9dj_noSplash_d4986045bc4d327fc2b9424dfd03a5ac.pdf"
+    },
+    {
+      "name": "亚甲基蓝 + TiO2 光敏脱色（Strathclyde，『ambiguous system』）",
+      "why": "与 F 路线直接相关，判断 MB 脱色是光催化还是直接敏化；仅题名已确认，内容未读。",
+      "lead_url": "https://strathprints.strath.ac.uk/id/eprint/17513"
+    }
+  ],
+  "search_budget_used": {
+    "websearch": 2,
+    "curl_reads": 60,
+    "verify_websearch": 0,
+    "verify_curl_reads": 28
+  },
+  "reconciliation_log": [
+    {
+      "item": "c01 硫脲「专利称其显著提高脱色速率」",
+      "change": "删除该表述；改为 Friedman p.498 称 thiosinamine 提高感光度（B）",
+      "why": "US1955898、US1850162、US1916779 全文均未见速率或速度表述；US1955898 的「显著提高」指层的稳定性"
+    },
+    {
+      "item": "c01 增敏剂覆盖",
+      "change": "补入 Neuweiler 用曙红与氧化锌敏化还原型脱色（Friedman p.499-500）",
+      "why": "原文只列硫脲，遗漏了 Friedman 已载的另一类增敏剂"
+    },
+    {
+      "item": "c02 白区结论",
+      "change": "保留 Smith 1910 与 Mudrovcic 的白区不纯；补入 Pina 手册「clear whites」染料作为未验证反证",
+      "why": "避免单边结论；Pina 段落原文即含此反证"
+    },
+    {
+      "item": "c03 Utocolor 数小时日光",
+      "change": "来源由 S12 与「C 级论坛」改为 S11（Wikipedia 全文）、B 级；S12 从 source_ids 移除",
+      "why": "该内容在已读的 Wikipedia 全文中；S12 声明为仅元数据、不作证据"
+    },
+    {
+      "item": "c04(ii) 苯-甲醇混合液归属",
+      "change": "归属由 US1916779、US1880573 改为 US1850162；US1880573 的苯汽油/苯甲醚 3:1 标为未能复核",
+      "why": "苯:甲醇 4:1 加饱和亚硫酸见于 US1850162 全文；US1880573 本轮 503"
+    },
+    {
+      "item": "c04(iii) HgCl2 描述",
+      "change": "拆分为实例 4（曝光后 HgCl2 浴）与实例 5（HgCl2 入涂层液，曝光后水洗 15 分钟）",
+      "why": "原文 Example 5 的 HgCl2 在涂层液中，并非曝光后沉淀"
+    },
+    {
+      "item": "c04(iv) Caspar 浴",
+      "change": "拆为两种替代浴（A、B）；1936 年份标为未验证",
+      "why": "Friedman p.502-503 列为两个替代浴；年份未在 Friedman 中出现"
+    },
+    {
+      "item": "c05(1) 与 verdict.reasons[1]「全部」",
+      "change": "限定为「所读彩色影像案例」；US3671251 说明为非彩色平版的 expose-only 例外",
+      "why": "S06 为免后处理的预敏化平版，与原「全部」的说法冲突"
+    },
+    {
+      "item": "c05(6) 安全前置 ✗",
+      "change": "保留 ✗，但标为推断，依据为 PubChem 危害类别；ASTM D-4236 与 LHAMA 标为未核对",
+      "why": "危害类别已核（A），标准原文未读（未验证），按保守侧保留 ✗"
+    },
+    {
+      "item": "c06(a) 「仅对水溶性增敏剂有效」",
+      "change": "删除",
+      "why": "本轮来源中无此表述"
+    },
+    {
+      "item": "c06(d) NaBF4/HBF4 与 US1916779「extraordinarily good fixation」",
+      "change": "删除该归属与引文；改为 Friedman p.502 引 U.S.P. 1871830（未读）的提议，并注明 US2319344 背景称该类方法不完全达到目标",
+      "why": "US1916779 全文无 borofluoride 与该引文；Friedman 另有出处；US2319344 的评价与原「固定效果好」相反"
+    },
+    {
+      "item": "c07 Polgar 亮部着色归因",
+      "change": "删除「增敏剂残留导致亮部着色与色相改变」，改为既有媒染与铜液固定法的缺点",
+      "why": "US2319344 引言把这些问题归于既有媒染/铜液处理，未归因于增敏剂残留"
+    },
+    {
+      "item": "c07 1906-12-17 会议日期",
+      "change": "标为未验证",
+      "why": "OCR 摘录中未找到该日期；德文原文的动词「sprang um」「wurde wieder dunkel」已核"
+    },
+    {
+      "item": "c08 「同卷编辑」",
+      "change": "改为「同卷评论者（作者未确认）」；引文保持，并补充 Schultz-Hencke 的 lediglich 语境",
+      "why": "OCR 中未标注作者；原文 Zweifel 限于光牢度，同段称该法有重大进展"
+    },
+    {
+      "item": "c09 出厂预涂",
+      "change": "补充 US1955898 的分批储存与按销售需要加入增敏剂的语境；US3671251 注明为 without additional processing",
+      "why": "已核全文，原描述基本正确，但需说明按需加入"
+    },
+    {
+      "item": "c10 baryta paper 例子",
+      "change": "删除；底材适配改为纸基（Friedman、Wikipedia）与粘结剂原则（US1916779）",
+      "why": "US1916779 全文无 baryta 或 paper"
+    },
+    {
+      "item": "c11 thiosinamine GHS",
+      "change": "由「PubChem 无 GHS 条目」改为 H301（99.5%）",
+      "why": "CID 1549517（Allylthiourea）API 记录含 H301"
+    },
+    {
+      "item": "c11 停止剂危害",
+      "change": "注明焦亚硫酸钠 H 码不代表亚硫酸氢钠与 SO2；补入 Metol、Rongalite、thiocarbamide、NaHSO4、NaBF4 为未查询",
+      "why": "US1850162 与 Caspar 浴使用的物质与 CID 656671 不同"
+    },
+    {
+      "item": "c13(6) Uvachrome",
+      "change": "补充 Uvachrome 中银影像确有漂白转化步骤，但不是染料脱色；Eastman 页引用已核",
+      "why": "防止「非 bleach-out」被误解为无银漂白步骤"
+    },
+    {
+      "item": "c13(7) 与 baseline Vogel",
+      "change": "由「与 bleach-out 无关（B）」降为「未能证实」；证据限定为「Friedman bleach-out 章未见 Vogel」，强度改为弱",
+      "why": "Friedman 仅能说明所读来源未见关联；不能推出无关"
+    },
+    {
+      "item": "c13 source_ids",
+      "change": "移除 S12、S15（声明不作证据），补入 S08、S10、S13、S14",
+      "why": "与各来源的证据标注一致"
+    },
+    {
+      "item": "verdict.red_line_hits",
+      "change": "补入 Crabtree 碱性铁氰化钾浴（Friedman p.337）作为未命中但需复核的条目；补充 Uvachrome 铜亚铁氰化物对普鲁士蓝类相容性的提醒；烯丙基硫脲补 H301",
+      "why": "红线核查原只看酸性浴，漏掉碱性浴"
+    },
+    {
+      "item": "sources S03",
+      "change": "授权年由「约 1933」更正为 1933-07-04；删除不在全文中的引文；access 改为 curl全文（已重读）",
+      "why": "全文核对结果"
+    },
+    {
+      "item": "sources S04",
+      "change": "access 改为「未能复核（503）」；内容标为不得作为证据",
+      "why": "本轮返回 503，原 curl全文 标注不可复现"
+    },
+    {
+      "item": "sources S14",
+      "change": "补入 CID 1549517 的 H301；CID 3259 写为「未发现 H 码」；补入 access 为本轮 API",
+      "why": "API 核对结果"
+    },
+    {
+      "item": "new_routes EP0097220B1",
+      "change": "lead_url 修正为 https://patents.google.com/patent/EP0097220B1/en；稳定剂清单标为未验证",
+      "why": "原链接损坏（enExample），且 503 无法读取"
+    },
+    {
+      "item": "verdict 裁定",
+      "change": "维持「淘汰（作为消费级成品路线）」；理由 1、2、3 按核查结果收紧，理由 3 注明为推断",
+      "why": "喷后免洗与安全前置有可靠支持；白区与成色有历史证据；未发现应放宽的证据"
+    }
+  ]
+}

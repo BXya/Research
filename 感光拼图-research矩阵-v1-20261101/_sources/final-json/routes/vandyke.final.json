@@ -1,0 +1,674 @@
+{
+  "key": "vandyke",
+  "name_zh": "Van Dyke brown（含 kallitype、argyrotype）",
+  "name_en": "Van Dyke brown / kallitype / argyrotype (iron-silver printing)",
+  "status": "淘汰",
+  "verification_note": "核查后维持淘汰。底线1（喷后免洗）以 A 级证据判 ✗，单独成立。底线2–6 的原「偏 ✗」多为推断，核查后降为「?」（未验证），不作为淘汰依据。具体改动见 reconciliation_log。",
+  "columns": {
+    "c01_机制": {
+      "text": "铁(III)羧酸盐经紫外光光化学，把 Ag+ 还原为胶体金属银（约 20 nm），形成棕色银像（S05，A）。Van Dyke 敏化剂为柠檬酸铁铵、酒石酸与硝酸银（S01，B）；argyrotype 为柠檬酸铁铵与银磺胺酸盐（S05，A）；kallitype 用草酸铁（S02，B）。Van Dyke 与 argyrotype 为 printing-out（曝光中即成像）；kallitype 为 develop-out，需显影（S02，B）。Fe(III) 到 Fe(II) 的具体步骤在本轮读取的全部一手与百科全文中均未出现，属推断。",
+      "grade": "A（printing-out 与胶体银结构）；推断（具体还原步骤）",
+      "label": "事实 + 推断（核查：标注正确）",
+      "source_ids": ["S05", "S06", "S01", "S02"]
+    },
+    "c02_成像极性与色调": {
+      "text": "正像，接触式底片复制（S05，A）。单色相棕（sepia/brown），连续色调，可呈现多级高光与灰阶（S05），不是多色。湿度 40–80% RH 下为橙棕 print-out；先增湿（100% RH 30 分钟）得紫灰；烫干转为偏中性的近黑棕（S05，A）；金或硒调色可调整（S05，A）。kallitype 可用不同显影液得到黑、棕、褐、紫、栗（S02，B）。",
+      "grade": "A（Ware 一手）；B（kallitype 显影色调）",
+      "label": "事实",
+      "source_ids": ["S05", "S02"]
+    },
+    "c03_曝光条件": {
+      "text": "紫外灯或日光，接触式底片（S05，A；S03，B）。Ware 写明曝光「与其他铁系工艺相当」，未给 mJ/cm² 与分钟数（S05，A）；敏化液「非常慢」（S05，A；S03 同述，B）。湿度 40–80% RH 下可直接观察 print-out 像作为曝光判据（S05，A）。未找到 mJ/cm² 剂量，日光与 UV 灯分别的时长也未找到。与 30 分钟目标的关系：未知。轮1 引用的「约 3 分钟至约 20 分钟」（tinker.koraks）本轮未复核，不采信，不得用于与 30 分钟目标比较。",
+      "grade": "未知（缺剂量与时长数据）",
+      "label": "未验证",
+      "source_ids": ["S05", "S03"]
+    },
+    "c04_显影或成像后处理": {
+      "text": "多步水浴，无显影剂（S01，B；S05，A）：(1) 水洗 5 分钟（换水 2–3 次，避免含氯水）；(2) 2% 硫代硫酸钠定影 3 分钟，Ware 称其「removes any traces of insoluble silver salts and intensifies the image」；(3) 水洗 20 分钟，晾干（S05，A）。可选：曝光后于 100% RH 静置 10 分钟以增加高光层次（S05，A）。Ware 总表将 Vandyke 的显影列为 water（S06，A）。kallitype 为碱性显影，Borax 或 Rochelle 盐（S06，A）。",
+      "grade": "A",
+      "label": "事实",
+      "source_ids": ["S05", "S06", "S01"]
+    },
+    "c05_免洗的真实程度": {
+      "text": "不免洗。名义上的 print-out 像需要真实湿处理（多步水洗加定影）才能成像稳定（S05、S01，A/B）。厂商 kit 含定影剂（S07，A）或需另备定影（S08，A）。PAR 系列 kit 配湿盘或水槽（S15、S16、S18，A）。营销冲突：S15、S18 称 'No darkroom needed, just this kit and some sunshine'，与同页配件及 S16 原文 'After washing and fixing' 矛盾。以一手与配件为准；本轮未找到 PAR 官方说明书，无法进一步核对。对六条底线的逐条核验见 c05_免洗核验。",
+      "grade": "A",
+      "label": "事实（营销冲突已记录）",
+      "source_ids": ["S05", "S01", "S07", "S08", "S15", "S16", "S18"]
+    },
+    "c06_停止机制": {
+      "text": "现行方案靠两件事：水洗物理清除未反应的 Fe 与 Ag 盐（清除，不是淬灭）；硫代硫酸钠溶解残余银盐（定影）（S05，A）。未发现不浸泡的喷雾淬灭方案。候选线索（C 级，未经对照，未验证）：1–2% 硫代硫酸钠或亚硫酸钠作为除硫清洗剂（论坛描述，S12 本轮 403，无法复核）。安全注记：CPSC 5015（A）指出亚硫酸盐分解会生成 SO2，候选方案须做安全核验。红线核查：不涉及铁氰化钾、重铬酸盐、普鲁士蓝。避光不计为停止。",
+      "grade": "A（现行清除与定影机制）；C（候选喷雾方案，未验证）",
+      "label": "事实 + 未验证（喷雾方案）",
+      "source_ids": ["S05", "S11", "S12", "S21"]
+    },
+    "c07_白区长期稳定性": {
+      "text": "风险机理：Ware 指出残留 Fe(III) 会氧化银、导致图像降解；这是作者论断，无定量数据（S05，A）。kallitype 中铁残留表现为高光黄染，永久性依赖彻底清除铁盐（S02，B；引 Cappellani，原页本轮未读）。未清洗或未定影的白区仍含未反应的 Fe(III)/Ag+ 黄色背景（S05，A 描述黄色背景即未反应敏化剂），对光的稳定性：推断。喷雾式停止后的白区长期表现：无数据。",
+      "grade": "A（作者论断）；B（kallitype 黄染）",
+      "label": "事实（风险论断）+ 推断 + 未验证（喷雾后）",
+      "source_ids": ["S05", "S02"]
+    },
+    "c08_成色长期耐光": {
+      "text": "只报数据本身：本轮全文读取的来源中未找到加速耐光数值数据，不换算年限。Ware 定性称「image stability and lightfastness are good」，条件为「残留铁与银在未曝光区应很低」（作者声明，无数据，S05，A）。Wikipedia（Van Dyke）称处理得当的 Van Dyke 应与其他银工艺一样持久，并把历史上的永久性问题归因于处理不当（S01，B）。argyrotype 百科称 'improved image stability'（S03，B，未量化）。金或硒调色可提高永久性（S05，A；S02，B），但属额外湿步骤。历史上 iron-silver 工艺永久性声誉较差，Ware 引 Bayley 1932 对 kallitype 的描述（S05，A）。",
+      "grade": "未知（仅定性陈述）",
+      "label": "未验证（缺加速耐光数据）",
+      "source_ids": ["S05", "S01", "S02", "S03"]
+    },
+    "c09_预涂介质货架期": {
+      "text": "出厂预涂：未发现。读取的 kit 均为现涂形态（S07、S08、S15–S18）。现涂敏化液：Ware 称避光棕瓶、室温保存「至少一年」（作者声明，无实测，S05，A）。涂布后的纸：「几小时内用完，除非密封干燥保存；干燥环境下至少一周」（S05，A，作者声明）。零售商称 argyrotype 单瓶敏化液货架期长（S08，未验证）。PAR 系列套件称未混合化学品在避光避热下可保存 24 个月（S18，厂商声明，未验证，不可外推为混合液寿命）。",
+      "grade": "A（作者声明）",
+      "label": "事实（作者声明）+ 未验证（商家声明）",
+      "source_ids": ["S05", "S08", "S18"]
+    },
+    "c10_底材适配": {
+      "text": "纸基：Ware 要求「Only the best cotton fibre, internally sized with Aquapel and free of other additives, will do」，所列纸种为 Whatman Watercolour 或 Printmaking、Atlantis Silversafe（200 gsm 优选）及 Ruscombe Mill Buxton（S05，A）。纸纤维若不能截留胶体银会出现「渗色」（bleeding），需足量 Tween 或换纸（S05，A）。Ware 称纸张不卷曲、表面不粘（作者声明，S05，A）。kallitype 百科称棉浆纸通常推荐，但多种纸亦可（S02，B）；Van Dyke 百科页无此推荐（S01）。湿处理共约 28 分钟（5+3+20），干燥时色移（烫干）（S05，A）。灰板（puzzle 底材）：未测。灰板的变形与拼合性：未知。封层兼容性：未知。",
+      "grade": "A（纸基规格）；未知（灰板）",
+      "label": "事实（纸基）+ 未验证（灰板）",
+      "source_ids": ["S05", "S02", "S01"]
+    },
+    "c11_安全与法规": {
+      "text": "硝酸银 CAS 7761-88-8；GHS H272、H314、H410，信号词 Danger（S04，B，Wikipedia 化学框）。CPSC 5015（A）称硝酸银为腐蚀性，并列为玻璃染色用品（S21）。Ware：敏化液「刺激且有毒，会染色皮肤」，紫外灯须遮挡（S05，A）；同段亦称作者认为本工艺其余步骤风险很低（作者观点）。Kallitype 百科：敏化剂「quite toxic」，须戴手套（S02，B）。护目镜：CPSC 5015（A）摄影材料节写明 'Wear appropriate gloves and goggles'（S21）。无硝酸银的 argyrotype 主配方终态敏化液以银磺胺酸盐替代硝酸银，但 Ware 替代法由 AgNO3 沉淀制 Ag2O（S05，A），全流程仍涉及硝酸银前体。Ag2O 与氨基磺酸的危害未核验。ASTM D-4236 与 LHAMA 对硝酸银的认定：未知（CPSC 5015 可读但未载明结论；S23 搜索摘录亦未给出）。成人美术材料可达性：厂商以银化合物与替代工艺套件销售（S07 分类，A），但厂商标注适用 'adults, and kids 12 and up'（S17，A）。PPE：手套与护目镜（S02 B；S21 A）。家用通风评估：未做。SDS：未核验（Bostick SDS 索引首页未见硝酸银条目，分页未展开，S22）。",
+      "grade": "A（CPSC 腐蚀性与护目镜；Ware 定性）；B（GHS，未经 SDS 核验）",
+      "label": "事实（定性）+ 未验证（SDS、ASTM、LHAMA）",
+      "source_ids": ["S04", "S05", "S02", "S07", "S17", "S21", "S22", "S23"]
+    },
+    "c12_供应与成本": {
+      "text": "2026-11-01 读取，价格与库存一律未验证。Bostick & Sullivan Vandyke Brownprint Kit 100 ml：标价 $24.99，声称约 50 张 8×10，含 250 g 硫代硫酸钠定影（厂商页，存在性与内容为 A 级）。Goldstreet Studios Argyrotype 100 ml：标价 $49.00（页面未标币种），约 30 张 8×10，不含定影剂（零售页，内容为 A 级）。PAR 系列 kit（本轮读取原页）：Gordon Harris 标价 $169.00（同页库存冲突：'Sold Out' 与 'In Stock' 同时出现）；Rittagraf 原页标价 €89.95（'In stock'），研究时引用的 €78.59 无法复现；Chrysler 博物馆商店标价 $76.50 USD（'Out of Stock'）；MES 约 20 张 A4，价格未显示，页面标 'Sold out'。Zebra kit：curl 返回无关页，价格与内容均未能复核。Dharma 搜索 'van dyke brown' 0 结果：本轮未复查。未找到 2026 年标注日期的价格。",
+      "grade": "A（存在与内容）；价格与库存未验证",
+      "label": "事实（存在与内容）+ 未验证（价格与库存）",
+      "source_ids": ["S07", "S08", "S09", "S15", "S16", "S17", "S18"]
+    },
+    "c13_证据等级": {
+      "text": "关键主张（逐条：等级；事实/推断/未验证）：(1) 无显影剂；水洗、硫代硫酸钠定影、水洗（S01 B；S05 A 参数）；事实。(2) printing-out；未定影时黄色背景为未反应敏化剂（S05 A）；事实。(3) 残留 Fe(III) 会氧化银致图像降解（S05 A，作者论断，无数据）；事实（作者论断）。(4) 硝酸银 CAS 7761-88-8；H272/H314/H410，信号词 Danger（S04 B，未经 SDS 核验；S21 A 称腐蚀性）；事实，SDS 未核验。(5) 厂商有 Van Dyke kit 且含定影剂（S07 A 厂商原页）；事实。(6) argyrotype 零售 kit 需另备定影（S08 A 零售原页）；事实。(7) 定影过长会降低高光密度（S05 A 观察）；事实。(8) kallitype 永久性依赖彻底清除铁盐（S02 B，引 Cappellani）；事实（引用链未独立核实）。(9) 免定影 Van Dyke 变体：未发现可靠来源，论坛有争论（C；论坛页本轮 403）；未验证。(10) Van Dyke 年份：Wikipedia 1895（S01 B）与 Ware 总表 1889（S06 A）冲突；未验证。",
+      "grade": "A/B/C 混合（见逐条）",
+      "label": "事实/推断/未验证 混合（见逐条）",
+      "source_ids": ["S01", "S02", "S03", "S04", "S05", "S06", "S07", "S08", "S11", "S12", "S21"]
+    },
+    "c14_关键未知": {
+      "text": "(1) 是否存在不浸泡、仅喷雾即可停止未成色区的变体。本次未发现，证据为零；若存在，可能松动底线1，但现行一手流程已判定底线1 不过，翻盘需要新证据。(2) 硝酸银的 SDS 与 GHS 分类（PubChem 本轮 503 未再试）、ASTM D-4236 与 LHAMA 认定（CPSC 5015 可读但未载明；未核验）。(3) 曝光剂量 mJ/cm² 与 30 分钟可达性，日光与 UV 灯分别的数据。(4) 加速耐光数据（未找到，不换算年限）。(5) 灰板底材在完整湿处理后的变形与拼合性。(6) PAR 系列营销语与配件冲突，需 PAR 官方说明书核对。(7) 金或硒调色后的永久性是否可作为额外湿步骤的收益（S05、S02 均为定性）。最可能翻盘的是第(1)项，但它需要新证据。",
+      "grade": "未知",
+      "label": "未验证",
+      "source_ids": []
+    },
+    "c15_判别实验": {
+      "text": "用 Ware 配方的 print-out 样片，比较三组在 72 小时光照后白区的变色：仅喷 2% 硫代硫酸钠雾（不浸泡）、仅喷清水雾、标准水洗加定影加水洗。喷雾操作须在通风条件下进行，且勿把亚硫酸盐与酸混合（S21 A）。",
+      "grade": "推断（实验设计）",
+      "label": "推断",
+      "source_ids": ["S05", "S21"]
+    }
+  },
+  "c05_免洗核验": {
+    "验收": {
+      "1_喷后免洗": "✗ 现行流程需 5 分钟水洗、3 分钟定影、20 分钟终洗（S05，A；S01，B 同述；S16，A「After washing and fixing」）。厂商 kit 含定影剂（S07，A）。未发现免洗变体。营销语 'No darkroom ... just this kit and some sunshine'（S15、S18）未给免洗步骤，与配件冲突，不构成反证。",
+      "2_白区停得住": "? 未能判定。原判「偏 ✗」依据为推断（未清洗白区残留 Fe(III)/Ag+）。Ware 有残留铁氧化银的作者论断（S05，A），但无喷雾停止白区的数据，也无白区稳定性的定量数据。",
+      "3_成色留得住": "? 定影过长会降低高光密度（S05，A）；无耐光数据（见 c08）。",
+      "4_少量喷液即可充分停止": "? 原判「偏 ✗」降为 ?：现行停止为浸泡式，喷雾方案未测，S05 也未给喷雾用量。不能据此判 ✗，只能判未测。",
+      "5_底材不变形干后能拼合": "? 原判「偏 ✗」降为 ?：Ware 称指定高纯棉纸不卷曲、表面不粘（S05，A，作者声明），与原推断方向相反；灰板未测；湿处理约 28 分钟，对灰板的影响未知。",
+      "6_安全前置": "?（高风险，不能判 ✓）。硝酸银 Danger、H314（S04，B；S21 CPSC 称腐蚀性，A）；Ware 称敏化液刺激且有毒（S05，A）。ASTM D-4236 与 LHAMA 对硝酸银的认定未核实，故既不能判 ✓，也不以 Danger 信号单独判 ✗。"
+    },
+    "说明": "红线未命中（见 verdict）。底线1 ✗ 单独成立，足以淘汰，且有 A 级证据。底线2–6 的 ? 为未验证，不作为淘汰依据，但也不能视为通过。"
+  },
+  "verdict": {
+    "status": "淘汰",
+    "reasons": [
+      "底线1 ✗：现行一手流程需水洗、定影、终洗（S05 A；S01 B；S16 A）；厂商 kit 含定影剂（S07 A）；未发现免洗或免定影变体（在已读范围内）。单独成立。",
+      "底线2 ?（推断风险）：Ware 残留铁会氧化银的论断（S05 A，作者论断，无数据）；无喷雾停止白区的数据。",
+      "底线3 ?：定影过长降低高光密度（S05 A）；无耐光数据。",
+      "底线4 ?：现行停止为浸泡式；喷雾方案未测。",
+      "底线5 ?：Ware 指定高纯棉纸（S05 A）并称纸基不卷曲（作者声明）；灰板未测。",
+      "底线6 ?（不能判 ✓）：硝酸银 Danger、H314（S04 B；S21 A 称腐蚀性）；ASTM D-4236 与 LHAMA 未核实。",
+      "观察线「喷雾式停止」仅为假设，无证据，不构成保留理由。"
+    ],
+    "red_line_hits": [
+      "未命中：铁氰化钾加强酸。本路线显影为 water（Van Dyke，S06）或 Borax / Rochelle 盐（kallitype，S06），不用铁氰化物或亚铁氰化物。",
+      "未命中：重铬酸盐（S05、S06 均无）。",
+      "未命中：普鲁士蓝遇碱。本路线成像为金属银（S06），不生成普鲁士蓝。但 kallitype 的碱性显影（硼砂，S06）与 S05 所述「铁水解沉淀并褪色」（'ultimately causes it to fade'，A）相关，属碱性方案对已成色的性能风险，需单独评估，不计为红线命中。氨水 pH 9–10 清洗：S05 只称可能提高残余铁（'may raise the level of residual iron'），不称褪色。",
+      "家用可行性：未系统评估。硝酸银为 Danger 级；CPSC 5015（A）建议手套、护目镜与通风。家用通风条件下的风险未评估。"
+    ]
+  },
+  "baseline_challenges": [
+    {
+      "round": "1",
+      "old_claim": "A2 #3：多次水浴 + 硫代硫酸钠定影，全都必需",
+      "agree": "agree",
+      "my_evidence": "S05（A）：水洗 5 分钟、2% 硫代硫酸钠定影 3 分钟、水洗 20 分钟；S01（B）同述；S07（A）厂商 kit 含定影剂；S16（A）零售原页「After washing and fixing」。注意：「全都必需」对 Van Dyke 本身仅有 B 级间接证据（Van Dyke 原页未能复核）。S11、S12 论坛（C）有争议，但不构成一手反证。",
+      "strength": "中强（argyrotype 为 A；Van Dyke 为 B）"
+    },
+    {
+      "round": "1",
+      "old_claim": "A2 #3：Van Dyke 序列中有柠檬酸清除浴",
+      "agree": "disagree",
+      "my_evidence": "未能复核（tinker.koraks 与 alternativephotography 原页不可读）。Ware 一手序列（S05）中无柠檬酸步骤，但 Ware 测的是 argyrotype，并非 Van Dyke 原工艺。本次不采信。",
+      "strength": "弱（仅因一手序列未见该步骤；未经直接核对）"
+    },
+    {
+      "round": "1",
+      "old_claim": "A2 #2/#4：底材 watercolor paper，亦 canvas（据 Wikipedia）",
+      "agree": "disagree（修正）",
+      "my_evidence": "S01 本轮版本中 canvas 与 watercolour 均未出现（已核）。原研究写「Ware 用普通纯棉纸」不准确：S05 原文为 'Only the best cotton fibre, internally sized with Aquapel ... will do'，并列出 Whatman Watercolour / Printmaking、Atlantis Silversafe、Ruscombe Mill Buxton。棉纸推荐见于 S02（Kallitype 页），而非 Van Dyke 页。",
+      "strength": "中（纸种规格比原研究所述更严格；Canvas 说法无来源支持）"
+    },
+    {
+      "round": "1",
+      "old_claim": "A2 #5：UV 约 3 分钟至约 20 分钟",
+      "agree": "disagree",
+      "my_evidence": "无法复核（tinker.koraks 不可读）。Ware 只写「与其他铁系工艺相当」，未给数字（S05，A）。本次不采信，列为缺口。",
+      "strength": "无证据支持（未能复核）"
+    },
+    {
+      "round": "1",
+      "old_claim": "A2 #6：处理得当的 Van Dyke 应与其他银工艺一样持久（Wikipedia）",
+      "agree": "agree",
+      "my_evidence": "S01（B）原文一致，且紧接写明永久性问题「attributed to inadequate processing」。Ware 称耐光性良好（S05，A，条件句，作者声明，无数据）。加速耐光数据未找到。",
+      "strength": "弱至中（B 级定性，无定量）"
+    },
+    {
+      "round": "1",
+      "old_claim": "A2 #7：硝酸银腐蚀性，非儿童产品，需手套与护目镜",
+      "agree": "agree",
+      "my_evidence": "S04（B）：H314、信号词 Danger；S21 CPSC 5015（A）：silver nitrate (a corrosive)，并建议手套与护目镜。S05（A）：敏化液刺激且有毒、会染皮肤。「非儿童产品」：CPSC 5015 与厂商均有成人/年龄 12+ 的语境（S17 'kids 12 and up'），需按厂商标注。",
+      "strength": "强（A 与 B 相互印证；SDS 仍未核验）"
+    },
+    {
+      "round": "1",
+      "old_claim": "A2 #8：无商业 kit",
+      "agree": "disagree",
+      "my_evidence": "S07（A，curl 全文）为 Van Dyke Brownprint Kit 100 ml（$24.99，含 250 g 硫代硫酸钠定影）；S08（A）为 argyrotype kit；S15–S18 为 PAR 系列 kit 的原页（本轮 curl 读取）。轮1 覆盖不足。",
+      "strength": "强（厂商原页）"
+    },
+    {
+      "round": "1",
+      "old_claim": "A2 #1：Van Dyke 于 1895 年在德国由 Arndt & Troost 申请专利（Wikipedia）",
+      "agree": "disagree（冲突未解）",
+      "my_evidence": "S01（B）写 1895 年；S06（A，Ware 总表）写 Arndt & Troost 为 1889 年。原始德国专利未定位。冲突未解，不影响底线判定。注意 S02 的 1889 指 Nicol 的 kallitype 专利，不得与 Van Dyke 年份混淆。",
+      "strength": "弱（日期冲突，未解）"
+    }
+  ],
+  "sources": [
+    {
+      "id": "S01",
+      "title": "Van Dyke brown (printing) - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Van_Dyke_brown_(printing)",
+      "type": "百科（B）",
+      "access": "curl全文（2026-11-01 复读，已核）",
+      "date": "2026-11-01 读取",
+      "quote": "'No developer is needed: the print is washed in water, fixed briefly'；'properly processed Van Dyke brown prints should last as long as prints made by any other silver process'；'patented in Germany in 1895 by Arndt and Troost'"
+    },
+    {
+      "id": "S02",
+      "title": "Kallitype - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Kallitype",
+      "type": "百科（B）",
+      "access": "curl全文（2026-11-01 复读，已核）",
+      "date": "2026-11-01 读取",
+      "quote": "'Their permanence depends largely on the complete removal of the iron salts during clearing'；'Cotton rag paper is generally recommended for printing kallitypes ... multiple paper types will lead to satisfactory results'；'Gloves should be worn'"
+    },
+    {
+      "id": "S03",
+      "title": "Argyrotype - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Argyrotype",
+      "type": "百科（B）",
+      "access": "curl全文（2026-11-01 复读，已核）",
+      "date": "2026-11-01 读取",
+      "quote": "'The sensitizer used is very slow, so printing must be by contact with a large format negative'；'improved image stability'"
+    },
+    {
+      "id": "S04",
+      "title": "Silver nitrate - Wikipedia（含 GHS 数据框）",
+      "url": "https://en.wikipedia.org/wiki/Silver_nitrate",
+      "type": "百科（B）",
+      "access": "curl全文（2026-11-01 复读，已核）",
+      "date": "2026-11-01 读取",
+      "quote": "'H272 , H314 , H410'；'Signal word Danger'；CAS 7761-88-8"
+    },
+    {
+      "id": "S05",
+      "title": "The Argyrotype Process（Mike Ware）",
+      "url": "https://mikeware.co.uk/mikeware/Argyrotype_Process.html",
+      "type": "一手（作者，Mike Ware）",
+      "access": "curl全文（2026-11-01 复读，已核）",
+      "date": "2026-11-01 读取（站点无标注日期）",
+      "quote": "'This removes any traces of insoluble silver salts and intensifies the image'；'The solution should keep for a year, at least'；'Only the best cotton fibre, internally sized with Aquapel ... will do'；'iron(III) will oxidise silver with consequent degradation of the image'；'ambient RH between 40% and 80% ... orange-brown on a yellow background'"
+    },
+    {
+      "id": "S06",
+      "title": "Alternative Printing: A Conspectus（Mike Ware，含铁系工艺总表）",
+      "url": "https://www.mikeware.co.uk/mikeware/Conspectus.html",
+      "type": "一手（作者，Mike Ware）",
+      "access": "curl全文（2026-11-01 复读，已核）",
+      "date": "2026-11-01 读取（站点无标注日期）",
+      "quote": "'Ferricitrate+Silver nitrate (Dev: water)'（Vandyke，Arndt & Troost，1889）；'Ferric oxalate + Silver nitrate (Dev: Borax or Rochelle salt)'（Kallitype）；'Ferricitrate/tartrate (Dev: Ferrocyanide+gum)'（Pellet Print，跨路线提示）"
+    },
+    {
+      "id": "S07",
+      "title": "Vandyke Brownprint Kit – 100 ml（Bostick & Sullivan）",
+      "url": "https://www.bostick-sullivan.com/product/vandyke-brownprint-kit-100-ml/",
+      "type": "厂商原页（A）",
+      "access": "curl全文（2026-11-01 复读，已核）",
+      "date": "2026-11-01 读取；价格未验证",
+      "quote": "'$ 24.99'；'Our kit will make about fifty 8×10″ prints'；'250 g – Sodium Thiosulfate fixer'；'Vandyke is a printing-out process that darkens as it is exposed to UV light'"
+    },
+    {
+      "id": "S08",
+      "title": "Argyrotype Printing Kit 100ml（Goldstreet Studios）",
+      "url": "https://www.goldstreetstudios.com.au/product/argyrotype-printing-kit-100ml/",
+      "type": "零售商原页（A）",
+      "access": "curl全文（2026-11-01 复读，已核）",
+      "date": "2026-11-01 读取；价格未验证",
+      "quote": "'$ 49.00'；'coats 30 sheets 8×10 inch paper'；'This kit does not include fixer'；'single-bottle sensitizer solution, having a long shelf-life'"
+    },
+    {
+      "id": "S09",
+      "title": "Zebra Van Dyke Brown Printing Kit (100ml)",
+      "url": "https://zebradryplates.com/product/zebra-van-dyke-brown-printing-kit-100ml/",
+      "type": "厂商原页（未能复核）",
+      "access": "curl全文（本轮返回无关页 'Handcrafted Silver Gelatin Dry Plates'，未能复核）；搜索摘录（研究时）",
+      "date": "2026-11-01 检索与复核",
+      "quote": "'100 ml of working solution, 250 g of sodium thiosulfate fixer'（研究时搜索摘录，本轮未能复现）"
+    },
+    {
+      "id": "S10",
+      "title": "Photographers' Formulary Van Dyke formulary PDF（freestylephoto.com）",
+      "url": "https://www.freestylephoto.com/pdf/product_pdfs/formulary/FormularyVanDyke070080.pdf",
+      "type": "厂商 PDF（站点在不可读列表；仅摘录）",
+      "access": "搜索摘录（本轮未读；所在域在禁止/不可读列表，未绕过）",
+      "date": "2026-11-01 检索",
+      "quote": "'Do not use a standard photographic fixing bath'（搜索摘录转述，未复核）；'定影约 20 秒至 1 分钟'（摘录级）"
+    },
+    {
+      "id": "S11",
+      "title": "Photrio: Van Dyke's fixing（thread 6010）",
+      "url": "https://www.photrio.com/forum/threads/van-dykes-fixing.6010",
+      "type": "论坛（C）",
+      "access": "403（研究时与本轮均不可读，未绕过）；搜索摘录",
+      "date": "2026-11-01 检索",
+      "quote": "搜索摘要转述：「whether you need to fix a VDB print at all is somewhat questionable」（未复核）"
+    },
+    {
+      "id": "S12",
+      "title": "Photrio: fixer for van dyke brown（thread 145006）",
+      "url": "https://www.photrio.com/forum/threads/fixer-for-van-dyke-brown.145006/",
+      "type": "论坛（C）",
+      "access": "curl 403（本轮，未绕过）；搜索摘录（研究时）",
+      "date": "2026-11-01 检索",
+      "quote": "搜索摘要转述：稀释 C41 定影 1+20 的报告；亚硫酸钠清除剂；EDTA 争议（未复核，C 级，不得作为方案依据）"
+    },
+    {
+      "id": "S13",
+      "title": "Kallitype, Vandyke Brown, and Argyrotype（Donald Nelson，Routledge 2023）",
+      "url": "https://api.crossref.org/works/10.4324/9781003311812",
+      "type": "书（元数据，DOI 10.4324/9781003311812）",
+      "access": "API（研究时；本轮未重查）",
+      "date": "2026-11-01 查询",
+      "quote": "章节标题：Making the Vandyke Brown Print；Troubleshooting；Finishing Prints（无摘要，内容未读）"
+    },
+    {
+      "id": "S14",
+      "title": "Van Dyke Brown Print（Laura Blacklow，New Dimensions in Photo Processes，2018）",
+      "url": "https://api.crossref.org/works/10.4324/9781315208015-8",
+      "type": "书章节（元数据）",
+      "access": "API（研究时；本轮未重查）",
+      "date": "2026-11-01 查询",
+      "quote": "仅元数据，无摘要，内容未读"
+    },
+    {
+      "id": "S15",
+      "title": "PAR Van Dyke DIY kit（Gordon Harris，NZ）",
+      "url": "https://www.gordonharris.co.nz/products/par-van-dyke-diy-kit-paper",
+      "type": "零售商原页（A，内容）",
+      "access": "curl全文（2026-11-01，已核）",
+      "date": "2026-11-01 读取；价格与库存未验证",
+      "quote": "'Now $169.00 ea'；'Sold Out - Notify Me When It’s Available' 与 'In Stock' 同时出现；'2 rectangular sinks'；'No darkroom needed, just this kit and some sunshine!'；'enough for ± 25 A4'"
+    },
+    {
+      "id": "S16",
+      "title": "Van Dyke Kit for Paper（Rittagraf）",
+      "url": "https://www.rittagraf.com/en/kit-van-dyke-para-papel.html",
+      "type": "零售商原页（A，内容）",
+      "access": "curl全文（2026-11-01，已核）",
+      "date": "2026-11-01 读取；价格未验证",
+      "quote": "'€89.95'，'In stock'（研究时引用的 '€78.59' 未能复现）；'After washing and fixing, the result is a photographic print in deep brown tones'；'2 rectangular washing trays'；'advisable to use gloves and work in a ventilated space'"
+    },
+    {
+      "id": "S17",
+      "title": "DIY paper Van Dyke kit（Chrysler Museum of Art shop）",
+      "url": "https://shop.chrysler.org/products/diy-paper-van-dyke-kit",
+      "type": "零售商原页（A，内容）",
+      "access": "curl全文（2026-11-01，已核）",
+      "date": "2026-11-01 读取；价格与库存未验证",
+      "quote": "'Regular price $76.50 USD'；'Out of Stock'；'2 rectangular trays'；'Gloves'；'For adults, and kids 12 and up'"
+    },
+    {
+      "id": "S18",
+      "title": "PAR Van Dyke (Sepia Tone) 'Paper' Kit（Melbourne Etching Supplies，AU）",
+      "url": "https://mes.net.au/products/par-van-dyke-paper-kit",
+      "type": "零售商原页（A，内容）",
+      "access": "curl全文（2026-11-01，已核）",
+      "date": "2026-11-01 读取；无价格（模板）；库存未验证",
+      "quote": "'about 20 x A4 sheets'；'3 rectangular sinks'；'After purchase (before mixing with water) it can be kept for 24 months'；'No darkroom required—just the kit and sunlight'；'Sold out'"
+    },
+    {
+      "id": "S19",
+      "title": "Van Dyke Brown Prints（New Dimensions in Photo Processes，2007）",
+      "url": "https://api.crossref.org/works/10.1016/b978-0-240-80789-8.50011-1",
+      "type": "书章节（元数据）",
+      "access": "API（研究时；本轮未重查）",
+      "date": "2026-11-01 查询",
+      "quote": "仅元数据，无摘要，内容未读"
+    },
+    {
+      "id": "S20",
+      "title": "Mike Ware: Conservation Matters（索引页）",
+      "url": "https://www.mikeware.co.uk/mikeware/conservation.html",
+      "type": "一手（作者，Mike Ware）",
+      "access": "curl全文（研究时）",
+      "date": "2026-11-01 读取",
+      "quote": "'The chemical vulnerability of cyanotypes is threefold'（覆盖 Talbot 与 cyanotype，无 iron-silver 稳定性数据）"
+    },
+    {
+      "id": "S21",
+      "title": "Art and Craft Safety Guide, Pub. No. 5015（U.S. CPSC）",
+      "url": "https://www.cpsc.gov/s3fs-public/5015.pdf",
+      "type": "政府指南（A）",
+      "access": "curl全文 PDF（2026-11-01，本轮新增，pdftotext 提取）",
+      "date": "2026-11-01 读取（出版日期未在提取文本中确认）",
+      "quote": "'Silver nitrate (a corrosive) and gamboge ... are used for staining'；'Some silver salts are irritants and others may be corrosive (e.g., silver nitrate)'；摄影材料节：'Wear appropriate gloves and goggles'；'Components may include hypo or sodium thiosulfate ... sodium sulfite or sodium bisulfite'；'Decomposition of sulfites may lead to formation of sulfur dioxide gas'；'Conforms to ASTM D-4236'"
+    },
+    {
+      "id": "S22",
+      "title": "Bostick & Sullivan: Safety Data Sheets 索引页",
+      "url": "https://www.bostick-sullivan.com/safety-data-sheets/",
+      "type": "厂商索引页（A，部分）",
+      "access": "curl全文（首页，分页未展开）",
+      "date": "2026-11-01 读取",
+      "quote": "索引含 'Ammonium Ferric Oxalate'、'Ferric Ammonium Citrate-Green'（Ziatype）、'Van Dyke' 分类；未见硝酸银 SDS 条目（分页未展开，未核验）"
+    },
+    {
+      "id": "S23",
+      "title": "WebSearch 摘录：ASTM D-4236 / LHAMA 与硝酸银（核查新增，1 次）",
+      "url": "https://www.cpsc.gov/s3fs-public/5015.pdf（摘录所指来源，另见 Intertek 与 Bureau Veritas 页面，未读）",
+      "type": "搜索摘录（二手概况）",
+      "access": "搜索摘录",
+      "date": "2026-11-01 检索",
+      "quote": "摘录称 CPSC 指南把硝酸银列为腐蚀性染色用品；摘录未给出硝酸银的 LHAMA 标签结论，需以标准或毒理学评估核对"
+    }
+  ],
+  "negative_findings": [
+    {
+      "query": "alternativephotography.com 六个页面：Van Dyke 手册、iron-silver 总览、kallitype、argyrotype、printing-out",
+      "scope": "curl 直接读取，2026-11-01；站点在可读列表，但仍尝试（研究时）",
+      "result": "全部返回 403（研究时）。未绕过。轮1 所引该站页面无法复核。"
+    },
+    {
+      "query": "freestylephoto.com Photographers' Formulary Van Dyke PDF",
+      "scope": "站点在禁止列表；仅搜索摘录，未直接读取（本轮亦未读取）",
+      "result": "未读全文。摘录称不用标准定影浴、稀定影用后弃、定影约 20 秒至 1 分钟（S10，摘录级，未复核）。"
+    },
+    {
+      "query": "photrio.com Van Dyke's fixing（thread 6010）与 fixer for van dyke brown（thread 145006）",
+      "scope": "curl 直接读取（研究时与本轮）",
+      "result": "403，未绕过；仅有搜索摘录（C 级）。"
+    },
+    {
+      "query": "免水洗或免定影的 Van Dyke 变体（WebSearch 1，standard，研究时）",
+      "scope": "WebSearch 1 次（美国区）",
+      "result": "未发现可靠一手或厂商来源。论坛有「是否需要定影存疑」的讨论（C 级）。"
+    },
+    {
+      "query": "hypo-free 替代定影：亚硫酸钠、EDTA、稀释定影（WebSearch 4，standard，研究时）",
+      "scope": "WebSearch 1 次",
+      "result": "仅论坛（C）：稀释 C41 定影、亚硫酸钠清除剂、EDTA 意见相左。无经测试的非硫代硫酸盐方案。"
+    },
+    {
+      "query": "argyrotype Mike Ware 定影 洗（WebSearch 2，standard，研究时）",
+      "scope": "WebSearch 1 次",
+      "result": "找到 Ware 一手页与零售 kit 页，已读全文（S05、S08）。"
+    },
+    {
+      "query": "Van Dyke brown printing kit 2026 price（WebSearch 3，standard，研究时）",
+      "scope": "WebSearch 1 次",
+      "result": "多家有 kit（S07、S09、S15–S18）。未找到 2026 年标注日期的价格。"
+    },
+    {
+      "query": "Crossref 书目检索：van dyke brown print conservation；iron-silver printing-out process fixing；van dyke brown print fading residual silver stability（研究时）",
+      "scope": "Crossref 公开 API，2026-11-01（研究时）",
+      "result": "仅见 Routledge 书与章节元数据（无摘要，S13、S14、S19）。无加速耐光或免定影的同行评审研究。本轮未重跑。"
+    },
+    {
+      "query": "PubMed esearch：Van Dyke 或 kallitype 或 cyanotype（title/abstract）（研究时）",
+      "scope": "PubMed E-utilities，retmax 10",
+      "result": "5 条，均与本路线无关。PMID 1740763（1992，cyanotype 健康危害）属 cyanotype，超出本路线。本轮未重跑。"
+    },
+    {
+      "query": "Google Patents XHR：van dyke brown；kallitype；argyrotype OR kallitype OR van dyke；iron-silver process without fixing（研究时）",
+      "scope": "Google Patents 首页结果，关键词范围",
+      "result": "关键词范围内未发现与 Van Dyke、kallitype、argyrotype 工艺直接相关的专利。结果为模糊匹配。「without fixing」查询返回 503。结论仅限关键词范围内未发现，不代表无专利。本轮未复查。"
+    },
+    {
+      "query": "PubChem：silver nitrate CID、化合物属性、化合物 HTML 页（研究时）",
+      "scope": "PubChem PUG REST 与 HTML",
+      "result": "REST 持续 503。HTML 页为人机验证拦截，未绕过。SDS 与 GHS 由 Wikipedia 化学框（S04）替代，未直接核验。"
+    },
+    {
+      "query": "cpsc.gov Art Materials 指导页（ASTM D-4236、LHAMA）（研究时）",
+      "scope": "curl 直接读取（研究时）",
+      "result": "某一子页 403（研究时）。本轮 Pub. No. 5015 PDF 可读（S21）：列出硝酸银为腐蚀性，未载明硝酸银的 LHAMA/ASTM 认定。认定仍未知。"
+    },
+    {
+      "query": "Zebra Van Dyke 用户手册 PDF；Zebra Van Dyke 产品页（研究时）",
+      "scope": "curl 直接读取（研究时与本轮）",
+      "result": "返回 HTML 产品页或无关页（Silver Gelatin Dry Plates），未见 Van Dyke kit 内容；kit 内容仅见搜索摘录（S09，未能复核）。"
+    },
+    {
+      "query": "dharmatrading.com 搜索 van dyke brown（研究时）",
+      "scope": "curl 直接读取（研究时）",
+      "result": "0 results（研究时）。URL 未记录，本轮未复查。"
+    },
+    {
+      "query": "jacquardproducts.com 搜索 van dyke 与 kallitype（研究时）",
+      "scope": "curl 直接读取（研究时）",
+      "result": "页面未渲染商品列表，无法判定（不计为负结果）。"
+    },
+    {
+      "query": "dietzgen.com 搜索 van dyke（研究时）",
+      "scope": "curl 直接读取（研究时）",
+      "result": "404。"
+    },
+    {
+      "query": "mikeware.co.uk conservation 页（研究时）",
+      "scope": "curl 直接读取（S20）",
+      "result": "覆盖 Talbot 与 cyanotype 的降解，未见 iron-silver 稳定性数据。"
+    },
+    {
+      "query": "ASTM D-4236 / LHAMA 对硝酸银的认定（核查新增，WebSearch 1 次）",
+      "scope": "WebSearch 1 次，搜索摘录",
+      "result": "未找到硝酸银 LHAMA 或 ASTM 认定的结论；摘录仅称 CPSC 把硝酸银列为腐蚀性染色用品（S23）。"
+    }
+  ],
+  "key_unknowns": [
+    "是否存在不浸泡、仅喷雾即可停止未成色区的 Van Dyke、kallitype 或 argyrotype 变体。本次未发现，证据为零（核查未重新检索此问题）。",
+    "硝酸银的 SDS 与 GHS 分类（Wikipedia 化学框 B 级），以及 ASTM D-4236 与 LHAMA 认定（CPSC 5015 可读但未载明结论）。PubChem 本轮 503，未核验。",
+    "曝光剂量 mJ/cm² 与 30 分钟可达性，日光与 UV 灯分别的数据。",
+    "加速耐光数据（未找到，不换算年限）。金或硒调色对永久性的收益（定性）。",
+    "灰板底材在完整湿处理（水洗、定影、水洗，约 28 分钟）后的变形与拼合性。",
+    "PAR 系列营销语 'No darkroom ... just this kit and some sunshine' 与湿盘/水槽配件、S16 'After washing and fixing' 的冲突，需 PAR 官方说明书核对（本轮未找到）。",
+    "Van Dyke 的专利年份冲突（Ware 1889 对 Wikipedia 1895），以及原始德国专利（未定位）。"
+  ],
+  "discriminating_experiment": {
+    "one_liner": "用 Ware 配方的 print-out 样片，比较仅喷 2% 硫代硫酸钠雾（不浸泡）、仅喷清水雾与标准水洗加定影三组，在 72 小时光照后白区的 ΔE。",
+    "design_sketch": "纸基（指定高纯棉纸）与灰板各做样片。UV 灯配辐照计记录 mJ/cm²。每组 3 片重复。喷雾量按 mg/cm² 定量。喷雾操作须在通风条件下进行，勿把亚硫酸盐与酸混合（S21）。曝光后立即按组处理，再在固定辐照下照射 72 小时，测白区与成色的 L*a*b* 变化。判据：若喷雾组白区 ΔE 与标准组无显著差异，则底线1 与 2 出现翻盘可能；若喷雾组白区变色显著，则本路线的淘汰成立。"
+  },
+  "new_routes_spotted": [
+    {
+      "name": "argyrotype（银磺胺酸盐替代硝酸银，单瓶敏化液）",
+      "why": "Ware 称以银磺胺酸盐替代硝酸银，减少图像银溶解（S05，A）。仍需湿处理，仅作为变体线索。",
+      "lead_url": "https://mikeware.co.uk/mikeware/Argyrotype_Process.html"
+    },
+    {
+      "name": "Sepia platinum（草酸铁 + 氯铂酸盐 + 汞盐）",
+      "why": "Ware 总表列出（S06，A）。含汞盐，安全上可能直接淘汰，未核验。",
+      "lead_url": "https://www.mikeware.co.uk/mikeware/Conspectus.html"
+    },
+    {
+      "name": "非浸泡式硫代硫酸盐或亚硫酸盐终止（喷雾）",
+      "why": "论坛讨论的候选（C 级，本轮无法复核 S12）。无对照数据；亚硫酸盐遇酸释放 SO2（S21），需安全核验。",
+      "lead_url": "https://www.photrio.com/forum/threads/fixer-for-van-dyke-brown.145006/"
+    }
+  ],
+  "search_budget_used": {
+    "researcher": {
+      "websearch": 4,
+      "curl_reads": 29
+    },
+    "verifier": {
+      "websearch": 1,
+      "curl_reads": 16
+    }
+  },
+  "reconciliation_log": [
+    {
+      "item": "c05 核验 2（白区停得住）",
+      "change": "偏 ✗ 改为 ?，写明未判定理由",
+      "why": "原判依据为推断（残留 Fe(III) 对白区的影响），没有喷雾停止白区的直接数据。「偏 ✗」也不是允许的三态标记。"
+    },
+    {
+      "item": "c05 核验 4（少量喷液即可充分停止）",
+      "change": "偏 ✗ 改为 ?",
+      "why": "现行停止为浸泡式，喷雾方案未测。未测不能推出 ✗。"
+    },
+    {
+      "item": "c05 核验 5（底材不变形、可拼合）",
+      "change": "偏 ✗ 改为 ?，补入 Ware 不卷曲的作者声明",
+      "why": "S05 原文称纸张不卷曲、表面不粘（作者声明），与原推断方向相反；灰板未测。"
+    },
+    {
+      "item": "c05 核验 6（安全前置）",
+      "change": "偏 ✗ 改为 ?（高风险，不能判 ✓）",
+      "why": "ASTM D-4236 与 LHAMA 认定未核实；Danger 与 H314 的信号不能单独推出认定结论。CPSC 5015 可读但未载明硝酸银的认定。"
+    },
+    {
+      "item": "verdict.reasons（底线2–6）",
+      "change": "与 c05 核验同步改为 ?；底线1 保持 ✗ 并标注单独成立",
+      "why": "保持与核验表一致。"
+    },
+    {
+      "item": "c04 与 red_line_hits：氨水 pH 9–10 褪色",
+      "change": "拆分：S05 硼砂碱性显影的水解褪色保留（A）；氨水清洗删去「导致褪色」，只保留「可能提高残余铁」",
+      "why": "S05 原文：褪色论断在硼砂 kallitype 段；氨水段只说 may raise the level of residual iron。"
+    },
+    {
+      "item": "c10 纸基规格（普通版画或水彩纸）",
+      "change": "改为 Ware 指定高纯棉、Aquapel 内施胶，并列出特定纸种",
+      "why": "S05 原文为 'Only the best cotton fibre ... will do'，「普通」与原文相反。规格比原研究所述更严格，与底线5 相关。"
+    },
+    {
+      "item": "c10 Wikipedia 推荐棉纸（B）",
+      "change": "删除归于 Van Dyke 的推荐；改为 kallitype Wikipedia（S02，B）推荐棉浆纸、多种纸亦可",
+      "why": "S01（Van Dyke 页）无棉纸字样；S02 有该句且带限定。"
+    },
+    {
+      "item": "baseline #3 'Ware 用普通纯棉纸'",
+      "change": "改为 Ware 指定特定高纯棉纸，并标注 disagree（修正）",
+      "why": "同上。"
+    },
+    {
+      "item": "c11 护目镜（B，来源 S02）",
+      "change": "护目镜依据改为 CPSC 5015（A）；手套仍以 S02（B）支撑",
+      "why": "S02 无护目镜字样；CPSC 5015 摄影材料节写 'Wear appropriate gloves and goggles'。"
+    },
+    {
+      "item": "c11 ASTM/LHAMA 的 access（'CPSC 页面 403'）",
+      "change": "更正为 CPSC 5015 PDF 可读（A），认定结论仍未知",
+      "why": "403 指某一子页；5015.pdf 本轮 curl 200，全文可提取，但未载明硝酸银的 LHAMA/ASTM 认定。"
+    },
+    {
+      "item": "c11 '无硝酸银的 argyrotype 仍需 Ag2O 与氨基磺酸现配'",
+      "change": "改为：主配方终态敏化液以银磺胺酸盐替代硝酸银，但 Ware 替代法由 AgNO3 沉淀制 Ag2O，全流程仍涉及硝酸银前体",
+      "why": "S05 原文给出 10.3 g AgNO3 制 Ag2O 的替代法。"
+    },
+    {
+      "item": "c11 遗漏：Ware 'very little risk' 观点；成人可达性的年龄标注",
+      "change": "补入 Ware 作者观点（标注为观点）；补入 Chrysler 页 'For adults, and kids 12 and up'（A）",
+      "why": "平衡引用；年龄标注与「成人美术材料」路线的可达性相关。"
+    },
+    {
+      "item": "c12 Rittagraf €78.59（搜索摘录）",
+      "change": "注明原页读取为 €89.95（In stock），€78.59 无法复现；价格仍标未验证",
+      "why": "S16 原页 curl 全文与研究引用数值不符。"
+    },
+    {
+      "item": "c12 库存状态（'缺货'、Sold Out/In Stock、'Sold out'）",
+      "change": "所有库存状态标未验证；补列 S15 同页冲突与 S18 'Sold out'",
+      "why": "研究规则要求价格与库存均标未验证；原研究未记录冲突。"
+    },
+    {
+      "item": "c12 Gordon Harris $169.00；Chrysler $76.50",
+      "change": "确认数值存在于原页（curl）；价格与库存仍标未验证",
+      "why": "access 由搜索摘录升为 curl全文，但价格与库存规则不变。"
+    },
+    {
+      "item": "c12 Zebra（S09）",
+      "change": "注明 curl 返回无关页，未能复现；维持未能复核",
+      "why": "原页不可达，不能作为存在性证据。"
+    },
+    {
+      "item": "c06 候选（1–2% 硫代硫酸钠或亚硫酸钠喷雾）",
+      "change": "维持 C 级未验证；补入 CPSC 5015（A）亚硫酸盐分解释放 SO2 的安全注记",
+      "why": "候选缺少对照与安全核验；S12 本轮 403。"
+    },
+    {
+      "item": "c08 遗漏：金/硒调色可提高永久性",
+      "change": "补入（S05 A；S02 B）；标注为额外湿步骤，不改变淘汰判定",
+      "why": "对成色耐久有利的信息应与负面证据并列。"
+    },
+    {
+      "item": "c08 永久性声誉差的归属（'B；Ware 引 Bayley 1932'）",
+      "change": "归属改为 S05（A，一手）；补入 S01 'attributed to inadequate processing'",
+      "why": "Bayley 1932 引文出自 S05，不在 S02；S01 的归因句原研究未引。"
+    },
+    {
+      "item": "c08 遗漏：argyrotype Wikipedia 'improved image stability'",
+      "change": "补入（S03，B，未量化）",
+      "why": "与 Ware 作者声明并列，便于比较。"
+    },
+    {
+      "item": "c09 遗漏：PAR 套件未混合化学品 24 个月（厂商声明）",
+      "change": "补入，标未验证；明示不得外推为混合液货架期",
+      "why": "S18 厂商声明；与现涂敏化液寿命不是同一对象。"
+    },
+    {
+      "item": "c01 遗漏：Van Dyke 配方含酒石酸",
+      "change": "补入（S01 B）",
+      "why": "S01 原文列出 ferric ammonium citrate、tartaric acid、silver nitrate。"
+    },
+    {
+      "item": "c03 参考文献（S03 同述）",
+      "change": "保留，并注明 S03 原文属实（B）",
+      "why": "S03 原文 'The sensitizer used is very slow, so printing must be by contact' 已核。"
+    },
+    {
+      "item": "c13(10) 年份冲突",
+      "change": "保留为未验证；补注 S02 的 1889 指 Nicol 的 kallitype 专利，不得混入 Van Dyke 年份",
+      "why": "S02 原文 'Patented in 1889 by W. W. J. Nicol'，与 Van Dyke 的 Arndt & Troost 不同。"
+    },
+    {
+      "item": "sources：access 字段",
+      "change": "S01–S08、S15–S18、S20 标为本轮 curl 复读；S09 标为未能复核；S12 标为 403；S10、S11 维持不可读；新增 S21（CPSC 5015）、S22（Bostick SDS 索引）、S23（WebSearch 摘录）",
+      "why": "与本轮实际读取结果一致。"
+    },
+    {
+      "item": "PAR 营销语冲突（S15、S18）",
+      "change": "在 c05 与 c14 中记录冲突，不计为免洗证据",
+      "why": "配件与同系列 S16 说明书文字与营销语矛盾。"
+    },
+    {
+      "item": "c14（1）喷雾变体未发现",
+      "change": "保持；注明本轮未重新检索该问题",
+      "why": "本轮 WebSearch 只查 ASTM/LHAMA，未查喷雾变体。"
+    },
+    {
+      "item": "跨路线：Pellet 显影剂（S06 行 'Ferrocyanide+gum'）",
+      "change": "仅列为结构性提示，不改本路线结论；建议 Pellet 路线以其自身一手来源核验",
+      "why": "S06 支持亚铁氰化物（ferrocyanide），与需求书 v0.5 §5 与阶段 2 协议草稿的旧写法相反，但不属于本路线判定范围。"
+    }
+  ]
+}

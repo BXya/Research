@@ -1,0 +1,248 @@
+{
+  "key": "cyanotype_classic",
+  "name_zh": "经典蓝晒",
+  "name_en": "classic cyanotype (ferric ammonium citrate + potassium ferricyanide). Ware 'new cyanotype' (ferric ammonium oxalate + ammonium ferricyanide, dichromate optional in the recipe) is a different sensitizer and is handled as a separate variant",
+  "status": "淘汰（作为免洗产品路线，核查后维持）；保留为对照基线",
+  "verification_note": "本文件为核查修订版（cyanotype_classic.verify.json 的修订结果）。修订项见 reconciliation_log。",
+  "columns": {
+    "c01_机制": {
+      "text": "事实：紫外光使 Fe(III) 柠檬酸盐（ammonium ferric citrate）光还原为 Fe(II)；Fe(II) 与铁氰化物 [Fe(CN)6]3- 生成不溶的 Prussian blue，其化学本质为 ferric ferrocyanide（S01 原文确认，Table 1）。过量曝光时，过剩 Fe(II) 把 Prussian blue 还原为 Prussian white（solarisation 反转，S01）；之后靠空气或 H2O2 氧化回蓝（S01、S03）。",
+      "grade": "A",
+      "label": "事实",
+      "source_ids": ["S01", "S03"]
+    },
+    "c02_极性与色调": {
+      "text": "负像：曝光区显蓝，白区洗去未反应感光剂后为纸色。单色相 Prussian blue，连续色调（S07「continuous tone image」，S10），层次由曝光量决定。多色扩展：本轮未找到先例（在所列范围内未发现）。洗涤时颜料流失，需过曝约 3–4 档（S01 水相分散节，A）；传统配方洗涤会压缩高光层次（S03 §7.1.4「truncate the tonal scale in the high values」，A）。",
+      "grade": "A",
+      "label": "事实+推断（多色扩展为未发现，非推断）",
+      "source_ids": ["S01", "S03", "S07", "S10"]
+    },
+    "c03_曝光条件": {
+      "text": "日光：1–30 分钟，视条件而定，宜过曝（Jacquard 说明书步骤 5，A；UV 灯处无时间，同页）。灯：Cyanomicon §7.1 传统配方段称灯曝光约 20–30 分钟（A，章节已核对）；UMBC 讲义写 125 W UV 灯、距离 18 英寸（约 46 cm，为换算）30 分钟（B）。与 30 分钟目标：夏季中午日光 2–20 分钟（C，Pingwish），与 30 分钟兼容；阴天 45–60 分钟（C，同页）超过 30 分钟目标；UV 灯处于边界。365 nm 光源：Ware Simple 配方 5–10 分钟（A，原文为「365 nm UVA light source（e.g. a facial tanning unit）」，非 LED；且为 Simple 配方，非经典 FAC）；博客「365 nm LED 3–10 分钟」（C），并称 LED 输出衰减后曝光时间可增至 2–3 倍（C）。395 nm：本轮未找到可信实测（在所列范围内未发现）；WebSearch 摘录数值无来源可追溯，不采用。mJ/cm2 剂量：未找到；PubMed 25327500 摘要称给出光谱与剂量响应范围，具体数值未能读取（API 摘要无数值）。",
+      "grade": "A（部分 B/C）",
+      "label": "事实；395 nm 与 mJ/cm2 为未验证",
+      "source_ids": ["S04", "S03", "S07", "S02", "S09", "S14"]
+    },
+    "c04_显影或成像后处理": {
+      "text": "湿法，无干法、无喷雾显影。冷流水（Jacquard 为 cool water，S04；Ware 为 gently running water，S03 §7.1.4）洗至敏化液黄色从高光消失，Ware 注明 20 分钟足够（S03 §7.1.4，A）；Jacquard 说明书写洗至少 5 分钟、换水至清（S04，A）；过度洗涤会使画面变浅（S04「Over-washing can also result in pale prints」，A；S07「Over-washing will erode the image」，B）。H2O2 可选：0.3% 浴约 30 秒，对终密度无最终差异（S03 §7.1.4，A）。Ware New 首浴为 0.25–1% 硝酸 5–10 分钟（A，红线；S18 亦给出 1% 盐酸或氨基磺酸作替代）。Simple 版 1% 柠檬酸 30–60 秒（A，非经典）。1% 草酸铵可清除发蓝高光（A，Simple；草酸盐有光敏风险，见 c06）。曝光后酸性冲洗（柠檬酸或醋）可清除残留 ferric 化合物（Wikipedia，B），仍为湿步骤。",
+      "grade": "A",
+      "label": "事实",
+      "source_ids": ["S03", "S04", "S02", "S01", "S07", "S10", "S18"]
+    },
+    "c05_免洗真实程度": {
+      "text": "严格免洗：否。停止动作即水洗，属「必须水洗」（S04 步骤 6–7，A；S03 §7.1.4，A）。六条底线：1 ✗；2 ✗；3 ?；4 ?（无候选停止剂）；5 ?（碳酸钙缓冲板材风险）；6 ?（K3Fe(CN)6 酸致 HCN 风险；ASTM D-4236 声明未能证实，见 c05_免洗核验）。逐条理由见 c05_免洗核验。",
+      "grade": "A",
+      "label": "事实+推断",
+      "source_ids": ["S03", "S04", "S01", "S11", "S12", "S13"]
+    },
+    "c06_停止机制": {
+      "text": "经典体系无天然停止，唯一去除手段是水洗（移除未反应盐）。候选逐类对照：(a) 氧化剂 H2O2 为加速剂，非停止剂（A）。(b) 还原剂会把铁氰化物转为亚铁氰化物，并把 Prussian blue 还原为 Prussian white（由 S01、S03 推断，A）；不可用。(c) 强酸（硝酸、盐酸、硫酸）释放 HCN，红线（S11 B，原文限定为「very strongly acidic」及高浓度酸，并称稀硫酸加热时亦会反应；S13 亚铁氰化钾 SDS 为 A；S03 引 1847 年 ferricyanide 加游离硫酸的冲洗法，A）。(d) 碱（碳酸钠、氨、硼砂、磷酸三钠）使 Prussian blue 在 pH 9.4 下 10 分钟损失 50–71%（S01 Table 5，A；1–10 分钟的范围另引 Holtzman 1945），pH 10.7 下 <30 秒褪为氢氧化铁，红线（A）。(e) 草酸盐与柠檬酸均为可氧化有机阴离子，使普鲁士蓝光还原更敏感（S01 对照试验，A）；不可用。(f) 镍(II) 浸泡提升耐碱性，但掉密度、偏色，非停止（S01，A）。(g) 磷酸盐/TSP 生成黄色 ferric phosphate（S03 §8.1，A；S04 亦写磷酸盐致变色）。(h) 残留柠檬酸（Ware New 配方中约 2% 添加）可能增加光褪色（S18，A，Ware New 配方）；不适用于经典路线，已移出候选。(i) 氨蒸汽致紫色，数小时内可逆（S03 §8.1，A）。(j) 避光/暗放只是暂停，Ware 观察到暗放后高光细节继续显现（S02，A，Simple 体系；推断适用于经典体系）。(k) 历史唯一的无洗声称：Herschel 1842 在敏化液中加入氯化汞，称 fixed without any washing（S03 全文引文，A）；Ware 因高毒不推荐（A）；汞盐对本路线不可接受。(l) 封层（清漆、蜡、UV 吸收层）：本轮范围内未找到先例，仅为未验证假设，且不消除残留光活性。(m) 酸性冲洗（柠檬酸或醋，Wikipedia B）：清除残留 ferric 化合物，但仍需水洗，不符合底线 1。(n) 醋酸铅（Bolle 调色）：耐光提高约 4 倍（S01，A），但偏色且醋酸铅有毒，安全前置不通过，排除。",
+      "grade": "A（多数）；(l) 为未验证；(m) 为 B；(n) 为 A（排除）",
+      "label": "事实为主；(j)(l) 为推断或未验证",
+      "source_ids": ["S01", "S02", "S03", "S04", "S10", "S11", "S13", "S18", "S07"]
+    },
+    "c07_白区长期稳定性": {
+      "text": "机理：白区残留 Fe(III) 柠檬酸盐与铁氰化物仍具光活性（S10 B：洗后仍「remains photo-sensitive to some degree」）；氧化性有机阴离子（柠檬酸、草酸）使普鲁士蓝对光还原更敏感（S01，A）；残留柠檬酸可能增加光褪色（S18，A，Ware New 配方）。洗涤不足则褪色更重：Ware 配方洗 4 分钟最大褪色 42，洗 20 分钟为 16（2 kilolux·h，A，单次小样，S01 原文核对）。Jacquard 说明书：洗后仍变暗表明洗涤不足（A，S04）。未洗白区的长期（暗存、湿度、空气）数据：本轮范围内未发现。",
+      "grade": "A（短期机理与单次试验）",
+      "label": "事实；长期稳定性为未验证",
+      "source_ids": ["S01", "S04", "S02", "S10", "S18"]
+    },
+    "c08_成色长期耐光": {
+      "text": "仅报数据，不换算年限。Ware 2003：4 kilolux 下 Herschel 型样品约 1 小时达褪色极限；暗中 1 天内密度恢复 ≥95%（A，全文核对）。McElhone 1993（Ware 2003 转引，全文核对）：50–60 lux 钨丝灯、玻璃框陈列 2–4 年，累计约 100 kilolux·h，无永久 ΔD ≥ ±0.02（A；为实际陈列记录，非加速数据）。SimpleCyan：2000 lux 日光可褪但暗中回复；50–200 lux 无可测褪色（A，Simple 体系）。醋酸铅调色：耐光提高约 4 倍（S01，A，数据本身；因偏色与毒性不推荐）。",
+      "grade": "A",
+      "label": "事实",
+      "source_ids": ["S01", "S02"]
+    },
+    "c09_预涂介质货架期": {
+      "text": "出厂预涂（Jacquard 预涂布纸/布）：厂商说明书写「Sensitized paper or fabric ... Use within 6 months for best results」（A，S04，同时适用于纸与布）。零售页（Dharma）对 Jacquard 预涂布料写「if handled properly ... at least two years」（B，仅布料；页面文本中未见厂商归属，降为零售商商品描述）。两说冲突，未验证。预涂品变暗未必过期，可测试并用更长、更热的水洗（S04，A）。SunArt 出厂预涂：未找到货架期（S16 HTTP 403，WebSearch 无结果）：未知。用户现涂：Jacquard 混合液稳定 2–4 小时（A，S04）；Ware New 涂布纸宜数小时内用，暗、干燥、密封（desiccated enclosure）可延长（A，S18，非经典）；Ware Simple 一瓶液室温数周，冷藏约 5 °C 更久（A，S02，非经典）。经典 FAC/铁氰化钾混合液的可靠保存期：未找到（Jacquard 论坛 403）。",
+      "grade": "A（出厂与现涂说明）；B（零售页）",
+      "label": "事实；SunArt 与经典混合液为未知",
+      "source_ids": ["S04", "S05", "S06", "S02", "S03", "S16", "S18"]
+    },
+    "c10_底材适配": {
+      "text": "Ware 2014 §7.4.4 推荐无缓冲（不含碳酸钙）纸：Buxton、Weston Diploma Parchment、Crane's Platinotype、Atlantis Silversafe Photostore、Wyndstone Vellum（A，S03）。Arches Platine、Fabriano Artistico、Whatman Watercolour 属缓冲纸，「if unavoidable」需先做酸预处理（A，S03）。Hahnemühle Platinum Rag：来源中未出现，不列为依据。碳酸钙缓冲纸或板：RH≥95% 下碳酸钙糊剂接触区密度损失约 40–60（Ware 2003 为 24 小时，A，S01；Ware 2014 为 48 小时，A，S03）。纸板/衬板常含碳酸钙，属红线风险。缓冲纸可用 5% v/v 盐酸或 5–10% w/v 氨基磺酸预处理（A，S03），但强酸为红线，且属涂布前步骤（不在停止环节）；Ware 2014 指出该处理「tends to degrade the paper surface and strength」（A，S03）。纤维素不是主要褪色来源：玻纤、硅胶板、陶瓷底材同样褪色（A，S01）。纸板挂面、吸湿变形、与喷剂/封层的兼容：未找到数据，未知。Jacquard 说明书：曝光前勿润湿纸（A，S04）。",
+      "grade": "A",
+      "label": "事实；纸板变形与封层兼容为未知",
+      "source_ids": ["S03", "S01", "S04"]
+    },
+    "c11_安全与法规": {
+      "text": "K3Fe(CN)6（CAS 13746-66-2）：Bostick & Sullivan SDS（Date of issue 2004-12-21，Revision date 2013-08-19）写 GHS-US 未分类；不相容物为强酸、强氧化剂；§10.4 避免条件含直接阳光；§10.6 分解产物列 potassium oxide、CO、CO2，未列 HCN（A）。Wikipedia：低毒、刺激性；强酸下释放 HCN（B，原文限定为「very strongly acidic」）。UMBC 讲义：勿用盐酸增强剂，会产生氰化氢；洗水可加重铬酸盐（B；后者属红线）。K4Fe(CN)6（CAS 14459-95-1，亚铁氰化钾，另一物质，独立 SDS）：LabAlley 副本（Issue 2024-06-17）写 OSHA 不危险，但 10.3 写 Contact with acids liberates very toxic gas，10.6 分解产物含 HCN（A）。FAC 的 CAS 与 SDS：未读，未知。硫酸镍（Ware 试验，10% 溶液）、汞盐（Herschel 方案）、醋酸铅（Bolle 调色）：SDS 未读；Ware 明确汞盐高毒、醋酸铅有毒（A）。PubMed 1740763（1992）：仅读到标题，内容未知（API）。ASTM D-4236 / LHAMA：本轮未能证实（零售页 HTTP 403，不可读；唯一可读零售页为另一款高级套装，标 12+）。",
+      "grade": "A（SDS）；B（百科、讲义）",
+      "label": "事实；FAC、镍盐、汞盐、醋酸铅 SDS 与 ASTM 为未验证",
+      "source_ids": ["S12", "S11", "S07", "S13", "S01", "S15"]
+    },
+    "c12_供应与成本": {
+      "text": "未验证。本轮未取得可信价格（Amazon 禁止；零售页未抓价格）。Jacquard 官网 cyanotype 页（2026-11-01 curl）无可读价格、库存或货架期文本。供应结论沿用 round 1–2，本轮未复核。",
+      "grade": "未验证",
+      "label": "未验证",
+      "source_ids": ["S19"]
+    },
+    "c13_证据等级": {
+      "text": "1. 水洗为必需，未洗或洗不足会变暗、褪色（A：S04、S01、S03 §7.1.4；B：S06、S07）。事实。2. 碳酸钠 pH 10.7 <30 秒（A：S01）；pH 9.4 下 10 分钟损失 50–71%（A：S01 Table 5），1–10 分钟的范围另引 Holtzman 1945。事实。3. 洗 4 分钟与 20 分钟的褪色差 42 对 16（A：S01，单次小样）。事实。4. 氧化性有机阴离子（柠檬酸、草酸）使普鲁士蓝光敏（A：S01）。事实。5. Herschel 1842 声称氯化汞可无洗定影（A：S03 全文引文）。事实（声称），有效性未验证。6. 强酸致 HCN：亚铁氰化钾 SDS（A：S13）与 K3Fe(CN)6 百科（B：S11，限定 very strongly acidic）一致；K3Fe(CN)6 SDS（A：S12）未列 HCN。事实+不一致。7. 暗放不是稳定暂停（A：S02，Simple 体系）；推断适用于经典体系。8. 传统灯曝光 20–30 分钟（A：S03 §7.1）；UMBC 125 W 18 英寸 30 分钟（B：S07，单位英寸）。事实，剂量未换算。9. 365 nm UVA 光源 5–10 分钟（A：S02，Simple；非 LED）；博客 365 nm LED 3–10 分钟（C：S09）。事实（Simple）/未验证（经典）。10. Jacquard 预涂 6 个月（A：S04，纸与布）对 Dharma 布料 ≥2 年（B：S05，零售描述）。冲突，未验证。11. 阴天日光 45–60 分钟（C：S09）超过 30 分钟目标。事实（C）。12. 醋酸铅调色耐光提高约 4 倍（A：S01）。事实，排除。",
+      "grade": "A 为主，含 B/C",
+      "label": "事实+推断+未验证（逐条见 text）",
+      "source_ids": ["S01", "S02", "S03", "S04", "S05", "S06", "S07", "S09", "S10", "S11", "S12", "S13"]
+    },
+    "c14_关键未知": {
+      "text": "最可能翻盘的 1–2 项：(1) 能否找到不洗、非碱、非强酸、非还原、非草酸盐、非柠檬酸、非汞镍铅的原地失活方案，使残留 Fe(III) 与铁氰化物不再光还原，同时不破坏 Prussian blue。本轮在所列范围内未发现先例。(2) 未洗或封存后的白区与成色长期行为（暗存、湿度、空气），本轮范围内无数据。次要缺口：readable 来源中缺少 395 nm 实测曝光与剂量；FAC、镍盐、汞盐、醋酸铅 SDS 未读；ASTM D-4236 未能证实。",
+      "grade": "未知",
+      "label": "未验证",
+      "source_ids": ["S01", "S03", "S14"]
+    },
+    "c15_判别实验": {
+      "text": "同批涂布样（每组 n=2）：(a) 未处理暗放 7 天；(b) 标准全洗（Ware 式 20 分钟）；(c) 候选停止喷剂一次喷后暗放 7 天。各组在日光下 10 分钟后测白区 ΔD，并做 2 kilolux·h 褪色测试。证伪标准：(c) 组白区 ΔD 增幅超过 0.02（JND），或高光出现蓝或绿色偏移，即候选失败；(c) 组成色耐光不劣于 (b) 组，才可进一步验证。",
+      "grade": "A（设计依据为 Ware 2003 方法）",
+      "label": "推断（设计）",
+      "source_ids": ["S01", "S02"]
+    }
+  },
+  "c05_免洗核验": {
+    "验收": {
+      "1_喷后免洗": "✗ 经典蓝晒的停止即水洗（S04 步骤 6–7，A；S03 §7.1.4，A；S07，B）。",
+      "2_白区停得住": "✗ 未洗白区保留感光剂；Ware 2003 洗 4 分钟与 20 分钟的褪色差 42 对 16（A）；本轮范围内未发现原地停止剂。",
+      "3_成色留得住": "? 褪色可暗中回复（A），但停止剂未知，无法对候选评估。",
+      "4_少量喷液": "? 无候选停止剂，无法评估。",
+      "5_底材不变形": "? 碳酸钙缓冲板材对普鲁士蓝有破坏（A，S01 损失 40–60）；板材变形数据未找到。",
+      "6_安全前置": "? K3Fe(CN)6 SDS 未分类（A，S12），但酸致 HCN 风险在亚铁氰化钾 SDS 与百科中出现（A/B）；ASTM D-4236 / LHAMA 声明未能证实（零售页 403）。"
+    },
+    "说明": "红线命中：强酸与铁氰化物（HCN）；碱与普鲁士蓝；重铬酸盐（UMBC 经典讲义洗水加重铬酸盐，B；Ware New 默认配方含重铬酸铵，A，另有无重铬酸盐版本，S03）；历史硫酸与 ferricyanide 冲洗法（S03 引 1847 方法，A）。注：5% HCl 预涂布不是停止步骤，属范围判断，此处保守保留。"
+  },
+  "verdict": {
+    "status": "淘汰",
+    "reasons": [
+      "硬性底线 1 不满足：经典蓝晒的停止动作即水洗（A：S04、S03 §7.1.4）。",
+      "底线 2 不满足：未洗白区残留感光剂，洗涤不足时褪色更快（A：S01，4 分钟洗 42，20 分钟洗 16）；本轮范围内未发现原地停止剂。",
+      "原地停止候选按类别逐一对照红线，本轮无一通过（见 c06）。",
+      "唯一的历史「无洗」声称是 Herschel 1842 的氯化汞方案（S03 全文引文，A），因高毒判为不可用。",
+      "重开条件：找到满足红线的原地失活方案，并通过 c15 判别实验。"
+    ],
+    "red_line_hits": [
+      "强酸（硝酸、盐酸、硫酸）+ 铁氰化物或亚铁氰化物 → HCN：命中（Ware New 硝酸浴，A；历史 1847 方法 ferricyanide + 游离硫酸冲洗，A；UMBC 盐酸增强剂，B）。",
+      "重铬酸盐：命中（UMBC 经典讲义洗水加重铬酸盐，B；Ware New 默认配方含重铬酸铵，A，另有无重铬酸盐版本）。",
+      "普鲁士蓝遇碱：碳酸钠、氨、硼砂、磷酸三钠类停止候选全部命中（A，S01 Table 5 与 S03 §8.1）。",
+      "非红线但安全前置不可接受：汞盐（Herschel 1842，A 全文引文，Ware 判高毒）；醋酸铅（Bolle 调色，A，Ware 判有毒）；镍盐（S01 测试，SDS 未读）。"
+    ]
+  },
+  "baseline_challenges": [
+    {"round": "轮1 report A1 / 第 3 条与 cross-cutting", "old_claim": "水洗是唯一停止与定影手段，去除未反应感光剂", "agree": "agree", "my_evidence": "Jacquard 说明书（A）、Ware 2014 §7.1.4（A）、Ware 2003（A）一致；Ottawa（B）印证。Ware 同时指出洗涤会造成颜料流失。", "strength": "强（两条一手独立来源）"},
+    {"round": "轮1 A1 第 3 条、B2、F3", "old_claim": "H2O2 是氧化加速剂，不是停止剂，之后仍需水洗", "agree": "agree", "my_evidence": "Ware 2003 方程式；Ware 2014 §7.1.4 称 H2O2 浴对终密度无差异（A）；Jacquard 说明书写 H2O2 后仍需冲洗（A）。", "strength": "强"},
+    {"round": "轮1 cross-cutting、F3", "old_claim": "未找到无水停止剂", "agree": "partial", "my_evidence": "本轮在范围内同样未找到现代无水停止剂（WebSearch 1 次、Crossref 5 次、PubMed 1 次、全文 Ware 2003/2014/SimpleCyan 均未命中）。Herschel 1842 的氯化汞「无洗定影」声称（A，全文引文）未在轮1 中提及，应补充。", "strength": "中（范围有限）"},
+    {"round": "阶段2协议 §2（经典蓝晒条）与 E1c", "old_claim": "经典蓝晒：未找到文献记载的无水停止剂；唯一无水手段是黑暗封存（暂停，不是终止）", "agree": "partial", "my_evidence": "黑暗封存不是干净的暂停：Ware SimpleCyan 写暗放数小时后高光细节继续显现（A，Simple 体系）。另有历史氯化汞方案（A 全文引文）。Ottawa（B）的「装入避光袋稍后洗」与暂停说法一致。", "strength": "中"},
+    {"round": "轮1 A1 第 6 条；cyanotype-chem", "old_claim": "碱会破坏普鲁士蓝（pH>9 避免缓冲），日光褪色在暗中回复", "agree": "agree", "my_evidence": "Ware 2003 pH 10.7 <30 秒、pH 9.4 10 分钟损失 50–71%（A，Table 5）；褪色可暗中回复（A）。2000 lux 下会褪色，50–200 lux 无可测褪色（A，S02）。", "strength": "强"},
+    {"round": "轮1 A1 第 5 条、B2 第 5 条", "old_claim": "曝光 3–15 分钟（Jacquard 套装），家庭教程约 30 分钟", "agree": "partial", "my_evidence": "Jacquard 说明书（A）写日光 1–30 分钟，视条件而定，UV 灯无时间；3–15 分钟来自零售页（B/C）。UMBC 讲义 125 W/18 英寸约 30 分钟（B）。", "strength": "中"},
+    {"round": "轮1 A1 第 7 条", "old_claim": "低毒；Jacquard 课堂包 ASTM D-4236、8 岁以上；需避免强酸", "agree": "partial", "my_evidence": "强酸风险一致（Wikipedia B；UMBC B；K4Fe(CN)6 SDS A）。ASTM D-4236 与年龄声明：本轮 School Specialty 页与 Art Supplies UK 页 HTTP 403，不可读，降为未验证。K3Fe(CN)6 SDS 未分类（A），但未列 HCN 分解产物，与百科不一致。", "strength": "中"},
+    {"round": "轮1 notes/sunart-jacquard（SunArt 水洗约 1 分钟）", "old_claim": "SunArt 水洗约 1 分钟即可，柠檬酸可加深蓝", "agree": "disagree（弱）", "my_evidence": "与 Jacquard 说明书（≥5 分钟，A）和 Ware 2014 §7.1.4（约 20 分钟，A）冲突。importitall 原页 403，无法复核，故为弱否定。", "strength": "弱"},
+    {"round": "轮1 A1 第 8 条；sunart-jacquard 第 8 条", "old_claim": "SunArt 与 Jacquard 产品仍在售（Amazon 等）", "agree": "unverified", "my_evidence": "本轮未复核：Amazon 禁止读取，零售页多未抓取。", "strength": "未验证"},
+    {"round": "轮2 report-full（A.1 第 7 条）", "old_claim": "K3Fe(CN)6 正常处理不是氰化物危险，HCN 仅在约 300 °C 以上或强酸时释放", "agree": "partial", "my_evidence": "强酸致 HCN 与 Wikipedia（B）一致。300 °C 阈值无来源；S12 写分解温度 ≥200 °C 且未列 HCN，两者都不支持 300 °C 说法（未能证实）。亚铁氰化钾 SDS（A）写接触酸释放剧毒气体，酸风险不限于高温条件。", "strength": "中"},
+    {"round": "轮2 F.2 第 2、3 条", "old_claim": "封层清漆类是洗后步骤；酸性停止只是湿浴类比，柠檬酸可能增加光褪色", "agree": "agree（修订）", "my_evidence": "封层作为洗后处理与 Ware 相符（A）。残留柠檬酸增加光褪色：S18（Ware New，A）「may render the print more susceptible to light fading」。Ware 2003 称「酸性氧化环境利于保存」（A），与此方向一致：均指向可氧化有机阴离子会增加光褪色。", "strength": "中（已由 S18 补强）"},
+    {"round": "轮2 F.2 第 4 条（Ottawa-Gatineau 袋装稍后洗）", "old_claim": "无水时将曝光纸装入避光袋，稍后洗", "agree": "agree", "my_evidence": "Ottawa 页（B）curl 读取确认：「place your exposed paper back in a lightfast bag or box to wash later」；同页写「If the print darkens during drying, it was probably not thoroughly washed」。这是暂停，不是停止。", "strength": "中"},
+    {"round": "轮3 report-pasted（未洗清漆推论）", "old_claim": "在未洗涂层上喷清漆，未反应盐被封存，高光染色，并继续还原变蓝", "agree": "partial", "my_evidence": "未洗变暗（A：Jacquard）与杂质致褪色（A：Ware 2003）支持前半。「封存后继续变蓝」为推断，本轮未找到封层实验。", "strength": "中（前半强，后半推断）"},
+    {"round": "轮3 report-pasted（强酸与铁氰化钾产生 HCN）", "old_claim": "铁氰化钾遇强酸放出 HCN，属剧毒风险", "agree": "agree", "my_evidence": "Wikipedia（B，限定 very strongly acidic）；亚铁氰化钾 SDS（A）同样列出接触酸释放剧毒气体。K3Fe(CN)6 SDS 未列 HCN，需注意。", "strength": "强"},
+    {"round": "轮4 case-B-pellet（亚铁氰化钾显影「低毒，未触发强酸红线」）", "old_claim": "亚铁氰化钾为低毒物质，弱有机酸体系不触发红线", "agree": "disagree", "my_evidence": "亚铁氰化钾独立 SDS（A，LabAlley）§10.3 写「Contact with acids liberates very toxic gas」，未设酸强度限定；§10.6 列 HCN。不能仅凭「弱有机酸」豁免。", "strength": "强"},
+    {"round": "阶段2协议 §2 与 E1b（Pellet 显影剂写作铁氰化钾）", "old_claim": "Pellet 显影剂：铁氰化钾（K3Fe(CN)6）", "agree": "disagree（已知错误）", "my_evidence": "S03 Pellet 段引 Pellet 专利：「yellow prussiate (ferrocyanide of potassium)」，即亚铁氰化钾（A）。与需求书 v0.5 §5 的已知错误一致。Pellet 定影机制为铁盐使明胶或阿拉伯胶硬化（S03，A），未见碳酸盐中和。", "strength": "强"},
+    {"round": "阶段2协议 §2 与 E1b（碳酸钠中和「只用于 Pellet，经典蓝晒绝不用」）", "old_claim": "碳酸钠中和只用于 Pellet 体系，不用于经典蓝晒", "agree": "partial（经典禁碱正确；Pellet 条未能证实）", "my_evidence": "经典蓝晒禁用碱正确（A）。「只用于 Pellet」无来源：本轮全文中未见 Pellet 碳酸盐中和记载。Ware 2003 检测的是 Herschel、Smee、Lietze、Valenta、Ware 五种体系，未包括 Pellet；「同颜料、同机理」为推断。Pellet 碳酸盐设想应视为未验证。", "strength": "中（对碱破坏的部分强；Pellet 条未能证实）"},
+    {"round": "阶段2协议 §2（UV 灯 395 nm/50 W、30 cm 实测 4–15 分钟，alternativephotography 数据点）", "old_claim": "UV 灯 395 nm/50 W 距 30 cm 曝光约 4–15 分钟", "agree": "unverified", "my_evidence": "alternativephotography 页本轮及前轮均 HTTP 403，原始数据不可读。S09（Pingwish，C）称 395–405 nm 效率约为 365 nm 的一半，无测试数据。", "strength": "未验证"}
+  ],
+  "sources": [
+    {"id": "S01", "title": "Mike Ware, A Blueprint for Conserving Cyanotypes (Topics in Photographic Preservation vol. 10, AIC PMG, 2003; presented 2002)", "url": "https://resources.culturalheritage.org/pmgtopics/2003-volume-ten/10_02_Ware.pdf", "type": "一手（作者实验研究）", "access": "curl全文（PDF，pdftotext）；本轮全文核对", "date": "2003（会议 2002）", "quote": "destroys the Prussian blue of a cyanotype in less than half a minute; wash of four minutes ... fade of 42, 20 min ... 16"},
+    {"id": "S02", "title": "Mike Ware, Alternative Photographic Processes: Simple Cyanotype (2019)", "url": "https://www.mikeware.co.uk/downloads/SimpleCyan.pdf", "type": "一手（作者技术手册；Simple 为新配方，非经典 FAC）", "access": "curl全文（PDF，pdftotext）；本轮全文核对", "date": "2019", "quote": "about 5 to 10 minutes under an average 365 nm UVA light source (e.g. a facial tanning unit); left in the dark for some hours before wet processing, another stop of highlight detail may become apparent"},
+    {"id": "S03", "title": "Mike Ware, Cyanomicon (2014)，含 Herschel 1842 原文引文与 Pellet 段", "url": "https://unblinkingeye.com/Cyanomicon.pdf", "type": "一手（作者专著；Herschel 为全文引文）", "access": "curl全文（PDF，pdftotext）；本轮全文核对（§7.1.4、§7.4.4、§7.4.9、§8.1）", "date": "2014", "quote": "fixed without any washing at all (Herschel 1842 引文); 'the total removal of the yellow stain' (§7.4.9, Ware New)；§7.1.4 'until the yellow sensitizer has entirely disappeared from highlight areas (20 minutes should suffice)'"},
+    {"id": "S04", "title": "Jacquard, Cyanotype Formula, Mixing and Exposing Instructions (6.01.15), Dick Blick 托管副本", "url": "https://www.dick-blick.com/items/013/21/Cyanotpe-Detailed-Instructions.pdf", "type": "厂商原页（说明书副本）", "access": "curl全文（PDF，pdftotext）；本轮全文核对", "date": "文档编号 6.01.15（年份未印）", "quote": "sunlight (1-30 minutes, depending on conditions); mixed sensitizer stable just 2-4 hours; Wash for at least 5 minutes ... until the water runs clear; Over-washing can also result in pale prints; Use within 6 months (sensitized paper or fabric)"},
+    {"id": "S05", "title": "Dharma Trading, Jacquard Cyanotype Pretreated Fabric Sheets（零售商商品描述，布料）", "url": "https://www.dharmatrading.com/transfers/fabric/jacquards-cyanotype-pretreated-fabric.html", "type": "零售页（布料；未见厂商归属字样）", "access": "curl全文（HTML）；本轮复核", "date": "2026-11-01 读取", "quote": "if handled properly, not exposed early or stored poorly, the treated fabric has a shelf life of at least two years"},
+    {"id": "S06", "title": "Ottawa-Gatineau Printmakers, Cyanotypes (2021-07-21)", "url": "https://www.ottawagatineauprintmakers.ca/2021/07/21/cyanotypes/", "type": "专题组织页（实践者教学）", "access": "curl全文（HTML）；本轮复核", "date": "2021-07-21", "quote": "place your exposed paper back in a lightfast bag or box to wash later; If the print darkens during drying, it was probably not thoroughly washed"},
+    {"id": "S07", "title": "UMBC, Cyanotype Process steps（教学讲义，艺术家书课程）", "url": "https://userpages.umbc.edu/~custen/ArtistBooks/PDFs/Cyanotype%20Process%20steps.pdf", "type": "教学讲义", "access": "curl全文（PDF，pdftotext）；本轮复核", "date": "未印日期", "quote": "Basic guide: 125 watt uv lamp at 18” = 30 min; A few drops of bichromate added to wash water; Avoid hydrochloric acid intensifier (cyanide gas); Over-washing will erode the image"},
+    {"id": "S08", "title": "Riley Ramsay, Honors thesis, Univ. of Colorado Boulder, Appendix B", "url": "https://scholar.colorado.edu/downloads/3x816p63c", "type": "学生论文（单一复刻）", "access": "curl全文（PDF，pdftotext）（research 原始读取，本轮未复核）", "date": "未印（日期未核验）", "quote": "To stop the exposure and fix your image on the paper, you will need to wash it in water."},
+    {"id": "S09", "title": "Pingwish, Sunlight vs UV lamp for cyanotype（商业博客，无测试数据）", "url": "https://pingwish.com/discover/sunlight-vs-uv-lamp-cyanotype", "type": "商业博客（C）", "access": "curl全文（HTML）；本轮复核", "date": "未印日期", "quote": "about 2–20 minutes in direct summer sun, 45–60 minutes under overcast, and 3–10 minutes under a 365 nm LED unit; LED output fades"},
+    {"id": "S10", "title": "Wikipedia, Cyanotype", "url": "https://en.wikipedia.org/wiki/Cyanotype", "type": "百科（B）", "access": "curl全文（HTML）；本轮复核", "date": "2026-11-01 读取", "quote": "Sodium carbonate, ammonia, borax, Dektol ... can be used to decrease intensity of the blue; An acidified rinse using citric acid or vinegar ...; remains photo-sensitive to some degree"},
+    {"id": "S11", "title": "Wikipedia, Potassium ferricyanide", "url": "https://en.wikipedia.org/wiki/Potassium_ferricyanide", "type": "百科（B）", "access": "curl全文（HTML）；本轮复核", "date": "2026-11-01 读取", "quote": "under very strongly acidic conditions, highly toxic hydrogen cyanide gas is evolved; ... react with diluted sulfuric acid under heating ... hydrogen cyanide"},
+    {"id": "S12", "title": "Bostick & Sullivan, Potassium ferricyanide SDS（CAS 13746-66-2）", "url": "https://www.bostick-sullivan.com/wp-content/uploads/2022/03/potassium-ferricyanide-sds.pdf", "type": "SDS（供应商）", "access": "curl全文（PDF，pdftotext）；本轮复核", "date": "Date of issue 2004-12-21；Revision 2013-08-19（Version 1.0）", "quote": "GHS-US: Not classified; incompatible: Strong acids. Strong oxidizers; conditions to avoid: direct sunlight; decomposition products: potassium oxide, CO, CO2（未列 HCN）"},
+    {"id": "S13", "title": "Potassium ferrocyanide trihydrate SDS（CAS 14459-95-1），LabAlley 副本", "url": "https://www.laballey.com/attachment/potassium-ferrocyanide-trihydrate-lab-grade-safety-data-sheet-677d9d07a8efe.pdf?prod", "type": "SDS（供应商副本）", "access": "curl全文（PDF，pdftotext）；本轮复核", "date": "2024-06-17（Issue）", "quote": "not considered hazardous by the 2012 OSHA Hazard Communication; 10.3 Contact with acids liberates very toxic gas; 10.6 Hydrogen cyanide (hydrocyanic acid)"},
+    {"id": "S14", "title": "PubMed 25327500: From ultraviolet to Prussian blue: a spectral response for the cyanotype process ... (Photochem Photobiol Sci 2014)", "url": "https://pubmed.ncbi.nlm.nih.gov/25327500/", "type": "一手（论文，摘要）", "access": "API（PubMed efetch 摘要）；本轮复核（期刊 Photochem Photobiol Sci，PubDate 2014 Dec）", "date": "2014", "quote": "a preliminary spectral response range for the radiation required to produce the cyanotype reaction is presented here"},
+    {"id": "S15", "title": "PubMed 1740763: Health hazards associated with the cyanotype printing process (J Environ Pathol Toxicol Oncol, 1992)", "url": "https://pubmed.ncbi.nlm.nih.gov/1740763/", "type": "一手（论文，仅标题）", "access": "API（仅标题；efetch 无摘要）；本轮复核", "date": "1992", "quote": "（仅标题，内容未读）"},
+    {"id": "S16", "title": "SunArt Paper Kit 零售页（importitall）", "url": "https://www.importitall.co.za/SunArt-Paper-Kit--Includes-15-Sheets-of-LightSensitive-Paper-8-X-10-ap-B076HB5FZW.html", "type": "零售页（不可读）", "access": "搜索摘录；本轮 curl HTTP 403，不可读，未绕过", "date": "2026-11-01", "quote": "（无货架期文本可引）"},
+    {"id": "S17", "title": "Google Patents US4895786A（银盐彩色相纸的免洗稳定液，非蓝晒）", "url": "https://patents.google.com/patent/US4895786A/en", "type": "专利（类比，非蓝晒）", "access": "curl全文（HTML）（research 原始读取，本轮未复核）", "date": "授权年约 1990（据专利号推断）", "quote": "treated with a washless stabilizing solution that contains a triazinylstilbene optical brightening agent"},
+    {"id": "S18", "title": "Mike Ware, New Cyanotype Process（作者页，Ware New 配方）", "url": "https://www.mikeware.co.uk/mikeware/New_Cyanotype_Process.html", "type": "一手（作者页）", "access": "curl全文（HTML）；本轮复核", "date": "未印日期", "quote": "Expose ... about two to four minutes under an average UV light source; residual citric acid ... may render the print more susceptible to light fading; dilute (ca. 1%) nitric acid; with added dichromate it can last five years at least"},
+    {"id": "S19", "title": "Jacquard, Cyanotype 产品页", "url": "https://www.jacquardproducts.com/cyanotype", "type": "厂商原页", "access": "curl全文（HTML），无可用价格、货架期文本", "date": "2026-11-01 读取", "quote": "页面未含 shelf life、价格或洗涤步骤文本（仅门店查询）"},
+    {"id": "S20", "title": "School Specialty, Jacquard Cyanotype Classroom Kit（搜索摘录：ASTM D-4236、8 岁以上）", "url": "https://www.schoolspecialty.com/jacquard-cyanotype-classroom-kit-set-of-6-1540717", "type": "零售页（搜索摘录）", "access": "搜索摘录（WebSearch 1 次，verifier）；curl HTTP 403，不可读，未绕过", "date": "2026-11-01", "quote": "Conforms to ASTM D-4236; A great group activity for children ages 8 and up（仅摘录，未核原页）"},
+    {"id": "S21", "title": "School Specialty, Jacquard Pre-treated Fabric Sheets 30 pack（搜索摘录）", "url": "https://www.schoolspecialty.com/jacquard-cyanotype-pre-treated-fabric-sheets-8-12-x-11-inches-pack-of-30-2148820", "type": "零售页（搜索摘录，布料）", "access": "搜索摘录；curl HTTP 403，不可读，未绕过", "date": "2026-11-01", "quote": "Conforms to ASTM D-4236（仅摘录，未核原页）"},
+    {"id": "S22", "title": "Eckersley's, Jacquard Premium Cyanotype Kit（不同产品，搜索摘录）", "url": "https://www.eckersleys.com.au/products/jacquard-premium-cyanotype-kit", "type": "零售页（不同产品）", "access": "curl全文（HTML）；本轮读取（200）", "date": "2026-11-01", "quote": "For ages: 12+（高级套装，与经典课堂包不同，不适用于 ASTM 与 8+ 主张）"},
+    {"id": "S23", "title": "Art Supplies UK, Jacquard Cyanotype Kit（搜索摘录）", "url": "https://www.artsupplies.co.uk/p/jacquard-cyanotype-kit", "type": "零售页（搜索摘录）", "access": "搜索摘录；curl HTTP 403，不可读，未绕过", "date": "2026-11-01", "quote": "Fun for all ages and abilities（摘录，未核原页）"},
+    {"id": "S24", "title": "Crossref metadata, DOI 10.1021/ac00278a041（Anal Chem 1984）", "url": "https://api.crossref.org/works/10.1021/ac00278a041", "type": "元数据（API）", "access": "API（Crossref），本轮复核", "date": "1984-12-01", "quote": "Photoacoustic spectra of prussian blue and photochemical reaction of ferric ferricyanide（Analytical Chemistry）"}
+  ],
+  "negative_findings": [
+    {"query": "WebSearch（standard，research 轮）：cyanotype without washing unwashed print stop reaction residual ferric citrate spray stabilise experiment", "scope": "全网搜索摘录，1 次", "result": "在所列范围内未命中无水停止剂或喷雾稳定的实验。摘录仅为论坛与博客，无可引用的一手实验。"},
+    {"query": "WebSearch（standard，research 轮）：patent iron sensitizer photographic image without water washing stabilizing spray ferricyanide ferric citrate cyanotype", "scope": "全网搜索摘录，1 次，关键词范围内", "result": "关键词范围内未发现匹配专利。Google Patents 查询接口 503，未能做全文查询。另读取 US4895786A（银盐彩色相纸，非蓝晒），仅作类比。"},
+    {"query": "WebSearch（standard，research 轮）：SunArt sun print paper kit shelf life expiration date store cool dark", "scope": "全网搜索摘录，1 次", "result": "未找到 SunArt 货架期或保存说明。importitall 原页 403（本轮复核仍 403）。"},
+    {"query": "WebSearch（standard，research 轮）：cyanotype UV LED 395nm exposure time minutes test compared sunlight", "scope": "全网搜索摘录，1 次", "result": "未找到受控对照（395 nm LED 对比日光）。摘录数值分散，多为 C 级，无来源可追溯。"},
+    {"query": "WebSearch（verifier，本轮）：Jacquard cyanotype kit ASTM D-4236 ages 8 and up safety label", "scope": "全网搜索摘录，1 次", "result": "零售商页声称 ASTM D-4236 与 8+。原页 School Specialty ×2、Art Supplies UK 为 HTTP 403，不可读，未绕过；唯一可读的 Eckersley's 为 12+ 的不同产品。原始厂商标签未找到。ASTM 声明未能证实。"},
+    {"query": "Crossref API：query=cyanotype（rows 40）；query.bibliographic=cyanotype washing fixing；query=cyanotype stop fixing without washing；query=Prussian blue photoreduction ferric citrate ferricyanide", "scope": "Crossref 元数据，约 5 次查询（第一次 429）", "result": "总计 130 条 cyanotype 相关记录，多为图书章节与书评；未见 no-wash 或 stop 相关标题。唯一光化学相关标题：Anal Chem 1984（DOI 10.1021/ac00278a041，元数据本轮复核），摘要未读。"},
+    {"query": "PubMed E-utilities esearch: cyanotype[Title/Abstract]", "scope": "PubMed 题录，全部 5 条", "result": "5 条：25327500（光谱响应，摘要已读）、1740763（健康危害，仅标题）、34931815（细菌检测，光催化 Prussian blue，非蓝晒工艺）、另 2 条无关。无停止或免洗相关论文。"},
+    {"query": "Google Patents XHR 查询：cyanotype washing（before priority 2026-11-01）", "scope": "专利查询接口", "result": "503 Sorry 页，未查询。专利范围结论仅来自 WebSearch 与 US4895786A，且仅限关键词范围。"},
+    {"query": "Full-text grep: Ware 2003, Cyanomicon (2014), SimpleCyan (2019), Ware New cyanotype page, Jacquard PDF, UMBC, Colorado thesis, Ottawa page, Wikipedia cyanotype, Jacquard product page", "scope": "本路线相关一手与二手全文", "result": "在所列范围内未发现现代的无洗原地停止方案。唯一「无洗」声称是 Herschel 1842 氯化汞方案（Ware 判为高毒不推荐）。其余停止相关表述只有水洗、H2O2（加速）、酸性或碱性湿浴，以及暗放（暂停）。"},
+    {"query": "Photrio 论坛 7 个讨论串（如 cyanotype-already-blue-before-exposure.175528、cyanotype-midtones-disappearing.162224、experiences-with-365nm-uv-flashlight-for-cyanotype.217493）", "scope": "一手社区讨论", "result": "HTTP 403（人机验证页），未绕过，记为不可读。无法核查未洗样品与 LED 曝光的论坛报告。"},
+    {"query": "alternativephotography.com：cyanotype-classic-process、new-cyanotype-process、the-big-cyanotype-exposure-survey-results", "scope": "一手技术站", "result": "三页均 HTTP 403（本轮复核仍 403），未绕过，记为不可读。"},
+    {"query": "Jacquard 论坛：shelf-life-of-mixed-cyanotype-solution", "scope": "厂商论坛", "result": "HTTP 403，记为不可读。混合液货架期仅引 Jacquard 说明书（2–4 小时）。"},
+    {"query": "Getty Atlas 光化学 PDF：atlas_cyanotype.pdf（来自前次搜索记录）", "scope": "getty.edu 一手", "result": "HTTP 404，未能读取。"},
+    {"query": "PubChem pug_view GHS（CID 26250 与 potassium ferrocyanide）", "scope": "PubChem", "result": "两次 503（服务繁忙），未获取 GHS 结构化数据。危险性依靠 SDS 全文。"},
+    {"query": "Spectrum Chemical 亚铁氰化钾 SDS（P1296_AGHS.pdf）", "scope": "供应商 SDS", "result": "HTTP 403，未读；改用 LabAlley 副本（S13）。"}
+  ],
+  "key_unknowns": [
+    "能否找到不洗、非碱、非强酸、非还原、非草酸盐、非柠檬酸、非汞镍铅的原地失活方案，使残留 Fe(III) 与铁氰化物不再光还原且不破坏 Prussian blue。本轮在所列范围内未发现先例。",
+    "未洗或封存后白区与成色在暗存、湿度、空气下的长期行为，本轮范围内无数据。",
+    "readable 来源缺少 395 nm 对经典 FAC 体系的实测曝光时间与 mJ/cm2 剂量；PubMed 25327500 的光谱范围数值未能读取。",
+    "SunArt 与 Jacquard 预涂品的货架期冲突（6 个月对 ≥2 年，后者为布料）；SunArt 出厂货架期未知。",
+    "FAC、硫酸镍、汞盐、醋酸铅的 SDS 与 CAS 未读；ASTM D-4236 / LHAMA 声明未能证实（零售页 403）；PubMed 1740763 内容未读。",
+    "长期分析：未洗白区的黄绿染色与吸湿性在纸板上的表现，无数据。"
+  ],
+  "discriminating_experiment": {
+    "one_liner": "在同批经典涂布样上比较「未处理暗放」「标准全洗」「候选停止喷剂一次喷后暗放」三组，日光 10 分钟后测白区 ΔD；候选组白区增幅超过 0.02 或出现蓝/绿偏色，即证伪。",
+    "design_sketch": "每组 n=2；全洗组按 Ware 2014 §7.1.4 洗至黄色消失（20 分钟）；候选组只做一次喷雾，不擦、不洗；另做 2 kilolux·h 褪色对照（Ware 2003 方法）。候选须先过红线筛选（非碱、非强酸、非还原、非草酸盐与柠檬酸、非汞镍铅、非重铬酸盐），并先查其 SDS。"
+  },
+  "new_routes_spotted": [
+    {"name": "Ware Simple cyanotype 一瓶液（硝酸铁 + 柠檬酸 + 氨原位制备 FAC，无草酸盐、无重铬酸盐）", "why": "365 nm UVA 下约 5–10 分钟（S02，原文非 LED），室温数周，冷藏更久；与经典 FAC/铁氰化钾化学不同，需单独核查硝酸铁、氨与柠檬酸的 SDS。", "lead_url": "https://www.mikeware.co.uk/downloads/SimpleCyan.pdf"},
+    {"name": "Ware New 草酸铁铵体系（默认配方含 0.1 g 重铬酸铵；亦有无重铬酸盐版本）", "why": "曝光 2–4 分钟（S18）；重铬酸盐为红线，只作对照；残留柠檬酸可能增加光褪色（S18）。", "lead_url": "https://www.mikeware.co.uk/mikeware/New_Cyanotype_Process.html"},
+    {"name": "Holtzman 镍(II) 预处理，提高普鲁士蓝耐碱性", "why": "可能是底材或预处理因子，但会掉密度并偏色（S01）；镍盐毒性需 SDS 核验（未读）。", "lead_url": "https://resources.culturalheritage.org/pmgtopics/2003-volume-ten/10_02_Ware.pdf"},
+    {"name": "Cuprotype（铜盐印出法）", "why": "WebSearch 摘录中出现「a new cuprotype」讨论串（403，未读）；可能有不同的少洗或免洗机制，需单独评估。", "lead_url": "https://www.photrio.com/forum/threads/a-new-cuprotype.193432/"},
+    {"name": "Pellet 直接正像的定影机制：铁盐使明胶或阿拉伯胶硬化，亚铁氰化物显影后擦除（非碳酸盐）", "why": "S03 Pellet 段已确认 ferric chloride 与 gum Arabic 的硬化作用，显影剂为亚铁氰化钾。与阶段2协议 E1b 的前提冲突，属于 Pellet 支线，应单独评估。", "lead_url": "https://unblinkingeye.com/Cyanomicon.pdf"}
+  ],
+  "search_budget_used": {
+    "websearch": 4,
+    "curl_reads": 19,
+    "verifier": {"websearch": 1, "curl_reads": "约 35 次（含 403 不可读的尝试）"}
+  },
+  "reconciliation_log": [
+    {"item": "c04 湿洗判据的引用章节（§7.4.9 → §7.1.4）", "change": "经典配方的 endpoint 与 20 分钟改引 Cyanomicon §7.1.4；§7.4.9 保留，但只标注为 Ware New 配方。", "why": "S03 原文：§7.1.4 为传统配方；§7.4.9 为 New cyanotype。引错章节。"},
+    {"item": "c04「冷流水」", "change": "分开写：Jacquard 为 cool water（S04），Ware 为 gently running water（S03）。", "why": "「cold」不在 Ware 原文中，属研究员补充。"},
+    {"item": "c03 与 c13 第 9 条的「365 nm LED」", "change": "改为「365 nm UVA 光源（如面部日光浴灯）」；LED 仅属 Pingwish（C）。", "why": "S02 原文没有 LED 字样。"},
+    {"item": "c03 Cyanomicon §7.1 灯曝光 20–30 分钟「章节未核对」", "change": "由 C 升为 A（章节核实：§7.1 传统配方段，§7.1.4 之前）。", "why": "全文 PDF 已核对。"},
+    {"item": "c03 与 c13 第 8 条的 UMBC 46 cm", "change": "注明原单位为 18 英寸，46 cm 为换算。", "why": "S07 原文为英寸。"},
+    {"item": "c03 的 30 分钟比较", "change": "补入阴天 45–60 分钟（C，S09）超过 30 分钟目标。", "why": "原文漏列；S09 同页数据。"},
+    {"item": "c06 (h) 柠檬酸 2% 防灰雾", "change": "移出经典候选；归入 Ware New 配方注记；补入 S18 残留柠檬酸增加光褪色（A）。", "why": "2% 柠檬酸是 Ware New 配方的添加（S18、S03 §7.4.10），不是经典配方；「防灰雾」不是原文用词。"},
+    {"item": "c06 (e) 草酸盐光敏", "change": "改为「草酸盐与柠檬酸均为可氧化有机阴离子」。", "why": "S01 对照试验同时测试了柠檬酸与草酸。"},
+    {"item": "c06 (d) 碱的 pH 9.4 范围", "change": "增补 S01 Table 5（Ware 自己的 pH 9.4、10 分钟试验，未处理样品损失 50–71%）为 A 级主依据；1–10 分钟范围仍注明来自 Holtzman。", "why": "Ware 自测结果比转引更直接。"},
+    {"item": "c06 (c) 强酸释放 HCN", "change": "补入 S11 原文限定语（very strongly acidic、高浓度）与稀硫酸加热例；红线按项目规则「禁强酸」保留。", "why": "删去限定语会过度引申；规则本身不变。"},
+    {"item": "c06 历史硫酸法", "change": "核实 S03 引 1847 年 ferricyanide + 游离硫酸冲洗法（A），保留为红线命中。", "why": "research 原列为「转引的历史硫酸法」，本轮已全文核对。"},
+    {"item": "c06 (k) Herschel 氯化汞", "change": "由「A 摘录」升为 A（全文引文）。", "why": "S03 全文中有 Herschel 1842 原文引文。"},
+    {"item": "c06 新增 (m) 酸性冲洗、(n) 醋酸铅调色", "change": "(m) 柠檬酸或醋的酸性冲洗（B，Wikipedia）属于湿步骤，不符合底线 1；(n) 醋酸铅（Bolle 调色）耐光提高约 4 倍但偏色、有毒，安全前置不通过，排除。", "why": "原列表遗漏两项。"},
+    {"item": "c07 残留柠檬酸与光褪色", "change": "补入 S18（A，Ware New）：残留柠檬酸可能增加光褪色。", "why": "补强 c07 机理，与 round 2 旧主张一致。"},
+    {"item": "c04 过度洗涤", "change": "补入 S04「Over-washing can also result in pale prints」与 S07「Over-washing will erode the image」。", "why": "与「洗不足致褪色」形成张力，应一并写明。"},
+    {"item": "c08 醋酸铅数据", "change": "补入 S01 醋酸铅调色耐光提高约 4 倍（仅报数据，不换算）。", "why": "原列表遗漏；符合「只报数据」规则。"},
+    {"item": "c09 Dharma 两年数据", "change": "限定为布料；「厂商文案转载」归属未能证实，降为零售商商品描述（B）。", "why": "页面为 Jacquard pretreated fabric 的零售描述，文本中无厂商归属字样。"},
+    {"item": "c09 Jacquard 6 个月", "change": "注明同时适用于纸与布；补入「not necessarily expired」与「hotter water」的测试说明。", "why": "S04 原文。"},
+    {"item": "c10 缓冲纸分类", "change": "Arches Platine 移入缓冲纸（需预处理）一类；Hahnemühle Platinum Rag 删除（来源中未出现）；「无碱缓冲纸」改为「无缓冲（无碳酸钙）纸」；无缓冲纸列表改为 S03 §7.4.4 原列表。", "why": "S03 §7.4.4 原文分类与 research 不符。"},
+    {"item": "c10 碳酸钙糊剂试验时长", "change": "注明 Ware 2003 为 24 小时，Ware 2014 为 48 小时。", "why": "两个来源数字不一致。"},
+    {"item": "c10 酸预处理的代价", "change": "补入 Ware 2014：该处理「tends to degrade the paper surface and strength」。", "why": "原文漏列。"},
+    {"item": "c11 K3Fe(CN)6 SDS 日期", "change": "由「未印日期」改为 Date of issue 2004-12-21，Revision 2013-08-19。", "why": "S12 原文；research 的 2022/03 为 URL 路径，不是 SDS 日期。"},
+    {"item": "c11 K3Fe(CN)6 SDS §10.4", "change": "补入「直接阳光」为应避免条件。", "why": "与 c07 光敏机理一致，原文漏列。"},
+    {"item": "c05 与 c11 的 ASTM D-4236 / LHAMA", "change": "由「本轮未核验」改为「未能证实」，并注明零售页 403 与唯一可读页为不同产品（12+）。", "why": "本轮 WebSearch 摘录与原页核对结果。"},
+    {"item": "baseline 轮4 亚铁氰化钾「弱有机酸不触发红线」", "change": "维持反驳，补 SDS §10.3 原文。", "why": "SDS 未设酸强度限定。"},
+    {"item": "baseline 阶段2协议 Pellet 显影剂「铁氰化钾」", "change": "维持反驳，补 S03 Pellet 段（yellow prussiate = 亚铁氰化钾）。", "why": "全文核对。"},
+    {"item": "baseline 阶段2协议「碳酸钠中和只用于 Pellet」", "change": "由「同机理（A）」降为推断；Pellet 碳酸盐设想标为未能证实。", "why": "Ware 2003 检测对象不含 Pellet；「同颜料」是推断。"},
+    {"item": "baseline 轮2「HCN 仅在 300 °C 以上释放」", "change": "标为未能证实；S12 分解温度 ≥200 °C 且未列 HCN。", "why": "300 °C 阈值无来源。"},
+    {"item": "c14 与 key_unknowns 的「无先例」「唯一」", "change": "改为「在所列范围内未发现」。", "why": "检索只限本轮范围，不得写成无先例。"},
+    {"item": "verdict.red_line_hits 重铬酸盐", "change": "注明 Ware New 默认配方含重铬酸铵（S18）但另有无重铬酸盐版本（S03）；经典路线内的命中来自 UMBC 洗水（B）。", "why": "红线归属需区分变体。"},
+    {"item": "c06 与 verdict 中 5% HCl 预涂布", "change": "保留红线标注，并注明它发生在涂布前、不属于停止步骤。", "why": "范围判断；为保守起见保留。"},
+    {"item": "research.md 缺失", "change": "在 verification_note 中注明；本修订版仅基于 JSON。", "why": "指定路径无 .md 文件。"},
+    {"item": "sources 与 access 标注", "change": "S16、S20–S23 的 access 改为搜索摘录与 403 不可读；S22 为不同产品；新增 S24（Crossref）；S12 日期改为 SDS 原文日期。", "why": "access 标注与实际核对结果一致。"}
+  ]
+}

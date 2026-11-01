@@ -1,0 +1,472 @@
+{
+ "key": "deep_f_tio2",
+ "name": "F路线背景稳定与封层深挖（对抗式核查修订版）",
+ "revision": "2026-11-01 对抗式核查修订；核查记录见 deep_f_tio2.verify.json 与 reconciliation_log",
+ "findings": [
+  {
+   "id": "f01",
+   "claim_zh": "锐钛矿 TiO2 带隙约 3.2 eV，本征吸收边约 387 nm，本征光激发主要在紫外段。",
+   "label": "事实",
+   "grade": "A",
+   "verify": "证实",
+   "sources": ["s01", "s02"],
+   "notes": "s01 已于 2026-11-01 经 eutils efetch 重读摘要（PMID 17134177）：anatase, E(bg) = 3.2 eV; absorption edge ca. 387 nm，原文一致。s02 仅作佐证。"
+  },
+  {
+   "id": "f02",
+   "claim_zh": "金红石在薄膜实测文献中给出直接带隙约 3.0–3.2 eV，对应吸收边约 387–413 nm；但其价带到导带的直接跃迁为偶极禁阻（dipole forbidden），禁阻直接跃迁上方数 meV 处为间接带隙，故金红石对可见段吸收的强度不等于带隙换算值。",
+   "label": "事实",
+   "grade": "A",
+   "verify": "证实（原稿遗漏偶极禁阻，已补）",
+   "sources": ["s03"],
+   "notes": "s03 摘要（PMID 33260313，溅射薄膜）明示 dipole forbidden 与间接带隙。原稿未写该限定，本修订补入。薄膜文献不等同颜料粉体。Wikipedia Rutile 页未给 eV 数值，不作依据。"
+  },
+  {
+   "id": "f03",
+   "claim_zh": "光子能量换算（E = 1239.8/λ）：365 nm ≈ 3.40 eV，高于锐钛矿带隙约 0.2 eV；385 nm ≈ 3.22 eV；395 nm ≈ 3.14 eV，低于锐钛矿 3.2 eV 但高于金红石 3.0 eV 下限；400 nm ≈ 3.10 eV。",
+   "label": "事实",
+   "grade": "A",
+   "verify": "证实（算术核对）",
+   "sources": ["s01", "s03"],
+   "notes": "1239.8/365 = 3.397; /385 = 3.221; /395 = 3.139; /400 = 3.100; /413 = 3.002。换算无需文献，前提是 f01、f02 成立。"
+  },
+  {
+   "id": "f04",
+   "claim_zh": "6 mm 透明浮法玻璃（厂商光谱，soda-lime float）在 365 nm 透过率 83.8%，385 nm 84.2%，395 nm 87.2%，400 nm 87.7%；厂商 ISO 9050 定义的太阳紫外透过率 6 mm 为 66%，3 mm 为 73%。",
+   "label": "事实",
+   "grade": "A",
+   "verify": "证实",
+   "sources": ["s07"],
+   "notes": "s07 PDF 经 curl 全文下载并用 pdftotext 核验（2026-11-01）：6 mm 光谱表中 365=83.8、385=84.2、395=87.2、400=87.7；太阳紫外表 3.0 mm=73、6.0 mm=66。太阳紫外为 ISO 9050 加权值，不是 365 nm 单点。为单片普通透明玻璃，非夹层玻璃。"
+  },
+  {
+   "id": "f05",
+   "claim_zh": "窗玻璃阻挡绝大部分 UVB、透过 UVA 与可见光；非夹层透明玻璃的 UVA 透过率最高约 62.8%，灰色夹层玻璃最低约 0.9%；夹层玻璃对 UVA 的防护优于钢化玻璃。",
+   "label": "事实",
+   "grade": "A",
+   "verify": "证实",
+   "sources": ["s04", "s05", "s06"],
+   "notes": "s04 摘要（PMID 15491429）原文：Nonlaminated clear glass transmitted the highest percentage of UVA (62.8%) and grey laminated glass the lowest (0.9%)。s05 摘要：Laminated glass offers better UVA protection than tempered glass。62.8% 与 0.9% 的积分波段未给出，不得等同 365 nm 单点值。"
+  },
+  {
+   "id": "f06",
+   "claim_zh": "夹层玻璃（含 UV 吸收中间膜）的 300–380 nm 平均 UV 透过率（UV-Trans 列）：Clear/Clear 为 58%，Clear/Laminated 小于 1%；含 LoĒ 镀膜的组合中 UV-Trans 为小于 1% 至 29%（Clear/LoĒ-180 为 29%，为该列最高值）。",
+   "label": "事实",
+   "grade": "A",
+   "verify": "反驳（原稿 31% 取自 ISO-CIE 列，已改）",
+   "sources": ["s08"],
+   "notes": "s08（Cardinal 厂商 glossary，Last Updated: August 7, 2025；2026-11-01 经 curl 读取）。UV-Trans 列完整值：58、<1、29、<1、16、<1、5、<1、1、<1、2、<1。原稿'至 31%'误取 ISO-CIE 列（Quad LoĒ-452+/Lami 行）。厂商计算值（LBNL Window，NFRC），不是 365 nm 单点，且不得与 f04 直接相减。"
+  },
+  {
+   "id": "f07",
+   "claim_zh": "窗玻璃后的 365 nm 与 395 nm 光取决于玻璃类型：单片透明玻璃几乎不衰减（约 84–87%），夹层或 UV 吸收中间膜可能大幅削弱 365 nm 段；因此'387 nm 阈值'本身不是决定窗后曝光是否有效的主要变量，玻璃类型才是。",
+   "label": "推断",
+   "grade": "A",
+   "verify": "证实（推断链成立；夹层玻璃 365 nm 单点仍未验证）",
+   "sources": ["s07", "s08", "s04", "s05"],
+   "notes": "推断链：f04 给出单片玻璃高透过；f05/f06 给出夹层玻璃 UVA 与 300–380 nm 平均大幅下降。注意 s08 的数值为 300–380 nm 平均，不能直接推出 365 nm 单点被削弱的程度。需 E1 中窗后夹层组实测。"
+  },
+  {
+   "id": "f08",
+   "claim_zh": "395 nm 光子能量低于锐钛矿带隙，纯锐钛矿的带间激发理论上不发生；但可见光（>400 nm）TiO2 降解可由表面络合物或染料/配体增敏实现，因此 395 nm 或日光可见段仍可能驱动染料漂白，不能以'超过带隙所以不漂白'作为设计依据。",
+   "label": "推断",
+   "grade": "A",
+   "verify": "证实",
+   "sources": ["s09", "s10", "s11"],
+   "notes": "s09 全摘要核验（PMID 17695920）：可见光（>400 nm）氟喹诺酮降解'不能由直接光解或 TiO2 带隙激发解释'，机制为表面络合分子光激发后的电荷转移，且需要导带电子受体（O2、BrO3-）。s10 为 HNA 配体 LMCT 合成反应，仅提供机制类比。s11 为 Pt 配合物增敏 TiO2，420 nm 蓝光降解 SMX。注意 s09 标题已更正（见 sources）。"
+  },
+  {
+   "id": "f09",
+   "claim_zh": "染料增敏 TiO2 的可见光降解真实存在：曙红 Y 增敏 P25 体系在最优条件（50 mg P25、20 mg/L 曙红 Y）下 35 min 内 RhB（4 mg/L）基本降解完全；Ru 配合物增敏 TiO2 在 λ>420 nm 下 CCl4 脱氯量子产率约 1×10⁻³，溶解 O2 竞争导带电子使速率下降。",
+   "label": "事实",
+   "grade": "A",
+   "verify": "证实",
+   "sources": ["s12", "s13"],
+   "notes": "s12、s13 摘要全文核验。s12 摘要只写 visible light irradiation，未给灯型与强度；速率不能外推到家用日光条件。s13 为 CCl4 体系，非染料漂白。"
+  },
+  {
+   "id": "f10",
+   "claim_zh": "Fe3+ 在 TiO2 水溶胶（hydrosol）体系中加速可见光下的染料降解；但在 TiO2 水分散体（powder dispersion）中 Fe3+ 强烈抑制活性。两者方向相反，作者将差异归因于 TiO2 表面羟基与 Fe3+ 的络合。",
+   "label": "事实",
+   "grade": "A",
+   "verify": "证实",
+   "sources": ["s14"],
+   "notes": "s14 摘要全文核验（PMID 18754505）。方向依赖 TiO2 形态（hydrosol 与 powder 相反）。F 路线的 TiO2 若为颜料粉体或分散体，应按'抑制'方向处理，不能直接采用'加速'结论（见 c10 修订）。"
+  },
+  {
+   "id": "f11",
+   "claim_zh": "漂白后的 MB 可回色：TiO2/MB/DL-苏糖醇（牺牲给体）的 LDPE 膜在 UVA（4 mW/cm²）下 90 s 内漂白成无色 leuco 型；无氧时稳定，在空气中约 2.5 天（约 21 °C、约 65% RH）再氧化，回色速率与环境 O2 呈线性相关。",
+   "label": "事实",
+   "grade": "A",
+   "verify": "证实",
+   "sources": ["s16"],
+   "notes": "s16 摘要全文核验（PMID 22076639）：<90 s UVA 4 mW cm(-2)；'The rate of recovery is linearly dependent upon the ambient level of O2'；21 °C 回色 t1/2 约 9 h，5 °C 为 36 h。体系含牺牲还原剂，F 路线若无类似还原剂，机理未必相同。"
+  },
+  {
+   "id": "f12",
+   "claim_zh": "若 F 路线配方含还原性组分（牺牲给体、糖类、抗坏血酸类等），漂白区（白区）存在空气中回色风险；若不含，需实测确认。",
+   "label": "推断",
+   "grade": "A",
+   "verify": "证实（推断链成立，F 配方未知）",
+   "sources": ["s16", "s23"],
+   "notes": "推断链：f11 显示回色依赖还原态 leuco 形态与 O2。补充：s23 显示抗坏血酸（VC）与 TiO2 复合的 PVC 膜光降解显著加速（见 f16），若 F 配方含抗坏血酸，应作为独立风险项。"
+  },
+  {
+   "id": "f13",
+   "claim_zh": "MB 光漂白强烈依赖介质：同一 661 nm 光照 1 min，血浆中 MB 的 OD 约下降 50%，PBS 中仅约下降 1%。",
+   "label": "事实",
+   "grade": "A",
+   "verify": "证实",
+   "sources": ["s17"],
+   "notes": "s17 摘要（PMID 22833174）原文一致。红光条件与 F 路线的 UV/蓝光不同，只说明基质效应，不提供速率数值。"
+  },
+  {
+   "id": "f14",
+   "claim_zh": "melamine 掺杂 TiO2 在可见光下光漂白 MB 呈混合级数动力学，包含诱导期与加速期。",
+   "label": "事实",
+   "grade": "A",
+   "verify": "证实",
+   "sources": ["s15"],
+   "notes": "s15 摘要原文一致（PMID 20648334）。推断：诱导期意味着 30 min 判定窗口可能需要预照或更长观察；未取得速率常数。"
+  },
+  {
+   "id": "f15",
+   "claim_zh": "未找到 F 路线拟用染料（MB、靛胭脂、花青素、食用色素）在日光或 365/395 nm LED 下未曝光区（背景）褪色速率的数值；无法给出背景褪色半衰期。",
+   "label": "未验证",
+   "grade": "C",
+   "verify": "未能证实（即维持未验证；负结果复核一致）",
+   "sources": [],
+   "notes": "PubMed 多组检索与本轮 WebSearch（1 次）均未得到可外推数值（见 negative_findings）。需 E1 与 E4 实测。"
+  },
+  {
+   "id": "f16",
+   "claim_zh": "TiO2 对有机粘结剂有光氧化破坏：锐钛矿 TiO2 在紫外下引发油画粘结剂降解与粉化（chalking）；与抗坏血酸（VC）复合的 PVC 膜光降解速率约为 PVC-TiO2 膜的两倍、约为纯 PVC 膜的十五倍（以摘要为准）。",
+   "label": "事实",
+   "grade": "A",
+   "verify": "反驳（原稿对照组错误，已改）；前半句证实",
+   "sources": ["s18", "s23"],
+   "notes": "s18 摘要：UV light initiates TiO2-photocatalyzed processes ... chalking（PMID 27143534）。s23 摘要全文（PMID 20138426）：PVC-VC-TiO2 'two times higher than that of PVC-TiO2 film and fifteen times higher than that of pure PVC film'。原稿'约为对照的两倍'把对照写成了未说明的对象，且遗漏 VC 组分。油画体系不等同纸基水性封层。"
+  },
+  {
+   "id": "f17",
+   "claim_zh": "颜料级包覆（氧化铝 2–5 wt%，或氧化铝加二氧化硅）可抑制 TiO2 光还原并减缓粘结剂氧化；耐候要求更高时包覆量约 7–10 wt%；纳米级颗粒比颜料级更活泼。",
+   "label": "事实",
+   "grade": "A",
+   "verify": "证实",
+   "sources": ["s19"],
+   "notes": "s19 摘要全文核验（PMID 15279507）：'Coatings containing 2-5% by weight alumina or alumina and silica are satisfactory for general-purpose paints. If greater resistance to weathering is desired ... about 7-10% weight'；'nanoparticle-grade being more active'。摘要以 durable pigmentary-grade rutile 与 catalytic-grade anatase 作对照，但不是直接的光活性对比，'金红石更安全'的结论仍不成立。"
+  },
+  {
+   "id": "f18",
+   "claim_zh": "超薄 Al2O3（约 1 nm，ALD 型气相沉积）可有效抑制 TiO2 颜料的光催化活性，适用于 rutile、anatase 与 P25。",
+   "label": "事实",
+   "grade": "A",
+   "verify": "证实",
+   "sources": ["s20"],
+   "notes": "s20 摘要全文核验（PMID 29364840）：ALD-type TMA/H2O，流化床，室温常压，'an Al2O3 layer with a thickness of 1 nm could efficiently suppress the photocatalytic activities of rutile, anatase, and P25'。工艺不适用于家用套装；可作为机理证据。"
+  },
+  {
+   "id": "f19",
+   "claim_zh": "SiO2 包覆不能可靠地'封住'TiO2：介孔 SiO2 壳加速有机染料光降解，同时抑制水分解与 CO2 还原（s21）；在 MB 探针的聚氨酯纳米复合体系中，SiO2 载量低于约 3.25 wt% 时光活性增强，更高载量时活性下降，但金红石表面被完全覆盖时活性反而增强（s22）。",
+   "label": "事实",
+   "grade": "A",
+   "verify": "证实（原稿'截断'备注已解决；补入金红石完全覆盖增强）",
+   "sources": ["s21", "s22"],
+   "notes": "s22 全摘要核验（PMID 28211360）：'When the loading weight of SiO2 was lower than 3.25 wt%, the photocatalytic activity was enhanced, while with higher loadings, it gave lower photocatalytic activity. When the rutile phase TiO2 surface was fully covered with SiO2, an enhanced photocatalytic activity was observed.' 方向依赖相与覆盖度。推断：SiO2 封层对染料可能加速而非停止，不能用于白区稳定。"
+  },
+  {
+   "id": "f20",
+   "claim_zh": "磷酸盐对 TiO2 光催化的抑制是部分的、浓度依赖的：仅碳酸盐与磷酸盐通过表面特异吸附抑制碘离子氧化（空穴探针，高浓度侧）；但在低浓度（约 5 mM 以下，按全文讨论段）空穴氧化速率反而升高；磷酸盐 0.5 mM 时 •OH 生成急剧下降，此后边际作用较小，12.5 mM 时与碳酸盐相当。",
+   "label": "事实",
+   "grade": "A",
+   "verify": "证实（补入测试条件与低浓度空穴升高）",
+   "sources": ["s30"],
+   "notes": "s30 PMC6471673 全文 XML 核验（2026-11-01，并对照 PMID 28238264 摘要）：20 mg/L P25；pH 7.9；UV-A，365 nm，1.9 mW/cm²，30 min；碘离子（空穴）探针 0–12.5 mM；TA（•OH）探针 0–25 mM；全文：'Photogenerated hole production is increased at lower concentrations of phosphate and carbonate'；'Phosphate produces a strong initial decrease in •OH generation at 0.5 mM despite ... increase in hole production'。'≤5 mM'边界为从讨论段归纳，非逐点表述。探针法，不等同染料漂白速率。"
+  },
+  {
+   "id": "f21",
+   "claim_zh": "磷酸盐在其他体系也有抑制：OPE 光催化去除（UV）中 PO4³⁻ 抑制最强（强于 SO4²⁻、Cl⁻、NO3⁻），机制包括 •OH 清除与表面位点占据；DCF 可见光降解体系中磷酸盐同样抑制降解。",
+   "label": "事实",
+   "grade": "A",
+   "verify": "证实（s28 可见光条件已补）",
+   "sources": ["s27", "s28"],
+   "notes": "s27 摘要全文核验（PMID 29723749）：'PO43- exhibited the strongest inhibition ability'；两项机理（•OH 清除、表面位点占据）原文一致。s28 摘要（PMID 31773532）：DCF 在可见光下光催化降解，'phosphate ion ... could inhibit the degradation'，浓度越高抑制越强。两项均为降解动力学，未测'曝光后停止'效果。"
+  },
+  {
+   "id": "f22",
+   "claim_zh": "磷酸盐作为'曝光后停止剂'的文献支持不足：现有证据为降解动力学或探针研究，未测未曝光区染料背景漂白；且在 TiO2–MTT 光催化还原体系中磷酸盐提高反应效率（见 f36），与停止方向相反。磷酸盐可减轻腐殖酸对 TiO2 的抑制（s29），但这不是停止效应。",
+   "label": "推断",
+   "grade": "B",
+   "verify": "未能证实（原稿以 s31 作为支持，方向相反，已改；等级由 A 降为 B）",
+   "sources": ["s27", "s28", "s29", "s30", "s31"],
+   "notes": "原稿将 s31 的'may be used to modulate'假设句作为支持，但 s31 Findings 段显示磷酸盐增强反应效率（最高约 0.005 M Na2HPO4）。s29（PMID 27982576）为腐殖酸存在下的酚降解，磷酸盐减轻 HA 抑制（非停止）。证据相互冲突且缺乏染料终点，降为 B。需按 E2 实测背景漂白速率。"
+  },
+  {
+   "id": "f23",
+   "claim_zh": "氟离子对 TiO2 光催化方向不一致：X3B 染料体系中加氟使总降解速率上升（同时降低暗吸附，s24）；甲苯光氧化中表面 Ti–F 适量时增强、过量时下降（s25）；NOx 氧化中表面吸附 F⁻ 抑制光催化活性，NaOH 洗去后活性提高（s26）。",
+   "label": "事实",
+   "grade": "A",
+   "verify": "证实（s26 方向修正为抑制）",
+   "sources": ["s24", "s25", "s26"],
+   "notes": "s24 摘要（PMID 16553435）：X3B total rate increased in the presence of fluoride；另载 直接空穴转移（无加 F）与 •OH 途径（加 F 后）的机理转换。s25 摘要（PMID 39003071）：'first increased and then decreased'。s26 全摘要（PMID 30343369）：'suggesting that the surface F- ions inhibited the photocatalytic NOx oxidation'。原稿'以吸附形式影响活性'描述不准确。结论'现有证据无一致抑制方向，不宜作停止剂'成立。"
+  },
+  {
+   "id": "f24",
+   "claim_zh": "氟化钠（CID 5235）GHS 汇总（ECHA 聚合）：H301（吞咽有毒，97.1% 通知）、H315（97.9%）、H319（97.9%）。",
+   "label": "事实",
+   "grade": "B",
+   "verify": "证实",
+   "sources": ["s40"],
+   "notes": "PubChem PUG-View JSON 于 2026-11-01 核验。聚合数据，需厂商 SDS 复核。氟化物在安全前置（底线 6）上不合格。"
+  },
+  {
+   "id": "f25",
+   "claim_zh": "磷酸氢二钾（CID 24450）GHS 汇总：H315 约 40.7% 通知，H318（严重眼损伤，Danger）约 10.4% 通知；约 48.2% 报告不满足危害分类标准；危害等级低于氟化钠（推断）。",
+   "label": "事实",
+   "grade": "B",
+   "verify": "证实（数字）；反驳原稿'多数通知不满足危害分类'的措辞，已改",
+   "sources": ["s41"],
+   "notes": "PubChem JSON 核验。48.2% 为近一半，未过半，不得写作'多数'。H318（Danger）见于约 10% 通知，不能简化为低危。溶液 pH 未测（见 f32）。磷酸三钠等碱性更强的磷酸盐不能与之互换。"
+  },
+  {
+   "id": "f26",
+   "claim_zh": "亚甲蓝（CID 6099）GHS 汇总：H302（吞咽有害，91.6%）、H318（严重眼损伤，25.6%）、H412（水生长期危害，10.3%）。",
+   "label": "事实",
+   "grade": "B",
+   "verify": "证实",
+   "sources": ["s39"],
+   "notes": "PubChem JSON 核验。H318 对家用场景为硬约束，需护目镜与提示。需以厂商 SDS 复核。"
+  },
+  {
+   "id": "f27",
+   "claim_zh": "亚甲蓝为 MAO 抑制剂（静脉剂量超过约 5 mg/kg 与 SSRI 联用有血清素综合征风险）；G6PD 缺乏者有溶血风险（百科注明该风险程度存在争议）；作为光敏剂在氧与光下产生单线态氧。",
+   "label": "事实",
+   "grade": "B",
+   "verify": "证实（补入'风险程度有争议'）",
+   "sources": ["s37"],
+   "notes": "Wikipedia Methylene blue 于 2026-11-01 经 curl 全文核验（版本未核）。页面注明 G6PD 危害程度有争议，2018 年非洲疟疾临床试验荟萃未见关联。成人美术材料场景的主要暴露为误服、眼部与皮肤接触；药理风险需在说明中披露。"
+  },
+  {
+   "id": "f28",
+   "claim_zh": "靛胭脂（indigo carmine，FD&C Blue No. 2，E132）获美国、欧盟批准用于人体消费（食品用途）；可作 pH 指示剂，蓝至黄的变色窗口约 pH 11.4–13.0（0.2% 水溶液）；静脉用于尿路或羊水检测时个别病例出现血压急升；GHS 为 H302（Warning）。",
+   "label": "事实",
+   "grade": "B",
+   "verify": "证实（补入 pH 变色窗口）",
+   "sources": ["s38"],
+   "notes": "Wikipedia Indigo carmine 于 2026-11-01 经 curl 全文核验（版本未核）。'化妆品'为百科所列用途，非审批结论。食品用途不等于光稳定性或吸入安全。pH 窗口对碱性停止剂评估有直接意义（见 f32）。"
+  },
+  {
+   "id": "f29",
+   "claim_zh": "靛蓝母体光稳定性高（文献背景，s33）；9 种医用染料（含靛胭脂）在三种溶剂中溶液 pH 为 2.6–9.85，除 ICG 外均与手术光源光谱显著重叠（s34）；但磺化靛胭脂在水溶液中的光稳定性数据本轮未找到。",
+   "label": "未验证",
+   "grade": "C",
+   "verify": "证实（s34 为'除 ICG 外全部'，原稿写'多数'偏弱）；光稳定性部分未能证实",
+   "sources": ["s33", "s34"],
+   "notes": "s34 摘要（PMID 18689696）：'Dyes diluted in three solvents showed pH values varying from 2.6 to 9.85'；'all dyes except ICG had remarkable spectral overlap with the light sources'。s33 为 4,4'-dihydroxythioindigo 母体研究，不是磺化靛胭脂。"
+  },
+  {
+   "id": "f30",
+   "claim_zh": "五种阴离子染料中，CS-TiO2 对靛胭脂的初始脱色速率排序第一（indigo carmine > eosin Y > amido black 10B > alizarin cyanine green > orange G）。",
+   "label": "事实",
+   "grade": "A",
+   "verify": "证实（排序）；原稿'在紫外条件下'未能证实，已删除",
+   "sources": ["s32"],
+   "notes": "s32 摘要（PMID 20018445）：'The decolorization of the anionic dyes with CS TiO2 followed the order ...'，指标为 initial rate of decolorization。摘要未给出光源，故不得写作紫外条件；需核实光源后方可使用。不得外推为可见光速率。"
+  },
+  {
+   "id": "f31",
+   "claim_zh": "花青素颜色易受 pH、光、温度与金属离子影响（综述）。",
+   "label": "事实",
+   "grade": "A",
+   "verify": "证实",
+   "sources": ["s36"],
+   "notes": "s36 摘要（PMID 33255297）原文一致：'Anthocyanin colors are susceptible to pH, light, temperatures, and metal ions.'。综述摘要，未给出具体速率。"
+  },
+  {
+   "id": "f32",
+   "claim_zh": "碱性停止剂的颜色风险需分组评估：(a) 靛胭脂 pH 指示变色窗口约 pH 11.4–13.0（百科），远高于磷酸氢二钾溶液的推算 pH，故'磷酸氢二钾使靛胭脂变色'缺乏依据；(b) 花青素颜色随 pH 变化（s36），碱性下的颜色稳定性须实测。",
+   "label": "推断",
+   "grade": "C",
+   "verify": "反驳（靛胭脂部分，原稿声称无依据）；花青素部分证实",
+   "sources": ["s36", "s38"],
+   "notes": "K2HPO4 溶液 pH 为本核查按二元磷酸盐 pKa 推算的约 9–10，未经测定，须由 E2 实测。原稿'可能改变靛胭脂颜色'的推断在该 pH 下不成立，改为待测。"
+  },
+  {
+   "id": "f33",
+   "claim_zh": "本轮未找到'TiO2 + 染料 + 封层'体系的白区长期稳定性或成色耐光的加速数据；c07、c08 只能给出机理层面判断，不得换算为年限。",
+   "label": "未验证",
+   "grade": "C",
+   "verify": "证实（负结果，在所列范围内）",
+   "sources": [],
+   "notes": "与 f15 一致；加速耐光数据本轮为零。"
+  },
+  {
+   "id": "f34",
+   "claim_zh": "综合判断（修订）：F 路线中磷酸盐是'部分、浓度依赖、且低浓度可能增强空穴路径'的停止候选，证据未达'唯一有文献支撑'；氟化物方向不一致且含 H301 危害，应淘汰；超薄 Al2O3 封层为机理候选但不适合家用工艺；SiO2 包覆方向依赖相与载量，不可靠作白区封层。",
+   "label": "推断",
+   "grade": "B",
+   "verify": "未能证实（原稿'唯一支撑'结论过强，已改）",
+   "sources": ["s20", "s23", "s24", "s25", "s26", "s28", "s30", "s31", "s39", "s40"],
+   "notes": "修订依据：f20 低浓度空穴升高；f22/f36 的 s31 反向证据；f37 的可见光正向证据。净结论：磷酸盐仍为待测候选，不作为已确认停止剂。"
+  },
+  {
+   "id": "f35",
+   "claim_zh": "'停止'需区分两个机制：TiO2 光催化在无光时基本停止，但已被还原的染料（leuco 型）可在暗态被空气氧化回色；因此 F 路线的停止方案须同时覆盖光催化终止与还原态回色。",
+   "label": "推断",
+   "grade": "C",
+   "verify": "未能证实（暗态光催化停止无直接文献证据；等级由 A 降为 C）",
+   "sources": ["s16"],
+   "notes": "回色机理有 s16 支持（A）。'TiO2 暗态光催化停止'本轮 PubMed 检索 0 命中（见 negative_findings），仅为一般化学常识，未经文献核查。"
+  },
+  {
+   "id": "f36",
+   "claim_zh": "磷酸盐在 TiO2–MTT 光催化还原体系中提高反应效率（Zeta 电位与反应效率在约 0.005 M Na2HPO4 附近最高），无 PBS 与 Fe3+ 加入时反应受抑制。该结果是还原反应，与染料氧化漂白方向不同，但与'磷酸盐停止光催化'方向相反。",
+   "label": "事实",
+   "grade": "A",
+   "verify": "证实（新增，原稿遗漏的反向证据）",
+   "sources": ["s31"],
+   "notes": "s31 摘要 Findings 段（PMID 26164242）：'Reaction efficiency and catalyst Zeta potential were enhanced by Na2HPO4 ... maximum around the phosphate concentration 0.005 M'；'The addition of Fe(3+) ions ... induced strong reaction inhibition'。原稿仅引用了 Hypothesis 段。"
+  },
+  {
+   "id": "f37",
+   "claim_zh": "可见光（>400 nm）下，磷酸盐抑制 TiO2 对双氯芬酸的降解，且随浓度升高抑制增强（支持磷酸盐对可见光路径有一定作用）。",
+   "label": "事实",
+   "grade": "A",
+   "verify": "证实（新增，原稿遗漏的正向证据）",
+   "sources": ["s28"],
+   "notes": "s28 摘要（PMID 31773532）。底物为药物，非染料漂白终点，未测背景漂白，不能直接推为 F 路线的停止效果。"
+  }
+ ],
+ "sources": [
+  {"id": "s01", "title": "Is the band gap of pristine TiO(2) narrowed by anion- and cation-doping of titanium dioxide in second-generation photocatalysts? (J Phys Chem B, 2006; PMID 17134177; DOI 10.1021/jp065659r)", "url": "https://pubmed.ncbi.nlm.nih.gov/17134177/", "quote": "anatase, E(bg) = 3.2 eV; absorption edge ca. 387 nm", "type": "论文", "access": "API", "date": "2006（2026-11-01 经 eutils efetch 重读摘要）"},
+  {"id": "s02", "title": "Titanium dioxide - Wikipedia", "url": "https://en.wikipedia.org/wiki/Titanium_dioxide", "quote": "Wavelength (λ)= 387 nm; nanosized anatase TiO2 does not absorb visible light", "type": "百科", "access": "curl全文", "date": "页面读取 2026-11-01（版本未核；本轮未重读）"},
+  {"id": "s03", "title": "Band Gap Measurements of Nano-Meter Sized Rutile Thin Films (Nanomaterials 2020; PMID 33260313; DOI 10.3390/nano10122379)", "url": "https://pubmed.ncbi.nlm.nih.gov/33260313/", "quote": "Rutile has a direct energy band gap at about 3.0-3.2 eV; however, the transitions between the valence and conduction band are dipole forbidden. Just a few meV above that, there is an indirect band gap.", "type": "论文", "access": "API", "date": "2020（2026-11-01 重读摘要）"},
+  {"id": "s04", "title": "Implication for photosensitive patients of ultraviolet A exposure in vehicles (Br J Dermatol 2004; PMID 15491429)", "url": "https://pubmed.ncbi.nlm.nih.gov/15491429/", "quote": "Nonlaminated clear glass transmitted the highest percentage of UVA (62.8%) and grey laminated glass the lowest (0.9%).", "type": "论文", "access": "API", "date": "2004（重读摘要）"},
+  {"id": "s05", "title": "Current status of photoprotection by window glass, automobile glass, window films, and sunglasses (Photodermatol Photoimmunol Photomed 2013; PMID 23458389)", "url": "https://pubmed.ncbi.nlm.nih.gov/23458389/", "quote": "Laminated glass offers better UVA protection than tempered glass.", "type": "综述", "access": "API", "date": "2013（重读摘要）"},
+  {"id": "s06", "title": "Photoprotection by window glass, automobile glass, and sunglasses (J Am Acad Dermatol 2006; PMID 16635665)", "url": "https://pubmed.ncbi.nlm.nih.gov/16635665/", "quote": "window glass filters out UVB and transmits UVA and visible light.", "type": "综述", "access": "API", "date": "2006（重读摘要）"},
+  {"id": "s07", "title": "Clear Technical Product Data, Vitro Architectural Glass (April 2020)", "url": "https://www.vitroglazings.com/media/rnff0xlj/tds_clear.pdf", "quote": "6 mm: 365 nm 83.8; 385 nm 84.2; 395 nm 87.2; 400 nm 87.7. Solar UV (ISO 9050): 6.0 mm 66; 3.0 mm 73. Soda-lime float glass.", "type": "厂商原页", "access": "curl全文", "date": "2020-04（2026-11-01 curl 下载 PDF，pdftotext 核验）"},
+  {"id": "s08", "title": "Ultraviolet Light (UV) Definition, Cardinal Corp glossary (UV Fading Protection Comparison table)", "url": "https://www.cardinalcorp.com/glossary/ultraviolet-light-uv/", "quote": "UV-Trans (300-380 nm average, LBNL Window, NFRC): Clear/Clear 58%; Clear/Lami <1%; Clear/LoĒ-180 29%; LoĒ-containing combinations <1% to 29% (ISO-CIE is a separate column).", "type": "厂商原页", "access": "curl全文", "date": "Last Updated: August 7, 2025（2026-11-01 读取）"},
+  {"id": "s09", "title": "Visible-light-Mediated TiO2 photocatalysis of fluoroquinolone antibacterial agents (Environ Sci Technol 2007; PMID 17695920)", "url": "https://pubmed.ncbi.nlm.nih.gov/17695920/", "quote": "Visible-light-mediated fluoroquinolone degradation is unexpected from direct photolysis or established TiO2 band gap photoexcitation mechanisms ... requires an appropriate conduction band electron acceptor (e.g., O2, BrO3-)", "type": "论文", "access": "API", "date": "2007（全摘要核验）"},
+  {"id": "s10", "title": "Blue light-powered hydroxynaphthoic acid-titanium dioxide photocatalysis for the selective aerobic oxidation of amines (J Colloid Interface Sci 2021; PMID 34144307)", "url": "https://pubmed.ncbi.nlm.nih.gov/34144307/", "quote": "blue light-powered cooperative photocatalysis ... ligand-to-metal charge transfer", "type": "论文", "access": "API", "date": "2021"},
+  {"id": "s11", "title": "Dye-sensitized TiO2-catalyzed photodegradation of sulfamethoxazole under blue or yellow light (Environ Sci Pollut Res 2017; PMID 27730507)", "url": "https://pubmed.ncbi.nlm.nih.gov/27730507/", "quote": "Complex 1-sensitized TiO2 ... under 420 nm irradiation (blue light) ... (abstract)", "type": "论文", "access": "API", "date": "2017（重读摘要）"},
+  {"id": "s12", "title": "Mechanism investigation of visible light-induced degradation in a heterogeneous TiO2/eosin Y/rhodamine B system (Environ Sci Technol 2009; PMID 19924970)", "url": "https://pubmed.ncbi.nlm.nih.gov/19924970/", "quote": "Under optimal conditions (50 mg P-25, 20 mg L(-1) EO), RhB (4 mg L(-1)) almost decomposed completely after 35 min of visible light irradiation", "type": "论文", "access": "API", "date": "2009（重读摘要）"},
+  {"id": "s13", "title": "Visible light-induced degradation of carbon tetrachloride on dye-sensitized TiO2 (Environ Sci Technol 2001; PMID 11351543)", "url": "https://pubmed.ncbi.nlm.nih.gov/11351543/", "quote": "lambda > 420 nm; quantum yield of CCl4 dechlorination about 10(-3); dissolved O2 competes for conduction band electrons", "type": "论文", "access": "API", "date": "2001（重读摘要）"},
+  {"id": "s14", "title": "A new role for Fe3+ in TiO2 hydrosol: accelerated photodegradation of dyes under visible light (Environ Sci Technol 2008; PMID 18754505)", "url": "https://pubmed.ncbi.nlm.nih.gov/18754505/", "quote": "In contrast to an aqueous TiO2 dispersion where Fe3+ strongly inhibited the photoactivity ... Fe3+ accelerated the photodegradation of all dyes examined in the hydrosol", "type": "论文", "access": "API", "date": "2008（重读摘要）"},
+  {"id": "s15", "title": "Visible light induced photobleaching of methylene blue over melamine-doped TiO2 nanocatalyst (Nanoscale 2010; PMID 20648334)", "url": "https://pubmed.ncbi.nlm.nih.gov/20648334/", "quote": "The photobleaching followed a mixed reaction order kinetics with the distinctive induction and acceleration periods.", "type": "论文", "access": "API", "date": "2010（重读摘要）"},
+  {"id": "s16", "title": "An O2 smart plastic film for packaging (The Analyst 2012; PMID 22076639; DOI 10.1039/c1an15774d)", "url": "https://pubmed.ncbi.nlm.nih.gov/22076639/", "quote": "DL-threitol ... extruded in LDPE; photobleached in <90 s using UVA (4 mW cm(-2)); re-oxidised to MB in ~2.5 days in air (~21 °C, ~65% RH); rate of recovery linearly dependent upon ambient O2", "type": "论文", "access": "API", "date": "2012（全摘要核验）"},
+  {"id": "s17", "title": "Inactivation of bacteria in plasma (Photochem Photobiol Sci 2012; PMID 22833174; DOI 10.1039/c2pp25135c)", "url": "https://pubmed.ncbi.nlm.nih.gov/22833174/", "quote": "OD of MB in plasma decreased by ~50% after a minute of illumination with 661 nm light, while under identical conditions the OD in PBS decreased by only 1%.", "type": "论文", "access": "API", "date": "2012（重读摘要）"},
+  {"id": "s18", "title": "Determination of early warning signs for photocatalytic degradation of titanium white oil paints by means of surface analysis (Spectrochim Acta A 2017; PMID 27143534)", "url": "https://pubmed.ncbi.nlm.nih.gov/27143534/", "quote": "its most photocatalytic form (anatase) can cause severe degradation of the oil paint ... chalking", "type": "论文", "access": "API", "date": "2017（重读摘要）"},
+  {"id": "s19", "title": "Photocatalytic coatings for environmental applications (Photochem Photobiol 2005; PMID 15279507; DOI 10.1562/2004-07-01-RA-221)", "url": "https://pubmed.ncbi.nlm.nih.gov/15279507/", "quote": "Coatings containing 2-5% by weight alumina or alumina and silica are satisfactory for general-purpose paints. 7-10% weight for greater resistance to weathering.", "type": "论文", "access": "API", "date": "2005（全摘要核验）"},
+  {"id": "s20", "title": "Suppressing the Photocatalytic Activity of TiO2 Nanoparticles by Extremely Thin Al2O3 Films Grown by Gas-Phase Deposition at Ambient Conditions (Nanomaterials 2018; PMID 29364840)", "url": "https://pubmed.ncbi.nlm.nih.gov/29364840/", "quote": "an Al2O3 layer with a thickness of 1 nm could efficiently suppress the photocatalytic activities of rutile, anatase, and P25 TiO2 nanoparticles", "type": "论文", "access": "API", "date": "2018（全摘要核验）"},
+  {"id": "s21", "title": "New insights into the photocatalytic activity of 3-D core-shell P25@silica nanocomposites: impact of mesoporous coating (Dalton Trans 2017; PMID 28350021)", "url": "https://pubmed.ncbi.nlm.nih.gov/28350021/", "quote": "the mSiO2 shell accelerates the photodegradation of the organic dye, but dramatically reduces the photocatalytic activity of P25 in water splitting and CO2 reduction", "type": "论文", "access": "API", "date": "2017（全摘要核验）"},
+  {"id": "s22", "title": "The effect of silica thickness on nano TiO2 particles for functional polyurethane nanocomposites (Nanotechnology 2017; PMID 28211360)", "url": "https://pubmed.ncbi.nlm.nih.gov/28211360/", "quote": "When the loading weight of SiO2 was lower than 3.25 wt%, the photocatalytic activity was enhanced, while with higher loadings, it gave lower photocatalytic activity. When the rutile phase TiO2 surface was fully covered with SiO2, an enhanced photocatalytic activity was observed.", "type": "论文", "access": "API", "date": "2017（全摘要核验，截断已解决）"},
+  {"id": "s23", "title": "High photocatalytic degradation activity of the polyvinyl chloride (PVC)-vitamin C (VC)-TiO2 nano-composite film (J Hazard Mater 2010; PMID 20138426)", "url": "https://pubmed.ncbi.nlm.nih.gov/20138426/", "quote": "the photocatalytic degradation rate of PVC-VC-TiO2 film is two times higher than that of PVC-TiO2 film and fifteen times higher than that of pure PVC film; optimal VC:TiO2 mass ratio 0.5", "type": "论文", "access": "API", "date": "2010（全摘要核验）"},
+  {"id": "s24", "title": "Effects of polyoxometalate and fluoride on adsorption and photocatalytic degradation of organic dye X3B on TiO2 (J Phys Chem B 2006; PMID 16553435)", "url": "https://pubmed.ncbi.nlm.nih.gov/16553435/", "quote": "The total rate of X3B PCD ... was increased in the presence of fluoride, but the rate was decreased in the presence of POM. In both cases, the dark adsorption of X3B on TiO(2) was greatly decreased", "type": "论文", "access": "API", "date": "2006（重读摘要）"},
+  {"id": "s25", "title": "Effects of surface fluoride modification on TiO2 for the photocatalytic oxidation of toluene (J Environ Sci 2025; PMID 39003071)", "url": "https://pubmed.ncbi.nlm.nih.gov/39003071/", "quote": "with the increasing of F content, the toluene conversion rate first increased and then decreased", "type": "论文", "access": "API", "date": "2025（重读摘要）"},
+  {"id": "s26", "title": "Photocatalytic oxidation of nitrogen oxides over {001}TiO2: the influence of F- ions (Environ Sci Pollut Res 2018; PMID 30343369)", "url": "https://pubmed.ncbi.nlm.nih.gov/30343369/", "quote": "suggesting that the surface F- ions inhibited the photocatalytic NOx oxidation", "type": "论文", "access": "API", "date": "2018（全摘要核验，原稿截断已解决）"},
+  {"id": "s27", "title": "Photocatalytic removal of organic phosphate esters by TiO2: Effect of inorganic ions and humic acid (Chemosphere 2018; PMID 29723749)", "url": "https://pubmed.ncbi.nlm.nih.gov/29723749/", "quote": "PO43- exhibited the strongest inhibition ability, followed by SO42- and then Cl- and NO3-; inhibition via •OH scavenging and surface site occupation", "type": "论文", "access": "API", "date": "2018（全摘要核验）"},
+  {"id": "s28", "title": "Effect of dissolved organic matters and inorganic ions on TiO2 photocatalysis of diclofenac (Environ Sci Pollut Res 2020; PMID 31773532)", "url": "https://pubmed.ncbi.nlm.nih.gov/31773532/", "quote": "photocatalytic degradation of DCF by TiO2 under visible light ... Different concentrations of DOM, phosphate ion, and Fe2+ could inhibit the degradation of DCF", "type": "论文", "access": "API", "date": "2020（全摘要核验）"},
+  {"id": "s29", "title": "Phosphate Changes Effect of Humic Acids on TiO2 Photocatalysis: From Inhibition to Mitigation of Electron-Hole Recombination (Environ Sci Technol 2017; PMID 27982576)", "url": "https://pubmed.ncbi.nlm.nih.gov/27982576/", "quote": "phosphate counteracts the inhibitory effect of humic acids (HA) by decreasing HA adsorption and mitigating electron-hole recombination", "type": "论文", "access": "API", "date": "2017（全摘要核验；体系为酚降解）"},
+  {"id": "s30", "title": "Influence of Aqueous Inorganic Anions on the Reactivity of Nanoparticles in TiO2 Photocatalysis (Langmuir 2017; PMID 28238264; PMC6471673)", "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6471673/", "quote": "Carbonate and phosphate inhibited the oxidation of iodide ... Phosphate produces a strong initial decrease in OH generation at 0.5 mM ... Photogenerated hole production is increased at lower concentrations of phosphate and carbonate. Conditions: 20 mg/L P25, pH 7.9, UV-A 365 nm, 1.9 mW/cm2, 30 min.", "type": "论文", "access": "curl全文", "date": "2017（PMC XML 全文 2026-11-01 核验）"},
+  {"id": "s31", "title": "On the photocatalytic reduction of MTT tetrazolium salt on the surface of TiO2 nanoparticles: Formazan production kinetics and mechanism (J Colloid Interface Sci 2015; PMID 26164242)", "url": "https://pubmed.ncbi.nlm.nih.gov/26164242/", "quote": "Reaction efficiency and catalyst Zeta potential were enhanced by Na2HPO4 (PBS component) and showed a maximum around the phosphate concentration 0.005 M. The addition of Fe(3+) ions ... induced strong reaction inhibition.", "type": "论文", "access": "API", "date": "2015（全摘要核验）"},
+  {"id": "s32", "title": "Investigation of dye functional group on the photocatalytic degradation of dyes by nano-TiO2 (J Hazard Mater 2010; PMID 20018445)", "url": "https://pubmed.ncbi.nlm.nih.gov/20018445/", "quote": "The decolorization of the anionic dyes with CS TiO2 followed the order: indigo carmine > eosin Y > amido black 10B > alizarin cyanine green > orange G (light source not stated in abstract)", "type": "论文", "access": "API", "date": "2010（全摘要核验）"},
+  {"id": "s33", "title": "Photostability of 4,4'-dihydroxythioindigo, a mimetic of indigo (Angew Chem 2014; PMID 24282071)", "url": "https://pubmed.ncbi.nlm.nih.gov/24282071/", "quote": "Especially the high photostability of indigo has been the subject of intensive research.", "type": "论文", "access": "API", "date": "2014（重读摘要）"},
+  {"id": "s34", "title": "Vital dyes and light sources for chromovitrectomy: comparative assessment of osmolarity, pH, and spectrophotometry (Invest Ophthalmol Vis Sci 2009; PMID 18689696)", "url": "https://pubmed.ncbi.nlm.nih.gov/18689696/", "quote": "Dyes diluted in three solvents showed pH values varying from 2.6 to 9.85 ... all dyes except ICG had remarkable spectral overlap with the light sources.", "type": "论文", "access": "API", "date": "2009（全摘要核验）"},
+  {"id": "s35", "title": "Indigotine, azorubine, and cochineal red as photoprotectors of manidipine (Drug Dev Ind Pharm 2010; PMID 19663559)", "url": "https://pubmed.ncbi.nlm.nih.gov/19663559/", "quote": "all the dyes studied ... slow down the process of manidipine photodegradation ... quench the excited states", "type": "论文", "access": "API", "date": "2010（重读摘要；本轮未纳入正文，见 missing）"},
+  {"id": "s36", "title": "Anthocyanin Pigments: Beyond Aesthetics (Molecules 2020; PMID 33255297; PMC7727665)", "url": "https://pubmed.ncbi.nlm.nih.gov/33255297/", "quote": "Anthocyanin colors are susceptible to pH, light, temperatures, and metal ions.", "type": "综述", "access": "API", "date": "2020（重读摘要）"},
+  {"id": "s37", "title": "Methylene blue - Wikipedia", "url": "https://en.wikipedia.org/wiki/Methylene_blue", "quote": "MAOI; IV > 5 mg/kg with SSRIs may cause serotonin syndrome; hemolytic anemia in G6PD deficiency (degree of danger is a subject of controversy); photosensitizer creating singlet oxygen with oxygen and light", "type": "百科", "access": "curl全文", "date": "页面读取 2026-11-01（版本未核）"},
+  {"id": "s38", "title": "Indigo carmine - Wikipedia", "url": "https://en.wikipedia.org/wiki/Indigo_carmine", "quote": "approved for human consumption in the US and EU; E132; FD&C Blue No. 2; pH indicator (blue at pH 11.4, yellow at 13.0, 0.2% aqueous solution); acute increase in blood pressure in some cases; GHS H302 (Warning)", "type": "百科", "access": "curl全文", "date": "页面读取 2026-11-01（版本未核）"},
+  {"id": "s39", "title": "PubChem CID 6099 (methylene blue) GHS classification (aggregated ECHA C&L)", "url": "https://pubchem.ncbi.nlm.nih.gov/compound/6099", "quote": "H302 (91.6%) Harmful if swallowed; H318 (25.6%) Causes serious eye damage; H412 (10.3%) Harmful to aquatic life with long lasting effects", "type": "数据库汇总", "access": "API", "date": "页面读取 2026-11-01（PUG-View JSON）"},
+  {"id": "s40", "title": "PubChem CID 5235 (sodium fluoride) GHS classification (aggregated ECHA C&L)", "url": "https://pubchem.ncbi.nlm.nih.gov/compound/5235", "quote": "H301 (97.1%) Toxic if swallowed; H315 (97.9%) Causes skin irritation; H319 (97.9%) Causes serious eye irritation", "type": "数据库汇总", "access": "API", "date": "页面读取 2026-11-01（PUG-View JSON）"},
+  {"id": "s41", "title": "PubChem CID 24450 (dipotassium hydrogen phosphate) GHS classification (aggregated ECHA C&L)", "url": "https://pubchem.ncbi.nlm.nih.gov/compound/24450", "quote": "H315 (40.7%) Causes skin irritation; H318 (10.4%) Causes serious eye damage (Danger); does not meet GHS hazard criteria for 48.2% of reports", "type": "数据库汇总", "access": "API", "date": "页面读取 2026-11-01（PUG-View JSON）"},
+  {"id": "s42", "title": "Study of Interactions between Titanium Dioxide Coating and Wood Cell Wall Ultrastructure (Nanomaterials 2022; PMID 35957110; PMC9370405)", "url": "https://pubmed.ncbi.nlm.nih.gov/35957110/", "quote": "TiO2 coating protects wood against photodegradation to a limited extent.", "type": "论文", "access": "API", "date": "2022（重读摘要；本轮未纳入正文）"}
+ ],
+ "negative_findings": [
+  {"query": "UV absorber TiO2 binder photodegradation", "scope": "PubMed 全库（2026-11-01）", "result": "0 条命中。UV 吸收剂 + TiO2 + 粘结剂的直接光降解研究在本检索范围内未发现。"},
+  {"query": "TiO2 photocatalysis hole scavenger dye bleaching", "scope": "PubMed 全库", "result": "0 条命中。"},
+  {"query": "undoped TiO2 visible light inactive above 400 nm; wavelength dependence TiO2 photocatalysis cutoff 400 nm", "scope": "PubMed 全库", "result": "两条均 0 条命中（长短语检索可能受语法影响）。相关证据来自 s09、s10、s11。"},
+  {"query": "rutile TiO2 band gap 3.0 eV absorption edge 413 nm", "scope": "PubMed 全库；Crossref", "result": "PubMed 0 条命中；Crossref 命中为噪声。3.0 eV 数值来自 s03 的 rutile band gap 检索。"},
+  {"query": "window glass ultraviolet transmission UVA cutoff 380 nm", "scope": "PubMed 全库", "result": "0 条命中；改用 window glass UVA transmission 得到 s04–s06。"},
+  {"query": "methylene blue leuco reoxidation oxygen photoreduction TiO2; methylene blue reduction leuco oxygen reoxidation", "scope": "PubMed 全库", "result": "前者 0 条；后者仅命中无关文献。回色证据仅来自 s16。"},
+  {"query": "photocatalysis TiO2 cessation after UV off dark reaction stop", "scope": "PubMed 全库", "result": "0 条命中。暗态停止的直接证据未在本检索中找到。"},
+  {"query": "sub-band gap visible absorption anatase Urbach tail photocatalysis 395 nm; methylene blue photodegradation visible light 400 nm LED kinetics", "scope": "PubMed 全库", "result": "前者 0 条命中；后者仅命中纳米催化剂研究，不可用于 F 路线速率。"},
+  {"query": "anthocyanin photodegradation light pH stability (1); anthocyanin stability light (2)", "scope": "PubMed 全库", "result": "(1) 0 条命中；(2) 6 条命中，仅 s36 综述相关。花青素在 TiO2 体系中的漂白动力学未找到。"},
+  {"query": "indigotine photostability; indigo carmine photocatalytic decolorization TiO2 kinetics", "scope": "PubMed 全库", "result": "靛胭脂可见光或光稳定性的专门数据未找到。仅命中 s32（光源未给）、s33（靛蓝母体）、s34（溶液 pH）。"},
+  {"query": "phosphate or fluoride as post-exposure stop of TiO2 photocatalysis (phosphate TiO2 photocatalysis inhibition; fluoride TiO2 photocatalysis)", "scope": "PubMed 全库，各命中逐条筛选", "result": "在所列范围内未发现以'曝光后停止'为终点（测未曝光区背景漂白）的磷酸盐或氟化物研究；现有文献均为降解动力学或探针研究。"},
+  {"query": "methylene blue photolysis sunlight without catalyst", "scope": "PubMed 全库", "result": "命中均为纳米催化剂降解 MB 的研究，未发现 MB 在日光下无催化剂直接光褪色的速率数据。"},
+  {"query": "clear float glass UVA transmittance at 365 nm percent window glass laminated (WebSearch，原轮 1 次)", "scope": "WebSearch 通用网页", "result": "找到厂商光谱页（s07）与厂商 UV-Trans 页（s08）。一条专利摘录（2.3 mm 夹层约透过 25% 的 350–400 nm 光）未确认专利号，未纳入。"},
+  {"query": "专利检索（F 路线 TiO2 磷酸盐 / 氟化物 停止；封层）", "scope": "未检索", "result": "本轮未执行专利检索。任何专利表述只能写'关键词范围内发现/未发现'。"},
+  {"query": "silica alumina coated TiO2 suppresses photocatalytic activity durability (Crossref)", "scope": "Crossref", "result": "命中为噪声，未采用；包覆证据改用 PubMed 检索得到 s19–s22。"},
+  {"query": "phosphate inhibition TiO2 photocatalytic degradation methylene blue dye visible light (WebSearch，核查轮 1 次，standard)", "scope": "WebSearch 通用网页（US 区域）", "result": "未找到溶液磷酸盐抑制 TiO2 对 MB 或其他染料降解（或漂白）的研究。返回结果为磷掺杂 TiO2 晶格掺杂研究（如 P-TiO2 对 MB 的可见光降解），与溶液磷酸盐的表面竞争不同，不纳入证据。"},
+  {"query": "PubMed 核查检索（eutils efetch，2026-11-01）：ID 列表 17134177,22076639,28211360,20018445,15279507,29364840,18689696,29723749,11351543,20138426,30343369,28350021,19924970,27143534,26164242,28238264,35957110,33260313,15491429,23458389,16635665,17695920,34144307,27730507,18754505,20648334,22833174,16553435,39003071,31773532,27982576,24282071,19663559,33255297", "scope": "PubMed E-utilities（efetch, db=pubmed, retmode=xml）", "result": "全部 ID 返回摘要，用于本核查 findings 的原文比对；未发现与上述检索不一致的新命中。"}
+ ],
+ "recommendations_for_matrix": [
+  {"route_key": "F", "column": "c01", "text": "成像机制需区分不可逆氧化漂白（TiO2 空穴/•OH 路径，或表面络合物可见光增敏，见 s09、s12）与可逆还原态 leuco 漂白（需还原组分与 O2，见 s16）。两者的回色风险不同，必须分开标注；不得默认沿用 MB 体系的回色数据。"},
+  {"route_key": "F", "column": "c02", "text": "色调能力：候选染料中 MB 与靛胭脂为单色相蓝；花青素颜色随 pH、光变化（s36），不适合作为稳定单色相，需 pH 控制。多色扩展未在本轮文献中获得证据，写未知。"},
+  {"route_key": "F", "column": "c03", "text": "曝光条件：365 nm 光子能量 3.40 eV 高于锐钛矿带隙（f01、f03）；395 nm（3.14 eV）低于锐钛矿带隙，但可见光表面络合增敏路径存在（f08，推断）。窗后：单片透明玻璃对 365–395 nm 透过约 84–87%（s07）；夹层或 UV 吸收中间膜玻璃的 300–380 nm 平均 UV-Trans 为小于 1%（s08），365 nm 单点未验证。日光与 UV 灯须分开标注。参考条件：s30 的 UV-A 365 nm、1.9 mW/cm²、30 min 为探针实验条件，不是 F 路线条件。s16 的 4 mW/cm² 与 30 min 换算约 7200 mJ/cm²，仅为量级，不代表 F 路线。"},
+  {"route_key": "F", "column": "c04", "text": "后处理：停止阶段拟为喷雾（磷酸盐溶液）而非水洗，但磷酸盐溶液的 pH 与对染料颜色的影响未测（f32）。若采用磷酸盐喷雾，须列为'喷雾停止'而非'免洗'，并附 pH 测量值。"},
+  {"route_key": "F", "column": "c05", "text": "免洗真实程度（六条底线）：1 免洗 ?（喷雾不需水洗，但残留颜色变化未验证）；2 白区停得住 ?（磷酸盐仅部分抑制，且低浓度可升高空穴路径，f20、f22；回色风险 f11/f12）；3 成色留得住 ?（TiO2 包覆与 SiO2 方向依赖相与载量，f17、f19）；4 少量均匀喷液即可 ?（抑制需 0.5–12.5 mM 量级，效果非线性，f20，需剂量实测）；5 真实底材 ?（未检索）；6 安全前置 ✗（氟化物 H301，f24）/ ?（磷酸氢二钾，f25：约 41% 通知 H315、约 10% 通知 H318 Danger，并非低危；需 SDS 与标签级别）。"},
+  {"route_key": "F", "column": "c06", "text": "停止机制（修订）：磷酸盐为部分候选：高浓度时抑制碘离子（空穴）氧化与 •OH 生成，低浓度（约 5 mM 以下）则空穴氧化升高（s30 全文）；对 TiO2–MTT 还原体系为增强（s31），方向不一致，需染料终点实测（E2）。氟化物 ✗（方向不一致，s24–s26；H301）。封层候选：超薄 Al2O3（ALD，约 1 nm，抑制 TiO2 活性，s20，工艺不适家用）；SiO2 包覆 ✗（染料加速，s21；金红石全覆盖时活性增强，s22）。避光不计入停止。暗态停止无直接文献证据（f35）。"},
+  {"route_key": "F", "column": "c07", "text": "白区长期稳定性：未曝光区仍处于 TiO2 与可见或紫外的共同作用下，存在持续增敏漂白的机理风险（f08、f09）；已漂白区（若为还原态）在空气中可回色（f11）。目前无 TiO2 + 染料 + 封层体系的白区长期稳定性数据（f33），写'未知 + 缺 72 h 背景漂白与回色实测'。"},
+  {"route_key": "F", "column": "c08", "text": "成色长期耐光：本轮未取得任何 TiO2 + 染料体系的加速耐光数据（f33）。只报数据本身为零，不换算年限。"},
+  {"route_key": "F", "column": "c09", "text": "预涂介质货架期：未找到 TiO2 与染料预涂的货架期文献（未知）。现涂形态的混合液寿命亦未检索。需补充 TiO2 分散体的 pH、染料在碱性或酸性下的稳定性（f29、f32）。"},
+  {"route_key": "F", "column": "c10", "text": "底材适配（修订）：纸基铁含量的影响方向未知。s14 显示 Fe3+ 在 TiO2 hydrosol 中加速染料光降解，但在 TiO2 分散体（powder dispersion）中抑制活性；F 路线若为颜料粉体，不得采用'加速'结论，应在底材规格中同时限定铁含量并实测两种方向。原稿把 s14 结论直接推至纸基，属推断冒充事实，已删除。封层与 TiO2 包覆的选择应同时考虑对染料光活性的影响（s19–s22）；SiO2 包覆方向依赖相与载量。涂布与吸湿变形未检索，写未知。抗坏血酸（VC）可加速 TiO2 介导的降解（s23），若配方含 VC 须列入风险项。"},
+  {"route_key": "F", "column": "c11", "text": "安全与法规（修订）：亚甲蓝 H302（91.6%）、H318（25.6%）、H412（10.3%）（s39），为药物（MAOI，G6PD 风险程度有争议，s37）；靛胭脂为 FD&C Blue No. 2，食用获准，GHS H302（Warning）（s38）；氟化钠 H301（97.1%）、H315、H319（s40），不得进入家用套装；磷酸氢二钾 H315（40.7%）、H318（10.4%，Danger），约 48.2% 报告不满足危害分类（s41），不得写作'多数通知不满足'。以上均为 PubChem/百科汇总，需厂商 SDS 复核；成人美术材料路线（ASTM D-4236 / LHAMA）的符合性本轮未检索。"},
+  {"route_key": "F", "column": "c12", "text": "供应与成本：本轮未检索价格、库存与在售状态，全部未验证。"},
+  {"route_key": "F", "column": "c13", "text": "证据等级（修订）：关键主张 10 条——锐钛矿 387 nm（f01，A，已重读）；金红石 3.0–3.2 eV 与偶极禁阻（f02，A）；玻璃 UV 透过（f04 A，已 curl 核验；f06 A，已修正为 UV-Trans 列，最高 29%）；TiO2 光氧化粘结剂（f16，A）；包覆抑制（f17、f18，A，已重读）；磷酸盐部分抑制（f20，A，全文已核验）；氟化物方向不一致（f23，A，s26 已修正）；MB 回色（f11，A，含还原剂，已重读）；安全汇总（f24–f26，B，PubChem 已核验）；背景褪色速率（f15，未验证，C）。推断项：f22 降为 B，f35 降为 C。"},
+  {"route_key": "F", "column": "c14", "text": "关键未知（最可能翻盘的 1–2 个）：(1) F 路线实际染料在 365 nm、395 nm 与窗后日光下未曝光区的背景褪色速率为零数据（f15），若可见段增敏显著，'UV 为主'的假设需推翻（s09、s28 支持可见段路径）；(2) 磷酸盐在染料体系中是否能把未曝光区漂白速率降到可接受水平，且低浓度是否增强空穴路径（f20、f22、f36）。"},
+  {"route_key": "F", "column": "c15", "text": "判别实验：在同一批 TiO2 + 候选染料条带上比较 365 nm 与 395 nm LED（等辐照度）、磷酸盐喷雾（0.5/5/25 mM）与对照，测 0、1、24、72 h 未曝光区的 ΔE*ab，若磷酸盐组背景褪色下降不足 50% 则淘汰磷酸盐（E2）。"}
+ ],
+ "experiment_design": {
+  "goal": "在 F 路线（TiO2 增敏/光催化漂白 + 喷后停止 + 封层）中判别：(a) 背景（未曝光区）是否稳定；(b) 磷酸盐能否作为部分停止剂且不增强空穴路径；(c) 白区是否会回色；(d) 365 nm 与 395 nm 对漂白的相对贡献。",
+  "assumptions": [
+   "F 路线为 TiO2 与可漂白染料（MB、靛胭脂、花青素或食用色素）的体系，成像靠 UV 或可见光漂白；若实际配方不同，需替换对应实验对象。",
+   "以下 ΔE*ab、时间与浓度阈值为本设计的提议值，未经文献验证，需项目组确定。",
+   "文献中的漂白速率均来自实验室反应器，不得直接外推到家用条件。",
+   "K2HPO4 溶液的 pH 未测（本核查推算约 9–10）；E2 须实测各浓度 pH。"
+  ],
+  "experiments": [
+   {"id": "E1", "name": "窗玻璃与波长判别", "design": "同批 TiO2 + 候选染料条带；365 nm LED 与 395 nm LED 等辐照度（标定光谱，1 与 4 mW/cm² 两档）各曝光 30 min；另设三组窗后日光：单片透明玻璃、夹层 UV 吸收玻璃、无玻璃对照。用反射分光测曝光区与未曝光区的 ΔE*ab 与对比度。", "success": "395 nm 组对比度不低于 365 nm 组的 50%，判为可见段增敏显著，F 路线不能假设'超过 387 nm 即无效'。", "falsify": "395 nm 组对比度不高于 20%（或与暗对照无显著差异），判为可见段增敏可忽略。20%–50% 之间判为待定，需加样本量复测。"},
+   {"id": "E2", "name": "曝光后停止剂（磷酸盐、氟化物）", "design": "曝光 10 min；喷雾分组：对照（水）、磷酸氢二钾 0.5 / 5 / 25 mM（分别测 pH，至少一组调至 pH 6–7 并另设对照）、氟化钠 0.5 / 5 mM（仅作否定对照，在通风柜内操作）。喷后 0、1、24、72 h 分别在暗态与日光模拟下测未曝光区 ΔE*ab 与曝光区对比度；并增设空穴探针（碘离子）同步测量以对照 s30 的低浓度升高现象。", "success": "磷酸盐组未曝光区 72 h 的 ΔE*ab 比对照下降不少于 50%，且曝光区对比度保留不少于 80%（提议阈值），且空穴探针未显示同浓度下升高。", "falsify": "磷酸盐组下降不足 50%，则磷酸盐不作为停止剂；磷酸盐组未曝光区 ΔE*ab 增大，则淘汰；氟化钠组未曝光区 ΔE*ab 增大（加速），则淘汰氟化物（与 f23 方向一致）。"},
+   {"id": "E3", "name": "漂白态回色（leuco）检验", "design": "两组：(i) TiO2 + MB 无还原组分；(ii) TiO2 + MB + 项目实际配方中可能的还原组分（如糖类或抗坏血酸类，视配方）。曝光至漂白后分封装组（氮气或铝箔封层）与开放组，记录 0、1、6、24、48、72 h 反射。", "success": "白区 72 h 内 ΔE*ab 不超过提议阈值 1.0（与 decision_rules 统一）。", "falsify": "开放组 48 h 内回色超过阈值 1.0，则白区不稳定，需封层或更换染料（与 f11 一致）。"},
+   {"id": "E4", "name": "染料基线光稳定（无 TiO2）", "design": "染料 + 同一粘结剂 + 同一纸基（无 TiO2）在日光模拟与 365/395 nm 光下 30 min 与 24 h；与 TiO2 组对照，分离 TiO2 驱动的漂白与染料自身光褪色。", "success": "无 TiO2 组 24 h ΔE*ab 不超过 1，则染料本身稳定，漂白主要来自 TiO2。", "falsify": "无 TiO2 组即显著褪色，则染料不适合作为 F 路线的背景层，需更换。"},
+   {"id": "E5", "name": "TiO2 包覆与封层对照", "design": "TiO2 原粉；氧化铝包覆 2–5 wt% 与 7–10 wt%；SiO2 包覆低于 3.25 wt% 与更高载量（依 s22 设计，并单独设金红石全覆盖组）；同光源 E1 条件下测漂白速率与粘结剂白化（chalking）。", "success": "包覆组漂白速率下降不少于 50%，且无白化，则该包覆可作为封层候选。", "falsify": "SiO2 组若比原粉更快漂白，则淘汰 SiO2 作为白区封层（与 f19 的多数方向一致）。"}
+  ],
+  "decision_rules": [
+   "白区 72 h 的 ΔE*ab 超过阈值 1.0 的，视为白区不稳定，F 路线不进入下一阶段（阈值全文统一为 1.0，原稿 E3 的 1.5 已删除）。",
+   "停止剂候选须同时满足：白区 ΔE*ab 改善不少于 50%，曝光区对比度保留不少于 80%，空穴探针未显示同浓度升高，且安全 SDS 无 H301 类急性毒性。",
+   "365 nm 与 395 nm 的相对贡献决定窗后曝光是否可接受；若 395 nm 贡献按 E1 判据为显著，窗后曝光须不允许。"
+  ],
+  "safety": [
+   "TiO2 粉末、磷酸盐与氟化钠溶液操作须戴护目镜、手套并在通风柜内完成；氟化钠只在实验室内使用，不纳入家用方案。",
+   "亚甲蓝有 H318（严重眼损伤）与药理风险，喷涂与称量需个人防护；磷酸氢二钾亦有 H318（10.4% 通知）；所有安全数据需以厂商 SDS 复核后执行。"
+  ]
+ },
+ "reconciliation_log": [
+  {"id": "R01", "item": "f06 UV-Trans 范围", "original": "多款 LoĒ 组合小于 1% 至 31%", "revised": "小于 1% 至 29%（UV-Trans 列）", "reason": "31% 为 ISO-CIE 列数值（Quad LoĒ-452+/Lami 行）", "verdict": "反驳", "source": "s08"},
+  {"id": "R02", "item": "f16 PVC 对照组", "original": "速率约为对照的两倍（对照未说明）", "revised": "约为 PVC-TiO2 膜的两倍、约为纯 PVC 膜的十五倍；含 VC", "reason": "s23 全摘要", "verdict": "反驳", "source": "s23"},
+  {"id": "R03", "item": "f19 SiO2 截断备注", "original": "s22 更高载量结论句被截断", "revised": "全摘要已读；补入金红石全覆盖时活性增强", "reason": "截断已解决，原备注过时且遗漏反向结果", "verdict": "证实（备注更新）", "source": "s22"},
+  {"id": "R04", "item": "f20 磷酸盐空穴方向", "original": "仅碳酸盐与磷酸盐抑制碘离子氧化；≤5 mM 升高", "revised": "保留，并补入测试条件（UV-A 365 nm 1.9 mW/cm²，30 min，pH 7.9，20 mg/L P25）与全文'Photogenerated hole production is increased at lower concentrations'", "reason": "PMC 全文核验", "verdict": "证实（补充）", "source": "s30"},
+  {"id": "R05", "item": "f22 磷酸盐支持文献", "original": "s31 作为'可调节'的假设支持", "revised": "s31 Findings 显示磷酸盐增强 MTT 还原（f36）；f22 降为 B、判'未能证实'", "reason": "原稿只读 Hypothesis 段，方向相反", "verdict": "反驳", "source": "s31"},
+  {"id": "R06", "item": "f23 s26 NOx 体系", "original": "F⁻ 以吸附形式影响活性（s26 截断）", "revised": "表面吸附 F⁻ 抑制 NOx 光催化氧化（全摘要）", "reason": "全摘要明示抑制", "verdict": "证实（描述修正）", "source": "s26"},
+  {"id": "R07", "item": "f25 K2HPO4 措辞", "original": "磷酸氢二钾多数通知不满足危害分类", "revised": "约 48.2% 报告不满足；H318（Danger）约 10.4%", "reason": "48.2% 非多数；H318 不可忽略", "verdict": "反驳（措辞）", "source": "s41"},
+  {"id": "R08", "item": "f27 G6PD", "original": "G6PD 缺乏者有溶血风险", "revised": "补入百科注明的风险程度争议", "reason": "百科原文", "verdict": "证实（补充）", "source": "s37"},
+  {"id": "R09", "item": "f28 靛胭脂 pH 窗口", "original": "可作 pH 指示剂", "revised": "指示变色窗口约 pH 11.4–13.0（蓝至黄）", "reason": "百科数据，影响 f32", "verdict": "证实（补充）", "source": "s38"},
+  {"id": "R10", "item": "f30 紫外条件", "original": "在紫外条件下，靛胭脂脱色最快", "revised": "排序证实；光源未核实，删除'紫外条件'", "reason": "摘要未给光源", "verdict": "未能证实（条件）", "source": "s32"},
+  {"id": "R11", "item": "f32 靛胭脂碱性变色", "original": "碱性停止剂可能改变靛胭脂颜色", "revised": "靛胭脂部分反驳（窗口 pH 11.4–13.0 远高于推算的 K2HPO4 pH）；花青素部分保留", "reason": "R09 的 pH 窗口；K2HPO4 pH 为推算，待 E2 测定", "verdict": "反驳（靛胭脂）", "source": "s38"},
+  {"id": "R12", "item": "f34 综合判断", "original": "磷酸盐是唯一有一定文献支撑的停止候选", "revised": "未能证实；磷酸盐为待测候选", "reason": "R04、R05、f36 反向证据；f37 正向证据", "verdict": "未能证实", "source": "s30, s31, s28"},
+  {"id": "R13", "item": "f35 暗态停止", "original": "推断，grade A", "revised": "推断，grade C；直接文献证据缺失", "reason": "PubMed 暗态停止检索 0 命中", "verdict": "未能证实", "source": "negative_findings"},
+  {"id": "R14", "item": "f02 偶极禁阻", "original": "金红石直接带隙 3.0–3.2 eV，对应 387–413 nm", "revised": "保留，补入偶极禁阻与间接带隙", "reason": "s03 摘要", "verdict": "证实（遗漏补充）", "source": "s03"},
+  {"id": "R15", "item": "f04 太阳紫外与玻璃类型", "original": "厂商数据", "revised": "保留；注明 ISO 9050 加权，非 365 nm 单点", "reason": "s07 PDF 核验", "verdict": "证实", "source": "s07"},
+  {"id": "R16", "item": "c10 Fe3+ 纸基", "original": "纸基中的痕量 Fe3+ 可加速可见光染料降解", "revised": "方向依赖 TiO2 形态；powder 中 Fe3+ 抑制；纸基方向未知", "reason": "s14 摘要，推断冒充事实", "verdict": "反驳", "source": "s14"},
+  {"id": "R17", "item": "c06 磷酸盐抑制空穴", "original": "磷酸盐特异吸附并部分抑制 •OH 与空穴路径", "revised": "高浓度抑制；低浓度空穴升高；还原体系增强（s31）", "reason": "s30 全文，s31 摘要", "verdict": "反驳（部分）", "source": "s30, s31"},
+  {"id": "R18", "item": "c05 底线 6 磷酸盐", "original": "磷酸盐，低危但需 SDS", "revised": "H318（Danger）约 10.4% 通知，不宜写作低危", "reason": "PubChem 核验", "verdict": "反驳（措辞）", "source": "s41"},
+  {"id": "R19", "item": "E3 白区阈值", "original": "ΔE*ab 1.5（E3），1.0（decision_rules）", "revised": "统一为 1.0", "reason": "同一量两个阈值", "verdict": "结构修正", "source": "内部"},
+  {"id": "R20", "item": "E1 判据空档", "original": "成功判据 ≥50%，证伪判据仅'无显著差异'", "revised": "≥50% 为显著；≤20% 为可忽略；20–50% 待定", "reason": "原判据之间存在空档", "verdict": "结构修正", "source": "内部"},
+  {"id": "R21", "item": "s09 标题", "original": "Visible-light-induced degradation of fluoroquinolone antibiotics by TiO2", "revised": "Visible-light-Mediated TiO2 photocatalysis of fluoroquinolone antibacterial agents", "reason": "PubMed 实际标题", "verdict": "结构修正", "source": "s09"},
+  {"id": "R22", "item": "s08 版本日期", "original": "版本未核", "revised": "Last Updated: August 7, 2025", "reason": "页面注明", "verdict": "结构修正", "source": "s08"},
+  {"id": "R23", "item": "新增 f36（s31 反向）与 f37（s28 可见光正向）", "original": "无", "revised": "新增两条 findings", "reason": "对抗核查补充正反双向证据", "verdict": "新增", "source": "s28, s31"},
+  {"id": "R24", "item": "WebSearch 负结果", "original": "无", "revised": "新增一条 negative_findings（溶液磷酸盐抑制染料降解：未找到）", "reason": "本核查 WebSearch 1 次", "verdict": "新增", "source": "WebSearch"},
+  {"id": "R25", "item": "f29 与 f30 'UV'/'多数' 措辞", "original": "多数染料与光源重叠；在紫外条件下", "revised": "除 ICG 外全部重叠；光源未核实", "reason": "s34、s32 摘要", "verdict": "证实（措辞修正）", "source": "s34, s32"}
+ ]
+}

@@ -1,0 +1,634 @@
+{
+  "key": "dylux_photodeactivation",
+  "name_zh": "Dylux 型光灭活成像（HABI + leuco 染料，可见光灭活）",
+  "name_en": "DuPont Dylux-type photodeactivatable imaging: HABI + leuco dye, fixed by visible light",
+  "status": "done（已核查修订，见 reconciliation_log）",
+  "columns": {
+    "c01_机制": {
+      "text": "UV 使 HABI（以 2,2'-双（邻氯苯基）四芳基联咪唑类为代表）中连接两个咪唑环的键断裂，生成 2,4,5-三芳基咪唑基自由基（lophyl radical，蓝色）。该自由基从 leuco 三芳甲烷染料（酸盐形式）夺取氢（专利称 hydrogen abstraction，并伴随电子移除），使其氧化为有色染料，形成成像（US3445234）。光灭活：第二波长的可见至近紫外光激活醌与还原剂组成的氧化还原对，醌被还原为对苯二酚，对苯二酚与已光解的 HABI 反应生成无色产物，使残余 HABI 永久失活。1968 体系（US3390994）的还原剂为次氮基三丙酸低级烷基酯，光源 >3900 Å；1971 体系（US3579342）的还原剂为聚醚（含 -CH2-O- 基团），光源段 4200–5500 Å。「醚」只属于 1971 体系。",
+      "grade": "A",
+      "label": "事实（专利机理描述，已核对原文；键断裂有 B 级百科佐证）",
+      "source_ids": ["S01", "S02", "S03", "S04"]
+    },
+    "c02_极性与色调能力": {
+      "text": "正像与负像均可，取决于两种波长的先后顺序（US3390994：'either a positive or a negative copy depending upon the order'）。色调：以深蓝为主（US3579342 Example 1：'deep blue color'）。连续色调：专利称 'excellent gradation of tone'（US3390994）。多色扩展：专利称 'in a variety of colors'，并称色相由所用 aminotriarylmethane 决定；具体色谱未验证。单色相：是（本路线原生为蓝色）。",
+      "grade": "A",
+      "label": "事实（专利原文，已核对）；多色扩展为未验证",
+      "source_ids": ["S03", "S04"]
+    },
+    "c03_曝光条件": {
+      "text": "成像：US3579342 Example 1 为氙闪光接触曝光（HiCo Lite，近似未滤光日光，经 Corning 7-54 滤光片）；US3445234 示例为直射日光 5 秒显蓝，另有摄影闪光 0.001 秒显蓝示例。US3390994 的成像闪光时长正文未给出。未报告 mJ/cm² 成像剂量，无日光与 UV 灯之间的统一标定。停止（光灭活）：US3579342 为 4360 Å、15 mW/cm²、70 秒完全失活，按算术约 1050 mJ/cm²（本报告计算；单色光，不可外推到台灯或日光）。US3390994 称单次闪光管脉冲约 10 毫秒即可用 >3900 Å 光完成失活（实验室氙闪光）。室内荧光灯（50 英尺烛光）约 8 小时可使背景失活（US3390994 示例）。US3390994 另称许多配方可由普通室内光完成停止，'no separate deactivation step is required'。与 30 分钟目标的关系：成像时间看似可达（推断）；环境光下停止在 30 分钟内是否充分仍无数据（推断，需判别实验）。",
+      "grade": "A",
+      "label": "事实（专利示例，已核对）；与 30 分钟目标的关系为推断",
+      "source_ids": ["S02", "S03", "S04"]
+    },
+    "c04_显影或成像后处理": {
+      "text": "无湿法显影：US3390994 称 'dry'，并在 'one embodiment'（一种实施方式）中 'requires no development step'。停止可选三种：(a) 环境光或可见/近紫外泛照完成失活，无液体（US3390994、US3579342；US3579342 称组合物对环境光足够稳定，无需受控照射即可定影，速度未量化）；(b) 对苯二酚溶液喷涂或浸渍（US3445234 'fixing treatment'）；(c) 水洗去除未反应 leuco 染料（US3445234）。",
+      "grade": "A",
+      "label": "事实（专利原文，已核对；已补充 'one embodiment' 限定）",
+      "source_ids": ["S02", "S03", "S04"]
+    },
+    "c05_免洗的真实程度": {
+      "text": "光灭活路线：无水洗、无喷液。原稿称「比喷后免洗多一步泛光」，经核对修正：US3390994 称许多配方可由普通室内光完成停止，'no separate deactivation step is required'；US3579342 称无需受控照射即可定影。因此「额外处理步骤」取决于环境光下的停止时长，该时长未量化。对苯二酚喷液路线：免水洗，但化学停止剂的 SDS 含 Danger 级 H340、H360、H370、H372 等代码（见 c11）。逐条：1 ?（环境光停止可视为无额外步骤，时长未知）；2 ?（有定性对比，无定量数据，不给 ✓）；3 ?（成色耐光无数据）；4 ?（光灭活无喷液，字面不适用；对苯二酚子路线用量未知）；5 ?（仅纸基示例）；6 ?（主路线无 ASTM D-4236 / LHAMA 评估；对苯二酚子路线倾向 ✗，推断）。综合：主路线无 ✓ 无 ✗，全部为 ?；对苯二酚喷液子路线第 6 条倾向 ✗（推断）。",
+      "grade": "B",
+      "label": "推断（基于已核对的专利原文与字面判读；原稿 ✓ 倾向已降为 ?）",
+      "source_ids": ["S02", "S03", "S04", "S11"]
+    },
+    "c06_停止机制": {
+      "text": "光灭活（主动的光化学灭活，不是避光暂停）：第二波长光激活氧化还原对，醌被还原为对苯二酚，对苯二酚与 HABI 反应使其不能再显色（US3390994、US3579342）。US3579342 组成（权利要求）：leuco 三芳甲烷盐；HABI（每摩尔 leuco 盐 1–2 摩尔；权利要求指定为 2,2'-双（邻氯苯基）-4,4',5,5'-四（间甲氧基苯基）联咪唑变体）；1,6-/1,8-芘醌（0.04–0.4 摩尔/摩尔 HABI）；9,10-菲醌（0.05–2 摩尔/摩尔 HABI，优选 0.15–0.75）；含 -CH2-O- 的醚（50–500 个 oxymethylene 基/摩尔醌）。US3390994 的还原剂为次氮基三丙酸低级烷基酯，不含醚。备选化学停止剂：对苯二酚（US3445234，喷涂或浸渍）。红线核查：配方与停止步骤中未见亚铁氰化钾、重铬酸盐、普鲁士蓝；但 US3445234 在 HABI 上游合成中使用 aqueous potassium ferricyanide（氢氧化钾乙醇溶液中，洗净铁氰化物），这是碱性合成步骤而非停止剂，若自制 HABI 需单独红线评估，并避免与强酸同处。配方含对甲苯磺酸（强有机酸）；Lewis 酸 FeCl3（ferric chloride）不是铁氰化物。家庭可行性为推断。",
+      "grade": "A",
+      "label": "事实（专利组成与机理，已核对）；红线已修正；家庭可行性为推断",
+      "source_ids": ["S02", "S03", "S04"]
+    },
+    "c07_白区长期稳定性": {
+      "text": "专利主张（已核对）：US3579342 的醌混合加醚配方在室内荧光灯（24 小时，50 英尺烛光）、冬季上午天空光（1 分钟）和冬季午后直射阳光（1 分钟）测试中，背景光密度增量明显低于单醌或无醚对照。专利原文称单醌配方在室内光下 'substantially less stable ... they form some blue color'（中文为译文）。对比数据表在 Google Patents 文本中缺失，无数值（未验证）。残留风险：HABI 吸收延伸至约 430 nm 紫色段（US3579342 原文 'as high as 430'），日光下可能继续缓慢显色（推断）。指纹敏感：US3579342 Example 20 以指纹测试证明醚配方的优势，指纹处显色是已知失效模式。",
+      "grade": "A",
+      "label": "事实（定性专利主张，已核对）；定量数值未验证",
+      "source_ids": ["S04"]
+    },
+    "c08_成色长期耐光": {
+      "text": "未知，无可引用的加速耐光数值。US3445234 原文：图像颜色 'will be subject to color change in accordance with the fastness to light of the particular dye employed'，即成色耐光由所用染料决定，未给数值。HABI 自由基的蓝色为暂态且会褪色（US3445234 称 'fugitive'），不计入成色。缺：所用 leuco 染料的耐光测试（如按 ISO 105-B02 或氙灯加速）。本报告不做年限换算。",
+      "grade": "A",
+      "label": "未验证（缺数据）",
+      "source_ids": ["S02"]
+    },
+    "c09_预涂介质货架期": {
+      "text": "形态：专利实施例为现涂式（US3579342 以丙酮溶液涂布于漂白亚硫酸盐纸，干膜约 0.4 mil）；Dylux 商品是否出厂预涂未验证。货架期：US3390994 权利要求称 leuco 盐 'stable to oxidation by atmospheric oxygen under normal room and storage conditions'；US3579342 称成品 'dry to the touch and stable to storage at room temperature'。US3445234 指出部分 aminotriarylmethane 在暗储存中发生显色暗反应并导致灰雾（fogging），另一些则不发生因此被优选，即暗稳定性随配方而异，并非一概优良。US3579342 称数小时 90 °C 可能降低感光度；芘醌用量过大会在储存中析出沉淀。未给出货架期时长。混合液（丙酮加 CAB 粘结剂加醌加醚）寿命未报告，视为未知。",
+      "grade": "A",
+      "label": "事实（定性，已核对）；货架期时长未知；原稿「储存中暗稳定性优良」已删除",
+      "source_ids": ["S02", "S03", "S04"]
+    },
+    "c10_底材适配": {
+      "text": "专利底材：漂白亚硫酸盐卷材纸（US3579342 Example 1）；US3445234 泛指纸（'from tissue paper to heavy cardboard'）、薄膜与 'textile fabrics'。原文未见棉布字样，原稿「棉布」已删。灰板裱白卡、热升华空白坯：未验证。吸湿变形：专利无数据；'Dylux 不收缩' 仅见于本地摘要所引 Conservation Wiki，该页面 HTTP 404、无正文，未核实。丙酮溶剂对灰板及封层的兼容性未知。",
+      "grade": "B",
+      "label": "未验证（纸基有专利示例，拼图底材无数据）",
+      "source_ids": ["S02", "S04", "S14"]
+    },
+    "c11_安全与法规": {
+      "text": "红线：配方与停止步骤未命中（无亚铁氰化钾、重铬酸盐、普鲁士蓝及碱性停止步骤）；但 US3445234 的 HABI 上游合成使用铁氰化钾（碱性，见 c06），须单独注明。成分 SDS（PubChem 为 ECHA C&L 聚合，本轮已核对）：leucocrystal violet（CAS 603-48-5）H315 (24.2%)、H319 (24.8%)、H335 (23.6%)、H400 (41.2%)、H410 (41.2%)；9,10-菲醌（CAS 84-11-7）H315 (96.7%)、H319 (100%)、H335 (27%)；对苯二酚（CAS 123-31-9）信号词 Danger，聚合代码含 H302、H312、H315、H316、H317、H318、H319、H336、H340、H341、H351、H360、H370、H372、H373、H400、H410，其中 Danger 级包括 H318、H340、H360、H370、H372（原稿遗漏 H340、H360、H370、H372）；o-Cl-HABI（CAS 1707-68-2）PubChem CID 74357 无 GHS 数据（PUGVIEW.NotFound，本轮重测），ChemicalBook 标 GHS07 Warning，H302、H315、H319、H335（来源不明，未核实）；芘醌、聚醚组分、丙酮的可靠 SDS 本轮未获得（缺）。法规：ASTM D-4236 与 LHAMA 未评估；成人美术材料可达性未知。PPE 与通风：推断需手套、护目镜、通风，丙酮为易燃溶剂。",
+      "grade": "A",
+      "label": "事实（聚合 SDS 数据，已核对）；o-Cl-HABI 分类未核实；法规评估未做",
+      "source_ids": ["S08", "S09", "S10", "S11", "S12"]
+    },
+    "c12_供应与成本": {
+      "text": "价格：全部未验证（本轮未读到可引用价格；页面读取日期 2026-11-01）。o-Cl-HABI：ChemicalBook 目录列出 18 家供应商（本轮已数），名称多为中国企业，未逐一核验，无价格、无库存。PubChem 分子式 C42H28Cl2N4（MW 659.6）与 ChemicalBook 的 C42H26Cl4N4（MW 728.49）冲突；ChemicalBook 自身的名称与 SMILES 只含两个 Cl，其分子式字段疑似有误（推断）。购买前必须索取 CoA 与 NMR/MS 核对身份。另须注意：US3579342 权利要求的 HABI 为四（间甲氧基苯基）变体，与 CAS 1707-68-2（四苯基，US3445234 示例）不同，采购前应先确定配方所用 HABI。leucocrystal violet：Dharma 搜索 0 结果；Jacquard 搜索页未显示相关商品（未确认）；Fisher 商品页 403 不可读；本地资料包提到法医用品渠道（Lightning Powder 等），未读。Dylux 纸：当前供应未确认（见 c13）。",
+      "grade": "B",
+      "label": "未验证（价格、库存、在售状态均未证实）",
+      "source_ids": ["S08", "S09", "S16", "L02"]
+    },
+    "c13_证据等级": {
+      "text": "1 [A·事实] US3445234（1969-05-20 授权）：leuco+HABI 经 UV 氧化成色；对苯二酚喷涂或浸渍固定；水洗去除未反应 leuco 染料。2 [A·事实] US3390994（1968-07-02 授权）：第二波长光永久失活，>3900 Å；示例中约 10 毫秒闪光管脉冲完成失活；室内荧光约 8 小时使背景失活；还原剂为次氮基三丙酸低级烷基酯（非醚）。3 [A·事实] US3579342（1971-05-18 公布；1968-06-27 申请）：醌+聚醚体系；4360 Å/15 mW/cm²/70 秒失活；4200–5500 Å 光源段；HABI 为四（间甲氧基苯基）变体（权利要求）。4 [A·事实，定量缺] US3579342 称对环境光足够稳定，无需受控照射即可定影；定影速度与对比表数值缺失。5 [A·元数据] Dessauer 2006 章节（Elsevier，ISBN 9780444527707，pp. 73–122）与 2005-03-25 个人史（Advances in Photochemistry），Crossref 元数据，正文不可读。6 [推断] 商品 Dylux 配方属于上述专利族：依据为同一公司、同一 HABI 化学、章节题名；未见商品配方原文。7 [B·事实，已修正] Wikipedia（最后编辑 2025-01-30）：UV 断键使 HABI 变深蓝，转变需十秒或更长；快速转换（约 180 ms）与撤光后快速褪色仅见于萘修饰或环芳烃变体。通用自由基颜色的褪色依据为 US3445234 的 'fugitive'。8 [A·事实] PubChem CID 74357 与 ChemicalBook CAS 1707-68-2 分子式冲突（C42H28Cl2N4 与 C42H26Cl4N4）。9 [B·事实，未闭合] 1986 年 DuPont 与 Xerox 合资成立 DX Imaging（Hagley 公告，已核对）；Dylux 停产时间与原因无一手依据，未找到停产公告。10 [C·未读 / 不可读] 论坛称 DuPont 退出胶片与纸业（Photrio 原页 403，未绕过）；1996 年 DuPont 图形艺术业务出售给 Agfa 的摘录（PrintAction 原页 202 空响应），是否包含 Dylux 未确认。",
+      "grade": "A/B/C（逐条见正文）",
+      "label": "混合：事实与推断、未验证分别标注（已合并为 10 条，满足 5–10 条上限）",
+      "source_ids": ["S01", "S02", "S03", "S04", "S05", "S06", "S07", "S08", "S09", "S13", "S15", "S16"]
+    },
+    "c14_关键未知": {
+      "text": "最可能翻盘的两项：(1) 环境光（台灯、室内光、日光）下停止的实际时长。专利只给出 70 秒 15 mW/cm² 的单色 4360 Å 强光、约 10 毫秒闪光管脉冲、约 8 小时室内荧光灯三个数点，中间区间没有数据；若需要数小时，则直接不可用于 30 分钟节奏。(2) 安全与法规归类。醌类、HABI、leuco 染料与丙酮组合未经 ASTM D-4236 或 LHAMA 评估；若采用对苯二酚替代路线，PubChem 聚合的 Danger 级 H340、H360、H370、H372 使其基本不可过关。其他未知：HABI 身份（四苯基 CAS 1707-68-2 与四（间甲氧基苯基）变体二选一）；Dylux 停产时间与现有产品；商品配方是否即专利族；白区在日光下的残留显色量（HABI 430 nm 尾部）；耐光与货架期数值；灰板底材变形。",
+      "grade": "B",
+      "label": "未验证",
+      "source_ids": ["S02", "S03", "S04", "S10", "S11"]
+    },
+    "c15_判别实验": {
+      "text": "用同一配方（leuco 盐 + HABI（先经 NMR 或 MS 定身份）+ 9,10-菲醌 + 聚醚，并设去醚与去菲醌两组对照）涂漂白纸，UV 成像后用台灯、日光分别泛照 1、5、30、60 分钟，测白区光密度增量；若只有完整配方在 60 分钟内增量低于预设阈值，且对照组明显更差，则支持该停止路线，否则淘汰。",
+      "grade": "—",
+      "label": "设计（待实验）",
+      "source_ids": ["S04"]
+    }
+  },
+  "c05_免洗核验": {
+    "验收": {
+      "1_喷后免洗": "? 理由：光灭活路线不需水洗、无喷液。US3390994 称许多配方可由普通室内光完成停止，故「额外泛光步骤」并非专利要求；但环境光下的停止时长未量化，无法判 ✓。",
+      "2_白区停得住": "? 理由：专利有定性对比（US3579342），但对比表数值在 Google Patents 文本中缺失，不给 ✓（原稿「倾向 ✓」已降级）。",
+      "3_成色留得住": "? 理由：成色耐光由所用染料决定（US3445234 原文），无数据。",
+      "4_少量喷液": "? 理由：光灭活路线无喷液，字面不适用；若改用对苯二酚喷液，其用量与均匀性未知。",
+      "5_底材不变形": "? 理由：只有纸基示例（漂白亚硫酸盐纸，丙酮溶液涂布，干膜约 0.4 mil）；灰板与拼图底材无数据。",
+      "6_安全前置": "? 理由（主路线）：无 ASTM D-4236 或 LHAMA 评估；leuco 染料、菲醌、HABI（ChemicalBook 标注，未核实）均有刺激类 H 语句。对苯二酚子路线：PubChem 聚合含 Danger 级 H340、H360、H370、H372，倾向 ✗（推断）。"
+    },
+    "说明": "主路线六条全部为 ?，无 ✓ 也无 ✗；对苯二酚喷液子路线第 6 条倾向 ✗。原稿称「第 1、2 条最接近通过」，经核对改为：两条都依赖未量化数据，尚不能判 ✓。"
+  },
+  "verdict": {
+    "status": "观察线",
+    "reasons": [
+      "机理一手证据强：DuPont 专利族（US3445234 于 1969 授权、US3390994 于 1968 授权、US3579342 于 1971 授权）直接描述 UV 成像与可见或近紫外光灭活，失活为化学永久失活（原文已核对）。",
+      "对 c06 有直接价值：停止不依赖喷液或水洗，也不是避光暂停，正对本矩阵的核心难点。",
+      "不能保留为「保留」的理由：(a) 商品 Dylux 的配方与停产时间均未证实；(b) 配方为多组分（leuco 盐 + HABI + 醌类 + 醚或氨基多羧酸酯 + 丙酮与粘结剂），家庭小批量复刻难度高；(c) HABI 身份在两个专利中不同（四苯基 CAS 1707-68-2 与四（间甲氧基苯基）变体），供应与身份未确认；(d) 耐光与货架期无数值，暗储存存在灰雾失效模式（US3445234）；(e) 环境光下停止的时长无数据；(f) 六条底线全部为 ?，无 ✓；对苯二酚子路线的 SDS 含 Danger 级 H340、H360、H370、H372，应淘汰该子路线。",
+      "未触发红线，因此不淘汰；但需附注：US3445234 的 HABI 上游合成使用铁氰化钾（碱性），若自制 HABI 须单独评估。列为观察线，待判别实验（c15）决定是否升级到保留或降为淘汰。"
+    ],
+    "red_line_hits": [
+      "配方与停止步骤未命中：无亚铁氰化钾、重铬酸盐、普鲁士蓝及碱性停止步骤。配方含对甲苯磺酸等强有机酸，但不是铁氰化物体系。",
+      "需附注：US3445234 在 HABI 上游合成中使用 aqueous potassium ferricyanide（氢氧化钾乙醇溶液，洗净铁氰化物）。这不是停止剂，但属于铁氰化物与碱性步骤同处，若自制 HABI 须单独做红线评估。",
+      "现实安全性未评估：丙酮溶剂、醌类刺激性、HABI 与 leuco 染料粉尘在家庭小量、通风有限条件下需单独评估。",
+      "对苯二酚喷液替代方案：PubChem 聚合的 H340、H341、H351、H360、H370、H372 等代码风险高，不建议用于儿童或家庭场景（倾向淘汰该子方案）。"
+    ]
+  },
+  "baseline_challenges": [
+    {
+      "round": "任务书历史先例（非旧轮次主张）",
+      "old_claim": "DuPont Dylux 打样纸：UV 成像，可见光灭活残余感光性",
+      "agree": "partly",
+      "my_evidence": "DuPont 专利 US3390994（1968）与 US3579342（1971）直接描述 UV 成像，以及第二波长光使残余感光性失活。US3579342 的 4200–5500 Å 光源明确属于可见光。US3390994 的失活光为 >3900 Å，并称许多配方可由普通室内光完成失活（'no separate deactivation step is required'），因此 1968 体系也不限于近紫外边缘。'商品 Dylux 即此配方' 未证实，依据仅为同一公司、同一 HABI 化学书的章节题名（Crossref 元数据）。",
+      "strength": "机制：A（专利一手，已核对）。Dylux 与专利族的同一性：推断，未验证。"
+    },
+    {
+      "round": "本地资料包 09-搜索结果整理.md 与 搜索记录.jsonl 第 130 条摘要（未核对）",
+      "old_claim": "Dylux 可见光步骤使有水印的薄处漂白并停止对 UV 响应（引 Conservation Wiki、Memory of Paper）",
+      "agree": "unverified",
+      "my_evidence": "Conservation Wiki 的 Dylux 页面 HTTP 404，正文为 'There is currently no text in this page'（原稿「存在但无正文」已更正为页面不存在）；Memory of Paper 未能读取；DuPont 专利的机制是化学失活（醌与对苯二酚对 HABI），未提水印漂白。水印接触曝光作为工艺描述仍可能成立，但证据未到手。",
+      "strength": "weak（来源未核实）"
+    },
+    {
+      "round": "本地资料包 搜索记录.jsonl 第 130 条摘要（未核对）",
+      "old_claim": "Dylux 为干法，不需要任何化学品，光即显影（引 MFA Cameo）",
+      "agree": "disagree（部分）",
+      "my_evidence": "'干法' 指无湿法显影，表述正确；但专利配方为多组分化学体系，包括酸盐形式的 leuco 染料、HABI、醌、醚（US3579342）或氨基多羧酸酯（US3390994）、酸、丙酮溶剂与纤维素酯粘结剂。MFA Cameo 页面 403，原文未能核对。",
+      "strength": "A（专利一手）对 未读（MFA）"
+    },
+    {
+      "round": "本地资料包 搜索记录.jsonl 第 130 条摘要（未核对）",
+      "old_claim": "Dylux 对 400–500 nm 可见光和 200–400 nm 紫外都敏感（引 MFA Cameo）",
+      "agree": "disagree（部分）",
+      "my_evidence": "专利支持的是 HABI 主吸收 2500–3700 Å，尾部延伸至约 430 nm（US3579342 原文 'as high as 430'）。400–500 nm 全段无专利依据。MFA 页面 403 未读。",
+      "strength": "A（专利，尾部吸收）；MFA 未核实"
+    },
+    {
+      "round": "本地资料包 搜索记录.jsonl 第 130 条摘要（未核对）",
+      "old_claim": "DuPont 于 1970 年发布 Dylux 产品（引 HABI 书摘）",
+      "agree": "unverified",
+      "my_evidence": "DuPont 的 HABI 专利族优先权为 1962 年，1968–1971 年陆续授权，技术早于 1970 年。Dessauer 2006 章节题名证明 Dylux 与 HABI 化学相关。'1970 年发布' 的日期未读到一手材料。",
+      "strength": "B（间接）"
+    },
+    {
+      "round": "任务书 Q14（00-任务复述与问题清单.md）：Dylux 已停产，仅作机制先例",
+      "old_claim": "停产（任务书隐含前提）",
+      "agree": "unverified",
+      "my_evidence": "未找到停产公告或一手记录。检索到：1986 年 DuPont 与 Xerox 合资成立 DX Imaging（Hagley，B，已核对）；1996 年 DuPont 将大部分图形艺术业务卖给 Agfa（搜索摘录，原页 202 不可读，未确认是否含 Dylux）；一篇无日期的行业文章称 DuPont 提供数字版 Dylux 打样纸，与停产相悖但时间不明；Photrio 论坛称 DuPont 退出胶片纸业（C 级，原页 403 不可读）。",
+      "strength": "weak；停产状态未解决"
+    },
+    {
+      "round": "本地资料包 搜索记录.jsonl 第 262、264 条（o-Cl-HABI 与 leuco CV SDS 摘要）",
+      "old_claim": "（隐含）o-Cl-HABI 与 leuco 染料的安全数据可直接获取",
+      "agree": "disagree",
+      "my_evidence": "o-Cl-HABI：PubChem CID 74357 分子式 C42H28Cl2N4（MW 659.6），GHS 无数据（PUGVIEW.NotFound，本轮重测）；ChemicalBook 同 CAS 标注分子式 C42H26Cl4N4（MW 728.49），GHS 为 H302、H315、H319、H335，但其名称与 SMILES 只含两个 Cl。两者冲突，本轮未取得 SDS。leuco CV：PubChem/ECHA 聚合为 H315、H319、H335、H400、H410（本轮已核对）。",
+      "strength": "A（PubChem）对 B（ChemicalBook）冲突"
+    }
+  ],
+  "sources": [
+    {
+      "id": "S01",
+      "title": "Hexaarylbiimidazole（Wikipedia 条目）",
+      "url": "https://en.wikipedia.org/wiki/Hexaarylbiimidazole",
+      "type": "百科（B）",
+      "access": "curl全文（核验轮重读）",
+      "date": "页面最后编辑 2025-01-30；读取 2026-11-01",
+      "quote": "ultraviolet light breaks the bond connecting the two imidazole groups; 'The transformation takes ten seconds or longer'；快速转换（约 180 ms）与快速复原仅见于萘修饰或 cyclophane 变体"
+    },
+    {
+      "id": "S02",
+      "title": "US3445234A：Leuco dye/hexaarylbiimidazole imageforming composition（Cescon, Dessauer；E. I. du Pont）",
+      "url": "https://patents.google.com/patent/US3445234A/en",
+      "type": "专利（一手）",
+      "access": "curl全文（核验轮重读）",
+      "date": "母案 1962-10-31；申请 1968-05-13；授权 1969-05-20",
+      "quote": "hydroquinone ... preferentially reacts with any activated biimidazole without color formation；'aqueous potassium ferricyanide'（HABI 合成）；'fugitive'；'dark reaction which leads to fogging'"
+    },
+    {
+      "id": "S03",
+      "title": "US3390994A：Photodeactivatable light-sensitive color-forming composition（Cescon；E. I. du Pont）",
+      "url": "https://patents.google.com/patent/US3390994A/en",
+      "type": "专利（一手）",
+      "access": "curl全文（核验轮重读；首次 503 后重试成功）",
+      "date": "申请 1966-02-17；授权 1968-07-02",
+      "quote": "permanently deactivated toward color generation by a second wavelength；'in about 10 milliseconds, the time of a single flash'；'about eight hours'；'no separate deactivation step is required'；redox couple 为 'a lower alkyl ester of nitrilotriacetic or nitrilotripropionic acid as reductant'"
+    },
+    {
+      "id": "S04",
+      "title": "US3579342A：Leuco triarylmethane/hexaarylbiimidazole color forming system containing a deactivator（Strilko；E. I. du Pont）",
+      "url": "https://patents.google.com/patent/US3579342A/en",
+      "type": "专利（一手）",
+      "access": "curl全文（核验轮重读）",
+      "date": "申请 1968-06-27（Google 'Filing date'）；公布 1971-05-18",
+      "quote": "deactivated against UV-induced color formation by irradiation with 4360 A；'sufficiently stable to ambient light conditions so as not to require irradiation under controlled conditions'；'as high as 430'；ether 'from about 50 to 500 oxymethylene groups per mole'；HABI 权利要求为 'tetra(m-methoxyphenyl)biimidazole'"
+    },
+    {
+      "id": "S05",
+      "title": "THE DEVELOPMENT OF DYLUX INSTANT ACCESS PHOTOSENSITIVE PRODUCTS（Dessauer，章节，Photochemistry, History and Commercial Applications of Hexaarylbiimidazoles，ISBN 9780444527707，pp. 73–122）",
+      "url": "https://api.crossref.org/works/10.1016/b978-044452770-7/50008-x",
+      "type": "书目元数据（API）；正文不可读",
+      "access": "API（核验轮重读）",
+      "date": "2006",
+      "quote": "THE DEVELOPMENT OF DYLUX® INSTANT ACCESS PHOTOSENSITIVE PRODUCTS（仅标题与页码，无摘要）"
+    },
+    {
+      "id": "S06",
+      "title": "The Invention of Dylux Instant-Access Imaging Materials and the Development of HABI Chemistry: A Personal History（Dessauer，Advances in Photochemistry）",
+      "url": "https://api.crossref.org/works/10.1002/0471714127.ch4",
+      "type": "书目元数据（API）；正文 403",
+      "access": "API（核验轮重读）",
+      "date": "2005-03-25",
+      "quote": "The Invention of Dylux® Instant-Access Imaging Materials and the Development of HABI Chemistry—A Personal History"
+    },
+    {
+      "id": "S07",
+      "title": "Dylux: an instant image photographic material suitable for UV laser beam diagnostics（Taylor, Goldhar, Murray；Applied Optics 21(1):4）",
+      "url": "https://api.crossref.org/works/10.1364/ao.21.000004",
+      "type": "书目元数据（API）；摘要未获取",
+      "access": "API（核验轮重读）",
+      "date": "1982-01-01",
+      "quote": "Dylux: an instant image photographic material suitable for UV laser beam diagnostics（作者 M. W. Taylor, J. Goldhar, J. R. Murray）"
+    },
+    {
+      "id": "S08",
+      "title": "PubChem CID 74357（o-Cl-HABI，C42H28Cl2N4）",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/74357/property/MolecularFormula,MolecularWeight,IUPACName/JSON",
+      "type": "数据库（API）",
+      "access": "API（核验轮重读）；GHS 查询（pug_view）返回 PUGVIEW.NotFound（本轮重测）",
+      "date": "读取 2026-11-01",
+      "quote": "MolecularFormula C42H28Cl2N4; MolecularWeight 659.6; IUPACName 2-(2-chlorophenyl)-1-[2-(2-chlorophenyl)-4,5-diphenylimidazol-1-yl]-4,5-diphenylimidazole"
+    },
+    {
+      "id": "S09",
+      "title": "ChemicalBook CAS 1707-68-2（聚合目录，含 18 家供应商）",
+      "url": "https://www.chemicalbook.com/CASEN_1707-68-2.htm",
+      "type": "聚合目录（B/C）",
+      "access": "curl全文（核验轮重读）",
+      "date": "页面版权年 2023；读取 2026-11-01",
+      "quote": "[Molecular Formula] C42H26Cl4N4；[Molecular Weight] 728.49；H302-H315-H319-H335；名称 '2,2'-bis(2-chlorophenyl)-4,4',5,5'-tetraphenyl' 与 SMILES 只含两个 Cl；18 家供应商名录"
+    },
+    {
+      "id": "S10",
+      "title": "PubChem CID 69048 Leucocrystal Violet GHS（ECHA C&L 聚合，165 份报告）",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug_view/data/compound/69048/JSON?heading=GHS+Classification",
+      "type": "数据库聚合（API，源自 ECHA C&L）",
+      "access": "API（核验轮重读）",
+      "date": "读取 2026-11-01",
+      "quote": "H315 (24.2%) ... H319 (24.8%) ... H335 (23.6%) ... H400 (41.2%) ... H410 (41.2%)"
+    },
+    {
+      "id": "S11",
+      "title": "PubChem CID 785 Hydroquinone GHS（ECHA C&L 聚合）",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug_view/data/compound/785/JSON?heading=GHS+Classification",
+      "type": "数据库聚合（API）",
+      "access": "API（核验轮重读）",
+      "date": "读取 2026-11-01",
+      "quote": "Danger；聚合代码含 H318、H340（Danger）、H341、H351、H360（Danger）、H370（Danger）、H372（Danger）、H302、H317、H400 等"
+    },
+    {
+      "id": "S12",
+      "title": "PubChem CID 6763 9,10-Phenanthrenequinone GHS 与 CAS（84-11-7）",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug_view/data/compound/6763/JSON?heading=GHS+Classification",
+      "type": "数据库聚合（API）",
+      "access": "API（核验轮重读）",
+      "date": "读取 2026-11-01",
+      "quote": "H319 (100%): Causes serious eye irritation；H315 (96.7%)；H335 (27%)"
+    },
+    {
+      "id": "S13",
+      "title": "Rolf Dessauer papers open for research（Hagley Museum and Library 公告）",
+      "url": "https://www.hagley.org/node/731",
+      "type": "机构档案馆公告（B）",
+      "access": "curl全文（核验轮重读）",
+      "date": "2013-07-30；读取 2026-11-01",
+      "quote": "In 1986 Dessauer assisted the DuPont and Xerox companies in a joint venture which became DX Imaging"
+    },
+    {
+      "id": "S14",
+      "title": "Dylux 页面（Conservation Wiki，页面不存在）",
+      "url": "https://www.conservation-wiki.com/wiki/Dylux",
+      "type": "百科（不可用）",
+      "access": "curl（核验轮：HTTP 404；正文为 MediaWiki 无内容提示）",
+      "date": "读取 2026-11-01",
+      "quote": "There is currently no text in this page."
+    },
+    {
+      "id": "S15",
+      "title": "PrintAction（2018 年 1–2 月刊）关于 DuPont 图形艺术业务出售的文章（仅搜索摘录）",
+      "url": "https://www.mydigitalpublication.com/article/Chronicle/3004304/473807/article.html",
+      "type": "行业媒体（B，摘录释文）；原页不可读",
+      "access": "搜索摘录（核验轮：curl HTTP 202，空响应，3 次；原页不可读）",
+      "date": "2018-01/02",
+      "quote": "释文：DuPont 1996 年把大部分图形艺术业务卖给 Agfa，摘录未确认 Dylux 是否在内（未核对）"
+    },
+    {
+      "id": "S16",
+      "title": "Photrio 论坛讨论串 'Dupont Velour Black'（仅搜索摘录）",
+      "url": "https://www.photrio.com/forum/threads/dupont-velour-black.8275/?amp=1",
+      "type": "论坛（C）",
+      "access": "搜索摘录（核验轮：canonical 与 ?amp=1 两个 URL 均 HTTP 403，未绕过；原页不可读）",
+      "date": "未知",
+      "quote": "释文：论坛发帖人称 DuPont 退出胶片与纸业（未核实）"
+    },
+    {
+      "id": "L01",
+      "title": "本地资料包：09-搜索结果整理.md（摘要未核对，仅作线索）",
+      "url": "/home/user/Research/感光拼图-research矩阵-v1-20261101/09-搜索结果整理.md",
+      "type": "本地资料包（线索）",
+      "access": "本地资料包",
+      "date": "2026-11-01 读取",
+      "quote": "路线 ... dylux_photodeactivation 未启动（第 27 行）"
+    },
+    {
+      "id": "L02",
+      "title": "本地资料包：09-原始数据/搜索记录.jsonl 第 130、262、264 条摘要（未核对；索引为 0-based，对应文件第 131、263、265 行）",
+      "url": "/home/user/Research/感光拼图-research矩阵-v1-20261101/09-原始数据/搜索记录.jsonl",
+      "type": "本地资料包（线索）",
+      "access": "本地资料包（核验轮读取行号，内容为线索）",
+      "date": "2026-11-01 读取",
+      "quote": "第 131 行（文件行号）为 Dylux 摘要，含 'Visible light step'、'Dry process' 段落（未核对的搜索摘要）"
+    }
+  ],
+  "negative_findings": [
+    {
+      "query": "WebSearch（standard）：Dylux DuPont paper discontinued production ended why",
+      "scope": "全网搜索摘要（额度第 1 次）",
+      "result": "未找到停产时间或原因的一手说明；仅有论坛轶事（Photrio，403 未读）。"
+    },
+    {
+      "query": "WebSearch（standard）：Dylux instant access photosensitive paper current manufacturer history discontinued DuPont Dylux brand sold",
+      "scope": "全网搜索摘要（额度第 2 次）",
+      "result": "未确定当前生产商或商标权利人，也无停产声明。"
+    },
+    {
+      "query": "WebSearch（standard）：Dylux Agfa discontinued blueline proofing paper DuPont sold graphic arts 1996",
+      "scope": "全网搜索摘要（额度第 4 次）",
+      "result": "仅有 1996 年 DuPont 将大部分图形艺术业务卖给 Agfa 的摘录，以及一篇无日期的 DuPont 数字版 Dylux 提及；未确认 Dylux 是否在出售范围内。"
+    },
+    {
+      "query": "WebSearch（standard）：2,2'-bis(2-chlorophenyl)-4,4',5,5'-tetraphenyl-1,2'-biimidazole CAS 1707-68-2 buy supplier（额度第 3 次）",
+      "scope": "全网搜索摘要",
+      "result": "无 o-Cl-HABI 供应商结果；返回的是其他 CAS 号与 eBay 店铺。"
+    },
+    {
+      "query": "curl：ChemicalBook CAS 1707-68-2 页面（可读）",
+      "scope": "聚合目录",
+      "result": "18 家供应商名录（多为中国企业，未逐一核验），无价格、无库存；分子式与 PubChem 冲突；名称与 SMILES 只含两个 Cl（核验轮）。"
+    },
+    {
+      "query": "curl：conservation-wiki.com/wiki/Dylux 与 /wiki/Dylux_paper",
+      "scope": "Conservation Wiki",
+      "result": "原稿称页面存在但无正文；核验轮重取 /wiki/Dylux 为 HTTP 404，正文为无内容提示，页面不存在。本地摘要引用的 '不收缩' 等说法无法核实。"
+    },
+    {
+      "query": "curl：cameo.mfa.org/wiki/Dylux；photrio.com 搜索与讨论串；alternativephotography.com 搜索；trademark.justia.com DYLUX 商标记录",
+      "scope": "站点策略",
+      "result": "均返回 403，按规则不绕过，记为不可读。商标状态与权利人因此未知。"
+    },
+    {
+      "query": "curl：dharmatrading.com 搜索 leuco crystal violet",
+      "scope": "Dharma Trading 站内搜索",
+      "result": "0 结果（2026-11-01）。"
+    },
+    {
+      "query": "curl：jacquardproducts.com 搜索 leuco",
+      "scope": "Jacquard 站内搜索",
+      "result": "返回页面未显示相关商品，页面可能由脚本渲染，视为未确认。"
+    },
+    {
+      "query": "curl：scbt.com 搜索 1707-68-2；fishersci.com 商品 AC204330050；sigmaaldrich.com 搜索 1707-68-2",
+      "scope": "供应商站点",
+      "result": "scbt 与 fishersci 返回 403；sigmaaldrich 连接失败（HTTP/2 INTERNAL_ERROR）。"
+    },
+    {
+      "query": "curl：PubChem CID 74357 GHS Classification；PubChem pug_view Vendors 栏目",
+      "scope": "PubChem",
+      "result": "CID 74357 无 GHS（PUGVIEW.NotFound；核验轮重测仍如此）；Vendors 栏目返回 400，不可用。"
+    },
+    {
+      "query": "curl：OSA / Applied Optics 1982 摘要（doi 10.1364/AO.21.000004，opg.optica.org 与 osapublishing.org）；Semantic Scholar 摘要",
+      "scope": "Applied Optics 1982 Dylux 论文",
+      "result": "OSA 站点 TLS 握手失败（curl 35），未获摘要；Semantic Scholar 摘要被出版商隐去。核验轮 Crossref 元数据可取（标题、作者、卷期页码）。"
+    },
+    {
+      "query": "curl：Dessauer 2006 章节 DOI 10.1016/b978-044452770-7/50008-x（linkinghub 与 ScienceDirect）；Dessauer 2005 章节 10.1002/0471714127.ch4（Wiley）",
+      "scope": "出版商站点",
+      "result": "linkinghub 返回仅含跳转脚本的页面，无正文；ScienceDirect 与 Wiley 返回 403。正文不可读。"
+    },
+    {
+      "query": "curl：Crossref 复合查询 hexaarylbiimidazole lophyl radical visible light deactivation",
+      "scope": "Crossref API",
+      "result": "返回非 JSON，API 错误，未重试；其他 Crossref 查询正常。"
+    },
+    {
+      "query": "curl：abacus.bates.edu/wmarchive/Dylux_method.html",
+      "scope": "Bates 档案网页",
+      "result": "TLS 证书校验失败（代理 CA），未关闭校验，不可读。"
+    },
+    {
+      "query": "curl：Hagley findingaids resources/362、repositories/3/resources/1960、subjects/1330；mydigitalpublication PrintAction 全文",
+      "scope": "机构档案与行业媒体",
+      "result": "返回 HTTP 202 空响应，不可读（核验轮重试 3 次仍如此）。Hagley node/731 公告可读。"
+    },
+    {
+      "query": "curl：en.wikipedia.org API 搜索 Dylux",
+      "scope": "英文维基百科",
+      "result": "无 Dylux 条目；仅有无关结果。"
+    },
+    {
+      "query": "curl：patents.google.com（US3445234A、US3390994A、US3579342A）",
+      "scope": "Google Patents，DuPont HABI 专利族",
+      "result": "多次返回 503，重试后取得三篇全文（核验轮重读同样成功）。其余引用专利（如 US3661461A、US3630736A、US3615454A）未读。"
+    },
+    {
+      "query": "本地资料包 搜索记录.jsonl 第 17 条：2023–2025 干式 leuco 专利检索（沿用，未重做）",
+      "scope": "本地搜索日志",
+      "result": "无 2023–2025 命中。本轮未做日期限定的专利再检索；所有 '未发现' 结论仅限于已读专利族与引用链。"
+    },
+    {
+      "query": "Dylux 商品规格书或配方原文（任意来源）",
+      "scope": "本轮所有可读来源",
+      "result": "未找到。商品配方与专利族的同一性未证实。"
+    }
+  ],
+  "key_unknowns": [
+    "Dylux 的停产时间、原因，以及当前是否仍有产品在售（未找到一手依据）。",
+    "商品 Dylux 的确切配方是否即 US3579342 所述的专利族（未证实）。",
+    "环境光（台灯、室内光、日光）下停止的实际时长；专利只给出 70 秒 15 mW/cm² 的单色 4360 Å 强光、约 10 毫秒闪光管脉冲与约 8 小时室内荧光三个数点。",
+    "白区在日光下的残留显色量（HABI 尾部吸收至约 430 nm），无定量数据。",
+    "耐光与货架期：US3579342 对比表在文本中丢失，无数值；无加速耐光数据；US3445234 报告的暗反应灰雾缺乏定量。",
+    "HABI 身份：CAS 1707-68-2（四苯基，US3445234 示例）与 US3579342 权利要求中的四（间甲氧基苯基）变体不同；US3579342 Example 1 所用 HABI 的确切名称未在正文直接命名。",
+    "o-Cl-HABI 的可购性：PubChem（C42H28Cl2N4，MW 659.6）与 ChemicalBook（C42H26Cl4N4，MW 728.49）分子式冲突；ChemicalBook 名称与 SMILES 与 PubChem 一致，推断其分子式字段有误，仍需 CoA 核对。",
+    "US3390994 的 '普通室内光即可停止' 是否适用于 US3579342 体系，两者配方与还原剂不同（酯类 vs 聚醚）。",
+    "醌（芘醌、9,10-菲醌）、醚组分与丙酮的 SDS 与标签归类（芘醌与醚组分本轮未查到）。",
+    "灰板或拼图底材上丙酮涂布层的变形与封层兼容性。"
+  ],
+  "discriminating_experiment": {
+    "one_liner": "用同一配方（leuco 盐 + HABI（先定身份）+ 9,10-菲醌 + 聚醚，并设去醚与去菲醌两组对照）涂漂白纸，UV 成像后用台灯、日光分别泛照 1、5、30、60 分钟，测白区光密度增量；只有完整配方在 60 分钟内增量低于预设阈值才支持该路线。",
+    "design_sketch": "(1) 先用 NMR 或 MS 确认 HABI 身份（四苯基 CAS 1707-68-2，或 US3579342 权利要求的四（间甲氧基苯基）变体），再配制三组：完整、无醚（或以次氮基三丙酸酯替代还原剂作对照）、无菲醌。(2) 以 0.4 mil 涂布于漂白亚硫酸盐纸与灰板样片。(3) 每组固定条件做 UV 成像（日光 5–60 秒，或固定距离的 UV 灯）。(4) 分别泛照：台灯 1、5、30 分钟；日光 1、5 分钟；室内光 60 分钟，每 5 分钟用密度计或比色卡记录白区。(5) 另做 24 小时暗置后的指纹测试，沿用 US3579342 Example 20 的设计。判别标准需事先写定：完整组白区增量显著低于两组对照；若完整组在台灯 30 分钟内仍显色，则判为淘汰。"
+  },
+  "new_routes_spotted": [
+    {
+      "name": "双光照（co-irradiation）正像体系",
+      "why": "US3661461A（1972）标题为 Co-irradiation system for producing positive images，与本路线的正负像顺序有关，可能是另一种停止或定影机制（未读全文）。",
+      "lead_url": "https://patents.google.com/patent/US3661461A/en"
+    },
+    {
+      "name": "可见光吸收羰基化合物族作为光灭活敏化剂（9,10-菲醌、perinaphthenone、4-甲氧基-1,2-萘醌）",
+      "why": "US3579342 权利要求列出可替代的可见光吸收羰基（perinaphthenone、4-甲氧基-1,2-萘醌），可用于筛选色系或安全性更好的停止组分。",
+      "lead_url": "https://patents.google.com/patent/US3579342A/en"
+    },
+    {
+      "name": "对苯二酚化学固定（H 供体淬灭 HABI 自由基）",
+      "why": "US3445234 以喷涂或浸渍对苯二酚固定图像，是独立的化学停止机制候选，但 PubChem 聚合的 Danger 级 H340、H360、H370、H372 风险高。",
+      "lead_url": "https://patents.google.com/patent/US3445234A/en"
+    },
+    {
+      "name": "光致酸发生器加酸碱指示剂的免洗纸（Xerox inkless paper）",
+      "why": "本地资料包摘要提到 US7588878、US7582398，属于光致酸引起指示剂变色，可能与停止机制相关；本轮只有本地摘要，未读全文。",
+      "lead_url": "https://patents.google.com/patent/US7588878"
+    },
+    {
+      "name": "电子照相打样 EMP（Dessauer 2006 章节）",
+      "why": "同书 EMP 章节属于干式打样的替代路线，可能对应另一条干式路线；仅有元数据。",
+      "lead_url": "https://api.crossref.org/works/10.1016/b978-044452770-7/50011-x"
+    },
+    {
+      "name": "HABI 光致变色快速褪色体系（自由基扩散抑制）",
+      "why": "Wikipedia 指出 radical diffusion-inhibited HABI 类体系（Fujita 2008）具有强着色与快速褪色，可能与 photochromic 路线交叉；仅为线索，原稿「通用 HABI 撤光快速褪色」的说法已更正。",
+      "lead_url": "https://en.wikipedia.org/wiki/Hexaarylbiimidazole"
+    }
+  ],
+  "search_budget_used": {
+    "websearch": 4,
+    "curl_reads": 24,
+    "verify_pass": {
+      "websearch": 0,
+      "distinct_urls_read": 17
+    }
+  },
+  "reconciliation_log": [
+    {
+      "item": "c01_机制 与 c06：醚的适用范围",
+      "change": "删去把「醌/醚」套用于全部专利族的写法；分述两个体系：1968（US3390994）还原剂为次氮基三丙酸低级烷基酯，1971（US3579342）还原剂为聚醚。两者均生成对苯二酚。",
+      "why": "US3390994 权利要求的 redox couple 为醌加 nitrilotriacetic/nitrilotripropionic 酯，无醚；醚（oxymethylene）只见于 US3579342。"
+    },
+    {
+      "item": "c02 多色扩展",
+      "change": "保留 'variety of colors'，补充色相由所用 aminotriarylmethane 决定；具体色谱仍未验证。",
+      "why": "US3390994 原文 'in a variety of colors with excellent gradation of tone'；'variety of shades' 归因于 colour-generator。"
+    },
+    {
+      "item": "c03 曝光与剂量",
+      "change": "补充 US3445234 的 0.001 秒摄影闪光示例；补充 US3390994 '许多配方由普通室内光完成停止，无需单独步骤'；将 1050 mJ/cm² 注明为单色 4360 Å 算术，不可外推到台灯或日光。",
+      "why": "原文补全；防止单色剂量被误用于环境光。"
+    },
+    {
+      "item": "c04 显影",
+      "change": "'requires no development step' 加上 'In one embodiment' 限定。",
+      "why": "US3390994 原文限定缺失。"
+    },
+    {
+      "item": "c05 第 1 条（泛光步骤）",
+      "change": "由「比喷后免洗多一步泛光」改为「环境光停止时长未量化；专利称许多配方无需单独步骤」，评级仍为 ?。",
+      "why": "US3390994 与 US3579342 原文不要求单独泛光步骤。"
+    },
+    {
+      "item": "c05 第 2 条（白区）",
+      "change": "由「倾向 ✓」降为 ?。",
+      "why": "US3579342 对比表数值缺失，只有定性陈述，不足以给 ✓。"
+    },
+    {
+      "item": "c05 综合与 c05_免洗核验.6 的不一致",
+      "change": "综合改为：主路线全部 ?，无 ✓ 无 ✗；对苯二酚子路线第 6 条倾向 ✗（推断）。",
+      "why": "原稿「无 ✗」与「路线倾向 ✗」未分路线标注，内部冲突。"
+    },
+    {
+      "item": "c06 红线核查",
+      "change": "由「无铁氰化钾」改为：配方与停止步骤未命中；US3445234 上游 HABI 合成使用 aqueous potassium ferricyanide（碱性），须附注并单独评估。",
+      "why": "US3445234 原文 'treated with aqueous potassium ferricyanide'；'washed free from ferricyanide'。"
+    },
+    {
+      "item": "c06 / c11 / c12 HABI 身份",
+      "change": "区分 CAS 1707-68-2（四苯基，US3445234 示例）与四（间甲氧基苯基）变体（US3579342 权利要求）；采购前需先确定配方所用 HABI。",
+      "why": "US3579342 全文无 'tetraphenyl'，含 'methoxyphenyl' 18 次；两专利 HABI 不同。"
+    },
+    {
+      "item": "c07 译文与引号",
+      "change": "注明 'substantially less stable ... some blue color' 为译文；'color' 改为 'blue color'。",
+      "why": "原句为 'they form some blue color'，原稿中文引号容易被当作原文。"
+    },
+    {
+      "item": "c09 「储存中暗稳定性优良」",
+      "change": "删除该引号归属；改写为 US3445234 的暗反应灰雾与配方依赖性，以及 US3390994 的对空气氧化稳定。",
+      "why": "US3390994 与 US3445234 原文均无 '暗稳定性优良' 的表述；US3445234 实际报告灰雾。"
+    },
+    {
+      "item": "c09 「对空气氧化稳定」的归属",
+      "change": "归属改为 US3390994 权利要求；US3579342 改为 'stable to storage at room temperature'。",
+      "why": "原文归属错位。"
+    },
+    {
+      "item": "c10 「棉布」",
+      "change": "删去棉布；改为 US3445234 的 'textile fabrics'（泛指）与 tissue paper。",
+      "why": "全文未见 cotton 或棉布字样。"
+    },
+    {
+      "item": "S14 Conservation Wiki 的状态",
+      "change": "由「页面存在但无正文」更正为 HTTP 404，页面不存在，正文为 MediaWiki 无内容提示；c10 与 baseline 相应更正。",
+      "why": "核验轮 curl 结果。"
+    },
+    {
+      "item": "c11 对苯二酚 SDS",
+      "change": "补列 Danger 级 H340、H360、H370、H372 及 H312、H316、H336、H373、H410 等聚合代码。",
+      "why": "PubChem 聚合 ECHA C&L 原文；原稿只列 H302、H317、H318、H341、H351、H400。"
+    },
+    {
+      "item": "c11 与 c12 o-Cl-HABI 分子式冲突",
+      "change": "补注 ChemicalBook 名称与 SMILES 只含两个 Cl，其分子式字段疑似错误（推断）；仍需 CoA 核对。",
+      "why": "ChemicalBook 页面内部一致性核验。"
+    },
+    {
+      "item": "c12 供应商数",
+      "change": "确认 18 家（页面实际 18 条公司名，另有一条解析残留已排除）。",
+      "why": "页面计数。"
+    },
+    {
+      "item": "c13 第 7 条（百科 撤光快速褪色）",
+      "change": "改写为 Wikipedia 原文：转变需十秒或更长；快速转换与快速复原仅见于萘修饰或 cyclophane 变体。",
+      "why": "Wikipedia 原文不支持通用 HABI 撤光快速褪色。"
+    },
+    {
+      "item": "c13 条数",
+      "change": "由 11 条合并为 10 条（第 8 条并入第 9 条的停产讨论；第 10、11 条保留为未能证实）。",
+      "why": "共享背景规定关键主张 5–10 条。"
+    },
+    {
+      "item": "c13 第 6 条（商品配方即专利族）",
+      "change": "保留推断标注；verdict 中依赖该推断的句子降为未验证。",
+      "why": "无商品配方原文。"
+    },
+    {
+      "item": "S15、S16 搜索摘录",
+      "change": "access 字段更正为核验轮 curl 结果（S15 HTTP 202 空响应；S16 HTTP 403，未绕过）；相关主张维持未能证实。",
+      "why": "两者均为仅有的搜索摘录来源；原文不可读，无法做「至少 3 个」的摘录核对。"
+    },
+    {
+      "item": "US3579342 申请日",
+      "change": "1968-06-27 标为申请日（Google 'Filing date'），删去「疑为优先权日」的推测。",
+      "why": "Google Patents 页面原文。"
+    },
+    {
+      "item": "baseline：1968 体系「非近紫外边缘」",
+      "change": "由「1968 更接近近紫外边缘」改为部分反驳：1968 体系也可由普通室内光完成失活。",
+      "why": "US3390994 'may be effected by common room light during ordinary useage'。"
+    },
+    {
+      "item": "baseline：「干法不需任何化学品」与「400–500 nm 全段敏感」",
+      "change": "维持 disagree；补充专利原文证据（多组分配方；HABI 尾部至约 430 nm）。",
+      "why": "核验结果一致，证据补充。"
+    },
+    {
+      "item": "c15 判别实验",
+      "change": "增加 HABI 先定身份；对照组增加以次氮基三丙酸酯替代还原剂的一组。",
+      "why": "两个专利体系的还原剂与 HABI 不同。"
+    },
+    {
+      "item": "local 行号约定",
+      "change": "注明 L02 的「第 130、262、264 条」为 0-based 索引，对应文件第 131、263、265 行。",
+      "why": "核验轮读取文件行号，原稿未说明约定。"
+    },
+    {
+      "item": "verdict 观察线",
+      "change": "维持观察线；reasons 与 red_line_hits 改写，不再写「无 ✗」与「无红线」的无条件表述；建议对苯二酚子路线淘汰。",
+      "why": "核验后的证据构成未变（主路线仍无 ✓），但安全与红线说明需更正；c05 不得再有 ✓ 倾向。"
+    }
+  ]
+}

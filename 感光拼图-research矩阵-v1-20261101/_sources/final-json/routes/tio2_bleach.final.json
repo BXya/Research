@@ -1,0 +1,686 @@
+{
+  "key": "tio2_bleach",
+  "name_zh": "TiO2 光催化染料漂白",
+  "name_en": "photocatalytic dye bleaching with TiO2 and a raspberry-juice dye (Ibanez 2011 system; TiO2 phase and substrate not verified)",
+  "status": "观察线（降级：撤销「首轮台架候选 #1」地位）",
+  "columns": {
+    "c01_机制": {
+      "text": "TiO2 与染料（Ibanez 2011 为覆盆子果汁染料，ERIC 摘要称 raspberry juice dye）在光照下发生氧化光漂白（oxidative photobleaching），染料结构被破坏，属破坏式、不可逆一类（推断，依据摘要用语）。ERIC 摘要确认光源为 visible laser light（可见激光），TiO2 为 semiconductor titanium dioxide（摘要未写晶型）。未能证实：染料向 TiO2 导带注入电子，再由超氧、过氧、羟基自由基破坏发色团的链条；锐钛矿晶型；滤纸或涂布纸底材；染料是否为花青素（花青素身份来自原页不可读的 S03 与旧轮笔记）。这些细节来自旧轮笔记（S17、S18），本轮未能复核全文。对照：Yin & Xie 2014 的 TiO2/亚甲蓝体系是光还原（MB 变为无色 LMB），可被空气与 115 °C 加热逆向再氧化，属可逆体系，不满足永久性（全文已核）。",
+      "grade": "A（ERIC 摘要 + Yin 2014 全文）；注入与自由基链条、晶型、底材 未验证（不高于 B）",
+      "label": "事实（ERIC 摘要：氧化光漂白、可见激光、TiO2）；事实（Yin 可逆性）；未验证（注入机理、晶型、底材、花青素身份）",
+      "source_ids": ["S02", "S05", "S08"]
+    },
+    "c02_极性与色调能力": {
+      "text": "深底浅图：被照射处染料被破坏而变浅，未照射处保留染料颜色（推断，由破坏式机理得出）。单色相可行（一种染料）。连续色调理论上可由曝光剂量控制，但无灰阶曲线数据（推断）。Yin 2014 全文演示了二值图案，以及用 MB、NR（中性红）、AG（酸性绿）制得的蓝、红、绿三原色可重写纸，但该体系是可逆的（见 c01）。Ibanez 体系的多色扩展在不可逆体系中未验证。",
+      "grade": "A（Yin 全文）；其余为推断",
+      "label": "事实（Yin 多色可逆演示）；推断（色调能力）",
+      "source_ids": ["S08"]
+    },
+    "c03_曝光条件": {
+      "text": "ERIC 摘要确认 Ibanez 的光源为可见激光（S02，A）。Ibanez 的日光时长（2 min 起漂白、20–25 min 清晰）与 300 W 灯 5 min 数字仅见于旧轮笔记（S17、S18），本轮未能复核全文（pubs.acs.org 与 doi.org 不可读，未绕过）。ResearchGate 图注（绿色激光笔 60 s）原页返回 HTTP 403，不可读（S03）。同刊 2012 年另有日光演示论文（10.1021/ed300048z，Crossref 书目已核，S04），旧数字可能属于该文，但未证实。注意：旧轮笔记中的「2 min」有两种含义，一是浸泡致敏 2 min，二是日光下起始漂白约 2 min，本条只指后者。UV 灯：Yin 2014 用 365 nm 实验室紫外灯，固体膜 1 min 内 MB 吸收峰消失，印写约 2 min，光强未报告（S08，A，全文已核）。395 nm LED：纯锐钛矿吸收边约 387 nm（S05，A），395 nm 光子约 3.14 eV，低于直接带隙（算式，推断）。由于 Ibanez 体系本身是可见光驱动的染料敏化，这一判断只适用于 TiO2 直接带隙激发，不适用于染料在 395 nm 的敏化路径；后者未验证。与 30 分钟目标：该目标的依据是未核实的旧日光数字，目前没有已核实的依据。剂量 mJ/cm² 无数据。",
+      "grade": "A（ERIC 可见激光；Yin 365 nm 与时间；S05 吸收边）；Ibanez 日光与 300 W 数字 未验证；ResearchGate 图注 未验证（原页不可读）",
+      "label": "事实（可见激光；Yin 365 nm、1 min、2 min；吸收边）；未验证（Ibanez 日光与 300 W 数字；30 min 依据）；推断（395 nm 算式与适用范围）",
+      "source_ids": ["S02", "S03", "S04", "S05", "S08"]
+    },
+    "c04_显影或成像后处理": {
+      "text": "Yin 2014 全文：UV 印写后以 115 °C 加热擦除，无湿式显影、水洗或定影步骤（A，事实）。Ibanez 体系：摘要只描述曝光过程中的光漂白，未描述显影或后处理；摘要不足以排除全文中的步骤，「无显影」未能证实（全文不可读）。若需稳定背景，需曝光后加一步干式 UV 阻隔封层（推断，见 c06）。",
+      "grade": "A（Yin）；Ibanez 无显影 未验证",
+      "label": "事实（Yin）；未验证（Ibanez 无显影）；推断（封层需求）",
+      "source_ids": ["S02", "S08"]
+    },
+    "c05_免洗的真实程度": {
+      "text": "严格免洗的程度：Yin 体系的印写不需水洗或显影（A）。F 路线若按原方案不用喷雾停止，则底线 1 的「喷后」步骤不直接适用；但背景稳定所依赖的干式 UV 封层是曝光后的额外步骤，若算作额外处理，则为名义免洗（干式封层）。逐条见 c05_免洗核验，六条底线全部为 ?，无 ✓。",
+      "grade": "A（Yin 流程）；封层 未验证",
+      "label": "事实 + 推断",
+      "source_ids": ["S08", "S09"]
+    },
+    "c06_停止机制": {
+      "text": "无天然化学停止。被照射处靠染料耗尽而自限（推断）；未照射背景仍含染料与 TiO2，在环境光下仍可反应，因此不是真正的停止。候选：干式 UV 阻隔封层（物理封层，未验证）。注意：Ibanez 摘要所示的可见光驱动路径不受 UV 阻隔层阻挡，因此 UV 封层只覆盖 UV 路径，不能单独解决可见光背景褪色；封层需另行测试。封层本身不得被 TiO2 光氧化（见 c07）。化学淬灭候选：本轮未检索，记为未知。红线核查：本路线不含铁氰化物，也不含亚铁氰化物（两者未混写），强酸红线不直接命中；若引入碱性中和，花青素色调会随 pH 改变（S12，B，已核），需单独评估。避光不算停止。",
+      "grade": "B（pH 依赖，S12）；封层与淬灭 未验证",
+      "label": "推断（自限性）；未验证（封层与淬灭）；事实（pH 变色，B）",
+      "source_ids": ["S12"]
+    },
+    "c07_白区长期稳定性": {
+      "text": "被漂白处的染料结构被破坏，理论上不再变色（推断，较强）。但 TiO2 光催化对有机物有普遍攻击性：S07 所引文献（Mirabedini 2011，转引）报告丙烯酸涂层在 TiO2 与 UV 共存下不稳定；S07 自身实验显示，PVDF 漆（无 SiO2 粘结剂）上的 TiO2 层出现光致泛黄，SiO2 可抑制（A，聚合物膜体系）。纸基不能直接外推，因此白区可能因粘结剂或封层氧化而泛黄，需要测试。Yin 2014 的 HEC 在 >20 次写擦循环中未报告降解，但未专门测试（S08）。",
+      "grade": "A（聚合物膜）；纸基 未验证",
+      "label": "事实（聚合物体系；S07 引文为转述）；推断（纸基外推）；未验证",
+      "source_ids": ["S07", "S08"]
+    },
+    "c08_成色长期耐光": {
+      "text": "未知。本轮未列出系统检索式（检索词、数据库、日期、URL），因此不能把「未找到」作为结论。已知：Yin 2014 的 >20 次是写擦循环，不是耐光数据，不可外推（S08）。需要补检索：TiO2/花青素与 TiO2/亚甲蓝体系的加速耐光数据，并记录检索式与范围。按要求只报数据本身：目前无数据。",
+      "grade": "未验证",
+      "label": "未验证",
+      "source_ids": ["S08"]
+    },
+    "c09_预涂介质货架期": {
+      "text": "出厂预涂：未知。Yin 2014 显示 HEC 可显著减慢无色 LMB 的再氧化（环境条件下 6 天仅再氧化 20%，A），提示有机基质可延缓逆反应；但那是可逆体系，且未测预涂板货架寿命（S08）。现涂：TiO2 水浆料与花青素汁液的混合液寿命未测。花青素对光、pH、氧、温度与金属离子敏感（S12，B，Wikipedia Stability 段已核）。推断现配液应当天用完。",
+      "grade": "A（HEC 数据）；货架期 未验证",
+      "label": "未验证（货架期）；事实（HEC 再氧化数据）；事实（花青素稳定性，B）",
+      "source_ids": ["S08", "S12"]
+    },
+    "c10_底材适配": {
+      "text": "Ibanez 旧记录使用滤纸（旧轮笔记 S17，未能证实；ERIC 摘要未覆盖底材）。纸基水浆料刷涂后的吸湿变形未测。S07 显示 TiO2 薄膜可在 PVC、PMMA、PES 等热敏聚合物上低温制备（A，聚合物，非纸基）；封层兼容性依赖 SiO2 粘结。芯板或卡板拼图底材未测。",
+      "grade": "未验证（纸与板）；A（聚合物，间接）",
+      "label": "未验证",
+      "source_ids": ["S02", "S07", "S17"]
+    },
+    "c11_安全与法规": {
+      "text": "CAS 13463-67-7（S06，B，维基百科化学框已核）。TiO2：IARC Group 2B（吸入粉尘，S06，B，已核）。欧盟曾将粉末（含 ≥1% 粒径 ≤10 µm 颗粒）的吸入分类为 Carc. 2（H351）；欧洲法院判决使该分类自 2025 年 8 月 1 日起失效，ECHA 随后更新 C&L 目录与 CLH 意向登记（S13，B，二手资讯，Normachem 页已核；ECHA 原页未读）。未能证实：2022 年普通法院阶段与 Delegated Regulation 2020/217 的细节（S13 页未载）。欧盟于 2022 年取消 E171 食品用途授权（S06，B，已核）。维基百科化学框列出 GHS 骷髅、健康危害、环境三种象形图（S06，已核）；其与现行分类是否一致未能证实，应以厂商 SDS 为准。染料：花青素为欧盟允许的食用着色剂 E163；EFSA 2013 认为多数来源特征不足，仅红葡萄皮与黑加仑提取物等少数例外；美国未将花青素列入药品或化妆品着色剂（S12，B，已核）。亚甲蓝被称为潜在有毒、需医嘱使用（S11，B，已核），不宜作为成人美术材料染料。PPE：粉末口罩与湿式浆料化（推断）。ASTM D-4236 与 LHAMA 对本体系的结论未查到（未验证）；本地资料包列出 LHAMA 审查机构（S19）。TiO2 与花青素的 SDS 未取到（PubChem PUG-View 失败，见 negative_findings）。",
+      "grade": "B",
+      "label": "事实（二手来源，已核）；未验证（SDS、ASTM D-4236、LHAMA、与现行分类一致性、Carc. 2 细节）",
+      "source_ids": ["S06", "S11", "S12", "S13", "S19"]
+    },
+    "c12_供应与成本": {
+      "text": "未验证。S18 本地估算（草稿日期 2026-10-19，非页面价）：食品或化妆品级 TiO2（100 g–1 lb）约 $8–12，花青素原料约 $5–8，刷子约 $3–5。Dharma Trading 站内搜索 titanium dioxide（2026-11-01 读取，curl 全文，S10）返回 9 个结果，类别混合：化工助剂（尿素、明矾、单宁酸、氢氧化钙、连二亚硫酸钠）、染料（Procion、Ice dye、荧光黄等）与一款丝巾；未见 TiO2 单品，页面亦显示 'No search result for titanium dioxide'。Amazon 明确禁止读取，未查价（未访问）。",
+      "grade": "未验证",
+      "label": "未验证（价格与库存；页面读取日期 2026-11-01；估算日期 2026-10-19）",
+      "source_ids": ["S10", "S18"]
+    },
+    "c13_证据等级": {
+      "text": "1 Ibanez 2011 书目（DOI 10.1021/ed1008848、J. Chem. Educ. 88(8) 1116–1118、2011 年、8 位作者）：A（API，Crossref 已核，S01），事实。2 Ibanez 摘要：TiO2 与覆盆子果汁染料在可见激光下的氧化光漂白：A（curl 全文摘要页已核，S02），事实。3 旧记录：日光 2 min 起漂白、20–25 min 清晰、300 W 灯 5 min：未验证（旧轮笔记 S17、S18；原文不可读，归属未证实）。4 锐钛矿 E_bg 3.2 eV，吸收边约 387 nm：A（API，PubMed 17134177 已核，S05），事实。395 nm 直接带隙激发不足：推断（算式）。5 TiO2 与 UV 攻击丙烯酸（引文）与 PVDF 涂层，SiO2 可抑制：A（聚合物膜，S07 全文已核），事实（聚合物体系）；纸基外推 未验证。6 Yin 2014：TiO2 光还原 MB 为 LMB，空气缓慢再氧化，115 °C 加热擦除，可逆，>20 次写擦循环（摘要）：A（全文已核，S08），事实。7 Yin 2014：光印的无色（LMB）字迹在含 HEC 的膜上于环境条件下至少 3 天可读，5 天仍可读（定性，S08）。该数据测量的是光印态的可读性与 LMB 再氧化速率（6 天再氧化 20%），不是未照射蓝色背景的稳定性：A，事实（对象已更正）。8 500 lux 裸荧光灯 UVA 约 30 mW/m²、UVB 约 3 mW/m²（§5.3.14）；塑料灯罩（扩散罩）可有效去除 UVR（§2.3.3）：A（全文 PDF 已核，S09），事实。9 TiO2 IARC 2B；欧盟 Carc. 2 分类已撤销（自 2025-08-01 起）：B（S06、S13，已核），事实（二手）。10 花青素与亚甲蓝的食品与药用地位及毒性信息：B（S11、S12，已核），事实（二手）。11 Ibanez 对照组（无 TiO2 时漂白明显更慢）：未验证（原文不可读）。",
+      "grade": "A（1、2、4、5、6、7、8）；B（9、10）；3、11 未验证",
+      "label": "见条目",
+      "source_ids": ["S01", "S02", "S05", "S06", "S07", "S08", "S09", "S11", "S12", "S13", "S17", "S18"]
+    },
+    "c14_关键未知": {
+      "text": "最可能翻盘的两项：（1）室内光下未照射背景能否数周保持颜色。这是 G3 与底线 2–3 的决定性项，目前没有背景褪色速率数据。Yin 2014 的数据只能说明光印态字迹（无色 LMB）在 HEC 膜中可读至少 3 天、且再氧化缓慢（S08）；它不能作为未照射背景稳定性的证据，并且它是可逆的 MB 体系，无背景速率，也未报告光强。ICNIRP 只给出 UV 数字（裸荧光灯 UVA 约 3 µW/cm²，§5.3.14），不覆盖可见光敏化路径（A，S09）。而 Ibanez 摘要所示的可见激光漂白说明，可见光路径可能是真实风险（推断）。（2）干式 UV 封层能否既阻断背景反应，又不被 TiO2 光氧化，并且算作非显影的一步；同时，该封层只对 UV 路径有效。另外，若旧 Ibanez 日光数字不成立，30 分钟目标的依据需要重建。",
+      "grade": "A（仅 ICNIRP 与 Yin 的非背景数据）；其余 未验证",
+      "label": "未验证",
+      "source_ids": ["S07", "S08", "S09", "S02"]
+    },
+    "c15_判别实验": {
+      "text": "同一批 TiO2 加花青素涂布纸样分四组：避光；室内灯下（无 UV 滤光）；室内灯下加 UV 滤光（仅可见光）；室内灯下并覆 UV 封层。每周用比色（色差 ΔE）测未照射背景，连续 3–4 周。另取一组用 365 nm 与 395 nm LED 各照射 30 分钟，测漂白程度，验证 395 nm 是否有效。背景 ΔE 超阈值（阈值需事先设定，本轮未设定），则 F 的永久性不成立（淘汰条件）。",
+      "grade": "—",
+      "label": "未验证（设计）",
+      "source_ids": []
+    }
+  },
+  "c05_免洗核验": {
+    "验收": {
+      "1_喷后免洗": "? 本路线原方案不含喷雾停止步骤，此项不直接适用。基础曝光流程无水洗、无显影（Yin 全文可证；Ibanez 未证）。若加入干式 UV 封层，是否计为额外处理步骤尚未确定。",
+      "2_白区停得住": "? 被漂白区理论上稳定（推断）；TiO2 可能使粘结剂或封层泛黄（S07，聚合物膜体系，纸基未测）。",
+      "3_成色留得住": "? 未照射背景在室内光下的褪色速率没有定量数据。Yin 2014 的数据只涉及光印态（无色字迹）在 HEC 膜中的可读性，不能代替背景数据（S08）。",
+      "4_少量喷液": "? 基础方案无停止喷液；若采用封层喷雾，需要测试均匀性与用量，未验证。",
+      "5_底材不变形": "? 水基浆料刷涂纸或板后的变形未测；聚合物膜实验只能间接参考（S07）。",
+      "6_安全前置": "? TiO2 粉末吸入的 IARC 2B 与欧盟 Carc. 2 分类撤销（二手，S13，适用于粉末）信息并存；染料安全未核实（ASTM D-4236 与 LHAMA 未查到结论，SDS 未取到）。红线：未命中。"
+    },
+    "说明": "六条底线目前无一条确认为 ✓，全部为 ?。c05 正文原有的「底线 1 的基础流程 ✓」标记已删除，与本表保持一致。其中 1、3、5、6 的 ? 有明确缺口（封层、背景褪色、底材变形、安全资料）。Yin 2014 的 HEC 膜中光印字迹的可读性是唯一接近背景稳定性的一手数据，但它测量的是光印态，且是可逆体系，不能直接当作背景永久性证据。"
+  },
+  "verdict": {
+    "status": "观察线（降级）",
+    "reasons": [
+      "六条底线目前无一条确认为 ✓，全部为 ?。",
+      "旧轮「首轮台架候选 #1」的主要依据是 Ibanez 2011 的日光数字（2 min、20–25 min、300 W 灯 5 min）。核查结果：ERIC 摘要只确认可见激光；数字来源为旧轮笔记，原文不可读，归属未证实。依据撤回，不再作为首轮台架候选 #1。",
+      "Yin 2014 全文确认 TiO2 光还原染料是可逆体系。同平台的可逆路线（UCR US 10,534,254，仅标题在技术转让页可见，权利要求未读）不满足永久性（G3），不能当作本路线的证据。",
+      "Yin 2014 中「含 HEC 蓝色区至少 3 天可读」的说法对象有误：被观察的是光印的无色字迹，不是未照射背景。它不能作为背景稳定性的证据。",
+      "395 nm LED 不能以 TiO2 直接带隙激发（推断，依据吸收边约 387 nm）。但 Ibanez 体系是可见光驱动的染料敏化路径，395 nm 是否有效取决于所选染料在 395 nm 的吸收，未验证。",
+      "TiO2 的 Carc. 2 分类已撤销（二手，S13，适用于含 ≥1% 颗粒 ≤10 µm 的粉末）；IARC 2B 与粉尘吸入风险仍在。",
+      "UV 阻隔封层只覆盖 UV 路径，不能单独应对 Ibanez 已演示的可见光路径；封层对策需重新评估。",
+      "升降条件：若室内光下未照射背景数周内色差不明显，且干式封层可行，可回升为「保留」；若背景明显褪色而封层不可行，则淘汰。"
+    ],
+    "red_line_hits": [
+      "无命中：不含铁氰化物，不含亚铁氰化物，无重铬酸盐，无普鲁士蓝遇碱（若引入碱性中和需评估花青素色变）。",
+      "注意项（非红线）：TiO2 粉尘在家庭小量操作中的吸入风险，需湿式浆料化并使用口罩。"
+    ]
+  },
+  "baseline_challenges": [
+    {
+      "round": "轮5 F 笔记与报告；首单清单 E 节",
+      "old_claim": "Ibanez 2011：日光 2 min 起漂白，20–25 min 清晰，300 W 灯 5 min；无 TiO2 对照漂白明显更慢",
+      "agree": "disagree",
+      "my_evidence": "书目经 Crossref 确认（S01）。ERIC 摘要写的是可见激光光照（S02）；日光时长、300 W 灯数字与对照组结论本轮无法复核（pubs.acs.org 与 doi.org 不可读，未绕过）。同刊 2012 年有一篇日光演示论文（S04，书目已核），数字可能属于该文，但未证实。不以此为事实使用。",
+      "strength": "弱（无法复核，不予采信为事实；并非证伪）"
+    },
+    {
+      "round": "轮5 F 笔记 G1",
+      "old_claim": "无显影步骤，G1 通过（曝光即成像）",
+      "agree": "partly",
+      "my_evidence": "Yin 全文确认无湿式显影、水洗或定影步骤（S08，A）。Ibanez 摘要描述曝光过程中的光漂白（S02），但摘要不足以排除全文中的显影步骤，本轮未读到 Ibanez 全文。Ibanez 部分未证实。",
+      "strength": "中（Yin 证实；Ibanez 未证实）"
+    },
+    {
+      "round": "轮5 F 笔记 G3；首单 E 节要点 (3)",
+      "old_claim": "未曝光背景在室内光下缓慢褪色，需 UV 阻隔封层",
+      "agree": "agree",
+      "my_evidence": "风险成立为推断：ICNIRP 给出裸荧光灯 UVA 约 3 µW/cm²（S09），但 Ibanez 体系为可见光驱动的染料敏化，UV 数字不覆盖这一路径，因此 UV 封层不足以覆盖风险。Yin 2014 的数据测量的是光印态字迹的可读性（S08），不是未照射背景的褪色速率，不能作为背景证据。风险未量化。",
+      "strength": "中（推断链成立，数据缺；封层对策需修正）"
+    },
+    {
+      "round": "轮5 F 笔记 G3；轮5 report 的 UCR/Yin 对照",
+      "old_claim": "UCR/Yin 类可逆 TiO2 体系因 retained for days 而不满足永久性（G3 fail）",
+      "agree": "agree",
+      "my_evidence": "Yin 2014 全文：TiO2 纳米晶把 MB 光还原为无色 LMB，空气中缓慢再氧化，115 °C 加热擦除（S08，A）。UCR 专利 US 10,534,254 的标题在技术转让页可见（S14，已核；关键词范围内发现；权利要求未读）。可逆体系不能当作永久体系。",
+      "strength": "强（一手全文）"
+    },
+    {
+      "round": "轮5 F 笔记（Yin 2014 的 >20 次循环）",
+      "old_claim": "Yin 2014 支持 >20 次写擦循环",
+      "agree": "agree",
+      "my_evidence": "摘要：erased by heating over 20 cycles（S08，A）；正文 Fig. 2d 为 20 consecutive writing–erasing cycles。>10 consecutive 出现在 Fig. 5 图注（原写 Fig. 4，已更正）。两处数字并存，取 >10 作保守值。",
+      "strength": "强"
+    },
+    {
+      "round": "轮5 F 笔记 G5；首单 E 节要点 (1)",
+      "old_claim": "消费级 UV 灯剂量未测，需要 UV 灯剂量测试",
+      "agree": "agree",
+      "my_evidence": "仍未测。Yin 用 365 nm 实验室灯，光强未报告（S08）。锐钛矿吸收边约 387 nm（S05，A）；365 nm 光子约 3.40 eV 高于带隙，395 nm 约 3.14 eV 低于带隙（算式，推断）。因此 395 nm LED 的有效性只能靠染料在 395 nm 的吸收，需先查染料光谱。",
+      "strength": "强（物理依据，部分为推断）"
+    },
+    {
+      "round": "轮5 F 节 G7",
+      "old_claim": "nano-TiO2 被 ECHA 分类为 Cat. 2 吸入致癌物（suspected carcinogen）",
+      "agree": "disagree",
+      "my_evidence": "欧盟 Carc. 2（H351）粉末吸入分类已被欧洲法院判决撤销，自 2025 年 8 月 1 日起失效，ECHA 更新 C&L 目录与 CLH 登记（二手资讯，S13，Normachem 页已核；ECHA 原页未读）。适用范围为粉末，含 ≥1% 颗粒 ≤10 µm。「2022 年普通法院撤销」与 Delegated Regulation 2020/217 的细节未能证实。IARC 2B 仍在（S06，已核）。",
+      "strength": "中（二手来源；未读 ECHA 原文）"
+    },
+    {
+      "round": "轮5 F 节 G8；首单 E 节原料表",
+      "old_claim": "TiO2 与染料原料零售可买（G8 pass）",
+      "agree": "disagree",
+      "my_evidence": "未证实。Dharma Trading 站内搜索 titanium dioxide 的 9 个结果为化工助剂、染料与丝巾的混合，未见 TiO2 单品（S10，已核）；Amazon 禁止读取（未访问）；其他零售页未读。价格仅为本地估算（S18）。",
+      "strength": "弱（负结果，搜索范围有限）"
+    },
+    {
+      "round": "首单 E 节：食品或化妆品级 TiO2；食品级花青素",
+      "old_claim": "食品或化妆品级原料即可保证安全，适合美术材料路线",
+      "agree": "disagree",
+      "my_evidence": "欧盟 E171 食品添加剂授权 2022 年取消（S06，B，已核）。花青素 E163 在欧盟允许，EFSA 2013 认为多数来源特征不足，仅红葡萄皮与黑加仑等少数提取物例外；美国未将花青素列入药品或化妆品着色剂（S12，B，已核）。食品级不等于 ASTM D-4236 或 LHAMA 合格（本地 S19 只列出审查机构，未查到结论）。",
+      "strength": "中（二手来源）"
+    },
+    {
+      "round": "首单 E 节：无 TiO2 对照组漂白明显更慢（沿用 Ibanez）",
+      "old_claim": "对照组的结论可以直接照搬",
+      "agree": "disagree",
+      "my_evidence": "本轮无法读取原文（S01–S03 只有书目、摘要或图注不可读），不能确认对照结论。复核前不作为依据。",
+      "strength": "弱（未验证）"
+    },
+    {
+      "round": "轮5 F 节 G3 的 UV 封层方案",
+      "old_claim": "UV 阻隔封层可作为定影步骤（留第二轮测试）",
+      "agree": "disagree",
+      "my_evidence": "未直接反驳封层的物理效果，但有两点不成立：（1）TiO2 光催化会攻击丙烯酸与 PVDF 等有机涂层，无 SiO2 粘结时出现光致泛黄（S07，A，聚合物膜体系），封层选型必须纳入考虑，封层不是中性步骤；（2）Ibanez 体系的光漂白可由可见激光驱动（S02），UV 阻隔层不覆盖这一路径。",
+      "strength": "中（聚合物膜体系外推到封层；可见光路径为新增反驳）"
+    }
+  ],
+  "sources": [
+    {
+      "id": "S01",
+      "title": "The Basis for Photocatalytic Writing (Ibanez et al., J. Chem. Educ. 2011, 88, 1116–1118)",
+      "url": "https://api.crossref.org/works/10.1021/ed1008848",
+      "type": "一手期刊元数据（DOI 登记）",
+      "access": "API（Crossref，已核书目与作者数）",
+      "date": "2026-11-01",
+      "quote": "Title 'The Basis for Photocatalytic Writing'；J Chem Educ 88(8):1116-1118，2011-06-22；8 位作者；Crossref 无摘要字段"
+    },
+    {
+      "id": "S02",
+      "title": "ERIC EJ941030：The Basis for Photocatalytic Writing 摘要",
+      "url": "https://eric.ed.gov/?id=EJ941030",
+      "type": "一手摘要（数据库收录）",
+      "access": "curl全文（摘要页，2026-11-01 已复核）",
+      "date": "2026-11-01",
+      "quote": "a demonstration involving the oxidative photobleaching of a raspberry juice dye under visible laser light irradiation using the semiconductor titanium dioxide"
+    },
+    {
+      "id": "S03",
+      "title": "ResearchGate 图注：Photobleaching of raspberry anthocyanin on TiO2",
+      "url": "https://www.researchgate.net/figure/Photobleaching-of-raspberry-anthocyanin-on-TiO-2-A-Spots-generated-after-60-s_fig1_263945548",
+      "type": "一手图注（原页不可读）",
+      "access": "curl 返回 HTTP 403，本轮不可读（未绕过）；仅搜索转述",
+      "date": "2026-11-01",
+      "quote": "未能核对：原页 HTTP 403；搜索转述为 spots after 60 s irradiation with a green laser pointer"
+    },
+    {
+      "id": "S04",
+      "title": "A Simple Demonstration of Photocatalysis Using Sunlight（J. Chem. Educ. 2012，DOI 10.1021/ed300048z）",
+      "url": "https://api.crossref.org/works/10.1021/ed300048z",
+      "type": "元数据（同刊另一篇日光演示）",
+      "access": "API（Crossref，已核书目；正文未读）",
+      "date": "2026-11-01",
+      "quote": "A Simple Demonstration of Photocatalysis Using Sunlight；J Chem Educ 89(11):1439-1441，2012-09-24；3 位作者"
+    },
+    {
+      "id": "S05",
+      "title": "Serpone N. Is the band gap of pristine TiO2 narrowed by anion- and cation-doping...? J Phys Chem B 2006 (PMID 17134177)",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/17134177/",
+      "type": "一手摘要",
+      "access": "API（E-utilities efetch，已核）",
+      "date": "2026-11-01",
+      "quote": "anatase, E(bg) = 3.2 eV; absorption edge ca. 387 nm"
+    },
+    {
+      "id": "S06",
+      "title": "Titanium dioxide（维基百科）",
+      "url": "https://en.wikipedia.org/wiki/Titanium_dioxide",
+      "type": "二手百科",
+      "access": "curl全文（已核：CAS、IARC 2B、E171 2022、GHS 象形图）",
+      "date": "2026-11-01",
+      "quote": "IARC Group 2B carcinogen（吸入粉尘）；banned for use in food by the European Union in 2022；GHSPictograms = skull and crossbones, health hazard, environment"
+    },
+    {
+      "id": "S07",
+      "title": "Transparent Photocatalytic Thin Films on Flexible Polymer Substrates (Materials 2018, 11, 1945; PMC6213899)",
+      "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6213899/",
+      "type": "一手论文（开放获取）",
+      "access": "curl全文（PMC，已核）",
+      "date": "2018-10-11",
+      "quote": "The instability of acrylic coatings in the presence of TiO2 and UV-irradiation has been described in the literature [59]；photo-yellowing of TiO2 coated D1 (PVDF lacquer) without SiO2 binder"
+    },
+    {
+      "id": "S08",
+      "title": "Xie & Yin, Photocatalytic colour switching of redox dyes for ink-free light-printable rewritable paper, Nat. Commun. 5, 5459 (2014)",
+      "url": "https://www.nature.com/articles/ncomms6459",
+      "type": "一手论文",
+      "access": "curl全文（HTML，已核；作者名以页面为准）",
+      "date": "2026-11-01",
+      "quote": "erased by heating over 20 cycles；laboratory 365-nm UV lamp；it took 6 days to re-oxidize 20% LMB back to MB；three primary colours (blue, red and green)"
+    },
+    {
+      "id": "S09",
+      "title": "ICNIRP：Protecting Workers from Ultraviolet Radiation（指南全文 PDF）",
+      "url": "https://www.icnirp.org/cms/upload/publications/ICNIRPUVWorkers.pdf",
+      "type": "一手（国际指南）",
+      "access": "curl全文（PDF，pdftotext 抽取，已核 §5.3.14 与 §2.3.3）",
+      "date": "2026-11-01",
+      "quote": "For typical levels of illuminance of 500 lux from bare fluorescent lamps, UVA irradiance is about 30 mW m-2 and UVB irradiance about 3 mW m-2；A plastic cover (diffuser) placed over the lamp eliminates effectively UVR"
+    },
+    {
+      "id": "S10",
+      "title": "Dharma Trading：搜索 titanium dioxide",
+      "url": "https://www.dharmatrading.com/search?q=titanium%20dioxide",
+      "type": "厂商页（搜索结果）",
+      "access": "curl全文（已核）",
+      "date": "2026-11-01",
+      "quote": "Results for titanium dioxide (9 products)：Chemicals (5)、Dye (2)、Scarves (1)；产品含 Urea、Tannic Acid、Alum、Calcium Hydroxide、Sodium Hydrosulfite 与 Procion 染料；页面显示 No search result for titanium dioxide"
+    },
+    {
+      "id": "S11",
+      "title": "Methylene blue（维基百科）",
+      "url": "https://en.wikipedia.org/wiki/Methylene_blue",
+      "type": "二手百科",
+      "access": "curl全文（已核）",
+      "date": "2026-11-01",
+      "quote": "potentially toxic and should only be used under a doctor's prescription"
+    },
+    {
+      "id": "S12",
+      "title": "Anthocyanin（维基百科，含 EFSA 2013、E163、美国与稳定性段落）",
+      "url": "https://en.wikipedia.org/wiki/Anthocyanin",
+      "type": "二手百科",
+      "access": "curl全文（已核）",
+      "date": "2026-11-01",
+      "quote": "approved for use as food colorants in the European Union ... E163；insufficiently characterized ... exceptions (red grape skin, blackcurrant)；No anthocyanin sources are included among approved colorants for drugs or cosmetics；used as pH indicators"
+    },
+    {
+      "id": "S13",
+      "title": "EU CLP 对 TiO2 Carc. 2 分类撤销的二手资讯（Normachem 页；另见 cirs-group.com 与 packaginglaw.com 条目，未读）",
+      "url": "https://www.normachem.com/en/normachem-informs/echa-updates-c-and-l-inventory-and-registry-of-intentions-following-eu-court-ruling-on-titanium-dioxide-classification",
+      "type": "二手（法规资讯）",
+      "access": "curl全文（二手页，已核；ECHA 原页未读）",
+      "date": "2026-11-01",
+      "quote": "European Court of Justice annuls harmonised classification of titanium dioxide as Carc. 2 H351；starting from August 1st, 2025 ... [in powder form containing ≥ 1% of particles with aerodynamic diameter ≤ 10 μm]；ECHA updates C&L Inventory and Registry of Intentions"
+    },
+    {
+      "id": "S14",
+      "title": "Photocatalytic color switching of redox imaging nanomaterials for rewritable media（UC OTC 技术转让页；US 10,534,254）",
+      "url": "https://techtransfer.universityofcalifornia.edu/NCD/24555.html",
+      "type": "专利与技术转让页（标题与专利号）",
+      "access": "curl全文（已核；权利要求未读）",
+      "date": "2026-11-01",
+      "quote": "Photocatalytic Color Switching Of Redox Imaging Nanomaterials For Rewritable Media；Tech ID 24555 / UC Case 2015-250-0；Issued Patent 10,534,254，01/14/2020"
+    },
+    {
+      "id": "S15",
+      "title": "Photocatalytic Color Switching of Transition Metal Hexacyanometalate Nanoparticles for High-Performance Light-Printable Rewritable Paper (Nano Lett. 2017, PMID 28094525)",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/28094525/",
+      "type": "元数据与摘要（PubMed）",
+      "access": "API（PubMed efetch，已核）",
+      "date": "2026-11-01",
+      "quote": "Title 已核；摘要称 photoreversible color switching systems（可逆，不满足 G3）"
+    },
+    {
+      "id": "S16",
+      "title": "Triphenyltriazine-Substituted Zinc Porphyrin on TiO2 with Competitive Electron Transfer for Dye Photodegradation (Inorg. Chem. 2026, PMID 42361215)",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42361215/",
+      "type": "元数据与摘要（PubMed）",
+      "access": "API（PubMed efetch，已核）",
+      "date": "2026-11-01",
+      "quote": "Triphenyltriazine-Substituted Zinc Porphyrin on TiO(2) with Competitive Electron Transfer for Dye Photodegradation；摘要讨论染料敏化 TiO2 的电子转移与光吸收"
+    },
+    {
+      "id": "S17",
+      "title": "轮5 F-photobleaching.md 与 轮5 report.md（F 节、Gates 矩阵、负结果）",
+      "url": "/tmp/claude-0/-home-user-Research/ce386818-48e4-5991-8412-39f0305aaa5a/scratchpad/pkg/photosensitive-puzzle-research-pack-20261031/原始资料/03-研究轮次/轮5-第一性原理路线-20261019/notes/F-photobleaching.md",
+      "type": "本地资料（旧轮次；含 Ibanez 日光与 300 W 数字，来源为旧轮笔记，原文未核）",
+      "access": "本地资料包（未核原文）",
+      "date": "2026-10-19",
+      "quote": "Sunlight ... 'very clear results after 20–25 min'；300 W Ultra-Vitalux lamp → complete in 5 min（旧轮笔记转述，待核）"
+    },
+    {
+      "id": "S18",
+      "title": "阶段 2 Garage 首单购物清单 DRAFT，E 节（F 路线台架材料与价格估算）",
+      "url": "/tmp/claude-0/-home-user-Research/ce386818-48e4-5991-8412-39f0305aaa5a/scratchpad/pkg/photosensitive-puzzle-research-pack-20261031/原始资料/04-阶段2实验包/首单清单-DRAFT-未批准未下单.md",
+      "type": "本地资料（草稿，价格为估算）",
+      "access": "本地资料包（已核估算标注）",
+      "date": "2026-10-19",
+      "quote": "二氧化钛粉末（食品/化妆品级，锐钛矿 anatase）（估算 $8–12）；覆盆子花青素来源（估算 $5–8）；宽刷/海绵刷（估算 $3–5）"
+    },
+    {
+      "id": "S19",
+      "title": "采购来源核查.md 第五节：ASTM D-4236 / LHAMA 毒理审查机构",
+      "url": "/tmp/claude-0/-home-user-Research/ce386818-48e4-5991-8412-39f0305aaa5a/scratchpad/pkg/photosensitive-puzzle-research-pack-20261031/原始资料/04-阶段2实验包/采购来源核查.md",
+      "type": "本地资料",
+      "access": "本地资料包",
+      "date": "2026-10-19",
+      "quote": "LHAMA 评估机构（Intertek、CIRS、Intrinsik、ACMI、InfoTox）"
+    },
+    {
+      "id": "S20",
+      "title": "实验协议-DRAFT.md（Pellet 显影剂段，跨路线观察）",
+      "url": "/tmp/claude-0/-home-user-Research/ce386818-48e4-5991-8412-39f0305aaa5a/scratchpad/pkg/photosensitive-puzzle-research-pack-20261031/原始资料/04-阶段2实验包/实验协议-DRAFT.md",
+      "type": "本地资料（跨路线观察，非 F 路线）",
+      "access": "本地资料包（未在本路线使用）",
+      "date": "2026-10-19",
+      "quote": "Pellet 复刻……铁氰化钾显影（第 16、30 行；应为亚铁氰化钾）"
+    }
+  ],
+  "negative_findings": [
+    {
+      "query": "WebSearch：Ibanez 2011 sunlight minutes raspberry anthocyanin TiO2（研究员所做，额度内 1 次）",
+      "scope": "全网搜索",
+      "result": "只确认书目与期刊信息；未找到日光时长或 300 W 灯数字；摘要与图注为激光光源（S02、S03）"
+    },
+    {
+      "query": "Crossref 10.1021/ed1008848 摘要字段",
+      "scope": "Crossref API（2026-11-01）",
+      "result": "无摘要字段（S01）"
+    },
+    {
+      "query": "pubs.acs.org/doi/full/10.1021/ed1008848；doi.org 解析",
+      "scope": "一手全文（核查者本轮再次尝试）",
+      "result": "本轮不可读（站点策略拒绝，按指示未绕过）"
+    },
+    {
+      "query": "ResearchGate 图注：Photobleaching of raspberry anthocyanin on TiO2",
+      "scope": "researchgate.net（核查者本轮读取）",
+      "result": "HTTP 403，不可读（未绕过）；数字与花青素身份均未能核对（S03）"
+    },
+    {
+      "query": "Semantic Scholar 搜索页：The Basis for Photocatalytic Writing",
+      "scope": "www.semanticscholar.org 搜索页",
+      "result": "返回空页（0 字节），失败"
+    },
+    {
+      "query": "Crossref 查询：anatase 395 nm LED 带隙 TiO2 光催化；PMC esearch 同类查询",
+      "scope": "Crossref API；PMC esearch",
+      "result": "Crossref 返回非 JSON（失败）；PMC 只返回无关的 2026 论文。带隙结论改由 Serpone 2006 摘要支持（S05）"
+    },
+    {
+      "query": "PubMed：indoor fluorescent light photocatalytic TiO2 dye degradation visible",
+      "scope": "PubMed（E-utilities）",
+      "result": "0 命中"
+    },
+    {
+      "query": "PubMed 0 命中 + WebSearch：indoor office lighting UV irradiance µW/cm² LED fluorescent",
+      "scope": "PubMed；网页搜索（额度内 1 次）",
+      "result": "未找到办公 LED 照明的 UV 实测数据（µW/cm²）。只得到 ICNIRP 荧光灯数字（S09）和消费灯的非同行评议测试（C 级，未采用）"
+    },
+    {
+      "query": "PubMed：rewritable paper TiO2 Yin Nat Commun；WebSearch：Yin 2014 rewritable paper",
+      "scope": "PubMed；网页搜索（额度内 1 次）",
+      "result": "PubMed 0 命中；Nat Commun 全文经 nature.com 读取（S08）"
+    },
+    {
+      "query": "PubMed：titanium dioxide carcinogen classification inhalation EU；CLP Carc 2；WebSearch：TiO2 CLP 分类",
+      "scope": "PubMed；网页搜索（额度内 1 次）",
+      "result": "PubMed 0 命中；EU 分类现状改由二手资讯确认（S13，B）。ECHA 原页未读"
+    },
+    {
+      "query": "PubChem PUG-View GHS：TiO2（CID 26042）、亚甲蓝（CID 6099）",
+      "scope": "PubChem REST（5 次尝试）",
+      "result": "PUGVIEW.ServerBusy 全部失败；GHS 栏目未取到，相关 SDS 项全部标为未验证"
+    },
+    {
+      "query": "Google Patents 关键词：photocatalytic bleaching titanium dioxide dye paper（2 次）",
+      "scope": "patents.google.com",
+      "result": "两次请求返回 Sorry 拦截页，未能检索，未绕过。专利结论仅限 UCR US 10,534,254 标题可见（S14，关键词范围内发现，权利要求未读）"
+    },
+    {
+      "query": "PubMed：Brilliant Blue FCF / methylene blue photocatalytic degradation kinetics TiO2",
+      "scope": "PubMed",
+      "result": "结果几乎全部是水处理研究，不对应美术材料体系，未采用"
+    },
+    {
+      "query": "ECHA C&L 原页：TiO2 分类",
+      "scope": "echa.europa.eu",
+      "result": "本轮不可读（按指示未绕过）；改用二手资讯（S13，B）"
+    },
+    {
+      "query": "Dharma Trading：titanium dioxide 单品与价格",
+      "scope": "dharmatrading.com 站内搜索（curl 全文，2026-11-01）",
+      "result": "9 个结果为化工助剂（尿素、明矾、单宁酸、氢氧化钙、连二亚硫酸钠）、染料与一款丝巾的混合，未见 TiO2 单品（S10）"
+    },
+    {
+      "query": "Amazon：TiO2、花青素原料价格或 SDS",
+      "scope": "www.amazon.com",
+      "result": "禁止访问，未访问"
+    },
+    {
+      "query": "ASTM D-4236 / LHAMA 对 TiO2、花青素、亚甲蓝的审查结论",
+      "scope": "本轮可读来源（未检索 CPSC 页面，受额度与时间限制）",
+      "result": "未找到结论；本地资料包列出 LHAMA 审查机构（S19）"
+    },
+    {
+      "query": "加速耐光数据：TiO2/花青素 与 TiO2/亚甲蓝 体系（c08 所称「没有找到」）",
+      "scope": "未检索（缺检索式，见 c08 说明）",
+      "result": "不能作为「未找到」结论；记为未知"
+    }
+  ],
+  "key_unknowns": [
+    "室内光（以可见光为主、UV 很少）下未照射背景能否数周保持颜色。这是 G3 与底线 2–3 的决定性项，目前没有背景褪色速率数据。",
+    "Ibanez 体系的可见光（非 UV）背景风险：该体系已演示可见激光驱动的漂白，UV 封层不覆盖这一路径。",
+    "干式 UV 封层能否既阻断背景反应，又不被 TiO2 光氧化，并且是否算作非显影的额外步骤（底线 1）。",
+    "旧记录的 Ibanez 2011 日光数字（2 min、20–25 min、300 W 5 min）能否归属于该文或同刊 2012 年 S04。需要读全文或原始实验记录，否则 30 分钟目标的依据需要重建。",
+    "Ibanez 原文的 TiO2 晶型、底材（滤纸或涂布纸）、染料身份（是否为花青素）与对照组结论，均未核实。",
+    "消费级 395 nm 与 365 nm 光源的有效波段，取决于所选染料在这两个波长的吸收光谱，目前未知。",
+    "TiO2 与所选染料的 SDS、ASTM D-4236 与 LHAMA 结论（PubChem 未取到，ASTM/LHAMA 未查到）。",
+    "纸基与芯板拼图底材的吸湿变形（水基浆料刷涂）未测。"
+  ],
+  "discriminating_experiment": {
+    "one_liner": "同一批 TiO2 加花青素纸样放置 3–4 周，比较避光、室内灯下、室内灯下加 UV 滤光（仅可见光）、室内灯下加 UV 封层四组的背景色差 ΔE；另用 365 nm 与 395 nm LED 各照射 30 分钟比较漂白程度。即可判断 F 的永久性、可见光路径与 395 nm 可行性。",
+    "design_sketch": "每组至少 3 个重复纸样；每周用比色仪或标准化相机测未照射背景 ΔE；记录室内照度与 UV 计读数（若有）；同批样品同时测 365/395 nm 漂白速率与花青素吸收光谱。背景 ΔE 超过阈值（事先设定，本轮未设定）则 F 的永久性不成立；封层组若稳定则保留封层路线。仅可见光组用于分离 UV 与可见光两条路径。"
+  },
+  "new_routes_spotted": [
+    {
+      "name": "光致可逆 TiO2 彩色切换纸（Cu、N 掺杂 TiO2 等）",
+      "why": "同一平台的可逆族，PubMed 命中多条 2021–2024 年工作。可逆，不满足永久性，仅作为边界条件记录。",
+      "lead_url": "https://pubmed.ncbi.nlm.nih.gov/39622075/"
+    },
+    {
+      "name": "过渡金属六氰金属酸盐纳米粒的光催化变色（普鲁士蓝类）",
+      "why": "Nano Lett 2017 标题为 Light-Printable Rewritable Paper（已核）；摘要称 photoreversible，即可逆，不满足 G3。六氰合物属含氰配合物，且普鲁士蓝遇碱褪色，需先做红线核查。",
+      "lead_url": "https://pubmed.ncbi.nlm.nih.gov/28094525/"
+    },
+    {
+      "name": "卟啉敏化 TiO2 的可见光染料降解",
+      "why": "2026 Inorg Chem，标题与摘要主题为染料敏化 TiO2 的光降解（已核）。可见光敏化设计可能使 395 nm 以上光源有效，属推断，未核；摘要的目标是降解而非美术漂白，适用性未证实。",
+      "lead_url": "https://pubmed.ncbi.nlm.nih.gov/42361215/"
+    },
+    {
+      "name": "2012 年 J Chem Educ 日光光催化演示（DOI 10.1021/ed300048z）",
+      "why": "书目已核（89(11) 1439–1441，2012，3 位作者）。可能是旧轮次日光数字的真实来源，但需先读全文才能判断。",
+      "lead_url": "https://doi.org/10.1021/ed300048z"
+    }
+  ],
+  "search_budget_used": {
+    "websearch": 4,
+    "curl_reads": 18
+  },
+  "reconciliation_log": [
+    {
+      "item": "name_en 与 c01 底材、晶型",
+      "change": "删除 'anatase TiO2 coated paper'，改为不预设晶型与底材的名称；锐钛矿与滤纸仅作为旧轮记录保留，标为未验证。",
+      "why": "ERIC 摘要（已核）只写 titanium dioxide，未写晶型与底材。"
+    },
+    {
+      "item": "c01 机理链（电子注入、超氧/过氧/羟基自由基）",
+      "change": "正文降级：该链条改写为「旧轮笔记的推断，未验证」；保留 oxidative photobleaching 与可见激光作为事实。",
+      "why": "未能证实：摘要未描述电子注入或活性氧物种。"
+    },
+    {
+      "item": "c01 花青素身份",
+      "change": "将染料身份写为「覆盆子果汁染料（ERIC 摘要）；花青素身份未验证」。",
+      "why": "ERIC 摘要未写 anthocyanin；原页 S03 为 403。"
+    },
+    {
+      "item": "c02 Yin 2014「只演示二值图案」",
+      "change": "改为 Yin 演示 MB、NR、AG 三原色可逆多色可重写纸，但体系可逆；Ibanez 多色扩展仍未验证。",
+      "why": "反驳：原文摘要明确给出三原色演示。"
+    },
+    {
+      "item": "c03 Ibanez 日光与 300 W 数字与 30 分钟目标",
+      "change": "数字维持未验证；30 分钟目标标为「无已核实依据」；补充 2 min 有两种含义（致敏与起始漂白）；补充 Ibanez 可见光驱动对 395 nm 结论的适用范围。",
+      "why": "未能证实：原文不可读，数字仅见于旧轮笔记；ERIC 摘要确认可见激光。"
+    },
+    {
+      "item": "c03 ResearchGate 图注（S03）",
+      "change": "标为未验证（原页 403，不可读）；不再作为 60 s 绿色激光数字的依据。",
+      "why": "未能证实：原页 HTTP 403，只有搜索转述。"
+    },
+    {
+      "item": "c04 Ibanez 无显影（事实）",
+      "change": "Ibanez 部分降为未验证；Yin 无显影保留为事实（全文已核）。",
+      "why": "摘要不足以支持否定性陈述；Yin 全文检索 wash、rinse、fix、spray 无相关步骤。"
+    },
+    {
+      "item": "c05 正文「底线 1 的基础流程 ✓」",
+      "change": "删除 ✓，改为 ?（与 c05_免洗核验 表一致）；说明段补充删除记录。",
+      "why": "反驳：同一文件内表与 verdict 均为 ?，正文 ✓ 无依据。"
+    },
+    {
+      "item": "c06 UV 阻隔封层对策",
+      "change": "补充：封层只覆盖 UV 路径，不覆盖 Ibanez 已演示的可见光路径；封层对策降为未验证；淬灭候选由「未发现」改为「本轮未检索，记为未知」。",
+      "why": "与 ERIC 摘要（可见激光）冲突；「未发现」缺检索范围，违反证据纪律。"
+    },
+    {
+      "item": "c07 丙烯酸引文",
+      "change": "注明为 S07 对 Mirabedini 2011 的转述，不是 S07 自身实验。",
+      "why": "证实，但需标注引文性质。"
+    },
+    {
+      "item": "c08 「没有找到」加速耐光数据",
+      "change": "改为「未知。本轮未列检索式，不作为未找到结论；需补检索」。",
+      "why": "未能证实：否定性结论缺检索式、库、日期与 URL。"
+    },
+    {
+      "item": "c09 花青素稳定性与 HEC 再氧化",
+      "change": "补充花青素对光、pH、氧、温度与金属离子敏感（S12，B，已核）；HEC 数据保留为证实。",
+      "why": "证实（Wikipedia Stability 段与 Yin 原文）。"
+    },
+    {
+      "item": "c11 Carc. 2 撤销细节",
+      "change": "补充适用范围（粉末，含 ≥1% 颗粒 ≤10 µm）与生效日期 2025-08-01；删除未证实的「2022 年普通法院撤销」与 Delegated Regulation 2020/217 细节（标为未能证实）；GHS 象形图「与现行分类不一致」降为未验证。",
+      "why": "证实（S13 页）；未能证实（S13 页未载）。"
+    },
+    {
+      "item": "c11 Anthocyanin 与 E163 表述",
+      "change": "保留，补充「美国未将花青素列入药品或化妆品着色剂」为已核，并注明 EFSA 原文未读。",
+      "why": "证实（S12，B）。"
+    },
+    {
+      "item": "c12 Dharma 搜索描述",
+      "change": "由「9 个结果均为染料与固色剂类」改为混合类别描述；结论「未见 TiO2 单品」保留。",
+      "why": "反驳（描述不准确）；结论证实。"
+    },
+    {
+      "item": "c12 价格估算日期",
+      "change": "补充估算草稿日期 2026-10-19，仍标为未验证。",
+      "why": "价格与库存须标日期与未验证状态。"
+    },
+    {
+      "item": "c13 第 7 条（Yin 3 天可读）",
+      "change": "更正对象：光印无色字迹（白色 LMB 字）的可读性，不是未照射蓝色背景；补充 LMB 再氧化速率（6 天 20%）。",
+      "why": "反驳：原文 'exposed regions turned to white'，被测对象是光印态。"
+    },
+    {
+      "item": "c13 第 6 条与 baseline 第 5 条（>10 循环位置）",
+      "change": "Fig. 4 图注更正为 Fig. 5 图注。",
+      "why": "原文位置核对。"
+    },
+    {
+      "item": "c13 第 11 条（新增）",
+      "change": "新增 Ibanez 对照组结论条目，标为未验证。",
+      "why": "与 baseline 第 11 条保持一致，便于追踪。"
+    },
+    {
+      "item": "c14 背景数据表述",
+      "change": "删除「含 HEC 蓝色区可读」作为背景证据的用法；补充可见光风险与 UV 封层的局限。",
+      "why": "同 c13 第 7 条更正。"
+    },
+    {
+      "item": "c15 判别实验",
+      "change": "增加「室内灯下加 UV 滤光（仅可见光）」一组，以分离 UV 与可见光两条路径；阈值标为未设定。",
+      "why": "封层对策与可见光路径需要分离测试。"
+    },
+    {
+      "item": "verdict.status 与 reasons",
+      "change": "由「观察线」改为「观察线（降级）」；撤销「首轮台架候选 #1」地位；理由更新：Ibanez 数字撤回、Yin 误读更正、UCR 专利号修正（删除「专利族」）、UV 封层局限、Carc. 2 适用范围。",
+      "why": "裁定冲突取更保守的一方：核心依据不成立，但无红线命中且无已证实失败，故不淘汰。"
+    },
+    {
+      "item": "baseline_challenges 第 2 条（G1 无显影）",
+      "change": "agree 改为 partly；Yin 证实，Ibanez 未证实。",
+      "why": "摘要不足以支持否定性陈述。"
+    },
+    {
+      "item": "baseline_challenges 第 3 条（G3 背景褪色）",
+      "change": "增加：Yin 数据不能作为背景证据；可见光路径使 UV 封层对策不足。",
+      "why": "反驳 Yin 误用；新增可见光反驳。"
+    },
+    {
+      "item": "baseline_challenges 第 7 条（Carc. 2）",
+      "change": "补充适用范围与未能证实的细节。",
+      "why": "S13 页面（已核）。"
+    },
+    {
+      "item": "baseline_challenges 第 8 条（零售）",
+      "change": "由「9 个结果均为染料与固色剂类」改为混合类别描述。",
+      "why": "反驳（描述不准确）。"
+    },
+    {
+      "item": "baseline_challenges 第 12 条（UV 封层）",
+      "change": "新增第二条反驳：Ibanez 可见激光路径不受 UV 封层阻挡。",
+      "why": "ERIC 摘要（已核）。"
+    },
+    {
+      "item": "sources access 字段",
+      "change": "S01、S04、S05、S15、S16 标为 API 已核；S02、S08、S06、S07、S09、S10、S11、S12、S14 标为 curl 全文已核；S13 由搜索摘录改为 curl 全文（二手页）；S03 标为 403 不可读；S17、S18 标明本地资料未核原文或估算。",
+      "why": "核查者本轮实际读取的来源。"
+    },
+    {
+      "item": "negative_findings 新增",
+      "change": "新增 ResearchGate 403 条目与 c08 检索缺口条目；修正 Dharma 条目描述。",
+      "why": "证据纪律：否定性结论需写明范围；原描述不准确。"
+    },
+    {
+      "item": "key_unknowns",
+      "change": "新增可见光背景风险、Ibanez 晶型/底材/染料身份未核实两条。",
+      "why": "与 c01、c03、c06 的修订一致。"
+    },
+    {
+      "item": "discriminating_experiment",
+      "change": "增加仅可见光（滤 UV）一组，并注明阈值需事先设定。",
+      "why": "分离 UV 与可见光路径。"
+    },
+    {
+      "item": "new_routes_spotted",
+      "change": "S15 注明摘要为 photoreversible（不满足 G3）；S16 注明摘要主题为降解且 395 nm 推断未核；S04 补充书目已核。",
+      "why": "PubMed 摘要已核。"
+    },
+    {
+      "item": "research.md 缺失",
+      "change": "在 verify.json 的 structural_issues 中记录；本修订版不生成 md。",
+      "why": "routes 目录中无 tio2_bleach.research.md。"
+    }
+  ]
+}

@@ -1,0 +1,304 @@
+{
+  "key": "anthotype",
+  "name_zh": "植物色素光漂白（anthotype）",
+  "name_en": "anthotype: plant pigment photobleaching",
+  "status": "淘汰",
+  "date": "2026-11-01",
+  "columns": {
+    "c01_机制": {
+      "text": "光化学漂白（photobleaching）：植物色素在紫外/可见光下被光氧化或分解，生成无色或浅色产物，遮挡区保留原色，形成负像（S01，B；S02 摘要，A-API）。姜黄素降解产物香兰素、阿魏酸等小分子酚：S08 在缓冲液中鉴定为次要降解产物（A-API，摘要未说明光照，非光化学）；S06 仅在讨论中引用前人光降解文献提及同类产物，本研究未鉴定（归因已修正，原记为 S06）。betanin 在重水溶液中以化学机制淬灭单线态氧并被氧化消耗（S14，A-API，溶液级）。未找到纸基或固相 anthotype 的光化学动力学实测。",
+      "grade": "B（机制定性）；A-API（溶液级）",
+      "label": "事实（摘要级与溶液级）+ 推断（推广到纸基）",
+      "source_ids": ["S01", "S02", "S06", "S08", "S14"]
+    },
+    "c02_极性色调": {
+      "text": "负像：曝光区褪白，遮挡区保留植物原色。每种植物基本为单一色相（姜黄偏黄并可碱显影为棕（S20，C；S01 图注 B）；花青素色随 pH 变化（S02 摘要，A-API；S01 注释，B））。深浅可由涂布乳液浓度调节：作者称厚乳液偏棕、薄乳液偏浅紫（S18，红罂粟，B；归因已修正，原记为 S19）；单层与双层涂布对比见 S19 图注（B）。连续色调：原引文 wispy, dream-like, low contrast 在 S18 与 S19 全文中未找到，已删除，降为未验证；S19 仅描述陈年提取液为 softer tones and gentle contrasts（单人经验，B）。多色扩展：S02 摘要称已演示姜黄素与叶绿素两种色素的波长响应（A-API；原记为仅理论推断，已修正）；多色成品未验证（推断）。",
+      "grade": "B（经验性描述）；连续色调 未验证；多色成品 推断",
+      "label": "事实（经验与摘要）+ 未验证（连续色调）+ 推断（多色成品）",
+      "source_ids": ["S01", "S02", "S18", "S19", "S20"]
+    },
+    "c03_曝光条件": {
+      "text": "日光是唯一有时长数据的光源：樱桃汁正午 2 h、姜黄 4 h（S01 图注，B）；姜黄晴天 3–4 h，菠菜 4–6 h 至数天（S20，教学文档，未测量，C）；作者 printing frame 1–3 天（S18，B），25–50 h（S19，B）。UV 灯：未找到任何 anthotype UV 灯数据。溶液实测为 10 W/m² 荧光灯与白光 LED（S06，A），光谱带未给出，不能换算为 mJ/cm²（md 中按 t½ 推算的 J/cm² 数值已删除）。与 30 分钟目标的关系（推断，以 0.5 h 为基准）：日光报告的最短时长约 2 h（樱桃汁），约为目标的 4 倍；姜黄 3–4 h 约为 6–8 倍；常见 1–3 天约为 48–144 倍。日光路径不达标；UV 灯路径未验证。",
+      "grade": "B（日光时长）；UV 灯 无数据",
+      "label": "事实 + 推断（倍数）；UV 灯 未验证",
+      "source_ids": ["S01", "S06", "S18", "S19", "S20"]
+    },
+    "c04_显影后处理": {
+      "text": "无必需显影，直接曝光即成像。可选碱性显影：小苏打（碳酸氢钠）溶液使姜黄由黄变棕（S20 教程文字，C）；S01 图注仅记录 later development with baking soda（B）。S02 摘要描述用姜黄、碳酸钠与甲基纤维素粘结剂可得到较快、较细节的 anthotype（A-API，已核对）。显影后可选清水冲洗去碱（S20，C）。碳酸盐在本路线仅作显影，不作停止或中和（未外推 Pellet 体系的碳酸盐中和设想）。未找到蒸气、热或喷雾显影的证据。",
+      "grade": "A-API（碱显影存在于摘要）/ B-C（颜色变化与冲洗）",
+      "label": "事实",
+      "source_ids": ["S01", "S02", "S20"]
+    },
+    "c05_免洗": {
+      "text": "真实程度：半干/不适用（推断）。基础流程无水洗，但不存在可评估的「喷后停止」步骤；可选碱显影后需清水冲洗。六条底线逐条核验见 c05_免洗核验：1、2、5、6 为未知；3 不达标（推断）；4 不满足（所列范围内无已知停止剂）。",
+      "grade": "B",
+      "label": "推断",
+      "source_ids": ["S02", "S20"]
+    },
+    "c06_停止机制": {
+      "text": "无已知化学停止机制（所列范围内）：Wikipedia 写明 The image cannot be fixed（S01，B）；作者称 A method of fixing Anthotypes is not known and perhaps not necessary despite obvious limitations（S18，B；引文已补全）。候选，均未在 anthotype 上验证：(a) 物理 UV 滤光玻璃或封层：S22 搜索摘录称 won't stop fading entirely but will significantly slow，本轮未能定位原文，降为未验证；(b) UV 吸收剂后整理：羊毛/丝织物经 20 h 氙灯后光牢度改善（S15，A-API，非 anthotype）；(c) 没食子酸使 C3G 在超声+UV-A（sonophotolysis）下降解减慢（S12，A-API，溶液）；(d) 柑橘来源香豆素类专利 US6752862：关键词范围内发现（S17，全文已读）。其背景中「对花青素无效」指前案维生素 C，并非本发明；本发明正文称对花青素 particularly effective，实施例 1（esculetin，A 组）含接骨木果花青素色素，加速条件（70 °C、UV、5 h、pH 3 水相）下残留率对照 39.6% 对 添加 69.6%（表格列序由文本推断，待看原图）。非纸基、非光照单独条件，anthotype 适用性未验证；(e) Cu(NO3)2 加入叶绿素/PMMA–丙烯酸多元醇涂膜，UV-A 下 ΔE* 更小（S16，A-API，仅玻璃基板；铜盐 SDS 未核）。避光仅为暂停：S06 溶液暗置 24 h 无显著色变（A）；叶绿素印样暗置一月仍褪 来自 S22 论坛摘录，未能复核，降为未验证。硼砂能否定影：S18 读者评论称硼砂可 binds 色素，另一读者称 Nothing even close to a fixative，站点回复未评价硼砂（C；归因已修正）。红线：(e) 的铜盐毒性未经 SDS 核验；未涉及铁氰化物或重铬酸盐。",
+      "grade": "A（候选数据，非 anthotype）；anthotype 实测停止 无",
+      "label": "事实（非 anthotype 体系）+ 未验证（anthotype 适用性）",
+      "source_ids": ["S01", "S06", "S07", "S12", "S15", "S16", "S17", "S18", "S22"]
+    },
+    "c07_白区稳定": {
+      "text": "未知。漂白区色素被破坏，留下光降解产物（香兰素、阿魏酸等类，见 c01 的归因），其颜色稳定性未报告；作者描述完全曝光的区域 will slowly fade to near white or faint yellow（S18，B）。Wikipedia 写道褪色问题 seems to be mostly related to choice of flower or plant matter（未引证，B-）：提示稳定性依色素种类，结论不宜推广到全部植物（本轮补入）。纸基本身的泛黄、光敏及白区长期色变均无数据。缺证据：纸基白区的长期色变测试。",
+      "grade": "B",
+      "label": "未验证",
+      "source_ids": ["S01", "S06", "S18"]
+    },
+    "c08_成色耐光": {
+      "text": "仅报数据本身：(1) 姜黄素（HPLC 测得的 curcumin 化学分解，非色度），TO 样品，DMSO 溶液，25 °C，10 W/m² 荧光灯 t½ 15.1 h，白光 LED t½ 9.9 h（S06，A）；(2) 同一体系暗置 24 h 无显著色变（S06，A）；(3) 姜黄素于 0.1 M 磷酸盐缓冲液及无血清培养基（非水溶液），pH 7.2、37 °C，约 90% 在 30 min 内分解；摘要未说明光照，pH 3–10 中在中性–碱性更快（S08，A-API）；(4) C3G 在 UV-A 400 µW/cm² 下单独光解弱，摘要未给 t½（S12，A-API）；(5) betanin 在水与软饮中为所测三种红色染料中最不稳定者（S13，A-API）；(6) 玫瑰葡萄酒灯照 16 h 后花青素总量下降 26%，辐照强度未在摘要中给出（S10，A-API）；(7) 红甘蓝花青素提取液 TAC t½：水提 9.5 d，50% 乙醇提 16–76 d，温度为主因，其次光与氧（S09，A-API，综合储存条件，非纯光照）。无纸基 anthotype 成色的耐光数据。",
+      "grade": "A",
+      "label": "事实（数据本身，不换算年限）",
+      "source_ids": ["S06", "S08", "S09", "S10", "S12", "S13"]
+    },
+    "c09_预涂货架期": {
+      "text": "出厂预涂：未找到任何商业预涂 anthotype 纸，未知。现涂混合液：作者建议深色瓶、少空气、密封、避光保存（S19，B）；烈性醋（spirit vinegar）较葡萄酒醋、苹果醋稳定，后两者即使冷藏 within a few weeks 即分解（S19，B；原记为「醇基」，已修正）；作者称高浓度酒精在封闭深色瓶中保存较久（S19，B）。同一 Phlox 提取液冷藏一年后仍可成像，但首次涂布的对比度与饱和度更高；冷藏提取液或干花浸泡液存放三年后仍可用，质量不同（S19，B，单人非对照，作者自称非科学研究）。红甘蓝提取液数据见 c08（S09，A-API）。涂布后纸的货架期：无数据。",
+      "grade": "B（作者经验，非对照）",
+      "label": "事实（经验）；涂布后货架期 未验证",
+      "source_ids": ["S09", "S19"]
+    },
+    "c10_底材适配": {
+      "text": "已测：纸基（作者使用 100% cotton 200 gsm，S19，B；S18 称手工纸为 an extra nice touch，B）。醇基乳液干燥快（S19，B）。未测：灰板或拼图纸板的吸湿变形、涂层附着与干后拼合。叶绿素/PMMA–丙烯酸多元醇涂膜只在玻璃基板上测试（S16，A-API）。蜡或 UV 玻璃封层与纸板的兼容性无数据。",
+      "grade": "B（纸基）",
+      "label": "事实（纸基）；拼图底材 未验证",
+      "source_ids": ["S16", "S18", "S19", "S20"]
+    },
+    "c11_安全法规": {
+      "text": "未读取任何 SDS；ASTM D-4236 / LHAMA 评估未找到（未验证）。植物提取物：S03 作者称 chlorography 为 non-toxic 与 environmentally friendly（A-API，作者自述，非法规判定）。家庭风险：乙醇易燃；S18 称 Denatured alcohol or even lighter fluid 可代替蒸馏水用于乳液（B；不应采纳）。碳酸钠与小苏打为碱性，SDS 未核（S23 未读取）。可选铜盐 Cu(NO3)2（S16）SDS 未核。CAS 号未核对：PubChem 返回 ServerBusy（S23，本轮未重试）。",
+      "grade": "C（缺 SDS）",
+      "label": "未验证",
+      "source_ids": ["S03", "S16", "S18", "S23"]
+    },
+    "c12_供应成本": {
+      "text": "未知（未验证）。未读取任何价格页。原料为家用姜黄粉、小苏打和酒精，价格未核。在 WebSearch 与 Wikipedia 范围内未找到商业 anthotype 套件或预涂纸（见 negative_findings）。",
+      "grade": "C",
+      "label": "未验证",
+      "source_ids": ["S22"]
+    },
+    "c13_证据等级": {
+      "text": "关键主张逐条：(1) 光化学漂白成负像（S01 B；S02 摘要 A-API；S06 溶液 A）；(2) 无化学停止、不可定影（S01、S18，B）；(3) 姜黄素 t½ 15.1 h / 9.9 h（S06，A，溶液 HPLC）；(4) 姜黄素于 pH 7.2–10 的缓冲液中分解更快（S08，A-API，非光照条件，摘要未说明光照，不能据此推断为碱显影后的光漂白加速）；(5) 羊毛/丝织物 UV 吸收剂改善光牢度（S15，A-API，非 anthotype）；(6) Cu 添加使叶绿素涂膜 ΔE* 变小（S16，A-API，玻璃）；(7) 没食子酸减慢 C3G 在超声+UV-A（sonophotolysis）下的降解（S12，A-API，溶液）；(8) 暗置仅暂停（S06，A，溶液 24 h，结论仅限 24 h 数据）；(9) 日光 2–4 h 起（S01 图注 B；S20 教学文档 C）；(10) 配制液寿命分来源列出：红甘蓝提取液 t½ 9.5 d（水）至 16–76 d（50% 乙醇）（S09 A-API，综合储存条件）；烈性醋与葡萄酒醋/苹果醋的数周级寿命（S19 B）；Phlox 冷藏提取液 1 年、3 年仍可用（S19 B，单人非对照）。第 (3)–(8) 条均为溶液或非 anthotype 体系，迁移到纸基标「未验证」。",
+      "grade": "A/B/C 混合",
+      "label": "事实 / 推断 / 未验证（逐条见文本）",
+      "source_ids": ["S01", "S02", "S06", "S08", "S09", "S12", "S15", "S16", "S19", "S20"]
+    },
+    "c14_关键未知": {
+      "text": "(1) 能否找到阻止残余（未曝光）色素在薄膜上继续光漂白的方法：无 anthotype 实测，最可能翻盘；若 UV 滤光封层或抗氧化添加剂使 ΔE* 显著低于裸片，需重评。(2) 达到终点所需 UV 或 LED 剂量与 30 分钟目标的差距：无数据。(3) 碱显影对已成色区的化学影响（干膜）：仅有溶液级化学不稳定证据（S08，缓冲液、非光照条件），不能直接推断为光漂白加速。(4) 褪色是否高度依赖色素种类（Wikipedia 未引证说法）：未验证，决定结论能否推广。",
+      "grade": "—",
+      "label": "未知",
+      "source_ids": ["S01", "S05", "S06", "S08", "S17"]
+    },
+    "c15_判别实验": {
+      "text": "同一批涂布的姜黄纸样，曝光至终点后分为裸片、UV 滤光封层、加没食子酸三组（或其他候选），各组在 10 W/m² LED 下照射 24 h，另设暗置对照；每 2 h 用色度计记录 ΔE*。统一判据：若任一处理组 24 h 光照后 ΔE* 相对裸片降幅不少于 50%（阈值为推断，需按实验目标另定），则该停止候选成立；若三组均达不到，「停止」不成立，本路线淘汰。",
+      "grade": "—",
+      "label": "设计（推断）",
+      "source_ids": ["S06", "S12"]
+    }
+  },
+  "c05_免洗核验": {
+    "验收": {
+      "1_喷后免洗": "? 基础流程无水洗，但没有可评估的停止喷剂；可选碱显影后需清水冲洗（S20，C）。",
+      "2_白区停得住": "? 漂白区已无可再褪的色素，但光降解产物与纸基长期稳定性无数据（S06、S18）。",
+      "3_成色留得住": "✗（推断）：未曝光的成色区仍光敏，连续光照下继续漂白（S19 原文 light continues to act even after the work is complete，B；S06 溶液 t½ 9.9–15.1 h，A，非纸基）；所列范围内未发现可使其不再褪色的停止剂。证据为定性与溶液级，纸基定量未知。",
+      "4_少量喷液": "✗（不满足，非实测失败）：该条要求少量均匀喷液即可充分停止；所列范围内未发现任何停止剂，故不满足。此项不是对喷液量的实测结论。",
+      "5_底材不变形": "? 仅纸基有作者经验（S18、S19，B）；拼图纸板吸湿变形未测。",
+      "6_安全前置": "? 作者称植物提取物 non-toxic（S03，A-API，自述）；SDS 与 ASTM D-4236 / LHAMA 未核验；乙醇易燃；可选铜盐需核验。"
+    },
+    "说明": "六条中 1、2、5、6 为未知（需 SDS、纸板测试、白区长期测试），不是通过；3 为核心失败（推断）；4 为不满足（无已知停止剂）。本表无 ✓ 标记。30 分钟目标与红线核查分别记于 verdict。"
+  },
+  "verdict": {
+    "status": "淘汰",
+    "reasons": [
+      "底线 3 不达标（推断）：未曝光（成色）区仍光敏，连续光照下持续漂白（S19 定性；S06 溶液 t½ 9.9–15.1 h；纸基无数据）。所列范围内无已知化学停止，物理封层无 anthotype 实测。",
+      "底线 4 不满足：所列范围内未发现停止剂，少量喷液能否充分停止无从评估。",
+      "30 分钟目标：日光路径不达标（S01 图注最短 2 h，S20 姜黄 3–4 h，S18 常见 1–3 天）；UV 灯路径未验证（无数据）。",
+      "底线 1、2、5、6 为未知，不是通过。",
+      "保留价值：仅作为「物理防护或 UV 滤光对天然色素效果」与「配方稳定性」的参照线索，不作为本产品主线。"
+    ],
+    "red_line_hits": [
+      "铁氰化钾、亚铁氰化钾、重铬酸盐、普鲁士蓝：未命中。两种铁氰/亚铁氰物质已分别列出，未混写。",
+      "碱性显影（小苏打、碳酸钠）：未直接命中；仅作显影（非停止）使用，不外推为碳酸盐中和。对已成色区的影响需按红线 3 单独评估；S08 证据为非光照化学不稳定，不能作为光损伤证据，干膜未验证。",
+      "学生在家或车库操作：乙醇易燃；S18 称 lighter fluid 可作溶剂，属不应推荐的做法。"
+    ]
+  },
+  "baseline_challenges": [
+    {
+      "round": "轮1",
+      "old_claim": "无需水洗但不能定影，持续褪色",
+      "agree": "agree",
+      "my_evidence": "S01 写明 The image cannot be fixed（B，已核对原文）；S19 写明 light continues to act even after the work is complete（B，已核对原文）；S06 为溶液级光降解持续性（A）。无 anthotype 定量数据。",
+      "strength": "中（定性一致，定量缺失）"
+    },
+    {
+      "round": "轮1",
+      "old_claim": "曝光数小时至数天（A3-5）",
+      "agree": "agree",
+      "my_evidence": "S20 晴天姜黄 3–4 h、菠菜 4–6 h 至数天（C，已核对）；S01 樱桃汁 2 h、姜黄 4 h 图注（B，已核对）；S18 1–3 天、S19 25–50 h（B，已核对）。",
+      "strength": "中（B/C 来源）"
+    },
+    {
+      "round": "轮1",
+      "old_claim": "只能避光或蜡封（summary；A3-3 写 physical sealing only, no chemical stop exists）",
+      "agree": "disagree",
+      "my_evidence": "「只能」过度概括：纺织品 UV 吸收剂后整理有 20 h 氙灯后的光牢度改善（S15，A-API，已核对）；叶绿素涂膜 Cu 添加有 UV-A 下 ΔE* 改善（S16，A-API，已核对）；没食子酸减慢 C3G 在超声+UV-A 下的降解（S12，A-API，已核对）。这些均非 anthotype。「无化学停止」与 S01、S18 一致（agree）。避光仅为暂停：S06 溶液暗置 24 h 无显著变化（已核对）。",
+      "strength": "中（A-API，但体系非 anthotype）；旧主张依据为教程（C）"
+    },
+    {
+      "round": "轮1",
+      "old_claim": "原理引 MDPI 2673-5636/6/3/41 为同行评议文献，支持花青素与类胡萝卜素光降解、类胡萝卜素更耐光",
+      "agree": "disagree",
+      "my_evidence": "该 URL 对应的 Crossref DOI 为 10.3390/jzbg6030041，主题为 chlorography（已核对）；摘要仅确认 photobleaching of pigments，不含花青素或类胡萝卜素的具体光稳定性陈述。mdpi.com 全文按清单为 403，未绕过，「类胡萝卜素更耐光」无法核对。",
+      "strength": "弱（仅摘要）"
+    },
+    {
+      "round": "轮1",
+      "old_claim": "示例：beet 7 days（Wikipedia）",
+      "agree": "disagree",
+      "my_evidence": "2026-11-01 读取的 Wikipedia 页面 wikitext 中未找到 7 days 或甜菜曝光时长的示例，仅有 beetroot juice 敏化图注（已复核）。樱桃汁 2 h 与姜黄 4 h 图注已核实（S01）。",
+      "strength": "中（复核后由弱升为中：原文确认缺失）"
+    },
+    {
+      "round": "轮1",
+      "old_claim": "可选小苏打显影使姜黄由黄变棕（A3-2）",
+      "agree": "agree",
+      "my_evidence": "S02 摘要 effect of pH on the color of turmeric and anthocyanin（A-API，已核对）；S20 教程（C，已核对）。新增风险：S08 显示姜黄素在中性至碱性 pH 下分解更快（缓冲液，非光照，A-API，已核对），但不能推断为光损伤。",
+      "strength": "中（显色强；损伤风险为溶液级、非光照）"
+    },
+    {
+      "round": "轮1",
+      "old_claim": "蜡封可阻挡 UV、保存图像（are.na 教程，A3-3）",
+      "agree": "disagree",
+      "my_evidence": "S20 原文 coat it with wax to preserve the image by blocking the UV light 为教程宣称，未附测量（已核对）；同页称 Over time, under the sunlight the dye will begin to fade。未找到蜡或 UV 封层对 anthotype 图样保存的实测数据。",
+      "strength": "弱（证据不足，视为未证实）"
+    },
+    {
+      "round": "轮1",
+      "old_claim": "未找到商业套件（A3-8）",
+      "agree": "agree",
+      "my_evidence": "PubMed anthotype 检索 0 条；Crossref anthotype 检索 5 条均非商品；WebSearch 1 次未见商品。仅限所列范围（本轮未复跑检索）。",
+      "strength": "弱-中（负结果，范围有限）"
+    },
+    {
+      "round": "轮1",
+      "old_claim": "植物汁一般无毒、食品级（A3-7）",
+      "agree": "disagree",
+      "my_evidence": "non-toxic 仅为 S03 作者自述（A-API，已核对），不是法规判定；food-grade 未核验；S18 建议 lighter fluid 作溶剂（已核对），属危险做法；乙醇易燃。SDS 未读（S23 ServerBusy）。",
+      "strength": "弱"
+    },
+    {
+      "round": "轮1",
+      "old_claim": "底材为纸（A3-4）",
+      "agree": "agree",
+      "my_evidence": "S18（hand-made paper）、S19（100% cotton 200 gsm）测试以纸为主（已核对）；灰板或拼图纸板无测试。",
+      "strength": "弱（仅纸）"
+    },
+    {
+      "round": "轮1",
+      "old_claim": "永久性本质易褪、无定影（A3-6）",
+      "agree": "agree",
+      "my_evidence": "S01、S18、S19 一致（B，已核对）；S06 溶液级光降解（A）。Wikipedia 另称褪色问题与色素种类相关（未引证），结论应限定在所测色素。",
+      "strength": "中"
+    }
+  ],
+  "sources": [
+    {"id": "S01", "title": "Anthotype (Wikipedia, English)", "url": "https://en.wikipedia.org/wiki/Anthotype", "type": "百科（B）", "access": "curl全文（action=raw wikitext；渲染页 429）", "date": "页面读取 2026-11-01", "quote": "The image cannot be fixed, so the paper remains sensitive to light."},
+    {"id": "S02", "title": "Anthotype and Chlorophyll Prints (Lo-Fi Photography, RSC book chapter)", "url": "https://doi.org/10.1039/bk9781839169311-00109", "type": "一手（书章，摘要）", "access": "API（Crossref 摘要，已核对）", "date": "2024-07-15", "quote": "relatively fast and detailed anthotype from turmeric and sodium carbonate"},
+    {"id": "S03", "title": "Chlorography or Chlorotyping from the Decomposition of Chlorophyll and Natural Pigments (J. Zool. Bot. Gardens 2025, 6:41)", "url": "https://doi.org/10.3390/jzbg6030041", "type": "一手（同行评议论文，摘要）", "access": "API（Crossref 摘要，已核对）", "date": "2025-08-07", "quote": "clarity and contrast of chlorography depended on the plant species and exposure time"},
+    {"id": "S04", "title": "Chlorography as a Natural Alternative for Photographic Development (preprint)", "url": "https://doi.org/10.20944/preprints202506.2172.v1", "type": "预印本（C）", "access": "API（未复核，本轮未引用于主张）", "date": "2025-06-26", "quote": "challenges in terms of image permanence and reproducibility"},
+    {"id": "S05", "title": "The influence of after-treatments on dyeability of raw and bleached cotton with curcumin, and visibility of anthotype produced motifs (Tekstilec)", "url": "https://doi.org/10.14502/tekstilec2017.60.4-13", "type": "一手（期刊，仅题名）", "access": "API 仅题名；PDF 不可读（tekstilec.si DNS 解析失败）", "date": "2017-03-17", "quote": "(仅题名) visibility of anthotype produced motifs"},
+    {"id": "S06", "title": "Photodegradation of Turmeric Oleoresin Under Fluorescent Light and White LED (Molecules 2025, 30:3187)", "url": "https://doi.org/10.3390/molecules30153187 ; PMC12348076", "type": "一手（论文全文）", "access": "curl全文（PMC efetch XML，已复核）", "date": "2025", "quote": "under white LED irradiation ... these periods decreased to 9.9, 11.7 and 13.2 h"},
+    {"id": "S07", "title": "Photostability and antimicrobial performance of natural yellow pigments in food systems (Food Chem X, review)", "url": "https://doi.org/10.1016/j.fochx.2026.103766 ; PMID 41971407", "type": "综述（B，摘要）", "access": "API（Crossref 与 PubMed 摘要，已核对）", "date": "2026-04", "quote": "BDMC and Cur display strong ROS-mediated activity but limited light stability"},
+    {"id": "S08", "title": "Stability of curcumin in buffer solutions and characterization of its degradation products (J Pharm Biomed Anal 1997; PMID 9278892)", "url": "https://doi.org/10.1016/s0731-7085(96)02024-9", "type": "一手（论文，摘要）", "access": "API（PubMed 摘要，已核对）", "date": "1997", "quote": "about 90% decomposed within 30 min ... faster at neutral-basic conditions"},
+    {"id": "S09", "title": "Evaluation of the Biochemical, Colorimetric, and Microbiological Stability of Red Cabbage Anthocyanin Extracts (Molecules 2026; PMID 42796622)", "url": "https://doi.org/10.3390/molecules31183339", "type": "一手（论文，摘要）", "access": "API（PubMed 摘要已核对；DOI 经 Crossref 核对一致）", "date": "2026-09", "quote": "Temperature was the main factor contributing to degradation, followed by light and oxygen"},
+    {"id": "S10", "title": "Photodegradation of rosé wines: Effects of controlled irradiation (Food Res Int 2025; PMID 41271357)", "url": "https://doi.org/10.1016/j.foodres.2025.117796", "type": "一手（论文，摘要）", "access": "API（PubMed 摘要，已核对）", "date": "2025-12", "quote": "After 16 h of irradiation ... total anthocyanin content showed losses of 26 %"},
+    {"id": "S11", "title": "Use of α-Cyclodextrin to Produce Nanoencapsulated Curcumin to Preserve Curcumin Stability from Photooxidation (Antioxidants 2026; PMID 42510632)", "url": "https://doi.org/10.3390/antiox15070901", "type": "一手（论文，摘要）", "access": "API（PubMed 摘要已核对；DOI 经 Crossref 核对一致）", "date": "2026-07", "quote": "stability compared to free curcumin (36.74 ± 3.03%) after pulsed light at 20 J/cm2"},
+    {"id": "S12", "title": "Effect of advanced/hybrid oxidation process (sonophotolysis) on anthocyanin stability (Food Chem 2022; PMID 34600395)", "url": "https://doi.org/10.1016/j.foodchem.2021.131083", "type": "一手（论文，摘要）", "access": "API（PubMed 摘要，已核对）", "date": "2022-02", "quote": "the degradation of C3G was found lower under sonophotolysis"},
+    {"id": "S13", "title": "Photostability of organic red food dyes (Food Chem 2020; PMID 32000082)", "url": "https://doi.org/10.1016/j.foodchem.2020.126249", "type": "一手（论文，摘要）", "access": "API（PubMed 摘要，已核对）", "date": "2020", "quote": "Betanin is the least stable dye in both solvent environments"},
+    {"id": "S14", "title": "Chemical quenching of singlet oxygen by betanin (Photochem Photobiol Sci; PMID 27265022)", "url": "https://pubmed.ncbi.nlm.nih.gov/27265022/", "type": "一手（论文，摘要）", "access": "API（PubMed 摘要，已核对；溶液为重水）", "date": "2016", "quote": "The quenching occurs by a chemical mechanism"},
+    {"id": "S15", "title": "UV absorber aftertreatment to improve lightfastness of natural dyes on protein fibres (Coloration Technology 2001)", "url": "https://doi.org/10.1111/j.1478-4408.2001.tb00051.x", "type": "一手（论文，摘要）", "access": "API（Crossref 摘要，已核对）", "date": "2001-05", "quote": "improved the lightfastness of the mordant-dyed fabric without affecting its colour or shade"},
+    {"id": "S16", "title": "The colour stability of natural dye coating films consisting of chlorophyll after exposed to UV-A (Pigment & Resin Technology 2016)", "url": "https://doi.org/10.1108/prt-10-2014-0097", "type": "一手（论文，摘要）", "access": "API（Crossref 摘要，已核对）", "date": "2016-05", "quote": "coating films containing Cu(NO3)2 had smaller colour differences"},
+    {"id": "S17", "title": "Color fading/discoloration preventive agent (US6752862B2, Takasago)", "url": "https://patents.google.com/patent/US6752862B2/en", "type": "专利（一手，全文已读）", "access": "curl全文（Google Patents HTML，已复核；表格列序为推断）", "date": "申请 2002-03-18；公告/授权 2004-06-22；优先权 2001-03-16（已修正）", "quote": "particularly effective against pigments such as carotinoid pigments, anthocyanin pigments and monascas pigments"},
+    {"id": "S18", "title": "Anthotype process (AlternativePhotography.com)", "url": "https://www.alternativephotography.com/anthotype-process/", "type": "专题站（B，作者经验）", "access": "curl全文（浏览器式 UA 与 Accept 头，已复核）", "date": "页面读取 2026-11-01", "quote": "A method of fixing Anthotypes is not known and perhaps not necessary despite obvious limitations"},
+    {"id": "S19", "title": "Longevity of anthotypes: Comparing dried petals and stored emulsion (AlternativePhotography.com)", "url": "https://www.alternativephotography.com/longevity-anthotypes-dried-petals-stored-emulsion/", "type": "专题站（B，作者非对照试验）", "access": "curl全文（浏览器式 UA 与 Accept 头，已复核）", "date": "页面读取 2026-11-01", "quote": "light continues to act even after the work is complete, with no final fixing process"},
+    {"id": "S20", "title": "Anthotype tutorial PDF（PDF 署名 School of Engineering and Physical Sciences / ISSS，链接域 hw.ac.uk，EPSRC MUSCLE 教学活动；已修正）", "url": "https://attachments.are.na/41424147/a981babd048813b152ae190b9daf4a5d.pdf", "type": "教程（C，教学文档，无测量数据）", "access": "curl全文（pdftotext，已复核）", "date": "页面读取 2026-11-01", "quote": "coat it with wax to preserve the image by blocking the UV light"},
+    {"id": "S21", "title": "PetaPixel anthotype article (round-1 cite)", "url": "https://petapixel.com/2012/04/06/create-anthotype-photos-using-the-photosensitive-juices-of-plants/", "type": "不可读", "access": "curl 返回 Cloudflare 拦截页", "date": "2026-11-01", "quote": "(不可读，未获取正文)"},
+    {"id": "S22", "title": "WebSearch 结果汇总：practitioner 指南与论坛（alternativeprocesses.org、Flickr、anthotypical 等）", "url": "（无 URL；原 WebSearch query 见 negative_findings）", "type": "搜索摘录（C）", "access": "搜索摘录（本轮 WebSearch 未定位原文，未能复核；降为未验证）", "date": "2026-11-01", "quote": "One guide says these won't stop fading entirely, but it will significantly slow the process."},
+    {"id": "S23", "title": "PubChem curcumin (CID 969516) 与 sodium carbonate (CID 10340) 危害分类", "url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug_view/data/compound/969516/JSON", "type": "未读取", "access": "PUGVIEW.ServerBusy（4 次重试均失败；本轮未重试）", "date": "2026-11-01", "quote": "(未读取)"},
+    {"id": "S24", "title": "MDPI 2673-5636/6/3/41（round-1 原引用 URL）", "url": "https://www.mdpi.com/2673-5636/6/3/41", "type": "未读取", "access": "按清单为 403 策略拒绝，未绕过", "date": "2026-11-01", "quote": "(未读取；对应 DOI 见 S03)"}
+  ],
+  "negative_findings": [
+    {"query": "PubMed esearch: anthotype（全字段）", "scope": "PubMed 全库", "result": "0 条。（本轮未复跑，沿用上轮记录）"},
+    {"query": "Crossref query=anthotype（rows=20）", "scope": "Crossref 元数据", "result": "5 条：OED 词条、RSC 章节（S02）、两篇巴西教育论文、Tekstilec 2017（仅题名，S05）。无停止或封层数据。（本轮未复跑）"},
+    {"query": "Crossref query=anthotype plant pigment photographic process", "scope": "Crossref 元数据", "result": "无 anthotype 直接命中，仅有光化学历史文献标题，无数据。"},
+    {"query": "PubMed: anthocyanin AND photodegradation AND (film OR solid OR dried OR light)；anthocyanin AND light intensity AND degradation kinetics", "scope": "PubMed 全库，前 15 条", "result": "命中以食品、包装、染料为主；未发现固相薄膜花青素光漂白动力学数据。"},
+    {"query": "PubMed: curcumin AND (photodegradation OR photobleaching OR lightfastness)", "scope": "PubMed 全库", "result": "得到 S06、S07；无纸基或固相 t½ 数据。"},
+    {"query": "PubMed: betanin OR betalain AND (light stability OR photodegradation)", "scope": "PubMed 全库", "result": "得到 S13、S14；无固相数据。"},
+    {"query": "PubMed: natural dye AND lightfastness AND (paper OR textile OR cotton)；Crossref query.bibliographic=natural dye lightfastness UV absorber coating", "scope": "PubMed 与 Crossref 元数据", "result": "以纺织品为主；得到 S15、S16；未发现 anthotype 的 UV 封层实测。"},
+    {"query": "Crossref / PubMed: curcumin alkaline degradation pH half-life（直接检索）", "scope": "Crossref 与 PubMed", "result": "Crossref 返回格式异常；PubMed 检索噪声大。通过标题精确检索得到 S08。"},
+    {"query": "WebSearch（上轮 1 次）: anthotype lightfastness fading test UV protection varnish study plant pigment photogram", "scope": "公开网页搜索", "result": "无受控 anthotype 褪色或 UV 封层实验；结果为实践者博客与论坛（S22，C），称 UV 滤光玻璃「显著减缓」而非停止，蜡或清漆效果无测量数据。"},
+    {"query": "WebSearch（本轮核查 1 次）: anthotype UV filter glass won't stop fading significantly slow practitioner guide", "scope": "公开网页搜索", "result": "未定位 S22 引文原文。返回一般保护玻璃文献（CCI、Cardinal、3M 等，非 anthotype，搜索摘录级间接参考）及一条 Photrio anthotype 线程。"},
+    {"query": "Photrio anthotype-with-uv-light 线程（curl）", "scope": "指定 URL", "result": "被 Cloudflare 人机验证拦截，未绕过，记为不可读。"},
+    {"query": "alternativephotography.com S18/S19（curl）", "scope": "指定 URL", "result": "初次请求 Empty reply；改用浏览器式 UA 与 Accept 头后读取成功（2026-11-01）。"},
+    {"query": "en.wikipedia Anthotype 页面（2026-11-01）中 beet 7 days 示例", "scope": "单一页面版本（wikitext）", "result": "未找到。樱桃汁 2 h 与姜黄 4 h 示例已找到（S01 图注）。"},
+    {"query": "专利关键词检索（anthotype / 植物色素 褪色 防护）", "scope": "仅 WebSearch 结果中的 US6752862（S17）；未做系统化专利数据库检索（Google Patents 动态检索未能读取）", "result": "关键词范围内发现 1 件（S17），实施例已核对。不写「无专利」。"},
+    {"query": "PubChem GHS：curcumin（CID 969516）、sodium carbonate（CID 10340）", "scope": "PubChem PUG-View", "result": "4 次请求均返回 PUGVIEW.ServerBusy，未读取。SDS 与 CAS 核对未完成（S23）。本轮未重试。"},
+    {"query": "round-1 引用 petapixel.com 与 mdpi.com", "scope": "指定 URL", "result": "petapixel 被 Cloudflare 拦截（S21）；mdpi.com 按清单 403，未绕过（S24）。"},
+    {"query": "round-1 引用 tekstilec.si 全文 PDF", "scope": "指定 URL", "result": "DNS 解析失败（curl exit 6），不可读（S05）。"},
+    {"query": "硼砂作为定影剂（站点评论线索）", "scope": "AlternativePhotography 评论区", "result": "评论区意见分歧：一读者称硼砂 binds 色素，另一读者称 Nothing even close to a fixative；站点回复未评价硼砂（S18 评论，C；归因已修正）。无测量数据。"}
+  ],
+  "key_unknowns": [
+    "能否找到阻止残余（未曝光）色素在薄膜上继续光漂白的方法（UV 滤光封层、抗氧化或共色素）。无 anthotype 实测，最可能翻盘。",
+    "UV 或 LED 灯在纸基上达到终点所需的剂量，与 30 分钟目标的差距。无数据。",
+    "碱显影（小苏打、碳酸钠）对已成色区的化学影响（干膜）。仅有非光照的溶液级化学不稳定证据（S08）。",
+    "预涂纸货架期与纸板底材适配。无数据。",
+    "SDS、CAS 与 ASTM D-4236 / LHAMA 核验：未读取（S23 不可用）。",
+    "褪色对色素种类的依赖程度（Wikipedia 未引证说法）：决定结论能否推广到其他植物。"
+  ],
+  "discriminating_experiment": {
+    "one_liner": "同一批涂布的姜黄纸样，曝光至终点后，用色度计比较裸片、UV 滤光封层与加没食子酸三组在 24 h 光照下的 ΔE* 变化（另设暗置对照）；若任一处理组降幅未达判据，则停止候选不成立。",
+    "design_sketch": "每组 n≥3；光源 10 W/m² LED 并记录光谱；每 2 h 测 ΔE*（CIE L*a*b*）。判据：任一处理组 24 h 光照后 ΔE* 相对裸片降幅不少于 50% 即判定候选有效（阈值为推断，需按实验目标另定）；三组均未达判据则「停止」不成立，本路线淘汰。"
+  },
+  "new_routes_spotted": [
+    {"name": "核黄素光敏化漂白（riboflavin-sensitized bleaching）", "why": "S10 显示核黄素灯照下 t½ 约 55.4 min，且花青素可能与其反应，提示光敏剂可能主导漂白动力学（摘要已核对）。", "lead_url": "https://pubmed.ncbi.nlm.nih.gov/41271357/"},
+    {"name": "单线态氧参与的色素光氧化（以 betanin 化学淬灭为入口）", "why": "S14 显示 betanin 以化学机制淬灭单线态氧并被氧化消耗（重水溶液），淬灭剂可能是牺牲性的，与停止需求相反，需机制研究。", "lead_url": "https://pubmed.ncbi.nlm.nih.gov/27265022/"},
+    {"name": "环糊精包埋色素（预涂阶段稳定化）", "why": "S11 包埋姜黄素后保留率 74% vs 游离 37%，条件为脉冲光 20 J/cm²；属预涂稳定化，不是喷后停止。", "lead_url": "https://pubmed.ncbi.nlm.nih.gov/42510632/"},
+    {"name": "天然色素 PMMA-丙烯酸多元醇涂膜（颜料涂料路线）", "why": "S16 在玻璃上的涂膜，Cu 添加降低 UV-A 下 ΔE*；属涂料路线而非感光成像。", "lead_url": "https://doi.org/10.1108/prt-10-2014-0097"},
+    {"name": "柑橘来源香豆素类抗褪色剂（专利路线）", "why": "S17 关键词范围内发现，用于食品色素抗褪色；实施例 1 含花青素（接骨木果色素）加速数据（列序为推断），但条件为水相 70 °C UV，非纸基。", "lead_url": "https://patents.google.com/patent/US6752862B2/en"},
+    {"name": "Chlorography（叶片接触式叶绿素漂白）", "why": "S03 为 30 种叶片的接触印相，作者称显影效率与 NPQ 呈反比；属另一条植物成像路线。", "lead_url": "https://doi.org/10.3390/jzbg6030041"},
+    {"name": "后整理对 anthotype 图样可见度的影响", "why": "S05 题名直接涉及 anthotype 图样可见度的后整理，但正文不可读，需向作者或馆藏获取全文。", "lead_url": "http://www.tekstilec.si/wp-content/uploads/2017/03/10.14502Tekstilec2017.60.4-13.pdf"}
+  ],
+  "search_budget_used": {"websearch": 1, "curl_reads": 50, "verifier_websearch": 1, "verifier_curl_reads": 35},
+  "reconciliation_log": [
+    {"item": "c01 光降解产物（香兰素、阿魏酸）", "change": "归因由 S06 改为 S08（缓冲液、非光化学鉴定）；S06 注明仅引用前人文献", "why": "S06 原文只引用 [29–31]，未鉴定；S08 摘要明确鉴定为次要降解产物，但非光照条件"},
+    {"item": "c01 betanin 淬灭", "change": "补充重水溶液、溶液级条件", "why": "S14 摘要 deuterated water"},
+    {"item": "c02 多色扩展", "change": "由「仅为理论推断」改为「S02 摘要称已演示两种色素波长响应；多色成品未验证」", "why": "S02 摘要原文 is demonstrated；原表述低估了来源"},
+    {"item": "c02 连续色调引文 wispy, dream-like, low contrast", "change": "删除引文，连续色调降为未验证；保留 S19 softer tones 的单人经验描述", "why": "S18 与 S19 全文均无该词组"},
+    {"item": "c02 厚/薄涂偏棕、偏紫", "change": "归因由 S19 改为 S18（红罂粟，浓度）；层数由 S19 图注支持", "why": "原文位置核对"},
+    {"item": "c03 倍数", "change": "日光最短 2 h 为目标约 4 倍，姜黄 3–4 h 为 6–8 倍", "why": "原文 2 h 样本未计入原倍数"},
+    {"item": "c03 25–50 h 归因", "change": "以 S19 为准（S18 仅 1–3 天）", "why": "原文位置核对"},
+    {"item": "md 第2节 t½ 推算 54 与 36 J/cm²", "change": "删除", "why": "与 JSON c03 自相矛盾；10 W/m² 无光谱带，违反只报数据本身"},
+    {"item": "c05 第4条 ✗ 理由", "change": "改为「不满足（所列范围内无已知停止剂）」，注明非实测失败", "why": "前提不成立属类别问题，不是喷液量测试结果"},
+    {"item": "c05 第3条 ✗", "change": "保留，标注为推断，依据定性来源加溶液级数据", "why": "纸基未测"},
+    {"item": "c06(d) 与 md 第4节 US6752862「前后不一」「实施例未核实」", "change": "改写：前句为前案维生素 C 背景；实施例 1 A 组含花青素加速数据（对照 39.6%，esculetin 69.6%；列序为推断）", "why": "全文核对；原表述为误读且已过时"},
+    {"item": "S17 公开日期", "change": "由 2002-03-18（公开）改为申请 2002-03-18、公告/授权 2004-06-22、优先权 2001-03-16", "why": "Google Patents 日期字段"},
+    {"item": "c06 硼砂", "change": "归因改为读者评论（binds）；站点回复未评价硼砂", "why": "评论区原文核对"},
+    {"item": "c06(a) 与避光反证的 S22 引文", "change": "降为未验证，删除「显著减缓」作为证实依据", "why": "本轮无法定位 S22 原文；Photrio 被 Cloudflare 拦截，未绕过"},
+    {"item": "c06 S18 引文", "change": "补全 and perhaps not necessary despite obvious limitations", "why": "原文截断，删去了作者的保留语气"},
+    {"item": "c07 / c14 Wikipedia 色素依赖说法", "change": "补入（未引证，B-），用于限定结论适用范围", "why": "Wikipedia 原文存在该说法"},
+    {"item": "c08(1) 15.1 h / 9.9 h", "change": "明确为 HPLC 测得的 curcumin 化学分解，非色度", "why": "PMC Figure 4C 原文"},
+    {"item": "c08(3) S08 体系", "change": "由「水溶液」改为 0.1 M 磷酸盐缓冲液与无血清培养基；注明摘要未提光照", "why": "PubMed 摘要原文"},
+    {"item": "c09 醇基 vs 葡萄酒醋/苹果醋", "change": "改为 spirit vinegar（烈性醋）较葡萄酒醋、苹果醋稳定；高浓度酒在封闭深色瓶中保存较久（作者称）", "why": "S19 原文比较对象为 spirit vinegar"},
+    {"item": "c10 手工纸", "change": "补充 S18 hand-made paper 为来源", "why": "S18 原文"},
+    {"item": "c04 碱显影颜色变化来源", "change": "颜色变化归 S20（教程），S01 图注仅记录 baking soda development", "why": "S01 图注未写颜色变化"},
+    {"item": "c11 lighter fluid 表述", "change": "补充 S18 原文位置（用于乳液溶剂）", "why": "原文核对"},
+    {"item": "c13(4) S08 与碱显影", "change": "注明非光照条件，不能推断为碱显影后的光漂白加速", "why": "摘要未涉及光照"},
+    {"item": "c13(7) 没食子酸", "change": "恢复 sonophotolysis（超声+UV-A）条件", "why": "S12 摘要条件"},
+    {"item": "c13(10) 配制液寿命", "change": "由「数周至数月」改为分来源列出（红甘蓝 9.5 d–76 d；烈性醋/葡萄酒醋 数周；Phlox 冷藏 1 年、3 年）", "why": "原合并表述混淆了不同来源与条件"},
+    {"item": "c14(3) 与 red_line 碱显影", "change": "S08 证据仅用于非光照化学不稳定，不作为光损伤证据", "why": "同 c13(4)"},
+    {"item": "c15 与 discriminating_experiment 判据", "change": "统一为「任一处理组 ΔE* 降幅不少于 50% 即候选有效；三组均未达则不成立」（阈值为推断）", "why": "原 JSON 与 md 判据不一致"},
+    {"item": "sources S11 / S14 / S20 / S22", "change": "S11 补脉冲光 20 J/cm² 条件；S14 补 2016 年与重水溶液；S20 更正作者字段并标 C（教学文档，无测量）；S22 标无 URL、未能复核", "why": "原文核对与来源可追溯性"},
+    {"item": "verdict.reasons（底线 3、4）", "change": "底线 3 标注为推断；底线 4 改为「不满足（所列范围内无已知停止剂）」", "why": "与 c05 修订一致；证据性质"},
+    {"item": "verdict 结论", "change": "维持 淘汰", "why": "底线 3 与底线 4 的否定依据经核查仍成立（定性来源与溶液数据），未发现红线遗漏、铁氰/亚铁氰混写、碳酸盐中和外推或年限换算"}
+  ]
+}

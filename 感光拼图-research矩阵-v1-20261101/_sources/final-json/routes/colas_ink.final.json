@@ -1,0 +1,550 @@
+{
+  "key": "colas_ink",
+  "name_zh": "Colas 铁盐黑墨法（Pellet 同族）",
+  "name_en": "Colas ink process (ferric salt + tartaric acid; gallic acid / tannin development to black ferric gallate)",
+  "status": "done (verified 2026-11-01; revised)",
+  "as_of": "2026-11-01",
+  "columns": {
+    "c01_机制": {
+      "text": "Fe(III) 盐加酒石酸与明胶（或阿拉伯胶）敏化。氯化铁是光敏主体；硫酸铁单用无光敏，只能辅助（S4，C 级）。曝光时光把 Fe(III) 还原为 Fe(II)，酒石酸脱羧（S4 单一复刻，C 级，历史来源未见）。显影时，未受光区残留的 Fe(III) 与没食子酸或单宁生成黑色铁胆络合物（S1 原文「the perchloride is transformed into sesquioxide」；S3 原文「ferric gallo tannate」）。受光区的 Fe(II) 络合物与胶体可溶，在显影和水洗中被洗去（S3「washed off in the water bath」）。图像呈「未受光处成黑」。",
+      "grade": "A",
+      "label": "事实（光还原与黑色铁胆络合物：S1、S3；水浴洗去可溶部分：S3）；C 级事实（氯化铁为光敏主体、硫酸铁单用无光敏：S4；酒石酸脱羧：S4 单一复刻）",
+      "source_ids": ["S1", "S3", "S4"]
+    },
+    "c02_成像极性与色调能力": {
+      "text": "极性：正片出正像（黑线白底），负片出负像（S1 原文：black positive impressions on white ground from positive clichés）。色调：单色相，黑或蓝黑（S2 称预含没食子酸纸为 blauschwarz；S3 称浅褐至近黑）。连续调：未证实。S1 中的 half-tone 句（not a great importance）指的是白区染色的容忍度，不是半调能力；S3 称该类印出法 designed for linear rather than half tone reproduction，与「可做半调」方向相反。S4 的 photogram 只描述 sharper shadows and higher contrast，没有渐变样张（C 级）。密度由涂布量强烈影响（S4）。多色扩展：无证据，未知。",
+      "grade": "A",
+      "label": "事实（极性与单色相：S1、S2、S3）；反驳（原研究的半调暗示）；未验证（连续调）；未知（多色扩展）",
+      "source_ids": ["S1", "S2", "S3", "S4"]
+    },
+    "c03_曝光条件": {
+      "text": "历史：Poitevin 1860 原文 ten or twelve minutes' exposure through a positive cliché suffices（S1，光源与辐照度未说明）。Vogel 1905 以底色变白为终点（Sobald der Grund des Papiers sich weiss zeigt），目视判断，未给时长（S2）。复刻：S4 实测 1000 W 卤素聚光灯 15 分钟；S4 作者叙述 UV 灯或曝光箱「can results in exposure times as low as 5 minutes」，这是最短值，不是测得的典型值（C，未验证）。日光与 UV 分开标注：历史文献没有分开给出日光时长；UV 数字仅为复刻者叙述。剂量 mJ/cm²：未知。与 30 分钟目标的关系：历史 10–12 分钟与 UV 最短 5 分钟都在目标内，但终点靠目视，光源未标定，不能直接换算。",
+      "grade": "A",
+      "label": "事实（历史时长与目视终点：S1、S2）；C 级（S4 复刻时长）；未验证（UV 典型值、日光时长、剂量）",
+      "source_ids": ["S1", "S2", "S4"]
+    },
+    "c04_显影或成像后处理": {
+      "text": "湿法。主显影液：没食子酸 4 g + 草酸 0.5–1 g + 水 1000 mL（S2 原文 4 g Gallussäure, 0.5–1 g Oxalsäure, 1000 g Wasser），或单宁/没食子酸 4 份 + 草酸 0.15 份 + 水 1000 份（S1 原文）。做法为液面浮显或浸没（S1），S4 为搅动浸没。显影后清水冲洗（S1 原文 washed rapidly under a jet of water；S4 thoroughly rinsed）。显影前预洗（Poitevin：快速水洗，或水中悬浮白垩，S1）。Fisch 变体：取消显影前预洗（S1）。Shawcross & Thompson（1885）：显影剂干粉预置于纸上，仍需水浴显影，且终浴可加酒精、草酸或明矾以澄清底色（S3，转述）。约 1905 年有预含没食子酸的市售纸，只用清水显影（S2 原文 mit reinem Wasser allein entwickeln）。半干、喷雾、蒸气、热显影：无证据。",
+      "grade": "A",
+      "label": "事实（历史与复刻操作全部为水浴或清水显影：S1、S2、S3、S4）；转述（1885 干粉法：S3；未读原专利）",
+      "source_ids": ["S1", "S2", "S3", "S4"]
+    },
+    "c05_免洗真实程度": {
+      "text": "名义免洗，实际要湿法。Colas 的显影本身是水浴（S1、S2、S3），显影后还需清水冲洗（S1 原文 washed rapidly；S2 Colas 段 in Wasser gespült；S4 thoroughly rinsed）。S3 另述终浴（酒精、草酸或明矾）。唯一「只用清水」的历史纸（S2 预含没食子酸纸）以水作显影剂，仍属水法步骤。注意：S2 此条未写显影后另有冲洗，因此「所有来源都显影后冲洗」的说法已修正为「水浴显影 + 水洗停止」。逐条核验见 c05_免洗核验。",
+      "grade": "A",
+      "label": "事实（水浴显影与水洗停止：S1、S2、S3、S4）",
+      "source_ids": ["S1", "S2", "S3", "S4"]
+    },
+    "c06_停止机制": {
+      "text": "无已证实的化学停止剂（在所读来源内未见）。历史上「停止」即水洗，去除显影液与可溶 Fe(II) 络合物（S1、S2、S3）。Poitevin 要求用雨水漂洗，以免没食子酸与单宁变棕（S1 原文）。显影液中的草酸起澄清/漂白作用，使高光清白（S4 原文 bleaching agent，C 级）；S3 称终浴中的酒精、草酸、明矾用于澄清底色（A，观察）。S1 中还有一个亚铁氰化钾 + 稀硫酸的步骤，可把铁胆墨像转化为普鲁士蓝（S1 Ferro-tannate 段），这是转化而非停止，且涉及红线相邻组分。候选方向（全部未验证）：(i) 弱酸喷雾以降低显影速率，无证据；(ii) 螯合剂（EDTA 或柠檬酸盐）夺取 Fe，会同时去除黑像，推断风险高；(iii) 氧化剂（如 H2O2）会把白区 Fe(II) 氧化为深色 Fe(III) 络合物，推断不可用（注：S6 只载空气/O2 氧化机理，H2O2 是推断外推，不得引 S6 为依据）；(iv) 封层只能保护，不能停止反应。红线：以上候选均不含氰化物，但具体 SDS 未核。",
+      "grade": "A",
+      "label": "事实（历史只能靠水洗停止：S1、S2、S3）；C 级事实（草酸澄清：S4）；未验证（全部候选停止方案）；推断（候选风险判断）",
+      "source_ids": ["S1", "S2", "S3", "S4", "S6"]
+    },
+    "c07_白区长期稳定性": {
+      "text": "分两层。(a) 初始白区不纯：有证据。S1 称干燥后白区 very seldom pure，残留试剂未除时底色染紫（A）。S3 称底色 never entirely clear，常呈浅褐或微紫（A，观察，无对照）。(b) 随时间变色：未证实，为推断。推断链：残留 Fe(II)-没食子酸遇空气氧化为深色 Fe(III) 络合物（S6 为铁胆墨机理，B；S11 为模型墨没食子酸自氧化为鞣花酸，A 摘录），但两者都是类比，无照相像的时间序列。反面证据（研究原未列）：S2 称水洗后 die reproduzierte Zeichnung ist dann unveränderlich，这是作者断言，无数据。曝光不足则白区也变深：S2 对所有正像法的通性描述（zu kurz kopierte Bilder ... färben sich auch dort, wo sie weiss bleiben sollen），A 级，非 Colas 专有。长期数据（照相像）：无。",
+      "grade": "A",
+      "label": "事实（初始染色：S1、S3）；推断（时间变色的机理链：S6、S11 类比）；未验证（随时间变色的长期数据）；反面断言（S2 unveränderlich，无数据）",
+      "source_ids": ["S1", "S2", "S3", "S6", "S11"]
+    },
+    "c08_成色长期耐光": {
+      "text": "只报数据：未找到 Colas 型照相像的加速耐光数据（在所列搜索范围内未发现：WebSearch 3、Crossref 检索；本轮未重搜）。类比数据（手写铁胆墨，纸张，非照相像）：S10（npj Heritage Science 2023，Herit Sci 11, 96；DOI 10.1186/s40494-023-00943-2）摘要称 UV light causes the most severe damage to handwriting，表现为 color-fade，且随老化时间 Fe2+ 含量升高（摘录级，A）；S11（Molecules 2022 模型没食子酸墨，Crossref 摘要）称 autoxidation of gallic acid to ellagic acid（摘录级，A）。以上不得换算为保存年限。",
+      "grade": "A",
+      "label": "未验证（Colas 像本身）；事实（类比数据，摘录级）",
+      "source_ids": ["S10", "S11"]
+    },
+    "c09_预涂介质货架期": {
+      "text": "出厂预涂（历史形态）：S1 称 Colas 为巴黎市场制备预涂纸，其包装做法（包在吸墨纸中、夹两层橡胶片）为二手转述（作者原文 I think, states，B/C 级，不是一手）。涂层纸 It does not keep for more than from ten to fifteen days，原因是铁盐吸湿（S1，A，19 世纪作者经验陈述，无条件、无对照）。S2 称约 1905 年有预含没食子酸的市售纸，只用清水显影。S3 称 1885 年后干粉显影剂预置纸「appear to be more stable」（观察，非数据）。同族旁证（非 Colas 直接数据）：S1 对另一铁盐纸称 no more than two or three months（作者估计，配方类别未核）；S2 称 Pellet 族商业铁盐纸 hält sich wochenlang；S1 另述可用碳酸氢钠浸渍吸墨纸包装（针对银盐纸，非铁盐纸）。今日在售：未检索（不得写作「未找到」）。用户现涂（混合液寿命）：S1 对 Colas 混合液寿命未给数字（Cyanofer 即 Pellet 族混合液「should be employed the day it is made」）；S4 称 250 mL 敏化液避光保存于棕色瓶中「似乎保存良好」，无时长（C）；显影液随使用变深，建议现配，1 L 约做 4–5 张 A4（C）。",
+      "grade": "A",
+      "label": "事实（10–15 天：S1，A 经验）；二手转述（Colas 包装：S1，B/C）；未验证（现代涂层纸与混合液寿命，缺受控数据）；同族旁证（S1、S2，非 Colas）",
+      "source_ids": ["S1", "S2", "S3", "S4"]
+    },
+    "c10_底材适配": {
+      "text": "纸基：S1 通则段（CHOICE OF PAPER. SIZING）原文：纸未充分施胶或未压光时，敏化液被吸收而非停留表面，白区无法纯净（A）。Ferro-tannate 段要求淀粉施胶（A）；涂布只湿润表面，约 46 °C 快速干燥（A）。FeCl3 的强酸性：S2 原文（Eisen-Gummi 段，非 Colas 段）Ein Übelstand ist die stark saure Reaktion des Eisenchlorids，使纸纤维松弛、图像发毛（A，原文证实；适用于 Colas 为推断，因二者都用 FeCl3）。S4 称敏化液偏酸、会侵蚀纸张，建议戴手套；水彩纸刷涂可用（C）。拼图底材（卡纸或灰板）：吸湿变形、封层兼容、干后拼合：未测（未知）。全湿法冲洗对纸板的变形风险：推断，未测。",
+      "grade": "A",
+      "label": "事实（纸基施胶与干燥要求：S1；FeCl3 损纸的历史描述：S2 原文）；未验证（拼图底材）；推断（湿法导致变形；FeCl3 适用于 Colas）",
+      "source_ids": ["S1", "S2", "S4"]
+    },
+    "c11_安全与法规": {
+      "text": "主线（没食子酸、草酸、L-酒石酸、氯化铁或硫酸铁、明胶）不含氰化物或铬酸盐（S1、S4 原文亦称 no cyanide）。PubChem 聚合 GHS（ECHA 通报汇总，API，A；以下为子集，未逐条列占比）：没食子酸（CID 370）H315、H318（19.3%）、H319、H335；草酸（CID 971）H302（99.8%）、H312（99.7%）、H315、H318（31.1%），另有 H314、H335、H361、H370–H373、H402、H412（未逐条核占比）；L-酒石酸（CID 444305）H302、H315、H317、H318、H319、H335；氯化铁（CID 24380）H302（96.6%）、H314（75.4%）、H315、H318、H412，另有 H304、H335、H341（suspected of causing genetic defects）、H370、H371、H402；硫酸铁（CID 24826）H290、H302、H315、H317、H318、H319、H335。CAS：没食子酸 149-91-7；草酸 144-62-7；L-酒石酸 87-69-4（DL 型 133-37-9）；氯化铁 7705-08-0；硫酸铁 10028-22-5（以上已核 PubChem 记录）。亚铁氰化钾（potassium ferrocyanide，CID 9605257，CAS 13943-58-3 无水 / 14459-95-1 三水）：PubChem 聚合仅 H411、H412，无 EUH 码；Wikipedia（B）的 Toxicity 段无酸释放 HCN 表述。WebSearch 摘录（非原页核对，A 摘录级）：供应商 SDS 摘录称酸接触放出 HCN，部分列 EUH032（三水合物）。结论：亚铁氰化钾酸接触的 HCN 危害未证实也未排除，属红线相邻未知，须读原 SDS。变体：铁氰化钾（potassium ferricyanide，CAS 13746-66-2，CID 26250）：PubChem 聚合 H302、H315、H319、H335、H361、H411（Warning），未列 EUH032；Wikipedia（B）称在强酸条件下放出 HCN，且以稀硫酸加热为例，变体应排除。PPE（推断，未核 SDS 原文）：护目镜、耐酸手套、通风。成人美术材料可达性（ASTM D-4236 与 LHAMA 标签级别）：未验证；含 H314、H318 类组分，倾向难以列为低危成人材料（推断，未核）。",
+      "grade": "A",
+      "label": "事实（GHS 与 CAS，PubChem API，A，子集已注明）；未验证（亚铁氰化钾酸接触 HCN、标签级别、成人美术可达性）；推断（PPE 与可达性倾向）",
+      "source_ids": ["S7", "S8", "S9", "S14"]
+    },
+    "c12_供应与成本": {
+      "text": "未检索价格；未读取任何在售页面。所有价格：未验证（未查询，无日期）。供应描述（S4，C，2025-11-29）：酒石酸、没食子酸、草酸可在网上买到；25% 氯化铁可用 PCB 蚀刻液代替；硫酸铁 not sold a lot，作者从化学供应商购得，或用硫酸自制；S4 亦称若买不到硫酸铁，只用更多氯化铁也能成像（密度略低）。在售 Colas 预涂纸或套装：未检索（本轮与上轮均未执行在售搜索，故不得写作「未找到」）。",
+      "grade": "C",
+      "label": "未验证（价格）；C 级事实（供应描述）；未检索（在售产品）",
+      "source_ids": ["S4"]
+    },
+    "c13_证据等级": {
+      "text": "关键主张 10 条（逐条：等级 / 标签）：(1) 光还原与黑色铁胆络合物（A / 事实）：S1、S3。(2) 正片出正像、单色黑（A / 事实）：S1、S2、S3。(3) 德国专利始于 1880-07-29（S2 原文 vom 29. Juli 1880 ab，A / 事实）；发明人为 Poitevin（S1 原文 in reality it was invented by Mr. Poitevin；S3；A / 事实），非 Colas；专利编号未找到，未验证。(4) 显影后必须清水冲洗（A / 事实）：S1、S2、S4。(5) 干燥后白区很少纯白，底色染紫或浅褐（A / 事实，初始染色，非时间漂移）：S1、S3。(6) 涂层纸「不超过 10–15 天」（A / 事实，经验性，无对照）：S1。(7) 约 1905 年预含没食子酸的纸只用清水显影（A / 事实，历史描述，未复测）：S2。(8) 现代复刻：1000 W 卤素 15 分钟（C / 事实，S4 实测）；UV 约 5 分钟为 S4 叙述的最短值（C / 未验证）：S4（原研究误引 S2，已删）。(9) 缓冲封装对 ferro gallic 印片有害（A / 事实，初步测试；不得推断为显影后碳酸盐中和可行）：S3。(10) 铁氰化钾在强酸条件下放出 HCN（B / 事实，红线相邻变体；S7 原文 under very strongly acidic conditions，并以稀硫酸加热为例）：S7。",
+      "grade": "A",
+      "label": "混合：事实为主，逐条标注；推断与未验证已在条目中标出；第 (8) 条已修正引文",
+      "source_ids": ["S1", "S2", "S3", "S4", "S7"]
+    },
+    "c14_关键未知": {
+      "text": "最可能翻盘的 1–2 个：(1) 是否存在不水洗、半干或喷雾显影、且白区稳定的 Colas 变体。所有已读来源未见此类；Photrio 站内搜索页返回 403（域名在本会话可读清单内，但只有搜索端点被拒，未尝试其他页面），因此 Photrio 讨论未读。(2) 涂层纸或敏化液的受控货架期与加速耐光数据：目前只有 1891 年的经验数字（10–15 天）与手写墨类比，没有照相像的耐光数据。其他未知：停止剂（无）；1880 德国专利原文与编号；1885 干粉显影法原文（S3 转述）；拼图底材的变形与拼合性；亚铁氰化钾（ferrocyanide）酸接触 HCN 危害的原 SDS（红线相邻，未核，且 Colas 原文中有其 + 稀硫酸步骤）；随时间变色的长期数据。",
+      "grade": "A",
+      "label": "未验证（缺证据）",
+      "source_ids": ["S1", "S3", "S4", "S14"]
+    },
+    "c15_判别实验": {
+      "text": "同一批涂布纸分两组，曝光至白底出现后：A 组按 Fisch 变体（不做预洗，显影后只吸干、不水洗）；B 组按 Vogel 原法（显影后清水冲洗）。干燥后在 0 h、24 h、7 天用色度计测白区色差 ΔE（暗盒保存，另设一组光照对照）。若 A 组白区 ΔE 明显大于 B 组，或持续变色，即判定「不水洗」路线淘汰（底线 1 与 2 同时失败）。",
+      "grade": "未验证（判别实验设计）",
+      "label": "推断（实验设计）",
+      "source_ids": ["S1", "S2", "S3"]
+    }
+  },
+  "c05_免洗核验": {
+    "验收": {
+      "1_喷后免洗": "✗ 理由（依据修正）：Colas 显影本身是水浴（S1、S2、S3），显影后水洗停止（S1、S4），与产品流程「曝光→喷停止→干燥、无需水洗」不符。Fisch 变体只去掉显影前预洗，仍需水浴显影与冲洗。",
+      "2_白区停得住": "✗ 理由（依据修正）：干燥后白区不纯、残留试剂使底色染紫（S1 原文；S3 观察）。这是初始残留染色的证据，在免洗条件下残留试剂更可能留存。随时间变色为推断，未测；S2 称水洗后「unveränderlich」，为无数据断言。",
+      "3_成色留得住": "? 理由：无 Colas 像的停止剂与耐光数据；类比（手写铁胆墨，S10 摘要）显示 UV 导致褪色，不能直接用于照相像。",
+      "4_少量喷液": "? 理由：历史为浸没显影，显影液用量大（1 L 约 4–5 张 A4，S4，C）；无喷式停止的数据。",
+      "5_底材不变形": "? 理由：全湿法冲洗加酸性敏化液（S2 原文、S4）；FeCl3 损纸的历史描述（S2，适用于 Colas 为推断）；拼图底材未测。",
+      "6_安全前置": "? 理由：主线不含红线物质，但氯化铁（H314、H341、H370 等）、草酸（H314、H318、H361 等）和酒石酸（H318、H317）带危害码（S8，子集已注明）；亚铁氰化钾酸接触 HCN 未核（红线相邻）；ASTM D-4236 与 LHAMA 未核，倾向 ✗（推断）。"
+    },
+    "说明": "依据历史操作描述、PubChem GHS 聚合信息与 S4 复刻核对，未做实测。底线 1、2 为硬失败，因此路线淘汰（裁定维持）。底线 2 的依据是初始残留染色，不是时间漂移。"
+  },
+  "verdict": {
+    "status": "淘汰",
+    "reasons": [
+      "底线 1（喷后免洗）✗：Colas 显影本身是水浴，且显影后依赖清水冲洗停止（S1、S2、S3、S4）。与产品流程冲突。",
+      "底线 2（白区停得住）✗：干燥后白区不纯，底色染紫或浅褐（S1、S3）。依据为初始残留染色，有证据；随时间变色为推断，未测。",
+      "底线 3–6 未知或待核：无停止剂数据，无耐光数据，无拼图底材测试，ASTM D-4236 与 LHAMA 未核，亚铁氰化钾酸接触 HCN 危害未核。",
+      "旧轮次「纸仅存 10–15 天」被 S1 原文确认，但为经验陈述，无对照。",
+      "无已证实的停止剂，历史上的停止即水洗。"
+    ],
+    "red_line_hits": [
+      "主线（没食子酸或单宁加草酸显影）：未命中。不含铁氰化物，不产生普鲁士蓝，不含重铬酸盐（S1、S2、S4 原文）。",
+      "亚铁氰化钾（potassium ferrocyanide）：修正。S1 的 Ferro-tannate（Colas）段原文 As to the proofs in gallate (or tannate) of iron, they can be transformed into Prussian blue in a solution of potassium ferrocyanide slightly acidified by sulphuric acid，即 Colas 铁胆墨像有一个亚铁氰化钾 + 稀硫酸的可选转化步骤。它是红线相邻的酸性组合，必须列入红线项。PubChem 只列 H411、H412，Wikipedia 无 HCN 表述；WebSearch 摘录称供应商 SDS 写有酸接触放 HCN（部分列 EUH032），未原页核对。结论：危害未证实也未排除，须读原 SDS，且路线中不应包含该步骤。",
+      "铁氰化钾（potassium ferricyanide）变体：S1 原文 If in place of gallic acid I use a diluted solution of potassium ferricyanide ... Prussian blue is formed；S4 原文 cross processed the ink print sensitizer as cyanotype using potassium ferricyanide ... works，配方含 25% 氯化铁溶液，作者称 low pH of the sensitizer causes a relatively large amount of fogging。这是公开 DIY 配方中铁氰化钾与酸性敏化液共存的直接证据，红线风险明确。Wikipedia（B）称强酸条件下放 HCN，以稀硫酸加热为例。变体应排除。",
+      "普鲁士蓝遇碱：只在铁氰化钾或亚铁氰化钾变体中出现，主线不适用。",
+      "碳酸盐：历史上白垩悬浮水用于显影前洗涤（S1）。S1 另述碳酸氢钠浸渍吸墨纸包装，但针对银盐纸，非铁盐纸。S3 的初步测试显示缓冲封装使 ferro gallic 印片劣化，因此不能把碳酸盐中和迁移为显影后方案。这不是红线命中，但证据反向。"
+    ]
+  },
+  "baseline_challenges": [
+    {
+      "round": "来源包第 8 条",
+      "old_claim": "Colas Ink Process（1880）：Fe(III) 加二羧酸感光剂，显影剂为没食子酸（加草酸），与 Pellet 同族。",
+      "agree": "agree",
+      "my_evidence": "S2 原文配方：硫酸铁 10 g、氯化铁 20 mL、明胶 10 g、酒石酸 10 g、水 300 g；显影为没食子酸 4 g 加草酸 0.5–1 g 加水 1000 g（已核）。S3 称其与 Pellet 同源（A）。S1 配方为氯化铁 10 份、酒石酸 3 份、水 100 份（已核）。核查后维持。",
+      "strength": "强（A，多源一致）"
+    },
+    {
+      "round": "来源包第 8 条",
+      "old_claim": "该法为 1880 年的 Colas 发明（Colas Ink Process，1880）。",
+      "agree": "disagree",
+      "my_evidence": "S1 原文：It has been attributed to Mr. Colas, but in reality it was invented by Mr. Poitevin（已核，1860 年 5 月信函）。S3：Poitevin 发明，1880 年代才商业化。S2 原文：in Deutschland patentiert war (vom 29. Juli 1880 ab)。1880 是德国专利起点，不是发明年；发明人为 Poitevin。核查后维持。",
+      "strength": "强（A）"
+    },
+    {
+      "round": "来源包 S9",
+      "old_claim": "紧邻下一章即 Colas 黑墨工艺（铁盐 + 没食子酸或单宁成黑像）原始文本，与 slyka 复刻线互证。",
+      "agree": "agree",
+      "my_evidence": "S1 章序确认：Cyanofer（Pellet）章之后即 THE BLACK OR INK PROCESS (Ferro-tannate)，原文可读（A）。但 slyka 是单一爱好者复刻（C），只能说明配方与原文一致，不是独立的工艺验证，「互证」的力度有限。",
+      "strength": "章序强（A）；复刻互证弱（C）"
+    },
+    {
+      "round": "来源包 S9",
+      "old_claim": "其纸仅存 10–15 天（铁盐吸湿）。",
+      "agree": "agree",
+      "my_evidence": "S1 原文：It does not keep for more than from ten to fifteen days, owing to the hygroscopicity of the iron compound（已核）。它是 19 世纪作者的经验陈述，没有存放条件，也没有对照测试。",
+      "strength": "中（一手，但经验性、无条件）"
+    },
+    {
+      "round": "来源包第 8 条",
+      "old_claim": "Colas 对「换显影剂」这条探索线有参考价值。",
+      "agree": "agree",
+      "my_evidence": "作为机理参考（显影剂由亚铁氰化物换为没食子酸，颜色由普鲁士蓝变为黑色铁胆络合物），同意（S1、S3）。但作为可验收路线，它在底线 1 与 2 上失败，所以参考价值仅限机理层面。",
+      "strength": "中（机理参考）；低（作为路线）"
+    },
+    {
+      "round": "需求书 v0.5 §5 与阶段 2 协议草稿（已知错误）",
+      "old_claim": "Pellet 显影剂为铁氰化钾。",
+      "agree": "disagree",
+      "my_evidence": "S1（Cyanofer 段）原文：an almost saturated solution of potassium ferrocyanate (the developer)；S2（Pellet 段）：lässt gelbes Blutlaugensalz darauf wirken。应改为亚铁氰化钾（ferrocyanide）。铁氰化钾是另一物质，且与强酸接触有 HCN 风险（S7）。",
+      "strength": "强（A）"
+    },
+    {
+      "round": "来源包第 1 条（Photrio 复刻，Pellet）与「碳酸盐中和」设想",
+      "old_claim": "Pellet 的半干显影（吸干加热风）与碳酸盐中和可迁移到同族体系。",
+      "agree": "disagree",
+      "my_evidence": "Colas 来源中没有半干或免洗显影的证据（S1、S2、S3、S4）。碳酸盐在 Colas 中只见于显影前的白垩悬浮水（S1），S1 的碳酸氢钠浸渍包装针对银盐纸；S3 的初步测试显示缓冲封装使 ferro gallic 印片劣化（A，初步）。两者都不支持把碳酸盐中和迁移到 Colas。Pellet 族的半干显影未在本轮核对（Photrio 未读）。",
+      "strength": "中（无正面证据；反向线索为初步测试）"
+    }
+  ],
+  "sources": [
+    {
+      "id": "S1",
+      "title": "P.C. Duchochois, Photographic Reproduction Processes (1891)，章节 THE CYANOFER (Pellet's Process) 与 THE BLACK OR INK PROCESS (Ferro-tannate)",
+      "url": "https://www.gutenberg.org/cache/epub/24016/pg24016-images.html",
+      "type": "一手（19 世纪操作手册，全文）",
+      "access": "curl全文（本轮已核）",
+      "date": "1891（书）；Gutenberg 收录 2007-12-24",
+      "quote": "It does not keep for more than from ten to fifteen days"
+    },
+    {
+      "id": "S2",
+      "title": "Vogel, Photochemie und Beschreibung der photographischen Chemikalien, 5. Aufl. (1905)，S. 213–214「Tintenpositive: Colas Tintenprozess」",
+      "url": "https://archive.org/download/photochemieundbe00voge/photochemieundbe00voge_djvu.txt",
+      "type": "一手（德文化学手册，OCR 全文）",
+      "access": "curl全文（本轮已核）",
+      "date": "1905",
+      "quote": "welcher in Deutschland patentiert war (vom 29. Juli 1880 ab)"
+    },
+    {
+      "id": "S3",
+      "title": "Price, The History and Identification of Photo-Reproductive Processes Used For Architectural Drawings Prior To 1930，Topics in Photographic Preservation vol. 6 (1995)，section Ferro gallic",
+      "url": "https://resources.culturalheritage.org/pmgtopics/1995-volume-six/06_03_Price.html",
+      "type": "一手（保护学专业论文）",
+      "access": "curl全文（本轮已核）",
+      "date": "1995",
+      "quote": "The background tends to be pale brown or slightly lavender"
+    },
+    {
+      "id": "S4",
+      "title": "slyka.net (Kris)，Bringing back the Ink Print（Colas Ink Process 复刻）",
+      "url": "https://slyka.net/blog/2025/ink-print/",
+      "type": "C（单一爱好者复刻，博客）",
+      "access": "curl全文（本轮已核）",
+      "date": "2025-11-29",
+      "quote": "it seems to store well in a brown glass bottle when kept out of light"
+    },
+    {
+      "id": "S5",
+      "title": "slyka.net tags/cyanotype 索引页（来源包第 8 条所指页）",
+      "url": "https://slyka.net/tags/cyanotype/",
+      "type": "C（索引页）",
+      "access": "curl全文（原研究）；本轮未重读",
+      "date": "读取日 2026-11-01",
+      "quote": "a black and white positive process patented in 1880"
+    },
+    {
+      "id": "S6",
+      "title": "Wikipedia, Iron gall ink（氧化变暗机理）",
+      "url": "https://en.wikipedia.org/wiki/Iron_gall_ink",
+      "type": "B（百科）",
+      "access": "curl全文（本轮已核）",
+      "date": "读取日 2026-11-01（版本未核）",
+      "quote": "oxidation of the iron ions from ferrous (Fe2+) to ferric (Fe3+) state by atmospheric oxygen（仅 O2，无 H2O2）"
+    },
+    {
+      "id": "S7",
+      "title": "Wikipedia, Potassium ferricyanide（Safety 段，HCN 反应式）",
+      "url": "https://en.wikipedia.org/wiki/Potassium_ferricyanide",
+      "type": "B（百科）",
+      "access": "curl全文（本轮已核）",
+      "date": "读取日 2026-11-01",
+      "quote": "under very strongly acidic conditions, highly toxic hydrogen cyanide gas is evolved；diluted sulfuric acid under heating"
+    },
+    {
+      "id": "S8",
+      "title": "PubChem PUG View GHS 聚合信息（ECHA C&L 通报汇总）",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug_view/data/compound/<CID>/JSON?heading=GHS+Classification",
+      "cids": "370 没食子酸；971 草酸；444305 L-酒石酸；24380 氯化铁；24826 硫酸铁；26250 铁氰化钾；9605257 亚铁氰化钾（均已核）",
+      "type": "A（监管通报聚合，API）",
+      "access": "API（本轮已核）",
+      "date": "读取日 2026-11-01",
+      "quote": "H318 (19.3%): Causes serious eye damage（CID 370）"
+    },
+    {
+      "id": "S9",
+      "title": "PubChem PUG View CAS 记录（同 S8 的 CID 集）",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug_view/data/compound/<CID>/JSON?heading=CAS",
+      "cids": "同 S8",
+      "type": "A（API）",
+      "access": "API（本轮已核）",
+      "date": "读取日 2026-11-01",
+      "quote": "149-91-7（没食子酸）"
+    },
+    {
+      "id": "S10",
+      "title": "Xu, Wang, Fan (2023)，Changes in color and iron ions of commercial iron gall inks after artificial aging，Herit Sci 11, 96（页面标题 npj Heritage Science；DOI 10.1186/s40494-023-00943-2；published 05 May 2023）",
+      "url": "https://www.nature.com/articles/s40494-023-00943-2",
+      "type": "A（类比：商业铁胆墨手写样，非照相像；摘要）",
+      "access": "curl全文（页面，引摘要，本轮已核）",
+      "date": "2023-05-05",
+      "quote": "UV light causes the most severe damage to handwriting"
+    },
+    {
+      "id": "S11",
+      "title": "Molecules (2022) A Model Iron Gall Ink: An In-Depth Study of Ageing Processes Involving Gallic Acid（DOI 10.3390/molecules27238603；mdpi 页面 403，仅读 Crossref 摘要）",
+      "url": "https://api.crossref.org/works/10.3390/molecules27238603",
+      "type": "A（摘录级，同行评审摘要；类比模型墨）",
+      "access": "API（本轮已核）",
+      "date": "2022-12-06",
+      "quote": "showing the autoxidation of gallic acid to ellagic acid in the prepared mock-ups"
+    },
+    {
+      "id": "S12",
+      "title": "alternativephotography.com「Forgotten processes」，Ferro-gallic 条目",
+      "url": "https://www.alternativephotography.com/forgotten-processes/",
+      "type": "B（专题站，二手）",
+      "access": "curl全文（原研究）；本轮未重读",
+      "date": "读取日 2026-11-01",
+      "quote": "developed in gallic acid, potash alum and hydrochloric acid, washed and dried"
+    },
+    {
+      "id": "S13",
+      "title": "本地来源包：Pellet原始来源包-20261017.md（第 8 条与 S9 补充），旧轮次主张的来源，待核查",
+      "url": "/tmp/claude-0/-home-user-Research/ce386818-48e4-5991-8412-39f0305aaa5a/scratchpad/pkg/photosensitive-puzzle-research-pack-20261031/原始资料/03-研究轮次/Pellet原始来源包-20261017.md",
+      "type": "本地资料包（待核查）",
+      "access": "本地资料包",
+      "date": "2026-10-17（S9 补充 2026-10-18）",
+      "quote": "其纸仅存 10–15 天（铁盐吸湿）"
+    },
+    {
+      "id": "S14",
+      "title": "WebSearch（本轮核查，1 次）：potassium ferrocyanide SDS EUH031 contact with acids liberates toxic gas hydrogen cyanide；结果为搜索摘录与工具摘要，供应商 SDS 原页未打开",
+      "url": "（搜索结果，未逐一打开；摘录中出现的供应商页面：Molekula、CP Lab、Flinn、SPI、Ward's 的 SDS）",
+      "type": "A（摘录级，供应商 SDS 摘要；未原页核对）",
+      "access": "搜索摘录",
+      "date": "读取日 2026-11-01",
+      "quote": "Flinn SDS 摘录：acid contact produces very toxic fumes of HCN（三水合物相关 SDS 摘录，未原页核对）"
+    }
+  ],
+  "negative_findings": [
+    {
+      "query": "WebSearch 1：Colas ink process gallic acid ferric tartaric photogram modern recreation half-dry no wash",
+      "scope": "全网搜索，返回 9 条链接",
+      "result": "未找到半干、免洗或不水洗的 Colas 变体，也未找到除 slyka 之外的现代复刻。"
+    },
+    {
+      "query": "WebSearch 2：Colas Tintenprozess 1880 Patent Gallussäure Eisenchlorid Weinsäure Patentschrift",
+      "scope": "全网，含 Google Patents 命中",
+      "result": "未找到 1880 德国专利原件或编号。命中为无关专利或二手博客。（注意：这是在所列搜索范围内的负结果，不是「无专利」结论。）"
+    },
+    {
+      "query": "WebSearch 3：ferro gallic iron gall print ink process lightfastness permanence fading historical photographic print stability study",
+      "scope": "全网与学术摘要",
+      "result": "只找到手写铁胆墨的耐光研究，照相铁胆墨像的加速耐光数据未找到。AICCM Lee/Whitley/Creagh 2006 PDF 返回 Cloudflare 人机验证页，不可读（未绕过）。npj 2025 笔墨耐光研究只有搜索摘录，未全文读取。"
+    },
+    {
+      "query": "WebSearch 4：Shawcross Thompson 1885 ferro-gallic process dry powdered gallic acid developer patent",
+      "scope": "全网与专利站",
+      "result": "未找到 1885 专利原文，仅 S3 转述（摘录级）。英国 1885 专利档案未检索。"
+    },
+    {
+      "query": "WebSearch 5（本轮核查）：potassium ferrocyanide SDS EUH031 contact with acids liberates toxic gas hydrogen cyanide",
+      "scope": "全网（standard），返回 SDS 与化学品目录链接",
+      "result": "未找到 EUH031 原文；搜索摘录称供应商三水合物 SDS 列 EUH032 与 H412，并称酸接触释放 HCN；未打开原页，结论仅为摘录级。"
+    },
+    {
+      "query": "Crossref API：Colas ink process gallic acid ferric（rows=8）",
+      "scope": "Crossref 全库（约 258 万条结果，取前 8 条）",
+      "result": "无 Colas 直接条目；仅有 Molecules 2022 模型铁胆墨老化论文（已取摘要，S11）。"
+    },
+    {
+      "query": "photrio.com 站内搜索 q=colas ink（curl）",
+      "scope": "Photrio 搜索端点（仅此一页）",
+      "result": "HTTP 403，未读。该域名在可读清单内，但未尝试其他页面，因此 Photrio 上关于 Colas 的讨论未核。"
+    },
+    {
+      "query": "alternativephotography.com「Forgotten processes」（curl）",
+      "scope": "该站专题页",
+      "result": "有 Ferro-gallic 条目（S12，B 级），无半干 Colas 方法。页内一则评论讨论 Herschel 呼吸显影，与 Colas 无关，未采用。"
+    },
+    {
+      "query": "PubChem PUG View GHS 与 CAS（curl API）",
+      "scope": "CID 370、971、444305、24380、24826、26250、9605257",
+      "result": "已完成（本轮复核）。铁氰化钾聚合 GHS 未列 EUH032。亚铁氰化钾聚合 GHS 仅 H411、H412，未列 EUH 码（与 WebSearch 摘录的 EUH032 不一致，待原 SDS 裁定）。"
+    },
+    {
+      "query": "Colas 价格与在售产品",
+      "scope": "未执行价格检索，未读取价格页，未执行在售产品搜索",
+      "result": "价格：未验证。在售 Colas 预涂纸：未检索（原研究误写为「未找到」，已修正）。"
+    },
+    {
+      "query": "未读的来源",
+      "scope": "本轮未读",
+      "result": "cameo.mfa.org 在 403 列表内，未读；Mike Ware Cyanomicon 与 Wikipedia Cyanotype 未在本路线读取。"
+    }
+  ],
+  "key_unknowns": [
+    "是否存在不水洗、半干或喷雾显影、且白区稳定的 Colas 变体。所有已读来源未找到，Photrio 搜索页 403（其他页面未尝试）。",
+    "涂层纸或敏化液的受控货架期。目前只有 1891 年的经验数字（10–15 天，S1）与同族的 2–3 个月、wochenlang（S1、S2，非 Colas），无对照。",
+    "照相铁胆墨像的加速耐光数据。目前只有手写墨水与模型墨的类比（S10、S11）。",
+    "随时间变色的长期数据：白区是否会在停止后继续变色，未测；S2 称水洗后不变，但无数据。",
+    "停止剂：无已证实方案，所有候选均未验证。",
+    "亚铁氰化钾（ferrocyanide）酸接触 HCN 危害：原 SDS 未核。Colas 原文中含其 + 稀硫酸转化步骤（S1），属红线相邻未知。",
+    "1880 德国专利原文与编号，以及 1885 干粉显影法的原文（S3 转述）。",
+    "拼图底材（卡纸或灰板）的吸湿变形与干后拼合性。"
+  ],
+  "discriminating_experiment": {
+    "one_liner": "同批涂布纸分两组：A 组不做预洗、显影后只吸干不水洗；B 组按 Vogel 原法清水冲洗。曝光至白底出现后显影，干燥后测白区 ΔE（0 h、24 h、7 天，暗盒保存）。若 A 组白区 ΔE 明显大于 B 组或持续变色，则判定不水洗路线淘汰。",
+    "design_sketch": "材料：Fe(III) 敏化纸 20 张（按 S2 配方涂布，同批；氯化铁为光敏主体，可用 S4 的单用氯化铁替代方案对照）、没食子酸 4 g/L 加草酸 0.5–1 g/L 显影液、色度计或标准色卡。步骤：(1) 统一曝光至白底出现（目视终点，记录时长与光源）。(2) A 组浸没显影后只用吸水纸吸干，不冲洗；B 组按 S2 清水冲洗。(3) 分别在 0 h、24 h、7 天测白区 ΔE，暗盒与光照各一组。(4) 判定：A 组 ΔE 大于 B 组两倍以上，或 7 天内持续变色，即判不水洗路线失败。注意：此实验只能证伪底线 1 与 2，不能证实停止剂；不得在该实验中加入铁氰化钾或亚铁氰化钾。"
+  },
+  "new_routes_spotted": [
+    {
+      "name": "显影剂预涂于纸面（Shawcross & Thompson 1885 干粉显影剂；约 1905 预含没食子酸的市售纸，仅清水显影）",
+      "why": "把显影剂前置到涂层，可减少浴槽。但仍是水活化，只能作为「前置显影剂加水雾或半干激活」的历史线索，未证实不水洗。S3 称 1885 干粉法 still full development in a water bath，与「水雾激活」不同，需注意。",
+      "lead_url": "https://resources.culturalheritage.org/pmgtopics/1995-volume-six/06_03_Price.html"
+    },
+    {
+      "name": "Eisentuschprozess（Poitevin，明胶加 FeCl3 加酒石酸；光使明胶由不溶变为可溶，水洗溶去受光区，形成洗出式图像）",
+      "why": "与 Colas 同属铁盐加明胶的洗出式，S2 Vogel 1905 有记载（Poitevin 原法）。修正：原研究写「光照使明胶不溶」，方向写反（S2 原文 Diese Unlöslichkeit wird aber aufgehoben, sobald das Licht auf die Schicht wirkt）。S2 注明 Der Versuch erfordert sehr lange Belichtung，与 30 分钟目标冲突。本轮未展开。",
+      "lead_url": "https://archive.org/download/photochemieundbe00voge/photochemieundbe00voge_djvu.txt"
+    },
+    {
+      "name": "Fe(III) 草酸盐加银显影（S1 所述 ferrous oxalate 图像经硝酸银显影的变体）",
+      "why": "铁草酸盐体系的另一支。银化学品的毒性需另评，此处只记线索。本轮未核对 S1 原文该段。",
+      "lead_url": "https://www.gutenberg.org/cache/epub/24016/pg24016-images.html"
+    },
+    {
+      "name": "Pellet 族印片的单宁或红茶调色（S1 原文：toned black ... results are seldom good，原句属 Cyanofer 段）",
+      "why": "原研究写作 cyanotype；S1 原句实际指 Pellet 族（Cyanofer）印片，且结果少见好。属范围偏移。S4 对比页（单宁与红茶调色，C 级）本轮未核。",
+      "lead_url": "https://slyka.net/blog/2022/cyanotype-comparison/"
+    }
+  ],
+  "search_budget_used": {
+    "websearch": 4,
+    "websearch_verify": 1,
+    "curl_reads": 33,
+    "curl_reads_verify": 25
+  },
+  "narrative_zh": "Colas 铁盐黑墨法的历史文献（Vogel 1905、Duchochois 1891、Price 1995）与唯一现代复刻（slyka 2025）一致。机制是：Fe(III) 盐加酒石酸敏化，曝光把受光区的 Fe(III) 还原为 Fe(II)；显影时，未受光区残留的 Fe(III) 与没食子酸或单宁生成黑色铁胆络合物，受光区的 Fe(II) 络合物与胶体可溶，被冲去。图像为单色黑或蓝黑，正片出正像。氯化铁为光敏主体，硫酸铁单用无光敏（S4，C 级）。\n\n(a) 免洗：所有可核来源都要求显影后用清水冲洗，显影本身也是水浴。Fisch 变体只取消显影前预洗；1885 年 Shawcross 与 Thompson 的干粉显影剂预置法仍需水浴显影（终浴含酒精、草酸或明矾，S3）；约 1905 年预含没食子酸的市售纸只用清水显影（S2，水作显影剂）。未找到半干、喷雾或不水洗的 Colas 变体。结论：不满足喷后免洗底线（A 级）。\n\n(b) 白区稳定性：初始白区不纯、残留试剂使底色染紫（S1、S3，有证据）。随时间变色则为推断（S6 铁胆墨机理 B 级；S11 模型墨自氧化 A 摘录），未测。S2 称水洗后图像 unveränderlich，但为无数据断言。结论：底线 2 的 ✗ 以初始残留染色为依据；时间漂移未证实。\n\n(c) 连续调：原研究「暗示可做半调」为误读。S1 的 half-tone 句指白区染色的容忍度，S3 称该类印出法为线条设计，不是半调。连续调未证实。\n\n(d) 现代复刻：slyka 2025 年 11 月按 Vogel 配方复刻，1000 W 卤素灯 15 分钟，UV 约 5 分钟为作者叙述的最短值；显影为搅动浸没，之后充分冲洗；敏化液避光保存「似乎良好」，无时长；显影液 1 L 约做 4–5 张 A4，随使用变深。该复刻为单一爱好者（C 级）。\n\n(e) 货架期：Duchochois 称涂层纸不超过 10–15 天，原因是铁盐吸湿（A 级一手，经验性，无对照）。其包装做法（包吸墨纸、夹橡胶片）为作者二手转述（I think, states），降为 B/C。同族旁证（非 Colas）：S1 对另一铁盐纸称 2–3 个月；S2 称 Pellet 族商业铁盐纸 hält sich wochenlang。\n\n(f) 红线：主线（没食子酸加草酸）不含氰化物或重铬酸盐，不产生普鲁士蓝。变体有三类：(i) 铁氰化钾显影（S1 原文，Prussian blue formed），以及 S4 的交叉法（铁氰化钾显影酸性 ink 敏化液，作者称 works，低 pH 致灰雾），与强酸接触可放 HCN（S7，B 级），应排除；(ii) 亚铁氰化钾 + 稀硫酸转化步骤（S1 Colas 段原文），酸接触 HCN 危害未核，属红线相邻未知，须读原 SDS；(iii) 碳酸盐：历史上白垩悬浮水用于显影前洗涤（S1）；S3 的初步测试显示缓冲封装使 ferro gallic 印片劣化，因此不能把碳酸盐中和迁移为显影后方案。\n\n(g) 旧轮次核查：「纸仅存 10–15 天」被 S1 原文确认；「Colas 1880」的 1880 对应德国专利起点，发明人为 Poitevin（1860），而非 Colas；专利编号未找到。旧文档中 Pellet 显影剂「铁氰化钾」应改为「亚铁氰化钾」，S1 与 S2 原文均指 ferrocyanide。\n\n结论：淘汰（底线 1 与 2 硬失败，依据已修正）。未展开的新线索包括预涂显影剂、明胶洗出式 Eisentuschprozess（光化学方向已修正，需极长曝光）、Fe 草酸盐加银显影，以及 Pellet 族的单宁调色。",
+  "reconciliation_log": [
+    {
+      "item": "c02 连续调与「暗示可做半调」",
+      "change": "删去「暗示可做半调」；连续调改为未验证；补充 S3 原文 designed for linear rather than half tone reproduction 作为反证。",
+      "why": "S1 的 half-tone 句讲的是白区染色的容忍度，不是半调能力；S3 对该类印出法的描述与半调相反。"
+    },
+    {
+      "item": "c02 S4 photogram 阴影渐变",
+      "change": "由「有阴影渐变（C）」改为「只描述 sharper shadows and higher contrast，无渐变样张」。",
+      "why": "S4 原文没有渐变描述；高反差不等于连续调。"
+    },
+    {
+      "item": "c01 光敏成分",
+      "change": "Fe(III) 盐改为「氯化铁为光敏主体，硫酸铁单用无光敏」（S4，C 级）；酒石酸脱羧标为单一 C 级复刻。",
+      "why": "S4 原文：ferric sulfate alone shows no light sensitivity；原研究写「氯化铁和/或硫酸铁」，过宽。"
+    },
+    {
+      "item": "c04 显影与终浴",
+      "change": "补入 S3 终浴（酒精、草酸或明矾，用于澄清底色）。",
+      "why": "S3 原文 final bath，说明显影后还有一道湿步骤。"
+    },
+    {
+      "item": "c05 免洗核验与 c05 文本：「所有来源显影后冲洗」",
+      "change": "泛化改为「水浴显影 + 水洗停止」；S2 预含纸只写「水显影」，不写冲洗；S3 为终浴。",
+      "why": "S2 原文未写显影后冲洗；原研究的泛化不完全成立，但底线 1 ✗ 结论不变（显影本身是水浴，停止依赖水洗）。"
+    },
+    {
+      "item": "c05 核验 2_白区停得住 ✗ 的依据",
+      "change": "依据改为「初始残留染色（S1，有证据）」；随时间变色标为推断，未测；加入 S2 unveränderlich 反面断言。",
+      "why": "S1、S3 只记录工艺完成时的白区状态，没有时间序列。"
+    },
+    {
+      "item": "c06 H2O2 氧化候选的引用",
+      "change": "去掉对 S6 的依据引用，H2O2 标为推断外推。",
+      "why": "S6 原文只载空气（O2）氧化机理，未提 H2O2。"
+    },
+    {
+      "item": "c06 亚铁氰化钾 + 稀硫酸转化步骤",
+      "change": "补入 S1 Ferro-tannate 段原文，说明它是转化而非停止，且为红线相邻组分。",
+      "why": "原研究漏列；该步骤在 Colas 原文中出现。"
+    },
+    {
+      "item": "c07 headline「判定：不稳定，有证据」",
+      "change": "拆分为 (a) 初始白区不纯（有证据）与 (b) 随时间变色（未证实，推断）；补入 S2 unveränderlich 反面断言与 S2 通性underexposure 说明。",
+      "why": "初始染色与时间漂移是两种证据；无时间序列数据。"
+    },
+    {
+      "item": "c09 Colas 包装方法（A 级一手）",
+      "change": "降为二手转述（B/C），注明作者原文 I think, states。",
+      "why": "S1 原文作者用了 I think 并转述他人。"
+    },
+    {
+      "item": "c09 同族数据与碳酸氢钠包装",
+      "change": "补入 S1 的 2–3 个月（铁盐纸，非 Colas）、S2 的 wochenlang（Pellet 族商业铁盐纸）、S1 碳酸氢钠浸渍吸墨纸（针对银盐纸，非铁盐纸）。",
+      "why": "原研究漏列同族数据；碳酸盐一线需注明对象，不得外推。"
+    },
+    {
+      "item": "c09 在售 Colas 预涂纸「未找到」",
+      "change": "改为「未检索」。",
+      "why": "negative_findings 写明未执行价格与在售检索，「未找到」无依据。"
+    },
+    {
+      "item": "c10 FeCl3 损纸的 S2 来源",
+      "change": "注明 S2 原文出自 Eisen-Gummi 段，非 Colas 段；适用于 Colas 为推断（已保留）。",
+      "why": "原研究未标明段落来源。"
+    },
+    {
+      "item": "c11 H 码列表（草酸、氯化铁）",
+      "change": "注明为 PubChem 子集，补列未列出的码（草酸 H314、H335、H361、H370–H373、H402、H412；氯化铁 H304、H335、H341、H370、H371、H402）。",
+      "why": "H341 与 H370 对氯化铁是重要危害码；原列表不全且未注明。"
+    },
+    {
+      "item": "c11 亚铁氰化钾 GHS 与 CAS",
+      "change": "新增 CID 9605257、CAS 13943-58-3 / 14459-95-1；PubChem 仅 H411、H412；WebSearch 摘录称 SDS 有酸接触 HCN、部分列 EUH032（未原页核对）；结论为未证实也未排除。",
+      "why": "原研究称亚铁氰化钾「独立核查」但在 c11 未列任何数据。"
+    },
+    {
+      "item": "c11 铁氰化钾 EUH032 与强酸条件",
+      "change": "保留「未列 EUH032」（PubChem 证实）；补入 S7 原文条件「稀硫酸加热」。",
+      "why": "S7 以稀硫酸加热为例，原研究仅写「强酸」。"
+    },
+    {
+      "item": "verdict.red_line_hits「亚铁氰化钾不属于本路线」",
+      "change": "删除该断言；改为：S1 Colas 段含亚铁氰化钾 + 稀硫酸步骤，危害未核，须读原 SDS。",
+      "why": "S1 原文反驳该断言。"
+    },
+    {
+      "item": "verdict.red_line_hits S4 交叉法",
+      "change": "补入 S4 原文细节：铁氰化钾显影酸性 ink 敏化液，作者称 works，低 pH 致灰雾，配方含 25% 氯化铁。",
+      "why": "这是公开 DIY 配方中铁氰化钾与酸性敏化液共存的直接证据，应明示风险。"
+    },
+    {
+      "item": "new_routes Eisentuschprozess 光化学方向",
+      "change": "改为「光使明胶由不溶变可溶，水洗溶去受光区」；补入 very long exposure 警示。",
+      "why": "S2 原文方向与原研究相反；长曝光与 30 分钟目标冲突。"
+    },
+    {
+      "item": "new_routes cyanotype 单宁调色",
+      "change": "改为 Pellet 族印片，并注明 S1 原句的范围。",
+      "why": "S1 原句属 Cyanofer 段，不是 cyanotype 段。"
+    },
+    {
+      "item": "c12 供应描述",
+      "change": "补入 S4 原文：买不到硫酸铁时可只用更多氯化铁（密度略低）。",
+      "why": "原研究漏列；与 c01 修正相呼应。"
+    },
+    {
+      "item": "c13 第 (8) 条引文",
+      "change": "删去对 S2 的引用，只引 S4；UV 5 分钟标为最短值叙述。",
+      "why": "S2 无现代复刻数据。"
+    },
+    {
+      "item": "c14「WebSearch 额度已用尽」与 Photrio 403 的描述",
+      "change": "删除「额度已用尽」；Photrio 改为「仅搜索端点 403，其他页面未尝试」。",
+      "why": "websearch_used=4，额度并未耗尽；photrio.com 在可读清单内。"
+    },
+    {
+      "item": "sources S8 与 S9 的 url",
+      "change": "把 CID 列表移入 cids 字段；url 保留占位但注明为模板。",
+      "why": "原 url 含中文括注与字面占位符，不可直接使用。"
+    },
+    {
+      "item": "sources S10 期刊名与引文",
+      "change": "补全为 Xu, Wang, Fan (2023)；页面标题 npj Heritage Science；Herit Sci 11, 96；DOI 10.1186/s40494-023-00943-2；published 05 May 2023。",
+      "why": "页面与原引文期刊名不一致；URL 原本正确。"
+    },
+    {
+      "item": "sources S14（新增）",
+      "change": "新增本轮 WebSearch 1 次结果，access 标为搜索摘录，等级 A（摘录级），未原页核对。",
+      "why": "本轮唯一的搜索证据，须与原页证据区分。"
+    },
+    {
+      "item": "c08 S10 与 S11 的标注",
+      "change": "保留 A（摘录级），补充「商业铁胆墨手写样，非照相像」与模型墨说明。",
+      "why": "原研究基本准确，但需要说明类比对象。"
+    },
+    {
+      "item": "verdict.status",
+      "change": "保持「淘汰」。底线 1 ✗ 的依据改为「水浴显影 + 水洗停止」；底线 2 ✗ 的依据改为「初始残留染色（有证据）」。",
+      "why": "两条硬失败仍成立，但依据的证据类型比原研究说明得更精确。"
+    }
+  ]
+}

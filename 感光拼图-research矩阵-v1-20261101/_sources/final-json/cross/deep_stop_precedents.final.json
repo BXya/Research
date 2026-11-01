@@ -1,0 +1,716 @@
+{
+  "key": "deep_stop_precedents",
+  "name": "原地干式停止机制的真实先例普查（修订版，经对抗式核查）",
+  "date": "2026-11-01",
+  "scope_note": "覆盖机制类 A–F 六类（A 水洗基线；B Polaroid 碱层中和与重氮化学淬灭；C print-out 与 anthotype 漂白；D Cromalin 类覆膜；E Kalvar 类全面 UV 再曝光；F 干式银膜接触稳定与 vesicular 热显影）。Pellet 碳酸盐中和、Dylux 可见光定影、Horizons 热定影、蜡封与蓝晒清漆、酸稳定（曝光后）均未找到可核查先例，见 negative_findings。本修订版以 curl 全文复核了 Wikipedia 六页（Cyanotype、Diazotype、Vesicular film、Anthotype、Photographic processing、Thermal paper）与 USPTO 扫描专利三件（US 5,667,943、US 3,149,971、US 3,997,346，图像阅读），并以 Google Patents 全文复核 US 3,512,978 与 US 4,329,420；本地资料包的引文已与文件逐字核对。机制类（A–F）与证据等级（A/B/C）是两套独立标签，本文仅以'机制类X'指代前者。route_key 为本轮自定标签，与 deep_diazo（diazo_commercial/diazo_diy）、deep_pellet（pellet_direct_positive）保持一致，其余需编排程序映射。Access 说明：curl全文 = 直接下载并读取页面或 PDF；搜索摘录 = 仅 WebSearch 返回的摘要；本地资料包 = 他轮已下载的文件，本轮仅核对引文，未通读全文。",
+  "findings": [
+    {
+      "id": "F01",
+      "claim_zh": "氰版（Prussian blue）标准流程以冷水冲洗去除水溶性铁盐，属机制类A 水洗去除；冲洗是湿法步骤，不满足免洗底线。",
+      "label": "事实",
+      "grade": "B",
+      "sources": ["S02"],
+      "notes": "复核通过（Wikipedia Cyanotype 全文）。机制类A 基线，用于对照其他类别。"
+    },
+    {
+      "id": "F02",
+      "claim_zh": "定影与充分水洗被视为必需：1897 年 Haddon and Grundy 所述（经 Reilly 1980 年二手专著转引）残留定影产物会导致泛黄与褪色；现代维基亦写残留定影剂导致变色、染色与褪色。",
+      "label": "事实",
+      "grade": "B（二手转引一手）",
+      "sources": ["S11", "S08"],
+      "notes": "由 A（摘录级）下调：S11 为 1980 年二手专著的章节，只引用 1897 年原文。定影=去除未反应卤化银，本身需要湿法，不属于免洗。"
+    },
+    {
+      "id": "F03",
+      "claim_zh": "氰版在亮光下 Prussian blue 会变白（褪色），暗放可恢复；两者均为定性描述，无时间尺度。",
+      "label": "事实",
+      "grade": "B",
+      "sources": ["S02"],
+      "notes": "复核通过。直接支持「避光只是暂停，不是停止」：暗放恢复是可逆过程，不构成停止机制。不得换算为年限。"
+    },
+    {
+      "id": "F04",
+      "claim_zh": "碱性缓冲纸会使氰版图像随时间退化；维基另写缓冲博物馆卡板会使图像褪色，cyanotype 对碱性环境反应不佳。",
+      "label": "事实",
+      "grade": "B",
+      "sources": ["S02"],
+      "notes": "复核通过（第 46 行与第 71 行）。"
+    },
+    {
+      "id": "F05",
+      "claim_zh": "若停止方案使用碱（如 Polaroid 式碱层中和或碳酸盐），对氰版成色区的 pH>7 褪色风险须单独评估，不能默认迁移。维基第 66 行列出碳酸钠、氨、硼砂与 Dektol 等可降低 cyanotype 蓝色强度，说明碱对已成色区有可观测作用。",
+      "label": "推断",
+      "grade": "B",
+      "sources": ["S02", "S01"],
+      "notes": "推断链：S02 写明碱性纸使氰版退化，且第 66 行列出碱性漂白剂；共享背景给出普鲁士蓝遇碱（pH>7）褪色的红线；S01 的碱中和针对的是热产酸的隐色染料，并非铁氰化物体系。仍无氰版碱停止的一手先例。"
+    },
+    {
+      "id": "F06",
+      "claim_zh": "Polaroid US 5,667,943 的「碱接触」不是光化学停止，而是热成像介质的碱层中和：squaric acid 衍生物热分解产酸，优选使酸敏隐色染料发生不可逆色变，随后将介质与含高分子胺（HALS-62，配 PVB）的碱层层压（约 88 °C、60 psi），中和过量酸。",
+      "label": "事实",
+      "grade": "A",
+      "sources": ["S01"],
+      "notes": "复核通过（USPTO 扫描 PDF，图像阅读第 1、17–18 页）。摘要原文为 Preferably, the acid-sensitive materials undergo an irreversible color change（优选，修订版补入此限定）。权利要求 1 与 JSON 引文一致；权利要求 10–11 为 IR 吸收体。介质为激光扫描热成像，不是曝光成像，也不是家用介质。"
+    },
+    {
+      "id": "F07",
+      "claim_zh": "同一专利表 6：可逆隐色染料（Medium B）经碱固定后完全脱色（速度 0.6 下绿光密度 1.23 变为 0.02）；不可逆染料（Medium A）碱固定后密度仍降低（0.43 变为 0.20，速度 0.6；速度 1.0 下 0.07 变为 0.04，固定后 0.04 变为 0.08）；固定后再加热 92 °C 45 h 在速度 0.6 点无变化。",
+      "label": "事实",
+      "grade": "A",
+      "sources": ["S01"],
+      "notes": "复核通过（第 26 页 TABLE 6）。原文：the attempt to fix the image with base resulted in complete decolorization and removal of the image。'without substantial change' 为专利作者表述；低密度点并非完全不变。"
+    },
+    {
+      "id": "F08",
+      "claim_zh": "碱中和类停止能避免不可逆产物的二次变色，但碱固定本身会降低密度：即使不可逆染料，碱固定后密度也下降（F07）。因此白区与成色区都须单独实测，不能认为碱对图像组分无作用。",
+      "label": "推断",
+      "grade": "A",
+      "sources": ["S01"],
+      "notes": "修订：原文'碱不与图像组分反应时成立'被 F07 表 6 反驳，已删去该条件。对可逆体系会整体擦除图像（F07）。"
+    },
+    {
+      "id": "F09",
+      "claim_zh": "重氮（diazo）显影：UV 曝光使无像区的重氮盐失活（成白区）；氨蒸气形成碱性环境，使残留重氮与偶合剂反应生成有色线条。显影后的「停止」是残留反应物被消耗的自限过程。维基未描述「酸稳定」机制。",
+      "label": "事实",
+      "grade": "B",
+      "sources": ["S03"],
+      "notes": "复核通过（第 19–20 行）。显影为氨蒸气（碱性），不是中性。"
+    },
+    {
+      "id": "F10",
+      "claim_zh": "US 3,512,978（diazosulfonate 直接 print-out 体系，存储时维持 pH 8.5–13 的碱性介质）：以强还原剂氯化亚锡水溶液辊涂（湿法）处理后，未曝光重氮被漂白为白色并永久停止后续染料形成（实施例 2）；说明书亦载潮湿二氧化硫蒸气（moist sulfur dioxide vapors）在封闭腔室中同样有效（实施例 3）。",
+      "label": "事实",
+      "grade": "A",
+      "sources": ["S13"],
+      "notes": "由搜索摘录升为 Google Patents 全文（curl，重试后读取）。修订：删去原'干式但毒性显著'的'干式'，改为潮湿 SO2 蒸气。该体系为 diazosulfonate，不能直接推至一般蓝图纸的 diazonium 配方。家用安全性未评估。"
+    },
+    {
+      "id": "F11",
+      "claim_zh": "重氮记录材料的光固定（light fixing）可消除残留重氮反应性，但过程缓慢、需要较长时间，过度曝光会降低背景白度。",
+      "label": "事实",
+      "grade": "未验证",
+      "sources": ["S14"],
+      "notes": "来源仍未唯一定位：候选 US 4275137、4282300、6743750 的 Google Patents 页面本轮均 503，无法读取。维持未验证。"
+    },
+    {
+      "id": "F12",
+      "claim_zh": "氰版体系的全面 UV 再曝光会把未曝光区残留的 Fe(III) 还原为 Fe(II)，后者与铁氰化物生成 Prussian blue，即白区变蓝，而非停止；因此 vesicular 的「全面曝光销毁残留光敏剂」不能直接迁移到氰版。",
+      "label": "推断",
+      "grade": "B",
+      "sources": ["S02", "S04"],
+      "notes": "复核通过：维基第 47 行写明 UV 与柠檬酸盐还原 iron(III)，随后与 ferricyanide 生成 Prussian blue。推断成立，但仍无实验数据。"
+    },
+    {
+      "id": "F13",
+      "claim_zh": "Kalvar 乙烯基膜（vesicular film）显影后，可通过全面 UV 再曝光销毁未曝光区残留的重氮化合物，使其稳定或固定；不加热时，曝光产生的氮气会扩散出膜而不形成气泡。",
+      "label": "事实",
+      "grade": "B",
+      "sources": ["S04"],
+      "notes": "复核通过（第 12 行）。E 类（光灭活至终点）在干式体系中的直接先例，同时涉及热显影。基底为 Mylar 上的 Saran 涂层，不是纸基。"
+    },
+    {
+      "id": "F14",
+      "claim_zh": "Kalvar 成像机理（US 3,149,971）：重氮化合物是唯一必要成像剂，UV 使其分解为挥发性产物，加热后仅在受光区形成散射气泡（vesicles）；冷却后气泡被冻结（该句出自维基，非专利原文）。",
+      "label": "事实",
+      "grade": "A",
+      "sources": ["S05", "S04"],
+      "notes": "复核通过（专利图像阅读，第 1 栏与权利要求 1、14）。气泡是物理散射，本身不是化学稳定，残余重氮仍需 UV 销毁（F13）。"
+    },
+    {
+      "id": "F15",
+      "claim_zh": "同一专利：热水或饱和蒸汽（约 212 °F）在曝光前处理可改变感度与反差（gradation），如实施例 I 将 gamma 由约 0.65 降至 0.26；属感度调整，不是停止步骤。",
+      "label": "事实",
+      "grade": "A",
+      "sources": ["S05"],
+      "notes": "复核通过（权利要求 1 为 before exposure to light；权利要求 13 为 140–212° F、10–300 秒）。"
+    },
+    {
+      "id": "F16",
+      "claim_zh": "DuPont Cromalin 类打样工艺（US 4,329,420 背景段与发明实施方式，全文复核）：光聚合膜夹于 cover 与 base 之间，层压后曝光、揭去 cover、撒干色粉，逐色重复；最后再层压覆膜并全面曝光使其硬化。该专利申请人为个人 Ferdinand L. Bopp（1980-09-10 申请，1982-05-11 授权），不是 DuPont。Cromalin 同时作为「合适的光聚合物复合材料」出现在该专利发明实施方式中。",
+      "label": "事实",
+      "grade": "A",
+      "sources": ["S15"],
+      "notes": "由搜索摘录（A 摘录级）升为全文（A）。修订：删去原'Cromalin 只作为背景中的商业案例出现'。"
+    },
+    {
+      "id": "F17",
+      "claim_zh": "Cromalin 类覆膜属机制类D（封层隔绝光、氧与擦伤）与机制类E（全面曝光硬化）的复合；迁移到氰版需要覆膜对 UV 的透过率、氧与水汽阻隔、覆膜与纸基的粘合、覆膜后色偏等数据，本轮均无。覆膜与层压设备（热压）是家用免洗的主要障碍。",
+      "label": "推断",
+      "grade": "A",
+      "sources": ["S15"],
+      "notes": "推断链：该专利正文写明覆膜 applied in a laminator，并使用 pressure sensitive adhesive，确认层压是必需环节（F33 补充现有技术的变色描述）。阻隔与色偏数据在全文中未给出。"
+    },
+    {
+      "id": "F18",
+      "claim_zh": "Anthotype（植物色素）属机制类C 的 bleach-out：曝光使未遮挡区颜色被阳光漂白，图像由遮挡区留下；维基明确写明 The image cannot be fixed, so the paper remains sensitive to light。颜色可能取决于水与纸的 pH（原文为 may depend）。",
+      "label": "事实",
+      "grade": "B",
+      "sources": ["S06"],
+      "notes": "修订：原文'颜色还取决于'改为'可能取决于'。anthotype 无定影手段，白区与未漂白区均保持光敏。本轮未找到 anthotype 的蜡封先例，见 F26。"
+    },
+    {
+      "id": "F19",
+      "claim_zh": "机制类C（反应物耗尽自限）只停止已曝光区的进一步反应；未曝光白区仍保留光敏剂并继续敏感。print-out 与 anthotype 都表现为此模式。",
+      "label": "推断",
+      "grade": "B",
+      "sources": ["S06", "S09", "S10"],
+      "notes": "推断链：S06 说明 anthotype 白区不能固定；S09 说明 print-out 印出后仍需定影；因此机制类C 不能单独解决白区稳定性（底线 2）。"
+    },
+    {
+      "id": "F20",
+      "claim_zh": "银盐 print-out（印出像）工艺：印出之后仍需调色与定影（fixing shall be effected afterwards）；Talbot 改用硫代硫酸钠（hypo）定影后，相片「完全稳定于光」。",
+      "label": "事实",
+      "grade": "B（二手转引；gelatino 书年代未核）",
+      "sources": ["S09", "S10"],
+      "notes": "引文已与本地文件逐字核对（gelat_djvu.txt 第 3422 行；Reilly ch3）。由 A（摘录级）下调：S10 为 1980 年二手专著。S09 年代未核。证明 print-out 不是免洗路线。"
+    },
+    {
+      "id": "F21",
+      "claim_zh": "「残留盐耗尽后曝光后酸稳定」的重氮机制：本轮未找到证据。维基只提供显影与化学固定（SnCl2、潮湿 SO2）两类。另有一条相关但不同的历史背景：US 3,512,978 写道此前 diazo sulfonate 的稳定方法依赖酸化，但被认为很少有实用产品；该酸化针对曝光前的存储稳定，不是曝光后的停止。",
+      "label": "未验证",
+      "grade": "未验证",
+      "sources": ["S03", "S13"],
+      "notes": "修订：删去'共享背景把此项列为 B 类先例'的归属（本轮共享背景文本中无此列表，属旧轮次假设）。曝光后酸稳定仍需重氮厂商技术资料或专利原文才能判定。"
+    },
+    {
+      "id": "F22",
+      "claim_zh": "US 3,997,346（Fuji Photo Film，1974-09-11 申请，1976-12-14 授权）：热显影期间或之后，将感光层与含 X-C-SH 或 X-C=S（X 为形成杂环的非金属原子）的聚合物膜层接触，使图像稳定；说明书称该方法为干式处理，无需湿法定影。",
+      "label": "事实",
+      "grade": "A",
+      "sources": ["S17", "S16"],
+      "notes": "修订：原'热显影后'改为 during or after heating（摘要与发明内容均如此）。复核通过（摘要与第 1 栏第 62–67 行）。权利要求第 3–9 页未核。另见 F35：该干式图像在高温高湿与白光下背景会变棕。"
+    },
+    {
+      "id": "F23",
+      "claim_zh": "F22 类干式稳定要成立，稳定剂必须从膜层迁移进入图像层；其迁移速率、对纸基吸湿与变形的影响，以及稳定剂本身（含硫杂环化合物）的 SDS 与安全性，本轮均未核实。",
+      "label": "推断",
+      "grade": "A",
+      "sources": ["S17"],
+      "notes": "推断链成立（摘要：contacting the photosensitive layer ... with a polymer film layer containing a compound）；迁移速率无定量数据。"
+    },
+    {
+      "id": "F24",
+      "claim_zh": "Horizons 热定影的机理无法确认：本轮未找到 Horizons 产品的任何一手或二手说明；维基 Photothermography 页面 404（不存在）。",
+      "label": "未验证",
+      "grade": "未验证",
+      "sources": ["S16"],
+      "notes": "不能代表 Horizons 的实际配方；建议要求厂商技术文件或实物测试。"
+    },
+    {
+      "id": "F25",
+      "claim_zh": "Dylux 可见光定影的机理无法确认：维基 Dylux 页面 404，Diazotype 全文亦无 Dylux；只找到通用重氮可见光灵敏度与光固定的摘录。",
+      "label": "未验证",
+      "grade": "未验证",
+      "sources": ["S14"],
+      "notes": "不能确认 Dylux 为 E 类先例；需要厂商资料或专利原文。"
+    },
+    {
+      "id": "F26",
+      "claim_zh": "蜡封（anthotype wax seal）与蓝晒清漆（cyanotype varnish）均无可核查的先例：维基 Anthotype 与 Cyanotype 全文（curl）检索 wax、varnish、lacquer、seal 均无命中；altphoto 子页 403（本轮仍为 403，未绕过）；photrio 本轮未复读。",
+      "label": "未验证",
+      "grade": "未验证",
+      "sources": ["S02", "S06", "S12"],
+      "notes": "D 类中这两项只能保留为待测假设，不能写成已证实的先例。结论仅限所列来源。"
+    },
+    {
+      "id": "F27",
+      "claim_zh": "Pellet 体系的「碳酸盐中和」本轮无任何一手或二手先例，只有单一爱好者设想。维基仅记载 Pellet 1877 年的 gum arabic iron cyanofer 直接正像法，未给出停止化学细节。补充：维基第 66 行显示碳酸钠对 cyanotype 蓝色有漂白作用，碳酸盐并非对普鲁士蓝惰性。",
+      "label": "未验证",
+      "grade": "C",
+      "sources": ["S02", "S18"],
+      "notes": "不得默认迁移到其他体系。Pellet 显影剂是否应为亚铁氰化钾（而非铁氰化钾），本轮 WebSearch（1 次）也未识别，需要 Pellet 原始出版物或现代复刻的 SDS 比对。搜索摘录显示 Pellet 年份存在 1877（Wikipedia）与 1878（Cameo 摘录）分歧。"
+    },
+    {
+      "id": "F28",
+      "claim_zh": "热敏纸（thermal paper）的显色靠加热触发，维基未描述定影或冷却淬灭的停止步骤；咖啡杯等偶然热源会使其变色。Zink 染料形成后经再凝固保色（语境为保色，非停止进行中的反应）。因此「冷却淬灭」不构成已证实的先例。",
+      "label": "未验证",
+      "grade": "B",
+      "sources": ["S07"],
+      "notes": "这是「未发现」，不是「已证伪」。"
+    },
+    {
+      "id": "F29",
+      "claim_zh": "氰版常规流程可见弱有机酸（柠檬酸或醋）酸化冲洗的做法（维基写为 sometimes used，目的为清除残留未曝光铁盐）；维基第 67 行同时将柠檬酸、柠檬汁、醋酸列为增强剂，用于加速生成蓝色颜料。即弱酸是增强而非停止。HCN 风险须 SDS，本轮未做。",
+      "label": "事实",
+      "grade": "B",
+      "sources": ["S02"],
+      "notes": "弱有机酸与共享背景所指的强酸不同；本条只陈述来源内容，不作安全结论。"
+    },
+    {
+      "id": "F30",
+      "claim_zh": "历史上亚铁氰化钾与铁氰化钾是两种不同物质：Smee 于 1840 年以电化学方法从亚铁氰化钾分离出铁氰化钾。",
+      "label": "事实",
+      "grade": "B",
+      "sources": ["S02"],
+      "notes": "复核通过（第 34 行）。支持命名纪律（两者须全名区分）；但本条不能证明 Pellet 配方的具体成分。"
+    },
+    {
+      "id": "F31",
+      "claim_zh": "湿法流程的停止与定影定义：显影停止浴（稀醋酸或柠檬酸）终止显影剂作用，清水漂洗可替代；定影（溶解残余卤化银）使图像永久且耐光。",
+      "label": "事实",
+      "grade": "B",
+      "sources": ["S08"],
+      "notes": "修订：补入'清水漂洗可替代'（第 14 行与第 44 行）。停止浴与定影在传统银盐流程中都是湿法。"
+    },
+    {
+      "id": "F32",
+      "claim_zh": "本轮普查未发现同时满足底线 1（免洗）、2（白区停得住）、3（成色留得住）、5（纸基适配）的已证实原地干式停止先例。现有干式先例（碱层中和、膜层稳定、覆膜、全面曝光）均依赖特定体系、层压或加热设备、或未核实的稳定剂安全性。",
+      "label": "推断",
+      "grade": "A（综合）",
+      "sources": ["S01", "S04", "S15", "S17"],
+      "notes": "结论限于所列检索范围，不构成'不存在'的断言。推断链：F06 与 F07（碱层需层压与热）；F13 与 F12（全曝光不能迁移到氰版）；F16 与 F17（覆膜需层压）；F22 与 F35（膜层稳定需热与迁移，且背景在高温高湿与白光下变棕）。"
+    },
+    {
+      "id": "F33",
+      "claim_zh": "US 4,329,420 背景段（专利作者对现有技术的描述）：DuPont 最终硬化覆层「tends to discolor with age and is easily scratched」，且层压膜成本约 $1.00 每平方英尺（1980 年代数据，过时）。",
+      "label": "事实",
+      "grade": "A（作者描述，无测试数据）",
+      "sources": ["S15"],
+      "notes": "新增。作为 c08 与机制类D 的定性线索，不是加速耐光数据；不得换算为年限。价格不得进入 c12。"
+    },
+    {
+      "id": "F34",
+      "claim_zh": "US 3,512,978 背景：此前 diazo sulfonate 的存储稳定方法依赖酸化组合物，但被认为很少有实用产品；本发明通过碱性（pH 8.5–13）与酰胺实现存储稳定。这是曝光前的存储稳定，不是曝光后的残留盐停止。",
+      "label": "事实",
+      "grade": "A",
+      "sources": ["S13"],
+      "notes": "新增。用于区分 F21 所指的'酸稳定'：二者处于不同阶段，不得混用。"
+    },
+    {
+      "id": "F35",
+      "claim_zh": "US 3,997,346 背景：干式热显影图像在室温下无需定影即可保持稳定，但在高温高湿并受白光照射时，非曝光背景会逐渐变棕；因此非曝光区须被稳定化（第 1 栏第 62 行至第 2 栏第 5 行）。",
+      "label": "事实",
+      "grade": "A",
+      "sources": ["S17"],
+      "notes": "新增。这是白区稳定问题的直接先例，与底线 2 相关。"
+    },
+    {
+      "id": "F36",
+      "claim_zh": "氰版洗去多余溶液后仍对光保持一定敏感（the cyanotype solution, even once its excess is washed off with water, remains photo-sensitive to some degree）。",
+      "label": "事实",
+      "grade": "B",
+      "sources": ["S02"],
+      "notes": "新增。直接支持 c07：洗后白区不稳定，停止须另行处理。"
+    },
+    {
+      "id": "F37",
+      "claim_zh": "重氮蓝图在持续紫外或荧光灯下会褪色，室内数月、户外数天（定性描述）。",
+      "label": "事实",
+      "grade": "B",
+      "sources": ["S03"],
+      "notes": "新增。只可定性，禁止换算年限；用于 diazo 的 c08。"
+    },
+    {
+      "id": "F38",
+      "claim_zh": "重氮显影的氨蒸气需要通风：多份复印时氨气积累，无通风时需等待数分钟；氨为刺激性气体（维基第 20 与 29 行）。",
+      "label": "事实",
+      "grade": "B",
+      "sources": ["S03"],
+      "notes": "新增。补充 c11 的家用安全性（重氮显影路线）。"
+    },
+    {
+      "id": "F39",
+      "claim_zh": "Kalvar 所用 saran 劣化时释放盐酸，腐蚀邻近的胶片与容器（维基第 18 行）；纽约时报的微缩胶卷因此补发。",
+      "label": "事实",
+      "grade": "B",
+      "sources": ["S04"],
+      "notes": "新增。对 Kalvar 类长期稳定与酸性风险相关，本轮 JSON 未提。"
+    },
+    {
+      "id": "F40",
+      "claim_zh": "Kalvar 膜加热损伤图像缓慢，全面销毁残留重氮需专利工艺才能在合理时间内完成（维基第 15 行）。",
+      "label": "事实",
+      "grade": "B",
+      "sources": ["S04"],
+      "notes": "新增。对'热停止'的可行性是反证，与 F13 相关。"
+    },
+    {
+      "id": "F41",
+      "claim_zh": "Kalvar 诉 Xidex 案中，N.D. Cal. 判 US 3,149,971 因 in public use / on sale 无效，第九巡回 1977 年维持（维基第 8–9 行）。",
+      "label": "事实",
+      "grade": "B",
+      "sources": ["S05", "S04"],
+      "notes": "新增。仅记录专利状态；不作无侵权或可自由实施的结论。"
+    }
+  ],
+  "sources": [
+    {
+      "id": "S01",
+      "title": "US 5,667,943 Process for thermochemical generation of acid and for thermal imaging, and imaging medium for use therein (Boggs et al., Polaroid Corporation)",
+      "url": "https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/5667943",
+      "quote": "摘要：Certain squaric acid derivatives are useful for the thermochemical generation of acid ... Preferably, the acid-sensitive materials undergo an irreversible color change, so that the image can be fixed by neutralizing all the acid generated with excess base。第 26 页：the attempt to fix the image with base resulted in complete decolorization and removal of the image。表 6 数值见 F07。",
+      "type": "专利（一手）",
+      "access": "curl全文（PDF 18 页，无文本层；本轮图像阅读第 1 页摘要、第 17–18 页表 6 与权利要求 1–11）。Google Patents 本轮未对该专利重试，见 negative_findings。",
+      "date": "申请 1996-04-08；公告 1997-09-16"
+    },
+    {
+      "id": "S02",
+      "title": "Cyanotype - Wikipedia (en)",
+      "url": "https://en.wikipedia.org/wiki/Cyanotype",
+      "quote": "After exposure, the paper is developed by washing in cold, running water；An acidified rinse using citric acid or vinegar is sometimes used after exposure；Storing the cyanotypes in darkness reverses the process；Care should be taken to avoid alkaline-buffered papers；Sodium carbonate, ammonia, borax, Dektol photographic developer ... can be used to do this（第 66 行，漂白）；mild acidic substances ... used to speed up the oxidation（第 67 行，增强）；Alfred Smee had in 1840 used electrochemistry；Henri Pellet in 1877 in his gum arabic iron cyanofer direct positive photographic tracing method。",
+      "type": "百科（二手）",
+      "access": "curl全文（本轮重新读取，2026-11-01）",
+      "date": "页面读取 2026-11-01"
+    },
+    {
+      "id": "S03",
+      "title": "Diazotype - Wikipedia (en)",
+      "url": "https://en.wikipedia.org/wiki/Diazotype",
+      "quote": "Ultraviolet light penetrates the original and neutralizes the light-sensitive diazonium salt wherever there is no image on the master；fumes of ammonium hydroxide create an extremely alkaline environment；A quirk of diazo blueline prints is that ... a blueline copy can fade over months (indoors) or just days (outdoors)（第 25 行）。",
+      "type": "百科（二手）",
+      "access": "curl全文（本轮重新读取）",
+      "date": "页面读取 2026-11-01"
+    },
+    {
+      "id": "S04",
+      "title": "Vesicular film - Wikipedia (en)",
+      "url": "https://en.wikipedia.org/wiki/Vesicular_film",
+      "quote": "The developed film could be stabilized or fixed by overall re-exposure to UV light which would destroy the remaining diazonium compound；the saran plastic broke down it gave off hydrochloric acid（第 18 行）；heating the film damaged the image（第 15 行）；Kalvar 'Metro Kalvar' 与 Xidex 诉讼（第 8–9 行）。",
+      "type": "百科（二手）",
+      "access": "curl全文（本轮重新读取）",
+      "date": "页面读取 2026-11-01"
+    },
+    {
+      "id": "S05",
+      "title": "US 3,149,971 Method for improving gradation of light scattering photographic materials (Baril and De Luca, assignor to Kalvar Corporation)",
+      "url": "https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/3149971",
+      "quote": "col.1：effects the formation of minute vesicles of gas in the areas exposed to light；权利要求 1：said non-reactive products being volatile on warming said film to form said radiation scattering discontinuities only in the light-struck areas of said film；权利要求 14：the light-decomposable agent is a diazo compound；col.3：dry saturated steam at about one atmosphere (212° F.)；权利要求 1：contacting said film with an aqueous fluid maintained at an elevated temperature before exposure to light and development。",
+      "type": "专利（一手）",
+      "access": "curl全文（PDF 3 页，图像阅读，本轮全页读取）",
+      "date": "申请 1963-01-29；公告 1964-09-22"
+    },
+    {
+      "id": "S06",
+      "title": "Anthotype - Wikipedia (en)",
+      "url": "https://en.wikipedia.org/wiki/Anthotype",
+      "quote": "until the image part not covered by the material is bleached out by the sun rays；The image cannot be fixed, so the paper remains sensitive to light；The color ... may depend on the pH of the water and of the paper（第 11 行）。",
+      "type": "百科（二手）",
+      "access": "curl全文（本轮重新读取）",
+      "date": "页面读取 2026-11-01"
+    },
+    {
+      "id": "S07",
+      "title": "Thermal paper - Wikipedia (en)",
+      "url": "https://en.wikipedia.org/wiki/Thermal_paper",
+      "quote": "a special fine paper that is coated with a material formulated to change color locally when exposed to heat；An unintended heat source, such as a coffee cup, can discolour the paper；The color-forming layers ... retain color after resolidification（第 54 行）。",
+      "type": "百科（二手）",
+      "access": "curl全文（本轮重新读取）",
+      "date": "页面读取 2026-11-01"
+    },
+    {
+      "id": "S08",
+      "title": "Photographic processing - Wikipedia (en)",
+      "url": "https://en.wikipedia.org/wiki/Photographic_processing",
+      "quote": "A stop bath, typically a dilute solution of acetic acid or citric acid, halts the action of the developer. A rinse with clean water may be substituted；The fixer makes the image permanent and light-resistant by dissolving remaining silver halide；Residual fixer can corrode the silver image, leading to discolouration, staining and fading。",
+      "type": "百科（二手）",
+      "access": "curl全文（本轮重新读取）",
+      "date": "页面读取 2026-11-01"
+    },
+    {
+      "id": "S09",
+      "title": "The gelatino-chloride of silver printing-out process: including directions for the production of the sensitive paper（archive.org 全文文本，本地文件）",
+      "url": "https://archive.org（本地资料包：scratchpad/work/dl/archive/gelat_djvu.txt；原始 URL 未在本轮重新访问）",
+      "quote": "With the following toning baths it is intended that fixing shall be effected afterwards（第 3422 行，本轮 grep 核对逐字一致）。",
+      "type": "一手历史印相书（年代未核）",
+      "access": "本地资料包（文件存在，本轮仅引文核对，未通读全文）",
+      "date": "年代未核"
+    },
+    {
+      "id": "S10",
+      "title": "James M. Reilly, The Albumen & Salted Paper Book（1980，Light Impressions）第 3 章（本地资料包 work/dl/archive/reilly_ch3.html）",
+      "url": "本地资料包（原始来源未在本轮核对）",
+      "quote": "At the suggestion of Herschel, Talbot changed to sodium thiosulfate, or hypo as the fixing material, and this made the prints completely stable to light and left them with white highlights（本轮逐字核对）。",
+      "type": "二手专著章节（1980 年出版，转述 19 世纪历史）",
+      "access": "本地资料包（文件存在，引文已核对；未复核原书）",
+      "date": "书籍 1980；所述史实 1839–1895"
+    },
+    {
+      "id": "S11",
+      "title": "James M. Reilly, The Albumen & Salted Paper Book（1980）第 9 章 Fixation and Washing（本地资料包 work/cool_reilly/chap9.html）",
+      "url": "本地资料包（原始来源未在本轮核对）",
+      "quote": "These must be removed because they are unstable and will cause yellowing and fading of the image if allowed to remain（本轮逐字核对）。章首引 A. Haddon and F.B. Grundy, July 1897。",
+      "type": "二手专著章节（转引 1897 年一手）",
+      "access": "本地资料包（文件存在，引文已核对；未复核原书）",
+      "date": "书籍 1980；引文 1897"
+    },
+    {
+      "id": "S12",
+      "title": "alternativephotography.com 首页（本地资料包 altphoto/index.html）",
+      "url": "https://www.alternativephotography.com/（本轮 /anthotype/、/cyanotype/、/diazo/ 三页 curl 均为 403，未绕过）",
+      "quote": "Anthotypes fade with exposure to light, but an artist's book offers a way to display them while limiting their exposure。",
+      "type": "专题站（二手）",
+      "access": "本地资料包（首页）；子页本轮 403，记为不可读",
+      "date": "页面内容 2026 年可见"
+    },
+    {
+      "id": "S13",
+      "title": "US 3,512,978 Diazosulfonate composition, copying material, and method of use (Google Patents 全文)",
+      "url": "https://patents.google.com/patent/US3512978A/en",
+      "quote": "contacting the surface of an imaged sheet with a solution of a strong reducing agent, such as stannous chloride ... destroy the diazo sulfonate compounds and the related diazonium compounds；Example 2: roll coated with an aqueous solution of 20 parts of stannous chloride ... bleached to a clean white background thereby permanently fixing the print against subsequent dye formation；A similarly effective material has been found in moist sulfur dioxide vapors ...；background: relied entirely upon the acidification of the composition。",
+      "type": "专利（一手，全文）",
+      "access": "curl全文（Google Patents，首次 503，重试 200，本地 verify_dl/gp_3512978b.txt）",
+      "date": "授权 1970-05-19"
+    },
+    {
+      "id": "S14",
+      "title": "重氮记录材料光固定的一般性摘录（WebSearch 第 1 次结果；来源专利未唯一定位，候选 US 4275137、4282300、6743750）",
+      "url": "https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/4275137（候选之一，未核实对应关系）",
+      "quote": "搜索摘要转述（非原文）：light breaks down the diazo compound；fixation proceeds slowly and therefore a long time is required；prolonged exposure can reduce background whiteness。",
+      "type": "专利（一手，来源未唯一定位）",
+      "access": "搜索摘录；候选三件本轮 Google Patents 均 503，未能核实",
+      "date": "未核"
+    },
+    {
+      "id": "S15",
+      "title": "US 4,329,420 Process of preparing pre-press proofs using pressure sensitive adhesive backings (Ferdinand L. Bopp，个人申请人；Google Patents 全文)",
+      "url": "https://patents.google.com/patent/US4329420A/en",
+      "quote": "In the DuPont process, a film consisting of a photopolymer sandwiched between cover and base sheets is used ... another layer is laminated to the proof and given an all-over exposure to harden it；This final coating is very expensive ... tends to discolor with age and is easily scratched；A suitable photopolymer composite is CROMALIN from DuPont；the cover sheet ... applied ... in a laminator。",
+      "type": "专利（一手，全文）",
+      "access": "curl全文（Google Patents；本轮读取全文，申请人与日期已核）",
+      "date": "申请 1980-09-10；授权 1982-05-11"
+    },
+    {
+      "id": "S16",
+      "title": "干式银（dry silver）相关专利链接（WebSearch 第 3 次结果）",
+      "url": "https://patents.google.com/patent/US5670292；https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/3997346",
+      "quote": "搜索摘要转述（非原文）：One patent (US 3,997,346) describes a dry method in which a stable image can be obtained by exposing and then developing in a dry process without fixing and other processings。US 5,670,292 仅有标题 Dry type image formation process，未读全文。",
+      "type": "搜索摘录",
+      "access": "搜索摘录（US 3,997,346 本轮已全文核对，见 S17）",
+      "date": "未核"
+    },
+    {
+      "id": "S17",
+      "title": "US 3,997,346 Method for stabilizing the image of a thermally developable photosensitive material (Masuda and Ikenoue, Fuji Photo Film Co.)",
+      "url": "https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/3997346",
+      "quote": "摘要：stabilizing the image formed by contacting the photosensitive layer ... during or after the heating with a polymer film layer containing a compound represented by ... X-C-SH or X-C=S；第 1 栏第 62 行：a stable image can be obtained by exposing and then developing in a dry process without fixing and other processings；第 2 栏：the so thermally developed image ... background gradually turns brown。",
+      "type": "专利（一手）",
+      "access": "curl全文（PDF 9 页；本轮图像阅读第 1 页摘要、第 2 页背景与发明内容；权利要求第 3–9 页未核）",
+      "date": "申请 1974-09-11；授权 1976-12-14"
+    },
+    {
+      "id": "S18",
+      "title": "WebSearch 第 1 次（本轮，Pellet 显影剂身份检索，standard，1 次）",
+      "url": "https://en.wikipedia.org/wiki/Cyanotype；https://cameo.mfa.org/wiki/Cyano_paper（仅搜索摘录；cameo.mfa.org 为共享背景列出的 403 站点，未直接读取）",
+      "quote": "搜索摘录：Pellet 1877（Wikipedia）与 1878（Cameo 摘录）年份不一致；未识别 Pellet 显影剂是否为亚铁氰化钾或铁氰化钾。",
+      "type": "搜索摘录",
+      "access": "搜索摘录（WebSearch 1 次，已用尽本轮额度）",
+      "date": "2026-11-01"
+    }
+  ],
+  "negative_findings": [
+    {
+      "query": "Pellet 体系碳酸盐中和（carbonate neutralization）/ 显影剂化学式",
+      "scope": "Wikipedia Cyanotype 全文（curl，本轮）；WebSearch 1 次（本轮，standard）；photrio 线程本轮未复读",
+      "result": "未发现先例。Wikipedia 仅记载 Pellet 1877 年 gum arabic iron cyanofer 法；第 66 行显示碳酸钠对 cyanotype 蓝色有漂白作用，故碳酸盐并非惰性。Pellet 显影剂化学式本轮 WebSearch 仍未识别。"
+    },
+    {
+      "query": "重氮残留盐耗尽后的酸稳定（acid stabilization）",
+      "scope": "Wikipedia Diazotype 全文（curl，本轮）；US 3,512,978 全文（curl，本轮）",
+      "result": "曝光后的酸稳定未发现。US 3,512,978 背景记载的酸化是曝光前存储稳定，且被认为很少有实用产品（F34）。"
+    },
+    {
+      "query": "Dylux 可见光重氮纸定影",
+      "scope": "WebSearch（前一轮，标准模式，1 次）；Wikipedia 标题 Dylux 本轮 curl 返回 404（页面含 does not exist）",
+      "result": "未发现 Dylux 品牌的一手或二手说明（F25）。"
+    },
+    {
+      "query": "DuPont Cromalin 覆膜（cover sheet）专利",
+      "scope": "WebSearch（前一轮，1 次）；Wikipedia 标题 Cromalin 本轮 curl 返回 404；US 4,329,420 全文本轮核对",
+      "result": "关键词范围内未发现 DuPont 名下的覆膜专利；US 4,329,420 申请人为个人 Ferdinand L. Bopp。此结论仅限所列搜索范围，不作'无专利'结论。"
+    },
+    {
+      "query": "Horizons 热定影感光纸（heat-developed photographic paper, heat fixing）",
+      "scope": "WebSearch（前一轮，1 次）；Wikipedia 标题 Photothermography 本轮 curl 返回 404",
+      "result": "未发现 Horizons 产品的机理说明，仅 1970 年代干式银专利群（US 3,997,346 本轮全文核对，见 F22）。"
+    },
+    {
+      "query": "印出像（printing-out）与漂白（bleach-out）的停止或稳定方法",
+      "scope": "Wikipedia Printing-out paper 标题本轮 404；Wikipedia Silver halide、Photographic processing 全文；本地 gelat 与 Reilly 文本（本轮引文核对）",
+      "result": "print-out 仅有 19 世纪定影流程（F20，引文已核，来源为二手或年代未核）；bleach-out 作为独立工艺未专门检索，只有 anthotype 作为示例（F18）。"
+    },
+    {
+      "query": "蜡封（anthotype wax seal）与蓝晒清漆（cyanotype varnish）",
+      "scope": "Wikipedia Anthotype、Cyanotype 全文（curl，本轮）检索 wax、varnish、lacquer、seal 无命中；altphoto 子页 /anthotype/ /cyanotype/ /diazo/ 本轮 403（未绕过）；photrio 未复读",
+      "result": "未发现。维基两页均未提及蜡封或清漆（见 F26）。"
+    },
+    {
+      "query": "热敏纸（thermal paper）冷却淬灭",
+      "scope": "Wikipedia Thermal paper 全文（curl，本轮）",
+      "result": "未发现冷却停止的描述（见 F28）。"
+    },
+    {
+      "query": "Polaroid US 5,667,943 的 Google Patents 页面",
+      "scope": "前一轮：curl 访问 patents.google.com/patent/US5667943A/en（3 次）等，被拦截；本轮未对该专利重试。本轮 Google Patents 对其他专利返回间歇性 503（US 3,512,978 首次 503、重试 200；S14 候选三件 503）",
+      "result": "拦截为间歇性，而非稳定的策略拦截。专利全文改由 USPTO image-ppubs 扫描 PDF 获取并图像阅读（S01）。"
+    },
+    {
+      "query": "氰版停止、白区稳定、成色耐光的 Crossref 文献检索（前一轮，3 次）",
+      "scope": "api.crossref.org（bibliographic query，每次 4 条）",
+      "result": "结果基本无关，未发现相关先例。Crossref 摘要不作为证据。"
+    },
+    {
+      "query": "Wikipedia 标题搜索（api.php list=search，前一轮）",
+      "scope": "en.wikipedia.org/w/api.php",
+      "result": "前一轮被限流（too many requests）；本轮改用直接页面读取，Wikipedia 页面可正常读取。"
+    },
+    {
+      "query": "archive.org advancedsearch（前一轮，1 次）",
+      "scope": "archive.org advancedsearch.php",
+      "result": "结果大多无关，未用于证据。"
+    },
+    {
+      "query": "加速耐光数据（c08）",
+      "scope": "本轮所有读取来源（包括 Wikipedia Cyanotype 第 52 行、Diazotype 第 25 行的定性描述）",
+      "result": "未找到可报告的加速耐光数据；仅有定性描述（F03、F37），本轮未作任何年限换算。"
+    },
+    {
+      "query": "altphoto 子页 /anthotype/ /cyanotype/ /diazo/（本轮）",
+      "scope": "www.alternativephotography.com 三个子页，curl，本轮",
+      "result": "三页均 HTTP 403（验证页，返回体 75193 字节），记为不可读，未绕过。"
+    },
+    {
+      "query": "S14 候选专利 US 4275137、US 4282300、US 6743750（本轮）",
+      "scope": "Google Patents 页面，curl，本轮",
+      "result": "三件均 HTTP 503（拦截页），无法读取全文；S14 来源仍未唯一定位（F11）。"
+    }
+  ],
+  "recommendations_for_matrix": [
+    {
+      "route_key": "cyanotype_diy",
+      "column": "c06",
+      "text": "停止机制写为「未知」。已确证的干式或原地停止先例不存在于氰版体系：碱类（碳酸钠、氨等）已知可降低 cyanotype 蓝色强度（维基第 66 行，B），不得作为停止方案默认采用；全面 UV 再曝光会使白区变蓝（F12，推断）；弱酸为增强而非停止（维基第 67 行，B）。需补碱或酸替代方案对成色的实测（见 experiment_design）。"
+    },
+    {
+      "route_key": "cyanotype_diy",
+      "column": "c07",
+      "text": "白区稳定性：维基明确洗后仍感光、亮光褪色、暗放可恢复（S02，F03、F36）。据此把「避光」列为暂停而非停止，并注明「未停止，只能暂停」。"
+    },
+    {
+      "route_key": "cyanotype_diy",
+      "column": "c08",
+      "text": "耐光：本轮无可报告的加速数据。维基的暗放恢复与亮光褪色均为定性描述，不得换算为年限。"
+    },
+    {
+      "route_key": "cyanotype_diy",
+      "column": "c03",
+      "text": "曝光时长（参照，非剂量）：维基写强日光下数秒，阴天 10–20 分钟（B，S02 第 47 行）。与 30 分钟目标对比仅作定性参照。"
+    },
+    {
+      "route_key": "diazo_commercial",
+      "column": "c06",
+      "text": "残留重氮的湿法化学固定有一手先例（US 3,512,978，curl 全文，A）：氯化亚锡水溶液辊涂（湿法）漂白残留重氮；潮湿 SO2 蒸气在封闭腔室中同样有效（F10）。注意：该体系为 diazosulfonate 直接 print-out，pH 8.5–13，不能直接推至一般商业重氮纸。「酸稳定」曝光后本轮无证据，写作「未知，缺酸稳定一手资料」（F21）。"
+    },
+    {
+      "route_key": "diazo_commercial",
+      "column": "c04",
+      "text": "显影为氨蒸气（碱性）显影（S03，F09）。c04 应注明「碱性蒸气，非中性」；c05 对安全前置标「?」，不得因干式而判 ✓。"
+    },
+    {
+      "route_key": "diazo_commercial",
+      "column": "c08",
+      "text": "重氮蓝图在持续紫外或荧光灯下褪色，室内数月、户外数天（维基第 25 行，B，F37）。仅定性，禁止换算年限。"
+    },
+    {
+      "route_key": "diazo_commercial",
+      "column": "c11",
+      "text": "氨蒸气需通风，多份复印时需等待或通风（维基第 20 与 29 行，B，F38）；家用场景须列为安全前置。"
+    },
+    {
+      "route_key": "diazo_diy",
+      "column": "c06",
+      "text": "若家用重氮以全面曝光收尾（S04，F13），白区稳定有先例，但需先确认光敏剂确为重氮而非铁盐；与氰版不可互换（F12）。"
+    },
+    {
+      "route_key": "pellet_direct_positive",
+      "column": "c06",
+      "text": "删除「碳酸盐中和」作为默认停止方案，标注为「未验证（仅单一爱好者设想，无先例）」（F27）。维基第 66 行显示碳酸钠可漂白 cyanotype 蓝色，碳酸盐对成色区并非惰性。"
+    },
+    {
+      "route_key": "pellet_direct_positive",
+      "column": "c13",
+      "text": "显影剂化学式（亚铁氰化钾 与 铁氰化钾）本轮未核实；WebSearch 亦未识别。修订需 Pellet 原始出版物或 SDS 比对，不要直接改写。S02 的 Smee 1840 历史记载（F30）只说明两者历史上有区分，不能证明 Pellet 配方成分。"
+    },
+    {
+      "route_key": "thermal_acid_polaroid",
+      "column": "c06",
+      "text": "B 类碱中和先例：S01 的碱层需层压（约 88 °C、60 psi，需设备）；优选不可逆染料，固定后密度仍降低（如 0.43 变 0.20），对可逆染料整体脱色（F06、F07、F08）。c05 不得判为家用免洗 ✓。"
+    },
+    {
+      "route_key": "anthotype",
+      "column": "c06",
+      "text": "机制类C（bleach-out）：c06 写「无（自限，白区不停）」（F18、F19）。c07 引 S06：The image cannot be fixed。c08 未知。颜色可能取决于水与纸的 pH（原文 may depend）。"
+    },
+    {
+      "route_key": "print_out_silver",
+      "column": "c06",
+      "text": "机制类C print-out 印出后需定影（S09、S10，F20），是湿法，不属于免洗路线。引文已核，但来源为二手或年代未核，等级为 B。"
+    },
+    {
+      "route_key": "kalvar_vesicular",
+      "column": "c06",
+      "text": "机制类E：全面 UV 再曝光销毁残留重氮（S04，B；成像机理 S05，A）。c04 记为「光后处理，非免洗」。c05 底线 1 标 ?，理由：需要额外曝光步骤（F13、F14）。c11 补充 saran 劣化释放盐酸（F39，B）；热损伤难以销毁图像（F40，B）。"
+    },
+    {
+      "route_key": "cromalin_laminate",
+      "column": "c05",
+      "text": "机制类D：覆膜加全面曝光硬化（S15 全文，A）。底线 1 标 ?（需层压设备与覆膜）。迁移缺：覆膜对 UV 透过、氧与水汽阻隔、覆膜与纸基粘合、覆膜后色偏（F16、F17）。"
+    },
+    {
+      "route_key": "cromalin_laminate",
+      "column": "c08",
+      "text": "现有技术描述：DuPont 最终硬化覆层「随时间变色、易刮伤」（S15 背景，A，作者描述，无测试数据，F33）。不得换算年限。"
+    },
+    {
+      "route_key": "dry_silver_thermal",
+      "column": "c06",
+      "text": "机制类F 热显影后膜接触稳定（S17，A）：稳定剂为含杂环硫醇或硫酮的聚合物膜层，接触在热显影期间或之后（F22）。底线 1 标 ?（需热源与层压）。c11 标「未知」：稳定剂 SDS 未核。底线 5 标 ?：纸基吸湿与变形数据缺失（F23）。"
+    },
+    {
+      "route_key": "dry_silver_thermal",
+      "column": "c07",
+      "text": "白区稳定（底线 2）：该干式先例自身的背景记载，非曝光背景在高温高湿与白光下会逐渐变棕（S17 第 1–2 栏，A，F35）。须以此作为白区不稳定的已知风险。"
+    },
+    {
+      "route_key": "matrix_wide",
+      "column": "c14",
+      "text": "关键未知：是否存在不依赖碱、不依赖全面曝光、不依赖层压设备的 Fe-ferricyanide 原地停止先例。本轮普查未找到（F32）。"
+    },
+    {
+      "route_key": "matrix_wide",
+      "column": "c13",
+      "text": "证据等级（修订）：Polaroid 碱层（S01，A，全文 PDF）；Kalvar 成像机理（S05，A，全文）与全面曝光（S04，B）；干式银膜接触（S17，A，摘要与背景全文）；Cromalin 覆膜（S15，A，全文）；残留重氮的 SnCl2 与 SO2 固定（S13，A，全文）。其余多为 B 或未验证。"
+    }
+  ],
+  "experiment_design": "以氰版样片（水彩纸，已成色）做五组对照，判别候选停止件（膜层接触、碱层、覆膜）是否可行。(1) 白区稳定性：未曝光白区样片接触候选件后，在日光下暴露 30 分钟，比较白区光密度增量与未接触对照；若增量超过对照 0.05，判定该候选不能停止白区。(2) 成色耐光：成色区接触候选件后，分别暗放与日光暴露，记录光密度变化，只报数据，不换算年限。(3) 碱敏感：成色区接触 pH 9-10 的候选碱层 10 分钟，若光密度下降超过 0.10，判定碱路线对氰版不可行。(4) 对照组：同一纸基，无候选件组。(5) 新增阳性对照：以碳酸钠溶液处理成色区（参照维基第 66 行所列漂白剂），量化对蓝色强度的影响，浓度待定，用于校准第 (3) 组的判定。阈值为建议值，需在实验前固定。",
+  "reconciliation_log": [
+    {"id": "R01", "original": "scope_note 与 S02 等处的 A 类/B 类机制标签，与证据等级 A/B/C 字母重叠", "action": "改写", "reason": "结构问题：两套标签共用字母。修订版统一写作「机制类X」指代机制，证据等级单独标注。", "verify_ref": "structural_issues #2"},
+    {"id": "R02", "original": "F01 写'A 类基线'", "action": "改写", "reason": "同上，改为机制类A；证据等级 B 不变。", "verify_ref": "structural_issues #2"},
+    {"id": "R03", "original": "F02 grade 'A（摘录级）'，S11 为'一手历史文献'", "action": "降级", "reason": "S11 为 Reilly 1980 年二手专著转引 1897 原文；核对引文逐字一致，但来源层级为二手。改为 B（二手转引一手）。", "verify_ref": "verdicts F02；structural_issues #3"},
+    {"id": "R04", "original": "F20 grade 'A（摘录级）'，S10 为'一手历史文献（章节，年代未核）'", "action": "降级", "reason": "S10 为 1980 年 Reilly 专著第 3 章（二手）。引文已与本地文件逐字核对。改为 B。gelat（S09）年代仍未核。", "verify_ref": "verdicts F20；structural_issues #3–4"},
+    {"id": "R05", "original": "F05 证据：S02、S01；推断链未引维基第 66 行", "action": "补充", "reason": "维基第 66 行列出碳酸钠、氨、硼砂、Dektol 可降低 cyanotype 蓝色强度，支持碱风险。", "verify_ref": "verdicts F05；missing #1"},
+    {"id": "R06", "original": "F06 'Polaroid 碱层…不可逆色变'，无 Preferably 限定", "action": "改写", "reason": "摘要原文为 Preferably（优选）不可逆；补入限定。其余事实经全文核对一致。", "verify_ref": "verdicts F06"},
+    {"id": "R07", "original": "F08 推断：'碱不与图像组分反应时成立'", "action": "改写", "reason": "被 F07 表 6 反驳：不可逆 Medium A 碱固定后密度仍下降（0.43→0.20；0.07→0.04）。删去该条件，改写为碱固定对不可逆染料保留色变但会降低密度。", "verify_ref": "verdicts F08"},
+    {"id": "R08", "original": "F10 S13 为搜索摘录（A 摘录级）；'SO2 蒸气为干式'", "action": "改写", "reason": "S13 已取得 Google Patents 全文，等级升为 A；全文写 moist sulfur dioxide vapors，删去'干式'。", "verify_ref": "verdicts F10（一）（二）"},
+    {"id": "R09", "original": "F16 'DuPont 归属未核'与'Cromalin 只作为背景中的商业案例出现'", "action": "改写", "reason": "全文核对：申请人为个人 Ferdinand L. Bopp；Cromalin 亦在发明实施方式中作为合适材料出现（第 432 行）。", "verify_ref": "verdicts F16（归属与来源）"},
+    {"id": "R10", "original": "F17 grade 'A（摘录级）' 基于 S15 搜索摘录", "action": "升级", "reason": "S15 已全文读取，等级升为 A；并补入 F33 的现有技术变色描述。", "verify_ref": "verdicts F17；F33"},
+    {"id": "R11", "original": "F18 '颜色还取决于水与纸的 pH'", "action": "改写", "reason": "维基原文为 may depend；改为'可能取决于'。", "verify_ref": "verdicts F18（二）"},
+    {"id": "R12", "original": "F21 '共享背景把此项列为 B 类先例'", "action": "删除归属", "reason": "本轮共享背景文本中无此列表；'B 类'分类来自旧轮次 scope_note。归属删去，F21 维持未验证。", "verify_ref": "verdicts F21；structural_issues #9"},
+    {"id": "R13", "original": "F22 '热显影后将感光层与...接触'", "action": "改写", "reason": "摘要与发明内容为 during or after heating（加热期间或之后）；补入 col.1 第 62–67 行 without fixing 原文。", "verify_ref": "verdicts F22"},
+    {"id": "R14", "original": "F24 Horizons、F25 Dylux 的'未找到'", "action": "补充", "reason": "补入 Wikipedia 标题 404 结果，范围更清楚。维持未验证。", "verify_ref": "verdicts F24–F25"},
+    {"id": "R15", "original": "F26 'altphoto 页面为 403 拦截'", "action": "补充", "reason": "本轮复核三个子页均 403（未绕过）；Wikipedia 全文检索 wax、varnish、lacquer、seal 无命中。", "verify_ref": "verdicts F26"},
+    {"id": "R16", "original": "F27 'Pellet 碳酸盐…无任何先例'", "action": "补充", "reason": "维基第 66 行显示碳酸钠对 cyanotype 蓝色有漂白作用，碳酸盐非惰性；WebSearch 未识别 Pellet 显影剂；年份 1877/1878 分歧记录。维持未验证。", "verify_ref": "verdicts F27；missing #1、#12"},
+    {"id": "R17", "original": "F28 热敏纸'未描述冷却淬灭'", "action": "补充", "reason": "维基第 54 行：Zink 染料再凝固后保色，语境为保色，非停止进行中的反应。结论不变。", "verify_ref": "verdicts F28"},
+    {"id": "R18", "original": "F29 酸化冲洗 'sometimes used'", "action": "补充", "reason": "维基第 67 行：柠檬酸、柠檬汁、醋酸被列为增强剂，弱酸不是停止剂。HCN 风险仍未评估。", "verify_ref": "verdicts F29；missing #2"},
+    {"id": "R19", "original": "F31 停止浴定义", "action": "补充", "reason": "维基第 14 与 44 行：清水漂洗可替代停止浴。补入。", "verify_ref": "verdicts F31；missing #12"},
+    {"id": "R20", "original": "F32 推断依据", "action": "改写", "reason": "依据更新：S17 背景补入高温高湿与白光下的变棕问题（F35）。结论限于检索范围。", "verify_ref": "verdicts F32"},
+    {"id": "R21", "original": "S13 quote 为搜索摘录释义", "action": "改写", "reason": "替换为全文原文（实施例 2、说明书、背景）。access 由搜索摘录改为 curl全文。", "verify_ref": "structural_issues #5"},
+    {"id": "R22", "original": "S15 access '搜索摘录'，assignee '未核'，日期'未核'", "action": "改写", "reason": "全文核对：申请人个人 Ferdinand L. Bopp，申请 1980-09-10，授权 1982-05-11。", "verify_ref": "structural_issues #6"},
+    {"id": "R23", "original": "S17 access 注'未逐页核对权利要求'", "action": "保留并补充", "reason": "本轮读取第 1–2 页（摘要、背景与发明内容）；第 3–9 页仍未核。", "verify_ref": "structural_issues #7"},
+    {"id": "R24", "original": "negative_findings：Google Patents 对 US 5,667,943 '稳定拦截'", "action": "改写", "reason": "本轮其他专利的 Google Patents 请求呈间歇性 503，应记为间歇性，且本轮未对该专利重试。", "verify_ref": "verdicts（negative）；structural_issues #8"},
+    {"id": "R25", "original": "negative_findings：'未找到 DuPont 名下的 Cromalin 覆膜专利'", "action": "改写", "reason": "明确为关键词范围内结论，不作'无专利'表述。", "verify_ref": "structural_issues #12"},
+    {"id": "R26", "original": "recommendations diazo_commercial c06 '一手先例（S13，搜索摘录，A 摘录级）'", "action": "改写", "reason": "S13 已为全文 A 级；但体系为 diazosulfonate 碱性 print-out，须注明适用范围。", "verify_ref": "verdicts recommendations（diazo_commercial c06）"},
+    {"id": "R27", "original": "experiment_design 为四组对照", "action": "补充", "reason": "增加第 5 组碳酸钠阳性对照（维基第 66 行），用于校准碱敏感判定。浓度待定。", "verify_ref": "missing #20"},
+    {"id": "R28", "original": "F11 来源 S14 候选专利", "action": "维持未验证", "reason": "候选三件本轮 Google Patents 均 503，无法核对。", "verify_ref": "verdicts F11"},
+    {"id": "R29", "original": "无对应条目（本轮新增）", "action": "新增", "reason": "F33–F41 与 S18：补入维基与专利全文中新读到的定性事实（变色、漂白、增强、褪色、氨通风、saran 盐酸、Kalvar 专利状态等）。", "verify_ref": "missing #1–#11, #14–#17"}
+  ]
+}

@@ -1,0 +1,572 @@
+{
+  "key": "vesicular",
+  "name_zh": "气泡成像（vesicular / Kalvar 型）",
+  "name_en": "vesicular (Kalvar) film: diazo photolysis + heat-expanded N2 bubbles",
+  "status": "淘汰",
+  "revision_note": "核查修订版（verifier，2026-11-01）。结构同原研究 JSON；修订处见 reconciliation_log。",
+  "columns": {
+    "c01_机制": {
+      "text": "紫外光使膜内重氮化合物断键并释放 N2。N2 在曝光区先以溶解态存在于黏合剂中（专利措辞为 may be dissolved，A）；加热使黏合剂软化，N2 聚集成微气泡（vesicles），冷却后被锁定；气泡散射光，使曝光区在反射光下呈白色、透射下不透明（B，Wikipedia；A，3M 专利背景）。光化学物种：重氮化合物 → 分解产物 + N2（中间体未读原文，未验证）。Kalvar 原膜为「重氮盐分散于 saran 塑料中」，专利示例确认 Saran F310 = polyvinylidene chloride（A），故 saran = PVDC。",
+      "grade": "A/B",
+      "label": "事实；未验证（光化学中间体）",
+      "source_ids": ["us4515885", "wiki_vesicular"]
+    },
+    "c02_极性色调": {
+      "text": "默认产生负像（复制原稿的负片；B，Wikipedia，引 Nieset 1962，原文未读；专利楔形实验中曝光越多密度越高，与之相容，推断）。Microform 百科 vesicular 段对同一机理的措辞与之相反，未能调和，故极性证据只定为 B。直接正像需要高透气基质加闪光加热（B）。色调：仅黑/中性（B）；彩色方案因光量过大「从未商业化」（B，单源）。灰阶：3M 0–4 楔形实验 Dmax 约 0.23–2.37，Dmin 约 0.04–1.23，随配方与显影条件大幅变化（A）；Dmin 0.05–0.09 的低值仅见于 Ex.1–3、Ex.10 等部分配方，不代表全部配方。照片式连续调未测；微缩胶片「陡峭伽马、连续调差」为通用描述，原文针对微缩胶片乳剂（B）。多色扩展：无证据。",
+      "grade": "A/B",
+      "label": "事实（色调、极性）；推断（极性依据）；未验证（照片连续调）",
+      "source_ids": ["wiki_vesicular", "us4515885", "wiki_microform"]
+    },
+    "c03_曝光条件": {
+      "text": "3M 专利示例：0–4 楔形 UV 曝光 77.1 s（3M Model 261 成像机，Ex.2；Ex.12 亦用此时间）、约 1.3 min（汞卤灯，Ex.1）、9 s（3M Model 261，Ex.10）。专利正文无光强与剂量数值（mW/cm²、mJ/cm² 经关键词检索均未给出）；日光曝光未测试。与 30 分钟目标的关系：专利时间为分钟量级，原则上可落在目标内，但依赖成像机光强，消费级 UV 灯的等效剂量未知（未验证）。",
+      "grade": "A",
+      "label": "事实（时间）；未验证（剂量、日光）",
+      "source_ids": ["us4515885"]
+    },
+    "c04_显影后处理": {
+      "text": "无湿化学；纯热显影（干式）（Wikipedia「no chemicals」，B；专利示例全为热显影，A）。3M 示例：102 °C/7 s（Ex.1–2，PVA+硝酸盐）；121 °C/4 s（250 °F，Ex.3，Saran 外涂）；138 °C/10 s（Ex.4–9，Ex.12）；104–143 °C/10 s（Ex.10，220–290 °F）；对照商品 VMCB 126 °C/4 s（Ex.2）。Kalvar 原工艺为加热滚筒（B）。可选「固定」：全面 UV 再曝光分解残余重氮（B）。注意：高稳定示例的显影件带 PVDC（Saran F310）外涂，见 c11。",
+      "grade": "A/B",
+      "label": "事实",
+      "source_ids": ["us4515885", "wiki_vesicular"]
+    },
+    "c05_免洗真实程度": {
+      "text": "无喷液、无水洗、无湿化学（A/B）。完整流程为「曝光 → 热显影 →（原工艺称可选、本核查推断为白区稳定所必需）全面 UV 固定」两道光热步骤。固定步骤若计为额外处理，则底线 1 不通过；修订后底线 1 为 ?。六条底线逐条见顶层 c05_免洗核验（修订）。",
+      "grade": "A/B",
+      "label": "事实；推断（固定步骤的必要性）",
+      "source_ids": ["us4515885", "wiki_vesicular"]
+    },
+    "c06_停止机制": {
+      "text": "本路线无化学停止剂（不喷、不水洗）。候选手段：(a) 全面 UV 再曝光分解残余重氮，使未成色区惰性化（Kalvar「fix」，B；原始 Nieset 1962 未读；消费级均匀照射下能否完成，未验证）。(b) 加热后冷却使气泡被「锁定」（B）——该步骤固定的是气泡，并不终止残余重氮的反应，不构成停止机制（修订）。红线核查：专利全文检索 ferricyanide、ferrocyanide、dichromate、Prussian、cyanide 均为 0 次（A）；无碱性显影步骤；pH 要求：权利要求 1 不高于 8.5，说明书优选 ≤7.0（A）。避光（暗处）不算停止；暗处数据见 c07。",
+      "grade": "B/A",
+      "label": "事实（机制存在）；推断（适用性）；修订（(b) 不是停止）",
+      "source_ids": ["wiki_vesicular", "us4515885"]
+    },
+    "c07_白区稳定": {
+      "text": "有限样本显示稳定：Ex.3（24 h 暗处，Dmin 0.05→0.05）与 Ex.10（280/290 °F 显影件，72 h 80%RH 后 Dmin 0.08）未见白区升高（A，样本极少，仅两个配方）。但 Ex.12（4 因子设计，20 组，138 °C/10 s，A）显示：24 h 室温暗处后，第 3、11、16、18、20 组白区 Dmin 由 0.11–0.26 升至 0.63–1.23；72 h 80°F/80%RH 后第 3、8、11、16、17、18、19、20 组 Dmin 升至 0.78–1.32（列头由 OCR 文本推断）。因此「白区稳定」不能作为通用结论。暗处 ≠ 停止：避光只是暂停，暗处保持不能证明残余重氮已失活。光照下白区是否继续反应：未测。Wikipedia 称该膜「仅对紫外敏感、可在白炽灯下处理」（B），说明日光中的紫外成分仍是风险（推断）。",
+      "grade": "A/B",
+      "label": "事实（有限样本）；反驳（通用稳定性）；未验证（光照）",
+      "source_ids": ["us4515885", "wiki_vesicular"]
+    },
+    "c08_成色耐光": {
+      "text": "未找到任何加速耐光数据；本轮不报任何换算年限。湿度数据（A，3M 专利示例，单一专利）：Ex.10 中 ≤270 °F（约 132 °C）显影件经 80 °F/80% RH 72 h 图像消失；280 °F（约 138 °C）Dmax 2.08→0.96；290 °F（约 143 °C）2.09→1.96。Ex.12（138 °C/10 s，20 组）中第 2、4、5、10、12、13、14 组 72 h 后 Dmax 降幅 ≥50%（例：第 13 组 1.04→0.13）。专利自述机理：早期明胶黏合剂吸湿后气泡塌陷、影像褪去（A，自述）；硝酸盐氧化产物使 PVA 在影像区交联、降低水溶性（A，自述）。加热损伤：Wikipedia 称加热「最终会损伤图像，但通常大体保留」（B）。BGSU 缩微服务页称 vesicular「less sensitive to humidity」，并称「has shown excellent image stability under practical conditions for decades」（服务方自述，无测试数据）；与专利数据冲突，本核查未裁定，按保守原则不作通用化结论。",
+      "grade": "A/B",
+      "label": "事实（湿度数据）；未验证（耐光、热损伤程度）；冲突未裁定（BGSU 自述）",
+      "source_ids": ["us4515885", "wiki_vesicular", "bgsu_costs"]
+    },
+    "c09_预涂货架期": {
+      "text": "形态：出厂预涂膜——本轮未找到可采购的 vesicular 预涂膜价格、批次或库存（见负结果），货架期未知；用户现涂——3M/ICI 示例均为实验室涂布，涂液配制后的寿命未报告（未验证）。潜像保持：3M Ex.3 单一配方 24 h 后 Dmax 1.82→1.70（A）；但 Ex.12 中第 3、5、11、12、16、18、20 组 24 h 后 Dmax 降幅 ≥0.5（A），潜像保持随配方明显不同，不能推广为稳定。",
+      "grade": "A",
+      "label": "未知（货架期）；事实（单一配方数据）；反驳（通用潜像稳定）",
+      "source_ids": ["us4515885", "endicott_supplies"]
+    },
+    "c10_底材适配": {
+      "text": "Kalvar 基材为 Mylar（BoPET 聚酯）（B）；3M 示例涂布于聚酯基底（A）；BGSU 称 vesicular 为 polyester-based film（B）。纸基、灰板涂布：无证据。热显影约 102–143 °C、4–10 s 对纸板的影响：未测（未验证）。封层：3M 以 Saran F310（专利原文注明 polyvinylidene chloride）作水分阻隔外涂（A），该封层是 HCl 风险来源（见 c11）。",
+      "grade": "A/B",
+      "label": "事实（聚酯基底、PVDC 封层）；未验证（纸板热变形、封层兼容）",
+      "source_ids": ["wiki_vesicular", "us4515885", "bgsu_costs"]
+    },
+    "c11_安全法规": {
+      "text": "HCl：Kalvar 膜老化时 saran 劣化放出 HCl，腐蚀的是邻近的其他胶片（含银盐母片）与储存盒、金属柜；Kalvar 膜本身不受腐蚀（B：Abbey 1991 转引 ALCTS，「did not affect the Kalvar film itself」；Wikipedia 同述）。PVDC 在 >125 °C 分解产生 HCl（B，Wikipedia PVDC）。Wikipedia 称后来的 improved supporting film「fixed this problem」（B，二手，未核一手）。专利中的氯源不止 PVDC：示例 3–12 配方含 Saran F310 PVDC 外涂（A）；示例 2 对照商品 VMCB 黏合剂为 poly-alpha-chloroacrylonitrile（含氯，A，HCl 释放未测）；示例 1 用 zinc chloride 重氮盐（A）。NOx：3M 硝酸盐配方机理自述生成 HNO3、NO、NO2、N2O4（A，自述，believed 措辞；Al 九水合物「when heated in a binder, will generate ... in various amounts」，A；生成量未测）。重金属硝酸盐：专利示例 6–9 使用 Co(NO3)2·6H2O、Cd(NO3)2·4H2O、Cu(NO3)2·3H2O、Ni(NO3)2·6H2O（A）。PubChem（ECHA C&L 聚合，API，A）：Cd(NO3)2（CID 25154）H350（92.9%）、H340（90%）、H360（88.6%）、H372（90%）、H330（90%）、H301（90%）、H410（100%）；Co(NO3)2（CID 25000）H350/H350i、H341（100%）、H360、H334（100%）、H317（100%）；Ni(NO3)2（CID 25736）H341、H334、H317、H332；Cu(NO3)2 未核。ECHA 数据：NO2，CAS 10102-44-0，H330（100%）、H270、H314、H280；硝酸锌，CAS 7779-88-6（无水），H272（98.1%）、H302、H318（69.5%）、H400、H410；硝酸铝，CAS 13473-90-0（无水），H301（24.3%）、H318（83.3%）、H361（31.2%）。PubChem 记录中另出现 10196-18-6（硝酸锌六水合物）与 7784-27-2（硝酸铝九水合物），对应关系未逐条确认。ASTM D-4236 / LHAMA 合规：未核（未验证）。PPE 与标签：按 H 码推断需「危险（Danger）」级（推断）。溶剂：专利示例覆盖层使用 THF 与 MEK（A），易燃性未核（未验证）。",
+      "grade": "A（API）/B",
+      "label": "事实（危害码、机制自述、示例配方组成）；推断（家庭风险）；未验证（D-4236 合规、实际 NOx/HCl 释放量、溶剂安全）",
+      "source_ids": ["wiki_pvdc", "wiki_vesicular", "abbey_1991", "us4515885", "pubchem_no2", "pubchem_znno3", "pubchem_alno3", "pubchem_cd_no3", "pubchem_co_no3", "pubchem_ni_no3"]
+    },
+    "c12_供应成本": {
+      "text": "生产者：2026 年未识别（见负结果）。分销：Endicott Microfilm「Microfilm Supplies」页（curl 读取于 2026-11-01；页面仅有 © 2020 页脚，无更新日期）列出 Duplicating film (vesicular, silver and diazo)，无价格、无库存（A，列出）。服务：BGSU 缩微服务价目页（页面自标 Updated: 06/06/2025）列 35 mm vesicular 拷贝：Regular Charges $80.00/卷；BGSU 办公室与部门内部价 $55.00/卷。价格与库存均未验证；日期按页面自标记录。",
+      "grade": "A（列出）",
+      "label": "事实（列出）；未验证（价格、库存、生产者）",
+      "source_ids": ["endicott_supplies", "bgsu_costs"]
+    },
+    "c13_证据等级": {
+      "text": "关键主张 13 条（原稿文字写 10 条，数组为 11 条；修订后加入 2 条新增事实，共 13 条），逐条见 claims 数组。",
+      "grade": "A/B",
+      "label": "混合",
+      "source_ids": ["wiki_vesicular", "wiki_pvdc", "wiki_microform", "abbey_1991", "us4515885", "us4219616", "endicott_supplies", "bgsu_costs", "pubchem_no2", "langmuir2024_par", "us3149971_gp"],
+      "claims": [
+        {"claim": "Kalvar 机制：UV 断键释放 N2，加热成泡，气泡散射成像", "grade": "A", "label": "事实", "source_ids": ["us4515885", "wiki_vesicular"]},
+        {"claim": "HCl 来自 PVDC（saran）黏合剂劣化/热解；但专利配方亦含 PVDC 外涂与含氯 VMCB 黏合剂（修订）", "grade": "B（机制）/A（示例组成）", "label": "事实（机制层面）；修订（唯一来源不成立）", "source_ids": ["wiki_vesicular", "wiki_pvdc", "us4515885"]},
+        {"claim": "1991 年陈述：「modern vesicular film, usually made by Xidex, does not emit acid」", "grade": "B（二手转引）", "label": "事实（转述）", "source_ids": ["abbey_1991"]},
+        {"claim": "3M 1983 配方主黏合剂为 PVA（权利要求 1：70–95%）；示例 10 使用硼氟酸重氮盐（修订：示例 10 配方含 PVDC 外涂，不整体无氯）", "grade": "A", "label": "事实", "source_ids": ["us4515885"]},
+        {"claim": "硝酸盐配方机理自述生成 HNO3/NO/NO2/N2O4（believed 措辞）", "grade": "A（自述）", "label": "事实（自述）；生成量未验证", "source_ids": ["us4515885"]},
+        {"claim": "≤270 °F 显影件经 72 h 80%RH 后图像消失；280/290 °F 保留部分密度（Ex.10）；Ex.12 多组 138 °C 显影件亦明显降幅（补充）", "grade": "A", "label": "事实（单一专利示例）", "source_ids": ["us4515885"]},
+        {"claim": "NO2 吸入致死（H330，100%）", "grade": "A（API）", "label": "事实", "source_ids": ["pubchem_no2"]},
+        {"claim": "2026 年未识别到生产者；分销页仍列出 vesicular 拷贝膜", "grade": "A（列出）/负结果", "label": "事实（列出）；生产者未知", "source_ids": ["endicott_supplies"]},
+        {"claim": "微缩胶片连续调差（陡峭伽马）为通用描述，原文针对微缩胶片乳剂", "grade": "B（通用）", "label": "推断（对 vesicular 特定未测）", "source_ids": ["wiki_microform"]},
+        {"claim": "光稳定性：无加速数据", "grade": "负结果", "label": "未验证", "source_ids": []},
+        {"claim": "Kalvar 原型过程专利（US 3,149,971）被法院判无效（1977 年上诉维持）", "grade": "B", "label": "事实（转述）", "source_ids": ["wiki_vesicular", "us3149971_gp"]},
+        {"claim": "改进支撑膜修复了 Kalvar 的 HCl 问题（新增，B 级二手，与 Abbey 1991 转述相容）", "grade": "B", "label": "事实（转述，未核一手）", "source_ids": ["wiki_vesicular", "abbey_1991"]},
+        {"claim": "白区稳定性在 Ex.12 的部分配方中不成立（24 h 暗处及 72 h 80%RH 后 Dmin 升至 0.6–1.3）（新增，A）", "grade": "A", "label": "事实（有限样本，列头由 OCR 推断）", "source_ids": ["us4515885"]}
+      ]
+    },
+    "c14_关键未知": {
+      "text": "(1) 2026 年是否存在可采购、确有库存的 vesicular 膜及其生产者，决定能否做任何实验；(2) 是否存在不含卤素（无 PVDC 外涂、无含氯聚合物）、不含硝酸盐和重金属（Cd、Co、Ni）、HCl 与 NOx 释放可测为可接受、且 80%RH 下 Dmax 与白区 Dmin 保持稳定的配方，决定能否从淘汰翻到观察线。(2) 更可能改变结论，但专利 Ex.10 与 Ex.12 的数据提示即使部分配方无氯也可能湿度失效。",
+      "grade": "—",
+      "label": "未知",
+      "source_ids": []
+    },
+    "c15_判别实验": {
+      "text": "用供应商可得的 vesicular 膜（若只能自制小样，仅限通风柜内，按 US 4,515,885 的 PVA+锌/铝硝酸盐配方且不使用 Cd、Co、Ni 盐），0–4 楔形曝光后热显影，于密闭小盒内用 HCl 与 NO2 检测管测逸出量，再做 80%RH 放置对比 Dmin/Dmax 与暗处 24 h 白区变化；任一气体超过职业接触限值、或白区 Dmin 升高超过 0.2 即判淘汰。",
+      "grade": "—",
+      "label": "设计",
+      "source_ids": []
+    }
+  },
+  "c05_免洗核验": {
+    "验收": {
+      "1_喷后免洗": "? （下调，原 ✓）无湿处理（A/B），但白区稳定依赖原工艺中称为可选的全面 UV 固定（B 描述；本核查推断其为实际必需）。固定若计为额外处理步骤，则不通过。",
+      "2_白区停得住": "✗（部分配方）：Ex.3、Ex.10 未见 Dmin 升高（A，样本少）；但 Ex.12 中第 3、11、16、18、20 组 24 h 暗处后白区 Dmin 升至 0.63–1.23（A）。暗处不是停止，不能作为通过依据。",
+      "3_成色留得住": "✗（湿度）：A 级专利示例中 ≤270 °F 显影件 72 h 80%RH 后图像消失；Ex.12 第 2、4、5、10、12、13、14 组 138 °C 显影件 Dmax 降幅 ≥50%（A）。BGSU 称 vesicular 对湿度不敏感（服务方自述，B 以下），与专利数据冲突；按保守原则取 ✗。耐光无数据。",
+      "4_少量喷液": "不适用（无液体停止剂）。不计入通过，也不计入不通过（原稿记为 ✓ 已修正）。",
+      "5_底材不变形": "? 热显影约 102–143 °C、4–10 s 对纸板的影响未测；底材为聚酯膜，不是拼图纸板；与拼图底材的贴合方式未知。",
+      "6_安全前置": "✗ HCl：PVDC 劣化，以及示例 3–12 的 PVDC 外涂，与示例 2 对照的含氯 VMCB 黏合剂（A/B）。NOx：3M 硝酸盐配方的机理自述生成 NO2（A，自述）；NO2 为 H330（API，A）。重金属：专利示例 6–9 的 Co、Cd、Ni 硝酸盐（A），Cd(NO3)2 为 H350/H340/H360（API，A）。ASTM D-4236 / LHAMA 合规未核。"
+    },
+    "说明": "修订后：底线 1 为 ?（固定步骤为额外处理的可能）；底线 2、3 为 ✗（部分配方与湿度）；底线 4 不适用；底线 5 为 ?；底线 6 为 ✗。淘汰裁定不变，理由加强。底线 1 的 ✓ 不再采用，因为白区稳定依赖的固定步骤是额外步骤（推断）。"
+  },
+  "verdict": {
+    "status": "淘汰",
+    "reasons": [
+      "生产者：2026 年未识别到任何 vesicular 膜生产者（Kalvar 商标与 Xidex 业务均已终止，B）。仅见分销页（Endicott，无日期）与缩微服务（BGSU，页面自标 Updated 06/06/2025）仍列出 vesicular 拷贝，库存与来源不明。「实质停产」可保留，「完全无货」不能证实。",
+      "HCl：来源不止 PVDC。示例 3–12 的 Saran F310（PVDC）外涂（A）与示例 2 对照 VMCB 的聚 α-氯丙烯腈黏合剂（A）均含氯；PVA 黏合剂与硼氟酸重氮盐只能去除重氮盐与黏合剂中的氯，不能使整个高稳定配方无氯（修订）。Wikipedia 称改进支撑膜修复过该问题，1991 年转述称当时的 Xidex 膜不释放酸（B，二手）。HCl 释放量未测。HCl 的历史解决方案存在，但在可读的 A 级配方中未证明可避免。",
+      "替代的代价：3M 硝酸盐配方的机理自述生成 HNO3/NO/NO2/N2O4（A，自述），NO2 为 H330 吸入致死（API）。专利示例 6–9 使用 Co、Cd、Ni、Cu 硝酸盐，其中 Cd(NO3)2 为 H350/H340/H360 等（API）。HCl 问题换成了更难控制的氮氧化物与重金属问题，不能用于家庭小量、通风有限的条件（修订）。",
+      "性能：湿度敏感（A，专利示例）：Ex.10 中 ≤270 °F 显影件 72 h 后图像消失；Ex.12 多组 138 °C 显影件 72 h 80%RH 后 Dmax 降幅 ≥50%。白区 Dmin 在部分配方的暗处 24 h 后升至 0.63–1.23（A，修订）。无耐光加速数据。灰阶为 0–4 楔形密度响应（Dmax 约 0.23–2.37，A），照片式连续调未证实（A/B）。",
+      "底线：喷后免洗 ?（下调）；白区 ✗（部分配方）；成色 ✗（湿度）；少量喷液 不适用；底材 ?；安全前置 ✗。",
+      "新体系（光致气泡）：azide-PMMA 水下 N2 气泡（Langmuir 2024，A，全文）需要水下浸没，空气中气泡消失，不满足干式要求，只列为观察线，不作为本路线的保留理由。"
+    ],
+    "red_line_hits": [
+      "安全红线（按学生在家或车库小量、通风有限评估）：HCl（PVDC 劣化与外涂）、NOx（硝酸盐配方机理）、重金属硝酸盐 Cd/Co/Ni（专利示例 6–9，PubChem 致癌、生殖毒性及 H341/H340 等，API）——命中（修订：原稿仅计 HCl/NOx 1 条）。",
+      "铁氰化钾 + 强酸：未命中（专利全文检索 ferricyanide、ferrocyanide 均为 0 次；本路线不涉及铁氰化物）。",
+      "重铬酸盐：未命中（专利全文检索 dichromate 为 0 次）。",
+      "普鲁士蓝遇碱褪色：未命中（不涉及普鲁士蓝；专利碱性上限 pH 8.5 仅作参考）。"
+    ]
+  },
+  "baseline_challenges": [
+    {
+      "round": "R4",
+      "old_claim": "实质停产（effectively discontinued）；未找到生产者",
+      "agree": "partial",
+      "my_evidence": "生产者仍未识别，与旧结论一致（负结果）。Endicott 列出 vesicular（A，列出，无日期）；BGSU 仍提供 vesicular 拷贝服务（A，服务存在，页面自标 2025-06-06，价格未验证）。渠道未完全消失，库存与来源未核。",
+      "strength": "弱（存在性证据为列表页与服务页，库存与来源未核）"
+    },
+    {
+      "round": "R4",
+      "old_claim": "Kalvar 商标已消亡（1967–70 年产），CAMEO 为依据",
+      "agree": "partial",
+      "my_evidence": "CAMEO 页面 403，未尝试。二手来源：Wikipedia 称 1957 年商业化，1983 年 Xidex 出售 Kalvar 业务后「不久失败」（B）；Abbey 1991 将 1967–70 定为某一代有 HCl 问题膜的市场期（B）。1967–70 更像某一代膜的年代，而不是整个品牌的终止年份。",
+      "strength": "中（B 级二手，互相一致但非一手）"
+    },
+    {
+      "round": "R4",
+      "old_claim": "Wikipedia「now only made upon request」（未注明出处，已标记）",
+      "agree": "partial",
+      "my_evidence": "句子在 Wikipedia History 段中存在，句末无引用（已核）。分销页与服务页与「按需」说法相容，但不能证实。",
+      "strength": "弱"
+    },
+    {
+      "round": "R4",
+      "old_claim": "热显影约 120 °C 伤板材",
+      "agree": "partial",
+      "my_evidence": "温度与 A 级数据相符：3M 示例显影 102–143 °C、4–10 s。「伤板材」在任何读取来源中都没有证据，只是推断（未验证）。",
+      "strength": "温度：强（A）；伤板材：无证据"
+    },
+    {
+      "round": "R4",
+      "old_claim": "老化放出 HCl",
+      "agree": "agree",
+      "my_evidence": "Wikipedia（B）与 Abbey 1991（B）一致：HCl 腐蚀其他胶片与储存盒，Kalvar 膜本身不受腐蚀（修订：原稿未写明此点）。",
+      "strength": "中（B，多来源一致）"
+    },
+    {
+      "round": "R4",
+      "old_claim": "HCl 问题使其「对消费级不可接受」（隐含：问题不可避免）",
+      "agree": "partial",
+      "my_evidence": "HCl 来源已识别（PVDC；示例 3–12 的 PVDC 外涂；示例 2 对照的含氯 VMCB 黏合剂，A）。Wikipedia 称改进支撑膜修复过该问题（B，二手）。结论「不可接受」仍成立，但理由改为 NOx/重金属替代风险与湿度失效，而非「HCl 不可避免」。",
+      "strength": "中（结论同意，理由修正）"
+    },
+    {
+      "round": "R4",
+      "old_claim": "只做线条与高反差（line and high contrast only）",
+      "agree": "disagree",
+      "my_evidence": "3M 示例给出 0–4 楔形的密度梯度（Dmax 约 0.23–2.37，A），并非仅二值。照片式连续调未测；微缩胶片陡峭伽马是通用描述（B）。「只做线条」未被证实，「连续调差」仅为推断。",
+      "strength": "弱（缺少照片连续调的专门测试）"
+    },
+    {
+      "round": "R4",
+      "old_claim": "耐光差：热会破坏图像（CAMEO）",
+      "agree": "partial",
+      "my_evidence": "CAMEO 未能复核（403，未尝试）。Wikipedia 称简单加热「最终」会损伤图像，但「通常大体保留」（B）。耐光方面无加速数据（负结果）；湿度方面 A 级数据显示图像可因湿度大幅褪色（Ex.10、Ex.12）。BGSU 称 vesicular 对湿度不敏感（服务方自述，冲突未裁定）。",
+      "strength": "弱（耐光：无数据；热损伤：B 级，与旧表述措辞不同）"
+    },
+    {
+      "round": "R4",
+      "old_claim": "连续调差（微缩胶片陡峭伽马）",
+      "agree": "partial",
+      "my_evidence": "作为微缩胶片乳剂的通用性质成立（B，Wikipedia Microform）；对 vesicular 膜本身未直接测试。",
+      "strength": "中（B，通用而非 vesicular 专门）"
+    },
+    {
+      "round": "R4",
+      "old_claim": "色调仅黑/中性；彩色从未商业化",
+      "agree": "agree",
+      "my_evidence": "Wikipedia 称 Kalvar 仅黑白，彩色方案因光量过大「从未商业化」（B，单一百科来源）。",
+      "strength": "中（B，单一百科来源）"
+    },
+    {
+      "round": "R4",
+      "old_claim": "全干式、无化学处理（fully dry, no chemistry）",
+      "agree": "agree",
+      "my_evidence": "Wikipedia 称 Kalvar 处理「未用化学药剂」（B）；3M 示例全部为热显影（A）。",
+      "strength": "强（A 与 B 互相印证，机制层面）"
+    },
+    {
+      "round": "R4",
+      "old_claim": "1950s–60s 专利已过期（IP）",
+      "agree": "agree",
+      "my_evidence": "Kalvar 过程专利 US 3,149,971（Google Patents 元数据可读：assignee Kalvar Corp，1959 年优先权）被地区法院判无效，上诉 1977 年维持（B）。3M 1983 与 ICI 1978 专利按美国期限规则推断已届满（推断，未查法律状态）。",
+      "strength": "中（B + 推断）"
+    },
+    {
+      "round": "R4",
+      "old_claim": "聚酯底可层压到板材上，但无成品（推断）",
+      "agree": "partial",
+      "my_evidence": "聚酯底本身有来源支持（A：3M 示例；B：Wikipedia Mylar；BGSU polyester-based film）。层压到拼图板材上无任何数据，仍为未验证。",
+      "strength": "弱"
+    }
+  ],
+  "sources": [
+    {
+      "id": "wiki_vesicular",
+      "title": "Vesicular film（Wikipedia，wikitext，action=raw）",
+      "url": "https://en.wikipedia.org/w/index.php?title=Vesicular_film&action=raw",
+      "type": "百科（二手）",
+      "access": "curl全文（原研究与本核查均已读）",
+      "grade": "B",
+      "date": "读取于 2026-11-01；页面修订日期未核",
+      "quote": "Kalvar film consisted of a diazo compound, diazonium salt, suspended in a saran plastic film."
+    },
+    {
+      "id": "wiki_pvdc",
+      "title": "Polyvinylidene chloride（Wikipedia，wikitext，action=raw）",
+      "url": "https://en.wikipedia.org/w/index.php?title=Polyvinylidene_chloride&action=raw",
+      "type": "百科（二手）",
+      "access": "curl全文（首次 429，退避后成功；本核查已复读）",
+      "grade": "B",
+      "date": "读取于 2026-11-01",
+      "quote": "Above 125 °C, it decomposes to produce HCl."
+    },
+    {
+      "id": "wiki_microform",
+      "title": "Microform（Wikipedia，wikitext，action=raw）",
+      "url": "https://en.wikipedia.org/w/index.php?title=Microform&action=raw",
+      "type": "百科（二手）",
+      "access": "curl全文（本核查已复读；含一段 vesicular 描述，措辞与 Vesicular film 页相反，未调和）",
+      "grade": "B",
+      "date": "读取于 2026-11-01",
+      "quote": "very steep gamma and low dynamic range"
+    },
+    {
+      "id": "us4515885",
+      "title": "US 4,515,885 Diazo vesicular imaging films with nitrate salt（3M；Gatzke & Winslow）",
+      "url": "https://patents.google.com/patent/US4515885A/en（本核查读取 OCR 文本）；原研究：https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/4515885",
+      "type": "一手专利（原研究为扫描件逐页目视阅读；本核查为 Google Patents 机器 OCR 文本，数值 9 处与原研究一致，未目视核对扫描件）",
+      "access": "curl全文（原研究：PDF 扫描件；本核查：Google Patents OCR 文本）",
+      "grade": "A",
+      "date": "申请 1983-08-01；授权 1985-05-07；更正证书 1986-04-08（已在 GP 记录中核到）",
+      "quote": "heated ... no greater than 200° C. for 60 seconds；claim 1: photosensitive layer at a pH level which is not above 8.5 ... 70-95% by weight of a water-soluble binder consisting essentially of poly(vinyl alcohol)"
+    },
+    {
+      "id": "langmuir2024_par",
+      "title": "Generating Stable Nitrogen Bubble Layers on PMMA Films by Photolysis of 2-Azidoanthracene（Ghate, Hanson, Lam, Al-Kaysi, Bardeen）, Langmuir 2024, 40, 4054–4062；doi 10.1021/acs.langmuir.3c02869",
+      "url": "https://par.nsf.gov//servlets/purl/10534693",
+      "type": "一手论文（作者存档 PDF，NSF PAR 副本；本核查 pdftotext 读取全文）",
+      "access": "curl全文（PDF，文字层）",
+      "grade": "A",
+      "date": "发表 2024-02-14",
+      "quote": "disappearing only once the polymer film is brought out of the water and exposed to air；brown discoloration due to the photoproducts"
+    },
+    {
+      "id": "abbey_1991",
+      "title": "Kalvar Microfilm—Forgotten but not Gone（Abbey Newsletter，Vol.15 No.8，Dec 1991；转引 Bourke，ALCTS Newsletter）",
+      "url": "https://cool.conservation-us.org/byorg/abbey/an/an15/an15-8/an15-801.html",
+      "type": "二手（保护界通讯，转述 ALCTS 文章）",
+      "access": "curl全文（gzip 解压；本核查已复读）",
+      "grade": "B",
+      "date": "1991-12（期刊卷期）；页面读取于 2026-11-01",
+      "quote": "Modern vesicular film, usually made by Xidex, does not emit acid；did not affect the Kalvar film itself"
+    },
+    {
+      "id": "us4219616",
+      "title": "US 4,219,616 Recording materials for vesicular imaging（Imperial Chemical Industries；Pope et al.）",
+      "url": "https://patents.google.com/patent/US4219616A/en",
+      "type": "一手专利（本核查读取 Google Patents OCR 文本，全文实施例）",
+      "access": "curl全文（Google Patents OCR 文本）",
+      "grade": "A",
+      "date": "申请 1978-11-20；授权 1980-08-26",
+      "quote": "quaternised with chloroacetamide（实施例）；protonated with hydrochloric acid（实施例）"
+    },
+    {
+      "id": "endicott_supplies",
+      "title": "Microfilm Supplies（Endicott Microfilm 供应页）",
+      "url": "https://endicottmicrofilm.com/microfilm-supplies/",
+      "type": "厂商原页（分销商）",
+      "access": "curl全文（本核查已复读）",
+      "grade": "A（列出）",
+      "date": "页面无内容更新日期（仅 © 2020 页脚）；读取于 2026-11-01；库存、价格未核",
+      "quote": "Duplicating film (vesicular, silver and diazo)"
+    },
+    {
+      "id": "bgsu_costs",
+      "title": "Microfilming Costs（Bowling Green State University，Center for Archival Collections）",
+      "url": "https://www.bgsu.edu/library/cac/preservation/costs",
+      "type": "厂商原页（服务机构，非生产者）",
+      "access": "curl全文（本核查已复读）",
+      "grade": "A（服务存在）；价格未验证；湿度与耐久自述为 B 以下（服务方自述，无测试数据）",
+      "date": "页面自标 Updated: 06/06/2025 08:08PM（修订：原稿写为日期不明）；读取于 2026-11-01",
+      "quote": "Microfilm Duplication Vesicular 35mm $80.00 per roll；Vesicular ... is less sensitive to humidity；It has shown excellent image stability under practical conditions for decades"
+    },
+    {
+      "id": "pubchem_no2",
+      "title": "PubChem CID 3032552 Nitrogen dioxide：GHS Classification（ECHA C&L 聚合）",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/3032552",
+      "type": "数据库（API，PubChem pug_view）",
+      "access": "API（本核查已复读）",
+      "grade": "A",
+      "date": "读取于 2026-11-01（数据版本未核）",
+      "quote": "H330 (100%): Fatal if inhaled"
+    },
+    {
+      "id": "pubchem_znno3",
+      "title": "PubChem CID 24518 Zinc nitrate：GHS Classification（ECHA C&L 聚合）",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/24518",
+      "type": "数据库（API）",
+      "access": "API（本核查已复读）",
+      "grade": "A",
+      "date": "读取于 2026-11-01",
+      "quote": "H272 (98.1%): May intensify fire; oxidizer"
+    },
+    {
+      "id": "pubchem_alno3",
+      "title": "PubChem CID 26053 Aluminum nitrate：GHS Classification（ECHA C&L 聚合）",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/26053",
+      "type": "数据库（API）",
+      "access": "API（本核查已复读）",
+      "grade": "A",
+      "date": "读取于 2026-11-01",
+      "quote": "H361 (31.2%): Suspected of damaging fertility or the unborn child"
+    },
+    {
+      "id": "pubchem_cd_no3",
+      "title": "PubChem CID 25154 Cadmium nitrate：GHS Classification（ECHA C&L 聚合，本核查新增）",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug_view/data/compound/25154/JSON",
+      "type": "数据库（API）",
+      "access": "API",
+      "grade": "A",
+      "date": "读取于 2026-11-01",
+      "quote": "H350 (92.9%): May cause cancer；H340 (90%): May cause genetic defects；H360 (88.6%)；H372 (90%)"
+    },
+    {
+      "id": "pubchem_co_no3",
+      "title": "PubChem CID 25000 Cobalt(II) nitrate：GHS Classification（本核查新增）",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug_view/data/compound/25000/JSON",
+      "type": "数据库（API）",
+      "access": "API",
+      "grade": "A",
+      "date": "读取于 2026-11-01",
+      "quote": "H341 (100%): Suspected of causing genetic defects；H350 (49.1%)；H350i (50.9%)；H317 (100%)"
+    },
+    {
+      "id": "pubchem_ni_no3",
+      "title": "PubChem CID 25736 Nickel(II) nitrate：GHS Classification（本核查新增）",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug_view/data/compound/25736/JSON",
+      "type": "数据库（API）",
+      "access": "API",
+      "grade": "A",
+      "date": "读取于 2026-11-01",
+      "quote": "H341 (100%)；H334 (100%)；H317 (100%)；H332 (100%)"
+    },
+    {
+      "id": "crossref_bsi_10_3403_00703860",
+      "title": "Photography. Processed vesicular photographic film. Specifications for stability（DOI 10.3403/00703860，BSI 标准题名）",
+      "url": "https://api.crossref.org/works/10.3403/00703860",
+      "type": "API 元数据（仅题名，无摘要，全文未读；本核查已 Crossref 复核）",
+      "access": "API",
+      "grade": "A（仅题名存在）",
+      "date": "年份未知（Crossref 无 issued 日期）",
+      "quote": "Processed vesicular photographic film. Specifications for stability"
+    },
+    {
+      "id": "us3149971_gp",
+      "title": "US 3,149,971 Kalvar 过程专利（Google Patents 元数据，本核查新增）",
+      "url": "https://patents.google.com/patent/US3149971A/en",
+      "type": "一手专利记录（仅元数据，正文未核）",
+      "access": "curl全文（元数据）",
+      "grade": "A（记录存在）；无效判决为 B（Wikipedia 转述）",
+      "date": "优先权 1959（GB/DE）；assignee Kalvar Corp",
+      "quote": "assignee Kalvar Corp"
+    },
+    {
+      "id": "local_r4_D",
+      "title": "轮4 notes/case-D-vesicular.md 与 report.md D 节（本地资料包）",
+      "url": "本地文件：…/轮4-先曝光后显影矩阵-20261018/notes/case-D-vesicular.md 及 report.md（本核查未打开）",
+      "type": "本地资料包（旧轮次主张，待核查）",
+      "access": "本地资料包（未读）",
+      "grade": "旧轮次自称（不计等级）",
+      "date": "2026-10-17 至 10-18",
+      "quote": "effectively discontinued; HCl off-gassing with age; heat ~120 °C+ drum"
+    }
+  ],
+  "negative_findings": [
+    {
+      "query": "WebSearch: vesicular film duplicating microfilm manufacturer currently available 2026",
+      "scope": "通用网页（standard 模式），首次检索",
+      "result": "未确认任何 2026 年 vesicular 膜生产者。结果为 Wikipedia、旧专利、Crowley 与 Fujifilm（均为银盐或其他类型）。（本核查未复现）"
+    },
+    {
+      "query": "WebSearch: Xidex vesicular film still manufactured discontinued Kalvar brand current supplier",
+      "scope": "通用网页（standard 模式）",
+      "result": "仅 Wikipedia 历史叙述（Xidex 1983 年出售 Kalvar 业务，失败）；无 2026 状态信息。"
+    },
+    {
+      "query": "WebSearch: light-induced nitrogen gas bubble formation photoresponsive film heat-expanded bubbles image scattering new imaging method 2025",
+      "scope": "通用网页（standard 模式）",
+      "result": "未找到 2025 年光致气泡光学成像论文；找到 UC Riverside 的 azide-PMMA 水下气泡（2023–24）与若干旧专利。"
+    },
+    {
+      "query": "WebSearch: photoinduced microvoid or gas bubble formation in polymer film creates light-scattering image without wet development 2025",
+      "scope": "通用网页（standard 模式）",
+      "result": "未找到 2025 年干式光致微孔散射图像；旧专利 US 4,019,909（正像 vesicular）、US 4,219,616；US 7,327,415（拉伸微孔扩散片，非光致，不计入）。"
+    },
+    {
+      "query": "Crossref API: query=vesicular photographic film（rows=15）；query.bibliographic 长串检索多次 429/空响应",
+      "scope": "Crossref 元数据（api.crossref.org）",
+      "result": "仅返回 BSI 标准题名（10.3403/00703860 等）、1970 年 J. Photogr. Sci.「Photochemistry of Aromatic Diazonium Salts」（10.1080/00223638.1970.11737523，无摘要）；无生产者信息。部分查询 429，未重复。"
+    },
+    {
+      "query": "PubMed esearch: poly(vinylidene chloride) AND (hydrogen chloride OR dehydrochlorination) AND (degradation OR stability)",
+      "scope": "PubMed E-utilities",
+      "result": "返回 1 条（PMID 39840510），题录未读取，未纳入证据。"
+    },
+    {
+      "query": "PubMed esearch: photoinduced bubble formation AND (nitrogen OR gas) AND (polymer OR film OR imaging)",
+      "scope": "PubMed E-utilities",
+      "result": "返回 1 条（PMID 38353460），题录未读取，未纳入证据。"
+    },
+    {
+      "query": "Google Patents: patents.google.com/patent/US3149971A/en 及 /US3149971（Kalvar 过程专利）",
+      "scope": "Google Patents",
+      "result": "原研究：返回 503「automated queries」拦截页，未读取。本核查复读：patents.google.com 对 US3149971A、US4515885A、US4219616A 均可读（元数据与 OCR 文本）；503 为一次性拦截。Kalvar 1959–64 年专利的温度与黏合剂细节仍未核（仅读元数据）。"
+    },
+    {
+      "query": "AIChE 2023 Annual Meeting abstract 257g「Photochemical bubble generation on polymer water interface」",
+      "scope": "proceedings.aiche.org",
+      "result": "HTTP 403，未访问（不绕过）。"
+    },
+    {
+      "query": "Justia patent 4019909 摘要页",
+      "scope": "patents.justia.com",
+      "result": "HTTP 403（人机验证），未访问（不绕过）。US 4,019,909 PDF 已下载但为扫描件，本轮未读。"
+    },
+    {
+      "query": "CAMEO Kalvar microfilm（cameo.mfa.org）；pubs.acs.org；doi.org；www.amazon.com 等清单禁止或 403 站点",
+      "scope": "清单 403 站点",
+      "result": "未尝试（清单标注 403 或禁止），不绕过；CAMEO 原文 HCl 与「heat can destroy the image」因此未复核。"
+    },
+    {
+      "query": "Wikipedia（PVDC 页）首次读取：HTTP 429",
+      "scope": "en.wikipedia.org（wikitext action=raw）",
+      "result": "退避后重试成功，已读取（本核查复读成功）。"
+    },
+    {
+      "query": "Endicott Microfilm 首页与 /microfilm-supplies/ 页：查找 vesicular 库存或价格",
+      "scope": "endicottmicrofilm.com",
+      "result": "首页无 vesicular 字样；供应页列出 Duplicating film（vesicular, silver and diazo），无价格、无库存信息，页面无更新日期（本核查确认）。"
+    }
+  ],
+  "key_unknowns": [
+    "2026 年是否存在可采购、确有库存的 vesicular 膜，以及其生产者（Endicott 列表的来源与库存未核）。",
+    "是否存在不含卤素、不含硝酸盐与重金属（Cd、Co、Ni），且 HCl 与 NOx 释放可测为可接受、80%RH 下 Dmax 与白区 Dmin 保持稳定的配方（决定能否从淘汰翻到观察线）。",
+    "消费级 UV 灯的等效曝光剂量（mJ/cm²）与日光可行性（3M 示例未给剂量）。",
+    "耐光稳定性：未找到任何加速耐光数据（本轮不报换算年限）。",
+    "热显影 102–143 °C、4–10 s 对纸板或灰板的影响（未测）；聚酯膜与拼图板材的贴合方式（未测）。",
+    "Kalvar 残余重氮的全面 UV「固定」是否能在消费级条件下使白区稳定，以及是否为必需步骤（仅 B 级描述，原始 Nieset 1962 未读）。",
+    "BGSU 服务页关于湿度稳定性与「decades」的自述与专利数据的冲突（未裁定；需一手测试数据）。",
+    "Cu(NO3)2（专利示例 8）的危害码未核；水合物 CAS（10196-18-6、7784-27-2）与所用水合物的对应关系未逐条确认。",
+    "ICI US 4,219,616 的阴离子与氯乙酰胺季铵化残留氯是否进入最终膜，未核。"
+  ],
+  "discriminating_experiment": {
+    "one_liner": "用供应商可得的 vesicular 膜（若只能自制小样，仅限通风柜内，按 US 4,515,885 的 PVA+锌/铝硝酸盐配方且不使用 Cd、Co、Ni 盐），0–4 楔形曝光后热显影，于密闭小盒内用 HCl 与 NO2 检测管测逸出量，再做 80%RH 放置对比 Dmin/Dmax，并做暗处 24 h 白区变化对照；任一气体超过职业接触限值、或白区 Dmin 升高超过 0.2 即判淘汰。",
+    "design_sketch": "样品：每组至少 3 片。对照：PVDC（Saran）外涂 与 无 PVDC 外涂；PVA 黏合剂 与 含氯聚合物黏合剂（VMCB 类）；氯化物重氮盐 与 硼氟酸重氮盐。曝光：0–4 楔形 UV，光强与剂量需同时记录（3M 示例未给）。显影：102 °C、121 °C、138 °C 各 10 s。测量：密闭小盒（体积与时间固定）内取样测 HCl、NO2；烘后测 Dmin/Dmax 用密度计。老化：80%RH 72 h、暗处 24 h 与暗处对照（暗处不作为停止的证据）。记录：只报原始数据，不换算年限。安全：必须在通风柜内进行，穿戴护目镜与耐酸手套；不得在家中或无排风条件下操作；不使用 Cd、Co、Ni 盐。"
+  },
+  "new_routes_spotted": [
+    {
+      "name": "光致偶氮/叠氮 PMMA 水下 N2 气泡层（UC Riverside，Ghate & Bardeen，Langmuir 2024）",
+      "why": "现代「光致气泡」化学，气泡在浸没条件下稳定数天，可做图案阵列（A，全文核对）。限制：需水下浸没、粗糙表面、较高光强；空气中气泡消失；光解产物呈棕色（A）。不满足干式要求，列为观察线。",
+      "lead_url": "https://par.nsf.gov//servlets/purl/10534693"
+    },
+    {
+      "name": "正像 vesicular（光硬化基质抗起泡）US 4,019,909（1977）",
+      "why": "另一种非重氮的正像机理：光硬化区不起泡，未曝光区起泡。与本项目「白区」要求的方向不同；扫描件已下载但未读，原文细节未核。",
+      "lead_url": "https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/4019909"
+    },
+    {
+      "name": "季铵化 DMAEMA 聚电解质作为 vesicular 黏合剂，US 4,219,616（ICI，1980）（修订：降级）",
+      "why": "原稿以其为非 PVDC 黏合剂族的 HCl 规避候选。本核查读取全文实施例后，发现其示例使用 chloroacetamide 季铵化与盐酸质子化（A），含氯，不能作为无氯候选。仅保留化学背景，不列为候选。",
+      "lead_url": "https://patents.google.com/patent/US4219616A/en"
+    },
+    {
+      "name": "全面 UV「固定」：光化学分解残余感光剂（Kalvar fix 步骤）",
+      "why": "可能是非化学停止的线索，也可能对其他重氮路线（例如 A 路线）有参考价值。仅记录，不展开。依据为 B 级描述，原始 Nieset 1962 未读；其是否必需与是否均匀可行未验证。",
+      "lead_url": "https://en.wikipedia.org/w/index.php?title=Vesicular_film&action=raw"
+    },
+    {
+      "name": "BSI 标准「Processed vesicular photographic film. Specifications for stability」",
+      "why": "可能包含 vesicular 膜的稳定性与释放物规范，全文未读，仅确认题名存在（Crossref 复核）。",
+      "lead_url": "DOI 10.3403/00703860（doi.org 在清单中为 403，未访问；Crossref API 可读元数据）"
+    }
+  ],
+  "search_budget_used": {
+    "websearch": 4,
+    "curl_reads": 23,
+    "verifier": {
+      "websearch": 0,
+      "curl_reads_and_api": 22
+    }
+  },
+  "reconciliation_log": [
+    {"item": "c01 N2 溶解态前体", "change": "保留，并注明专利原文为 may be dissolved（A，有保留）；补充 saran = PVDC 的专利依据（Saran F310 = polyvinylidene chloride）", "why": "专利背景段证实，措辞保留；PVDC 身份由 A 级专利示例确认"},
+    {"item": "c02 灰阶 Dmax 与 Dmin", "change": "由「Dmax 约 1.5–2.1、Dmin 约 0.05–0.09」改为 Dmax 约 0.23–2.37、Dmin 约 0.04–1.23；低 Dmin 限定为部分配方", "why": "反驳：原稿为选择性截取，漏掉 Ex.12、Ex.13–25 的数据"},
+    {"item": "c02 极性", "change": "保留「默认负像」，但标注 Microform 页措辞相反、未调和，证据等级定为 B", "why": "裁定冲突取更保守一方"},
+    {"item": "c03 曝光条件", "change": "注明 77.1 s 亦用于 Ex.12；补充专利正文无光强与剂量数值（关键词检索确认）", "why": "核实一致；补全"},
+    {"item": "c04 显影条件", "change": "补充 Ex.4–9 与 Ex.12 的 138 °C/10 s 出处；注明高稳定示例含 PVDC 外涂", "why": "核实一致；补全"},
+    {"item": "c05 底线 1（喷后免洗）", "change": "✓ 下调为 ?", "why": "白区稳定依赖的固定步骤是额外步骤（推断）；评级过宽"},
+    {"item": "c05 底线 2（白区停得住）", "change": "? 改为 ✗（部分配方）", "why": "Ex.12 第 3、11、16、18、20 组 24 h 暗处后白区 Dmin 升至 0.63–1.23（A）；暗处不是停止"},
+    {"item": "c05 底线 3（成色留得住）", "change": "? 改为 ✗（湿度）", "why": "Ex.10 与 Ex.12 的 80%RH 数据（A）；BGSU 冲突按保守原则取 ✗"},
+    {"item": "c05 底线 4（少量喷液）", "change": "✓（不适用）改为「不适用，不计入」", "why": "无液体停止剂，不应计为通过"},
+    {"item": "c06 停止机制 (b)", "change": "注明「加热冷却锁定气泡」不终止残余重氮反应，不构成停止机制", "why": "逻辑修正；B 级事实本身成立"},
+    {"item": "c07 白区稳定", "change": "限定为 Ex.3、Ex.10 两个配方；增补 Ex.12 反例；删除「暗处稳定」作为停止证据的用法", "why": "选择性引用；违反避光只是暂停的规则"},
+    {"item": "c08 成色耐光", "change": "增补 Ex.12 的 138 °C 数据（Dmax 降幅 ≥50%）、专利机理自述（明胶吸湿塌陷；PVA 交联）、BGSU 冲突自述", "why": "完整证据；冲突记录而非忽略"},
+    {"item": "c09 潜像保持", "change": "限定为单一配方（Ex.3）；增补 Ex.12 的 24 h Dmax 降幅 ≥0.5 组", "why": "反驳通用潜像稳定"},
+    {"item": "c10 底材", "change": "增补 BGSU polyester-based 与专利 PVDC 封层身份", "why": "核实一致"},
+    {"item": "c11 HCl 腐蚀对象", "change": "明确腐蚀对象为其他胶片与储存盒，Kalvar 膜本身不受腐蚀", "why": "Abbey 1991 与 Wikipedia 原文"},
+    {"item": "c11 HCl 来源与可避免性", "change": "「HCl 主要来源 PVDC，示例 10 无氯可避免」改为：氯源不止 PVDC（示例 3–12 PVDC 外涂；示例 2 对照含氯 VMCB 黏合剂）；「无氯」仅对重氮盐与 PVA 成立", "why": "反驳：专利示例组成（A）"},
+    {"item": "c11 改进支撑膜（新增）", "change": "新增 Wikipedia 称改进支撑膜修复 HCl 问题（B，二手）", "why": "遗漏的有利证据，须如实记录"},
+    {"item": "c11 重金属硝酸盐（新增）", "change": "新增专利示例 6–9 的 Co、Cd、Ni、Cu 硝酸盐及 PubChem 危害码（Cd：H350/H340/H360/H372；Co：H341/H350/H360；Ni：H341/H334/H317）；Cu 未核", "why": "安全红线漏筛；致癌与生殖毒性类"},
+    {"item": "c11 硝酸盐水合物 CAS", "change": "注明 PubChem 记录中出现 10196-18-6 与 7784-27-2，对应关系未逐条确认", "why": "原稿「未核」，现有线索但仍不确定"},
+    {"item": "c11 硝酸锌与硝酸铝 H 码", "change": "核实一致；补充硝酸锌 H315、H319、H335、H411 为未列项", "why": "核实，补全"},
+    {"item": "c12 BGSU 日期", "change": "由「页面日期不明」改为页面自标 Updated: 06/06/2025", "why": "反驳：页面有自标日期"},
+    {"item": "c12 Endicott 日期", "change": "确认无内容更新日期（仅 © 2020 页脚）", "why": "核实一致"},
+    {"item": "c13 主张数", "change": "由「10 条」改为 13 条（数组原为 11 条，文字与数组不一致；新增 2 条）", "why": "结构一致性"},
+    {"item": "c13 新增主张", "change": "新增「改进支撑膜修复 HCl 问题（B）」与「Ex.12 白区在部分配方不稳（A）」", "why": "补充核查新发现"},
+    {"item": "c14 关键未知", "change": "补充重金属盐与含氯聚合物条件；说明 Ex.10 与 Ex.12 显示无氯配方也可能湿度失效", "why": "与修订后的结论一致"},
+    {"item": "c15 判别实验", "change": "增补 80%RH 与暗处 24 h 白区对照；明确不使用 Cd/Co/Ni 盐；设白区 Dmin 升高 >0.2 为判淘汰条件", "why": "与修订后的失效模式一致"},
+    {"item": "verdict.reasons HCl", "change": "改写「HCl 可避免」为「HCl 历史解决方案存在但在 A 级配方中未证明可避免」", "why": "反驳：原理由依赖的示例 10 含 PVDC 外涂"},
+    {"item": "verdict.red_line_hits 红线计数", "change": "由「命中 1 条（HCl/NOx）」改为包含重金属硝酸盐 Cd/Co/Ni 的命中；其余三项保留未命中", "why": "红线漏筛"},
+    {"item": "verdict.reasons 性能与底线", "change": "湿度与白区表述改为 A 级 Ex.10/Ex.12 数据；底线列表改为修订后评级", "why": "证据与评级一致"},
+    {"item": "新路线 US 4,219,616", "change": "由「可能的 HCl 避免候选」降为「未能证实；示例含氯（chloroacetamide、HCl）」", "why": "示例组成与候选假设相反（A）"},
+    {"item": "md 与 JSON 中 Dmax 范围", "change": "由「约 0.2–2.1」或「0.24–2.09」改为 0.23–2.37", "why": "数据范围修正（Ex.12 含 2.37）"},
+    {"item": "sources.us4515885 access", "change": "注明原研究为扫描件目视阅读；本核查为 Google Patents OCR 文本，9 处数值一致；等级保留 A", "why": "证据来源透明"},
+    {"item": "sources.bgsu_costs 与 endicott 日期字段", "change": "BGSU 改为自标日期 2025-06-06；Endicott 改为无更新日期", "why": "核实"},
+    {"item": "sources 新增", "change": "新增 pubchem_cd_no3、pubchem_co_no3、pubchem_ni_no3、us3149971_gp、wiki_microform 的说明与读取记录", "why": "覆盖新增主张的来源"},
+    {"item": "裁定（status）", "change": "保持「淘汰」；理由加强（安全前置 ✗ + 漏筛的重金属红线 + 白区与湿度的 A 级反例）", "why": "原裁定成立；修订的是理由与评级"},
+    {"item": "local_r4_D", "change": "标注为本核查未打开（路径省略）", "why": "未核，不得计为证据"}
+  ]
+}

@@ -1,0 +1,271 @@
+{
+  "issues": [
+    {
+      "file": "README.md",
+      "location": "顶部状态块（「状态（2026-11-01 更新）」）",
+      "problem": "写明「研究工作流在 07:01 被中断，尚无任何完成的研究产出」，并称实际只有 12 条路线、6 个专项有记录。但本目录内 01 矩阵（20 行×15 格）、02 六份 dossier、03/05/06/07/08 均已完成；08 称 34 个 final.json 全部存在，01 §二 逐条引用了 20 个 final.json。入口文件与交付内容直接矛盾，读者会误判交付物状态。",
+      "severity": "高",
+      "fix": "改写状态块，区分「搜索额度中断」（340 次调用、198 次执行、142 次因额度用尽未执行，见 09 §一）与「已完成的交付物」（20 路线 final.json、14 个专项 final.json、本目录全部文件）。"
+    },
+    {
+      "file": "README.md",
+      "location": "文件索引表第 4 行（04-负结果清单.md）；目录清单",
+      "problem": "索引列出 04-负结果清单.md，对应 00 要求的交付物 (4)，但本目录中不存在该文件。该清单只以 JSON 形式存在于会话临时目录 scratchpad/neg/04-负结果清单.json，未转成本目录的 Markdown。负结果因此只分散在各 dossier 第 8 节与 01 格内，无法作为独立清单核对。",
+      "severity": "高",
+      "fix": "把 04 负结果清单生成为本目录的 04-负结果清单.md（按路线分组，逐条列搜索词、URL 或数据库、范围、日期、结论）；或从 README 索引删除，并在 00 中说明负结果的位置。"
+    },
+    {
+      "file": "06-决策项清单.md",
+      "location": "DQ-01 至 DQ-14 整体；对照 00-任务复述与问题清单.md 第三部分 Q1–Q14",
+      "problem": "00 列出 14 个必须由决策者回答的问题，06 只覆盖其中大部分。以下问题在 06 中没有对应决策项：Q2（停止剂是否必须化学淬灭，物理封层是否算停止）；Q5（30 分钟是上限还是目标，过曝是否可接受）；Q9（透明负片为主还是 photogram 为主，影响连续色调与曝光）；Q11（底材：灰板裱白卡为主还是热升华坯为主）；Q12（非美国法规 EU/UK 是否评估）；Q14（历史干式先例是否入矩阵，目前已擅自加入）。Q8 只被 DQ-07 间接覆盖，未问「带警示标签的腐蚀性化学品（氯化铁、硝酸银、氨水）是否可接受」。03、05 已按这些假设推进，决策者却无处拍板。",
+      "severity": "高",
+      "fix": "为 Q2、Q5、Q9、Q11、Q12、Q14 各新增一条 DQ（格式同现有条目：问题、选项、证据等级、代价、「研究员倾向（建议，非决定）」、受影响文件）；在 DQ-07 增加 Q8 的子问题。"
+    },
+    {
+      "file": "05-排序与短名单.md",
+      "location": "§二排序表第 1 名（dylux_photodeactivation）；§1.1 判定口径第 2、3 条；§1.2 末条；§1.5 dylux 行；06 DQ-13 代价",
+      "problem": "排第 1 的 dylux 与 05 自身规则冲突。(a) §1.2 规定「凡必须用抽风柜…按『不可家用』处理」，§1.5 写 dylux 配方「不可（需抽风柜）」，仍排第 1；(b) §1.1 第 2 条「红线与家用可达性（命中即降级）」未被应用；(c) §1.1 第 3 条以「一周以内、低成本」为判别标准，而 06 DQ-13 估计完整周期约 5 周，且 HABI 身份需外包 NMR/MS 核验；(d) 排第 1 的理由写「无红线命中」，但 01 表 B 的 dylux 行、02 dossier §4 与 06 DQ-13 都记录 US3445234 的 HABI 上游合成用铁氰化钾。排序结论因此不能由 05 自己的标准复现。",
+      "severity": "高",
+      "fix": "二选一并写明。若排序只表示「下一步先测什么」，则在 §1.1 声明家用规则不适用于台架优先级，把「无红线命中」改为「停止步骤无红线命中；上游合成用铁氰化钾，须专业实验室」，并把约 5 周周期写入第 3 条。若保留家用规则，则 dylux 降级，pellet 或 tio2 前移。两种情况都要同步改 §四 短名单。"
+    },
+    {
+      "file": "01-矩阵v1.md",
+      "location": "§一.1 与 §二行清单（final.json 绝对路径）；08-来源与证据分级总表.md 文件头部",
+      "problem": "全部 A 级证据的可核对依据（final.json、下载的原文与 PDF）只存在于会话临时目录 /tmp/claude-0/…/scratchpad，交付目录内没有任何 final.json 或原文。08 头部自注「会话级临时目录，会话结束即失效」。决策者或下一轮核查者无法复核 Price 1995、Duchochois 1891、Ware 2003、三份亚铁氰化钾 SDS 等关键 A 级主张，也无法独立确认 access 字段。",
+      "severity": "高",
+      "fix": "把被引的 final.json、关键原文转录（Price 1995、Duchochois 1891、Ware 2003 的相关段落；三份亚铁氰化钾 SDS 的 §2、§10 条款；US3390994、US3579342、US3445234 全文摘录）与 08 的源清单一并复制到本目录（如 _sources/ 子目录），并把 01 §二 的绝对路径改为目录内相对路径。"
+    },
+    {
+      "file": "05-排序与短名单.md",
+      "location": "§二排序表第 7–20 名",
+      "problem": "按 §1.1 第 1 条「硬 ✗ 数量」，淘汰组次序无法由 01 表 A c05 的 ✗ 计数复现。例：vandyke（1✗）排第 12，位于 diazo（3✗，第 9）之后；photochromic_irreversible（1✗）第 11、cycolor（1✗）第 14，而 viologen（0✗，c05 为「不适用」）第 16；solarfast（3✗）第 7 排在 cyanotype_classic（2✗）第 8 之前。表中没有给出淘汰组的 tie-break 规则，读者无法判断次序依据。",
+      "severity": "中",
+      "fix": "在表注写明淘汰组次序规则（如先按 ✗ 数，再按红线与家用可达性，再按证据等级），或按规则重排；solarfast 与 cyanotype 的次序需注明依据是「在售与家用可做」而非 ✗ 数。"
+    },
+    {
+      "file": "01-矩阵v1.md",
+      "location": "表 A silver_printout 行 c05；§六一眼结论表 silver 行；_index.json silver 条目",
+      "problem": "silver_printout 的 c05 判 1✗、2✗、4✗、5✗、6✗，共 5 条 ✗。但一眼结论表与 _index.json 写「底线 1、2、5 有一手依据失败」，未提及 4✗（推断）与 6✗（暂定）。05 第 20 名只写「定影与洗净为必需」，也未给出计数。",
+      "severity": "中",
+      "fix": "统一口径：一眼结论与 _index 列出全部 ✗ 项，并区分「有 A 级依据」与「推断 / 暂定」；若 4✗、6✗ 证据不足，改为 ?。"
+    },
+    {
+      "file": "01-矩阵v1.md；02-dossiers/pag_halochromic.md",
+      "location": "01 表 A pag 行 c05（「2✗（保守…）」）；01 表 A anthotype 行 c05（「4✗（所列范围内无已知停止剂，非实测）」）；01 表 A solarfast 行 c05（「4✗（以缺席证据判定）」）；01 表 A silver 行 c05（「4✗（推断…）」）；02 pag §3 第 2 条（「✗（保守判定）」）；03 §二 开头定义",
+      "problem": "03 §二 定义 ✗ 为「有证据不满足或结构性不满足」，? 为未知。以下格把 ✗ 建立在缺席证据、保守判定或推断上：pag 白区 ✗ 明写「无白区速率数据」；anthotype 与 solarfast 的停止项 ✗ 明写「非实测」「以缺席证据判定」。这与 03 的定义不一致，也放大了 05 排序中的 ✗ 计数。",
+      "severity": "中",
+      "fix": "把上述缺席或保守判定改为 ?，并在格内注明「待测」；仅在有结构性依据（如物理上不可能、已知化学不兼容）时保留 ✗，并写出该依据。05 的 ✗ 计数同步重算。"
+    },
+    {
+      "file": "01-矩阵v1.md",
+      "location": "表 A 行 cycolor、viologen、free_radical_dry、photochromic_irreversible 的 c05 格；§一.11 已知缺口",
+      "problem": "00 要求 c05 对六条底线逐条给出 ✓ ✗ ?，各附一句理由。这四格没有达到：cycolor 写「底线 2–6 未能判定」，无逐条标记，也无 c05_免洗核验字段（§一.11 已自认）；viologen 整格写「不适用」；free_radical_dry 写「2、3、5 未评估；4 不适用」；photochromic_irreversible 第 1 条写「不适用」，不在 ✓ ✗ ? 之内。",
+      "severity": "中",
+      "fix": "为四条路线补齐六条底线的 ✓ ✗ ? 与各一句理由；「不适用」改记为 ? 并注明原因（例如「无停止步骤，故无法判定」）。"
+    },
+    {
+      "file": "02-dossiers/（目录缺口）；_index.json；01-矩阵v1.md §六一眼结论；06-决策项清单.md DQ-01",
+      "location": "_index.json keep 列表（6 项，不含 cyanotype_classic）；01 一眼结论表 cyanotype_classic 行；01 表 B photothermal c06 与 _index.json photothermal 条目（「BPA-free 变体暂缓，未计入淘汰」）",
+      "problem": "00 要求每条保留或观察线路线有一份 dossier。01 与 07 把 cyanotype_classic 记为「淘汰（保留为对照基线）」，06 DQ-01 选项 B 依赖它，但 _index.json 的 keep 列表没有它，02-dossiers 中也没有它的 dossier。photothermal 的 BPA-free 变体被标为「暂缓（未验证，不计入淘汰）」，同样没有 dossier。solarfast 在 05 §4.4 被列为「替补」，若决策者启用，也需要 dossier。",
+      "severity": "中",
+      "fix": "为 cyanotype_classic（对照）与 photothermal（BPA-free 变体）各写一份 dossier，含判别实验与通过或失败标准；若决定不写，须在 00 或 06 中明确说明理由。_index.json 的 keep 与 01 的口径统一；solarfast 若作为替补，同样补 dossier。"
+    },
+    {
+      "file": "02-dossiers/pellet.md；01-矩阵v1.md；03-停止机制分类学.md",
+      "location": "pellet dossier §2 E7（pH 9.4「缓冲需 1–10 分钟」，标 A）；01 表 B cyanotype 行 c06（「碱（pH 9.4下10分钟损失50–71%）」，标 A·事实）；03 §二 B（「Ware 转述 Holtzman，按二手降为 B」）；07 N01（「Holtzman 1945，转引」）",
+      "problem": "同一组 pH 9.4 数据的证据等级不一致：pellet dossier 与 01 标 A，03 与 07 明确为转引的 B 级。pH 10.7、30 秒（Ware 原文）为 A，pH 9.4 数值为二手转引，应降为 B。",
+      "severity": "中",
+      "fix": "统一为：pH 10.7 与 30 秒记 A（Ware 2003 原文）；pH 9.4 与 1–10 分钟记 B（转引 Holtzman）。同步修改 pellet dossier E7 与 01 表 B cyanotype c06。"
+    },
+    {
+      "file": "01-矩阵v1.md §一.1；08-来源与证据分级总表.md §一.2；05-排序与短名单.md；06-决策项清单.md；02-dossiers/*.md",
+      "location": "01 §一.1「A…（含 PubChem、Crossref 元数据与摘要 API）」；08 §一.2「数据库聚合（PubChem…）按 B 计」；08 中 PubChem CID 81610 条目标 B；05 与 06 多处「PubChem 聚合 GHS（A-API）」",
+      "problem": "证据等级规则自相矛盾。01 把 PubChem API 归为 A，08 规定数据库聚合按 B 计。05、06、02 的底线 6 ✗ 判定（tio2、photothermal、viologen、dylux、photochromic_irreversible 等）大量引用「A-API」的 PubChem 聚合 GHS，按 08 规则应为 B。",
+      "severity": "中",
+      "fix": "统一规则。建议采用 08 的规则：PubChem 聚合记 B，仅作危害线索；把 01、05、06、02 中的「A-API」改为「B（聚合）」；底线 6 的 ✗ 若只依赖聚合分类，改为 ? 并注明需要供应商 SDS。"
+    },
+    {
+      "file": "00-任务复述与问题清单.md §二；01-矩阵v1.md §一.4；07-旧轮次勘误与分歧.md 文件头与 E35；09-原始数据/打开页面失败.json",
+      "location": "00 第 13–16 行（「只能用网页搜索，不能打开任何网页；只放行 github.com」）；07 头部「本次复核（2026-11-01）：重取 Price 1995…Gutenberg…AquaPhoenix SDS（HTTP 200）」；07 E35「会话无法打开网页（00 文件第 13–15 行）」",
+      "problem": "各文件对网页可达性的描述互相矛盾。00 声明无法打开网页，07 头部却写明同一天重取了 Price 1995、Gutenberg 与 AquaPhoenix SDS，而 07 E35 又引用 00 的「不能打开」。09 的打开失败记录显示同期 gutenberg.org 与 slyka.net 域名不解析。01 §一.4 承认不一致，但只说「决策者应以 sources 为准」，没有解决。结果是大量 A（curl 全文）等级的可复现性无法判断。",
+      "severity": "中",
+      "fix": "在 00 §二 注明各轮的实际可达性（按日期与域名），并修正 07 E35 的引用；01 §一.4 改为列出每条 A 级来源的读取日期与方法，而不是只提示决策者核对。"
+    },
+    {
+      "file": "03-停止机制分类学.md §五 首条",
+      "location": "「cyanotype_quench：final 版撤回『Pellet 显影剂为亚铁氰化钾』为已证实的说法（另一摘录称铁氰化钾，未独立证实）」",
+      "problem": "该句读起来像是显影剂身份仍未定，但 07 §四.4 与 05 开头均判定：显影剂为亚铁氰化钾，已由 Price 1995 与 Duchochois 1891 全文证实（A），quench 审计的 S25 引文不成立。05 开头已指出 03 此处需要更正，03 本身未改。",
+      "severity": "中",
+      "fix": "按 07 §四.4 改写：显影剂为亚铁氰化钾（A，全文）；quench 版引用的 S25 不支持该主张，撤回理由作废。"
+    },
+    {
+      "file": "01-矩阵v1.md；05-排序与短名单.md §五",
+      "location": "01 表 A cyanotype 行 c01（「Fe(II)与铁氰化物生成不溶普鲁士蓝（ferric ferrocyanide）」）；01 表 C pellet 行 c11（「其酸释放毒气未在本路线独立核对」，标 B）；01 一眼结论 solarfast 行（「唯一已知停止浸泡型碱浴含重铬酸盐」）；01 表 C colas 行 c11（SDS 摘录标 A 摘录级）",
+      "problem": "07 §四列出的 01 修正项尚未落实。cyanotype c01 的反应物配对仍写反（Fe(II) 与铁氰根应生成 Turnbull's blue）。pellet c11 仍称「未独立核对」，而三份亚铁氰化钾 SDS 已读取全文（A）。solarfast 一眼结论仍超出检索范围（07 §四.3 要求改为「本轮所读的 US4202662A 组合物含重铬酸盐」）。colas c11 的 SDS 等级未按 07 升级。",
+      "severity": "中",
+      "fix": "按 07 §四第 1、2、3、6 条修正 01，并在 05 §五 的同步清单中逐项标记完成。"
+    },
+    {
+      "file": "06-决策项清单.md",
+      "location": "DQ-03 证据项 B（「证据已充分，且 3 条底线 ✗ 均有 A 级依据」）与研究员倾向（「白区 ΔE* 数据已足以排除它进入首单」）；05 §二 第 9 名 diazo 理由",
+      "problem": "白区 ΔE* 的测量数据来自 Océ Blueline X-Fast 与历史纸，不是 241（03 与 07 D19 已注明「非 241」；01 表 B diazo c08 写「无 241 实测数据」）。05 与 06 没有注明这一外推，却以之作为「足以排除」的依据。",
+      "severity": "中",
+      "fix": "在 05 第 9 名与 06 DQ-03 中写明「数据来自 Océ 同类纸，不是 241；外推需 241 实测」，把「足以排除」改为「支持排除，待 241 实测确认」。"
+    },
+    {
+      "file": "00-任务复述与问题清单.md 第三部分 Q6；02-dossiers 六份判别实验（pellet §6、tio2_bleach §6、dylux §6、pag §6、photocaged §6、dry_photopolymer §6）；06 DQ-06 证据项 A",
+      "location": "00 Q6 工作假设「距离 20–30 cm」；dossier 写 pellet「10 cm」、tio2「工作距离 10 cm」、dylux「距样品 10 cm」、pag「工作距离 10 cm」、photocaged「10 cm」、dry_photopolymer「10 cm（提议值）」；06 DQ-06 A 引用 18 mW/cm² 与 100 mm",
+      "problem": "工作假设与实验设计不一致。00 写 20–30 cm，六份实验设计全部用 10 cm，而 06 DQ-06 的证据又用 100 mm 的设备规格。剂量换算（mJ/cm²）依赖距离，这一不一致会直接影响 30 分钟目标的判断。",
+      "severity": "中",
+      "fix": "统一为一个距离并写入 00 假设（或在 00 注明改为 10 cm），同步更新六份 dossier 与 06 DQ-06。"
+    },
+    {
+      "file": "02-dossiers/pellet.md §6 步骤 4；00 Q1；06 DQ-10",
+      "location": "pellet §6 步骤 4「整张浮于亚铁氰化钾液约 1 分钟，背面不沾液」；00 Q1 工作假设「一次非浸泡显影」；06 DQ-10 选项 A（干擦）、B（湿擦）、C（不允许）",
+      "problem": "pellet 的主实验 T0 采用浮显（接近浸没）显影，与 00 Q1 的「非浸泡」假设不符；06 DQ-10 的三个选项没有覆盖浮显或浸没，因此该实验的合规性没有对应决策。",
+      "severity": "中",
+      "fix": "在 DQ-10 增加「浮显或浸没显影是否允许（与 Pellet 历史流程一致）」选项，并写出代价；或把 pellet T0 改为刷涂或擦涂，并与 00 Q1 对齐。"
+    },
+    {
+      "file": "00-任务复述与问题清单.md 第三部分 Q11；02-dossiers/pellet.md §6、pag_halochromic.md §6、photocaged.md §6、dry_photopolymer.md §6",
+      "location": "00 Q11「以灰板裱白卡为主、热升华坯为对照」；pellet §6 材料为「施胶良好的绘图纸或水彩纸」；pag §6 为「无酸水彩纸 300 g/m²；PET」；photocaged §6 为「玻璃片与施胶绘图纸」；dry_photopolymer §6 为 PET 与空气直曝",
+      "problem": "00 Q11 的工作假设是灰板裱白卡为主，但只有 tio2_bleach §6 与 dylux §6 的判别实验包含灰板。pellet、pag、photocaged、dry_photopolymer 的判别实验都没有灰板或拼图底材组，底线 5（底材不变形、可拼合）在这些路线上没有测试。",
+      "severity": "中",
+      "fix": "在每份保留路线 dossier 的判别实验中加入灰板（或拼图底材）组，写明阈值（翘曲量、拼合间隙）；与 Q11 的决策同步。"
+    },
+    {
+      "file": "02-dossiers/dylux_photodeactivation.md",
+      "location": "§5 第 3 条（「CAS 1707-68-2（四苯基，S02 示例）」）；§4 SDS 段（「o-Cl-HABI（1707-68-2）」）；§9 S08（CID 74357 为 o-Cl-HABI）",
+      "problem": "同一 CAS 在同一 dossier 中被两种结构描述。§5 称 1707-68-2 为四苯基，§4 与 §9 称其为 o-Cl-HABI。08 还把 CID 81610（7189-82-4）也标为 o-Cl-HABI。05 与 06 描述的两候选连接方式（N1–N1' 与 C2–N1'）在 dossier 中没有出现。HABI 身份是 dylux 的最致命未知之一，描述应当精确。",
+      "severity": "中",
+      "fix": "§5 改为「两个候选均自称 o-Cl-HABI，连接方式不同（N1–N1' 与 C2–N1'），须以 NMR 或 MS 确定」，删去「四苯基」说法，并补充两个 CID 的对照。"
+    },
+    {
+      "file": "06-决策项清单.md",
+      "location": "DQ-01 至 DQ-14 各条「代价」字段（DQ-04 A「费用未知」；DQ-05 A/B/C「会限制首单的路线选择」未列路线；DQ-09 B「中等」；DQ-11 C「增加解释成本」；DQ-14 B「留下未解项」）",
+      "problem": "多个选项的代价不具体，无法用于比较。00 明确要求检查「选项代价是否具体」。",
+      "severity": "中",
+      "fix": "每项代价给出金额量级（标未验证）、周期（周或月）或受影响的具体路线与文件；无法量化的写明缺什么数据。"
+    },
+    {
+      "file": "01-矩阵v1.md 表 C 行 pag_halochromic、photochromic_irreversible、dry_photopolymer、vesicular 的 c13",
+      "location": "pag c13「关键主张（共 11 条）」；photochromic c13「关键主张 11 条」；dry_photopolymer c13「关键主张（14 条，逐条标注）」；vesicular c13「关键主张 13 条（逐条见路线文件）」",
+      "problem": "00 要求 c13 列出关键主张 5–10 条并逐条标 A/B/C 与 事实/推断/未验证。pag 与 photochromic 为 11 条，dry_photopolymer 为 14 条，超出范围；vesicular 以「逐条见路线文件」代替格内逐条，不符合要求。pellet、cyanotype、vandyke、diazo、anthotype、tio2、solarfast 等格没有写出条数，无法核对是否在 5–10 条之间。",
+      "severity": "低",
+      "fix": "每格精简到 5–10 条并逐条标等级与标签；删除「见路线文件」的替代写法。"
+    },
+    {
+      "file": "05-排序与短名单.md §1.5 与 §四；02-dossiers/pellet.md §E9 来源表；07-旧轮次勘误与分歧.md §四.5",
+      "location": "05 §1.2 写「三份供应商 SDS 全文（LabAlley、AquaPhoenix、Morphisto §10.3 与 §10.5）」；07 §四.5 写「Morphisto SDS（EUH032）本轮未取得」；02 pellet 来源表 S22、S23 标「本轮未复核」，07 N06 标 AquaPhoenix「本次重取」",
+      "problem": "三处对 SDS 读取状态的描述矛盾。本地资料（verify_iron/morphisto.txt 与 audit_evidence_verify_work/sds_aqua.txt）与 08 S021 支持 Morphisto 与 AquaPhoenix 已读取全文，因此 07 §四.5 与 pellet 来源表是过时的。这一点影响红线结论的可核对性。",
+      "severity": "低",
+      "fix": "统一三处 SDS 的读取状态，以本地文件的读取日期为准；更新 07 §四.5 与 pellet 来源表 S22、S23。"
+    },
+    {
+      "file": "01-矩阵v1.md 表 C diazo 行 c11；06-决策项清单.md DQ-03 证据项 A；08 S017",
+      "location": "01「限值为二次来源（B）：PEL 50 ppm、TLV 25 ppm、IDLH 300 ppm」；06「氨的职业限值与刺激性为 A（ICSC 0215，TLV 25 ppm）」；08 S017「A†，curl 全文」",
+      "problem": "同一限值（氨 TLV 25 ppm）在三处的证据等级不同：01 为 B，06 为 A，08 为 A†。",
+      "severity": "低",
+      "fix": "统一为 ICSC 0215 的原文等级，并在 01 表 C diazo c11 更新。"
+    },
+    {
+      "file": "01-矩阵v1.md 表 C tio2_bleach 行 c11；02-dossiers/tio2_bleach.md §7；07-旧轮次勘误与分歧.md E09 与表 2 D12",
+      "location": "01「欧盟 Carc. 2（H351）分类因欧洲法院判决自 2025 年 8 月 1 日起失效（B，二手）」；tio2 dossier §7「日期有分歧…本稿不引用具体日期」；07 E09 引用 CJEU 新闻稿 No 99/25 为 A",
+      "problem": "同一日期在三处口径不一：01 把它当作事实并标 B，tio2 dossier 说日期未定，07 引用原始新闻稿为 A。读者无法判断应以哪个为准。",
+      "severity": "低",
+      "fix": "按 CJEU 新闻稿与 ECHA 页核对日期后统一写入 01 与 dossier；未核对则写「日期未核」。"
+    },
+    {
+      "file": "05-排序与短名单.md §1.5 solarfast 行与 pellet 行；02-dossiers/pellet.md E14",
+      "location": "05 solarfast 行「Dharma 4 oz 列价 $9.99、1–4 件 $6.95（A 页面）」；05 pellet 行与 §4.2「亚铁氰化钾 100–125 g 试剂摘录 $18.50–79.31」；pellet E14「其他摘录约 $20–130 或等值（含非美元页，未核）」",
+      "problem": "价格被标为 A（而 00 §四要求价格一律「未验证」）。区间把不同容量（100 g 与 125 g）与不同货币的报价合并，读者无法判断哪个价格对应哪个规格。已检查：4 oz 与 8 oz 的价格没有混读，此项通过。",
+      "severity": "低",
+      "fix": "价格统一写「未验证（搜索摘录或页面读取，日期）」；区间拆成逐条报价，并标明容量与货币；删去 solarfast 行的「（A 页面）」。"
+    },
+    {
+      "file": "05-排序与短名单.md §二 第 10 名 vesicular",
+      "location": "「无可采购膜，生产者未识别」",
+      "problem": "与 01 表 C vesicular c12 相矛盾：该格写 Endicott Microfilm 列出 vesicular 拷贝膜（A，列出），并引用 BGSU 服务页报价（自标 2025-06-06）。05 的「无可采购膜」说法比原始证据更强。",
+      "severity": "低",
+      "fix": "改为「Endicott 列出膜，无价格、无库存；生产者未识别；库存未验证」。"
+    },
+    {
+      "file": "05-排序与短名单.md §二 第 1 名理由；§二 第 7 名理由；03-停止机制分类学.md §二 B",
+      "location": "05 第 1 名「唯一有专利全文（A）支撑的化学灭活停止」；05 第 7 名「唯一在售、家用可做、厂商流程完整的路线」；05 §1.5 cyanotype 行「Jacquard 套装与预涂布在售（A，厂商页）」「可（但不通过底线 1）」；03 §二 B 列出 Polaroid US5667943、US3512978、US1850162、US2319344 全文",
+      "problem": "两处「唯一」过度。第 1 名的「唯一」需要限定为「无湿法且无层压或加热」，否则与 03 列出的其他全文专利冲突；第 7 名的「唯一在售、家用可做」与 05 自己的 cyanotype 行（在售、家用可得）矛盾。",
+      "severity": "低",
+      "fix": "把两处「唯一」改为限定范围的表述（如「本矩阵所读专利中，唯一无湿法、无层压或加热的化学灭活停止」；「在本轮所查路线中，在售且家用可做的仅有…」）。"
+    },
+    {
+      "file": "02-dossiers/pellet.md §4 第 3 段；06-决策项清单.md DQ-12",
+      "location": "「碱性『停止』属近红线，不得使用」",
+      "problem": "dossier 直接对碱性方案作出禁用决定，等于替决策者选定了 DQ-12 的碱臂范围（DQ-12 选项 A 为「碱臂仅限实验室对照」）。00 只要求碱性方案单独评估。",
+      "severity": "低",
+      "fix": "改为「碱性方案在未经评估前不列入家用方案；实验室对照范围见 DQ-12」。"
+    },
+    {
+      "file": "06-决策项清单.md DQ-06 选项 B 证据项",
+      "location": "「同一问答给出的数值相差约 1000 倍（未验证）」",
+      "problem": "该陈述没有指明来源（URL 或搜索记录编号），不能复核。",
+      "severity": "低",
+      "fix": "注明来源，或删除该句。"
+    },
+    {
+      "file": "02-dossiers/photocaged.md §6 G3 与 §4",
+      "location": "「停止剂候选：0.5 wt% 碳酸氢钠水溶液（探测用，非推荐方案）」",
+      "problem": "00 与 03 §一都规定碳酸盐中和只有 Pellet 单一爱好者设想，不得默认迁移。photocaged 的 G3 以碳酸氢钠作为停止候选，没有给出选择依据。dossier 标为「探测用」，但仍是一次迁移。",
+      "severity": "低",
+      "fix": "写明选择碳酸氢钠的依据；或改为与碳酸盐无关的对照（如清水或中性缓冲液），并注明它不代表迁移。"
+    },
+    {
+      "file": "02-dossiers/tio2_bleach.md §6「通过与失败」段",
+      "location": "「395 nm 对比度达 365 nm 的 50% 以上，窗后曝光不允许」",
+      "problem": "失败条件与后续动作之间的关系不清，「窗后曝光不允许」没有对应的判定。",
+      "severity": "低",
+      "fix": "改写为明确的失败条件与动作，例如「若 395 nm 对比度不低于 365 nm 的 50%，则 395 nm 灯组不得作为家用光源」。"
+    },
+    {
+      "file": "03-停止机制分类学.md §二 B 底线 2 与 §三 表「重氮白图」行；01 表 A diazo 行 c05",
+      "location": "03「底线：…2 ✓（重氮案例）」；01「2✗（光下白区持续变色）」",
+      "problem": "同一「重氮白区」在两处判定相反。03 的 ✓ 基于 SnCl2 或 SO2 湿法固定；01 的 ✗ 基于氨显影后的重氮纸在光与湿度下的黄化。两者没有区分，读者会误读。",
+      "severity": "低",
+      "fix": "在 03 表中把「湿法固定的重氮」与「氨显影的重氮纸」分开标注，并各自给出底线判定。"
+    },
+    {
+      "file": "00-任务复述与问题清单.md；09-搜索结果整理.md（目录内无任务原文）",
+      "location": "README「方法」段提到「任务指定 16 条」；00 §一复述未列出清单",
+      "problem": "任务指定的 16 条路线清单没有在目录内留存，无法核对 20 条是否完整覆盖任务要求。本次覆盖度检查只能核对 20 条矩阵行与 _index 的一致性。",
+      "severity": "低",
+      "fix": "在 00 或 README 中附上任务指定的 16 条清单，并标出其对应的矩阵行。"
+    }
+  ],
+  "coverage": {
+    "routes_in_matrix": [
+      "pellet",
+      "cyanotype_classic",
+      "vandyke",
+      "diazo",
+      "anthotype",
+      "tio2_bleach",
+      "solarfast",
+      "pag_halochromic",
+      "silver_printout",
+      "vesicular",
+      "dry_photopolymer",
+      "cycolor",
+      "photothermal",
+      "photocaged",
+      "photochromic_irreversible",
+      "viologen",
+      "dylux_photodeactivation",
+      "free_radical_dry",
+      "bleach_out",
+      "colas_ink"
+    ],
+    "routes_missing": [],
+    "dossiers_missing": [
+      "cyanotype_classic（保留为对照基线，06 DQ-01 选项 B 依赖它）",
+      "photothermal（BPA-free 变体暂缓，未计入淘汰）"
+    ]
+  }
+}

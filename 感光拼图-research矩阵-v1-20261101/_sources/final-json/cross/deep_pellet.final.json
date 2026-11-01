@@ -1,0 +1,752 @@
+{
+  "key": "deep_pellet",
+  "name": "Pellet 免洗稳定性第一性原理深挖",
+  "date": "2026-11-01",
+  "revision": "final (adversarial verification pass, 2026-11-01)",
+  "scope_note": "本轮可读一手与二手资料: Mike Ware《Cyanomicon》(2020) PDF 全文 (二手专著, 含作者试验, 按 B 级处理); Wikipedia (Cyanotype、Prussian blue、Potassium ferricyanide、Potassium ferrocyanide); PubChem PUG View GHS (CID 9605257、26250); Crossref 题录与摘要 (10.1108/prt-10-2023-0087; ASTM D-4236); Fisher SDS P232500 curl 全文。Pellet 原始专利、Getty 图谱、Holtzman 原文、US 11788936 原文与 CPSC 页面本轮仍未读到。所有价格未验证。本修订版按对抗式核查结果改写, 详见 reconciliation_log 与 deep_pellet.verify.json。",
+  "findings": [
+    {
+      "id": "F01",
+      "claim_zh": "Pellet(1877) 为直接正像工艺: 曝光区 Fe(III) 被还原为 Fe(II), 使阿拉伯胶变为可溶; 显影于亚铁氰化钾后, 未曝光区形成普鲁士蓝(成色区), 曝光区形成白色的 Prussian white, 可被擦去或洗去。",
+      "label": "事实",
+      "grade": "B",
+      "sources": ["S01", "S02"],
+      "notes": "核验 2026-11-01: Ware PDF p.90 原文证实 ('light-induced reduction of iron(III) to iron(II); the gum became re-solubilised ... insoluble Prussian white ... could be readily wiped off'); Wikipedia Cyanotype 证实 direct positive。Ware 为二手专著, 按 B 级。"
+    },
+    {
+      "id": "F02",
+      "claim_zh": "按本项目定义: 白区 = 曝光区内的亚铁氰化物白色相(Prussian white); 蓝区 = 未曝光区中 Fe(III) 与亚铁氰化物生成的普鲁士蓝(成色区)。残留 Fe(III)-tartrate 所在的未曝光区是蓝区, 不是白区。",
+      "label": "推断",
+      "grade": "B",
+      "sources": ["S01", "S03"],
+      "notes": "由 F01 与项目定义推出。与 Ware p.90 的机理一致。Pellet 原始专利与 Getty 图谱本轮未读到, 无法核对 'Fe(III)-tartrate 所在区是蓝区' 的具体描述, 维持推断。"
+    },
+    {
+      "id": "F03",
+      "claim_zh": "Prussian white (亚铁氰化物, 无色) 会被空气中的氧缓慢氧化回普鲁士蓝; H2O2 或重铬酸盐氧化更快 (Ware p.81 原文: 'slowly by the oxygen of the air, or more rapidly by ... hydrogen peroxide or a dichromate')。采用的反应式只有 Ware 的 H2O2 式: Prussian white + H2O2 -> Prussian blue + OH-。空气氧化的平衡式为推断 (未见于来源): 4 K2Fe[Fe(CN)6] + O2 + 2 H2O -> 4 KFe[Fe(CN)6] + 4 K+ + 4 OH-。定量速率未找到。",
+      "label": "事实",
+      "grade": "B",
+      "sources": ["S01", "S03"],
+      "notes": "修订: 原式 'Prussian white + O2 + H2O -> Prussian blue + OH-' 未见于任何来源, 且按原文书写不配平 (缺 K+ 与系数), 已删除。Wikipedia Prussian blue 只写 H2O2 或 sodium chlorate 氧化; 重铬酸盐与 '更快' 只见于 Ware。"
+    },
+    {
+      "id": "F04",
+      "claim_zh": "K 型可溶: Prussian blue 颜料中, K 型 (KFe[Fe(CN)6]) 水溶, Na 型不溶 (PRT 2024 摘要: 'K-PB was water soluble whereas Na-PB was not')。未洗的钾盐体系可能存在可迁移的水溶性蓝色残留, 可能使白区染色 (推断)。'过量亚铁氰化钾' 的形成条件未验证: 该摘要的加料方式是亚铁氰化物滴入 FeCl3。",
+      "label": "事实",
+      "grade": "A",
+      "sources": ["S03", "S11"],
+      "notes": "修订: 原文 '与过量亚铁氰化钾反应生成可溶胶体' 的 '过量' 条件无来源, 已删除。S11 研究对象是 Prussian blue 颜料, 不是白色相; 将其外推到白区为推断。染色进入白区的部分属推断, 需实验验证。"
+    },
+    {
+      "id": "F05",
+      "claim_zh": "半干显影后不洗的风险链(推断): 曝光区 Prussian white 未被移除 -> 残留亚铁氰化物与 Fe(III) 可扩散入白区 -> 空气与水分存在时 Prussian white 氧化回蓝 -> 白区变色。",
+      "label": "推断",
+      "grade": "B",
+      "sources": ["S01", "S03"],
+      "notes": "各环节的支持: Prussian white 氧化回蓝 (Ware p.81); 显影浴累积 Prussian blue 并染纸 (Ware p.229)。整条链的速率与耦合程度未量化。"
+    },
+    {
+      "id": "F06",
+      "claim_zh": "未曝光区残留 Fe(III)-tartrate 在仍有可用亚铁氰化物时会继续生成普鲁士蓝, 表现为蓝区增色或扩散; 它不是白区, 但可扩散进入白区使其变蓝。反应速率未知。",
+      "label": "推断",
+      "grade": "B",
+      "sources": ["S01", "S03"],
+      "notes": "Ware 所述 Pellet 历史失败模式为背景着色 (见 F26; Ware p.90 Lietze 引文)。显影浴累积蓝色并染纸见 Ware p.229, 支持 '扩散/染色' 的一部分。"
+    },
+    {
+      "id": "F07",
+      "claim_zh": "铁-羧酸配合物的光还原框架 (Ware Appendix III.1): 光照下配体向 Fe(III) 电荷转移, Fe(III) 还原为 Fe(II), 配体发生氧化脱羧; 存在暗反应回氧化 (reverse dark reaction), 因而 Fe(II) 产量低于理论值。Table III.1 列出 tartaric acid 为可参与此类反应的羧酸。将定量结论直接用于 Fe(III)-tartrate 为推断。",
+      "label": "事实",
+      "grade": "B",
+      "sources": ["S01"],
+      "notes": "核验: Ware PDF p.328 Table III.1 含 tartaric acid; p.329 'competition from the reverse dark reaction'。Ware 的定量段落针对草酸铁与 Pt/Pd 体系。"
+    },
+    {
+      "id": "F08",
+      "claim_zh": "历史与现代酸洗: Ware p.91 记 Pizzighelli 配方 (Herschel 正像法的 ammonium ferric citrate 变体, 非 Pellet 原配方) 显影后用 'dilute hydrochloric acid' 清洗 (原文未给浓度); 1% 浓度仅见于 S14 读者评论 (C 级)。Wikipedia Cyanotype 记柠檬酸或醋酸冲洗用于清除残留未反应 Fe(III) 并减轻染色。Ware p.229 对 cyanotype 显影浴推荐 0.1-1% v/v 硝酸 (HCl 为备选)。清除未反应 Fe(III) 与可溶物是事实; 对白区稳定性的作用未被测定。",
+      "label": "事实",
+      "grade": "B",
+      "sources": ["S01", "S02", "S14"],
+      "notes": "修订: 原文 '1% HCl (S01 p.91)' 的 '1%' 不在 Ware 中, 已改为 S14 (C) 来源; '该配方为 Pellet 型' 的归属已改正。"
+    },
+    {
+      "id": "F09",
+      "claim_zh": "酸的双重作用: (a) 清除残留 Fe(III) 与可溶物, 减少染色 (事实); (b) 柠檬酸、柠檬汁、醋酸等弱酸被 Wikipedia 记录为会加速空气氧化生成蓝色 (cyanotype 增色语境, 事实); Ware p.229 记醋酸会形成不溶的 basic ferric acetate, 不推荐。因此酸洗不能被当作停止剂 (推断)。",
+      "label": "事实",
+      "grade": "B",
+      "sources": ["S02", "S01"],
+      "notes": "核验: Wikipedia Intensifying 原文证实; Ware p.229 醋酸段落证实。原文 '酸性条件对保存更有利 (8.1 与 9.4.4)' 在本轮读过的页中未找到, 已移出, 降为未验证。"
+    },
+    {
+      "id": "F10",
+      "claim_zh": "碳酸钠喷雾会破坏未经镍处理的已成色普鲁士蓝: 0.25 M Na2CO3 (pH ca 10.7) 在 30 秒内即可破坏 cyanotype 蓝; pH 9.4 缓冲液在 1-10 分钟内使普鲁士蓝不可逆脱色 ('irreversible hydrolysis', Ware p.291, 转述 Holtzman); 水解产物为黄褐色 Fe(OH)3 棕斑 (Ware p.292)。镍处理后的蓝耐性更高, 见 F23。",
+      "label": "事实",
+      "grade": "B",
+      "sources": ["S01"],
+      "notes": "修订: 原标 A, 来源为二手专著中的转述, 降为 B。限定条件 '未经镍处理' 为核验后新增。碳酸钠方案与红线 pH>7 一致, 判为淘汰 (对未处理成色区)。"
+    },
+    {
+      "id": "F11",
+      "claim_zh": "氨蒸气使普鲁士蓝变紫, 在空气中数小时可逆; 氨水溶液则水解 (1-5% 碱水解, 含氨水与碳酸钠)。pH 效应的可逆性取决于浓度与时间。",
+      "label": "事实",
+      "grade": "B",
+      "sources": ["S01"],
+      "notes": "核验: Ware p.261 (8.1 与氨蒸气段落) 证实。"
+    },
+    {
+      "id": "F12",
+      "claim_zh": "光致褪色是普鲁士蓝被还原为 Prussian white 的过程, 需要光与电子供体 (Ware p.81)。作者试验: 4 klux 曝光 30 分钟后, 暗处 1 天回复 >95%, 5 天以上回复 >99%; 反复循环的永久密度损失很小。同页补充数据: 新制样最易褪色; 约 4000 lux 日光下 100 klux·h (约 25 小时) 的最大褪色为 10-20, 依感光剂而定。仅报数据, 不换算保存年限。",
+      "label": "事实",
+      "grade": "B",
+      "sources": ["S01"],
+      "notes": "修订: 原标 A (二手专著中的作者试验), 降为 B。补入原文遗漏的两条数据 (新制样敏感; 100 klux·h 最大褪色 10-20), 二者与底线 3 直接相关。Ware p.281。"
+    },
+    {
+      "id": "F13",
+      "claim_zh": "关于避光只是暂停: F12 的暗处回色表明褪色可逆, 避光并未停止反应; 对白区而言, 暗处 Prussian white 同样会缓慢氧化回蓝 (F03), 所以暗处不是停止条件。",
+      "label": "推断",
+      "grade": "B",
+      "sources": ["S01", "S02", "S03"],
+      "notes": "修订: 原标 A, 但推论部分属推断, 降为 B。来源: Wikipedia Cyanotype 'Storing the cyanotypes in darkness reverses the process'; Wikipedia Prussian blue 'its color returns if kept in a dark place'; Ware p.281 暗处回色。'暗处白区也氧化' 为推断。"
+    },
+    {
+      "id": "F14",
+      "claim_zh": "加速耐光数据(只报数据本身): 引用 Kirby 的测试, Winsor & Newton 粉末普鲁士蓝水彩试样以 10 klux 连续照射 180 天 (超过 40 Mlux*h), 'little or no loss of density or colour change'。该数据来自非 cyanotype 体系, 是二手转述。",
+      "label": "事实",
+      "grade": "B",
+      "sources": ["S01"],
+      "notes": "核验: Ware p.286 证实。PRT 2024 摘录 (S11): 丙烯酸乳液膜 24 小时光照无褪色 (仅 24 小时, 非 cyanotype)。两者都不换算为年限。"
+    },
+    {
+      "id": "F15",
+      "claim_zh": "红线核查: 铁氰化钾 (K3Fe(CN)6) 在高浓度、大体积与强酸混合时可释放 HCN (Wikipedia, 二手 B 级)。PubChem CID 26250 聚合 GHS 为 H302/H315/H319/H335/H361/H411 (本轮已核对)。普鲁士蓝在约 200 C 以上陶瓷釉烧时热分解释放 HCN 与 cyanogen (Ware p.109, 节 4.8)。Pellet 显影剂必须是亚铁氰化钾, 铁氰化钾不能用作显影剂 (Ware p.90-91)。",
+      "label": "事实",
+      "grade": "B",
+      "sources": ["S04", "S07", "S01"],
+      "notes": "修订: 原标 A。HCN 释放的 '高浓度与大体积' 条件来自 Wikipedia 摘录, 阈值未找到。"
+    },
+    {
+      "id": "F16",
+      "claim_zh": "亚铁氰化钾(K4Fe(CN)6, CAS 13943-58-3)与强酸是否释放 HCN 及释放量未验证: PubChem 聚合 GHS 只列 H411/H412, 无 EUH 酸接触声明; Wikipedia Potassium ferrocyanide 正文无酸释放 HCN 的表述 (唯一的酸反应为与硝酸生成 H2[Fe(NO)(CN)5], 不涉及 HCN)。这不能替代厂商 SDS, 本轮未读到可用的亚铁氰化钾厂商 SDS 原页。",
+      "label": "未验证",
+      "grade": "B",
+      "sources": ["S06", "S05"],
+      "notes": "修订: 原标 A, 但 PubChem 为监管聚合数据, 非厂商 SDS, 降为 B。需核查 Sigma、Fisher 等厂商 SDS 是否带 EUH032。在核实前, 实验设计中亚铁氰化钾与强酸不得同浴同喷 (见 experiment_design.safety)。"
+    },
+    {
+      "id": "F17",
+      "claim_zh": "Pellet 显影剂为亚铁氰化钾 ('yellow prussiate (ferrocyanide of potassium)', Ware p.90 引 Lietze 对 Pellet 1881 美国专利的摘录); Pizzighelli 配方显影液为 potassium ferrocyanide 20 g/100 cc (Ware p.91)。'需求书 v0.5 §5 与阶段 2 协议草稿把 Pellet 显影剂写成铁氰化钾' 的错误说法本轮未能核对 (未读这两份文件), 待核查。",
+      "label": "事实",
+      "grade": "B",
+      "sources": ["S01"],
+      "notes": "核验: Ware PDF p.90-91 证实 '亚铁氰化钾' 为显影剂。草稿错误一句未能核对, 不作为已证实结论。用于修订矩阵 c04 与 c06 的原文依据。"
+    },
+    {
+      "id": "F18",
+      "claim_zh": "替代方案 (a) 过量氧化剂 (H2O2、重铬酸盐、尿素过氧化物): 会把 Prussian white 氧化回普鲁士蓝, 直接破坏白区 (Ware p.81; p.118 称 urea peroxide 曾作为蓝图显影剂销售, 无重铬酸盐的毒性问题)。结论: 淘汰 (底线 2)。",
+      "label": "推断",
+      "grade": "B",
+      "sources": ["S01", "S03", "S08"],
+      "notes": "修订: 原文 '工业蓝图工艺正是用重铬酸盐或尿素过氧化物显影以回蓝' 改为 '蓝图工艺中曾使用' (语气过强)。H2O2 聚合 GHS (S08: H271/H302/H314/H332) 本轮未重新读取。"
+    },
+    {
+      "id": "F19",
+      "claim_zh": "替代方案 (b) 络合剂 (EDTA、柠檬酸、酒石酸): 可掩蔽 Fe(III), 减少后续普鲁士蓝生成, 但不能稳定已生成的 Prussian white, 也不能移除已形成的蓝。Ware p.292 记 5% 连二亚硫酸钠 + 5% EDTA 四钠、pH ~9、约 1 小时的方法, 原用于 platinotype 铁斑清除 (非铁锈斑); 该 pH 与 Ware 的 pH 9.4 试验 (p.291) 相近, 对普鲁士蓝有害 (F10)。柠檬酸作为螯合剂见于 FerroBlend (C 级)。结论: 单独不可行。",
+      "label": "推断",
+      "grade": "B",
+      "sources": ["S01", "S15"],
+      "notes": "修订: 原文把该方法称为 '铁锈斑清除法', 改为 platinotype 铁斑清除, 以符合 Ware 原文语境。"
+    },
+    {
+      "id": "F20",
+      "claim_zh": "替代方案 (c) 锌盐沉淀游离亚铁氰根 (ZnSO4): 理论上可固定游离亚铁氰根、减少后续显色, 但不能阻止已存在的 Prussian white 被氧化。白色沉淀颜色、溶度积与稳定性数据未找到。PubChem CID 25022296 存在 (name 查询返回该 CID), 但 GHS PUG View 无数据 (PUGVIEW.NotFound); 锌盐的环境危害需 SDS 核查。",
+      "label": "未验证",
+      "grade": "C",
+      "sources": ["S10", "S26"],
+      "notes": "修订: 原写 'GHS 页面返回 404'; 本轮核对为 JSON 错误码 PUGVIEW.NotFound (HTTP 404), 且 CID 存在。Wikipedia 无该词条。"
+    },
+    {
+      "id": "F21",
+      "claim_zh": "替代方案 (d) 还原性稳定剂 (亚硫酸钠、抗坏血酸、连二亚硫酸钠): 理论上可抑制 O2 对 Prussian white 的氧化。但 Ware 指出, 光照下与氧化性杂质接触的普鲁士蓝可被电子还原为 Prussian white (光还原机理, p.81), 还原剂可能使蓝区褪色。",
+      "label": "推断",
+      "grade": "B",
+      "sources": ["S01"],
+      "notes": "核验: 光还原机理证实 (Ware p.81)。'还原剂抑制白区氧化' 与 '蓝区还原风险' 仍无直接实验数据, 维持推断。"
+    },
+    {
+      "id": "F22",
+      "claim_zh": "替代方案 (e) 汞盐 (Herschel 1842 的 HgCl2 法): HgCl2 剧毒且昂贵, Ware 明确不推荐 (p.87)。Ware 推测汞与氰根强络合, '其可能效果' 是破坏高光区 Prussian white 使其不再回蓝, 这是推测, 不是实验结论。结论: 安全淘汰 (底线 6)。",
+      "label": "事实",
+      "grade": "B",
+      "sources": ["S01"],
+      "notes": "修订: 原文把 '汞与氰根强络合, 可破坏高光区 Prussian white' 标为事实。该机理句在 Ware 中是 'its likely effect' (推测), 已在文中注明。"
+    },
+    {
+      "id": "F23",
+      "claim_zh": "替代方案 (f) Ni(II) 掺入普鲁士蓝 (Holtzman 方法, Ware 复测): 10% w/v NiSO4 浸泡 1 小时使色相向绿青偏移 (Ware p.291); pH 9.4 碱处理 (10 min) 的脱色损失降低约一个数量级 (Ware p.292 Table 9.5: 原样 65, Ni 处理 1 小时 12, 24 小时 4; 单位 100 dD)。soak 本身引起的密度损失数值 10-21 (100 dD) 见 p.291, 不是碱处理损失。Holtzman 称镍处理蓝在 pH 9.4 稳定 (至少 4 个月), 可耐 pH 10.7 碳酸钠 4-5 小时。它是提高成色区耐碱性的候选, 不是停止剂。",
+      "label": "事实",
+      "grade": "B",
+      "sources": ["S01"],
+      "notes": "修订: 原标 A (作者自测, 位于二手专著), 降为 B。补入 Holtzman 的耐碱数据 (原文遗漏), 它对 F31 的限定有影响。"
+    },
+    {
+      "id": "F24",
+      "claim_zh": "替代方案 (g) 封层、隔绝氧气或除氧: 在本轮读过的来源中未找到对 Prussian white 氧化的定量数据; 只能作为待测方向。",
+      "label": "未验证",
+      "grade": "C",
+      "sources": [],
+      "notes": "读过的 Ware 页 (p.81, 118, 229, 261, 281, 291-293) 无定量数据; Ware 有封层相关讨论但本轮未完整读取。这是读过范围内的否定结论。"
+    },
+    {
+      "id": "F25",
+      "claim_zh": "空气氧化速率及其对 pH、湿度与温度的依赖未定量。US 11788936 与 Wikipedia 都暗示酸性促进 O2 氧化 (Wikipedia 已核对), 但专利反应式是 'it is assumed' 的假设。",
+      "label": "未验证",
+      "grade": "B",
+      "sources": ["S16", "S02"],
+      "notes": "未复核: Google Patents 两次 HTTP 503, 本轮未能读取 US 11788936 原文。S16 的反应式说明仅为前轮目视读取的结论, 不能复核。"
+    },
+    {
+      "id": "F26",
+      "claim_zh": "Pellet 的历史失败模式: Lietze (经 Ware 转述) 称 'the background was always more or less colored'; Pellet 工艺至 1943 年被视为废弃。显影后不溶性胶体形成浮雕状粘结层 (relief), 使 Pellet 图像在阴影区呈浮雕。",
+      "label": "事实",
+      "grade": "B",
+      "sources": ["S01"],
+      "notes": "核验: Ware p.90 (Lietze 引文、1943)、p.296 (节 9.4.2, binder layer in relief) 证实。"
+    },
+    {
+      "id": "F27",
+      "claim_zh": "Everitt's salt 的名称: Ware p.71 与 Wikipedia 把 Prussian white 称为 Everitt's salt (Ware 另称 Williamson's salt 与 Berlin white); Wikipedia 写作钠端元 Na2Fe[Fe(CN)6]。Fisher SDS 把 Everitt's salt 列为铁氰化钾同义词的搜索摘录说法未能复现 (本轮 curl 全文中 'Everitt' 出现 0 次), 不采用。矩阵中应改用化学式。",
+      "label": "事实",
+      "grade": "B",
+      "sources": ["S01", "S03", "S17"],
+      "notes": "修订: 原标 A, 但 S17 的同义词说法未复现, 证据等级降为 B。K 型与 Na 型白色相的区分未在本轮确认。"
+    },
+    {
+      "id": "F28",
+      "claim_zh": "价格: 本轮未获得可解析的 Pellet 相关试剂价格 (Dharma 搜索页前轮可访问但未解析出亚铁氰化钾条目; 本轮未复核)。所有价格未验证, 不得引用。",
+      "label": "未验证",
+      "grade": "C",
+      "sources": ["S23"],
+      "notes": "页面读取日期 2026-11-01 (前轮)。"
+    },
+    {
+      "id": "F29",
+      "claim_zh": "法规标题: ASTM D-4236 的题名为 'Practice for Labeling Art Materials for Chronic Health Hazards', 即其范围是慢性危害标签 (Crossref 题录, DOI 10.1520/D4236-94 / -94R05 / -94R21)。版本 88/2011 未见题录, 需标准原文核对。",
+      "label": "事实",
+      "grade": "A（API题录）",
+      "sources": ["S24"],
+      "notes": "修订: 原 F29 把题名证据 (已证实) 与 LHAMA 生效日期、急性危害条款 (未证实) 混在一起, 已拆分: 其余条款见 F32。"
+    },
+    {
+      "id": "F30",
+      "claim_zh": "专利: 关键词范围内发现 US 11,788,936 B2 (铁离子干扰分析样品的六氰合铁酸盐预处理)。它与 Pellet 显影和美术材料无关。未发现 Pellet 或 cyanotype 停止方法的相关专利; Google Patents 检索本轮再次 503, 未完成。这不构成无专利或无侵权结论。",
+      "label": "事实",
+      "grade": "A",
+      "sources": ["S16", "S21"],
+      "notes": "未复核: 本轮 Google Patents 原文两次 503; 前轮 '目视读取专利扫描件第 2-3 页, 未做 OCR' 的结论未被本轮复核。"
+    },
+    {
+      "id": "F31",
+      "claim_zh": "碳酸盐中和只有 Pellet 单一爱好者设想。Ware p.291 证实碳酸钠会破坏未经镍处理的普鲁士蓝 (事实); 因此 '不应迁移到其他体系、在 Pellet 体系中也不应保留' 是推断。镍处理蓝的耐碱性 (Holtzman, F23) 不等于 Pellet 体系可用。",
+      "label": "事实",
+      "grade": "B",
+      "sources": ["S01"],
+      "notes": "修订: 原标 A (见 F10), 降为 B。'Pellet 体系中不应保留' 为推断, 前轮标为事实, 已改。"
+    },
+    {
+      "id": "F32",
+      "claim_zh": "法规其余条款 (未验证): LHAMA 为 1988 年 FHSA 修正案; 标签要求 1990-11-18 生效; 毒理评估至少每 5 年; 急性危害 (刺激、易燃) 需另行标注。以上均未证实。",
+      "label": "未验证",
+      "grade": "C",
+      "sources": ["S19", "S25"],
+      "notes": "新增 (拆分自 F29)。CPSC 页面本轮仍为 HTTP 403; Wikipedia Federal Hazardous Substances Act 页 curl 全文中未出现 LHAMA 或 Art Materials; S19 仅为前轮搜索摘录, 其中的 '急性危害需另行标注' 不在摘录中。"
+    }
+  ],
+  "sources": [
+    {
+      "id": "S01",
+      "title": "Mike Ware, Cyanomicon (2020), PDF 专著",
+      "url": "https://www.mikeware.co.uk/downloads/Cyanomicon.pdf",
+      "quote": "Prussian white (also Everitt's salt or Williamson's salt or Berlin white) Insoluble and colourless, but readily oxidised by air (and other oxidants) to Prussian blue (PDF p.71-72). Pellet: the gum became re-solubilised and, on development in potassium ferrocyanide, insoluble Prussian white was formed, which could be readily wiped off (PDF p.90). Holtzman: a buffer at pH 9.4 completely decolourises (i.e. destroys by irreversible hydrolysis) Prussian blue in 1 to 10 minutes; 0.25 M sodium carbonate (pH ca 10.7) destroys a cyanotype in less than half a minute (PDF p.291).",
+      "type": "二手专著, 含作者自做试验段落 (B 级)",
+      "access": "curl全文 (pdftotext, 74.9 MB), 本轮复核",
+      "date": "2020-02-28",
+      "note": "页码以 PDF 页为准, 印刷页约为 PDF 页减 1。"
+    },
+    {
+      "id": "S02",
+      "title": "Cyanotype - Wikipedia (en)",
+      "url": "https://en.wikipedia.org/wiki/Cyanotype",
+      "quote": "Its difficulties were overcome by Henri Pellet in 1877 in his gum arabic iron cyanofer direct positive photographic tracing method. An acidified rinse using citric acid or vinegar is sometimes used after exposure to help clear residual unexposed ferric compounds. Intensifying ... mild acidic substances citric acid, lemon juice, vinegar ... speed up the oxidation that creates the blue pigment. Storing the cyanotypes in darkness reverses the process.",
+      "type": "B 百科",
+      "access": "curl全文, 本轮复核",
+      "date": "2026-11-01 访问"
+    },
+    {
+      "id": "S03",
+      "title": "Prussian blue - Wikipedia (en)",
+      "url": "https://en.wikipedia.org/wiki/Prussian_blue",
+      "quote": "Oxidation of this white solid with hydrogen peroxide or sodium chlorate produces ferricyanide and affords Prussian blue. A soluble form, KFe3+[Fe2+(CN)6], which is really colloidal, can be made from potassium ferrocyanide and iron(III). Prussian blue fades upon exposure to light or being mixed with excessive white pigments, but its color returns if kept in a dark place with good airflow. Prussian white, also known as Berlin white or Everett's salt, is the sodium end-member.",
+      "type": "B 百科",
+      "access": "curl全文, 本轮复核",
+      "date": "2026-11-01 访问"
+    },
+    {
+      "id": "S04",
+      "title": "Potassium ferricyanide - Wikipedia (en)",
+      "url": "https://en.wikipedia.org/wiki/Potassium_ferricyanide",
+      "quote": "capable of releasing hydrogen cyanide gas if mixed with high concentrations and volumes of acid (本轮原文核对)",
+      "type": "B 百科",
+      "access": "curl全文, 本轮复核",
+      "date": "2026-11-01 访问"
+    },
+    {
+      "id": "S05",
+      "title": "Potassium ferrocyanide - Wikipedia (en)",
+      "url": "https://en.wikipedia.org/wiki/Potassium_ferrocyanide",
+      "quote": "No statement that acid releases HCN was found in the page text (本轮复核). The only acid reaction described is treatment with nitric acid giving H2[Fe(NO)(CN)5]. Ferrocyanide is made industrially from HCN, but that is not acid release.",
+      "type": "B 百科 (仅作背景与阴性检索)",
+      "access": "curl全文, 本轮复核",
+      "date": "2026-11-01 访问"
+    },
+    {
+      "id": "S06",
+      "title": "PubChem CID 9605257 Potassium Ferrocyanide (PUG View GHS, ECHA 聚合)",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/9605257",
+      "quote": "CAS 13943-58-3 (anhydrous; Wikipedia CID 9605257 anhydrous confirmed); H411 (72.6%); H412 (11.6%); no acute-toxicity hazard codes; no EUH acid-contact statement (本轮 PUG View JSON 核对)。",
+      "type": "监管聚合数据 (非厂商 SDS, 按 B 级)",
+      "access": "API (本轮复核)",
+      "date": "2026-11-01"
+    },
+    {
+      "id": "S07",
+      "title": "PubChem CID 26250 Potassium ferricyanide (PUG View GHS)",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/26250",
+      "quote": "H302 (25.3%); H315 (10.5%); H319 (62.8%); H335 (10.2%); H361 (14.7%); H411 (45.3%) (本轮 JSON 核对一致); CAS 13746-66-2 与 Wikipedia 化学框一致。",
+      "type": "监管聚合数据 (按 B 级)",
+      "access": "API (本轮复核)",
+      "date": "2026-11-01"
+    },
+    {
+      "id": "S08",
+      "title": "PubChem CID 784 Hydrogen peroxide (PUG View GHS)",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/784",
+      "quote": "CAS 7722-84-1; H271 (90.4%); H302 (97.8%); H314 (99.6%); H332 listed. (前轮数据, 本轮未复核)",
+      "type": "监管聚合数据",
+      "access": "API (前轮)",
+      "date": "2026-11-01"
+    },
+    {
+      "id": "S09",
+      "title": "PubChem CID 10340 Sodium carbonate (PUG View GHS)",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/10340",
+      "quote": "CAS 497-19-8; H319 (99.8%). (前轮数据, 本轮未复核)",
+      "type": "监管聚合数据",
+      "access": "API (前轮)",
+      "date": "2026-11-01"
+    },
+    {
+      "id": "S10",
+      "title": "PubChem CID 25022296 Zinc ferrocyanide (GHS 无数据)",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/25022296",
+      "quote": "CID 25022296 exists (PubChem name lookup, 本轮核对); GHS PUG View returns JSON error PUGVIEW.NotFound ('No data found'), HTTP 404. CAS 14883-46-6 (前轮)。",
+      "type": "监管数据缺失记录",
+      "access": "API (本轮复核)",
+      "date": "2026-11-01"
+    },
+    {
+      "id": "S11",
+      "title": "Sanghvi M.R., Chugh K.W., Mhaske S.T. (2024), Sodium and potassium ferrocyanide derived Prussian blue pigment, Pigment & Resin Technology",
+      "url": "https://doi.org/10.1108/prt-10-2023-0087",
+      "quote": "Two batches (K-PB) and (Na-PB) were prepared by dropwise addition of the ferrocyanide into ferric chloride (both aqueous) ... bleeding tendency where (K-PB) was water soluble whereas (Na-PB) was not ... showed no fading in 24 h of light exposure (acrylic emulsion films). (Crossref 摘要, 本轮核对)",
+      "type": "A 一手论文 (摘要, API)",
+      "access": "API (本轮复核)",
+      "date": "2024-03-20"
+    },
+    {
+      "id": "S12",
+      "title": "Uyanik G. (1970), The deactivation of Prussian blue heterogeneous catalyst during the decomposition of H2O2 in aqueous alkaline solution, J. Catal.",
+      "url": "https://doi.org/10.1016/0021-9517(70)90282-4",
+      "quote": "Title only; no abstract in Crossref metadata. Recorded as a lead that Prussian blue is deactivated in alkaline H2O2.",
+      "type": "一手论文 (仅标题)",
+      "access": "API",
+      "date": "1970"
+    },
+    {
+      "id": "S13",
+      "title": "Kraft A. (2014), On the history of Prussian blue: Thomas Everitt and Everitt's salt, Bull. Hist. Chem.",
+      "url": "https://doi.org/10.70359/bhc2014v039p018",
+      "quote": "Crossref abstract is a biographical stub; full text at IDEALS (hdl 2142/127881) returned HTTP 403. Not read.",
+      "type": "一手史学论文 (全文不可读)",
+      "access": "API",
+      "date": "2014"
+    },
+    {
+      "id": "S14",
+      "title": "alternativephotography.com, ferric gum process: reader comment thread (2018)",
+      "url": "https://www.alternativephotography.com/ferric-gum-process/",
+      "quote": "Henri Pellet ... positive line cyanotype ... developed in potassium ferrocyanide, and cleared in a 1% solution of hydrochloric acid. (该 1% 浓度仅见于此读者评论; Ware 原文只写 dilute hydrochloric acid)",
+      "type": "C 论坛评论 (二手)",
+      "access": "curl全文 (前轮)",
+      "date": "2018 评论"
+    },
+    {
+      "id": "S15",
+      "title": "alternativephotography.com, FerroBlend: A Blended Ferrocyanide Printing Process",
+      "url": "https://www.alternativephotography.com/ferroblend-blended-ferrocyanide-process/",
+      "quote": "During exposure ... ferric ions ... reduced to ferrous ions. These react with ferricyanide to form a mixture of Prussian Blue and Prussian White ... sodium citrate, a chelating agent ... initial experience suggests greater resistance to fading; systematic long-term studies remain to be carried out.",
+      "type": "C 单一工艺作者页",
+      "access": "curl全文 (前轮)",
+      "date": "未核"
+    },
+    {
+      "id": "S16",
+      "title": "US 11,788,936 B2, Method for treating a liquid sample in order to remove interference by iron (USPTO image PDF)",
+      "url": "https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/11788936",
+      "quote": "前轮: p.3 (visual read, no OCR), eq. (2): 4X2Fe[Fe(CN)6] + O2 + 4H+ -> 4XFe[Fe(CN)6] + 4X+ + 2H2O, stated as: it is assumed that the following reactions take place. 本轮 Google Patents 原文两次 503, 未复核。",
+      "type": "A 一手专利 (前轮目视读取, 本轮未复核)",
+      "access": "curl全文 (扫描 PDF, 前轮目视读取)",
+      "date": "专利号 US11788936B2 (授权日未核)"
+    },
+    {
+      "id": "S17",
+      "title": "Fisher Scientific SDS page, P232500 (potassium ferricyanide, ACS)",
+      "url": "https://www.fishersci.com/store/msds?partNumber=P232500&productDescription=POT+FERRICYANIDE+CERT+ACS+500G&vendorId=VN00033897&countryCode=US&language=en",
+      "quote": "本轮 curl 全文 (111 KB): 'Everitt' 出现 0 次。搜索摘录称 Everitt's salt 为同义词, 未复现, 不采用。",
+      "type": "A 厂商 SDS 页 (同义词未复现)",
+      "access": "curl全文 (本轮复核)",
+      "date": "未核"
+    },
+    {
+      "id": "S18",
+      "title": "Getty Conservation Institute, The Atlas of Analytical Signatures of Photographic Processes: Cyanotype (Stulik & Kaplan 2013)",
+      "url": "https://www.getty.edu/conservation/publications_resources/pdf_publications/pdf/atlas_cyanotype.pdf",
+      "quote": "URL confirmed by search excerpt; curl returned HTTP 404 for this URL and for a variant. Not read. (前轮; 本轮未重试)",
+      "type": "A 一手图谱 (未读到)",
+      "access": "搜索摘录 (未读到)",
+      "date": "2013"
+    },
+    {
+      "id": "S19",
+      "title": "CPSC Art Materials / LHAMA (search excerpt)",
+      "url": "https://www.cpsc.gov/Business--Manufacturing/Business-Education/Business-Guidance/Art-Materials",
+      "quote": "Search excerpt (前轮): LHAMA is a 1988 FHSA amendment requiring labeling of chronically hazardous art materials; labeling took effect 1990-11-18; ASTM D-4236 made the mandatory labeling standard; toxicological assessment at least every 5 years. 本轮直接读取仍为 HTTP 403; 摘录内容未复核。",
+      "type": "A 监管机构页 (摘录)",
+      "access": "搜索摘录 (直接读取 403)",
+      "date": "未核"
+    },
+    {
+      "id": "S21",
+      "title": "Google Patents query, Pellet/ferrocyanide/gum keywords",
+      "url": "https://patents.google.com/xhr/query",
+      "quote": "前轮 HTTP 503, 无结果解析。本轮 patents.google.com/patent/US11788936B2 再次 HTTP 503 (两次)。",
+      "type": "检索记录",
+      "access": "curl (503)",
+      "date": "2026-11-01"
+    },
+    {
+      "id": "S23",
+      "title": "Dharma Trading search page, potassium ferrocyanide",
+      "url": "https://www.dharmatrading.com/search.php?keywords=potassium+ferrocyanide",
+      "quote": "前轮 HTTP 200; 未解析出亚铁氰化钾条目或价格。本轮未复核。",
+      "type": "供应商页 (未解析)",
+      "access": "curl全文 (前轮, 未解析出价格)",
+      "date": "2026-11-01"
+    },
+    {
+      "id": "S24",
+      "title": "Crossref metadata, ASTM D-4236 Practice for Labeling Art Materials for Chronic Health Hazards",
+      "url": "https://api.crossref.org/works?query=ASTM+D-4236+labeling+art+materials+chronic+health+hazards&rows=3",
+      "quote": "'Practice for Labeling Art Materials for Chronic Health Hazards' (DOI 10.1520/D4236-94, 10.1520/D4236-94R05, 10.1520/D4236-94R21). 题名仅证明慢性危害范围。",
+      "type": "A API 题录",
+      "access": "API (本轮新增)",
+      "date": "2026-11-01"
+    },
+    {
+      "id": "S25",
+      "title": "Wikipedia, Federal Hazardous Substances Act",
+      "url": "https://en.wikipedia.org/wiki/Federal_Hazardous_Substances_Act",
+      "quote": "curl 全文中未出现 LHAMA、Labeling of Hazardous Art Materials 或 Art Materials 的表述 (本轮阴性检索)。",
+      "type": "B 百科 (阴性)",
+      "access": "curl全文 (本轮新增)",
+      "date": "2026-11-01"
+    },
+    {
+      "id": "S26",
+      "title": "PubChem name lookup, zinc ferrocyanide",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/name/zinc%20ferrocyanide/cids/JSON",
+      "quote": "CID 25022296 (本轮 API 核对)。",
+      "type": "API 身份核对",
+      "access": "API (本轮新增)",
+      "date": "2026-11-01"
+    }
+  ],
+  "negative_findings": [
+    {
+      "query": "Prussian blue alkaline decomposition ferric hydroxide (PubMed esearch, 8 hits)",
+      "scope": "PubMed (eutils), 2026 与近年文献",
+      "result": "未发现可读的 cyanotype 或碱性保存相关论文; 命中多为电催化、水处理与电池论文。"
+    },
+    {
+      "query": "cyanotype fading Prussian blue degradation conservation (PubMed, 0 hits; Crossref, 8 hits)",
+      "scope": "PubMed; Crossref",
+      "result": "PubMed 无命中; Crossref 命中 2023 年 In Search of the Blue Flower 的章节, 仅有元数据, 未读全文。"
+    },
+    {
+      "query": "Everitt salt potassium iron ferrocyanide oxidation air (Crossref)",
+      "scope": "Crossref",
+      "result": "未找到 Prussian white 的氧化速率数据; 命中为 1967 Mossbauer、电池与 Na-PB 制备论文。"
+    },
+    {
+      "query": "ferric tartrate photoreduction ferrous ferrocyanide Everitt salt (PubMed, 6 hits)",
+      "scope": "PubMed",
+      "result": "命中全部为葡萄酒与食品光化学, 与 Pellet 无关。"
+    },
+    {
+      "query": "Pellet gum arabic iron cyanofer direct positive 1877 (Crossref)",
+      "scope": "Crossref",
+      "result": "未找到 Pellet 原始文献, 命中为 1877 年铁冶炼文献。"
+    },
+    {
+      "query": "zinc ferrocyanide precipitate solubility product (Crossref; Wikipedia; PubChem)",
+      "scope": "Crossref; en.wikipedia.org; PubChem",
+      "result": "未找到 Zn2[Fe(CN)6] 的溶度积或稳定性数据; Wikipedia 无词条; PubChem 有 CID 但 GHS 无数据 (PUGVIEW.NotFound, 本轮核对)。"
+    },
+    {
+      "query": "Getty Atlas cyanotype PDF (4 URLs)",
+      "scope": "getty.edu",
+      "result": "前轮 curl 对 4 个候选地址返回 404; 未读到。本轮未重试。"
+    },
+    {
+      "query": "Pellet 1877 British patent 4632 and US 1881 patent full text",
+      "scope": "patents.google.com (keyword: pellet ferrocyanide gum arabic photographic)",
+      "result": "Google Patents xhr 前轮 503; 原始专利未读到。"
+    },
+    {
+      "query": "US 11788936 full text re-check (本轮)",
+      "scope": "patents.google.com/patent/US11788936B2 (两个 URL 形式)",
+      "result": "HTTP 503 两次。未复核 F25 与 F30 的专利内容。"
+    },
+    {
+      "query": "cyanotype or Pellet stop-method patents (WebSearch excerpt only)",
+      "scope": "关键词范围内的搜索摘录",
+      "result": "仅发现 US 11788936 B2 (铁干扰样品预处理, 非 Pellet/cyanotype)。不构成无专利结论。"
+    },
+    {
+      "query": "photrio.com forum search pellet process",
+      "scope": "photrio.com",
+      "result": "HTTP 403, 不可读, 未绕过。"
+    },
+    {
+      "query": "CPSC art materials page, direct (本轮复核)",
+      "scope": "cpsc.gov",
+      "result": "HTTP 403, 未绕过; LHAMA 细节仍只来自前轮搜索摘录 (S19), 未证实。"
+    },
+    {
+      "query": "Wikipedia FHSA page for LHAMA mention (本轮)",
+      "scope": "en.wikipedia.org/wiki/Federal_Hazardous_Substances_Act",
+      "result": "curl 全文中无 LHAMA 或 Art Materials 表述。阴性, 不能证明法规不存在。"
+    },
+    {
+      "query": "IDEALS full text, Kraft 2014 Everitt's salt history",
+      "scope": "ideals.illinois.edu (hdl 2142/127881)",
+      "result": "HTTP 403, 不可读。"
+    },
+    {
+      "query": "Fisher SDS P232500 Everitt's salt synonym (本轮 curl 复核)",
+      "scope": "fishersci.com",
+      "result": "curl 全文 'Everitt' 出现 0 次。同义词说法未复现。"
+    },
+    {
+      "query": "Potassium ferrocyanide vendor SDS, acid HCN / EUH032",
+      "scope": "厂商 SDS 与 PubChem",
+      "result": "本轮仍未读到亚铁氰化钾厂商 SDS 原页; PubChem 聚合数据无 EUH 酸接触声明; Wikipedia 无酸释放 HCN 的表述。未验证。"
+    },
+    {
+      "query": "Dharma Trading ferrocyanide price",
+      "scope": "dharmatrading.com",
+      "result": "前轮页面 200 但未解析出亚铁氰化钾条目与价格; 本轮未复核。"
+    },
+    {
+      "query": "alternativephotography processes index and iron-process pages for a Pellet procedure",
+      "scope": "alternativephotography.com (processes index; ferric gum; FerroBlend; iron(III) salt; iron-silver)",
+      "result": "没有独立的 Pellet 操作页; Pellet 信息只见于读者评论 (C 级)。"
+    },
+    {
+      "query": "Getty overview PDF (Stulik) for cyanotype or Prussian content",
+      "scope": "resources.culturalheritage.org PDF (8 pages)",
+      "result": "文中未出现 cyanotype 或 Prussian 字样, 无可用数据。"
+    },
+    {
+      "query": "OSTI ferrocyanide safety report (10.2172/10190973)",
+      "scope": "Crossref metadata",
+      "result": "仅元数据, 未读全文; 与 Pellet 的关联未知。"
+    },
+    {
+      "query": "Holtzman original paper on Prussian blue alkali stability",
+      "scope": "未能定位原文",
+      "result": "仅通过 Ware Cyanomicon p.291 转述 (含 Ni 处理数据)。"
+    },
+    {
+      "query": "WebSearch budget (前轮)",
+      "scope": "前轮 WebSearch",
+      "result": "3/3 次已用完 (前轮); 本轮 WebSearch 0 次, 改用 Crossref 题录核对 ASTM D-4236。"
+    }
+  ],
+  "recommendations_for_matrix": [
+    {
+      "route_key": "pellet_direct_positive",
+      "column": "c01",
+      "text": "光化学: Fe(III)-tartrate 光照下发生配体到金属的电荷转移, Fe(III) 还原为 Fe(II), 配体氧化脱羧 (生成醛、CO2、H+)。暗反应回氧化使 Fe(II) 产量低于理论值。来源 S01 Appendix III.1 (PDF p.327-329, 本轮核对 Table III.1 含 tartaric acid), 评级 B; 将定量结论外推到 Fe(III)-tartrate 为推断。"
+    },
+    {
+      "route_key": "pellet_direct_positive",
+      "column": "c02",
+      "text": "直接正像, 单色蓝: 未曝光区形成普鲁士蓝 (成色区), 曝光区形成白色 Prussian white (白区, 显影后被擦去的部分)。背景着色是历史上的主要失败模式 (Lietze 转述, Ware PDF p.90)。来源 S01, 评级 B。"
+    },
+    {
+      "route_key": "pellet_direct_positive",
+      "column": "c03",
+      "text": "曝光: Pellet 本身的曝光时间与 mJ/cm² 在读过的来源中未给出。Ware 的 '明显短于传统 cyanotype' 描述出自 Pizzighelli 配方段落 (PDF p.91), 不能直接归于 Pellet。日光与 UV 灯的数值均未知。与 30 分钟目标的关系未知。"
+    },
+    {
+      "route_key": "pellet_direct_positive",
+      "column": "c04",
+      "text": "显影剂必须是亚铁氰化钾 (K4Fe(CN)6, CAS 13943-58-3; Ware PDF p.90-91 'yellow prussiate (ferrocyanide of potassium)')。铁氰化钾不能用作显影剂。需求书 v0.5 §5 与阶段 2 协议草稿的错误说法本轮未能核对, 待核查。历史后处理: Pizzighelli 配方显影后 'dilute hydrochloric acid' 清洗 (未给浓度, Ware p.91); 1% 浓度仅见于 S14 (C 级)。cyanotype 显影浴: Ware p.229 推荐 0.1-1% v/v 硝酸 (HCl 为备选), 醋酸不推荐。这些都是湿处理, 不是免洗。"
+    },
+    {
+      "route_key": "pellet_direct_positive",
+      "column": "c05",
+      "text": "免洗判定 (半干后不洗): 底线1 ?, 因为当前没有可用的免洗停止步骤; 底线2 ✗, 因为 Prussian white 会被空气氧化回蓝 (F03, Ware p.81); 底线3 ?, 因为蓝区耐光性未知 (见 c08); 底线4 ?, 未测; 底线5 ?, 因为纸基碳酸钙缓冲的风险主要在湿态 (Ware p.178: 'in the wet state ... the chalk buffer is quite involatile and unlikely to migrate through dry paper'), 与变形、拼合没有直接关系, 而且未测; 底线6 ?, 因为 K4Fe(CN)6 只有 ECHA 聚合 H411/H412, 需厂商 SDS 核对。"
+    },
+    {
+      "route_key": "pellet_direct_positive",
+      "column": "c06",
+      "text": "没有天然停止机制。候选逐条评估: (a) 过量氧化剂 ✗, 会回蓝 (F18); (b) 碳酸钠 ✗, 破坏未经镍处理的普鲁士蓝 (F10, 红线 pH>7); (c) 锌盐沉淀游离亚铁氰根: 未验证 (F20); (d) 还原性稳定剂: 推断有蓝区还原风险 (F21); (e) 汞盐 ✗, HgCl2 剧毒 (Ware p.87); (f) Ni(II) 掺入蓝相是耐碱方向 (Holtzman, Ware p.291-292), 色相偏绿青, 不是停止剂 (F23); (g) 封层或除氧: 无定量数据 (F24)。避光不算停止 (F13)。"
+    },
+    {
+      "route_key": "pellet_direct_positive",
+      "column": "c07",
+      "text": "白区稳定性机理: Prussian white 被空气中的 O2 缓慢氧化回 Prussian blue, H2O2 或重铬酸盐更快 (S01 PDF p.72, p.81)。暗处同样发生 (推断), 因此避光不是停止条件。无定量速率数据, 需在判别实验中测量。"
+    },
+    {
+      "route_key": "pellet_direct_positive",
+      "column": "c08",
+      "text": "成色耐光 (只报数据本身, 不换算年限): 作者试验 (二手专著, Ware PDF p.281) 4 klux 30 分钟后, 暗处 1 天回复 >95%, 5 天以上 >99%。同页: 新制样最易褪色; 约 4000 lux 日光下 100 klux·h (约 25 小时) 的最大褪色为 10-20, 依感光剂而定。Kirby 测试 (非 cyanotype, 普鲁士蓝水彩, 转引 Ware PDF p.286) 10 klux 连续 180 天 (超过 40 Mlux·h) 几乎无变化。"
+    },
+    {
+      "route_key": "pellet_direct_positive",
+      "column": "c09",
+      "text": "现涂介质: Pizzighelli 配方的混合液在文献描述中先变粘稠、变浑浊, 之后可能重新澄清 (Ware PDF p.91, 为多个文献说法的转述, 不是作者记录)。混合液货架期未测。出厂预涂形态未知。"
+    },
+    {
+      "route_key": "pellet_direct_positive",
+      "column": "c10",
+      "text": "底材: Ware PDF p.177 (siderotype 纸张选择) 建议纸中不含碱性缓冲; 但同页 ISO 9706/11108 档案纸要求含碱储备 (约 0.4 mol/kg), 二者存在张力, 需要实测。pH 9.4 缓冲 1-10 分钟可使普鲁士蓝脱色 (Ware PDF p.291); 湿态下碱储备存在风险 (p.178)。极稀酸预处理纸基见 S15 (C 级)。封层兼容性未知。"
+    },
+    {
+      "route_key": "pellet_direct_positive",
+      "column": "c11",
+      "text": "安全 (PubChem ECHA 聚合, 未替代厂商 SDS): K4Fe(CN)6 CAS 13943-58-3 H411/H412, 无急性毒性类, 无 EUH 酸接触声明 (未验证为无风险); K3Fe(CN)6 CAS 13746-66-2 H302/H315/H319/H335/H361/H411 (已核对), 且与高浓度大体积酸混合释放 HCN (Wikipedia); Na2CO3 CAS 497-19-8 H319; H2O2 CAS 7722-84-1 H271/H302/H314/H332 (前轮数据); ZnFe(CN)6 CAS 14883-46-6 无 GHS 数据 (已核对)。法规: LHAMA/ASTM D-4236 的慢性危害标题已证实 (S24); LHAMA 生效日期与急性危害条款未验证 (F32)。"
+    },
+    {
+      "route_key": "pellet_direct_positive",
+      "column": "c12",
+      "text": "价格: 本轮未获得可解析价格。所有价格未验证。页面 Dharma Trading 读取日期 2026-11-01 (前轮, 未解析出条目) (S23)。"
+    },
+    {
+      "route_key": "pellet_direct_positive",
+      "column": "c13",
+      "text": "关键主张证据等级 (修订后): F01 B/事实; F03 B/事实 (H2O2 式); F04 A(API)/事实 (K 型可溶); F10 B/事实 (限定未镍处理); F12 B/事实; F15 B/事实; F17 B/事实; F20 C/未验证; F25 B/未验证 (专利未复核)。Ware 来源统一按二手专著 B 处理。详见 findings 数组与 reconciliation_log。"
+    },
+    {
+      "route_key": "pellet_direct_positive",
+      "column": "c14",
+      "text": "关键未知 (最可能翻盘的三项): (1) Prussian white 在湿态残留条件下的空气氧化速率, 对湿度、pH、残留亚铁氰化物浓度的依赖; (2) 残留 K 型可溶蓝 (KFe[Fe(CN)6]) 的迁移与染色量; (3) Ware p.293 所述: 水洗会造成不可逆图像损失 (peptization), 而 K-free 的 ammonium hexacyanoferrate(III) 路线可减少该损失 (Ware Chapter 7), 这可能改变 '不洗' 的前提。Pellet 原始专利与 Getty 图谱未读到, 可能改写 F02 的白区定义。"
+    },
+    {
+      "route_key": "pellet_direct_positive",
+      "column": "c15",
+      "text": "判别实验: 见 experiment_design。在 0 h, 1 h, 24 h, 7 d, 30 d 测白区 L*a*b* 与 ΔD, 对照无处理、H2O2 阳性失效、Na2CO3 阴性失效、全水洗参考。"
+    }
+  ],
+  "experiment_design": {
+    "status": "设计草案, 未执行 (本修订仅修正归属与安全条款)",
+    "goal": "判别半干显影后不洗的 Pellet 型体系能否在不水洗的前提下稳定白区、保留成色区, 并排除碱、氧化剂与重金属方案。",
+    "materials": [
+      "Waterhouse/Fisch 型敏化液: 阿拉伯胶 26 g/100 cc : 酒石酸 27 g/100 cc : FeCl3 100 g/100 cc, 体积比 13:3:2, 暗处 24 h, 稀释至比重 1.100 (Ware PDF p.91, 本轮核对; 按 Ware 阿拉伯胶加入依 Pellet 的建议)。",
+      "Pizzighelli 配方对照液 (Herschel 正像法的 ammonium ferric citrate 变体, 非 Pellet 原配方; Ware PDF p.90-91): 阿拉伯胶 20 : 柠檬酸铁铵 50 : FeCl3 50 (g/100 cc), 体积比 20:8:5。",
+      "经典 cyanotype 对照液 (柠檬酸铁铵 + 铁氰化钾)。",
+      "显影剂: 亚铁氰化钾 20 g/100 cc 水溶液 (Ware PDF p.91)。",
+      "底材: 无碳酸钙缓冲的纸, 以及目标拼图底材 (纸基或灰板)。"
+    ],
+    "exposure": "UV 灯与日光分别设置, 记录剂量 mJ/cm²; 使用 step tablet 标定, 总时长控制在 30 分钟内; 每组至少两个剂量。",
+    "development_and_half_dry": "显影后定义半干时间 t_h (表面干、内部湿, 例如 30 s 与 60 s 两档), 不水洗。",
+    "arms": [
+      {"arm": "A0 无处理 (空气中放置)", "role": "阴性对照, 预期白区变蓝"},
+      {"arm": "A1 1% 柠檬酸喷雾", "role": "酸性清除对照, 评估是否加速回蓝 (F09); 不得与亚铁氰化钾显影残留同浴同喷 (见 safety)"},
+      {"arm": "A2 0.1-1% HCl 喷雾", "role": "历史清洗对照 (Ware p.229 备选酸); 不得与亚铁氰化钾显影残留同浴同喷 (F16 未验证)"},
+      {"arm": "A3 0.25 M Na2CO3 喷雾", "role": "阴性失效对照, 预期破坏未镍处理的蓝区 (F10)"},
+      {"arm": "A4 3% H2O2 喷雾", "role": "阳性失效对照, 预期白区回蓝 (F03, F18)"},
+      {"arm": "A5 0.1 M ZnSO4 喷雾", "role": "候选 (c), 测试锌盐沉淀效果 (F20 未验证)"},
+      {"arm": "A6 1% 亚硫酸钠 喷雾", "role": "候选 (d), 测试还原稳定性与蓝区还原 (F21); 不得与酸混用"},
+      {"arm": "A7 Ni(II) 预处理蓝相", "role": "候选 (f), 测试成色区耐碱 (F23, 10% w/v NiSO4 1 h 浸泡)"},
+      {"arm": "A8 全水洗参考", "role": "参考基准, 不作为免洗通过"}
+    ],
+    "measures": [
+      "白区与蓝区的 CIE L*a*b* (ΔE*ab 与 ΔE00), 分光或比色计测量。",
+      "蓝区与白区的 ΔD (反射密度, 仿照 Ware 的 100 dD 单位)。",
+      "残留亚铁氰化物: 用水提取后加 FeCl3 显色, 测 700 nm 吸光度; 或以 Fe(III) 点滴测试半定量。",
+      "白区 b* 变化, 用于监测黄褐色 Fe(OH)3 或蓝色回色。",
+      "染色外溢: 白色边框的 ΔE, 观察可溶 K 型蓝 (F04) 的迁移。"
+    ],
+    "timepoints": ["0 h", "1 h", "24 h", "7 d", "30 d"],
+    "conditions": [
+      "暗处, 23 +/- 2 C, 50 +/- 5% RH",
+      "室内漫射光, 照度记录为 lux",
+      "湿热加速条件仅用于组间比较, 不得换算为保存年限"
+    ],
+    "replicates": "每臂 3 张 x 2 批次 x 2 曝光剂量; 记录半干时间 t_h 与喷液量 (g/m2)。",
+    "proposed_pass_fail_thresholds (推断, 非文献值, 未验证)": {
+      "white_zone_dE00_7d_max": 2.0,
+      "white_zone_dE00_30d_max": 3.0,
+      "white_zone_b_star_rise_30d_max": 2.0,
+      "blue_zone_dD_loss_30d_max": 0.10,
+      "stain_border_dE_max": 1.5,
+      "spray_volume_gsm_max": 15,
+      "residual_ferrocyanide_absorbance_700nm_max": "由对照校准确定"
+    },
+    "decision_rule": "任一路线在 7 天白区 ΔE00 超过阈值, 或蓝区 30 天 ΔD 损失超过阈值, 即判为不通过。若 A0 与所有候选都不通过, 则 Pellet 免洗路线整体判为缺乏可行停止机制。",
+    "safety": "通风; 不得使铁氰化钾与任何酸混合 (F15); 按 F16 (亚铁氰化钾与强酸的 HCN 风险未验证), 亚铁氰化钾显影残留与酸性喷雾 (A1、A2) 不得同浴、同喷、同容器; 亚硫酸钠 (A6) 不得与酸混用 (SO2 释放风险, 一般化学推断, 需 SDS 核对); 所有酸性与碱性喷雾在通风罩内操作; 记录任何苦杏仁气味并立即停止 (HCN 信号); 避免 H2O2 高浓度储存 (S08)。"
+  },
+  "reconciliation_log": [
+    {"id": "R01", "target": "F03 反应式", "change": "删除原 O2 式 'Prussian white + O2 + H2O -> Prussian blue + OH-'; 改用 Ware 的 H2O2 式; O2 平衡式注明为推断", "reason": "原式未见于来源, 且按原文书写不配平", "verdict_ref": "F03 反应式: 反驳"},
+    {"id": "R02", "target": "F04", "change": "删除 '过量亚铁氰化钾' 形成条件; K 型可溶性保留 (S11 摘要)", "reason": "无来源; S11 加料方式为亚铁氰化物滴入 FeCl3", "verdict_ref": "F04 形成条件: 未能证实"},
+    {"id": "R03", "target": "F08 与 c04 的 1% HCl", "change": "1% 改由 S14 (C) 支持; Ware 原文为 dilute hydrochloric acid; Pizzighelli 配方归属为 Herschel 正像变体", "reason": "Ware p.91 无浓度; Ware p.90 归属错误", "verdict_ref": "F08 1% HCl: 反驳"},
+    {"id": "R04", "target": "F09", "change": "移出 '酸性条件对保存更有利 (8.1 与 9.4.4)', 降为未验证", "reason": "读过的页中未找到", "verdict_ref": "F09 保存表述: 未能证实"},
+    {"id": "R05", "target": "F10 与 F31", "change": "等级 A -> B; 限定为未镍处理的普鲁士蓝; 补入 Holtzman 镍处理耐碱数据", "reason": "二手专著转述; 原文同页含镍处理数据", "verdict_ref": "F10: 证实 (需限定)"},
+    {"id": "R06", "target": "F12 与 c08", "change": "等级 A -> B; 补入 '新制样最易褪色' 与 '100 klux·h 最大褪色 10-20'", "reason": "二手专著; 遗漏与底线 3 直接相关的数据", "verdict_ref": "F12: 证实 (有遗漏)"},
+    {"id": "R07", "target": "F13", "change": "等级 A -> B; 标签保持推断", "reason": "推论部分属推断", "verdict_ref": "F13: 证实 (来源层面)"},
+    {"id": "R08", "target": "F15", "change": "等级 A -> B (HCN 释放来自 Wikipedia 摘录)", "reason": "Wikipedia 为 B 级", "verdict_ref": "F15: 证实"},
+    {"id": "R09", "target": "F16", "change": "等级 A -> B; 补入 Wikipedia 无酸释放 HCN 表述与 HNO3 反应事实", "reason": "PubChem 为监管聚合数据, 非厂商 SDS", "verdict_ref": "F16: 证实 (标签正确)"},
+    {"id": "R10", "target": "F17", "change": "草稿错误一句标为待核查 (本轮未读需求书)", "reason": "未读到项目文件", "verdict_ref": "F17: 证实 (草稿部分未能证实)"},
+    {"id": "R11", "target": "F18", "change": "'工业蓝图工艺正是...' 改为 '蓝图工艺中曾使用'; 补入 urea peroxide 蓝图显影剂 (Ware p.118)", "reason": "语气过强", "verdict_ref": "F18: 证实 (语气修正)"},
+    {"id": "R12", "target": "F19", "change": "EDTA + 连二亚硫酸钠方法改称 platinotype 铁斑清除 (非铁锈斑)", "reason": "Ware p.292 语境", "verdict_ref": "F19: 证实 (语境修正)"},
+    {"id": "R13", "target": "F20", "change": "GHS 描述改为 'CID 存在, GHS 无数据 (PUGVIEW.NotFound)'; 标签未验证保持", "reason": "本轮核对", "verdict_ref": "F20: 未能证实 (降为未验证)"},
+    {"id": "R14", "target": "F22", "change": "在 claim 中注明 '汞与氰根...' 为 Ware 的推测", "reason": "Ware 原文为 'its likely effect'", "verdict_ref": "F22: 证实 (推测标注, 原标签由事实改为推断语境)"},
+    {"id": "R15", "target": "F23", "change": "等级 A -> B; 拆分 soak 密度损失 (10-21) 与碱处理损失 (Table 9.5: 原样 65, Ni 1 h 12, 24 h 4); 补入 Holtzman 耐 pH 10.7 碳酸钠 4-5 h", "reason": "二手专著; 原文混用两类数值", "verdict_ref": "F23: 证实 (需拆分)"},
+    {"id": "R16", "target": "F25 与 F30", "change": "标注专利原文本轮未复核 (Google Patents 503 两次)", "reason": "无法复核", "verdict_ref": "F25: 未能证实 (降为未验证)"},
+    {"id": "R17", "target": "F27", "change": "等级 A -> B; Fisher 同义词说法标为未复现 (curl 中 Everitt 0 次)", "reason": "S17 的同义词说法未复现", "verdict_ref": "F27 Fisher: 未能证实"},
+    {"id": "R18", "target": "F29 与 F32", "change": "拆分: F29 只保留 ASTM D-4236 慢性危害题名 (Crossref 证实); LHAMA 生效、5 年、急性危害条款移到 F32 (未验证)", "reason": "原条目混合已证实与未证实内容", "verdict_ref": "F29: 证实; F29 其余: 未能证实"},
+    {"id": "R19", "target": "F31", "change": "'Pellet 体系中也不应保留' 改为推断; 碳酸钠破坏未处理蓝保留为事实; 等级 A -> B", "reason": "结论超出证据", "verdict_ref": "F31: 证实 (结论限定)"},
+    {"id": "R20", "target": "c03", "change": "'Pellet 曝光明显短' 改为归属 Pizzighelli 配方; Pellet 曝光未知", "reason": "Ware p.91 段落归属", "verdict_ref": "c03: 反驳 (归属)"},
+    {"id": "R21", "target": "c05", "change": "底线 5 由 ✗ 改为 ?; 碳酸钙缓冲风险说明为湿态问题", "reason": "Ware p.178 原文; 底线 5 定义为变形与拼合", "verdict_ref": "c05: 反驳"},
+    {"id": "R22", "target": "c09", "change": "'作者记录' 改为 '文献描述' (Ware p.91 转述多个说法)", "reason": "归属错误", "verdict_ref": "c09: 反驳 (归属)"},
+    {"id": "R23", "target": "c10", "change": "补入 ISO 9706/11108 档案纸含碱储备的张力 (Ware p.177); '7.x' 节号标为未核", "reason": "Ware p.177 原文", "verdict_ref": "c10: 证实 (节号未核)"},
+    {"id": "R24", "target": "c06 与 c14", "change": "补入 Holtzman 镍处理结果、Ware p.87 HgCl2 推测标注; c14 增加 Ware p.293 peptization 与 K-free 路线", "reason": "原文遗漏的相关数据", "verdict_ref": "c06 与 c14 为补充"},
+    {"id": "R25", "target": "experiment_design", "change": "Pizzighelli 对照液改称 Herschel 正像变体 (非 Pellet 原配方); Waterhouse/Fisch 配方核对证实; 安全条款扩展到亚铁氰化钾残留与酸、亚硫酸钠与酸", "reason": "归属与安全漏洞 (F16 未验证)", "verdict_ref": "Waterhouse/Fisch 配方: 证实; 安全条款: 结构问题"},
+    {"id": "R26", "target": "F02", "change": "标签保持推断; 说明 Pellet 原始专利与 Getty 未读", "reason": "无法核对", "verdict_ref": "F02: 未能证实"},
+    {"id": "R27", "target": "source grades", "change": "S01 与 Wikipedia 来源统一为 B 级; S11 与 S24 (API) 为 A; S16 标注前轮读取结论未复核", "reason": "证据纪律: A 限一手论文、专利、SDS、厂商原页, 以及 curl 全文或 API 的一手材料", "verdict_ref": "结构问题条目"},
+    {"id": "R28", "target": "deep_pellet.md", "change": "记录该文件在 cross/ 目录中不存在; 本修订只对 json 负责", "reason": "无法核对 md 与 json 一致性", "verdict_ref": "结构问题条目"}
+  ]
+}

@@ -1,0 +1,658 @@
+{
+  "key": "dry_photopolymer",
+  "name_zh": "干膜光聚合物调色（Cromalin 系）",
+  "name_en": "dry photopolymer tack-change toning (Cromalin lineage)",
+  "status": "观察线",
+  "columns": {
+    "c01_机制": {
+      "text": "UV 或可见光等 actinic 辐射触发的自由基加成聚合：S01 明文为 'free radical generating, addition polymerization initiator'，光引发剂可由 ultraviolet 与 visible radiation 激活（S01 第 3 栏）；曝光使曝光区 stick temperature 升高、流变与热行为改变（S01 摘要与第 2 栏）。'由粘性橡胶态转为玻璃态'之说不见于 A 级已读栏，仅见 S06（B 级，本轮未重读），降为 B。S01 实例 I（第 4 栏）给出具体配方：triethylene glycol dimethacrylate 125 g、methyl methacrylate polymer 107 g、咪唑基二聚体光引发剂 6.6 g（扫描件数值待核，归属 HABI 类为推断）、2-mercaptobenzothiazole 6 g、7-diethylamino-4-methylcoumarin 3 g，溶剂 trichloroethylene 1,770 g；实例 III（第 6 栏）用 trimethylolpropane trimethacrylate。该配方为 1969 年工业实验室配方，非现行产品配方。",
+      "grade": "A（机制与配方，S01 第 1–6 栏）；B（玻璃态措辞，S06）",
+      "label": "事实（机制与 1969 配方）；推断（HABI 类归属）；未验证（现行产品配方）",
+      "source_ids": ["S01", "S03", "S06"]
+    },
+    "c02_极性与色调": {
+      "text": "负向成色：色粉附着于未曝光仍粘的区域，曝光区失粘（S01 摘要：'material which adheres only to the underexposed areas'；第 2 栏正文：'colorant material ... adheres only to the underexposed areas'）。单色相，每色一次层压-曝光-剥离-撒粉，多色靠重复叠合（S01 第 2 栏；实例 I 四色）。调子以半色调网点复制（S02 实例 2：half-tone color separation negative；S01 实例 I：halftone positive；S03：tone value、dot gain）。连续调在已读栏中无证据（S01 第 1–6 栏、S02 第 1–10 栏、S03 第 1–2 栏），轮5 的「tack 梯度 → 连续调」推断未获支持。",
+      "grade": "A",
+      "label": "事实（负向、多色、网点）；未验证（连续调，仅限已读栏范围）",
+      "source_ids": ["S01", "S02", "S03"]
+    },
+    "c03_曝光条件": {
+      "text": "汞灯（S02 实例 2）：500 W 汞蒸气灯、距约 0.5 m、约 20 s、半色调分色片（正文优选接触曝光，第 6 栏；实例未明文）；该层为正性萘醌二叠氮光刻胶，非 Cromalin 原层。碳弧（S01 实例 I–III）：nuArc FT26M-2 碳弧，分层曝光约 2½–5 s，印后整面后曝光 30 s（第 4–6 栏）。S01 第 4 栏列出的可用光源包括 carbon arcs、mercury-vapor arcs、fluorescent lamps with special ultraviolet-emitting phosphors、electronic flash units、photographic flood lamps。消费 UV 灯：PubMed 38110536 美甲烘干机 365–405 nm，照射 4 与 20 min（体外角质细胞，非剂量标定）。剂量 mJ/cm²：未知（以上来源均无辐照度）。日光：未查得。与 30 min 目标的关系：汞灯 20 s 与碳弧秒级曝光均远低于 30 min，但光源辐照度不可比；'消费灯 4–20 min 落在窗口内'未验证（推断，无剂量数据）。",
+      "grade": "A",
+      "label": "事实（实例与光源清单）；未验证（mJ/cm²、日光、与 30 min 的关系）",
+      "source_ids": ["S01", "S02", "S15"]
+    },
+    "c04_后处理": {
+      "text": "干式路线无水洗、无蒸气：撒粉后以棉签清除多余色粉（S01 实例 I：'Excess toner was removed with a cotton pad'；毛刷未见于已读栏），再以透明可光聚合层压层覆盖并硬化作保护（S01 第 2 栏）。湿法变体（S02 实例 1、2）为 0.25 N NaOH 或 15% trisodium phosphate 显影后水洗、干燥，不属于本路线。",
+      "grade": "A",
+      "label": "事实（毛刷未验证）",
+      "source_ids": ["S01", "S02"]
+    },
+    "c05_免洗": {
+      "text": "干式、无水洗，但需余粉清除与层压封层（额外处理步骤）；六条底线逐条核验见顶层 c05_免洗核验。",
+      "grade": "A",
+      "label": "事实与推断混合",
+      "source_ids": ["S01", "S03", "S18"]
+    },
+    "c06_停止机制": {
+      "text": "无化学淬灭剂。已读源中的定型手段：(1) 透明光敏层压层硬化作保护层（S01 第 2 栏）；(2) 可透 UV 的压敏胶（S05 摘要：'The adhesive transmits a major portion of incident ultra violet light'），但 S05 为照相底片保护层压，非 Cromalin 结构，'层压后仍可整面过曝'仅为跨应用推断；(3) 整面后曝光：S01 第 2 栏明文披露对最后一层色层及透明层的后曝光（post exposure），第 6 栏实例为 nuArc 后曝光 30 s。后曝光消耗残余引发剂与单体的定型机理为推断（专利未说明目的）。候选的化学淬灭或灭活方案无证据。避光不算停止。配方级的隔氧（见 c07）不是停止机制。",
+      "grade": "A（封层与后曝光步骤）；推断（定型机理与跨应用 UV 透过）",
+      "label": "事实（封层、后曝光步骤）；推断（定型机理）",
+      "source_ids": ["S01", "S03", "S05"]
+    },
+    "c07_白区稳定": {
+      "text": "未知。缺：未曝光白区在室内光与长期存放下的失粘速度与吸粉量。相关 A 级记录：S02 报告多余色粉附着造成 fogged background（第 6 栏）；S03 报告曝光区因氧阻聚残留粘性（pepper stain，第 2 栏）。S03 声称在光聚合混合物的 binder 中加入至少 10 wt% 乙酸乙烯酯均聚物或共聚物可显著降低氧敏感性（摘要与第 2 栏；实例未读），是研究原稿未收录的隔氧替代路线。S01 实例 III（第 6 栏）记录单体迁移导致的色偏（'appeared greenish as a result of monomer migration'），属成色稳定性相关的失效模式。未曝光区的长期行为未测。",
+      "grade": "—（已读栏仅为现象记录，无长期数据）",
+      "label": "未知",
+      "source_ids": ["S01", "S02", "S03"]
+    },
+    "c08_耐光": {
+      "text": "未知：未查得原厂色粉的耐光数据，本次未检索。S02 称 'Cromalin cyan toner' 为 E. I. du Pont 商品，化学名未给出（第 10 栏）。不做年限换算。",
+      "grade": "—",
+      "label": "未知",
+      "source_ids": ["S02"]
+    },
+    "c09_货架期": {
+      "text": "未知。Cromalin 型为出厂预涂膜，已读源中未见面向用户的现涂产品。但 S01 实例 I（第 4 栏）给出可参考的实验室涂布溶液配方（含 trichloroethylene 1,770 g，涂布于 0.001 in PET，6 ft/min），其混合液寿命未报告。已读源无货架期数据；S03 仅记录薄层的 pinholes 与 reverse adhesion（制造缺陷，非时效）。",
+      "grade": "—",
+      "label": "未知（货架期）；事实（无用户现涂产品，已读范围）",
+      "source_ids": ["S01", "S03"]
+    },
+    "c10_底材适配": {
+      "text": "接收介质：压敏胶涂布的纸，如 good quality printing paper（S02 实例 2）；proofing.de 称 special paper（S07，B）。S01 第 3 栏称 'almost any material, e.g., paper, polymer film, plastic, metal, ceramic, glass' 均可作受体（拼图板适配仍未测）。载体为 100 μm PET（S02 实例 1）。S05 保护片加压敏胶总厚 < 0.004 in（约 100 μm）为照相底片保护层压的数据，不是本路线的层压厚度。木板或灰板吸湿变形、与纸基的兼容性：未知。",
+      "grade": "A",
+      "label": "事实（纸基接收、受体范围）；未验证（拼图板适配）",
+      "source_ids": ["S01", "S02", "S05", "S07"]
+    },
+    "c11_安全法规": {
+      "text": "CAS 与 PubChem 汇总 GHS（API 汇总，非原始 SDS，2026-11-01 读取）：TMPTA 15625-89-5：H315、H317、H319；H351、H360、H336（PubChem 仅显示 >10% 的通报比例，此三项未达 10%，属少数通报）；H400、H410。HEMA 868-77-9：H315、H317、H319、H334（H334 为 Danger，呼吸致敏）。HDDA 13048-33-4：H315、H317（>99.9%）、H319、H400、H411。IBOA（CAS 未核）：H317（46.5%）等，本轮未复核。TPO 75980-60-8：H317（12.5%）、H360Fd、H361（95.3%）、H411（87%）。1-羟基环己基苯基酮 947-19-3（Irgacure 184）：页面未返回 H 语句，本轮未复核，不作低危结论。三氯乙烯（S01 各实例的溶剂）：PubChem 汇总 H350（100%）、H341（100%）、H336（100%）、H315、H319（100%）、H412（100%），聚合列表另含 H360、H361、H370、H372；CAS 未核。法规（A 级 CPSC 1992 新闻稿全文；B 级 ASTM D4236 镜像页正文节选）：CPSC 'voted today to codify ASTM D-4236'（LHAMA 1988）；D-4236 要求慢性危害标签使用 signal word WARNING 并列出致敏成分（sensitizers），慢性效应含 allergenic sensitization；标签针对成人用途；标签不保证绝对安全（§1.6）。'注明不适合儿童'未见于已读文本，仅要求考虑儿童可预见误用，并在适当时加远离儿童等警示。PPE（推断）：丁腈手套、护目镜，色粉加防尘口罩；曝光步骤另需 UV 防护（皮肤与眼睛）。",
+      "grade": "A（API 汇总与政府一手）；B（镜像页与法规摘要）",
+      "label": "事实（汇总与法规原文）；未验证（SDS 原文、IBOA 与 Irgacure 184 的 H 语句、三氯乙烯 CAS）",
+      "source_ids": ["S18", "S19", "S20", "S21", "S22", "S23", "S27", "S28", "S29"]
+    },
+    "c12_供应成本": {
+      "text": "未验证：未查得任何价格页，不报告价格；本轮核查未检索价格。供应：2026-11-01 的 WebSearch 未查得现售 Cromalin 膜或色粉（负结果，范围限于英文网页检索）。停产依据：proofing.de（2026-11-01 读取，原文核对）称 Cromalin 已被数字打样取代（S07）。",
+      "grade": "B（停产）；未验证（价格）",
+      "label": "未验证（价格）；事实（停产，B）",
+      "source_ids": ["S07"]
+    },
+    "c13_证据等级": {
+      "text": "1) 干式曝光-撒粉-层压机制：A，事实（S01 第 1–6 栏，原文核对）。2) 曝光区失粘、未曝光区吸粉：A，事实（S03 第 1–2 栏；S01 摘要）。3) 氧阻致 pepper stain：A，事实（S03 第 2 栏，原文核对）。4) 20 s、500 W 汞灯、0.5 m、15% TSP 显影（湿法变体）：A，事实（S02 实例 2，原文核对）。5) 半色调网点复制：A，事实（S02、S03；S01 实例 I 'halftone positive'）。6) 甘油覆盖隔氧：A（摘要，原文核对），事实；迁移至本路线：推断（S09）。7) Cromalin 已被数字打样取代：B，事实（S07，原文核对）。8) 当前无现售介质：C 级负结果，未验证（范围限定）。9) 丙烯酸酯致敏与消费 UV 树脂致敏：A（摘要原文核对；S10 为 3 例病例系列；S11 HEMA 65.4%→16.5%；S12 TEGDMA 为最常见致敏原之一），事实。10) TMPTA 的 H351/H360、TPO 的 H360Fd/H361：A（PubChem 汇总，本轮核对），事实，待原始 SDS 核实（S18、S22）。11) 消费美甲 chrome 粉撒在氧阻粘层上：C（厂商博客，全文已读），厂商声明，不计事实；原句 'The sticky layer is the oxygen inhibition layer.' 不在页面中，页面原句为 'The bond happens at the inhibition layer of a cured wipe top coat.'，实质有支持；迁移为推断（S24）。12) 三氯乙烯为 S01 各实例的溶剂，PubChem 汇总 H350（100%）：A（API 汇总），事实，待 SDS 核实（S29）。13) 单体迁移致色偏：A，事实（S01 第 6 栏原文）。14) ASTM D-4236 对致敏的归类：B（镜像页正文节选），事实（S28）。",
+      "grade": "A/B/C 混合，逐条见文本",
+      "label": "逐条标注",
+      "source_ids": ["S01", "S02", "S03", "S05", "S07", "S09", "S10", "S11", "S12", "S18", "S22", "S24", "S28", "S29"]
+    },
+    "c14_关键未知": {
+      "text": "最可能翻盘的两点：(1) 能否获得非致敏、或可在工厂封闭的光敏体系。若必须用（甲基）丙烯酸酯，DIY 形态按红线 4 淘汰；工厂成品形态需残留单体实测与 D-4236 标签评估（D-4236 以列出致敏成分标注，而非禁用）。S01 所用溶剂三氯乙烯（H350）也使车库方案不成立。(2) 不隔氧时 pepper stain 是否可控：S03 声称 ≥10 wt% 乙酸乙烯酯聚合物为配方级解法，本路线尚未评估。其余未知：连续调可行性、白区暗稳定、色粉耐光、单体迁移色偏的时效、现代货源与单价。",
+      "grade": "—",
+      "label": "未知",
+      "source_ids": ["S01", "S03", "S18", "S28", "S29"]
+    },
+    "c15_判别实验": {
+      "text": "同配方薄膜分为 PET 覆盖（隔氧）、空气直曝与 S03 型乙酸乙烯酯配方三组，用 365–405 nm 紫外灯照 0/5/10/20 min，撒同一干色粉后吹去余粉，比较各组曝光区与未曝光区的留粉量。溶剂不得用 trichloroethylene，需在通风柜内选定替代溶剂。证实：覆盖组或 S03 配方组未曝光区留粉、曝光区不留粉。证伪：覆盖组曝光区仍明显留粉。",
+      "grade": "推断（设计）",
+      "label": "推断",
+      "source_ids": ["S01", "S03", "S09"]
+    }
+  },
+  "c05_免洗核验": {
+    "验收": {
+      "1_喷后免洗": "?：水洗免除、无湿显影（✓ 的部分）；但底线 1 字面要求'无需水洗或任何额外处理步骤'。本路线撒粉后需清除余粉（S01 实例 I，棉签）并层压透明可光聚合层后硬化（S01 第 2 栏），属额外处理步骤，按字面不计 ✓（原 ✓（有条件）已改为 ?）。",
+      "2_白区停得住": "?：未曝光区保持粘性，靠色粉选择性附着；环境光下失粘或吸粉（雾底）无数据。已读专利未记载过曝定型对白区的作用。",
+      "3_成色留得住": "?：色粉靠层压层固定；色粉牢度与层压膜耐光性均无数据。",
+      "4_少量喷液": "?（不适用）：路线无喷液步骤，字面不触发；按'不计通过'处理，待裁定。",
+      "5_底材不变形": "?：未测；层压膜厚可能影响拼插，PET 与纸基的变形行为未知。",
+      "6_安全前置": "✗（DIY/车库形态）；?（工厂封装形态）。DIY 形态：丙烯酸酯致敏（S10、S11、S12），S01 配方溶剂 TCE 为 H350（S29），车库通风有限（红线 4）。工厂形态：致敏物可按 ASTM D-4236 列出标注（S28），不构成直接淘汰；需残留单体实测与 D-4236 标签评估后才能重评。"
+    },
+    "说明": "干式无水洗，但路线不属喷停止剂类；底线 1 与 4 的字面口径需裁定。本修订版对底线 1 改为 ?，底线 4 记为不计通过。"
+  },
+  "verdict": {
+    "status": "观察线",
+    "reasons": [
+      "机制干式，已由 1969 年 DuPont 专利（S01，第 1–6 栏）一手证实；S01 实例给出具体配方与分层曝光参数（碳弧秒级）。这是本次核查中最接近'无水洗'的化学路线之一。",
+      "无现售介质（范围限定的负结果）；可得方案只能从专利重配，而专利配方含（甲基）丙烯酸酯单体与三氯乙烯溶剂，二者均与安全红线冲突。",
+      "底线 6 分形态：DIY 形态不通过（丙烯酸酯致敏 S10、S11、S12；PubChem 汇总 TMPTA/TPO 的 CMR 类通报；TCE 的 H350）。工厂形态为 ?：致敏物可按 D-4236 列出标注（S28），不构成直接淘汰，需残留单体实测。",
+      "氧阻致 pepper stain 为已记录的失效模式（S03）。隔氧手段有三：覆盖膜或甘油（S09），以及 S03 声称的配方级路线（≥10 wt% 乙酸乙烯酯聚合物，实例未读）。前版遗漏了第三种。",
+      "调子为半色调网点（S01、S02、S03），与产品'单色相深浅渐变'的连续感目标不一致；连续调无证据。",
+      "白区稳定、成色耐光、拼图底材适配均无数据，底线 2、3、5 无法判 ✓；底线 1 因层压步骤字面不计 ✓。"
+    ],
+    "red_line_hits": [
+      "红线 4（家庭或车库小量操作的现实安全性）：DIY 配制与涂布路线命中（丙烯酸单体致敏；S01 溶剂三氯乙烯 H350；通风有限）。UV 曝光步骤另需 UV 防护。仅工厂封装成品的形态未判定命中，需残留单体与致敏数据。",
+      "红线 1、2 未命中：本路线不含铁氰化钾、亚铁氰化钾与重铬酸盐。",
+      "红线 3：S01 实例的蓝色为 C.I. Pigment Blue 15（酞菁蓝），非普鲁士蓝；S02 的商品 Cromalin cyan 色粉化学名未给出，故对商品色粉只能记为未验证，而非确定未命中。",
+      "注记：旧版需求书 v0.5 §5 把 Pellet 显影剂写成铁氰化钾的已知错误，不影响本路线（本路线为干式，无碱性显影步骤）。",
+      "裁定条件：若限定为学生自配单体或按 S01 配方自涂，判淘汰；若限定为工厂封装，且能证明残留单体可控并通过底线 6（含 D-4236 标签），可升为保留（bench）。"
+    ]
+  },
+  "baseline_challenges": [
+    {
+      "round": "轮5",
+      "old_claim": "Cromalin（1972）：丙烯酸类粘性光聚合物约 0.2 mil，夹于聚酯与 PP 之间；UV 使其由粘性变为玻璃态；干色粉选择性附着；层压定型（note B，来源 photopolymer.com 等）",
+      "agree": "agree",
+      "my_evidence": "机制一致：US 3,649,268（1969 申请）给出干式 tack-change 与层压封层（S01，A）。'free radical generating, addition polymerization initiator' 与 actinic 光源原文已核对（第 3 栏）。'玻璃态'措辞仅见 S06（B）。0.2 mil 厚度仅见于 S06（B），未核。",
+      "strength": "我方 A（一手专利，原文核对）强于旧 B（行业页）；厚度与「丙烯酸类」仍为 B 或未验证"
+    },
+    {
+      "round": "轮5",
+      "old_claim": "US 4,376,158：约 20 s、500 W 汞灯、距 0.5 m 曝光；15% TSP 显影后水洗；Cromalin cyan 色粉（note B；report B 节）",
+      "agree": "agree",
+      "my_evidence": "数字全部属实：实例 2 为 about 20 seconds、500 watt mercury vapor lamp、about 0.5 m、15% trisodium phosphate、水洗、Cromalin cyan toner（S02，A，第 10 栏原文核对）。受让人为 Keuffel & Esser（首页著录项核对）。结构是正性萘醌二叠氮光刻胶碱显影露出压敏胶，属湿法变体，不是 DuPont 干式 tack 转换层，轮5 把它归入 Cromalin 同系只部分成立。",
+      "strength": "我方一手全文（A）与旧一手摘录一致；分类存在分歧"
+    },
+    {
+      "round": "轮5",
+      "old_claim": "proofing.de：Cromalin 已被数字打样取代（2026-10-18 抓取）；轮5 另称 2005 年末仅极小份额（引 2006 白皮书）",
+      "agree": "agree",
+      "my_evidence": "2026-11-01 重读 proofing.de 原文，「Today, Cromalin no longer plays a role in proof production」一致（S07，B）。2005 年份额数据来自白皮书，本次未核。",
+      "strength": "同为 B 级且一致；2005 份额数据未验证"
+    },
+    {
+      "round": "轮5",
+      "old_claim": "当前无现售 Cromalin 膜或色粉（negative finding）",
+      "agree": "agree",
+      "my_evidence": "WebSearch（2026-11-01，第 3 次）未查得现售干式打样膜或色粉，结论与轮5 一致，但范围限于英文网页检索。",
+      "strength": "C 级负结果，范围有限；未能加强或削弱旧结论"
+    },
+    {
+      "round": "轮5",
+      "old_claim": "3M Matchprint 等剥离式变体亦已停产（report B 节）",
+      "agree": "unverified",
+      "my_evidence": "本次未查得 Matchprint 的停产信息（WebSearch 第 3 次间接覆盖，未命中）。",
+      "strength": "无证据"
+    },
+    {
+      "round": "轮5",
+      "old_claim": "G2 推断：tack 梯度 → 连续调（pass*）",
+      "agree": "disagree",
+      "my_evidence": "两份 DuPont 专利描述的是半色调网点复制（S02 实例 2 的 half-tone；S03 的 tone value 与 dot gain）；S01 实例亦为 halftone positive。已读栏中未见连续梯度成色的证据，旧推断应降为 unknown/weak。",
+      "strength": "我方 A（直接描述复制方式）强于旧推断（无证据）"
+    },
+    {
+      "round": "轮5",
+      "old_claim": "G1 推断：干式、免洗，pass",
+      "agree": "agree",
+      "my_evidence": "Cromalin 型流程（S01）无水洗，但撒粉后需清除余粉并层压透明光聚合层后硬化（S01 第 2、4 栏），按底线 1 字面为 ?。湿法变体（S02 实例 1、2）不属本路线。",
+      "strength": "A 一致（水洗免除）；底线 1 字面口径为 ?"
+    },
+    {
+      "round": "轮5",
+      "old_claim": "G4 货架期 unknown/weak（tack 衰减、积尘）",
+      "agree": "agree",
+      "my_evidence": "同意 weak/unknown；S03 记载薄层氧阻致 pepper stain，是轮5 未列出的具体失效模式。S01 实例 III 记载单体迁移致色偏，亦为轮5 未列的失效模式。货架期数据仍为零。",
+      "strength": "A 补充两种失效模式；货架期仍未知"
+    },
+    {
+      "round": "轮5",
+      "old_claim": "G6 推断：UV 丙烯酸酯 ≈ 美甲凝胶化学，garage 可做（pass）",
+      "agree": "disagree",
+      "my_evidence": "消费美甲与 UV 树脂的 A 级文献显示 (meth)acrylate 致敏已在消费人群出现（S10、S11、S12）；隔氧需额外覆盖（S09）。garage 可做仅限工厂封装样品的曝光与撒粉。",
+      "strength": "我方 A（PubMed 摘要）强于旧推断"
+    },
+    {
+      "round": "轮5",
+      "old_claim": "G7 推断：丙烯酸单体需谨慎但无特殊毒性（pass）",
+      "agree": "disagree",
+      "my_evidence": "PubChem 汇总（A-API，本轮复核）：TMPTA 含 H317、H351，并有 H360 通报；HEMA 含 H334；HDDA、IBOA 含 H317；TPO 含 H361（95.3%）与 H360Fd。另 S01 配方溶剂 TCE 为 H350（100%）。与「无特殊毒性」矛盾。",
+      "strength": "我方 A（API 汇总，非原始 SDS）强于旧推断"
+    },
+    {
+      "round": "轮5",
+      "old_claim": "G5 推断：约 20 s UV 即满足 ≤30 min（pass）",
+      "agree": "unverified",
+      "my_evidence": "20 s 为 500 W 汞灯、0.5 m 的历史实例（S02）；S01 碳弧分层曝光为 2½–5 s（第 4–6 栏）。两者对应 mJ/cm² 均未知；消费灯剂量无标定。不能由此推出 30 min 窗口内可行。",
+      "strength": "旧数字可复核（A）；迁移到消费灯未验证"
+    },
+    {
+      "round": "轮5",
+      "old_claim": "G3 推断：成色留得住 pass（颜料稳定）",
+      "agree": "unverified",
+      "my_evidence": "未查得色粉牢度数据；S02 未给色粉化学名（第 10 栏）；本次未检索光牢度。",
+      "strength": "无证据"
+    },
+    {
+      "round": "轮5",
+      "old_claim": "successive exposures for CMYK with registration and lamination（report B 节）",
+      "agree": "agree",
+      "my_evidence": "S01 第 2 栏：重复层压-曝光-剥离-撒粉步骤可得多色图像（A），实例 I 为四色 halftone positive。",
+      "strength": "A 一致"
+    },
+    {
+      "round": "轮5",
+      "old_claim": "剥离式干膜光聚合物未见独立消费路线（negative finding）",
+      "agree": "agree",
+      "my_evidence": "本次 WebSearch 与 PubMed 检索未发现消费级剥离式干膜调色产品；仅见相机即时胶片与激光干粉膜，二者都不是调色介质。",
+      "strength": "C 级负结果，一致（范围有限）"
+    }
+  ],
+  "sources": [
+    {
+      "id": "S01",
+      "title": "US 3,649,268 Chu & Cohen（DuPont），Process for forming images by photohardening and applying a colorant",
+      "url": "https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/3649268",
+      "type": "A 一手专利",
+      "access": "curl 全文 PDF（扫描件，人工读图，第 1–6 栏；2026-11-01 复核）",
+      "date": "授权 1972-03-14；申请 1969-02-05",
+      "quote": "selectively raises the stick temperature of those areas receiving the radiation"
+    },
+    {
+      "id": "S02",
+      "title": "US 4,376,158 Spechler（Keuffel & Esser），Color-proofing method",
+      "url": "https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/4376158",
+      "type": "A 一手专利（湿法正性光刻胶变体）",
+      "access": "curl 全文 PDF（扫描件，人工读图，第 1–10 栏；首页著录项复核）",
+      "date": "授权 1983-03-08；申请 1981-10-21",
+      "quote": "exposed for about 20 seconds through a half-tone color separation negative"
+    },
+    {
+      "id": "S03",
+      "title": "US 5,952,151 Sondergeld（DuPont），Photopolymerizable mixture exhibiting low oxygen sensitivity for the production of color proofs",
+      "url": "https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/5952151",
+      "type": "A 一手专利",
+      "access": "curl 全文 PDF（扫描件，人工读图，第 1–2 栏；2026-11-01 复核）",
+      "date": "授权 1999-09-14；申请 1997-09-05（DE 优先权 1996-09-18）",
+      "quote": "remains tacky and picks up toner even in the exposed areas"
+    },
+    {
+      "id": "S04",
+      "title": "US 4,229,518 Gray & Kuchta（DuPont），Photohardenable elements with a non-tacky matte finish",
+      "url": "https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/4229518",
+      "type": "A 一手专利",
+      "access": "curl 全文 PDF（仅第 1 页摘要与著录项）",
+      "date": "授权 1980-10-21；申请 1976-07-08",
+      "quote": "dusted with a powdered material capable of rendering the layer non-tacky"
+    },
+    {
+      "id": "S05",
+      "title": "US 4,077,830 Fulwiler（Tapecon），Laminate and method for protecting photographic element",
+      "url": "https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/4077830",
+      "type": "A 一手专利（非 Cromalin 工艺专利；照相底片用 UV 透过型保护层压）",
+      "access": "curl 全文 PDF（扫描件，第 1 页摘要与附图；2026-11-01 复核）",
+      "date": "授权 1978-03-07；申请 1976-01-27",
+      "quote": "The adhesive transmits a major portion of incident ultra violet light"
+    },
+    {
+      "id": "S06",
+      "title": "photopolymer.com：Imaging（Cromalin 机制说明）",
+      "url": "https://www.photopolymer.com/imaging",
+      "type": "B 专题或行业说明页",
+      "access": "curl 全文 HTML（2026-11-01 读取；本轮未重读）",
+      "date": "2026-11-01 读取",
+      "quote": "changed the polymer's state from tacky and rubbery to glassy and non-tacky"
+    },
+    {
+      "id": "S07",
+      "title": "proofing.de 词典：Cromalin",
+      "url": "https://www.proofing.de/lexicon/prefix:cro/",
+      "type": "B 行业词典",
+      "access": "curl 全文 HTML（2026-11-01 读取，原文核对）",
+      "date": "2026-11-01 读取",
+      "quote": "Today, Cromalin no longer plays a role in proof production"
+    },
+    {
+      "id": "S08",
+      "title": "PMID 41515779：氧阻聚层对牙科粘接剂粘接强度的系统综述",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/41515779/",
+      "type": "A 同行评审综述（PubMed 摘要）",
+      "access": "API（PubMed efetch 摘要）",
+      "date": "2025（PubMed 记录）；DOI 与期刊字段不一致，待核",
+      "quote": "the presence of an oxygen-inhibited layer led to an increased bond strength"
+    },
+    {
+      "id": "S09",
+      "title": "PMID 40430687：Au 纳米棒/UDMA-TEGDMA 自支撑薄膜（甘油覆盖隔氧）",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/40430687/",
+      "type": "A（PubMed 摘要，本轮复核原文）",
+      "access": "API（PubMed efetch 摘要）",
+      "date": "2025（PubMed 记录）；DOI 与期刊字段不一致，待核",
+      "quote": "Glycerol serves as a cover layer to shut out oxygen during photopolymerization"
+    },
+    {
+      "id": "S10",
+      "title": "PMID 42485568：「epoxy UV」树脂的娱乐性接触性皮炎（Contact Dermatitis）",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42485568/",
+      "type": "A（PubMed 摘要，病例系列，n=3；本轮复核原文）",
+      "access": "API（PubMed efetch 摘要）",
+      "date": "2026",
+      "quote": "a new hidden source of sensitization to (meth)acrylates"
+    },
+    {
+      "id": "S11",
+      "title": "PMID 42816063：指甲化妆品 (meth)acrylate 组成变化 2023–2026（Contact Dermatitis）",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42816063/",
+      "type": "A（PubMed 摘要，成分统计；本轮复核数字）",
+      "access": "API（PubMed efetch 摘要）",
+      "date": "2026",
+      "quote": "HEMA decreased from 65.4% to 16.5%"
+    },
+    {
+      "id": "S12",
+      "title": "PMID 41779758：化妆指甲产品相关假银屑样甲营养不良综述",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/41779758/",
+      "type": "A（PubMed 摘要，综述；本轮复核原文）",
+      "access": "API（PubMed efetch 摘要）",
+      "date": "2026",
+      "quote": "triethylene glycol dimethacrylate, hydroxyethyl acrylate, and hydroxyethyl methacrylate were the most common"
+    },
+    {
+      "id": "S13",
+      "title": "PMID 42825032：克罗地亚牙科从业者丙烯酸酯反应问卷研究（Acta Stomatologica Croatica）",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42825032/",
+      "type": "A（PubMed 摘要，横断面自报问卷）",
+      "access": "API（PubMed efetch 摘要；本轮未复核）",
+      "date": "2026",
+      "quote": "affecting 65% of dental professionals/students"
+    },
+    {
+      "id": "S14",
+      "title": "PMID 42222452：凝胶与 hybrid 美甲安全性综述",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42222452/",
+      "type": "A（PubMed 摘要，综述）",
+      "access": "API（PubMed efetch 摘要；本轮未复核）",
+      "date": "2026",
+      "quote": "Allergic contact dermatitis was reported in six publications"
+    },
+    {
+      "id": "S15",
+      "title": "PMID 38110536：UV 美甲烘干机对人角质形成细胞活力的影响",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/38110536/",
+      "type": "A（PubMed 摘要，体外研究；本轮复核 365–405 nm 与 4/20 min）",
+      "access": "API（PubMed efetch 摘要）",
+      "date": "2023（PubMed 记录）；期刊字段与 DOI 前缀不一致，待核",
+      "quote": "for 20 min decreased by 35% (p < 0.0001)"
+    },
+    {
+      "id": "S16",
+      "title": "PMID 38557455：UV 美甲灯与皮肤恶性肿瘤风险的系统综述",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/38557455/",
+      "type": "A（PubMed 摘要，系统综述）",
+      "access": "API（PubMed efetch 摘要；本轮未复核）",
+      "date": "2024",
+      "quote": "there is limited consensus in the literature on the risk of skin malignancy"
+    },
+    {
+      "id": "S17",
+      "title": "PMID 39934090：UV/LED 美甲灯辐射健康影响范围综述",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/39934090/",
+      "type": "A（PubMed 摘要，范围综述）",
+      "access": "API（PubMed efetch 摘要；本轮未复核）",
+      "date": "2025（PubMed 记录）；DOI 与期刊字段不一致，待核",
+      "quote": "identified 17 articles, including 12 studies and 5 case reports"
+    },
+    {
+      "id": "S18",
+      "title": "PubChem CID 27423：三羟甲基丙烷三丙烯酸酯（TMPTA，CAS 15625-89-5）GHS 分类",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/27423",
+      "type": "A（API，PubChem 汇总 ECHA C&L 通报，非原始 SDS）",
+      "access": "API（pug_view；2026-11-01 本轮复核 H 语句与百分比）",
+      "date": "2026-11-01 读取",
+      "quote": "H351: Suspected of causing cancer；H317: May cause an allergic skin reaction"
+    },
+    {
+      "id": "S19",
+      "title": "PubChem CID 13360：甲基丙烯酸 2-羟乙酯（HEMA，CAS 868-77-9）GHS 分类",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/13360",
+      "type": "A（API 汇总）",
+      "access": "API（pug_view；本轮复核 H334）",
+      "date": "2026-11-01 读取",
+      "quote": "H334: May cause allergy or asthma symptoms or breathing difficulties if inhaled"
+    },
+    {
+      "id": "S20",
+      "title": "PubChem CID 25644：1,6-己二醇二丙烯酸酯（HDDA，CAS 13048-33-4）GHS 分类",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/25644",
+      "type": "A（API 汇总）",
+      "access": "API（pug_view；本轮复核）",
+      "date": "2026-11-01 读取",
+      "quote": "H317 (>99.9%): May cause an allergic skin reaction"
+    },
+    {
+      "id": "S21",
+      "title": "PubChem CID 639970：丙烯酸异冰片酯（IBOA）GHS 分类",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/639970",
+      "type": "A（API 汇总）",
+      "access": "API（pug_view；本轮未复核）",
+      "date": "2026-11-01 读取",
+      "quote": "H317 (46.5%): May cause an allergic skin reaction"
+    },
+    {
+      "id": "S22",
+      "title": "PubChem CID 166480：TPO（CAS 75980-60-8）GHS 分类",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/166480",
+      "type": "A（API 汇总）",
+      "access": "API（pug_view；本轮复核）",
+      "date": "2026-11-01 读取",
+      "quote": "H361 (95.3%): Suspected of damaging fertility or the unborn child"
+    },
+    {
+      "id": "S23",
+      "title": "PubChem CID 70355：1-羟基环己基苯基酮（Irgacure 184，CAS 947-19-3）GHS 分类",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/70355",
+      "type": "A（API，页面无 H 语句）",
+      "access": "API（pug_view；本轮未复核）",
+      "date": "2026-11-01 读取",
+      "quote": "（页面未返回 H 语句，不作低危结论）"
+    },
+    {
+      "id": "S24",
+      "title": "Nashly Nails 博客：IceGel 粉体 chrome 指南（2026）",
+      "url": "https://www.nashlynails.com/blogs/news/icegel-powders-chrome-sunset-aurora-complete-guide",
+      "type": "C 商业供应商博客（厂商声明）",
+      "access": "curl 全文 HTML（2026-11-01 读取，约 26,600 字符；research 原记为搜索摘录，原句不在页面中）",
+      "date": "2026（页面标注 Jul 13, 2026）",
+      "quote": "The bond happens at the inhibition layer of a cured wipe top coat."
+    },
+    {
+      "id": "S25",
+      "title": "Studer 等，2003，Prog. Org. Coat.：CO2 惰化克服 UV 丙烯酸酯涂层的氧阻聚 Part I（Crossref 题录）",
+      "url": "https://api.crossref.org/works/10.1016/s0300-9440(03)00120-6",
+      "type": "A 题录（无摘要）",
+      "access": "API（仅题录）",
+      "date": "2003",
+      "quote": "Overcoming oxygen inhibition in UV-curing of acrylate coatings by carbon dioxide inerting, Part I"
+    },
+    {
+      "id": "S26",
+      "title": "Llorente 等，2021，Polymer J：氧耐受 thiol-ene 与丙烯酸酯自由基光聚合比较（Crossref 题录）",
+      "url": "https://api.crossref.org/works/10.1038/s41428-021-00520-z",
+      "type": "A 题录（无摘要）",
+      "access": "API（仅题录）",
+      "date": "2021",
+      "quote": "Exploring the advantages of oxygen-tolerant thiol-ene polymerization over conventional acrylate free radical photopolymerization"
+    },
+    {
+      "id": "S27",
+      "title": "CPSC 新闻稿：Chronic hazard guidelines for art materials（1992-09-17）",
+      "url": "https://www.cpsc.gov/Newsroom/News-Releases/1992/Safety-Commission-Finalizes-Chronic-Hazard-Guidelines-For-Art-Materials-And-Other-Hazardous-Substances",
+      "type": "A 政府一手（新闻稿，全文已读）",
+      "access": "curl 全文 HTML（2026-11-01 读取；原记为搜索摘录）",
+      "date": "1992-09-17",
+      "quote": "The U.S. Consumer Product Safety Commission (CPSC) voted today to codify ASTM D-4236, a standard on the labeling of hazardous art materials required by the Labeling of Hazardous Art Materials Act (LHAMA) of 1988."
+    },
+    {
+      "id": "S28",
+      "title": "ASTM D4236-94(2016) 镜像页（LHAMA 美术材料标签实践；standards.iteh.ai，非 ASTM 官方）",
+      "url": "https://standards.iteh.ai/catalog/standards/astm/82dddbfc-e883-42d4-a632-fcec4b4e07d2/astm-d4236-94-2016",
+      "type": "B 标准镜像页（正文节选已读，非 ASTM 官方原文）",
+      "access": "curl 全文 HTML（镜像页正文节选，2026-11-01 读取；原记为搜索摘录）",
+      "date": "2016 版（镜像页记 30-Nov-2016）",
+      "quote": "Precautionary labels covered by this practice are intended for adult usage and does not assure completely the safe use of an art product."
+    },
+    {
+      "id": "S29",
+      "title": "PubChem CID 6575：三氯乙烯（trichloroethylene）GHS 汇总（S01 各实例溶剂）",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/6575",
+      "type": "A（API 汇总，非原始 SDS）",
+      "access": "API（pug_view；2026-11-01 读取）",
+      "date": "2026-11-01 读取",
+      "quote": "H350 (100%): May cause cancer"
+    }
+  ],
+  "negative_findings": [
+    {
+      "query": "直接读取 patents.google.com/patent/US4376158A/en（两次 curl）",
+      "scope": "Google Patents 单件页面",
+      "result": "被限流（Sorry 页面，提示自动化查询），未读；改用 USPTO image-ppubs PDF 全文，已读。"
+    },
+    {
+      "query": "Justia patents/4376158；freepatentsonline 4376158",
+      "scope": "patents.justia.com；freepatentsonline.com",
+      "result": "Justia 返回 JavaScript 人机验证页；FPO 返回 SSL 连接错误；均未读，不绕过。"
+    },
+    {
+      "query": "WebSearch（第 1 次）：DuPont Cromalin process patent tacky photopolymer dry toner color proofing exposure lamination",
+      "scope": "英文网页检索，1 次",
+      "result": "未返回 DuPont 原始 Cromalin 工艺专利正文。其中 Fulwiler US 4,077,830 被搜索摘要列为相关专利，经读取其实是 Tapecon 的保护层压膜，不是 Cromalin 工艺专利。工艺专利改由 USPTO PDF 直接读取 US 3,649,268。"
+    },
+    {
+      "query": "Crossref：oxygen inhibition free radical photopolymerization acrylate（及 surface tackiness 变体）",
+      "scope": "api.crossref.org 题录与摘要",
+      "result": "命中 Studer 2003、Llorente 2021、Kim 2012（Polymer）等，但 Crossref 中无摘要，仅题录（S25、S26）；Elsevier 与 ACS 全文不可读，未取得氧阻聚动力学的一手数值。"
+    },
+    {
+      "query": "PubMed：oxygen inhibition layer 与 photopolymer / acrylate / tacky 组合",
+      "scope": "PubMed 标题与摘要",
+      "result": "命中仅为牙科复合树脂的氧阻聚层文献（如 PMID 41515779），无印刷或打样场景命中。"
+    },
+    {
+      "query": "PMC 综述检索：oxygen inhibition layer review",
+      "scope": "PMC esearch（review[pt] 过滤）",
+      "result": "返回结果与主题无关（如甲烷氧化、催化剂等），不采用。"
+    },
+    {
+      "query": "WebSearch（第 3 次）：dry toner peel-apart color proof film discontinued Cromalin Matchprint Kodak Approval replacement still available 2025",
+      "scope": "英文网页检索，1 次",
+      "result": "无 Cromalin、Matchprint、Kodak Approval 在售或停产信息；仅返回即时 peel-apart 相机胶片与激光干粉膜（非打样介质）。结论：未发现现售干式调色介质（范围限定）。"
+    },
+    {
+      "query": "WebSearch（第 4 次）：Labeling of Hazardous Art Materials Act ASTM D-4236 CPSC art materials chronic hazard adult use label",
+      "scope": "英文网页检索，1 次",
+      "result": "返回 CPSC 新闻稿与 ASTM D4236 镜像页摘要；本轮已全文读取两者（见 S27、S28）。ASTM 官方原文与 16 CFR 原文仍未读。"
+    },
+    {
+      "query": "PubChem：1-羟基环己基苯基酮（Irgacure 184）GHS 分类",
+      "scope": "PubChem pug_view（CID 70355）",
+      "result": "页面未返回 H 语句，未判定为低危，列为未知。本轮未复核。"
+    },
+    {
+      "query": "Cromalin 色粉（cyan toner）现售与价格",
+      "scope": "本轮未专门检索，仅由 WebSearch 第 3 次间接覆盖",
+      "result": "未查得现售信息与价格；价格全部未验证。"
+    },
+    {
+      "query": "色料耐光（Cromalin pigments lightfastness）",
+      "scope": "本轮未检索",
+      "result": "未查得数据。注意：这是未检索，不是结论性负结果。"
+    },
+    {
+      "query": "3M Matchprint 停产日期",
+      "scope": "仅由 WebSearch 第 3 次间接覆盖",
+      "result": "未查得；轮5 所称 Matchprint 停产未验证。"
+    },
+    {
+      "query": "ECHA 对 TMPTA 等物质的 C&L 与 SVHC 页面",
+      "scope": "echa.europa.eu（brief 列明的 403 名单）",
+      "result": "未读，依 PubChem 汇总（S18–S22）。"
+    },
+    {
+      "query": "本轮核查：ASTM D4236 官方原文（astm.org）",
+      "scope": "未访问；仅读镜像页 standards.iteh.ai 正文节选",
+      "result": "镜像页与 ASTM 官方版本的一致性未核；16 CFR 1500.14 原文未读。"
+    },
+    {
+      "query": "本轮核查：IBOA（CAS、H 语句）与 Irgacure 184（CID 70355）H 语句",
+      "scope": "PubChem pug_view 未复核",
+      "result": "未复核，维持原记录；Irgacure 184 仍不判低危。"
+    },
+    {
+      "query": "本轮核查：S03 第 3 栏以后的实例；S01 第 7 栏以后与权利要求",
+      "scope": "US 5,952,151 第 3 栏以后；US 3,649,268 第 7 栏以后未读",
+      "result": "S03 的 PVAc 配方实例数据未核，只记专利声称；S01 后段的溶剂替代与 UV 限定未核。"
+    },
+    {
+      "query": "本轮核查：WebSearch",
+      "scope": "本轮核查未使用",
+      "result": "0 次。"
+    }
+  ],
+  "key_unknowns": [
+    "工厂封装成品的残留（甲基）丙烯酸酯单体量与致敏性：决定红线 4 与底线 6 工厂形态能否由工厂边界解决",
+    "不隔氧（空气直曝）时 pepper stain 的程度；S03 声称的 ≥10 wt% 乙酸乙烯酯配方路线在本路线是否可行（实例未读）",
+    "未曝光白区在室内光与长期存放下的失粘与吸粉速度（底线 2）；单体迁移致色偏（S01 实例 III）的时效",
+    "连续色调是否可行：已读栏中只见网点",
+    "色粉与封层的耐光性（底线 3；只报数据，不换算年限）",
+    "ASTM D-4236 官方版本与 16 CFR 原文（镜像页已读，见 c11）",
+    "替代溶剂：S01 各实例用三氯乙烯（H350），车库可用的替代溶剂未查",
+    "现代可购货源与单价（本次未检索价格）"
+  ],
+  "discriminating_experiment": {
+    "one_liner": "同配方薄膜分为 PET 覆盖（隔氧）、空气直曝与 S03 型（≥10 wt% 乙酸乙烯酯聚合物）三组，用 365–405 nm 紫外灯照 0/5/10/20 min，撒同一干色粉后吹去余粉，比较各组曝光区与未曝光区的留粉量：覆盖组或 S03 配方组未曝光区留粉、曝光区不留粉即证实干式 tack 转换；覆盖组曝光区仍明显留粉即证伪。",
+    "design_sketch": "材料：4–10 μm 的 TMPTA 或 HDDA（或 S01 型 TEGDMA）配 1–2% 光引发剂（类型待定）涂层，刮涂于 PET 上。溶剂须在通风柜内选定，替代 trichloroethylene（S01 所用，H350，不得用于本实验或车库方案）。仅在通风柜内配制与涂布，佩戴丁腈手套与护目镜。分组：A 组以 PET 覆盖隔氧；B 组空气直曝；C 组以甘油覆盖（S09）；D 组 S03 型配方（≥10 wt% 乙酸乙烯酯聚合物，按 S03 实例复配，待核）。曝光：365–405 nm LED 灯，0/5/10/20 min，并以未曝光样品作对照。撒干色粉后吹去余粉，扫描仪测留粉密度。对照另设：未曝光样品在室内光下放置 24 h 与 7 d，测白区稳定（底线 2）。判据：A 组或 D 组未曝光区与曝光区留粉密度比显著大于 1 即为证实；B 组曝光区留粉而 A 组不留粉即说明氧阻聚为主要失效模式。车库适用范围：曝光与撒粉（使用已封装样品）；丙烯酸单体配制与涂布不宜在车库或通风不足处进行。"
+  },
+  "new_routes_spotted": [
+    {
+      "name": "氧阻聚粘层作为干色粉受体（消费美甲 chrome 粉式）",
+      "why": "与 Cromalin 形成反向机制：利用未固化表层作粉受体，可能提供不依赖隔氧膜的消费级替代；来源为 C 级商业博客（本轮全文读取，原句不在页面中，实质有支持），需一手核实。",
+      "lead_url": "https://www.nashlynails.com/blogs/news/icegel-powders-chrome-sunset-aurora-complete-guide"
+    },
+    {
+      "name": "热粘着温度转换后撒粉（stick temperature 型）",
+      "why": "S01 指出曝光可提高 stick temperature；S02 背景引用 US 3,060,024（Burg，1962，DuPont）为「光照后加热显影 + 颜料转印」的 tack 转换（S02 背景栏原文已核对），已过期，原文未读；与路线 D（光热）有交叉。",
+      "lead_url": "https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/3060024"
+    },
+    {
+      "name": "光二聚体撒粉成像（Phlipot 系）",
+      "why": "S01 背景引用 Phlipot US 3,236,647（光二聚体撒粉），属于不同光化学（二聚而非聚合），原文未读。",
+      "lead_url": "https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/3236647"
+    },
+    {
+      "name": "粉末消粘形成哑光面（反向用粉）",
+      "why": "S04 用粉末使粘性顶涂层失粘并形成哑光面，是「粉作为防粘剂」的用法，与本路线相反；仅记录。",
+      "lead_url": "https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/4229518"
+    },
+    {
+      "name": "甘油等非挥发隔氧覆盖的光固化薄膜（工艺支持，非新路线）",
+      "why": "S09 用甘油覆盖隔氧制备丙烯酸酯薄膜，可作为车库可行的低成本隔氧方法，服务于本路线的判别实验。",
+      "lead_url": "https://pubmed.ncbi.nlm.nih.gov/40430687/"
+    },
+    {
+      "name": "配方级隔氧：乙酸乙烯酯聚合物 binder（S03 型，≥10 wt%）",
+      "why": "S03 声称在光聚合混合物中加入至少 10 wt% 乙酸乙烯酯均聚物或共聚物可显著降低氧敏感性，可替代覆盖膜；研究原稿未收录。实例未读，只作专利声称。",
+      "lead_url": "https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/5952151"
+    }
+  ],
+  "search_budget_used": {
+    "websearch": 4,
+    "curl_reads": 7
+  },
+  "reconciliation_log": [
+    {"item": "c01 '引发剂类型与单体化学式在已读源中未给出'", "change": "改为引用 S01 实例 I 与实例 III 的配方（TEGDMA、MMA 聚合物、咪唑基二聚体光引发剂、MBT、香豆素、TCE；TMPTM）；HABI 类归属标为推断", "why": "research 只读 S01 第 1–2 栏即下结论；S01 第 4、6 栏有完整配方，原陈述被反驳。"},
+    {"item": "c01 '由粘性橡胶态转为玻璃态'", "change": "降为 B 级，归 S06；A 级已读栏无该措辞", "why": "未能证实 A 级归属。"},
+    {"item": "c02 S01 摘要引文 'colorant adheres only to the underexposed areas'", "change": "改为原文措辞 'material which adheres only to the underexposed areas'（摘要）并附第 2 栏正文", "why": "原引文为释义，语义一致。"},
+    {"item": "c03 曝光条件", "change": "补入 S01 碳弧分层约 2½–5 s、后曝光 30 s、S01 第 4 栏光源清单；'消费灯 4–20 min 落在窗口内'改为未验证", "why": "research 未引用 S01 曝光数据；无剂量标定，推断不成立。"},
+    {"item": "c04 '毛刷或棉签清除'", "change": "保留棉签（S01 实例 I 原文），毛刷标为未见于已读栏", "why": "部分引文属实，部分未在已读栏中。"},
+    {"item": "c05 底线 1 '✓（有条件）'", "change": "改为 ?", "why": "层压封层与余粉清除属额外处理步骤，字面不满足底线。"},
+    {"item": "c05 底线 6 '✗（当前证据）'", "change": "拆分：DIY/车库形态 ✗；工厂封装形态 ?", "why": "D-4236 以列出致敏成分标注处理致敏物（S28），不禁用；全路线一刀切过严。"},
+    {"item": "c06 (3) '整面过曝……干式路线源中未见明文'", "change": "删去'未见明文'；改为 S01 明文后曝光（第 2 栏）与实例 30 s 后曝光（第 6 栏）；定型机理保留为推断", "why": "被 S01 原文反驳。"},
+    {"item": "c06 (2) S05 UV 透过压敏胶", "change": "加注 S05 为照相底片保护层压，跨应用推断", "why": "防止把跨应用数据当作本路线数据。"},
+    {"item": "c07 隔氧与白区", "change": "补入 S03 的 ≥10 wt% 乙酸乙烯酯聚合物声明（专利声称，实例未读）；补入 S01 单体迁移色偏", "why": "研究遗漏 S03 配方级路线与 S01 的稳定性失效记录。"},
+    {"item": "c09 '未发现现涂配方'", "change": "改为：已读源未见面向用户的现涂产品；存在 S01 实验室涂布配方（含 TCE，6 ft/min）", "why": "S01 第 4 栏为可参考的涂布配方，原表述不准确。"},
+    {"item": "c10 受体仅列纸基", "change": "补入 S01 第 3 栏受体范围（almost any material...）；S05 厚度注明为照相底片数据", "why": "原文范围不完整；S05 归属需标明。"},
+    {"item": "c11 'TMPTA 与 TPO 的 CMR 类通报未核实'（verdict.reasons 第 5 条）", "change": "改为：已核 PubChem 汇总（TMPTA H351/H360；TPO H360Fd/H361），仍非原始 SDS", "why": "本轮已在 pug_view 核到。"},
+    {"item": "c11 安全法规未涉及 S01 溶剂", "change": "新增三氯乙烯 PubChem 汇总（H350 100%、H341、H336 等，S29）及对红线 4 的影响", "why": "research 遗漏 S01 各实例的溶剂。"},
+    {"item": "c11 / c14 'D-4236 对致敏的归类（原文未读）'", "change": "改为证实：镜像页正文节选中慢性效应含 allergenic sensitization，标签须列出致敏成分；研究 c14 与 key_unknowns 中删去该未知项", "why": "原为未读，现已读镜像页正文。"},
+    {"item": "c11 '注明不适合儿童'", "change": "改为未能证实；保留 WARNING 与儿童误用考虑", "why": "S28 要求考虑儿童可预见误用并在适当时加远离儿童警示，未见强制字样。"},
+    {"item": "c11 PPE 行", "change": "补充 UV 防护（皮肤与眼睛）", "why": "曝光步骤使用 UV 灯；S15 显示 365–405 nm 照射 20 min 使体外角质细胞活力降低 35%。"},
+    {"item": "c13 第 11 条 S24 原句 'The sticky layer is the oxygen inhibition layer.'", "change": "原句不在页面中，改为页面原句 'The bond happens at the inhibition layer of a cured wipe top coat.'；等级仍 C，标为厂商声明", "why": "引文不存在；实质有支持。"},
+    {"item": "S24 访问等级", "change": "由搜索摘录升为 curl 全文（仍为 C 级）", "why": "全文已读。"},
+    {"item": "S27、S28 访问等级与引文", "change": "升为 curl 全文；S28 引文字面改为 does not", "why": "字面核对。"},
+    {"item": "新增 S29（PubChem CID 6575，三氯乙烯）", "change": "加入来源表与 c11、c13、c14、c15", "why": "核查新发现的 S01 溶剂风险。"},
+    {"item": "c14 关键未知", "change": "删去已解决的 'D-4236 致敏归类'；加入 S03 配方路线、TCE 替代溶剂、单体迁移时效", "why": "与核查结果一致。"},
+    {"item": "c15 判别实验与 discriminating_experiment", "change": "增加 TCE 禁用、替代溶剂与 S03 配方组", "why": "原设计未定溶剂且漏掉 S03 路线。"},
+    {"item": "红线 3 '本路线不含普鲁士蓝'", "change": "对 S01 实例（酞菁蓝 C.I. Pigment Blue 15）记为未命中；对商品 Cromalin cyan 记为未验证", "why": "S02 未给商品色粉化学名，不能确定未命中。"},
+    {"item": "verdict.status 与 reasons", "change": "保持 观察线；明确 DIY 形态淘汰、工厂形态底线 6 为 ?；补入 S03 配方路线与 TCE", "why": "与核查证据一致。"},
+    {"item": "baseline G1、G4、G5、G7、轮5 机制 与 G2 的 my_evidence", "change": "依核查结果补充：G1 底线 1 字面为 ?；G4 增加单体迁移；G5 增加 S01 碳弧秒级曝光；G7 增加 S29", "why": "与修订后的 columns 保持一致。"},
+    {"item": "negative_findings", "change": "保留原记录；新增本轮 ASTM 官方原文未核、IBOA 与 Irgacure 184 未复核、S03 与 S01 后段未读、本轮 WebSearch 0 次", "why": "记录核查范围。"},
+    {"item": "search_budget_used", "change": "未改（研究原记录：WebSearch 4，curl 7）；本轮核查 WebSearch 0 次，记录于 dry_photopolymer.verify.json", "why": "避免覆盖原研究的预算记录。"},
+    {"item": "未变更项", "change": "c08 不做年限换算；无'无专利、无侵权'结论；避光不算停止；铁氰化钾与亚铁氰化钾未混写；价格全部标未验证；c12 停产依据保留", "why": "核查通过，无需改动。"}
+  ]
+}

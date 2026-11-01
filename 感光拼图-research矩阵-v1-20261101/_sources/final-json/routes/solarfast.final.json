@@ -1,0 +1,319 @@
+{
+  "key": "solarfast",
+  "name_zh": "Jacquard SolarFast / Lumi Inkodye 光敏染料（leuco / vat 类）",
+  "name_en": "Jacquard SolarFast / Lumi Inkodye photosensitive dyes (leuco or vat type)",
+  "status": "核查后修订版（2026-11-01）；价格与库存均为页面读取日期的未验证信息；S17 不可读",
+  "columns": {
+    "c01_成像机制": {
+      "text": "事实：UV 或日光使 SolarFast 在纤维或纸上显色；厂商 SDS 标注化学族为 Vat Dye（S06，已核对）；配方为商业秘密，光化学物种未公开。事实（创始人陈述）：SolarFast 源自 Inkodye 配方（S10，已核对）。Wikipedia 称 Inkodye 为 photo-reactive vat dye，化学与靛蓝类 vat 染料相关（S11，B，已核对）；该条目引用 US2936276（Lyman，1960）为其专利来源（S11，B，已核对）。推断（类比专利，非 SolarFast 本身）：1937 年 US2082178A 写道，leuco vat 染料的硫酸酯盐与 N-亚硝基芳基羟胺盐经反应（或混合）制得光敏产物，材料中的 vat 染料在光照后 'is re-formed on exposure to light'（S13，A，已核对）；1980 年 US4202662A 写道，光照时稳定用的铵（醋酸铵）被移除、游离酸再生（S14，A，已核对）。未验证：SolarFast 是否走上述任一机制；配方与光化学物种无一手数据。",
+      "grade": "A（SDS 化学族、S10 创始人陈述、专利原文已核对）；机制细节为推断",
+      "label": "事实：化学族 Vat Dye，源自 Inkodye 配方（创始人陈述）；推断：机制与专利同类；未验证：SolarFast 具体光化学物种",
+      "source_ids": ["S06", "S10", "S11", "S13", "S14"]
+    },
+    "c02_成像极性与色调": {
+      "text": "正像：曝光区显色，遮光区（负片或物体阴影）的未显色染料洗去后呈白色（S02，已核对：'Anything that casts a shadow will produce an image'）。单色相，厂商列 14 色（100 Golden Yellow 至 113 Black；S04、S06 已核对）。每色深浅可连续变化（S02 原文 'continuous tone photographs'，已核对）。多色可叠印或混色，混色结果难以预测（S03，已核对）。多色图像需逐层制作、逐层曝光与逐层洗：厂商示例为 Blue、Red、Golden Yellow、Black，每层'wash, dry and then print the next color'（S05，已核对）。Black 为多色混合物，色相依底材、曝光时间与条件而变（S03，已核对）。",
+      "grade": "A（厂商文件已核对）",
+      "label": "事实",
+      "source_ids": ["S02", "S03", "S04", "S05", "S06"]
+    },
+    "c03_曝光条件": {
+      "text": "光源：日光为主；厂商称 11:00–15:00 为最佳时段，阴天时间加倍（S02、S03，已核对）。UV 光源可用：S03 列曝光机、sun lamp（太阳灯）、grow light、高能黑光灯，但厂商不给时间，需按灯的 UV 输出自测（S03，已核对）。时长（日光，S04 图表，文件修订 2014-06-30，已核对）：Golden Yellow、Orange、Burnt Orange、Scarlet、Red、Violet、Purple、Blue、Brown 为 10–20 分钟；Teal、Green、Avocado、Sepia 为 12–24 分钟；Black 为 10–30 分钟。说明页称 Black 最长约 1 小时（S02，已核对）；Dharma 称约 1.5 小时（S01，已核对）；来源冲突，未解决。与 30 分钟目标的关系（推断）：除 Black 外，厂商图表上限均不超过 24 分钟，在 30 分钟内可达成，但取决于天气与光源；Black 的上限为 30 分钟或更长，不稳定满足目标。剂量（mJ/cm²）未给。透光材料：普通玻璃与纯亚克力可透 UV（S02 称纯亚克力 'can be used... just like glass'）；博物馆级 UV 过滤玻璃及多数 Plexiglass 类亚克力会挡 UV（S02、S03，已核对）。",
+      "grade": "A（厂商数据，已核对；条件依赖天气与光源）；与目标关系为推断",
+      "label": "事实；与目标关系为推断",
+      "source_ids": ["S01", "S02", "S03", "S04"]
+    },
+    "c04_显影或成像后处理": {
+      "text": "水洗是必需的后处理（S02、S01，已核对）：热水加 SolarFast Wash（产品 902）。机洗：最热水温、'3-4 capfuls or 24ml'，并在最热循环中进行（S02，已核对；24 mL 为厂商原文，非研究者换算）；黄色系以及 Blue、Teal、Green、Avocado、Sepia 可能需要两次循环（S03、S04，已核对）。手洗：最热自来水，'1-2 capfuls or 10ml'，持续流动至少 10 分钟（S02，已核对）；FAQ 写 10–15 分钟（S03，已核对）。木材：须未封、未处理；先去除涂层，用海绵擦洗，热水浸没至少 10 分钟（S05，已核对）。无加热定影步骤（S05 与 S03 已核对：不需热定、蒸汽或化学定影）。Inkodye 历史上可用熨烫、280°F 烘烤或蒸汽（Steaming）显影（S09，已核对）；SolarFast 厂商未列此步骤。",
+      "grade": "A（厂商原文，已核对）",
+      "label": "事实（厂商原文）",
+      "source_ids": ["S01", "S02", "S03", "S04", "S05", "S09"]
+    },
+    "c05_免洗真实程度": {
+      "text": "名义免洗、实际要洗。UV 直接显色，但厂商明确写 'Color development is not complete until after washing'（S02，已核对），且 'After exposing, you must remove the undeveloped dye by washing'（S02，已核对）。洗涤是显色收尾的一部分，不是可选项。对六条底线的逐条判定见顶层 c05_免洗核验。",
+      "grade": "A（厂商原文，已核对）",
+      "label": "事实；六条底线判定见 c05_免洗核验",
+      "source_ids": ["S01", "S02", "S03", "S04"]
+    },
+    "c06_停止机制": {
+      "text": "没有天然化学停止；厂商文件（S02、S03，已核对）唯一描述的停止方式是洗出未曝光染料。'暗处、阴凉处保存，必要时'（S02，已核对，无时限）只是暂停，不算停止。候选（均未验证）：(a) 碱性 arresting bath。US4202662A（S14，已核对）在曝光后、橙色出现时浸入 NaOH 停止浴（约 2 g/L），可放置至多 24 小时；该法为浸泡而非喷涂。专利以 'arresting' 一词描述该浴，指终止显色；促显色的是另一步，即 60°C 碱液煮洗（S14 实施例）。推断（未验证）：喷碱是否使未曝光区显色，专利未涉及，无证据。碱性方案在共享背景中属于'须单独评估对已成色的影响'的项目，不是红线本身。(b) 封层：未查到任何 SolarFast 封层测试。(c) 红线注意：US4202662A 的组合物含 ammonium dichromate（实施例 4 g/L；权利要求 4 选配，已核对）。重铬酸盐出局，因此该专利的组合物不可照搬。选配的 ammonium thiocyanate 与 ammonium vanadate 也需单独评估（钒化合物不在红线清单，但需 SDS）。",
+      "grade": "A（厂商、专利已核对）；候选为未验证；US4202662A 含重铬酸盐为红线命中",
+      "label": "事实（无化学停止）；事实（专利 arresting 用词）；推断（喷碱显色）未验证；未验证（候选）",
+      "source_ids": ["S02", "S03", "S14"]
+    },
+    "c07_白区稳定性": {
+      "text": "洗前：厂商称等待过久会丢失高光，未洗染料越来越难除去（S03，已核对）。Dharma 转载称部分红色与紫色 'strike so fast in the light'，走出门时就已开始显色（S01，已核对）。这说明未洗染料在日光下继续反应（A，厂商陈述）。室内弱光（低 UV）下的白区稳定性：未查到数据（未验证）。新增（原稿遗漏）：Golden Yellow、Green、Teal、Avocado、Sepia、Black 瓶中即为黄色，'makes it particularly difficult to achieve truly white highlights'（S03，已核对），S04 亦写 'Highlights appear yellow and will whiten with washing'（已核对）。洗后：厂商称成品 'soft to the touch, lightfast and permanent'（S02，已核对）；'light areas still developing after washing' 即未洗净（S03，已核对）。洗后白区的长期稳定性无独立数据。",
+      "grade": "A（厂商陈述，已核对）；室内光与长期数据未验证",
+      "label": "事实（厂商陈述）；推断（室内光慢速显色）；未验证（长期）",
+      "source_ids": ["S01", "S02", "S03", "S04"]
+    },
+    "c08_成色耐光": {
+      "text": "只报数据本身：厂商耐光与水洗牢度评级（序数，无标准号、无测试条件；S04 已核对）。耐光：Golden Yellow、Brown、Sepia 为 Excellent，其余色（含 Black）为 Very Good。水洗牢度：Golden Yellow 为 Good，其余为 Very Good。未找到加速耐光的数值实测（ISO / AATCC 等）。不换算年限。",
+      "grade": "A（厂商序数评级，已核对）",
+      "label": "事实（厂商数据，无独立测试）",
+      "source_ids": ["S04"]
+    },
+    "c09_预涂介质货架期": {
+      "text": "出厂预涂：未见。SolarFast 以液体染料售卖，由用户自涂（S02、S03，已核对）。SolarFast Film 为负片膜，不是预涂纸（S02、S03，已核对）。染料瓶：未开封约 2 年（阴凉、暗处），开封后 6 个月；冷藏可延长，勿冻（S03，已核对）。现涂稀释液寿命：未知（厂商允许稀释至 1:1 水，未给稀释后寿命；S03，已核对）。已涂布未曝光底材：'store coated fabric or paper in a dark place'（S03，已核对），无时限。",
+      "grade": "A（厂商原文，已核对）",
+      "label": "事实；现涂混合液寿命为未知",
+      "source_ids": ["S02", "S03"]
+    },
+    "c10_底材适配": {
+      "text": "厂商适用（S03 已核对，S01 转载同文）：棉、麻、大麻、羊毛、丝、帆布、皮革、竹、木材（天然纤维）。艺术纸：S02 建议 Arches、Reeves 等厚重艺术纸（已核对）。木材须未封、未处理、浅色（S05，已核对）。不适用：合成纤维、塑料、橡胶、封闭木材、玻璃和金属（S03、S01，已核对）。拼图底材（灰板、夹板、再生纸板）：厂商无数据（未验证）。吸湿变形：推断为风险，依据是湿涂与热水浸没都在纸与木上进行；厂商在过湿时警告斑点与冷凝（S03，已核对）。封层兼容：未查到。",
+      "grade": "A（适用范围，已核对）；底材变形为推断",
+      "label": "事实；推断；未验证（灰板）",
+      "source_ids": ["S01", "S02", "S03", "S05"]
+    },
+    "c11_安全与法规": {
+      "text": "染料 SDS（Jacquard/RGS，修订 2021-08-17，第三方站 hlstore.com 托管副本，未经厂商原件核对）：OSHA HCS 未分类，无象形图；EU 不满足分类标准，但列出 P 语句（P264、P280、P337+P313 等）。第 11 节：大鼠经口 LD50 50,000 mg/kg；眼刺激（Irritant）；皮肤致敏：不预期；IARC、NTP、OSHA、ACGIH 均为否（S06，已核对）。第 9 节：pH 8.5–9.5（1% 溶液，20°C）（S06，已核对），即染料本身为弱碱性。旧版 SDS（修订 2015-10-08，第三方站托管）写 'CAUTION! Contains mildly alkaline solution'，第 9 节 pH ±10.2，归类为 'Colored Pigments'（S07，已核对）。两版碱性描述一致；差异在分类与化学族描述（2015 为 Colored Pigments，2021 为 Vat Dye）。洗剂 SDB（德文，产品 902 'SOLARFAST WASH'，修订 2018-02-28，modulor.de 托管副本）：H315、H319、H302、H412；标注 'Sensibilisierung der Atemwege/Haut GHS 1B'，但列出的 H 语句中无 H317 或 H334，内部不一致，需厂商确认（S08，已核对）。第 3 节另有 'Clean Up Solution' 字样（S08，已核对）。CAS：染料第 3 节为 Proprietary Dye Mixture，未列 CAS；但同一 SDS 第 15 节 RTK 列表点名 Magnesium carbonate（CAS 546-93-0）与 Xanthan Gum（CAS 11138-66-2），第 12 节列 Sodium chloride（CAS 7647-14-5）的水生毒性数据；与配方的对应关系未说明（S06，已核对）。成人美术材料可达性（ASTM D-4236 / LHAMA）：未查到认证记录（未验证）。红线：配方保密，铁氰化物与重铬酸盐不能由 SDS 排除；机制依据专利 US4202662A 含重铬酸盐（见 c06）。",
+      "grade": "A（SDS 一手，第三方托管副本，已核对）；ASTM / LHAMA 未验证",
+      "label": "事实（SDS 原文）；未验证（法规可达性）",
+      "source_ids": ["S06", "S07", "S08", "S14", "S16"]
+    },
+    "c12_供应与成本": {
+      "text": "价格（页面读取日期 2026-11-01，全部标未验证）：Dharma Trading（S01，价格表已核对）：4 oz 列价 $9.99，1–4 件 $6.95，5–9 件 $6.75，10+ 件 $6.35；8 oz 列价 $14.99，1–4 件 $10.39，5–9 件 $10.10，10+ 件 $9.55。页面写 'special pricing through July 1st'，年份未标，视为未确认促销。Jacquard 线上商店（S15，2026-11-01 读取）：4 fl oz 标示 'Sale price $9.99'（促销价，非列价）；规格另有 8 fl oz 与 1 gal，页面注明 '1 gallon sizes may require up to 10 business days... if not currently in stock'。原稿所称 '$124.99' 未在 S15 或 S01 中找到，撤回（未能证实）。洗剂 902 价格本轮未读取（R1 的 $5.24 为旧页面，未复核）。在售状态：页面列出，库存未验证。Inkodye：厂商已停产（S10 已核对）。'部分套件显示缺货' 的依据 S17（freestylephoto.com）不可读（403 类，未绕过），撤回为未验证。",
+      "grade": "A（页面列出，已核对）；价格与库存未验证",
+      "label": "事实（页面列出）；价格未验证",
+      "source_ids": ["S01", "S10", "S15"]
+    },
+    "c13_证据等级": {
+      "text": "关键主张（逐条）：(1) 14 色、100–113 SKU，A，事实（S04、S06 已核对）。(2) 洗出是必需步骤，'显色在洗后才完成'，A，事实（S02、S03、S01 已核对）。(3) 应在湿态曝光，干后淡色，A，事实（S02、S03 已核对）；旧 R1 的'曝光前必须干燥'（pburch，B/C）被推翻。(4) 曝光时长：S04 为 10–24 分钟，Black 10–30 分钟，A，事实（文件 2014 年，已核对）；S02 与 S01 对 Black 分别给出 1 小时与 1.5 小时，冲突未解。(5) 染料 SDS 为 OSHA 未分类，第 11 节列眼刺激，A，事实（S06 已核对）。(6) 洗剂 SDB 为 H315、H319、H302、H412，标注 1B 致敏，A，事实（S08 已核对；H317/H334 缺失，内部不一致，待厂商确认）。(7) Inkodye 已停产，A，事实（S10、S09 已核对）；SolarFast 源自 Inkodye 配方，A，创始人陈述（S10）。(8) 耐光与水洗牢度为厂商序数评级，A，事实（S04 已核对）。(9) 'odorless, kid-friendly' 为厂商营销语（S01 已核对）；'best-in-class 家用安全' 为推断，无比较数据，不可采信。(10) 碱性 arresting bath 具终止显色作用，A（专利，S14 已核对）；对 SolarFast 的适用性未验证。(11) 染料本身 pH 8.5–9.5（S06 第 9 节），A，事实（已核对）。",
+      "grade": "逐条见 text（每条已标 A/B/C 与 事实/推断/未验证）",
+      "label": "事实 / 推断 / 未验证 已逐条标注",
+      "source_ids": ["S01", "S02", "S03", "S04", "S05", "S06", "S08", "S09", "S10", "S11", "S14"]
+    },
+    "c14_关键未知": {
+      "text": "最可能翻盘的 1–2 个：(1) 是否存在不靠浸泡的停止方式（碱性喷、封层或其他）且不改变已成色。目前无一手证据；只有 US4202662 的浸泡型碱浴，且该专利组合物含重铬酸盐。(2) SolarFast 的配方与光化学物种未公开。S10 称其源自 Inkodye 配方，S11 称 Inkodye 化学与 vat 染料相关，且引用 US2936276（含氰化物盐与强酸介质）；但无证据指向存在可用的停止化学。",
+      "grade": "未知",
+      "label": "未验证",
+      "source_ids": ["S10", "S11", "S12", "S14"]
+    },
+    "c15_判别实验": {
+      "text": "在灰板底材上涂 SolarFast，用负片日光曝光 15 分钟，然后分别做：(a) 碱性或封层喷雾不洗（若用碱，须先排除重铬酸盐配方），(b) 对照 10 分钟热水 + Wash。放置 72 小时在室内光下，测白区 ΔE 与底材翘曲。若 (a) 白区 ΔE 超过阈值或底材翘曲，则路线淘汰。",
+      "grade": "设计",
+      "label": "判别实验",
+      "source_ids": []
+    }
+  },
+  "c05_免洗核验": {
+    "验收": {
+      "1_喷后免洗": "✗ 理由：厂商要求热水加 SolarFast Wash 洗出未显色染料，手洗至少 10 分钟（S02 已核对；S01 原文 'wash out undeveloped dye with SolarFast Wash and HOT water, agitating vigorously'）。直接一手依据。",
+      "2_白区停得住": "✗ 理由：没有化学停止；未洗染料在日光下继续显色（S01，部分红与紫，已核对）；厂商称等待过久会丢失高光（S03，已核对）。依据为厂商陈述（A），室内弱光速率未知。",
+      "3_成色留得住": "? 理由：原稿的 ✓ 所依据的是洗后成品的耐光评级（S04，Very Good 至 Excellent，序数，无标准号）。该底线的判据是'停止剂不使图案明显褪色'，本路线没有停止剂，评级不回答这一问题。降为未验证。",
+      "4_少量喷液": "✗（以缺席证据为据）理由：S02 中的 'spray bottle or airbrush' 指施染料（已核对）；所列范围内未发现喷雾停止剂，唯一官方停止为热水洗涤（S02、S03 已核对）。判定依据为缺席，不是直接测试。",
+      "5_底材不变形": "? 理由：无变形或翘曲数据。湿涂与热水浸没的步骤已核对（S02、S05），但'变形风险高'是推断。原稿的 ✗ 降为未验证，不作为判定失败的依据。",
+      "6_安全前置": "? 理由：染料 SDS 为 OSHA 未分类，第 11 节列眼刺激（S06 已核对）；洗剂 SDB 为 H315、H319、H302、H412，标注皮肤/呼吸道致敏 GHS 1B（S08 已核对，H317/H334 缺失待确认）；ASTM D-4236 / LHAMA 未查（未验证）。"
+    },
+    "说明": "按修订后的六条底线：第 1、2 条有厂商一手依据不通过；第 4 条以缺席证据不通过；第 3、5 条降为未验证；第 6 条未决。第 1 条单独足以使本路线在免洗规格下淘汰。原稿的 ✓（第 3 项）与推断性的 ✗（第 5 项）已撤回。"
+  },
+  "verdict": {
+    "status": "淘汰（免洗规格下）；核查后维持",
+    "reasons": [
+      "底线 1 不通过（已证实）：官方要求热水加 SolarFast Wash 洗出未显色染料，显色在洗后才完成（S02、S01、S03 已核对）。此条单独足以在免洗规格下淘汰。",
+      "底线 2 不通过（已证实）：没有化学停止；未洗染料在日光下继续显色，等待过久会丢失高光（S01、S03 已核对）。",
+      "底线 4 不通过（缺席证据）：所列范围内未发现喷雾停止剂，唯一官方停止为热水洗涤（S02、S03）。判据依据为缺席，不是直接测试。",
+      "底线 3 未验证（原判 ✓ 已降级）：依据的是洗后成品的耐光评级（S04），不回答'停止剂不使图案褪色'。",
+      "底线 5 未验证（原判推断不通过已降级）：无变形数据，风险为推断。",
+      "底线 6 未决：染料 SDS 未分类但列眼刺激；洗剂有 H 语句与 1B 致敏标注，H317/H334 缺失待确认；ASTM D-4236 / LHAMA 未查。",
+      "作为对照保留：这是目前一手资料最完整的商品化光敏染料，色域与厂商文件的完整度仍有参考价值。"
+    ],
+    "red_line_hits": [
+      "重铬酸盐（红线命中，针对机制依据）：US4202662A（S14，已核对）的组合物含 ammonium dichromate（实施例 4 g/L；权利要求 4 选配）。本路线不得以该专利组合物为迁移依据，除非另有无重铬酸盐版本。SolarFast 配方本身未证实含重铬酸盐。",
+      "铁氰化钾 + 强酸（未发现，配方保密不能排除）：SDS 第 3 节为 Proprietary Dye Mixture，未列成分；无证据显示含铁氰化物。该结论不是'未命中'，而是'未发现，且配方保密'。",
+      "氰化物盐 + 强酸（新增，需专项评估）：US2936276A（S12，已核对）的光解体系为芳基乙腈氰化物盐，介质 pH ≤1.0。本路线不应在未做 HCN 与强酸专项评估前采用该体系。",
+      "碱性方案（须单独评估，不是红线本身）：NaOH arresting bath（S14）若用于停止，须单独评估对已成色的影响。染料本身 pH 8.5–9.5（S06 第 9 节，已核对）。推断（未验证）：喷碱会使未曝光区显色——专利未涉及。",
+      "普鲁士蓝遇碱（未验证）：本路线非普鲁士蓝体系（未证实，配方保密），需厂商确认。",
+      "小量家庭操作风险（推断，低到中）：染料为眼刺激（S06），洗剂为 H319、H302、致敏 1B（S08）；热水操作。需护目镜与手套。"
+    ]
+  },
+  "baseline_challenges": [
+    {
+      "round": "轮1 C1-3 与轮4 F",
+      "old_claim": "曝光后必须用 SolarFast Wash 与热水洗出未显色染料，停止即洗出（名义免显影实际要洗）",
+      "agree": true,
+      "my_evidence": "厂商原文：'wash out undeveloped dye with SolarFast Wash and HOT water'（S01）；'Color development is not complete until after washing.'（S02）；FAQ 写洗涤至少 10–15 分钟（S03）。",
+      "strength": "强（A，厂商一手原文，已核对）",
+      "verify_result": "证实"
+    },
+    {
+      "round": "轮1 C1-5",
+      "old_claim": "SolarFast 必须在干燥后曝光（来源 pburch.net，二手）",
+      "agree": false,
+      "my_evidence": "厂商 FAQ：'SolarFast works best if exposed while wet'（S03）；指令页：'must be made while the dye is still wet'（S02）。",
+      "strength": "强（厂商一手 A 对二手 B/C，已核对）",
+      "verify_result": "证实"
+    },
+    {
+      "round": "轮1 C1-5",
+      "old_claim": "每色精确曝光时长未取得（Could Not Verify）",
+      "agree": false,
+      "my_evidence": "厂商图表（S04）已核对：多数色 10–20 分钟，Teal、Green、Avocado、Sepia 12–24 分钟，Black 10–30 分钟；S02 称 Black 最长约 1 小时，S01 称约 1.5 小时。来源之间冲突，未解决。",
+      "strength": "中（数据已补齐，Black 有冲突）",
+      "verify_result": "证实（Black 冲突保留）"
+    },
+    {
+      "round": "轮1 C1-7 与 轮4 F 安全",
+      "old_claim": "消费级纺织染料；无致癌类标记（轮1）；'odorless, kid-friendly, best-in-class 家用安全'（轮4）",
+      "agree": false,
+      "my_evidence": "染料 SDS 第 11 节：眼刺激（Irritant），IARC/NTP/OSHA/ACGIH 为否（S06，已核对）；洗剂 SDB：H315、H319、H302、H412，致敏 1B（S08，已核对）。'kid-friendly' 为营销语（S01，已核对）；'best-in-class' 无比较数据。",
+      "strength": "强（A，SDS 对营销语）",
+      "verify_result": "证实"
+    },
+    {
+      "round": "任务给定旧结论",
+      "old_claim": "SDS 温和",
+      "agree": false,
+      "my_evidence": "染料 2021 版 OSHA 未分类，但第 11 节列眼刺激（S06，已核对）。修正：两版 SDS 的碱性描述一致（2021 版 pH 8.5–9.5；2015 版 ±10.2，S06、S07 已核对）；两版在分类与化学族描述上不同（2015 为 Colored Pigments，2021 为 Vat Dye）。洗剂有 CLP 分类（S08，已核对）。'温和'只适用于染料的 OSHA 分类，不适用于整套流程。",
+      "strength": "中（结论成立，但原稿的'两版互相矛盾'理由需修正）",
+      "verify_result": "结论证实；理由修正"
+    },
+    {
+      "round": "轮1 C2",
+      "old_claim": "Inkodye 已停产",
+      "agree": true,
+      "my_evidence": "创始人原话：'Inkodye is no longer in production but you can now find Jacquard SolarFast which was derived from the Inkodye formula'（S10，已核对）；Dharma 页：'Inkodye has closed their doors forever!'（S09，已核对）。",
+      "strength": "强（A）",
+      "verify_result": "证实"
+    },
+    {
+      "round": "轮1 C1-8",
+      "old_claim": "SolarFast Wash 售价 $5.24（jerrysartarama，72 天前更新），仍在售",
+      "agree": false,
+      "my_evidence": "今日读取的 S01、S15 页面列出 SolarFast 染料，未读到 Wash 价格，$5.24 无法复核；在售状态只是页面列出，库存未验证（S15 注明 'if not currently in stock'）。",
+      "strength": "弱（无法复核旧价格）",
+      "verify_result": "未能复核（保持未验证）"
+    },
+    {
+      "round": "轮4 F",
+      "old_claim": "SolarFast 14 色，4 oz 为 $10.39（页面已打开）",
+      "agree": false,
+      "my_evidence": "Dharma 价格表（S01，已核对）：4 oz 1–4 件 $6.95（列价 $9.99）；8 oz 1–4 件 $10.39（列价 $14.99）。$10.39 是 8 oz 价，旧记录有误。14 色（SKU 100–113）确认（S04、S06）。",
+      "strength": "强（A，页面原文）",
+      "verify_result": "证实"
+    },
+    {
+      "round": "轮1 C1 / 轮4 F",
+      "old_claim": "厂商称'耐光与水洗牢度优良'，独立核实未找到",
+      "agree": true,
+      "my_evidence": "厂商评级存在（S04，已核对），但无标准号与测试条件；独立数据仍未找到。仅能作为厂商声明。",
+      "strength": "中（厂商声明）",
+      "verify_result": "证实"
+    },
+    {
+      "round": "轮4 F",
+      "old_claim": "没有 developer spray（无显影喷剂）",
+      "agree": true,
+      "my_evidence": "厂商页与指令页无喷雾显影剂或停止剂。S02 的 'spray bottle or airbrush' 指施染料（已核对）。全网搜索未发现（见 negative_findings，所列范围内）。",
+      "strength": "中（在所列范围内未发现）",
+      "verify_result": "证实（范围内）"
+    },
+    {
+      "round": "轮4 F 补充",
+      "old_claim": "Inkodye 可热显影（熨烫或 280°F 烘烤）",
+      "agree": true,
+      "my_evidence": "Dharma Inkodye 页原文：'Baking the dyed fabric in an oven at 280°F will also develop the colors.'（S09，已核对；原文为 Baking/Steaming，非'蒸煮'）。SolarFast 厂商未列热显影步骤，并写明不需要热定、蒸汽或化学定影（S05，已核对）。",
+      "strength": "中强（零售页转载厂商说明，B 级）",
+      "verify_result": "证实"
+    },
+    {
+      "round": "轮5",
+      "old_claim": "2026 年零售中无免洗太阳印产品",
+      "agree": true,
+      "my_evidence": "本轮未重新搜索（WebSearch 未用）。厂商文件确认官方无喷雾显影或停止剂（S02、S03）。全网与 2026 年范围未复核。",
+      "strength": "中（在所列范围内未发现，本轮未复核）",
+      "verify_result": "未能证实（范围未复核）"
+    }
+  ],
+  "sources": [
+    {"id": "S01", "title": "Jacquard SolarFast - Dharma Trading（产品页，含价格表与使用说明）", "url": "https://www.dharmatrading.com/dyes/jacquard-solarfast-gallon.html", "type": "零售商产品页（转载厂商说明）", "access": "curl全文", "date": "2026-11-01 读取；2026-11-01 复核", "quote": "wash out undeveloped dye with SolarFast Wash and HOT water", "verify_status": "已核对（价格表、引文、'strike so fast'、'special pricing through July 1st'）"},
+    {"id": "S02", "title": "Jacquard Products - SolarFast Instructions（厂商官网）", "url": "https://www.jacquardproducts.com/solarfast-instructions", "type": "厂商原页", "access": "curl全文", "date": "2026-11-01 读取；复核", "quote": "Color development is not complete until after washing.", "verify_status": "已核对（引文、10–24 分钟、Black 1 小时、24 ml、无 24 小时时限）"},
+    {"id": "S03", "title": "SolarFast FAQs and Troubleshooting（Jacquard PDF，修订 09.18.14）", "url": "https://static1.squarespace.com/static/5ac4eb022971149bb6d709d3/t/5b3e5efd70a6ad1509b6f564/1530814206242/SolarFast_FAQs_and_Troubleshooting.pdf", "type": "厂商 PDF", "access": "curl全文", "date": "文件修订 2014-09-18；读取 2026-11-01", "quote": "SolarFast works best if exposed while wet.", "verify_status": "已核对（湿态、高光丢失、黄色底色、弱光、阴天加倍、保存时限缺失）"},
+    {"id": "S04", "title": "SolarFast Exposure and Color Details（Jacquard 图表 PDF，修订 06.30.14）", "url": "https://static1.squarespace.com/static/5ac4eb022971149bb6d709d3/t/5b3e5ee5758d460329cfd2d9/1530814181266/SolarFast+Exposure+and+Color+Detail.pdf", "type": "厂商 PDF", "access": "curl全文", "date": "文件修订 2014-06-30；读取 2026-11-01", "quote": "Black 10-30 minutes", "verify_status": "已核对（逐色时长、耐光/水洗评级、两次循环色）"},
+    {"id": "S05", "title": "SolarFast Tips and Tricks（Jacquard PDF，修订 08.13.13）", "url": "https://static1.squarespace.com/static/5ac4eb022971149bb6d709d3/t/5b3e5f0c6d2a7310cd601f44/1530814220440/SolarFast_Tips+and+Tricks.pdf", "type": "厂商 PDF", "access": "curl全文", "date": "文件修订 2013-08-13；读取 2026-11-01", "quote": "does not need to be heat set, steamed or chemically fixed", "verify_status": "已核对（木材步骤、多色逐层流程、无定影）"},
+    {"id": "S06", "title": "SolarFast Dye GHS SDS（Jacquard/RGS，修订 2021-08-17，第三方站 hlstore.com 托管副本）", "url": "https://hlstore.com/produktfiler/solarfast-dye-ghs-sds-ct5.pdf", "type": "SDS（第三方托管副本）", "access": "curl全文（PDF 文本）", "date": "2021-08-17", "quote": "Not a hazardous substance or mixture. / Eye Irritation: Irritant", "verify_status": "已核对（第 2、3、9、11、12、15 节）；第三方副本，待与厂商核对版本"},
+    {"id": "S07", "title": "SolarFast Dyes SDS（2015 版，第三方站 schoolartsupplies.com.au 托管）", "url": "https://www.schoolartsupplies.com.au/assets/files/SolarFast_DyesColors-SDS.pdf", "type": "SDS（旧版，第三方托管）", "access": "curl全文（PDF 文本）", "date": "2015-10-08", "quote": "CAUTION! Contains mildly alkaline solution.", "verify_status": "已核对（pH ±10.2；'Colored Pigments'）"},
+    {"id": "S08", "title": "SolarFast Wash（产品 902）德文 SDB，修订 28/02/2018（modulor.de 托管副本）", "url": "https://cdn.modulor.de/hazardous/7038229846b865675a47e0617b01d73f.pdf", "type": "SDS（德文 CLP，第三方托管）", "access": "curl全文（PDF 文本）", "date": "2018-02-28", "quote": "H315 Verursacht Hautreizungen / H319 Verursacht schwere Augenreizung.", "verify_status": "已核对（H315、H319、H302、H412；1B 致敏；无 H317/H334）"},
+    {"id": "S09", "title": "Inkodye Usage Instructions - Dharma Trading（转载 Inkodye 说明）", "url": "https://dharmatrading.com/techniques/inkodye.html", "type": "零售商技术页（转载厂商说明）", "access": "curl全文", "date": "2026-11-01 读取", "quote": "Baking the dyed fabric in an oven at 280°F will also develop the colors.", "verify_status": "已核对（原文 Baking/Steaming；'closed their doors forever'）"},
+    {"id": "S10", "title": "Steph Ango - Inkodye（联合创始人个人页）", "url": "https://stephango.com/inkodye", "type": "创始人一手陈述", "access": "curl全文", "date": "2026-11-01 读取", "quote": "Inkodye is no longer in production but you can now find Jacquard SolarFast which was derived from the Inkodye formula", "verify_status": "已核对（共同创立 2009；SolarFast 源自 Inkodye 配方）"},
+    {"id": "S11", "title": "Lumi (company) - Wikipedia（raw wikitext；Inkodye 重定向至此）", "url": "https://en.wikipedia.org/w/index.php?title=Lumi_(company)&action=raw", "type": "百科（B）", "access": "curl全文（wikitext）", "date": "2026-11-01 读取", "quote": "a photo-reactive vat dye that develops its color through exposure", "verify_status": "已核对（chemistry related to indigo；cite patent 2936276）"},
+    {"id": "S12", "title": "US2936276A - Photochemical compositions and processes utilizing salts of para-amino triphenylacetonitriles（Lyman，1960-05-10）", "url": "https://patents.google.com/patent/US2936276A/en", "type": "专利（已失效）", "access": "curl全文", "date": "1960-05-10（公告）", "quote": "converted into a colored compound by raising the pH of said acid medium", "verify_status": "已核对（内容证实；权利要求 5 编号未能确认；含氰化物盐与 pH≤1.0 介质）"},
+    {"id": "S13", "title": "US2082178A - Light sensitive derivatives of vat dyestuffs and a process of preparing them（Ochwat，1937-06-01）", "url": "https://patents.google.com/patent/US2082178A/en", "type": "专利（已失效）", "access": "curl全文", "date": "1937-06-01（授权）", "quote": "re-formed on exposure to light", "verify_status": "已核对（'re-formed on exposure to light' 原文；制法为反应或混合）"},
+    {"id": "S14", "title": "US4202662A - Photographic printing process, and composition and device for use therein（优先权 FR 1974-04-03，公告 1980-05-13，已失效）", "url": "https://patents.google.com/patent/US4202662A/en", "type": "专利（已失效）", "access": "curl全文", "date": "1980-05-13（公告）", "quote": "immersed in an arresting bath containing sodium hydroxide", "verify_status": "已核对（24 小时；NaOH arresting bath；buffering NH4；含 ammonium dichromate；FR2270367B1 为外国优先权）"},
+    {"id": "S15", "title": "SolarFast - Jacquard 线上商店（store.jacquardproducts.com）", "url": "https://store.jacquardproducts.com/products/solarfast", "type": "厂商店铺页", "access": "curl全文", "date": "2026-11-01 读取；价格未验证", "quote": "SolarFast Sale price$9.99（4 fl oz）", "verify_status": "已核对（促销价；无 $124.99）"},
+    {"id": "S16", "title": "Jacquard SDS Sheets（厂商 SDS 页，需表单索取）", "url": "https://www.jacquardproducts.com/sds-sheets", "type": "厂商原页", "access": "curl全文（原稿读取；本轮未复核）", "date": "2026-11-01 读取", "quote": "Safety Data Sheets (SDS) for our products are available upon request.", "verify_status": "原稿读取；本轮未复核；厂商官方 SDS 待索取"},
+    {"id": "S17", "title": "Lumi Inkodye Sunfold Printing Kit - Freestyle Photo（搜索摘录）", "url": "https://www.freestylephoto.com/92000-Lumi-Inkodye-Sunfold-Printing-Kit", "type": "零售商（搜索摘录）", "access": "不可读（域名属本会话不可读清单，403 类；未绕过，未读取）", "date": "搜索日期 2026-11-01；未读取", "quote": "Currently Unavailable（搜索摘要，未核对）", "verify_status": "不可读；'缺货'主张降为未验证，证据等级 C"}
+  ],
+  "negative_findings": [
+    {"query": "SolarFast sun print without washing stop developing fixer spray or skip wash test（WebSearch）", "scope": "全网搜索摘要，含厂商与零售页", "result": "未发现免洗或喷雾停止剂的实践记录；厂商全部要求洗涤。搜索摘要称 Jacquard PDF 允许'暗处存放至 24 小时'，已核对：S02、S03 全文均无时限（S02 写 'if necessary'，S03 写 'in a dark place'）。24 小时的出处很可能是 US4202662A（S14）的 NaOH arresting bath，搜索摘要疑似误归。该说法不成立。"},
+    {"query": "SolarFast SDS hazard CAS（WebSearch）+ 逐份读取 PDF", "scope": "搜索结果中的 SDS 托管页（第三方副本）", "result": "染料第 3 节 CAS 未列（Proprietary）；但第 12、15 节出现 CAS 546-93-0、11138-66-2、7647-14-5，对应关系未说明（已核对）。2021 版 OSHA 未分类；2015 版与 2021 版碱性描述一致。厂商官网 SDS 需表单索取（S16），未直接读到官方 SDS；仅读到第三方托管版。"},
+    {"query": "新竞品 2023–2026 年 sunlight developed fabric dye kit（WebSearch，2 次，含专利关键词）", "scope": "全网搜索摘要（含 USPTO / Google Patents 结果）", "result": "未找到 2023–2026 年的新光敏染料竞品；结果多为 Lumi 旧产品与 1930–1980 年代专利。'未找到'仅指所列搜索范围内；本轮未复核。"},
+    {"query": "patent light-sensitive leuco vat dye sunlight 2023 2024 2025（WebSearch）", "scope": "搜索摘要；未在 Google Patents 做日期过滤", "result": "未找到 2023–2025 年相关专利；关键词范围内找到 1937 年、1960 年、1974–1980 年的失效专利（见 new_routes_spotted）。不能写'无专利、无侵权'。"},
+    {"query": "Crossref API query.bibliographic 'light-sensitive vat dye sunlight leuco'（3 次）", "scope": "Crossref 文献元数据", "result": "连续 429 限流，未取得结果。"},
+    {"query": "PubMed esearch (vat dye) AND (photoreduction OR photochemical OR leuco)", "scope": "PubMed，6 条命中，已取摘要元数据", "result": "6 条均与光敏 vat 染料显色无关（吲哚、染色或光聚合等），未发现相关文献。（本轮未复核）"},
+    {"query": "Wikipedia 'Inkodye'（raw）", "scope": "en.wikipedia.org", "result": "重定向至 Lumi (company)，已读并核对（S11）。该条目引用 US2936276 为 Inkodye 专利来源（原稿未记录）。"},
+    {"query": "1974 年光染色法族 CH611955A5、GB1499402A、DE2514311A1（搜索摘要）", "scope": "搜索摘要，未读全文", "result": "US4202662A 页面仅显示 FR2270367B1 为外国优先权（已核对）。其余三个编号未在 S14 页面中出现，未能证实，降为未验证。"},
+    {"query": "ASTM D-4236 / LHAMA 与 SolarFast（未搜索）", "scope": "未执行", "result": "WebSearch 额度未用于此项；未查 ASTM D-4236 / LHAMA 认证记录；列为未验证。"},
+    {"query": "Jacquard SolarFast 灰板 / 拼图底材 变形测试（未搜索）", "scope": "未执行", "result": "未查到；列为未验证。"}
+  ],
+  "key_unknowns": [
+    "是否存在不靠浸泡的停止方式（喷雾碱、封层或其他），且不改变已成色；目前无一手证据。",
+    "SolarFast 配方与光化学物种未公开；S10 称其源自 Inkodye 配方，S11 称 Inkodye 化学与 vat 染料相关，但未证实其具体机制。",
+    "是否存在不含重铬酸盐的 US4202662A 类组合物版本（未查）。",
+    "US2936276A 光解体系的 HCN 与强酸风险：未做 SDS 级评估。",
+    "SDS 中出现的 CAS 546-93-0（碳酸镁）、11138-66-2（黄原胶）、7647-14-5（氯化钠）是否为配方组分，未说明。不得据此外推碳酸盐中和（该设想仅为 Pellet 体系的单一爱好者设想）。",
+    "洗剂 SDB 的致敏 1B 标注与 H317/H334 缺失是排版问题还是分类遗漏，需厂商确认。",
+    "室内弱光下未洗白区的显色速率：无数据。",
+    "洗后残留染料在成品上的长期白区稳定性：无独立数据。",
+    "灰板或拼图底材的吸湿变形：无数据。",
+    "ASTM D-4236 / LHAMA 与 SolarFast 的认证状态：未查到。",
+    "稀释后混合液的寿命：厂商未给。",
+    "Black 的真实曝光时长（10–30 分钟、约 1 小时、约 1.5 小时三种说法冲突）。"
+  ],
+  "discriminating_experiment": {
+    "one_liner": "在灰板底材上测试：不洗的碱性或封层喷雾组与热水 + Wash 对照组，比较 72 小时室内光下白区 ΔE 与底材翘曲，任一项超阈值即淘汰。若碱组使用 US4202662A 类配方，须先排除重铬酸盐。",
+    "design_sketch": "底材为灰板，每组 3 片；日光负片曝光 15 分钟（或实测颜色达到厂商时长的 90%）；A 组喷碱或封层、不洗；B 组热水 10 分钟 + Wash（对照）；C 组仅曝光不喷不洗（基线）。放置 72 小时在 500 lx 室内光下，每 12 小时测白区 L*a*b* 与 ΔE；测翘曲（平面度）。阈值由团队先定。"
+  },
+  "new_routes_spotted": [
+    {"name": "光致酸生成 / 缓冲盐驱动的 leuco 酯显色（醋酸铵缓冲）", "why": "US4202662A 描述曝光释放酸、缓冲盐被消耗、碱浴终止（S14，已核对）。红线：该专利组合物含 ammonium dichromate（实施例 4 g/L；权利要求 4 选配），须排除重铬酸盐后方可评估；选配的 ammonium thiocyanate 与 ammonium vanadate 需 SDS 评估。仅为线索，未验证。", "lead_url": "https://patents.google.com/patent/US4202662A/en", "red_line": "重铬酸盐（命中，需排除）"},
+    {"name": "芳基乙腈氰化物盐的 UV 光解成色（pH 作为显色开关）", "why": "US2936276A 内容已核对：光解生成无色中间体，升 pH 后转为有色化合物（S12）。Wikipedia（S11，B）引用该专利作为 Inkodye 的专利来源。但体系为氰化物盐加 pH≤1.0 强酸介质，需 HCN 与强酸专项评估后方可考虑。与 SolarFast 的关系未验证。原稿权利要求编号 5 未能确认。", "lead_url": "https://patents.google.com/patent/US2936276A/en", "red_line": "氰化物盐 + 强酸（需专项评估，HCN 风险）"},
+    {"name": "N-亚硝基芳基羟胺盐作为光敏氧化剂的 leuco 酯体系", "why": "US2082178A（1937，已核对）描述 leuco 酯硫酸酯盐与 N-亚硝基芳基羟胺盐反应或混合后，光照使 vat 染料重新形成（S13）。N-亚硝基类物质需查 SDS 危害语句与致突变、致癌数据（未查）。", "lead_url": "https://patents.google.com/patent/US2082178A/en", "red_line": "未评估（N-亚硝基类，需 SDS）"},
+    {"name": "1974 年光染色法族", "why": "US4202662A 的外国优先权 FR2270367B1 已核对（外国优先权 FR7411761A）。CH611955A5、GB1499402A、DE2514311A1 为搜索摘要所述族成员，未能证实，未读全文。", "lead_url": "https://patents.google.com/patent/CH611955A5/cs", "red_line": "未评估"}
+  ],
+  "search_budget_used": {
+    "websearch": 0,
+    "curl_reads": 15
+  },
+  "reconciliation_log": [
+    {"item": "c05 结构", "change": "将嵌套在 c05_免洗核验 列内的对象移到顶层 c05_免洗核验，15 列统一为 text/grade/label/source_ids。", "why": "统一结构，避免列内嵌套破坏下游读取。"},
+    {"item": "c05 第3项（成色留得住）", "change": "✓ 改为 ?（未验证）。", "why": "判据是'停止剂不使图案明显褪色'，本路线无停止剂；依据的洗后耐光评级（S04）不回答该问题，原稿自注'待独立验证'而仍判 ✓。"},
+    {"item": "c05 第5项（底材不变形）", "change": "✗（推断）改为 ?（未验证），不作为判定失败依据。", "why": "无变形数据；风险为推断。"},
+    {"item": "c05 第4项（少量喷液）", "change": "保留 ✗，依据改为缺席证据并注明；'喷'仅指施染料（S02 已核对）。", "why": "判据依据是所列范围内未发现喷雾停止剂，应明示为缺席证据。"},
+    {"item": "c03 透光材料", "change": "'玻璃与部分亚克力会挡 UV' 改为：博物馆级 UV 过滤玻璃与多数 Plexiglass 类亚克力会挡 UV；普通玻璃与纯亚克力可透 UV。", "why": "S02 称纯亚克力与玻璃可用，S03 限定 museum glass；原稿过度泛化。"},
+    {"item": "c03 UV 光源译名", "change": "'日光灯' 改为 sun lamp（太阳灯）。", "why": "原文 sun lamp，'日光灯' 易与荧光灯混淆。"},
+    {"item": "c04 Inkodye 显影措辞", "change": "'蒸煮' 改为 '蒸汽（Steaming）'。", "why": "S09 原文为 Baking/Steaming。"},
+    {"item": "c04 黄色系两次循环", "change": "扩展为 Blue、Teal、Green、Avocado、Sepia 也可能需要两次循环，引用 S03、S04。", "why": "S04 逐色标注；原稿只列黄色系，且引用 S02 不支持该句。"},
+    {"item": "c04 木材", "change": "删去'湿涂'，改为未封、未处理、去除涂层，擦洗，热水浸没至少 10 分钟（S05）。", "why": "S05 木材段未写湿涂。"},
+    {"item": "时长 '10–20 分钟'（浸泡/洗涤）", "change": "改为'至少 10 分钟（S02、S05）；10–15 分钟（S03）'；删去 20 分钟上限。", "why": "所读来源未见 20 分钟上限。"},
+    {"item": "c06 红线分类", "change": "'碱性方案属红线' 改为：碱性须单独评估对已成色的影响（非红线本身）；红线命中是 US4202662A 含重铬酸盐。", "why": "与共享背景的红线定义一致。"},
+    {"item": "c06 推断（喷碱促显色）", "change": "改为未验证；注明专利以 'arresting' 描述 NaOH 浴，促显色的是另一步（60°C 碱液煮洗）。", "why": "专利用词与原推断方向不符。"},
+    {"item": "c06 / red_line 重铬酸盐", "change": "新增：US4202662A 组合物含 ammonium dichromate（实施例 4 g/L；权利要求 4 选配）为红线命中。原稿'重铬酸盐（未涉及）'撤回。", "why": "原稿把'SolarFast 未涉及'与'机制依据专利含重铬酸盐'混为一谈；后者是红线事实。"},
+    {"item": "red_line 'SolarFast 未命中'", "change": "改为'未发现（配方保密，不能排除）'。", "why": "SDS 为 Proprietary，无法排除。"},
+    {"item": "new_routes #2 与 c01（US2936276A）", "change": "新增：氰化物盐加 pH≤1.0 强酸介质，需 HCN 与强酸专项评估；Wikipedia（S11，B）引用该专利为 Inkodye 专利来源。权利要求编号 5 撤回（编号未能确认），内容保留。", "why": "原稿未标 HCN 风险，且遗漏 Inkodye 专利来源线索。"},
+    {"item": "c01 机制线索", "change": "新增：S10 称 SolarFast 源自 Inkodye 配方（创始人陈述）；S11 引用 US2936276。'混合' 改为 '反应（或混合）'（S13 原文）。", "why": "两个直接相关来源未被原稿记录；S13 的制法为反应。"},
+    {"item": "c07 白区", "change": "新增：Golden Yellow、Green、Teal、Avocado、Sepia、Black 瓶中即为黄色，高光难以真白，洗后才会变白（S03、S04）。", "why": "原稿遗漏，与白区稳定性直接相关。"},
+    {"item": "c11 SDS 碱性 '不一致'", "change": "修正：2021 版第 9 节 pH 8.5–9.5（1% 溶液），2015 版 ±10.2；碱性一致。两版差异在分类与化学族描述。", "why": "原稿称 2015 版碱性与 2021 版不一致，与 S06 第 9 节原文不符。"},
+    {"item": "c11 CAS", "change": "'CAS 不公开' 改为：第 3 节未列 CAS；第 12、15 节出现 546-93-0、11138-66-2、7647-14-5，对应关系未明。", "why": "S06 原文。"},
+    {"item": "c11 洗剂 SDB", "change": "补充：标注 1B 致敏但 H 语句中无 H317/H334；第 3 节有 'Clean Up Solution' 字样；需厂商确认。", "why": "S08 原文内部不一致。"},
+    {"item": "c12 '$124.99'", "change": "撤回。", "why": "S15、S01 两页均未找到。"},
+    {"item": "c12 Jacquard 店价格", "change": "'$9.99' 注明为 'Sale price'（促销价）；列出规格 8 fl oz 与 1 gal 及库存注记。", "why": "S15 页面原文。"},
+    {"item": "c12 Inkodye 缺货（S17）", "change": "撤回为未验证；S17 access 改为不可读（403 类，未绕过）；证据等级不高于 C。", "why": "域名属不可读清单。"},
+    {"item": "sources S17 access", "change": "'搜索摘录' 改为 '不可读'。", "why": "全部来源中只有 S17 标为搜索摘录，且不可读；'至少核对 3 个搜索摘录来源' 的要求无法满足。"},
+    {"item": "sources S06、S07、S08", "change": "注明为第三方托管副本，版本待与厂商核对；S16 厂商 SDS 需索取。", "why": "原稿只对 S06 部分注明。"},
+    {"item": "verdict 底线 3、5", "change": "底线 3 由'成立'降为未验证；底线 5 由'推断不通过'降为未验证；底线 4 注明为缺席证据。", "why": "与 c05 修订一致；裁定冲突取更保守一方。"},
+    {"item": "verdict 结论", "change": "维持'淘汰（免洗规格下）'。底线 1 由厂商原文证实，单独足以淘汰。", "why": "核查未推翻结论；只修正证据表述与次要条目。"},
+    {"item": "negative_findings（24 小时）", "change": "反驳：S02、S03 无时限；疑似误归 US4202662A 的 24 小时。", "why": "已核对全文。"},
+    {"item": "negative_findings（CH/GB/DE 族号）", "change": "未能证实；仅 FR2270367B1 为外国优先权已核对。", "why": "S14 页面未出现其余三个编号。"},
+    {"item": "baseline 第 5 条 'SDS 温和'", "change": "结论保留（未温和）；理由修正：两版碱性一致，差异在分类与化学族。", "why": "S06、S07 原文。"},
+    {"item": "baseline 第 12 条（2026 年无免洗产品）", "change": "标为未能证实（范围未复核）。", "why": "本轮未搜索。"}
+  ]
+}

@@ -1,0 +1,233 @@
+{
+  "key": "photothermal",
+  "name_zh": "光热 / 热敏（干银光热显影与光热触发热敏纸）",
+  "name_en": "photothermographic dry silver and photothermal-triggered thermal paper",
+  "status": "淘汰（经典双酚与干银路线）；BPA-free 热敏变体暂缓（未验证，不计入淘汰）",
+  "verifier_note": "本文件为核查后修订版。修订依据见 reconciliation_log 与 photothermal.verify.json。",
+  "columns": {
+    "c01_机制": {
+      "text": "两条子路线。(a) 干银光热显影：曝光使含感光卤化银、有机银盐与还原剂的膜形成潜影，再经热显影（一手专利称加热至 80–140 °C，或 80 °C 以上）把银离子还原为可见银像。光化学物种变化为卤化银光解形成潜影。DVE 为银盐体系是推断：TI-5064 只写 photothermographic 与 IR 敏感，未写成分。(b) 光热触发热敏纸：吸收体（碳、NIR 染料、ITO 等）吸光生热，热超过 leuco 染料与酸性显色剂的熔融阈值后显色。专利 JP2000141892A（一手，已读）描述了吸光显色层升温、省去独立光热层的可擦写热敏纸结构，支持「光→热→显色」链条的存在性；日光能否达到阈值仍是推断。",
+      "grade": "A（a 机制，专利一手）；推断（DVE 银盐归属）；A（b 链条存在性）/ 推断（日光适用性）",
+      "label": "事实（a 机制总体、显影温度）；推断（DVE 银盐归属、b 的日光适用性）",
+      "source_ids": ["S1", "S3", "S4", "S10", "S19", "S20"]
+    },
+    "c02_极性与色调": {
+      "text": "(a) DRYVIEW DVE 为高分辨率灰阶连续调膜（TI-5064 明确，A），TDS 未说明正/负像极性，多色扩展无证据。(b) 热敏为单色或多色 leuco 显色（黑、蓝、红等，Wikipedia，B）；靠剂量与温度可做连续调，但热扩散限制分辨率（推断）。",
+      "grade": "A（a）/ B（b）",
+      "label": "事实（a）；推断（b 分辨率）",
+      "source_ids": ["S1", "S4"]
+    },
+    "c03_曝光条件": {
+      "text": "(a) DVE 是 IR 激光成像仪专用膜，TDS 未给曝光能量或 mJ/cm²，也无日光或 UV 灯条件，与 30 分钟目标无法比较（未知，事实）。搜索摘要称干银敏化需要显著更高的激光能量，但候选专利 US7427467B2 全文未见此句，来源未确认，不作依据（未验证）。(b) 日光辐照度约 1000 W/m² 为常识量级，无来源（未验证）；UV 灯几乎无热（推断，未测量）。30 分钟目标在两者下均未知。",
+      "grade": "A（a 事实：无数据）；未验证（能量数值、日光剂量）；推断（b 热）",
+      "label": "事实/未验证/推断",
+      "source_ids": ["S1", "S15", "S19"]
+    },
+    "c04_显影或成像后处理": {
+      "text": "(a) 干式热显影，无湿化学（TI-5064 称 dry technology，A；5950 手册称 dry laser imaging，A）。热显影温度：TDS 未给；一手专利 US7427467B2 称曝光后加热至 80–140 °C 显影（实施例为 120 °C，20 秒），EP1505436A1 称 80 °C 以上（A）。DVE 自身的具体温度未验证。TDS 亦写明出机时即有少量最终显影。(b) 无独立后处理，曝光与加热合一（推断）。",
+      "grade": "A（无湿化学；80–140 °C 为专利一手）；未验证（DVE 具体温度）",
+      "label": "事实（无湿化学、专利温度）；未验证（DVE 温度）",
+      "source_ids": ["S1", "S2", "S19", "S20"]
+    },
+    "c05_免洗的真实程度": {
+      "text": "修订：两条子路线均无水，但 (a) 热显影 80–140 °C 需要专用热处理器，属额外处理设备步骤。按底线 1「无需水洗或任何额外处理步骤」，记为条件性 ?，不计 ✓。(b) 热源（日光或自热板）未证实。六条底线逐条判定见 c05_免洗核验。",
+      "grade": "A（a）/ B（b）",
+      "label": "事实；评级修订（见 reconciliation_log）",
+      "source_ids": ["S1", "S4", "S19", "S20"]
+    },
+    "c06_停止机制": {
+      "text": "无天然停止步骤。(a) TDS 显示出机后在环境光或观片灯下仍有少量、均匀的密度增加，即初始显影在室光下继续进行（事实，A）。候选：定影类（硫代硫酸盐等）违反免洗；封层或 UV 吸收层未评估；撤热只停热，不停光化学（推断）。避光不算停止。(b) 停止即撤热与冷却，无光化学潜影，封层未评估（推断）。",
+      "grade": "A（a 事实）；推断（b）",
+      "label": "事实+推断",
+      "source_ids": ["S1", "S19"]
+    },
+    "c07_白区长期稳定性": {
+      "text": "(a) TI-5064 原文：出机后环境光下有 virtually undetectable、对图像质量无影响的少量均匀密度增加，充分曝光后为 permanent（A，事实）。按本项严格标准（未成色区喷后不得变色），这一变化使底线 2 判 ✗；但它是一次性的初始显影，不是持续漂移，严重度需实测。(b) 热敏白区稳定靠显色剂与增感剂的熔点阈值。Wikipedia 指出染料在湿热下回到无色晶型，这是褪色而非白区变色（B）。日光加热使白区提前显色为推断，未测。",
+      "grade": "A（a）；B（b）",
+      "label": "事实/推断",
+      "source_ids": ["S1", "S4"]
+    },
+    "c08_成色长期耐光": {
+      "text": "(a) TI-5064：长时间强光或 ≥54.4 °C 热超过 3 小时可能造成图像逐渐变暗（事实，A），无光照剂量数值。(b) 热敏纸：UV 引起褪色，顶涂可减少褪色（B）。两者均无可引用的加速耐光数据。本项只报数据本身，不换算年限。",
+      "grade": "A（a）；B（b）",
+      "label": "事实；未知",
+      "source_ids": ["S1", "S4"]
+    },
+    "c09_预涂介质货架期": {
+      "text": "出厂预涂形态：(a) DVE 未显影膜储存于 4–24 °C、30–50% RH、避射线（TDS，A）；显影后膜存放 16–27 °C、30–50% RH；TDS 仅定性说高温会减少可有效保存的年数，未给年限。(b) 热敏纸出厂涂布，湿热下染料回到无色（B）。BPA-free 木质素/DFX 涂层：论文摘要自报环境条件下稳定超过一年（A-API，自报，正文未读）。现涂形态：用户混合液寿命未知；未检索到用户现涂的干银或热敏混合液资料（未验证）。",
+      "grade": "A（a）；B（b）；A-API（BPA-free 自报）",
+      "label": "事实；未知",
+      "source_ids": ["S1", "S4", "S23"]
+    },
+    "c10_底材适配": {
+      "text": "(a) DVE 膜基为约 7 mil 蓝色聚酯（5950 手册另写可为透明，A），不是纸，不能直接套用纸质拼图底材。(b) 热敏纸为纸基涂布；Wikipedia 的 Thermofax 条目称其复印纸易卷曲（B）。拼图板加热后的吸湿变形为推断，未测。封层兼容性未知。",
+      "grade": "A（a）；B（b）",
+      "label": "事实/推断/未知",
+      "source_ids": ["S1", "S2", "S5"]
+    },
+    "c11_安全与法规": {
+      "text": "(a) 干银体系的银盐、还原剂 SDS 与 ASTM D-4236 核查未完成（未验证）。(b) BPA（CID 6623）PubChem 聚合 ECHA 通知（A-API）：占比项为 H361 (78%)、H360 (19.4%)；H360F 列于汇总但无占比；H317、H318、H335 占比约 99%；H400、H410 为汇总项。BPS（CID 6626）：H360FD (49%)、H360 (16.2%)。CVL（CID 73773，显色剂）：H315、H319（各 45%）、H335（44.1%）；另有 49.1%（109/222 份报告）称不满足 GHS 危害标准。纽约 Suffolk County 自 2014 年 1 月 3 日起禁止热敏收据纸用 BPA（B）。欧盟限制 CELEX:32016R2235 不可读，未验证。PPE 与标签级别未评估。",
+      "grade": "A（GHS，API）；B（法规）；未验证（欧盟、干银 SDS）",
+      "label": "事实/未验证",
+      "source_ids": ["S6", "S7", "S8", "S4", "S18"]
+    },
+    "c12_供应与成本": {
+      "text": "未读取任何价格或库存页面，全部未验证（本核查未访问电商页）。CVL CAS 1552-42-7 经 PubChem 同义词确认（API，2026-11-01），但价格、库存与在售状态仍未验证。DRYVIEW 为医用设备配套膜，无消费端价格。BPA-free 显色剂（Pergafast 201、BTUM、锌水杨酸盐、木质素/DFX）价格未查。",
+      "grade": "未验证（价格与库存）；A-API（CAS 确认）",
+      "label": "未验证",
+      "source_ids": ["S16", "S4", "S6", "S23", "S24"]
+    },
+    "c13_证据等级": {
+      "text": "(1) DRYVIEW DVE 为 IR 敏感、激光曝光的 photothermographic 膜，用于激光成像仪（TI-5064 与 5950 手册）。A，事实。(2) 银盐光化学机制：卤化银潜影、热显影、有机银盐与还原剂（US7427467B2、EP1505436A1，curl全文）。A。「DVE 为银盐体系」：推断，TDS 未写 silver。(3) DVE 出机后环境光下有 virtually undetectable 的均匀密度增加，充分曝光后 permanent。A，事实。(4) 热敏显色剂含 BPA、BPS、BTUM 等。B，事实。增感剂「约 100 °C 为热显色实际下限」仅适用于所举两种醚类增感剂，不能通用；同段称阈值由最低熔点组分决定。B，事实（限定）。(5) PubChem GHS：BPA 占比项为 H361 (78%)、H360 (19.4%)；BPS 为 H360FD (49%)；CVL 为 H315、H319 (45%)、H335 (44.1%)。A（API），事实。(6) Thermofax 为 dry silver 类 IR 碳像热复印，副本不耐久，纸易卷曲。B，事实。(7) 2023–2026 无消费级光热显影产品。负结果，检索范围有限，未验证。(8) 热平衡与侧向扩散尺度。推断，本地计算，参数为假设。(9) 木质素与 DFX 的 BPA-free 热敏显色（Science Advances，DOI 10.1126/sciadv.adw9912，Crossref issued 2026-01-02）。A（API 摘要，正文未读）。论文自报：120 °C 显色密度 0.8–1.1；涂层环境稳定超过一年；雌激素活性比 BPA 低 2–3 个数量级。这些是自报，未核正文。ZME 二手报道为 C。(10) EP1505436A1 摘要要求感光卤化银层先曝光，「仅加热即可成像」与之不符。A，一手摘要。",
+      "grade": "混合：A/B/C/推断/未验证，见条目",
+      "label": "事实/推断/未验证 混合",
+      "source_ids": ["S1", "S2", "S3", "S4", "S5", "S6", "S7", "S8", "S10", "S19", "S20", "S23", "S14"]
+    },
+    "c14_关键未知": {
+      "text": "(1) 显色起点与日光可达温度：Wikipedia 的 100 °C 下限只适用于所举两种醚类增感剂，R5 的 65–70 °C 来源未读，未核。BPA-free 木质素体系在论文中于 120 °C 测显色（自报，未给阈值）。两者均无日光实测。需要热台梯度与日光下纸面测温。(2) 干银体系：显影需 80–140 °C 的专用热处理，日光能否提供这一温度未测（推断，需测量）；曝光增感与室光灰雾风险、30 分钟曝光是否可行，无数据。(3) BPA-free 显色体系在家庭操作下的安全性（ASTM D-4236、LHAMA）与成色稳定性未评估，论文数据为自报。",
+      "grade": "—",
+      "label": "未知",
+      "source_ids": ["S4", "S1", "S19", "S20", "S23"]
+    },
+    "c15_判别实验": {
+      "text": "在纸基涂层（BPA-free 显色剂 + 增感剂 + 碳或 NIR 吸收体）上做热台梯度 60–110 °C，每 5 °C 停留 5 分钟，记录首次可见显色温度；同时用热电偶实测日光下纸面峰值温度。若纸面峰值温度低于实测最低可见显色温度，则日光加热路线证伪。85 °C 只是示例，不作判据。",
+      "grade": "—",
+      "label": "实验设计",
+      "source_ids": []
+    }
+  },
+  "c05_免洗核验": {
+    "验收": {
+      "1_喷后免洗": "? 无水（干式或热式），但 (a) 热显影 80–140 °C 需要专用热处理器，属额外处理设备步骤，按底线 1 原文不计 ✓；(b) 热源（日光或自热板）未证实（事实，S1、S19；推断）",
+      "2_白区停得住": "✗ 干银：TDS 记录出机后室光下的少量均匀增加，厂商称 virtually undetectable，按严格标准判 ✗，严重度待实测（A，S1）。热敏：未测，日光下背景预热为推断，记为 ?",
+      "3_成色留得住": "? 强光或 ≥54.4 °C 超过 3 小时会逐渐变暗（A，S1），无数值；热敏 UV 褪色，顶涂可减轻（B，S4）",
+      "4_少量喷液即可充分停止": "? 不适用：无喷液停止步骤，也无候选，不能判为通过",
+      "5_底材不变形干后可拼合": "? 膜基为聚酯，不适用纸（A，S1）；热敏纸易卷曲（B，S5 历史描述）；拼图板加热未测",
+      "6_安全前置": "✗ 经典 BPA/BPS 显色剂为生殖毒性类：BPA 占比项 H361 (78%)、H360 (19.4%)；BPS H360FD (49%)（A-API，S7、S8）。BPA-free 替代（木质素/DFX 等）与干银化学未评估（?）"
+    },
+    "说明": "判定只依据本轮可读来源。底线 2 与底线 6 的 ✗ 已足以淘汰经典主线与干银主线。底线 1 由 ✓ 改为 ?（热显影为额外处理设备步骤）。其余为 ?，未验证。"
+  },
+  "verdict": {
+    "status": "淘汰（经典双酚热敏路线与干银路线）；BPA-free 热敏变体：暂缓（未验证，不计入淘汰）",
+    "reasons": [
+      "1. 2023–2026 年未发现消费级光热纸或日光热敏显影产品。WebSearch 4 次、Crossref 与维基检索均为负，覆盖范围有限（见 negative_findings）。",
+      "2. 干银光热显影是真实商用技术（DRYVIEW DVE，TDS 修订 2021-06，A），但为医用激光成像仪专用膜。显影需 80–140 °C 热处理（一手专利，A），日光无法直接提供。TDS 记录出机后室光下的少量均匀增加，厂商称 virtually undetectable；按严格白区标准，底线 2 为 ✗，严重度需实测。",
+      "3. 经典热敏路线：PubChem 聚合 GHS 显示 BPA 占比项为 H361 (78%)、H360 (19.4%)，BPS 为 H360FD (49%)，均为生殖毒性类，底线 6 ✗（A-API）。日光能否达到实际显色阈值未证明。Wikipedia 的 100 °C 下限只适用于所举醚类增感剂，不能通用；R5 的 65–70 °C 未核。",
+      "4. BPA-free 木质素/DFX 体系（Science Advances，DOI 10.1126/sciadv.adw9912，Crossref 确认）尚未评估家庭安全性（ASTM D-4236、LHAMA）与成色。不能与经典体系同判淘汰，应列为暂缓，待热台阈值与安全评估。",
+      "5. 残留观察：BPA-free 显色剂与 NIR 吸收体组合，只能作为热台阈值测试的对照，不占前线 bench 位。"
+    ],
+    "red_line_hits": [
+      "铁氰化钾 + 强酸：未命中（本路线不涉及；全文无 ferricyanide 或 ferrocyanide 字样，亦无混写）。",
+      "重铬酸盐：未命中。",
+      "普鲁士蓝遇碱：未命中（本路线不涉及）。",
+      "家庭或车库小量操作：命中（经典双酚显色剂与 CVL 粉尘、涂布液在通风有限条件下不可接受；推断，依据 PubChem A-API）。干银体系的银盐与还原剂风险未评估，不能判为通过。"
+    ]
+  },
+  "baseline_challenges": [
+    {"round": "R4", "old_claim": "WO-0196945-A3（PubChem 摘录）：>80 °C 干式过程使内置显影剂解封，形成染料像", "agree": "undetermined", "my_evidence": "未能读取专利全文（Google Patents 503，反复重试）。DRYVIEW TDS 支持热显影干银原理（S1），但该专利的温度无法复核。修订：一手专利 US7427467B2 与 EP1505436A1 称热显影为 80–140 °C 或 80 °C 以上（S19、S20），可作为相近背景，但不能替代 WO0196945 本身的核查。", "strength": "弱（仅摘录，未复核）"},
+    {"round": "R4", "old_claim": "US6500590：干式热显影，封闭显影剂", "agree": "undetermined", "my_evidence": "USPTO PDF 下载成功，但为扫描图像，无文字层，本地无 OCR，未能复核（S9）。本核查的 Google Patents US6500590B1 返回 404。", "strength": "未验证"},
+    {"round": "R4", "old_claim": "EP1505436：光热干银材料仅靠加热即可成像", "agree": "disagree", "my_evidence": "EP1505436A1 摘要：感光层含 light-sensitive silver halide emulsion，成像需先曝光，再经 80 °C 以上加热显影（S20，A，一手摘要）。「仅加热即可成像」与之不符。", "strength": "强（A，一手摘要）"},
+    {"round": "R4", "old_claim": "当前的干膜都是热敏打印介质，不光敏（如 Fuji DI-HL 等）", "agree": "disagree", "my_evidence": "Carestream DRYVIEW DVE 为 IR 敏感、激光曝光的 photothermographic 膜（S1，A），并列于 Wikipedia 产品条目（S3，B）。Fuji/Agfa 热头媒体本轮未复核，此处只否定「全部」这一概括。", "strength": "强（A）"},
+    {"round": "R4", "old_claim": "医学 CT 灰阶膜但不光敏", "agree": "disagree", "my_evidence": "DVE 为连续调灰阶膜，且 IR 光敏（S1，A）。", "strength": "强（A）"},
+    {"round": "R4", "old_claim": "经典干银（3M/Kodak）已停产", "agree": "undetermined", "my_evidence": "本轮未找到停产的一手证据。Thermofax 为 3M 历史干银复印（S5，B）。Carestream 仍有干银膜（2021 TDS，S1）。", "strength": "未验证"},
+    {"round": "R4", "old_claim": "直接热敏纸受热与光照会褪色", "agree": "agree", "my_evidence": "Wikipedia 指出顶涂用于减少 UV 引起的褪色，并列出湿热致染料回到无色（S4，B）。", "strength": "中（B）"},
+    {"round": "R4", "old_claim": "BPA/BPS 为酚类显色剂，存在安全旗", "agree": "agree", "my_evidence": "Wikipedia 列出 BPA、BPS 为显色剂（S4，B）。PubChem GHS：BPA 占比项为 H361 (78%)、H360 (19.4%)；BPS 为 H360FD (49%)（S7、S8，A-API）。修订：BPA 的主要代码不是 H360F。", "strength": "强"},
+    {"round": "R4", "old_claim": "无感光、可在家用的光热显影消费介质", "agree": "agree", "my_evidence": "WebSearch 与 Crossref 检索均未发现 2023–2026 年消费级产品（negative_findings N1–N4）。覆盖范围有限，只能说在所列范围内未发现。近似品 Nature Print Paper 需水显影（S13）。", "strength": "中"},
+    {"round": "R4", "old_claim": "US3,152,904（3M）已过期；当前热敏媒体专有", "agree": "undetermined", "my_evidence": "本核查未重取该专利，未能复核。", "strength": "未验证"},
+    {"round": "R5", "old_claim": "直接热敏纸组成：leuco 染料、显色剂、增感剂、稳定剂", "agree": "agree", "my_evidence": "与 Wikipedia 一致（S4，B）。", "strength": "强（B）"},
+    {"round": "R5", "old_claim": "显色起点 65–100 °C（trueimagetech、ableox）；openpr 称 150–185 °C", "agree": "undetermined", "my_evidence": "修订：Wikipedia 的 100 °C 仅适用于所举两种醚类增感剂，不能作为通用下限（S4）。R5 的 65–70 °C 与 openpr 的 150–185 °C 来源均未读，无法判定冲突，列为未验证（c15 实验）。", "strength": "弱（未核）"},
+    {"round": "R5", "old_claim": "NIR 吸收体 + 热敏层的专利谱系：JP54-4142、JP58-209594、JP58-94494", "agree": "undetermined", "my_evidence": "这些专利号本核查未重取，未复核。相关的一手专利 JP2000141892A 已读（S10），支持吸光显色层省去独立光热层的说法，但它不是 R5 所列专利。", "strength": "未验证"},
+    {"round": "R5", "old_claim": "Agfa EP2955029：IR 染料在可见区几乎无吸收", "agree": "undetermined", "my_evidence": "未读。", "strength": "未验证"},
+    {"round": "R5", "old_claim": "无色背景 NIR 吸收体：ITO、AZO、PEDOT、铜羟基磷酸盐（US10029502）", "agree": "undetermined", "my_evidence": "US10029502 未能读取。NIR 染料多在 700–2000 nm 且可见区弱吸收的说法未读来源，未验证。", "strength": "未验证"},
+    {"round": "R5", "old_claim": "CVL（CAS 1552-42-7）实验室可购（Biozol）", "agree": "agree", "my_evidence": "PubChem CID 73773 同义词含 1552-42-7（API，2026-11-01）。价格与库存未验证。", "strength": "强（CAS）；价格未验证"},
+    {"round": "R5", "old_claim": "CVL 低危，但光与空气敏感（Spectrum SDS）", "agree": "disagree", "my_evidence": "PubChem 聚合 ECHA 通知：H315、H319、H335 约 45%（S6，A-API）；另 49.1%（109/222 份报告）称不满足危害标准。「低危」只部分成立。「光与空气敏感」未查到 SDS，未验证。", "strength": "中"},
+    {"round": "R5", "old_claim": "日光能量预算：ΔT 约 45–70 K；NIR-only 时 ΔT 约 30–40 K（推断）", "agree": "undetermined", "my_evidence": "参数来源不明，未复核。若以 Wikipedia 的 100 °C 作为阈值（已限定为醚类增感剂，不能通用），NIR-only 的 55–65 °C 远未达阈值；但阈值本身未定，结论只能作为推断。", "strength": "中（推断）"},
+    {"round": "R5", "old_claim": "侧向热扩散模糊约 8 mm（600 s）", "agree": "disagree", "my_evidence": "本轮复核：瞬态 √(αt) 为 7.6–9.3 mm，稳态鳍长 √(kd/h) 约 1.2–1.7 mm（假设 k、d、h 取值，S17）。两者均为毫米级，「分辨率差」成立，但 8 mm 只是瞬态上界。", "strength": "中（推断）"},
+    {"round": "R5", "old_claim": "UV LED 灯不发热，无法完成光热显影", "agree": "agree", "my_evidence": "物理推断（S17），未有测量来源，不构成独立证据。", "strength": "中（推断）"},
+    {"round": "R5", "old_claim": "BPA/BPS 有内分泌干扰风险；欧盟限制 BPA 用于热敏纸", "agree": "agree", "my_evidence": "安全旗成立：PubChem H361、H360、H360FD（S7、S8，A-API）。Wikipedia 记录了纽约 Suffolk County 2014 年禁令（S4，B）。欧盟限制未验证（S18 空响应）。", "strength": "强（安全旗）；欧盟未验证"},
+    {"round": "R5", "old_claim": "保质期：热敏纸可存放数年（类比）", "agree": "disagree", "my_evidence": "Wikipedia：热敏染料在湿热储存中会回到无色晶型（S4，B）。R5 的类比未给数据，无法支持。BPA-free 木质素/DFX 论文摘要自报涂层稳定超过一年（S23，A-API，自报），这是另一体系的数据，不能外推到经典热敏纸。", "strength": "中"},
+    {"round": "R5", "old_claim": "G3 显示持久：热敏印迹室内稳定", "agree": "disagree", "my_evidence": "Wikipedia 称热敏纸倾向随时间褪色，艺术实践曾利用这一特性（S4，B）。室内稳定的说法只部分成立。", "strength": "中（B）"}
+  ],
+  "sources": [
+    {"id": "S1", "title": "CARESTREAM DRYVIEW DVE Laser Imaging Film, Technical Data Sheet TI-5064（修订 2021-06）", "url": "https://www.carestream.com/en/us/-/media/publicsite/resources/radiography-and-health-it/technical-information-sheets/printing-systems/pdf/9j7638---ti-5064---dryview-dve-film-2020-10.pdf?sc_lang=en", "type": "厂商技术数据表（一手）", "access": "curl全文（PDF，pdftotext；核查复读）", "date": "修订 2021-06；2026-11-01 复读", "quote": "photothermographic, gray-scale film ... infrared-sensitive and is used in the CARESTREAM DRYVIEW Laser Imaging Systems"},
+    {"id": "S2", "title": "CARESTREAM DRYVIEW 5950 Laser Imager 手册", "url": "https://www.carestream.com/en/us/-/media/publicsite/resources/radiography-and-health-it/product-brochures/printing-systems/brochure-dryview-5950.pdf", "type": "厂商宣传（一手，已读全文）", "access": "curl全文（PDF，pdftotext；核查读取）", "date": "2018（版权年）", "quote": "uses laser light rather than heat to expose each pixel；Photothermographic (dry laser)；Blue or clear 7-mil polyester base"},
+    {"id": "S3", "title": "Wikipedia: Carestream Health", "url": "https://en.wikipedia.org/wiki/Carestream_Health", "type": "百科（B）", "access": "curl全文", "date": "2026-11-01 读取", "quote": "photothermographic laser imagers, photothermographic imaging film"},
+    {"id": "S4", "title": "Wikipedia: Thermal paper", "url": "https://en.wikipedia.org/wiki/Thermal_paper", "type": "百科（B）", "access": "curl全文", "date": "2026-11-01 读取", "quote": "These two materials [ether sensitizers] melt at approximately 100 °C, which is a practical lower limit for thermal coloration；thermal threshold ... is determined by the lowest melting component of the layer"},
+    {"id": "S5", "title": "Wikipedia: Thermofax", "url": "https://en.wikipedia.org/wiki/Thermofax", "type": "百科（B）", "access": "curl全文", "date": "2026-11-01 读取", "quote": "an example of a dry silver process；The coated paper tended to curl, and being heat-sensitive, copies were not archival"},
+    {"id": "S6", "title": "PubChem CID 73773 Crystal violet lactone，GHS 聚合（ECHA C&L）", "url": "https://pubchem.ncbi.nlm.nih.gov/compound/73773", "type": "数据库（聚合自 ECHA 通知）", "access": "API（pug_view JSON，核查复读）", "date": "2026-11-01 读取", "quote": "H315 (45%)；H319 (45%)；H335 (44.1%)；does not meet GHS hazard criteria for 49.1% (109 of 222) of reports"},
+    {"id": "S7", "title": "PubChem CID 6623 Bisphenol A，GHS 聚合（ECHA C&L）", "url": "https://pubchem.ncbi.nlm.nih.gov/compound/6623", "type": "数据库（聚合自 ECHA 通知）", "access": "API（pug_view JSON，核查复读）", "date": "2026-11-01 读取", "quote": "H361 (78%): Suspected of damaging fertility or the unborn child；H360 (19.4%)；H360F 仅列于汇总，无占比"},
+    {"id": "S8", "title": "PubChem CID 6626 Bisphenol S，GHS 聚合（ECHA C&L）", "url": "https://pubchem.ncbi.nlm.nih.gov/compound/6626", "type": "数据库（聚合自 ECHA 通知）", "access": "API（pug_view JSON，核查复读）", "date": "2026-11-01 读取", "quote": "H360FD (49%)；H360 (16.2%)；does not meet GHS hazard criteria for 47.3% (245 of 518) of reports"},
+    {"id": "S9", "title": "USPTO 扫描件 US6500590（photothermographic，R4 所引）", "url": "https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/6500590", "type": "专利（一手）", "access": "下载成功，但为扫描件无文字层，未复核；Google Patents US6500590B1 返回 404（核查）", "date": "未知", "quote": ""},
+    {"id": "S10", "title": "JP2000141892A 可逆热敏纸（Kuromikku / Mitsubishi Paper Mills / RIKEN；优先权 1998-11-05；公开 2000-05-23）", "url": "https://patents.google.com/patent/JP2000141892A/en", "type": "专利（一手，已读）", "access": "curl全文（日文，Google Patents HTML；由搜索摘录升级）", "date": "2000（公开）", "quote": "光の吸収率が高く光を吸収して容易に昇温するので、寿命の短い従来の光熱変換層を省略することができ（改写：强吸收的显色层可省去独立光热层）"},
+    {"id": "S11", "title": "US4864024A Leuco dyes（Fuji Photo Film；优先权 1987-02-13；申请 1988-02-10）", "url": "https://patents.google.com/patent/US4864024A/en", "type": "专利（一手，已读）", "access": "curl全文（Google Patents HTML；由搜索摘录升级）", "date": "1987 优先权；1989 公开", "quote": "the leuco dye is superior to conventional leuco dyes with respect to the light fastness of the formed dye having an absorption band in the near infrared region（用途：OCR 读取）"},
+    {"id": "S12", "title": "Ricoh: Invited Review Technology and Market of Thermal Rewritable Marking（2011）", "url": "https://www.ricoh.com/-/Media/Ricoh/Sites/com/technology/tech/pdf/004_isj2011.pdf", "type": "厂商综述（B）", "access": "curl全文（PDF，pdftotext；由搜索摘录升级）", "date": "2011", "quote": "various near-infrared dyes are doped（语境：可擦写激光彩色标记）"},
+    {"id": "S13", "title": "Educational Innovations / TeacherSource: Nature Print Paper（零售页）", "url": "https://www.teachersource.com/product/nature-print-paper", "type": "零售页（C）", "access": "curl全文（HTML 转文本；由搜索摘录升级）", "date": "2026-11-01 读取；页面日期未知", "quote": "requires no inks, presses, photo equipment, darkroom, or chemicals；Exposure time is approximately 2-3 minutes ... then develop in water in seconds"},
+    {"id": "S14", "title": "ZME Science: lignin and sugar thermal paper（2026-01-07；引用 Science Advances 2025）", "url": "https://www.zmescience.com/science/news-science/sustainable-thermal-paper-lignin-alternative/", "type": "媒体（C，二手）", "access": "curl全文（HTML 转文本；页内给出 DOI）", "date": "2026-01-07（报道）", "quote": "Replacing BPA (and BPS) requires a molecule that is acidic enough ...；DOI: 10.1126/sciadv.adw9912"},
+    {"id": "S15", "title": "干银专利（WebSearch 摘要称：敏化需要显著更高的激光能量；来源未能确认）", "url": "（未确认；候选 https://patents.google.com/patent/US7427467B2/en 已读全文，未见该句）", "type": "专利（未确认）", "access": "搜索摘录；候选专利 curl全文，未找到该句", "date": "未知", "quote": "（未能确认，不作依据）"},
+    {"id": "S16", "title": "本地资料包：轮4 case-E-photothermo.md 与 轮5 D-photothermal-thermal.md（旧轮次主张）", "url": "local:/tmp/claude-0/-home-user-Research/ce386818-48e4-5991-8412-39f0305aaa5a/scratchpad/pkg/photosensitive-puzzle-research-pack-20261031/原始资料/03-研究轮次/", "type": "本地资料包（旧轮次，待核查）", "access": "本地资料包", "date": "轮4 2026-10-18；轮5 2026-10-19", "quote": ""},
+    {"id": "S17", "title": "本轮推断：热平衡与侧向扩散尺度（本地计算，参数为假设）", "url": "", "type": "推断（本地计算）", "access": "本地计算", "date": "2026-11-01", "quote": "sqrt(alpha*600 s)=7.6–9.3 mm；sqrt(k*d/h)=1.2–1.7 mm"},
+    {"id": "S18", "title": "EUR-Lex Commission Regulation (EU) 2016/2235（依据模型知识定位，未能读取原文）", "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32016R2235", "type": "法规（一手，未读）", "access": "HTTP 202 空响应（不可读；本核查未重试）", "date": "2016", "quote": ""},
+    {"id": "S19", "title": "US7427467B2 Silver salt photothermographic dry imaging material（优先权 2005-04-26）", "url": "https://patents.google.com/patent/US7427467B2/en", "type": "专利（一手，已读）", "access": "curl全文（Google Patents HTML，本核查新增）", "date": "2005 优先权", "quote": "when heated to relatively high temperatures (for example, 80-140° C.) after exposure, they are developed into visible images；photosensitive silver halide grains, an organic silver salt and a reducing agent"},
+    {"id": "S20", "title": "EP1505436A1 Silver salt photothermographic dry imaging material（优先权 2003-08-08）", "url": "https://patents.google.com/patent/EP1505436A1/en", "type": "专利（一手，已读）", "access": "curl全文（Google Patents HTML，本核查新增）", "date": "2003 优先权", "quote": "a silver salt which forms a silver image when it is heated at a temperature of 80 °C or more in the presence of a photocatalyst；light-sensitive emulsion having light-sensitive silver halide grains"},
+    {"id": "S23", "title": "Nelis et al., Sustainable thermal paper formulation using lignocellulosic biomass fractions, Science Advances（issued 2026-01-02）", "url": "https://doi.org/10.1126/sciadv.adw9912", "type": "论文（一手，仅摘要级）", "access": "API（Crossref 元数据与摘要，核查新增）；正文未读", "date": "2026-01-02（Crossref issued）", "quote": "Coatings remained stable for over a year under ambient conditions；color density at 120°C ≈ 0.8 to 1.1（自报）"},
+    {"id": "S24", "title": "PubChem CID 73773 同义词（CAS 确认）", "url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/73773/synonyms/TXT", "type": "数据库（API）", "access": "API（核查新增）", "date": "2026-11-01 读取", "quote": "同义词列表包含 1552-42-7"}
+  ],
+  "negative_findings": [
+    {"query": "sunlight activated thermal paper photothermal image consumer kit 2024 2025 no water（WebSearch 1/4）", "scope": "搜索摘录（未打开任何电商页）", "result": "未找到消费级光热显影纸。近似品为 UV 光化学纸（原文称「声称无水」）。修订：若指 Nature Print Paper，其零售页写明需水显影（develop in water in seconds，S13），因此「声称无水」不成立。学术命中为光热水蒸发或光热治疗，非成像。未发现 2024–2025 产品发布。WebSearch 返回的 Amazon 链接未打开（政策禁止）。"},
+    {"query": "light-sensitive paper developed by heat not chemicals sun exposure then iron or hairdryer heat develop new product 2025（WebSearch 4/4）", "scope": "搜索摘录", "result": "未找到 2025 年热显影日光纸。近似品：Nature Print Paper（UV 日光，无热步骤，但需水显影，S13）；Thermofax（历史，S5）；Science Advances 2026 木质素热敏纸（热敏而非光敏，S23、S14）。"},
+    {"query": "photothermal rewritable thermal paper near-infrared absorber leuco dye sunlight image 2024 2025 study（WebSearch 3/4）", "scope": "搜索摘录", "result": "未找到 2024–2025 研究。返回的是旧专利（US4864024A，1987 优先权，NIR 显色 leuco，S11；JP2000141892A，2000 公开，S10）与 2011 Ricoh 综述（S12）。两份专利已在本核查中读全文。"},
+    {"query": "Crossref API query.title=photothermographic, filter from-pub-date:2023-01-01, rows=15", "scope": "Crossref 标题检索（2023 年起）", "result": "0 条结果。"},
+    {"query": "Crossref API query.title=dry silver photothermographic, 2023 年起", "scope": "Crossref 标题检索", "result": "仅银基干电极、银纳米线等无关条目。"},
+    {"query": "Crossref API query.title=photothermal thermal paper, 2023 年起；query.bibliographic=light-to-heat conversion leuco dye image recording", "scope": "Crossref", "result": "第一条 HTTP 429，未完成；第二条无相关条目（光热治疗、光催化）。"},
+    {"query": "Crossref API query.bibliographic=lignin plant sugar bisphenol-free thermal paper, 2024 年起；query.title=thermal paper + container Science Advances", "scope": "Crossref", "result": "修订：原检索未命中 EPFL/Science Advances 论文，属于检索词问题，不是论文不存在。ZME 页给出 DOI 10.1126/sciadv.adw9912，Crossref 直接查询确认（S23）。第二条 HTTP 429，未完成。"},
+    {"query": "Wikipedia 全文检索 photothermographic（en.wikipedia.org API）", "scope": "英文维基", "result": "无独立条目；仅 Carestream Health、Thermofax、Lead(II) nitrate 等页面提及。"},
+    {"query": "Google Patents 直读：US6500590B1、WO2001096945A3、EP1505436A1、JPS544142A、JPS58209594A、JPS5894494A、US10029502B2、EP2955029A1、US20070099798A1、US4853361A、US3152904A、US4864024A", "scope": "patents.google.com", "result": "原 research：HTTP 503（反复，约 25 次含退避重试），未能复核。修订：503 为间歇性。本核查中 EP1505436A1、US4864024A 返回 200 并已读全文；另 JP2000141892A、US7427467B2 亦 200。US6500590B1 返回 404（kind code 不符或不存在）。其余专利未复跑。"},
+    {"query": "patents.justia.com/patent/6500590（及 R5 引用的 Justia 页）", "scope": "Justia", "result": "HTTP 403，不可读。未绕过。"},
+    {"query": "USPTO image-ppubs 下载 US6500590", "scope": "USPTO", "result": "下载 3.5 MB PDF，但为扫描图像，无文字层，本地无 OCR 工具，全文未读。"},
+    {"query": "EUR-Lex CELEX:32016R2235", "scope": "EUR-Lex", "result": "HTTP 202，空响应，不可读。欧盟 BPA 限制未验证（本核查未重试）。"},
+    {"query": "chemistryviews.org 木质素热敏纸文章", "scope": "ChemistryViews", "result": "HTTP 403，不可读。"}
+  ],
+  "key_unknowns": [
+    "实际显色起点与日光可达温度：Wikipedia 的 100 °C 下限只适用于所举两种醚类增感剂，R5 的 65–70 °C 未核；需要热台梯度与日光下纸面测温。",
+    "干银体系：显影需 80–140 °C（一手专利），日光能否提供这一温度未测；曝光增感与室光灰雾风险，以及 30 分钟曝光的可行性无数据。",
+    "BPA-free 显色体系（木质素/DFX，Science Advances 2026 摘要）在家庭操作下的安全性（ASTM D-4236 / LHAMA）与成色稳定性未评估；摘要数据为自报。"
+  ],
+  "discriminating_experiment": {
+    "one_liner": "热台梯度（60–110 °C，每 5 °C 停留 5 分钟）测首次可见显色温度，并同步用热电偶实测日光下纸面峰值温度；若纸面峰值温度低于实测最低显色起点，则日光加热路线证伪。",
+    "design_sketch": "材料：纸基，BPA-free 显色剂 + 增感剂 + 碳或 NIR 吸收体涂层，每组对照经典 BPA 配方。步骤一：热台梯度，记录显色起点与 Dmin 漂移。步骤二：日光下放置 30 分钟，热电偶测纸面峰值温度，与步骤一阈值比较。判据：纸面峰值温度达不到显色起点即证伪（85 °C 不是判据）。步骤一、二均在通风条件下进行，只用小样。"
+  },
+  "new_routes_spotted": [
+    {"name": "无银 IR 碳吸收热复印（Thermofax 类）", "why": "碳像吸收红外并加热热敏纸，是一个非银、非日光的光热成像先例；但需要红外灯与复印机构，不符合消费端条件。", "lead_url": "https://en.wikipedia.org/wiki/Thermofax"},
+    {"name": "木质素与 DFX 的 BPA-free 热敏显色（Science Advances 2026，DOI 10.1126/sciadv.adw9912）", "why": "直接对应底线 6 的显色剂替代。它是热敏而非光敏，需要与光热触发结合后才与本路线相关。DOI 已由 Crossref 确认，正文未读，摘要数据为自报。", "lead_url": "https://doi.org/10.1126/sciadv.adw9912"},
+    {"name": "可擦写热敏纸（leuco 染料自吸收光热，JP2000141892A 类）", "why": "已读原文：强吸收的显色层可省去独立光热层，以弱光写入。但它是可擦写系统，成色耐久性与本路线的成色要求不同，需另行核查。", "lead_url": "https://patents.google.com/patent/JP2000141892A/en"},
+    {"name": "UV 日光显色纸（Nature Print Paper 类，光化学）", "why": "属光化学而非热路线，已有 UV 路线家族可能覆盖。修订：该产品需水显影（develop in water in seconds），不能归入免洗。化学机制本轮未核，只记录线索。", "lead_url": "https://www.teachersource.com/product/nature-print-paper"}
+  ],
+  "search_budget_used": {
+    "websearch": 4,
+    "curl_reads": 19,
+    "verifier": {"websearch": 0, "curl_reads": 18}
+  },
+  "reconciliation_log": [
+    {"item": "c01 银盐机制的引用与等级", "change": "引用由 S1、S3、S4 改为一手专利 S19、S20；「DVE 为银盐体系」由 A 降为推断", "why": "TI-5064 与 5950 手册全文无 silver 或 halide 字样（grep 为 0）；S3、S4 也不含。银盐机制本身由专利原文支持。"},
+    {"item": "c04 干银显影温度", "change": "「通用干银 120–140 °C，未验证」改为「80–140 °C（A，专利）」；120 °C 标为实施例条件", "why": "US7427467B2 说明书写 80–140 °C；EP1505436A1 写 ≥80 °C。原文 120–140 的下限有误。"},
+    {"item": "c03 与 S15：激光能量的搜索摘要句", "change": "保持未验证，删除「需要显著更高激光能量」作为依据的用法；标明候选专利未见该句", "why": "候选专利 US7427467B2 全文无此句，S15 来源仍未确认。"},
+    {"item": "c05 底线 1 评级", "change": "✓ 改为 ?（条件性：无水，但热显影是额外处理设备步骤；热源未证实）", "why": "底线 1 原文为「无需水洗或任何额外处理步骤」。80–140 °C 热显影属于额外处理步骤。"},
+    {"item": "c07 与底线 2 的文字", "change": "删去「随室光漂移」；补充厂商称 virtually undetectable、no effect on image quality；底线 2 的 ✗ 按严格标准保留，并注明严重度待实测", "why": "TI-5064 原文：一次性初始显影，permanent upon full exposure，不是持续漂移。"},
+    {"item": "c11 与 verdict.reasons(3) 的 BPA 代码", "change": "「主要 H360F」改为「占比项 H361 (78%)、H360 (19.4%)；H360F 列于汇总，无占比」", "why": "PubChem CID 6623 占比数据。生殖毒性类别成立，结论不变。"},
+    {"item": "c11、c13(5) 的 CVL 49% 说明", "change": "「另 49% 通知称不满足危害标准」改为「另 49.1%（109/222 份报告）」", "why": "PubChem 原文单位是报告，不是通知。"},
+    {"item": "c12 与 baseline R5 的 CVL CAS", "change": "CAS 1552-42-7 由「未复核」改为「PubChem 同义词确认（API）」；价格与库存仍未验证", "why": "PubChem CID 73773 同义词列表含该 CAS。"},
+    {"item": "c13(9)、c14、S14、negative N4 的 DOI", "change": "DOI「未取得」改为 10.1126/sciadv.adw9912（Crossref 确认，issued 2026-01-02）；摘要数据按 A-API 标注但注明正文未读；ZME 二手保留为 C", "why": "ZME 页直接给出 DOI；Crossref API 可读。ZME 引用写 2025，Crossref 写 2026-01-02。"},
+    {"item": "c14(1)、verdict.reasons(3)、key_unknowns(1) 的 100 °C 阈值", "change": "100 °C 限定为所举两种醚类增感剂；删去与 R5 65–70 °C 的通用「冲突」表述，改为未解决", "why": "Wikipedia 原文的限定语；同段称阈值由最低熔点组分决定。"},
+    {"item": "baseline R4 EP1505436「仅加热即可成像」", "change": "推断性 disagree 升为 A 级反驳", "why": "EP1505436A1 摘要要求感光卤化银层先曝光，再加热显影。"},
+    {"item": "S10、S11、S12、S2 的 access", "change": "由「搜索摘录」或「未读」升为「curl全文」；S10 为日文原文，摘录验证属实", "why": "Google Patents 与 PDF 本核查均可读取。"},
+    {"item": "S13 Nature Print Paper 与 negative N1、N2", "change": "补充需水显影（develop in water in seconds）；N1「声称无水」需指明是否为该产品", "why": "零售页原文。"},
+    {"item": "S2 5950 手册的日期与基材", "change": "日期由「未知」改为 2018（版权年）；基材补充 blue or clear", "why": "手册版权页与基材描述。"},
+    {"item": "discriminating_experiment 的判据", "change": "删去 85 °C 判据；改为实测日光纸面峰值温度与实测最低显色起点比较", "why": "85 °C 没有依据，且与 design_sketch 的判据不一致。"},
+    {"item": "verdict.status 的范围", "change": "「淘汰（消费主线）」改为「淘汰（经典双酚与干银路线）；BPA-free 变体暂缓（未验证）」", "why": "BPA-free 体系未评估，不应与经典体系同判淘汰。"},
+    {"item": "negative_findings 与 md 限制段（额度与 503）", "change": "「额度已用完（4 次）」应改为「本代理设定的 4 次上限已用完，非全局额度耗尽」（md 需同步）；Google Patents 503 改为间歇性，并注明本核查 4 个 200、1 个 404", "why": "WebSearch 额度为全体代理共享；503 在本核查中已不复现。"},
+    {"item": "c09 货架期", "change": "补充显影后膜存放 16–27 °C；补充 BPA-free 涂层的自报「超过一年」（A-API，自报）", "why": "TI-5064 原文与 S23 摘要。"},
+    {"item": "c13 条目数", "change": "保留 10 条（合并原 (2)(9)；原 (11) 欧盟与 NIR 专利号移入 c11 与 c14）", "why": "保持 5–10 条的规范。"},
+    {"item": "S9 与 US6500590", "change": "access 注明 Google Patents US6500590B1 返回 404；仍为未验证", "why": "本核查结果。"},
+    {"item": "c05_免洗核验 的位置", "change": "保留在 columns 之外，与原结构一致，并记入 verify.json 的 structural_issues", "why": "不改变下游读取，只标注结构问题。"}
+  ]
+}

@@ -1,0 +1,682 @@
+{
+  "key": "pag_halochromic",
+  "name_zh": "PAG/PBG + 卤变色（pH 指示）染料成像（干粘结剂体系）",
+  "name_en": "PAG/PBG + halochromic (pH-indicator) dye imaging in a dry binder",
+  "status": "观察线（倾向淘汰；理由已按核查修订）",
+  "columns": {
+    "c01_机制": {
+      "text": "光化学物种变化：鎓盐 PAG（diaryliodonium 的 SbF6、PF6、BF4、全氟丁磺酸根等）或非离子 oxime sulfonate 类（如 Irgacure PAG103）受紫外或短波可见光激发后生成质子酸（超强酸 HSbF6、HPF6；或磺酸），使 pH 指示染料质子化而改色。示例染料为 thymol blue（S06、S07、S08）。PBG 变体（Xerox EP 2,003,501，S05）光产生胺，胺与醛缩合生成有色 Schiff 碱，再由 PAG 产酸破坏显色物。把 Polaroid、Intellego、Strathclyde 的机理迁移到纸基图像是推断。注：PAG103 属 oxime sulfonate 的类别归属未由 S10 直接证实（SDS 仅写 Benzeneacetonitrile derivative，商业秘密）。",
+      "grade": "A",
+      "label": "事实（专利原文）；PAG103 类别归属未验证；迁移到纸基图像为推断",
+      "source_ids": ["S03", "S05", "S06", "S07", "S08", "S10"]
+    },
+    "c02_极性与色调": {
+      "text": "正/负像：示例体系为 thymol blue。去质子形（TB⁻）为黄色，质子化形（TBH）为红/粉色（S06 原文 'Thymol Blue (TB-) is yellow whereas TBH is red'；S06 与 S08 均写 'yellow to red/pink'）。曝光产酸的区域由黄变红，属正像（曝光区显色）。thymol blue 是双过渡 pH 指示剂，「单色相」只指这一组黄→红转变。原稿「碱侧蓝、酸侧黄」已删除，与来源相反。连续色调：S07 给出 2、4、6、8、10 mJ/cm² UVC 系列，6 mJ/cm² 出现可见变化，这是剂量计级别的梯度，不是灰阶影像。多色扩展：Xerox EP 的 PBG 与 PAG 分别对 365 nm（产胺、显色）与 254 nm（产酸、擦除）响应（S05）；Angewandte 2025 单分子体系蓝光 ≥410 nm 释放碱、UV ≥310 nm 释放酸（S12，摘要）。两者都是概念级，未验证为可用成像体系。",
+      "grade": "A",
+      "label": "事实（来源原文）；连续色调与多色扩展为推断",
+      "source_ids": ["S05", "S06", "S07", "S08", "S12"]
+    },
+    "c03_曝光条件": {
+      "text": "剂量与时间数据。(i) UVC（S07）：2–10 mJ/cm² 系列，6 mJ/cm² 出现可见变化，这是剂量计示例，不是成像时间。(ii) 太阳模拟器（S06，非真实日光）：UVI 5 下，TB + DPIC + NaOH 厚膜的延迟响应（图 1，每 3 min 记录光谱，时间数据在图中，正文未给数值）；UVI 10 下 TB/DPIC 系浓度梯度（图 4，t1/2 数值在插图中）。另有三明治型延迟器件（TB + chloral hydrate + NaOH，图 8/10）在 UVI 5 下：0 min 黄，15 min 即时层变绿，原文「33 minutes later」出现粉色，「up to 81 minutes」粉色完全显色（时间基准原文不清，绝对时间或相对 15 min 读数未能确定）。图 2 为 UVI 5 下 99 min 达 3 MED。(iii) UVB 灯 4 mW/cm²（S06 图 8）：该 chloral hydrate 三明治器件 4 min 出现粉斑，12 min 变蓝，非 PAG 体系。(iv) 真实日光下 PAG 指示体系的成像时间：未找到一手数据，这一负结果保留（范围：专利、PubMed、Crossref）。推断：二苯基碘鎓盐在 <300 nm 吸收最强（常识），地面日光 UVB 弱、UVA 对未增感鎓盐效率低，因此 30 分钟目标在日光下不能预设达成，需 UVA 增感或更强光源。S06 太阳模拟器数据显示延迟型设计的可见色变需数十分钟，与 30 分钟目标处于临界或不利。消费级 UVC 灯属高风险光源，不宜作为家用条件。",
+      "grade": "A（一手；部分为太阳模拟器或摘录级）",
+      "label": "事实（S06、S07 数据，非真实日光）；日光成像时间未验证；30 分钟可达性为推断",
+      "source_ids": ["S06", "S07", "S03"]
+    },
+    "c04_后处理": {
+      "text": "成像后处理：本路线无水洗显影，但原始专利体系都需要后续步骤。(i) Polaroid US5667943（S01，全文确认）为热触发：IR 激光加热方酸衍生物，释放酸使不可逆染料显色；固定用加热辊（heated rollers），使碱层与成像层混合并中和残余酸，不改变不可逆染料颜色。(ii) Intellego US12372399（S07）权利要求 1 为两层结构：第二层的 active portion 遮挡第一层的参照区，使其保持未变色，未遮挡区显色后与参照区比色。这是读数方式，不是固定或停止。(iii) Strathclyde WO2010070290（S06）用碱储备做延迟响应：碱被质子消耗后指示剂才变色，实现剂量积分，而不是固定。三种都不是「喷一层停止剂」。",
+      "grade": "A",
+      "label": "事实（专利原文）；与喷剂式停止的对应为推断",
+      "source_ids": ["S01", "S02", "S06", "S07"]
+    },
+    "c05_免洗真实程度": {
+      "text": "曝光即显色，没有显影液，在显影意义上属于严格免洗。但「停止」步骤若采用喷碱，对可逆 pH 指示染料不可行（推断：碱会使已成色区回色）；若采用物理顶层或内置碱储备，则不需要喷后处理。六条底线逐条判定见 c05_免洗核验。目前没有一手数据支持任何一条底线打 ✓。",
+      "grade": "A（摘录级）",
+      "label": "推断",
+      "source_ids": ["S01", "S07", "S03"]
+    },
+    "c06_停止机制": {
+      "text": "自然停止不存在。S03 承认环境 IR/UV 在运输与储存中使超强酸前体提前分解，长期储存中混合物也缓慢分解（事实，定性）；光生酸在曝光区持续存在。候选方案：(a) 碱后处理，只对不可逆（leuco）染料可固定（S01，事实）。(b) 碱储备计量：S06 与 S08 权利要求 1 均以碱为质子清除剂，碱耗尽后指示剂才显色。这是剂量积分，停在某个剂量，并非停止化学（设计事实；对纸基的适用为推断）。(c) 物理顶层遮光（S07 第二层阻挡入射 UVC）：可减少外来辐射，但对残留 PAG 的预分解没有作用（推断）。红线核查：本路线不含铁氰化钾、亚铁氰化钾、重铬酸盐或普鲁士蓝。碱性方案对可逆 pH 染料会使已成色区回色（推断，据 S01 的 irreversible 条件）。避光只是暂停：S06 声称 「stable for many months provided they are protected from UV light」，按规则只计为暂停（声明，无数据）。",
+      "grade": "A",
+      "label": "事实（专利）；可逆染料回色、纸基适用与顶层作用为推断",
+      "source_ids": ["S01", "S03", "S06", "S07", "S08"]
+    },
+    "c07_白区稳定性": {
+      "text": "机理：残留 PAG 或增感剂在环境 IR/UV 下缓慢分解产酸，使背景染色漂移。证据：S03 明文承认运输与储存中的环境辐射导致提前分解，并以碱层吸收酸（事实，定性）。S12 为设计分子的可见光脱保护（摘要），只能说明可设计，不能外推到商用 PAG（推断）。反向证据：S05 声称 PBG 显色图像在纸上对环境光稳定（声明，无数据）。已剔除：S05 背景段「ambient UV-VIS ≤420 nm 使未曝光区变色」描述的是光致变色现有技术，不能作为 PAG 机理证据。未找到室内光下 PAG 背景漂移的定量数据，这是负结果（范围：专利、Crossref、PubMed）。",
+      "grade": "A（摘录级）",
+      "label": "事实（定性机理）；定量速率未验证",
+      "source_ids": ["S03", "S05", "S12"]
+    },
+    "c08_成色耐光": {
+      "text": "加速耐光数据：无。按规则只报数据本身，本轮没有任何 pH 指示染料成色体系的加速耐光数据。S07 背景段「may fade ... light, temperature, humidity」描述的是现有技术中的参比墨水（对照色块），不是指示体系，不能用作成色耐光证据（已更正归属）。S11（Frontiers 2024）测的是螺噁嗪类光致变色器件（10 个商业器件与 3 个纯物质），不是 PAG 指示染料，不能外推。",
+      "grade": "未知",
+      "label": "未验证",
+      "source_ids": ["S07", "S11"]
+    },
+    "c09_预涂货架期": {
+      "text": "出厂预涂形态：S06 声称 many months 保存，但以避光为条件，无数据，只计为暂停。S01 热体系的 70°C 储存 Dmin 数据（表格）是热触发体系，不能外推到光化学 PAG 体系。用户现涂形态（混合液寿命）：未知，PAG、染料与碱在溶剂中的相互作用未验证。",
+      "grade": "A（声明）",
+      "label": "未验证（无数据）",
+      "source_ids": ["S06", "S01"]
+    },
+    "c10_底材适配": {
+      "text": "底材：S01 用 Melinex（PET）基材；S06 用 PP 与 PVB 膜；腕带形态见 S06、S07 背景（未测变形）。纸基：S05 声称 PBG/PAG 干涂层「onto or into the substrate」，目标底材为纸（inkless reimageable printing paper），但未见变形数据。吸湿：鎓 SbF6 盐潮敏、吸湿的说法来自 TCI 搜索摘录（S18，页面 HTTP 403，不可读，未验证）。封层兼容：S07 的第二层（UVC 吸收涂层/膜）可能兼容，未验证。",
+      "grade": "A（摘录级）",
+      "label": "未验证",
+      "source_ids": ["S01", "S05", "S06", "S07", "S18"]
+    },
+    "c11_安全法规": {
+      "text": "PAG103（BASF 美国 SDS，2010/09/16，v1.2，经 University of Utah nanofab 托管，S10，curl 全文 PDF）：信号词 CAUTION；strong skin sensitizer；轻微眼/皮肤刺激；FLAMMABLE SOLID，可形成粉尘爆炸混合物；UN 1325，4.1 类，PG III；组分 Benzeneacetonitrile derivative 为商业秘密（CAS 不公开），含量 60–100%；大鼠口服 LD50 >2000 mg/kg；避免强酸、强碱、强氧化剂；SDS 标注「for industrial use only」（工业用途限定，原稿漏写）；工作要求：通风、避免吸入粉尘、护目镜（粉尘时）、耐化学手套与防护服。现行 SDS 未取得。鎓 SbF6 盐：TCI 摘录（S18，不可读）提示避光防潮、可能致敏，未验证。超强酸分支：PubChem 聚合 GHS（ECHA C&L，43 份通报）对纯 HSbF6（CID 11118066）给出 H300+H310+H330（90.7%）、H314（90.7%）、H411（100%），仅作危害类别参照（S23）；它不是膜内鎓盐光产物的量，也不涉及燃烧产物（S19 无 URL，未验证）。PubChem 对 diphenyliodonium hexafluoroantimonate（CID 16701408）的 GHS 页返回 404，即无聚合记录，不能视为安全。NaOH（Intellego 配方）的腐蚀性：常识级，S07 中没有该陈述。ASTM D-4236 与 LHAMA 可达性未核查。",
+      "grade": "A（SDS 2010 版；PubChem 聚合 GHS）",
+      "label": "事实（SDS、聚合通报）；成人美术材料可达性未验证",
+      "source_ids": ["S10", "S23", "S18", "S19", "S07"]
+    },
+    "c12_供应成本": {
+      "text": "供应：未找到可核实的非离子 PAG 小包装在售页。PubChem 本轮可用（名称→CID 与 GHS 请求成功），但供应商列表本轮未重试；「Irgacure PAG 103」名称检索返回 404（无 CID），需改用其他名称或 CAS 重试。BASF PAG103 现行页面未读取。价格：未验证，本轮没有任何页面读取价格。消费品价格参考：2014 年 QVC 论坛帖「7 条 £6.99」（S21，页面 HTTP 403，未读取，不作为证据）。Dakenchem、Synasia 等价格未读取。",
+      "grade": "C",
+      "label": "未验证",
+      "source_ids": ["S21", "S23"]
+    },
+    "c13_证据等级": {
+      "text": "关键主张（已核对，共 11 条）：(1) US5667943 为热触发，碱固定只对不可逆染料有效，A，事实（curl 全文，已核对）。(2) US5286612 权利要求 1 为双波长超强酸生成，示例为碘鎓 SbF6，A，事实（已核对）。(3) US5334489 摘要要求加热，纠正旧注「纯辐射」，A，事实（已核对）。(4) EP2003501 为 PBG/PAG 干涂层擦写，波长 365/254 nm，A，事实（已核对）。(5)「16–24 h 自擦」不来自 EP，来自 2006 年 Xerox 新闻稿（厂商一手，A，事实）；新闻稿写明仍为实验室项目；「光致变色式」为推断，新闻稿未用该词。(6) WO2025151354 为粘接固化指示，潜伏酸为碘鎓硼酸盐，说明书已核对，权利要求 9 未核对，A，事实。(7) WO2010070290 碱储备延迟响应，「many months」为避光条件下的声明，A，事实（数据未验证）。(8) US12372399 层叠 UV 指示器，UVC 6 mJ/cm² 可见变化，A，事实（已核对）。(9) Smartsun 商品化：S07 背景段（A，专利陈述）称 stickers or wristbands marketed under the name Smartsun；2013–14 媒体（S20，403 不可读）的细节未验证；化学成分（PAG + pH 染料）为推断，B。(10) 2024 Frontiers 的 Smart Sun（S11，供应商为 Bluemarionge Health）为螺噁嗪类光致变色器件；它与 (9) 是否为同一产品未确认，这是同名未解，不是来源冲突，A，事实。(11) US9097588（Intellego，优先权 2008-12-20，公开 2015-08-04）权利要求 1 为碱作质子清除剂的延迟型指示器，A，事实（已读取全文）。另有推断：可逆染料加碱固定会回色；鎓 SbF6/PF6 水解生成 HF（题名级文献 S15–S17，全文未读，未验证）。",
+      "grade": "A（多数）；B（商品化成分）",
+      "label": "事实与推断混合，逐条见文本",
+      "source_ids": ["S01", "S02", "S03", "S04", "S05", "S06", "S07", "S08", "S09", "S10", "S11", "S12", "S14", "S15", "S16", "S17", "S20", "S23"]
+    },
+    "c14_关键未知": {
+      "text": "最可能翻盘的两点：(1) 固定机制。可逆 pH 染料成像在「停止」后能否保留（需不可逆染料，或碱耗尽计量）；纸基可行性无一手数据；S06/S08 的碱储备设计在纸上是否稳定，未验证。(2) 安全。鎓 SbF6/PF6 的超强酸类危害（聚合 GHS 只针对纯酸）、膜内光产物量与家庭条件下的 HF 生成均未测；PAG103 强致敏、易燃粉尘、工业用途限定，成人美术材料可达性（ASTM D-4236 / LHAMA）未查。次要未知：真实日光下的 30 分钟成像（S06 太阳模拟器数据显示延迟型设计需数十分钟）；室内光背景漂移速率；Smart Sun 同名产品的身份（S11 与 S07/S20 之间）；PAG103 现行 SDS 与小包装供应。",
+      "grade": "未知",
+      "label": "未验证",
+      "source_ids": ["S01", "S06", "S07", "S08", "S10", "S11", "S23"]
+    },
+    "c15_判别实验": {
+      "text": "判别实验（设计，未执行）：纸基与 PET 各涂两组，(A) 非离子 PAG + 不可逆 leuco 染料，(B) 非离子 PAG + 碱储备 pH 指示剂（参照 S06/S08 的 TB/DPIC/NaOH 配方）。曝光 30 分钟：日光对照，另标定 UVA 灯，并用 S06 的 UVI 5 太阳模拟器条件作对照；测成色 ΔE、室内光 14 天白区漂移、65°C 加速老化。B 组在不做碱后处理时白区漂移明显（ΔE 例如 >2）且固定后颜色回退，即证伪可逆染料路线。",
+      "grade": "未验证",
+      "label": "设计",
+      "source_ids": []
+    }
+  },
+  "c05_免洗核验": {
+    "验收": {
+      "1_喷后免洗": "? 取决于停止方式。喷碱对可逆染料推断会回色（✗）；物理顶层或内置碱储备则无需喷后处理（✓，推断）。未验证。",
+      "2_白区停得住": "✗（保守判定）。S03 承认环境 IR/UV 与长期储存导致超强酸前体预分解，需碱层缓冲；本路线无白区稳定性的定量数据。",
+      "3_成色留得住": "? 不可逆染料可保留（S01）；可逆指示染料无法靠碱固定（推断）。无耐光数据。",
+      "4_少量喷液": "? 若采用内置碱储备则无需喷液；若需喷液，无质量平衡数据。",
+      "5_底材不变形": "? 纸基未测；PVB、PET、PP 的变形无数据。",
+      "6_安全前置": "✗（倾向，保守判定）。依据：PAG103 SDS 明示强皮肤致敏、易燃固体与粉尘爆炸、「for industrial use only」（S10）。鎓盐分支另有纯 HSbF6 的聚合 GHS（H300+H310+H330、H314；S23）作为类别参照。膜内光产物量与家庭条件下的 HF 生成未证实；ASTM D-4236 与 LHAMA 结论未查，因此这是倾向判断，不是法规结论。"
+    },
+    "说明": "c05 以「停止」为核心。路线 A 的免洗真实程度取决于能否找到不可逆或计量型固定。目前没有一项底线有一手数据支持 ✓。"
+  },
+  "verdict": {
+    "status": "观察线（倾向淘汰；理由已修订）",
+    "reasons": [
+      "核心「停止」问题未解：可逆 pH 指示染料的图像不能靠喷碱固定（S01 明言碱固定只对不可逆染料有效）。可行方向是 leuco（不可逆）染料，或碱耗尽计量（S06、S08 的设计）；后者在纸上的稳定性未验证。纸基图像无一手数据。",
+      "白区背景漂移：专利（S03）承认环境辐射与储存导致预分解，并需碱层缓冲；无定量数据，底线 2 保守判 ✗。",
+      "安全（非离子分支）：PAG103 强致敏、易燃粉尘、SDS 工业用途限定（S10）。鎓盐分支：纯 HSbF6 的聚合 GHS 为致死与腐蚀级（S23），但膜内 HF 生成与家庭水解未证实，不能直接等同。底线 6 倾向 ✗；法规结论（ASTM D-4236、LHAMA）未查。",
+      "商业先例存在但不同类：Smartsun 类（S07 背景，A）与 Strathclyde、Intellego 专利（S06、S07、S08）都是剂量计或指示器，不是纸基图像媒介，不能直接迁移。S06 与 S08 的延迟碱设计（优先权 2008-12-20）早于 2025 年公开的 S07。",
+      "日光 30 分钟：S06 太阳模拟器（UVI 5）数据显示延迟型设计的可见色变需数十分钟，且与真实日光不同；30 分钟目标未验证，倾向不利。",
+      "与旧轮次「短名单 #2」相比，降为观察线的建议成立，不进入 bench 资源优先级。"
+    ],
+    "red_line_hits": "四条红线未直接命中：路线不含铁氰化钾、亚铁氰化钾、重铬酸盐，也未用普鲁士蓝。碱性方案对已成色的可逆染料有回色风险（推断），已评估。按家庭或车库现实条件，PAG103 的强致敏与粉尘、鎓盐分支的超强酸类危害属高风险，判为未达底线 6（倾向）。"
+  },
+  "baseline_challenges": [
+    {
+      "round": "轮5",
+      "old_claim": "短名单 #2（A 位列第二）",
+      "agree": "disagree（建议降为观察线）",
+      "my_evidence": "机制可行性受「可逆指示染料 + 固定」限制；SbF6/PF6 与 PAG103 的安全在家庭条件不达标；已商品化的先例为剂量计而非纸基图像。核查后维持。",
+      "strength": "中"
+    },
+    {
+      "round": "轮5",
+      "old_claim": "Polaroid US 5,667,943 碱接触定影先例",
+      "agree": "partly",
+      "my_evidence": "全文确认：碱后处理固定只适用于「不可逆」酸敏染料（S01），固定方式为加热辊使碱层混合。该专利是热触发（方酸衍生物热分解），不是光化学，不能作为 PAG 光成像的先例。",
+      "strength": "强（全文确认）"
+    },
+    {
+      "round": "轮5",
+      "old_claim": "Xerox EP 2,003,501（PBG + PAG 可擦写纸，16–24 h 自擦，已商品化）",
+      "agree": "partly",
+      "my_evidence": "PBG/PAG 干涂层成像与擦除为一手确认（S05，365/254 nm）。「16–24 h 自擦」不见于 EP 全文，来自 2006 年 Xerox 新闻稿（S09），该稿称为实验室项目；「已商品化」在 2006 年为不成立，现行状态未查。",
+      "strength": "强"
+    },
+    {
+      "round": "轮5",
+      "old_claim": "WO 2025/151354 为 PAG/PBG + 卤变色染料机制（2025 年申请，显示概念仍在开发）",
+      "agree": "partly",
+      "my_evidence": "说明书确认光固化粘接组合物中的 pH 指示与潜伏酸（S04），潜伏酸为碘鎓硼酸盐族（例：4-isopropyl-4'-methyldiphenyliodonium tetrakis(pentafluorophenyl)borate）。用途为粘接固化指示，不是纸基成像。PCT 状态 Pending；权利要求 9 未单独核对。",
+      "strength": "强"
+    },
+    {
+      "round": "轮5",
+      "old_claim": "PAG 只有实验室级供应",
+      "agree": "partly（未证实）",
+      "my_evidence": "未找到可核实的小包装在售页。PubChem 名称检索 'Irgacure PAG 103' 返回 404（无 CID），供应商列表本轮未重试。PAG103 为工业 SDS（S10，限定工业用途）。diphenyliodonium SbF6 的 PubChem 记录存在但无 GHS 聚合数据（S23 相关）。",
+      "strength": "弱（负结果）"
+    },
+    {
+      "round": "轮5",
+      "old_claim": "超强酸阴离子安全存疑（SbF6/PF6）",
+      "agree": "agree（依据改写）",
+      "my_evidence": "纯 HSbF6 的 PubChem 聚合 GHS 显示 H300+H310+H330、H314、H411（S23，A 聚合通报）。原依据 S19 无 URL，不能用；题名级水解文献（S15、S16）只证明研究存在。家庭条件下的 HF 生成未测。",
+      "strength": "中（类别危害有聚合数据；膜内 HF 未证实）"
+    },
+    {
+      "round": "轮5",
+      "old_claim": "预涂货架期未知",
+      "agree": "agree",
+      "my_evidence": "仍未知。S06 的 many months 为避光条件下的声明，无数据（只计为暂停）。",
+      "strength": "强（确认未知）"
+    },
+    {
+      "round": "轮5 notes A2",
+      "old_claim": "US 5,334,489 为「radiation 生成超强酸 → 染料变色」，已在 1990 年代 reduced to practice",
+      "agree": "disagree",
+      "my_evidence": "S02 摘要与权利要求 1 同时要求曝光与加热超强酸与方酸衍生物，并非纯光过程。专利「describes and claims」不等于实际实施，全文只有此表述，reduced to practice 未证实。",
+      "strength": "中"
+    },
+    {
+      "round": "轮5 notes A2",
+      "old_claim": "PAG 类 UV 指示或成像「未进入消费市场」（推断）",
+      "agree": "partly",
+      "my_evidence": "S07 背景段（A，专利陈述）称 Smartsun™ 贴纸与腕带已在市场，并含 colourimetric indicator。化学成分为推断（PAG + pH 染料）。这些产品是剂量计，不是图像媒介。",
+      "strength": "中（市场存在为 A；成分为推断）"
+    },
+    {
+      "round": "轮5 notes A2",
+      "old_claim": "G5：PAG 在 30 分钟日光 UVA 下可用（推断）",
+      "agree": "unknown（缺真实日光数据，倾向 disagree）",
+      "my_evidence": "先例示例为 UVC 或增感 UVA（S07、S03）。S06 太阳模拟器（UVI 5）的延迟型器件需数十分钟，UVB 灯 4 mW/cm² 为 4–12 min（chloral hydrate 体系）；二者都不是真实日光，也不是 PAG-only 体系。2024 研究提示太阳 UV 指示器多为光致变色而非 PAG（S11）。",
+      "strength": "弱至中（有模拟器数据，缺日光数据）"
+    },
+    {
+      "round": "轮5 notes A2",
+      "old_claim": "G7：非离子 PAG 优于 SbF6（推断）",
+      "agree": "未验证（原「原则同意」撤回）",
+      "my_evidence": "「低 dark loss」只是 S14（PMID 40997861）摘要的背景句，该研究为 DFT 计算，EUV/EB 光刻胶语境，没有 dark loss 测量。PAG103 本身强致敏且为易燃固体，安全优势未证实。",
+      "strength": "弱"
+    },
+    {
+      "round": "轮5 notes A2",
+      "old_claim": "G3 通过（推断：稳定染料态）",
+      "agree": "disagree（条件通过而非通过）",
+      "my_evidence": "可逆 pH 染料在缺少固定时会漂移（S03 的预分解陈述；S06 的碱储备设计也依赖碱耗尽）；G3 只能在不可逆或计量型设计下成立。",
+      "strength": "中"
+    }
+  ],
+  "sources": [
+    {
+      "id": "S01",
+      "title": "US5667943A — Process for thermochemical generation of acid and for thermal imaging, and imaging medium for use therein (Polaroid)",
+      "url": "https://patents.google.com/patent/US5667943A/en",
+      "type": "专利（Google Patents 全文；法律状态为 Google 字段，非法律结论）",
+      "access": "curl全文（已核对）",
+      "date": "1997-09-16（公开）；优先权 1992-10-23",
+      "quote": "「is one which undergoes an irreversible color change ... does not reverse the color change」；「passed between the heated rollers 12 ... fixes the image」"
+    },
+    {
+      "id": "S02",
+      "title": "US5334489A — Polaroid 同族（radiation 生成超强酸 + 方酸衍生物加热）",
+      "url": "https://patents.google.com/patent/US5334489",
+      "type": "专利（Google Patents 全文）",
+      "access": "curl全文（已核对）",
+      "date": "1994-08-02（公开）",
+      "quote": "「heating the superacid in admixture with a squaric acid derivative」"
+    },
+    {
+      "id": "S03",
+      "title": "US5286612A — Polaroid 同族（超强酸前体 + 染料，双波长生成超强酸）",
+      "url": "https://patents.google.com/patent/US5286612A/en",
+      "type": "专利（Google Patents 全文）",
+      "access": "curl全文（已核对；第一次 503，重试成功）",
+      "date": "1994-02-15（公开）",
+      "quote": "「premature breakdown ... during transportation and storage」；「soak up minor amounts of acid ... during protracted storage」"
+    },
+    {
+      "id": "S04",
+      "title": "WO2025151354A1 — Photo-curable compositions（Henkel AG & Co KGaA）",
+      "url": "https://patents.google.com/patent/WO2025151354",
+      "type": "专利（PCT，Google Patents 全文）",
+      "access": "curl全文（说明书已核对；权利要求 9 未核对）",
+      "date": "2025-07-17（公开）；优先权 2024-01-09；状态 Pending",
+      "quote": "「iodonium borate family」；「medical device bonding」"
+    },
+    {
+      "id": "S05",
+      "title": "EP2003501A1 — Inkless reimageable printing paper and method（Xerox）",
+      "url": "https://patents.google.com/patent/EP2003501A1/en",
+      "type": "专利（Google Patents 全文）",
+      "access": "curl全文（已核对）",
+      "date": "2008-12-17（公开）；优先权 2007-06-13",
+      "quote": "「imageable and eraseable by UV light ... comprising a photobase generator」；「365 nm generates the amine」；「254 nm, generates an acid」"
+    },
+    {
+      "id": "S06",
+      "title": "WO2010070290A1 — Dose responsive UV indicator（University of Strathclyde；Mills et al.）",
+      "url": "https://patents.google.com/patent/WO2010070290A1/en",
+      "type": "专利（Google Patents 全文）",
+      "access": "curl全文（已核对）",
+      "date": "2010-06-24（公开）；PCT/GB2009/002908，优先权 2008-12-20",
+      "quote": "「stable for many months provided they are protected from UV light」；「Thymol Blue (TB-) is yellow whereas TBH is red」；「proton-scavenging agent, i.e. a base」"
+    },
+    {
+      "id": "S07",
+      "title": "US12372399B2 — Multilayer colourimetric indicator（Intellego Technologies AB）",
+      "url": "https://patents.google.com/patent/US12372399B2/en",
+      "type": "专利（Google Patents 全文）",
+      "access": "curl全文（已核对）",
+      "date": "2025-07-29（公开）；优先权 2020-09-02",
+      "quote": "「contained Thymol Blue as pH indicator, NaOH, diphenyliodonium chloride (DPIC) as photo-acid generator」；「stickers or wristbands marketed under the name Smartsun」"
+    },
+    {
+      "id": "S08",
+      "title": "US9097588B2 — Dose responsive UV indicator（Intellego Technologies AB）",
+      "url": "https://patents.google.com/patent/US9097588",
+      "type": "专利（Google Patents 全文）",
+      "access": "curl全文（本次核查读取成功；research 原标为搜索摘录，已升级）",
+      "date": "优先权 2008-12-20；申请 2009-12-18；公开 2015-08-04",
+      "quote": "权利要求 1：「wherein the proton-scavenging agent is a base」；权利要求 17：「in the form of a wristband or transfer」；权利要求 25/29/33：「in the form of an ink」"
+    },
+    {
+      "id": "S09",
+      "title": "Experimental Xerox paper erases itself, results in temporary documents on reusable paper（Xerox UK 新闻稿）",
+      "url": "https://news.xerox.co.uk/news/GBR_Xerox_Paper",
+      "type": "厂商新闻稿（一手公司页面）",
+      "access": "curl全文（已核对）",
+      "date": "2006-12-05",
+      "quote": "「the paper self-erases in about 16-24 hours and can be used multiple times」；「It is currently part of a laboratory project」"
+    },
+    {
+      "id": "S10",
+      "title": "Irgacure PAG103 Safety Data Sheet（BASF Corporation，US，Version 1.2，revision 2010/09/16；经 University of Utah nanofab 托管）",
+      "url": "https://www.nanofab.utah.edu/wp-content/uploads/2018/08/Irgacure%C2%AE-PAG103-BASF-16Sep10_v1.2.pdf",
+      "type": "厂商 SDS（2010 版，第三方托管；现行 SDS 未取得）",
+      "access": "curl全文（PDF，7 页，已核对）",
+      "date": "2010-09-16",
+      "quote": "「This product is a strong skin sensitizer」；「> for industrial use only <」；「FLAMMABLE SOLID」；UN 1325 / 4.1 / PG III"
+    },
+    {
+      "id": "S11",
+      "title": "Aguilera et al. (2024) UV indicator wristbands, cards, stickers vs pure photochromic substances, Frontiers in Photobiology, doi 10.3389/fphbi.2024.1281474",
+      "url": "https://www.frontiersin.org/journals/photobiology/articles/10.3389/fphbi.2024.1281474/pdf",
+      "type": "同行评议论文（开放获取）",
+      "access": "curl全文（PDF，已核对）",
+      "date": "2024（收稿 2023-08-22）",
+      "quote": "「Ten commercial UV-indicating photochromic devices plus three pure photochromic substances」；「Smart Sun. Bluemarionge Health」"
+    },
+    {
+      "id": "S12",
+      "title": "Wavelength Selective Single Molecule Photobase/Photoacid Generator Enabling Dynamic Control of Soft Matter Materials Functions, Angew. Chem. (2025), doi 10.1002/anie.202508730",
+      "url": "https://api.crossref.org/works/10.1002/anie.202508730",
+      "type": "论文（Crossref API 摘要；全文未读）",
+      "access": "API（摘要已核对）",
+      "date": "2025-09-09",
+      "quote": "「blue (≥ 410 nm) and UV (≥ 310 nm) light, respectively」"
+    },
+    {
+      "id": "S13",
+      "title": "IUPAC Gold Book: photoacid generator, doi 10.1351/goldbook.09548",
+      "url": "https://api.crossref.org/works/10.1351/goldbook.09548",
+      "type": "词条元数据（定义正文未读）",
+      "access": "API",
+      "date": "2025-04-17",
+      "quote": "photoacid generator（标题）"
+    },
+    {
+      "id": "S14",
+      "title": "Mechanistic Insights into Acid Generation from Nonionic Photoacid Generators for Extreme Ultraviolet and Electron Beam Lithography, J Phys Chem A (2025-12), PMID 40997861",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/40997861/",
+      "type": "论文（PubMed 摘要，DFT 研究）",
+      "access": "API（摘要已核对）",
+      "date": "2025-12",
+      "quote": "「offering advantages such as low dark loss, reduced outgassing」（背景句，非本研究测量）"
+    },
+    {
+      "id": "S15",
+      "title": "Stepwise Hydrolysis of Hexafluoroantimonate(V), Inorg. Chem. (1966), doi 10.1021/ic50036a033",
+      "url": "https://api.crossref.org/works/10.1021/ic50036a033",
+      "type": "论文（Crossref 题名元数据；无摘要）",
+      "access": "API（题名级）",
+      "date": "1966-02",
+      "quote": "标题：Stepwise Hydrolysis of Hexafluoroantimonate(V)"
+    },
+    {
+      "id": "S16",
+      "title": "Raman study of the hydrolysis of the hexafluoroantimonate(1-) ion, Inorg. Chem. (1972), doi 10.1021/ic50108a049",
+      "url": "https://api.crossref.org/works/10.1021/ic50108a049",
+      "type": "论文（Crossref 题名元数据；无摘要）",
+      "access": "API（题名级）",
+      "date": "1972-02",
+      "quote": "标题：Raman study of the hydrolysis of the hexafluoroantimonate(1-) ion"
+    },
+    {
+      "id": "S17",
+      "title": "Unraveling the Hydrolysis Mechanism of LiPF6 in Electrolyte of Lithium Ion Batteries, Nano Letters, doi 10.1021/acs.nanolett.3c01682",
+      "url": "https://api.crossref.org/works/10.1021/acs.nanolett.3c01682",
+      "type": "论文（Crossref 题名元数据；仅作 PF6⁻ 水解背景）",
+      "access": "API（题名级）",
+      "date": "2023（未核对）",
+      "quote": "标题：Unraveling the Hydrolysis Mechanism of LiPF6 in Electrolyte of Lithium Ion Batteries"
+    },
+    {
+      "id": "S18",
+      "title": "TCI 鎓 SbF6 产品页（D6259 三芳基锍 SbF6 溶液；H1620 固体锍 SbF6）",
+      "url": "https://www.tcichemicals.com/US/en/p/D6259",
+      "type": "厂商产品页（搜索摘录；页面 HTTP 403）",
+      "access": "不可读（403，未绕过）；仅搜索摘录",
+      "date": "未核对",
+      "quote": "「light and moisture, since it is hygroscopic」（摘录释义，未核对原文）"
+    },
+    {
+      "id": "S19",
+      "title": "Hexafluoroantimonic acid hexahydrate SDS（Apollo Scientific 摘录，来源 URL 未记录）",
+      "url": "无（research 未记录 URL）",
+      "type": "SDS（搜索摘录，无 URL）",
+      "access": "无法核对；不作为证据（HF 危害改用 S23）",
+      "date": "未核对",
+      "quote": "「combustion produces hydrogen fluoride and antimony oxides」（摘录释义，未核对）"
+    },
+    {
+      "id": "S20",
+      "title": "2012–2013 媒体报道：Smartsun 腕带（Strathclyde 开发，Intellego 商业化；theengineer.co.uk、springwise、promomarketing 等）",
+      "url": "https://theengineer.co.uk/content/news/wrist-worn-monitor-warns-of-over-exposure-to-the-sun",
+      "type": "媒体（二手）",
+      "access": "不可读（403，未绕过）；仅搜索摘录",
+      "date": "2012–2013",
+      "quote": "「combining a UV-responsive acid-release agent with a pH-sensitive dye」（摘录释义，未核对）"
+    },
+    {
+      "id": "S21",
+      "title": "QVC 社区帖：Smartsun wristbands turn pink（2014）",
+      "url": "https://community.qvc.com/t5/Community-Chat/Smartsun-wristbands-turn-pink-when-it-s-time-to-get-out-of-the/td-p/878200",
+      "type": "论坛（C 级）",
+      "access": "不可读（403，未绕过）；仅搜索摘录",
+      "date": "2014（未验证）",
+      "quote": "「packs of seven bands for £6.99」（摘录释义，价格未验证）"
+    },
+    {
+      "id": "S22",
+      "title": "EP4330452B1 — UV-sensitive man-made cellulose textile fiber（University of Turku）",
+      "url": "https://patents.google.com/patent/EP4330452B1",
+      "type": "专利（Google Patents，部分读取；本次未核对）",
+      "access": "curl全文（research 原记录，本次未复核）",
+      "date": "2025-07-30（公开）",
+      "quote": "UVC dosimetry 254 nm（描述中的颜色比值读取）"
+    },
+    {
+      "id": "S23",
+      "title": "PubChem CID 11118066 — Hexafluoroantimonyic acid（HSbF6，ECHA C&L 聚合 GHS）",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug_view/data/compound/11118066/JSON?heading=GHS+Classification",
+      "type": "数据库聚合通报（ECHA C&L，43 份报告，3 个通报）；仅适用于纯 HSbF6 酸类",
+      "access": "API（PubChem，本次核查）",
+      "date": "未核对（取数日期 2026-11-01）",
+      "quote": "H300+H310+H330（90.7%）；H314（90.7%）；H411（100%）；P-codes 略"
+    }
+  ],
+  "negative_findings": [
+    {
+      "query": "Google Patents US9097588B2（Intellego Dose responsive UV indicator）全文",
+      "scope": "patents.google.com，research 原记录 4 次 503；本次核查首次请求即 HTTP 200",
+      "result": "（已更正）全文可读，权利要求 1 与 17、25/29/33 已核对（S08，curl全文）。原负结果作废。"
+    },
+    {
+      "query": "PubChem PUG REST：名称查询 10 个，以及 CID、GHS、供应商列表",
+      "scope": "pubchem.ncbi.nlm.nih.gov；research 原记录 约 15 次全部 503",
+      "result": "（已更正，本次核查）名称→CID 与 GHS 本次均返回 200（hexafluoroantimonic acid → CID 11118066，GHS 可取，S23）；diphenyliodonium hexafluoroantimonate → CID 16701408，GHS 页 404（无聚合记录，不等于安全）；'Irgacure PAG 103' 名称 404（No CID found）。供应商列表本次未重试。"
+    },
+    {
+      "query": "PubMed: photoacid generator AND (dark OR storage OR ambient light)",
+      "scope": "eutils.ncbi.nlm.nih.gov（esearch/esummary），8 条",
+      "result": "无 PAG 背景漂移定量数据。仅 nonionic PAG 摘要（S14）有 low dark loss 背景句，无测量。"
+    },
+    {
+      "query": "PubMed: hexafluoroantimonate AND (hydrolysis OR hydrogen fluoride)",
+      "scope": "同上，2 条",
+      "result": "无鎓 SbF6 释放 HF 的数据（结果为 Peroxonium SbF6 结构与 SbF6 比色测定）。"
+    },
+    {
+      "query": "PubMed: UV indicator AND (photoacid OR photo-acid) AND pH indicator",
+      "scope": "同上，5 条",
+      "result": "无相关结果。"
+    },
+    {
+      "query": "Crossref: photoacid generator dark storage stability background acid generation ambient light",
+      "scope": "api.crossref.org，6 条",
+      "result": "无相关结果。"
+    },
+    {
+      "query": "Crossref: hexafluorophosphate hydrolysis hydrogen fluoride aqueous；LiPF6 hydrolysis HF",
+      "scope": "api.crossref.org",
+      "result": "仅得到电解液与水溶液 HF 文献，无鎓盐 PF6 水解数据；429 限流若干次。"
+    },
+    {
+      "query": "Google Patents xhr: photoacid generator AND pH indicator（2019+）",
+      "scope": "patents.google.com/xhr/query，3 次",
+      "result": "503，未取得结果（未重试）。"
+    },
+    {
+      "query": "Google Patents xhr: photoacid generator AND (indicator OR dye) AND (paper OR coating)（2020+）",
+      "scope": "同上",
+      "result": "8391 条，多为光刻胶、牙科光固化、感光聚酰亚胺；在所列范围内无纸基成像命中。"
+    },
+    {
+      "query": "Google Patents xhr: photobase generator AND paper AND erase（2015+）",
+      "scope": "同上",
+      "result": "1403 条，多为光刻与印刷噪声；在所列范围内无纸基擦写专利命中（范围外不作结论）。"
+    },
+    {
+      "query": "Google Patents xhr: (dose indicator OR UV indicator) AND (photoacid OR photobase OR photochromic)（2019+）",
+      "scope": "同上，24 条",
+      "result": "命中 US12372399（S07）、WO2020208588（SunFly，未读，503）、EP4330452（S22）、RU2731655（光致发光剂量指示）等。"
+    },
+    {
+      "query": "WebSearch 1：Intellego UV indicator thymol blue diphenyliodonium photo-acid generator product wristband",
+      "scope": "WebSearch（额度 1/4）",
+      "result": "得到 2012–13 媒体与 US9097588 摘录；未确认 DPIC 名称；现行产品未确认。"
+    },
+    {
+      "query": "WebSearch 2：Irgacure PAG 103 oxime sulfonate SDS hazard statements",
+      "scope": "WebSearch（额度 2/4）",
+      "result": "得到 BASF 2010 版 SDS 托管 PDF（S10）；无 H-statements；现行 SDS 未取得。"
+    },
+    {
+      "query": "WebSearch 3：triarylsulfonium hexafluoroantimonate SDS water HF toxic gas",
+      "scope": "WebSearch（额度 3/4）",
+      "result": "无直接的水解或 HF 释放陈述；仅 TCI 摘录（潮敏，S18 不可读）与 HSbF6 摘录（燃烧产 HF，S19 无 URL）。"
+    },
+    {
+      "query": "WebSearch 4：UV indicator sticker wristband 2025 colour change photoacid generator pH dye sold",
+      "scope": "WebSearch（额度 4/4，已用完）",
+      "result": "未确认 2025–2026 现行产品；2024 Frontiers 的 Smart Sun 为 Bluemarionge Health 产品，与 2013 Smartsun 的身份未确认。"
+    },
+    {
+      "query": "非离子 PAG 小包装在售（retail）",
+      "scope": "未检索；Amazon 按规则禁止；其他商店未读取价格与库存",
+      "result": "未验证。"
+    },
+    {
+      "query": "室内光下 PAG 背景漂移的定量数据",
+      "scope": "专利、Crossref、PubMed 三类",
+      "result": "在所列范围内未发现定量数据；仅有专利定性陈述（S03）与设计化合物的可见光脱保护摘要（S12，非商用 PAG）。"
+    },
+    {
+      "query": "核查：TCI（S18）、theengineer.co.uk（S20）、community.qvc.com（S21）",
+      "scope": "curl，本次核查",
+      "result": "三者均 HTTP 403（策略拒绝）。按规则不绕过，记为不可读。"
+    }
+  ],
+  "key_unknowns": [
+    "固定机制：可逆 pH 指示染料的图像在停止后能否保留（需不可逆染料，或碱耗尽计量）；纸基可行性无一手数据；S06/S08 的碱储备设计在纸上是否稳定，未验证。",
+    "安全：鎓 SbF6/PF6 的超强酸类危害（聚合 GHS 只针对纯 HSbF6 酸，S23）、膜内光产物量与家庭条件下的 HF 生成均未测；PAG103 强致敏、易燃粉尘、SDS 工业用途限定；ASTM D-4236 与 LHAMA 未查。",
+    "日光 30 分钟成像：无真实日光下 PAG 指示体系的数据；S06 太阳模拟器（UVI 5）数据显示延迟型设计需数十分钟；UVB 灯 4 mW/cm² 数据为 chloral hydrate 体系。",
+    "室内光背景漂移速率：无定量数据，只有专利定性陈述（S03）。",
+    "非离子 PAG 的现行 SDS 与小包装供应：未取得（PubChem 名称 'Irgacure PAG 103' 404；2010 版 BASF SDS 为唯一 SDS）。",
+    "Smart Sun 同名产品的身份：S11 的 Smart Sun 为 Bluemarionge Health 产品，与 S07 背景的 Smartsun™ 及 2013 年报道（S20，不可读）是否同一产品未确认。"
+  ],
+  "discriminating_experiment": {
+    "one_liner": "纸基与 PET 各涂两组（非离子 PAG + 不可逆 leuco 染料；非离子 PAG + 碱储备 pH 指示剂），测成色 ΔE、室内光 14 天白区漂移与 65°C 加速老化，判定可逆染料路线能否固定。",
+    "design_sketch": "A 组与 B 组各设无碱后处理、有碱后处理（Polaroid 式加热辊）两子组；曝光 30 分钟（日光对照，另标定 UVA 灯，并用 S06 的 UVI 5 太阳模拟器作对照）；记录 CIELab 与 ΔE；B 组若在无后处理时白区漂移明显（例如 ΔE >2）且固定后颜色回退，即证伪可逆染料路线。另需同步做 SDS 与粉尘、皮肤致敏的家庭安全评估。"
+  },
+  "new_routes_spotted": [
+    {
+      "name": "碱储备计量型（photo-titration）指示器",
+      "why": "S06（Strathclyde，优先权 2008-12-20）与 S08（Intellego，优先权 2008-12-20）已用碱作质子清除剂实现剂量积分，色变发生在碱耗尽之后。它不是新路线，而是 S06/S08 的设计本身，早于 S07（2025 公开）。作为 A 的变体值得单独记录。",
+      "lead_url": "https://patents.google.com/patent/WO2010070290A1/en"
+    },
+    {
+      "name": "两波长独立 PBG + PAG 擦写/显色体系",
+      "why": "Xerox EP2003501 用 365 nm 触发 PBG（产胺、显色），用 254 nm 触发 PAG（产酸、擦除）（S05）。Angewandte 2025 的单分子体系为蓝光 ≥410 nm 释放碱、UV ≥310 nm 释放酸（S12，摘要，非商用）。两者是双色或可擦写纸的概念方向，未评估可行性。",
+      "lead_url": "https://patents.google.com/patent/EP2003501A1/en"
+    },
+    {
+      "name": "UV 敏感纤维素纤维剂量指示",
+      "why": "EP4330452B1（Turku）用 254 nm 对纤维颜色做剂量读数，属于纤维或纸基的 UV 指示。这不是 PAG 体系，只作为纸基 UV 指示的线索记录，本轮未复核。",
+      "lead_url": "https://patents.google.com/patent/EP4330452B1"
+    }
+  ],
+  "search_budget_used": {
+    "websearch": 4,
+    "curl_reads": 30
+  },
+  "verifier_search_budget": {
+    "websearch": 0,
+    "curl_reads": 28
+  },
+  "reconciliation_log": [
+    {
+      "item": "c02 极性与色调（thymol blue 方向）",
+      "change": "删除「碱侧蓝、酸侧黄」；改为去质子形黄、质子化形红/粉，曝光区由黄变红为正像。",
+      "why": "S06 原文 'Thymol Blue (TB-) is yellow whereas TBH is red'，且 'yellow to red/pink on exposure'；S08 同。原稿与来源相反。"
+    },
+    {
+      "item": "c02 多色扩展的波长归属",
+      "change": "拆分：Xerox EP 为 365 nm（产胺）与 254 nm（产酸）；410/310 nm 只属 Angewandte 2025 单分子体系。",
+      "why": "S05 实施例与 S12 摘要原文；原稿把两组数字合并为同一概念。"
+    },
+    {
+      "item": "c03 曝光条件（一手数据范围）",
+      "change": "补入 S06 太阳模拟器（UVI 5、UVI 10）与 UVB 灯（4 mW/cm²）的时间数据，注明非真实日光，且多数为 chloral hydrate 或 DPIC 体系；原「一手数据集中在 UVC 与汞灯」删除。",
+      "why": "S06 图 1、2、4、8、10 的正文描述；与 30 分钟目标的比较需要这些数据。"
+    },
+    {
+      "item": "c04(ii) S07 第二层的作用",
+      "change": "由「保护已曝光区域」改为「遮挡参照区，使其不变色，与未遮挡显色区比色」。",
+      "why": "S07 权利要求 1：active portion 覆盖的是第二区（参照），阻止其变色。"
+    },
+    {
+      "item": "c06 停止机制（(c) 物理顶层）与 S03 措辞",
+      "change": "顶层遮光仅视为减少外来辐射，对残留 PAG 的预分解无作用（推断）；「明文承认未曝光区 PAG 缓慢分解」改为「承认运输与储存中的预分解与混合物缓慢分解」。",
+      "why": "S03 原文措辞与 S07 第二层的功能。"
+    },
+    {
+      "item": "c07 白区稳定性（EP 背景段）",
+      "change": "删除 S05「ambient UV-VIS <420 nm」作为 PAG 机理证据；补入 S05 的反向声明（PBG 图像在纸上对环境光稳定，无数据）；S12 的用途限定为设计分子。",
+      "why": "S05 该段描述的是光致变色现有技术；S12 为人工分子，不能外推到商用 PAG。"
+    },
+    {
+      "item": "c08 成色耐光（S07 'may fade' 句）",
+      "change": "归属改为现有技术参比墨水（对照色块），不是指示体系。结论「无加速耐光数据」保留。",
+      "why": "S07 背景段原文（reference ink 的缺点陈述）。"
+    },
+    {
+      "item": "c11 安全（NaOH 腐蚀性）",
+      "change": "删除「有腐蚀性（S07）」的来源归属，改为常识级，不由本路线来源支持。",
+      "why": "S07 全文检索无腐蚀性陈述。"
+    },
+    {
+      "item": "c11 安全（SDS 工业用途限定）",
+      "change": "补入 S10 的「> for industrial use only <」与工作条件（通风、护目镜、手套、防护服）。",
+      "why": "S10 第 1、8 节原文；对成人美术材料可达性直接相关，原稿漏写。"
+    },
+    {
+      "item": "c11 安全（HF 与 HSbF6 危害）",
+      "change": "S19 无 URL，降为未验证；改用 S23（PubChem 聚合 GHS，纯 HSbF6）作为类别危害参照；补入 CID 16701408 的 GHS 404（无记录，不等于安全）。",
+      "why": "S19 无法核对；S23 为可取得的一手聚合数据，但只适用于纯酸，不适用于膜内光产物量。"
+    },
+    {
+      "item": "c13(9) 与 c12 Smartsun 商品化等级",
+      "change": "「在市场」由 B 升为 A（S07 背景的专利陈述）；化学成分仍为推断（B）；2013–14 报道细节标为未验证（S20 不可读）。",
+      "why": "S07 原文 'marketed under the name Smartsun'。"
+    },
+    {
+      "item": "c13(10)、c14、key_unknowns（Smart Sun「冲突」）",
+      "change": "由「与 2013 报道冲突」改为「同名未解」：S11 的 Smart Sun 供应商为 Bluemarionge Health。",
+      "why": "S11 产品清单（line 175）；不能证明与 Intellego/Strathclyde 的 Smartsun 为同一产品。"
+    },
+    {
+      "item": "sources S08（US9097588）access",
+      "change": "由「搜索摘录，503 未读」升为「curl全文」，补充权利要求 1、17、25/29/33 与日期（优先权 2008-12-20，公开 2015-08-04）。",
+      "why": "本次核查读取成功，原文与摘录释义一致。"
+    },
+    {
+      "item": "sources S04（WO2025151354）access 与 S05 波长",
+      "change": "access 更正为 curl全文（说明书）；权利要求 9 标注未核对。",
+      "why": "本次读取说明书，权利要求 9 未读。"
+    },
+    {
+      "item": "negative_findings（PubChem 全部 503；无 GHS；供应商）",
+      "change": "更新：本次名称→CID 与 GHS 请求返回 200；PAG103 名称 404；DPI-SbF6 GHS 404；供应商列表未重试。",
+      "why": "本次 API 结果（S23 与 CID 记录）。原负结果已过时。"
+    },
+    {
+      "item": "negative_findings（US9097588 四次 503）",
+      "change": "作废，改为读取成功（S08）。",
+      "why": "本次核查读取全文成功。"
+    },
+    {
+      "item": "sources S18、S20、S21（搜索摘录）",
+      "change": "access 标为「不可读（403，未绕过）；仅搜索摘录」；价格、商业化细节、吸湿说法均标为未验证。",
+      "why": "三者均返回 HTTP 403，按规则不绕过。"
+    },
+    {
+      "item": "sources S19（HSbF6 SDS 摘录）",
+      "change": "URL 标为无；不作为 HF 证据；替代为 S23。",
+      "why": "research 未记录 URL，无法核对原文。"
+    },
+    {
+      "item": "新增 sources S23（PubChem CID 11118066 GHS）",
+      "change": "新增一手聚合数据，限定为纯 HSbF6 酸类。",
+      "why": "用于替代 S19 的危害类别参照；不能用于膜内 HF 生成判断。"
+    },
+    {
+      "item": "baseline G7（非离子 PAG 优于 SbF6）",
+      "change": "「原则同意」撤回，改为未验证。",
+      "why": "S14 的 low dark loss 只是 DFT 摘要的背景句，文中无测量。"
+    },
+    {
+      "item": "baseline G5（日光 UVA 30 分钟）",
+      "change": "补入 S06 太阳模拟器与 UVB 数据作为对照（非真实日光），倾向不利保留。",
+      "why": "S06 图 2、10 与正文时间描述。"
+    },
+    {
+      "item": "baseline Xerox 16–24 h 与「已商品化」",
+      "change": "「已商品化」只能反驳到 2006 年，现行状态未查。",
+      "why": "S09 为 2006 年新闻稿；EP 全文无 16–24 h。"
+    },
+    {
+      "item": "c05 #2（白区 ✗）与 #6（安全 ✗）",
+      "change": "保留 ✗，但标为保守判定；#2 依据改为专利的预分解机理陈述；#6 依据改为 PAG103 SDS 事实，并标注 ASTM/LHAMA 未查，HF 生成未证实。",
+      "why": "裁定冲突取更保守的一方；但依据必须与已核对证据一致。"
+    },
+    {
+      "item": "verdict.reasons 的 HF 风险",
+      "change": "拆分为三类证据（燃烧产物 S19 无 URL；水解题名 S15–S17；纯酸聚合 GHS S23），并区分鎓盐分支与非离子 PAG103 分支。",
+      "why": "三类证据性质不同，不能合并成一条 HF 风险。"
+    },
+    {
+      "item": "new_routes_spotted #1（碱储备计量型）",
+      "change": "注明为 S06/S08 的既有设计（2008 优先权），不是新路线。",
+      "why": "S06、S08 的日期与权利要求 1。"
+    },
+    {
+      "item": "new_routes_spotted #2（两波长 PBG+PAG）",
+      "change": "波长改为 Xerox 365/254 nm；Angewandte 410/310 nm 注明为单分子非商用体系。",
+      "why": "S05、S12 原文。"
+    },
+    {
+      "item": "status 与 verdict 裁定方向",
+      "change": "维持「观察线，倾向淘汰」；理由已重写（停止问题未解、白区机理陈述、安全分支分开、日光数据）。",
+      "why": "核查后裁定方向不变，但多条论据被修正或降级。"
+    }
+  ]
+}

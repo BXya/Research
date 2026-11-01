@@ -1,0 +1,471 @@
+{
+  "key": "free_radical_dry",
+  "name_zh": "自由基干式成像（Horizons 型：卤代活化剂 + 染料形成剂，热定影）",
+  "name_en": "free-radical dry-process imaging (Horizons type: halogenated activator plus dye former, heat fixed)",
+  "status": "done（核查修订版）",
+  "columns": {
+    "c01_机制": {
+      "text": "光化学物种变化：光使含有 3 个或以上卤原子连在同一碳上的有机卤化物（s01 claim 1 原文限定，实例为 CBr4、碘仿、五溴乙烷，s01 例 4 另用六氯乙烷）产生自由基（s04 claim 1：'A SOURCE OF FREE-RADICALS, USUALLY AN ORGANIC HALOGEN COMPOUND ... ACTIVATOR'）。自由基与染料碱或 leuco 化合物反应，在曝光区生成染料盐（s01 claim 1：'a dye salt is produced in the exposed areas of said medium'），构成潜影。【事实】曝光区成盐；卤代物为活化剂。【未验证】基元步骤（C–Br 光解、Br· 或 CBr3· 等中间体、夺电子或氧化 leuco 染料、与卤离子成盐）：原文未描述，仅为推断；量子产率与染料盐结构未验证。",
+      "grade": "A（事实）；未验证（基元步骤，等级不高于 B）",
+      "label": "事实（潜影为染料盐，活化剂为卤代物）+ 未验证（基元步骤）",
+      "source_ids": ["s01", "s04", "s05"]
+    },
+    "c02_成像极性与色调": {
+      "text": "极性：直接 print-out 型，曝光区显色（同向再现曝光区）。s05 另述加热或红外可使潜影显色，可做负-正两步（s05：'to produce a negative-positive result by first exposing through a negative ... and subsequently developing by heat'）。色相：实例为蓝色（s01 例 3 Leuco Opal Blue 得蓝像，400 nm、1 mW·s/cm² 得 0.5 密度；s01 例 4 Leuco Crystal Violet 得 'high density blue image'，最高密度 2.3）；s02 摘要称像色'close to neutral'（接近中性）。连续调：s03 以定性语言报告'excellent gradient'（梯度优良）与高分辨，未给数值曲线。多色扩展：s01 列出 carbocyanine、styryl、oxazines、rhodamines、xanthenes、thiazines 等多类染料碱与 leuco 化合物可用，理论上可由染料选择改变色相；原文未见多色像实例（多色为推断）。荧烷（fluoran）不见于 s01，仅见于 s06 引述的 Reardon US4343885。",
+      "grade": "A（单色相实例、定性梯度）；推断（多色扩展）",
+      "label": "事实（单色相实例、定性梯度）+ 推断（多色扩展）",
+      "source_ids": ["s01", "s02", "s03", "s05", "s06"]
+    },
+    "c03_曝光条件": {
+      "text": "剂量与光源（一手原文；1 mW·s/cm² = 1 mJ/cm²）：(a) s02 摘要：初曝 1–10 mJ/cm²（紫或蓝区），随后红光与近红外 2–3 秒光学显影；(b) s01 例 3：400 nm 单色光 1 mW·s/cm² 得 0.5 密度单位（Leuco Opal Blue + 碘仿）；(c) s03 闪光：氙灯，半值时间 0.0001–0.005 秒，有效光量 5–500 mJ/cm²（claim 2 限定 50–100 mJ/cm²），测试例 18 mJ/cm²（0.2 ms）；(d) s02 水银弧光总曝光 100 mJ/cm²（步阶片，经 KG-1 滤光）；(e) s01 例 1 为 1 秒感光计曝光，剂量未报，速度约 ASA 0.01–0.1（低速）。日光与消费 UV 灯：原文未测，辐照度未知。与 30 分钟目标的关系：初曝剂量在 1–100 mJ/cm² 量级，原则上可能在分钟级完成，但缺 UV 灯或日光辐照度数据，无法判定能否在 30 分钟内完成（未验证）。光学显影光源：1.5 kW 钨碘灯（s01 例 1，'two 8-inch long 1.5 kw. tungsten iodine lamps'）或 1.5 kW GE Quartzline 灯加红滤光（s02）为示例设备；s05 另有 250 W 反射式红外灯约 10 秒即可显影的示例，故 1.5 kW 不是必要条件。家用可行性未验证（推断）。",
+      "grade": "A（剂量与光源）；未验证（日光与 UV 灯；30 分钟可行性）；推断（家用可行性）",
+      "label": "事实（剂量与光源）+ 未验证（日光与 UV 灯）+ 推断（家用可行性）",
+      "source_ids": ["s01", "s02", "s03", "s05"]
+    },
+    "c04_成像后处理": {
+      "text": "组合处理：先光照成像得潜影；再红光或近红外光学显影（s02 为 2–3 秒，s01 为约 0.5–1 分钟并以水冷滤除红外、片温升不超过 4–5 °C）；随后热定影。热定影数据：s02 实例为 150 °C 烘箱 60 秒，说明书称可在约 130–190 °C 之间进行，高温段数秒、低温段约 90 秒；s03 claim 3 为 80–180 °C、0.2–10 分钟，实例为 120 °C 3 分钟、130 °C 5 分钟、175 W 红外灯使表面 130 °C 约 5 分钟。湿法定影（早期与对照）：s01 例 1 为 30 秒石油醚:丙酮（4:1）溶剂淋洗；s04 测试亦用石油醚/丙酮/Stoddard 溶剂（8:2:1）淋洗数分钟。s03 声明成像与定影全程干态（'all the steps inclusive of the image-fixing step are conducted in the dry state'），无显影液、定影液和水洗。s01 claim 6：温度控制使显影与定影同时发生。类型：光（二次曝光）+ 热（定影）；无水洗，但需要加热步骤。",
+      "grade": "A",
+      "label": "事实",
+      "source_ids": ["s01", "s02", "s03", "s04"]
+    },
+    "c05_免洗核验": {
+      "text": "严格免洗：不满足。热定影为额外加热步骤；早期 CBr4 例为溶剂淋洗。",
+      "grade": "A",
+      "label": "事实 + 判断",
+      "source_ids": ["s01", "s02", "s03", "s04"],
+      "验收": {
+        "1_喷后免洗": "✗ 本路线没有喷液停止步骤，停止由加热完成。加热（s02 150 °C/60 秒；s03 80–180 °C/0.2–10 分钟）属于底线字面所指的'额外处理步骤'。早期 CBr4 例为溶剂淋洗（s01 例 1，✗）。若放宽为'干燥即可，不算额外步骤'则为 ?。",
+        "2_白区停得住": "? 热定影后白区长期稳定性无一手数据。热定影前可引用的一手数据：s04 报告 325 B2/B3 系列组合'配制后 15 分钟至 1 小时'显影能力损失（前序组合，s04 以新稳定剂改善）；s04 暗雾需稳定剂；s02 伯胺延长室温保存期 2–3 倍；s01 例 4 未定影膜荧光灯下数小时无雾化。以上均不能替代热定影后的稳定性证据。",
+        "3_成色留得住": "? 原文未报热定影后染料像的耐光或保存稳定性数据，仅有潜影速度的保存数据（见 c08）。",
+        "4_少量喷液": "? 不适用：本路线无液体停止剂。若产品设计强制喷液，则本路线与产品形态不符（推断）。",
+        "5_底材不变形": "? 原文底材为 5 mil 聚酯膜（s01 例 1、4）与纸（s01 例 6 浸渍；s03 在 baryta 与印相纸上 120–130 °C 热定影 3–5 分钟，未报告变形）。'未报告变形'不等于无变形；150 °C 下的卷曲、焦化与灰板适配均未测（未验证）。",
+        "6_安全前置": "✗ CBr4 为 GHS Danger，含 H370、H372 等（s07）；ERG 151：'高毒，可能因吸入、吞食或皮肤吸收致命'（s07）；加热分解产生有毒腐蚀烟（s07）。原文实例溶剂为苯（s09：H340、H350、H372 等）；s01 例 4 另用六氯乙烷（s10：H350、H351）。不适合成人美术材料路线（推断：ASTM D-4236 与 LHAMA 标准文本未读）。"
+      },
+      "说明": "c05 综合：严格免洗 ✗；白区与成色稳定性 ?（热定影后无一手数据）；底材 ?；安全前置 ✗。停止机制是加热而非喷液，与产品形态不符。"
+    },
+    "c06_停止机制": {
+      "text": "停止机制：热定影（原文未说明机理）。已知一手事实：s04 说明活化剂具挥发性，并称面涂层（overcoat）可对抗外部原因导致的不稳定，包括氧化或酸性污染物、挥发性活化剂的物理流失（s04：'describes one manner of overcoming external causes of instability such as oxidizing and acidic contaminants as well as the physical loss of volatile halogen activator'）。推断（未验证）：加热使残余卤化物挥发或热分解，切断未曝光区的自由基源，从而停止后续暗反应；此推断链无原文直接支持，完全性未验证。其他停止方式：早期 CBr4 例用溶剂淋洗（s01 例 1），不是化学淬灭。原文未见淬灭剂作为停止剂的一手数据。面涂层在 s04 的用途为保护：白光 15 MCS 测试时保留，之后去除再显影，不是停止剂；可作为封层候选的一手证据边界。避光不算停止。红线核查：未涉及铁氰化物或强酸、重铬酸盐、碱性普鲁士蓝；热分解毒烟另列于 c11。",
+      "grade": "A（热定影温度与条件）；未验证（机理与完全性）；B（推理）",
+      "label": "事实（热定影温度与条件）+ 未验证（机理与完全性）",
+      "source_ids": ["s01", "s02", "s03", "s04", "s07"]
+    },
+    "c07_白区长期稳定性": {
+      "text": "白区稳定性（一手）：(a) s04：对 applications 325 B2/B3 所述的卤代活化剂 + 染料碱 + leuco 化合物组合，'配制后 15 分钟至 1 小时内'光学显影能力与速度显著损失（主语为该类组合，不能泛指所有体系）；内部暗雾与外部氧化或酸性污染物、挥发性活化剂流失并存。金属二硫代氨基甲酸盐或二硫代次膦酸盐（dithiophosphinate）可抑制暗雾并改善老化稳定性；较早的 sulfur 稳定剂被描述为'未对光学显影产生不利影响'的对照，可推断其会干扰光学显影（比较性阅读，推断）。(b) s06 背景段：1,2-二溴乙烷类活化剂'rather volatile so that image instability can sometimes occur in films even at room temperature'，并称多卤化物及其副产物对环境不利，故被后续专利替代。(c) s02：伯胺（4,4'-亚甲基双环己胺等）及氨基芪可使室温保存期延长 2–3 倍；储存于挥发性伯胺气氛中也可延长。(d) s01 例 4：电子束曝光并光学显影、未定影的膜，在普通荧光灯（约 50 英尺烛光）下处理数小时无雾化（未经热定影）。未知：热定影后白区在月至年尺度的暗变，以及光照下白区变色。推断：热定影能否停住白区，需要加速老化验证。",
+      "grade": "A（上述一手数据，限于热定影前）；未验证（热定影后长期白区）；推断（比较性阅读）",
+      "label": "事实（热定影前数据）+ 未验证（热定影后长期白区）+ 推断",
+      "source_ids": ["s01", "s02", "s04", "s06"]
+    },
+    "c08_成色耐光": {
+      "text": "未报。s01–s04 全文未给出成色的耐光或加速光照褪色数据（已用 fade、light fast 检索全文）。s01 例 4 的保存数据仅为潜影速度：室温 3 个月后最高速度约降为一半（'the maximum speed dropping by a factor of approximately 2 ... 3 months'）。该数据属于速度而非成色耐光，不能换算为保存年限。s05、s06 未针对此项检索。缺失证据：加速光照（氙弧或 UV 老化）后的 ΔE 或染料保留率，以及热定影后的成色耐光数据。",
+      "grade": "A（原文无数据）",
+      "label": "未知（原文无数据）",
+      "source_ids": ["s01", "s02", "s04"]
+    },
+    "c09_预涂介质货架期": {
+      "text": "形态：以出厂预涂为主。原文基材为预先涂布或浸渍的聚酯膜或纸（s01 例 1、例 6；s03 涂布印相纸）。用户现涂形态原文未见，若做成现涂则为配方混合液。现涂混合液寿命：s04 对 325 B2/B3 系列组合报告'配制后 15 分钟至 1 小时'显影能力损失，但这是未加稳定剂的前序组合，s04 的稳定剂正为此而设，不能外推为所有现涂液寿命（原外推已删除）。出厂预涂膜货架期：s01 例 3 膜保存'超过两个月'（Leuco Opal Blue 与碘仿，PVC/THF 涂膜）；s01 例 4 室温 3 个月后最高速度约减半；s02 伯胺可延长 2–3 倍。以上均为速度或显影能力数据，不是成色耐光。结论：有原文保存数据的仅为月级；溶剂基配方（苯、甲苯、四氢呋喃、乙二醇）不符合消费品包装与货架要求（推断）。",
+      "grade": "A（保存数据）；推断（消费品适配）",
+      "label": "事实 + 推断",
+      "source_ids": ["s01", "s02", "s03", "s04"]
+    },
+    "c10_底材适配": {
+      "text": "底材：原文用 5 mil 聚酯膜（s01 例 1、4）、纸（s01 例 6 浸渍；s03 为 baryta paper 与 printing paper 涂布）。纸基可行（s01 claim 2：'the active ingredients are supported in a sheet of paper ... applied as solutions ... imbibed and are thereafter dried'）。s03 在印相纸上 120–130 °C 热定影 3–5 分钟，原文未报告变形；但印相纸不同于灰板（graybord），灰板适配未验证。吸湿变形：未验证。封层兼容：s04 提到 PVA 面涂层（overcoat），与热定影的兼容性未报。溶剂体系（苯、甲苯、四氢呋喃、乙二醇、丙酮与石油醚）对纸基与拼图模切件的兼容性在推断上不利（未验证）。",
+      "grade": "A（事实）；未验证（灰板与吸湿变形）",
+      "label": "事实 + 未验证",
+      "source_ids": ["s01", "s03", "s04"]
+    },
+    "c11_安全与法规": {
+      "text": "CBr4（CAS 558-13-4，s07）：ECHA 汇总的 GHS 信号词为 Danger，危险说明包括 H302、H315、H318（严重眼损伤）、H335、H336、H370、H371、H372、H373 等；ERG 151 写明'高毒，可能因吸入、吞食或皮肤吸收致命'；加热分解产生有毒腐蚀烟；与碱金属反应有爆炸危险（s07）。Leuco Crystal Violet（CAS 603-48-5，s08）：H315、H319、H335、H400、H410。苯（CAS 71-43-2，CID 241，s09）：H225、H304、H315、H319、H340、H350、H372 等（聚合汇总另含 H370、H302 等，本表不全）；原文实例溶剂。六氯乙烷（CAS 67-72-1，s10）：H350、H351、H400、H410 等（另含 H373、H303 等）；s01 例 4 原文即以 500 mg 六氯乙烷与 CBr4 并用，并非仅'替代活化剂参考'。碘仿（CAS 75-47-8，s11）：H302、H312、H332、H315、H319、H335 等（另含 H336）。未读：SDS 厂商原页、法规标签级别、PPE 要求、ASTM D-4236 与 LHAMA 可达性。成人美术材料可达性：推断为不可达（依据 CBr4 的 H370、H372 与 ERG 致命描述；六氯乙烷 H350、H351）。",
+      "grade": "A（数据库 API 汇总）",
+      "label": "事实（数据库汇总）+ 推断（可达性）",
+      "source_ids": ["s01", "s07", "s08", "s09", "s10", "s11"]
+    },
+    "c12_供应与成本": {
+      "text": "未知，未验证。本轮未检索价格或库存。tcichemicals.com 返回 403 不可读；其他供应商页不在白名单内，未访问；Amazon 禁止访问。CBr4 与 Leuco Crystal Violet 的价格未收集。该路线目前没有可作成本对标的现行消费级产品（见负结果）。",
+      "grade": "未知",
+      "label": "未验证",
+      "source_ids": []
+    },
+    "c13_证据等级": {
+      "text": "关键主张（逐条）：(1) 卤代烃与 leuco 染料在曝光区生成染料盐（s01 claim 1）：A，事实。(2) 初曝 1–10 mJ/cm² 后，红光或近红外 2–3 秒光学显影，并以 150 °C 60 秒热定影（s02 摘要）：A，事实。(3) 闪光曝光 5–500 mJ/cm²，热定影 80–180 °C、0.2–10 分钟（s03 claim 2–3）：A，事实。(4) 配制后 15 分钟至 1 小时显影能力损失（限 325 B2/B3 系列组合）；金属二硫代氨基甲酸盐可抑制暗雾（s04）：A，事实。(5) 挥发性活化剂导致室温不稳定（s06 背景段）：A，事实（引用的背景陈述）。(6) 室温 3 个月后最高速度约减半（s01 例 4）：A，事实（速度，非成色）。(7) CBr4 为高毒物质，ERG 描述致命风险（s07）：A（数据库 API 汇总），事实。(8) 热定影后白区与成色耐光无数据：未验证（缺数据）。(9) 热定影的化学机理为残余活化剂挥发或分解：推断，B 级推理，未经原文证实。(10) 本路线无现存消费级产品；Horizons 当前业务为湿法 Metalphoto：s12 厂商原页（curl 全文 PDF）为 A，s13 贸易文章为 B。",
+      "grade": "A（1–7、10 之 s12）；B（9、10 之 s13）；未验证（8）",
+      "label": "事实、推断与未验证混合，逐条标注",
+      "source_ids": ["s01", "s02", "s03", "s04", "s06", "s07", "s12", "s13"]
+    },
+    "c14_关键未知": {
+      "text": "最可能翻盘的未知：(1) 热定影（150 °C/60 秒 或 80–180 °C）后白区与成色的月至年级稳定性。若有正面数据，热定影可作为其他路线的停止机制先例。(2) 能否找到低毒活化剂，同时保持 80–180 °C 热定影窗口与速度。原文实例中已用到的卤代活化剂（CBr4、碘仿、六氯乙烷）均有 H302 或 H350 等危害，原文溶剂为苯（H350）；五溴乙烷未查 SDS。(3) 日光与消费 UV 灯的辐照度，以及 30 分钟目标的可行性（无数据）。",
+      "grade": "B",
+      "label": "未验证",
+      "source_ids": []
+    },
+    "c15_判别实验": {
+      "text": "一句话：用卤代活化剂加 Leuco Crystal Violet 涂膜，做 1–10 mJ/cm² 近紫外曝光、红光光学显影，再以 150 °C/60 秒热定影；与不加热定影的对照比较白区在暗储与光照后的色差。仅限有通风柜的实验室，经 SDS 与安全审批后进行，不推荐家用。因 CBr4 已因 H370/H372 与 ERG 致命描述被淘汰，实验不应以 CBr4 为默认活化剂；若无低毒替代品，则不做。",
+      "grade": "推断",
+      "label": "判别实验设计（推断）",
+      "source_ids": ["s01", "s02", "s07"]
+    }
+  },
+  "verdict": {
+    "status": "淘汰（产品路线）；机制先例（热定影温度窗口）保留为参考",
+    "reasons": [
+      "安全前置不达标（底线 6）：CBr4 为 H370、H372 高毒物质，ERG 描述致命风险，加热分解产生有毒腐蚀烟；原文实例以苯为溶剂（H350），以六氯乙烷为共用活化剂（H350、H351）。",
+      "免洗不达标（底线 1，严格口径）：必须加热定影（150 °C/60 秒，或 80–180 °C/0.2–10 分钟）；早期 CBr4 例为溶剂淋洗。",
+      "停止机制与产品形态不符：无喷液停止剂，停止由加热完成（底线 4 不适用）。",
+      "白区与成色稳定性未能证明通过（底线 2、3 标为 ?）：热定影后无一手数据。热定影前的数据（325 B2/B3 系列组合配制后 15 分钟至 1 小时显影损失、挥发性活化剂导致室温不稳定、例 4 三个月速度减半）不能替代热定影后的稳定性证据。",
+      "光学显影的示例设备为 1.5 kW 钨碘灯或 Quartzline（s01、s02）；s05 另有 250 W 红外灯约 10 秒即可显影的示例，故功率并非必须 1.5 kW。家用条件下的可行性仍为推断。",
+      "底材在 150 °C 热定影下的纸基与灰板变形未验证（底线 5 为 ?）；s03 在印相纸上 120–130 °C 热定影 3–5 分钟未报告变形，但不能替代灰板测试。"
+    ],
+    "red_line_hits": [
+      "未命中原文三类红线（铁氰化钾或亚铁氰化钾加强酸、重铬酸盐、普鲁士蓝碱性条件）。CBr4 不属于这三类；但按'家用或车库、通风有限'的现实安全性评估，属于底线 6 不达标，这是非红线字面的安全淘汰。"
+    ]
+  },
+  "baseline_challenges": [
+    {
+      "round": "v0.5 与阶段 2 草稿（本地 09-搜索结果整理.md 第 27 行仅将 free_radical_dry 列为待研路线）",
+      "old_claim": "旧轮次未覆盖本路线，无可挑战的主张",
+      "agree": "not_applicable",
+      "my_evidence": "本地资料包无专门文件；本轮未发现旧主张。与本路线无关的已知旧错误（Pellet 显影剂 亚铁氰化钾 与 铁氰化钾 混写）未在本路线出现，未核查。核查轮亦确认本路线文本中无铁氰化钾、亚铁氰化钾或其混写。",
+      "strength": "无"
+    }
+  ],
+  "sources": [
+    {
+      "id": "s01",
+      "title": "US3510300A - Process for making latent dye salt image visible (Fotland, Fichter; Horizons Inc)",
+      "url": "https://patents.google.com/patent/US3510300A/en",
+      "type": "专利（一手）",
+      "access": "curl全文（核查轮再读）",
+      "grade": "A",
+      "date": "申请 1966-05-24；授权 1970-05-05（核查轮由 s02 原文引述与 s04 原文确认）",
+      "quote": "a dye salt is produced in the exposed areas of said medium（claim 1，核查确认）"
+    },
+    {
+      "id": "s02",
+      "title": "US3624228A - Halogen liberating/color former light sensitive systems having increased speed (Horizons Inc)",
+      "url": "https://patents.google.com/patent/US3624228A/en",
+      "type": "专利（一手）",
+      "access": "curl全文（核查轮再读）",
+      "grade": "A",
+      "date": "申请 1969-06-09；授权 1971-11-30（核查确认）",
+      "quote": "Fixing is accomplished by heating the film to a temperature of 150 C. for 60 seconds.（核查确认）"
+    },
+    {
+      "id": "s03",
+      "title": "US3957513A - Method of free radical photography utilizing a short light flash for exposure (Asahi Kasei)",
+      "url": "https://patents.google.com/patent/US3957513A/en",
+      "type": "专利（一手）",
+      "access": "curl全文（核查轮再读；首次 503，重试成功）",
+      "grade": "A",
+      "date": "优先权 1973-04-19；授权 1976-05-18（核查确认）",
+      "quote": "the colored image is heated for 0.2 to 10 minutes in an atmosphere maintained at 80 to 180°C（claim 3，核查确认）"
+    },
+    {
+      "id": "s04",
+      "title": "US4018604A - Free radical photosensitive compositions with improved sensitivity and shelf life stability (Horizons Inc)",
+      "url": "https://patents.google.com/patent/US4018604A/en",
+      "type": "专利（一手）",
+      "access": "curl全文（核查轮再读）",
+      "grade": "A",
+      "date": "优先权 1976-01-14；授权 1977-04-19（核查确认）",
+      "quote": "such compositions exhibit such poor shelf life stability toward the optical development process that a sizeable loss of development capability ... occurs within fifteen minutes to one hour of preparation（核查确认；主语限 325 B2/B3 系列组合）"
+    },
+    {
+      "id": "s05",
+      "title": "US3042519A - Latent image photographic system (Horizons Inc; Wainer et al.)",
+      "url": "https://patents.google.com/patent/US3042519A/en",
+      "type": "专利（一手）",
+      "access": "curl全文（核查轮再读）",
+      "grade": "A",
+      "date": "申请 1960-01-08；授权 1962-07-03（核查确认）。s02 的 OCR 写作 3,042,515 为排印差异，核查确认",
+      "quote": "subsequently made visible by heating or by treatment with infrared（核查确认）"
+    },
+    {
+      "id": "s06",
+      "title": "US5407783A - Photoimageable compositions containing substituted 1,2 dihalogenated ethanes for enhanced printout image (E.I. du Pont)",
+      "url": "https://patents.google.com/patent/US5407783A/en",
+      "type": "专利（一手）",
+      "access": "curl全文（核查轮再读）",
+      "grade": "A",
+      "date": "美国申请 1994-03-09；授权与公开 1995-04-18（核查确认，原标'未核实'已更新）",
+      "quote": "they are rather volatile so that image instability can sometimes occur in films even at room temperature（核查确认）"
+    },
+    {
+      "id": "s07",
+      "title": "PubChem CID 11205 Carbon tetrabromide (CAS 558-13-4): GHS, ERG 2024 Guide 151, melting point 90 °C",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/11205",
+      "type": "数据库（PubChem，汇总 ECHA C&L；核查轮读取 pug_view 完整视图）",
+      "access": "API",
+      "grade": "A",
+      "date": "2026-11-01 读取",
+      "quote": "Highly toxic, may be fatal if inhaled, ingested or absorbed through skin (ERG2024 Guide 151)（核查确认）"
+    },
+    {
+      "id": "s08",
+      "title": "PubChem CID 69048 Leucocrystal violet (CAS 603-48-5): GHS",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/69048",
+      "type": "数据库（PubChem，汇总 ECHA C&L）",
+      "access": "API",
+      "grade": "A",
+      "date": "2026-11-01 读取；核查确认",
+      "quote": "H315, H319, H335, H400, H410 (ECHA aggregated)"
+    },
+    {
+      "id": "s09",
+      "title": "PubChem CID 241 Benzene (CAS 71-43-2): GHS",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/241",
+      "type": "数据库（PubChem）",
+      "access": "API",
+      "grade": "A",
+      "date": "2026-11-01 读取；核查确认（聚合列表另含 H302、H332、H335、H336、H341、H361、H370、H401、H411、H412）",
+      "quote": "H350: May cause cancer; H340: May cause genetic defects"
+    },
+    {
+      "id": "s10",
+      "title": "PubChem CID 6214 Hexachloroethane (CAS 67-72-1): GHS",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/6214",
+      "type": "数据库（PubChem，汇总 ECHA C&L）",
+      "access": "API",
+      "grade": "A",
+      "date": "2026-11-01 读取；核查确认（另含 H373、H303 等）",
+      "quote": "H351 (59.4%): Suspected of causing cancer"
+    },
+    {
+      "id": "s11",
+      "title": "PubChem CID 6374 Iodoform (CAS 75-47-8): GHS",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/6374",
+      "type": "数据库（PubChem，汇总 ECHA C&L）",
+      "access": "API",
+      "grade": "A",
+      "date": "2026-11-01 读取；核查确认",
+      "quote": "H302, H312, H332, H315, H319, H335 (ECHA aggregated)"
+    },
+    {
+      "id": "s12",
+      "title": "Horizons ISG product sheet (horizons-inc.com, ISG_Sheet.pdf)",
+      "url": "https://horizons-inc.com/wp-content/uploads/2024/10/ISG_Sheet.pdf",
+      "type": "厂商页（核查轮读取全文 PDF）",
+      "access": "curl全文（PDF，pdftotext）",
+      "grade": "A（原标'搜索摘录' B，核查后升级）",
+      "date": "URL 日期 2024-10；核查读取日期 2026-11-01",
+      "quote": "Photosensitive, water processed imaging material for creating high-quality, durable, custom images in less than five minutes（核查确认）"
+    },
+    {
+      "id": "s13",
+      "title": "Metalphoto trade article: Innovative and Durable Products, Horizons Inc. (PDF)",
+      "url": "https://metalphoto.com/wp-content/uploads/2024/11/RR11_56-59_SP-Horizon_02.11.pdf",
+      "type": "专业文章（核查轮读取全文 PDF）",
+      "access": "curl全文（PDF，pdftotext）",
+      "grade": "B",
+      "date": "URL 日期 2024-11；核查读取日期 2026-11-01",
+      "quote": "The result is a sealed image（核查确认；二手贸易文章）"
+    }
+  ],
+  "negative_findings": [
+    {
+      "query": "WebSearch: Horizons free radical dry process photographic carbon tetrabromide leuco dye heat fixed",
+      "scope": "WebSearch 索引（搜索摘录），额度第 1 次",
+      "result": "找到 US3510300A、US5035974、US4555476 等专利题录；未找到 Horizons 消费级自由基干式胶片产品。"
+    },
+    {
+      "query": "WebSearch: free radical photography tetrabromomethane leuco dye home darkroom revival hobby dry process 2024",
+      "scope": "WebSearch 索引，额度第 2 次",
+      "result": "未发现家用暗房复兴、爱好者社群或 2024 年活动；仅找到旧专利（US4232106、US5407783 等）与 RIT 论文题录（repository.rit.edu 返回 403，未读）。"
+    },
+    {
+      "query": "WebSearch: Horizons Research Incorporated Cleveland Ohio free radical photography print-out film commercial product Wainer",
+      "scope": "WebSearch 索引，额度第 3 次",
+      "result": "未证实 Horizons 有自由基干式胶片的现行产品。Horizons Inc（克利夫兰）当前业务为湿法金属成像（Metalphoto 阳极氧化铝）等（s12 厂商原页全文、s13 贸易文章全文，核查确认）。"
+    },
+    {
+      "query": "Google Patents 引证面板：US3510300A 的 Cited by 与 Similar（Horizons 系列题录）",
+      "scope": "一手专利页面的引证列表（仅题录），已读全文的只有 s01、s02、s04、s05、s03、s06",
+      "result": "发现 Horizons 系列：US3042519、US3121633、US3147117、US3624228、US3658533、US4018604、US4092164；其他相关：US3957513（Asahi）、US3980480、US3607266。US4066459 来自搜索结果，不在引证面板内。除上列已读外，其余仅有题录，未读全文。"
+    },
+    {
+      "query": "Google Patents xhr: q=(free radical leuco), priority>=1980，前 20 条（首次 503，重试后成功）",
+      "scope": "后期（1980 年以后）关键词范围内",
+      "result": "关键词范围内未发现卤代活化剂 + leuco 的消费级干式成像专利。结果为 leuco 变色类（J&J 镜片标记 US20130083286A1、Segan 变色 US11225100B2、Fujifilm UV 感应片 US10113907B2、Kodak 光致抗蚀剂等），机制不同。这是关键词范围内未发现，不等于无专利。"
+    },
+    {
+      "query": "Wikipedia API: list=search srsearch='free radical photography'",
+      "scope": "en.wikipedia.org",
+      "result": "HTTP 429（限流），未获取结果。"
+    },
+    {
+      "query": "RIT 论文 repository.rit.edu article=4020",
+      "scope": "学位论文 PDF",
+      "result": "HTTP 403（策略拒绝），未读，不绕过。"
+    },
+    {
+      "query": "Crossref: query='free radical photography halogen leuco dye', rows=8",
+      "scope": "api.crossref.org 元数据",
+      "result": "8 条结果多数不相关；与本路线相关的仅有 DOI 10.1016/b978-0-08-021201-2.50014-4（1977，'Aromatic aldehyde-leuco dye photoxidation'，仅题录，未读摘要）。"
+    },
+    {
+      "query": "CBr4 价格与供应商",
+      "scope": "tcichemicals.com（403）；其他供应商不在白名单；Amazon 禁止",
+      "result": "未获得任何价格或库存数据，c12 为未知。"
+    },
+    {
+      "query": "ECHA CBr4 SDS 与注册页",
+      "scope": "echa.europa.eu（清单标注 403，未尝试）",
+      "result": "未读。危险信息以 PubChem 汇总 ECHA C&L 为准（s07）。"
+    }
+  ],
+  "key_unknowns": [
+    "热定影（150 °C/60 秒，或 80–180 °C）后白区的月至年级稳定性，以及光照下白区是否变色（一手原文无数据）。",
+    "成色的耐光与加速老化数据（一手原文无数据，只有潜影速度数据）。",
+    "能否找到低毒活化剂，同时保持热定影窗口与速度（原文实例所用的 CBr4、碘仿、六氯乙烷均有 H302 或 H350 等危害）。",
+    "日光与消费 UV 灯的辐照度，以及 30 分钟目标的可行性（原文无数据）。",
+    "纸基或灰板在 150 °C 热定影下的变形与焦化风险（未测；s03 印相纸 120–130 °C 未报变形，但不能替代灰板）。",
+    "热定影的化学机理：残余活化剂是挥发、热分解，还是与染料前体反应（原文未说明）。"
+  ],
+  "discriminating_experiment": {
+    "one_liner": "用卤代活化剂加 Leuco Crystal Violet 涂膜，做 1–10 mJ/cm² 近紫外曝光与红光光学显影，再以 150 °C/60 秒热定影；与不加热定影的对照比较白区在暗储与光照后的色差。仅限有通风柜的实验室，经 SDS 与安全审批后进行；不以 CBr4 为默认活化剂，若无低毒替代品则不做。",
+    "design_sketch": "(0) 先做安全门槛：取得所选活化剂的 SDS，确认无 H350/H340/H370 类危害，否则不做。(1) 配方参照 s01 例 4 或 s02 的 leuco/活化剂体系，但以低毒替代品为优先考察对象；若只能用 CBr4，则不纳入产品路线，仅作机理对照且须在通风柜内由有资质人员操作。(2) 涂布于 5 mil 聚酯膜与模拟拼图用纸板（灰板），两组：热定影组（150 °C/60 秒）与对照组（不加热）。(3) 曝光 1–10 mJ/cm²（近紫外），红光光学显影 2–3 秒，两组同时处理。(4) 测白区 ΔE：处理后即刻、暗储 7 天、荧光灯 24 小时；成色用同一光源作耐光对照。(5) 判据：若热定影组白区 ΔE 在 7 天暗储后显著增大，或纸基出现卷曲，则热定影作为停止机制被证伪。"
+  },
+  "new_routes_spotted": [
+    {
+      "name": "光致印出抗蚀剂（工业 PCB，1,2-二卤代乙烷 + leuco 染料）",
+      "why": "DuPont 1995 专利族（US5407783A 授权 1995-04-18，核查确认），属于现存工业形态，可能仍有产品（现行产品未核实）。背景段称多卤化物及其副产物对环境不利，与本路线的安全评估相关。",
+      "lead_url": "https://patents.google.com/patent/US5407783A/en"
+    },
+    {
+      "name": "闪光曝光的自由基摄影（Asahi Kasei 1973，氙灯闪光 + 80–180 °C 热定影）",
+      "why": "与本路线同族但曝光方式不同（闪光代替连续光），可作为独立的闪光变体线索；需判断是否属于同一路线。核查确认其全过程为干态（dry state）。",
+      "lead_url": "https://patents.google.com/patent/US3957513A/en"
+    },
+    {
+      "name": "微胶囊化 leuco 染料与光氧化剂体系",
+      "why": "US4962009A（1990 年左右）题录显示为微胶囊化 leuco 染料与光氧化剂，可能与 c09 的预涂稳定性有关；仅题录，未读。",
+      "lead_url": "https://patents.google.com/patent/US4962009A/en"
+    },
+    {
+      "name": "N-乙烯胺 + 有机卤化物的 print-out 体系（Lewis 与 Shirey，US3697276，1972）",
+      "why": "由 s04 原文引用（核查确认：'Lewis and Shirey in U.S. Pat. No. 3,697,276 issued Oct. 10, 1972'），属于自由基 print-out 的另一条化学线索；仅引用，未读。",
+      "lead_url": "https://patents.google.com/patent/US3697276A/en"
+    }
+  ],
+  "search_budget_used": {
+    "websearch": 3,
+    "curl_reads": 18,
+    "verify_websearch": 0,
+    "verify_curl_reads": 13
+  },
+  "reconciliation_log": [
+    {
+      "item": "c01 基元步骤（C–Br 光解、Br· 或 CBr3·、夺电子、与卤离子成盐）",
+      "change": "由'推断链'改为明确的'未验证'，等级不高于 B；保留事实层（s01 claim 1 成盐、s04 claim 1 活化剂）。",
+      "why": "核查：s01、s04 全文均未描述基元中间体或成盐机理，研究稿标推断但在 c13(9) 中以 B 级推理引用，未能证实的推断应降为未验证。"
+    },
+    {
+      "item": "c02 多色扩展中的'荧烷'",
+      "change": "从 s01 列类别中删除'荧烷'，改为'xanthenes、rhodamines'等原文用词；荧烷仅注明见于 s06 引述的 Reardon US4343885。",
+      "why": "核查：s01 全文无 fluoran、fluorane；荧烷归属错误。"
+    },
+    {
+      "item": "c03 与 verdict 中的光学显影光源（1.5 kW）",
+      "change": "保留 1.5 kW 钨碘灯（s01 例 1）与 1.5 kW Quartzline（s02）为示例设备的事实；新增 s05 的 250 W 反射式红外灯约 10 秒示例；verdict 改为'示例设备'，不再写成'依赖 1.5 kW 级光源'。",
+      "why": "核查：s05 原文示例说明 250 W 红外灯即可显影，原表述过严（反驳）。"
+    },
+    {
+      "item": "c04 / c05 热定影温度范围",
+      "change": "补充 s02 说明书的 130–190 °C 范围（高温段数秒、低温段约 90 秒）；补充 s03 印相纸 120–130 °C 热定影 3–5 分钟的实例。",
+      "why": "核查：研究稿只写 150 °C/60 秒与 80–180 °C，遗漏 s02 说明书范围与 s03 纸基实例；属于遗漏，不影响淘汰裁定。"
+    },
+    {
+      "item": "c05 验收 2、3、5 的描述",
+      "change": "将'无一手数据'限定为'热定影后无一手数据'，并列出热定影前的一手数据作为背景，均不替代热定影后证据；验收 5 补充 s03 印相纸实例（未报告变形）。",
+      "why": "核查：s01 例 4 荧光灯下未定影膜无雾化、s02 伯胺延长保存期 2–3 倍为一手数据，原表述过宽。"
+    },
+    {
+      "item": "verdict.reasons 第 4 条：'白区与成色稳定性无一手数据（底线 2、3 未通过）'",
+      "change": "改为'未能证明通过（底线 2、3 标为 ?）'，与 c05 的 '?' 对齐，并注明热定影前数据不能替代热定影后证据。",
+      "why": "冲突裁定取更保守（不超出证据）的一方：c05 为 ?，verdict 写'未通过'超出证据；淘汰结论仍由底线 1 与 6 支撑，不受影响。"
+    },
+    {
+      "item": "c06 停止机理（热定影使残余卤化物挥发或分解）",
+      "change": "明确标为未验证推断，等级不高于 B；补充 s04 面涂层（overcoat）的一手用途说明：保护层（白光 15 MCS 测试时保留，之后去除再显影），不是停止剂。",
+      "why": "核查：原文无此机理；s04 overcoat 为研究稿遗漏的一手封层证据，应作为封层候选的边界说明。"
+    },
+    {
+      "item": "c07 与 c13(4)：s04 '配制后 15 分钟至 1 小时显影损失'",
+      "change": "加限定：主语为 325 B2/B3 系列组合（卤代活化剂 + 染料碱 + leuco），不泛指所有体系；s04 的稳定剂正为改善此问题而设。",
+      "why": "核查：s04 原句'such compositions ... as described in the above noted patent applications (325 B2 and B3)'，研究稿的泛化为过度外推。"
+    },
+    {
+      "item": "c07 与 c06：'二硫代膦酸盐'",
+      "change": "更正为'二硫代次膦酸盐（dithiophosphinate）'。",
+      "why": "核查：s04 原词为 dithiophosphinates；二硫代膦酸盐对应 dithiophosphonate，术语误译（反驳，术语）。"
+    },
+    {
+      "item": "c07(a) 较早的硫化物稳定剂会干扰光学显影",
+      "change": "保留，但注明为比较性阅读（推断）。",
+      "why": "核查：s04 称新化合物'not adversely affecting the optical development process'，蕴含前者有不利影响，属推断性阅读。"
+    },
+    {
+      "item": "c07(b) 与 s06 背景",
+      "change": "补充 s06 关于多卤化物及其副产物环境不利的陈述。",
+      "why": "核查：s06 原文另有此句，与安全评估相关。"
+    },
+    {
+      "item": "c09 现涂混合液寿命'以分钟至小时计'",
+      "change": "删除外推结论；改为'仅前序组合有原文数据，不能外推'。",
+      "why": "核查：s04 数据针对未加稳定剂的前序组合，外推为现涂液寿命无原文支持（反驳）。"
+    },
+    {
+      "item": "c10 底材：纸基热定影",
+      "change": "补充 s03 在 baryta 与印相纸上 120–130 °C 热定影 3–5 分钟、原文未报告变形；注明印相纸不同于灰板，灰板仍未验证。",
+      "why": "核查：遗漏的一手数据点，且与 c05 验收 5 需一致。"
+    },
+    {
+      "item": "c11 苯的 GHS 代码",
+      "change": "补充 CAS 71-43-2；注明聚合列表另含 H370、H302、H332 等，本表不全。",
+      "why": "核查：PubChem 241 确认上列代码存在但不完整。"
+    },
+    {
+      "item": "c11 与 c14：六氯乙烷为'替代活化剂参考'",
+      "change": "改为's01 例 4 原文组合即以 500 mg 六氯乙烷与 CBr4 并用'，并列出 H350、H351、H373 等；c14 同步补充。",
+      "why": "核查：s01 例 4 原文组合确含六氯乙烷，研究稿分类不完整（反驳）。"
+    },
+    {
+      "item": "c13(10) 与 sources s12、s13：'搜索摘录' B 级",
+      "change": "s12 升为 A（厂商原页，curl 全文 PDF，'Photosensitive, water processed imaging material...'）；s13 维持 B（二手贸易文章，全文 PDF 确认 'sealed image'）。",
+      "why": "核查：两份 PDF 均已读取全文；原标'搜索摘录'不再适用。"
+    },
+    {
+      "item": "sources s06 授权日'未核实，约 1995'",
+      "change": "更新为授权与公开 1995-04-18，美国申请 1994-03-09。",
+      "why": "核查：Google 页面 'Application granted' 与 'Publication of US5407783A' 均为 1995-04-18。"
+    },
+    {
+      "item": "sources s01–s05 申请与授权日期",
+      "change": "保留，并标注核查确认。",
+      "why": "核查：各日期与专利页及他篇原文引述一致。"
+    },
+    {
+      "item": "c15 判别实验与 CBr4",
+      "change": "明确要求先过 SDS 与安全审批；不以 CBr4 为默认活化剂；若无低毒替代品则不做。",
+      "why": "核查：路线已因 CBr4 的 H370/H372 与 ERG 致命描述淘汰，实验设计不应再以其为默认。"
+    },
+    {
+      "item": "c08 成色耐光的检索范围",
+      "change": "补充检索范围：s01–s04 全文（fade、light fast）；s05、s06 未针对此项检索。",
+      "why": "核查：研究稿'未报'的范围需写明，以符合'没找到'须写搜索范围的要求。"
+    },
+    {
+      "item": "研究稿文件缺失",
+      "change": "free_radical_dry.research.md 不存在；核查仅基于 research.json，已在 verify.json structural_issues 注明。",
+      "why": "其他路线均有 .md，此处缺失属结构问题，不改变结论。"
+    },
+    {
+      "item": "红线与关键词检查（铁氰/亚铁氰混写、重铬酸盐、普鲁士蓝碱性、避光停止、碳酸盐外推、年限换算、无专利结论、价格库存）",
+      "change": "无修改。全部通过：文本中无铁氰或亚铁氰；无避光作为停止；无碳酸盐外推；c08 未换算年限；专利表述为'关键词范围内未发现'；价格库存标为未验证。",
+      "why": "核查确认研究稿在这些项目上符合规则。"
+    },
+    {
+      "item": "淘汰裁定（安全前置 ✗、免洗 ✗）",
+      "change": "维持淘汰（产品路线）；机制先例（热定影温度窗口）保留为参考。",
+      "why": "核查：两项证据充分，不因上述修订而改变。"
+    }
+  ]
+}

@@ -1,0 +1,561 @@
+{
+  "key": "silver_printout",
+  "name_zh": "卤化银 print-out 路线（POP、lumen print、盐纸）",
+  "name_en": "silver halide print-out processes (printing-out paper, lumen prints, salted paper)",
+  "status": "淘汰",
+  "read_date": "2026-11-01",
+  "verification_note": "本文件为对抗式核查后的修订版（核查日期 2026-11-01）。淘汰裁定维持；修订处见 reconciliation_log。",
+  "columns": {
+    "c01_机制": {
+      "text": "POP（print-out，厂商定义为 salted paper 的一种）：卤化银（以 AgCl 为主，另有添加银盐）经光照部分还原为金属银。无需显影（厂商：Development is not necessary, thus the term printing-out）。未定影时银颗粒高度分散于 AgCl 中呈「固溶体」态，颜色与密度由银颗粒尺寸及折射率决定（Reilly 1980 第 9 章，A）。具体光化学中间体未在本轮来源中确认。Lumen print：对未显影的商用明胶卤化银相纸直接日光或 UV 曝光，颜色来自光致银析出（推断：与 POP 同类；lumen 专门机理文献未找到，故为推断）。",
+      "grade": "A（POP 机理，厂商说明书与 Reilly 双源）；推断（lumen 归类）",
+      "label": "事实（POP）；推断（lumen）",
+      "source_ids": ["S01", "S03", "S12", "S17"]
+    },
+    "c02_极性与色调": {
+      "text": "POP：接触底片曝光得到与底片对应的正像（Talbot 以来的 print-out 正片用途，Reilly chap3，A）；单色（未定影为紫或棕，定影后转为黄褐并失去密度，Reilly chap9，A）；连续调可做（底片接触印相，S01/S02/S03）；多色扩展无。Lumen：物体所在处保持浅色、其余区域被曝光染色；颜色为粉、紫、棕、蓝灰等，由曝光量、物体透光度、水分及纸的乳剂决定，不可指定色相（实践者描述，S11、S12，C）。对「每色一个单色相、深浅渐变」目标：POP 可达单色深浅；lumen 色相不可控。",
+      "grade": "A（POP，Reilly 与厂商）；C（lumen 实践者描述）",
+      "label": "事实（来源描述）；推断（对目标适配）",
+      "source_ids": ["S01", "S02", "S11", "S12", "S17"]
+    },
+    "c03_曝光条件": {
+      "text": "POP：Reilly 称 salted paper（POP 即其一种）最佳在日光下曝光，未给时长或 mJ/cm² 数据（S02 第 3 章，A，定性）。albumen 与日光的对应句在所读原文中未找到，已删去。厂商套件说明书（S17，A）：可用日光、UV 灯箱或汞蒸气灯曝光；使用汞蒸气灯、距离 18 英寸时，「10–20 分钟的曝光不少见」。因此 POP 在 30 分钟目标之内有厂商给出的 UV 灯时长依据。mJ/cm² 剂量未知；日光时长未给出。Lumen：实践者报告 5 分钟至 2 个月不等（S11，C）；另一实践者称至少需 15–20 分钟，常需数小时（S12，C）；两者矛盾。颜色随时长变化：5 分钟偏淡蓝、半小时偏紫、两天偏棕（S11，C）。",
+      "grade": "A（salted 定性；厂商 UV 灯时长）；C（lumen）；剂量未知",
+      "label": "事实（来源声称）；未知（mJ/cm² 与日光时长）",
+      "source_ids": ["S02", "S11", "S12", "S17"]
+    },
+    "c04_后处理": {
+      "text": "POP：必须定影并洗净，流程有两种，应分列。（a）Reilly 历史方案（A）：碱性硫代硫酸盐、不加硬化剂，两浴各约 4 分钟（持续搅动），单升约 10–15 张 8×10 即应更换；定影后短水洗 2–4 分钟，再以 1% 亚硫酸钠 washing aid 处理 3–4 分钟，最后流水洗约 30 分钟（厚基 40–50 分钟）。（b）厂商现代套件（S17，A）：单浴定影 Solution E（五水硫代硫酸钠 50 g / 500 mL，52 °C，10 分钟），定影后至少水洗 1 小时；厂商另称化学处理会使纸纤维变弱、易磨损。可选碱性金-硼砂调色（Solution D，21 °C，6–12 分钟），可在定影前或水洗后进行。以上全部为浸泡型湿处理。Lumen：可选择不定影（保持未定影状态），或定影（同样为浸泡）；定影会减弱颜色并改变色调（S11、S12，C；机理见 S01）。",
+      "grade": "A（两套流程，均为一手）；C（lumen）",
+      "label": "事实",
+      "source_ids": ["S01", "S03", "S11", "S12", "S17"]
+    },
+    "c05_免洗的真实程度": {
+      "text": "不适用于 POP 与盐纸。定影与水洗为必需步骤（厂商与 Reilly 一致，A）。Lumen 未定影属「免洗但不稳定」，按底线 2、3 不算免洗通过。判定：严格免洗 ✗。",
+      "grade": "A",
+      "label": "事实",
+      "source_ids": ["S01", "S10", "S11", "S17"]
+    },
+    "c06_停止机制": {
+      "text": "POP：定影（硫代硫酸盐）络合并溶解未感光 AgCl。银-硫代硫酸盐络合物中有一种仅在新鲜定影液中才能完全溶解（Reilly chap9，A）。厂商：定影前印件仍感光（The print is still light sensitive and will remain so until fixing），定影后不再感光（S17，A）。因此无天然停止，定影是化学终止，水洗是物理去除。候选替代：（a）硫代硫酸盐喷雾后免洗：无先例，且纸纤维会吸收硫代硫酸盐，水洗也难以除尽（S01，A，推断为失败）。（b）浓 NaCl「稳定化」：Talbot 处原文为「在低光下」稳定，Daguerre 处未见低光限定（为外推）；AgCl 未被移除，只转为较不敏感形态（S01、S02，A），不满足底线 2。（c）硫氰酸盐、硫脲、亚硫酸盐、氨、氰化钾：Reilly 列为「有定影或稳定作用」的物质之一（S01，A），但无成色稳定数据。氰化钾红线出局（家庭场景不可接受，推断）；硫氰酸钾 H302/H312/H332（S09，B），与酸接触的风险未评估（未验证）。避光不计为停止。",
+      "grade": "A（定影机理、厂商定影终止与历史稳定化）；喷雾候选无证据",
+      "label": "事实；推断；未验证",
+      "source_ids": ["S01", "S02", "S09", "S17"]
+    },
+    "c07_白区稳定性": {
+      "text": "机理（A）：未定影时未感光卤化银仍感光，白区持续变化（厂商：still light sensitive until fixing，A；S10、S11 实践者描述，C）。定影后残留硫代硫酸盐分解释放单质硫，攻击银影像，造成黄化与褪色（Reilly chap9，A）；定影不彻底或水洗不足是常见劣化原因（Wikipedia「Photographic fixer」，B，引 Canadian Conservation Institute）。证据冲突：S16（1997 邮件组，C）报告一次丹麦调查，RC 自动冲洗机残留硫代硫酸盐偏高；但同一段称展览 RC 照片的黄化多来自大气污染物而非残留硫代硫酸盐，且作者自陈无科学数据。此冲突未以定量数据裁定。Woodbury 1891 中以「明矾与海波混合析硫」为 surest methods of producing yellow and fading prints，指调色浴中的分解反应，只能作为类比（推断），不作为定影残留的直接证据。现代 POP 或 lumen 白区稳定性定量数据未找到，仅有定性描述。",
+      "grade": "A（机理，Reilly 与厂商）；C（S16 反证、lumen 描述）；推断（Woodbury 类比）",
+      "label": "事实；证据冲突；推断；缺定量证据",
+      "source_ids": ["S01", "S03", "S06", "S10", "S11", "S16", "S17"]
+    },
+    "c08_成色耐光": {
+      "text": "只报数据本身，不换算为年限。(1) Woodbury 1891（A 摘录级，单次历史试验，未重复）：同底片、同经定影、调色、洗净的 albumen 与 gelatino-chloride 纸，钉于纸板，一半覆以黑纸作暗区对照，置于日光最强处三个月。albumen 几乎不可见；gelatino-chloride 除纸面轻微黄化外未受损（S03，原文 OCR 已核对）。(2) Sugiura & Okayama 1999（A 摘录级，仅摘要，非全文）：摘要所列 20 °C/86% RH 条件下，POP 的变色与褪色最小，且小于 albumen。摘要对整体实验描述为 high temperatures and humidities，但该 RH 条件本身未标明为加速条件，故不称「湿热加速」（S04）。GP-1 金保护测试的对象是 albumen 纸，摘要未给数值（S04）。(3) 未定影 lumen 的光稳定数据：未找到，仅有定性描述（S10、S11，C）。",
+      "grade": "A（摘录级）；C（lumen）",
+      "label": "事实（数据本身）；未验证（现代材料）",
+      "source_ids": ["S03", "S04", "S10", "S11"]
+    },
+    "c09_货架期": {
+      "text": "出厂预涂：未核实到在售出厂预涂 POP 纸（见 negative_findings N3，已收窄）。历史厂商（如 Liesegang）见于 1891 年 Woodbury 手册的正文历史叙述与附录（S03，A），属历史信息，现行供应未知。用户现涂：厂商 Photographers' Formulary 07-0110 套件（S17，A）为自涂流程：先以盐液（gelatin、sodium citrate、ammonium chloride）涂布并干燥，再以硝酸银溶液（13 g/100 mL）刷涂敏化。厂商说明：干燥的盐纸须在干燥处保存（吸湿性强）；敏化后的纸「can be stored if you are very careful to protect it from moisture and light」。两份一手文件均未给出货架期时长。混合液货架期未知。定影液：Reilly 要求现配，用后更换（S01，A）。",
+      "grade": "A（厂商流程与存储条件）；货架期时长：未知（缺证据）",
+      "label": "未验证（时长）；事实（流程与存储条件）",
+      "source_ids": ["S01", "S03", "S17"]
+    },
+    "c10_底材适配": {
+      "text": "Reilly：老式盐纸与蛋白纸的银影像与纸纤维接触紧密，硫代硫酸盐被纤维吸收，水洗难以彻底去除，纸基会成为残留库；现代 RC 纸以 baryta 或 PE 隔离影像层（S01，A）。Woodbury 1891：gelatino-chloride 薄膜以 chalk/baryta 层支撑于纸面，药液去除所需时间「very short」（S03，A）。湿处理使影像层膨胀并引起色移（S01，A）；厂商：化学处理使纸纤维变弱、易磨损（S17，A）。S16（1997 邮件组，C）：一次丹麦调查中，所测 RC 自动冲洗机的残留硫代硫酸盐偏高，延长冲洗或提高水温可降低，但此为单一报告。对拼图板：未测；干后收缩与变形为推断（倾向失败）；封层兼容性未知。",
+      "grade": "A（机理）；C（S16 单一报告）；推断（板材）",
+      "label": "事实；推断；未验证",
+      "source_ids": ["S01", "S03", "S16", "S17"]
+    },
+    "c11_安全与法规": {
+      "text": "硝酸银（CAS 7761-88-8，Wikipedia chembox 可见，S08，B）：H272、H314、H410；Toxic, corrosive（S08，B）。厂商说明书：硝酸银为 oxidizer 与 caustic，皮肤烧伤并染成棕黑色（S17，A）。硫代硫酸钠：Wikipedia 称 low toxicity，LDLo（兔）4000 mg/kg；GHS H315/H319/H335（S07，B）。Reilly：硫代硫酸盐遇酸分解释放单质硫，因此定影需碱性（S01，A）。硫氰酸钾：H302/H312/H318/H319/H332/H412（S09，B）；与酸接触的风险未评估（未验证）。氰化钾：Reilly 列为「有定影或稳定作用」的物质之一（S01，A）；家庭场景 HCN 风险为推断，判定不可接受。重铬酸钾：套件含 2 g，厂商标注 toxic、oxidizer，all chromium compounds are potential carcinogens，仅作可选对比度调节（S17，A；厂商说明书，非 GHS SDS）。氯化金 1%：厂商说明为 caustic，皮肤染色（S17，A）；GHS 危害语句未读，未验证。PPE：厂商建议橡胶手套（如 Playtex 类）或一次性手套，并清洗器皿；通风与标签级别未核实。成人美术材料路线的 ASTM D-4236 与 LHAMA 可达性：未核实。",
+      "grade": "A（厂商说明书）；B（Wikipedia GHS）；未验证（GHS SDS、ASTM、LHAMA）",
+      "label": "事实（一手与二级来源）；未验证（GHS SDS、ASTM）",
+      "source_ids": ["S01", "S07", "S08", "S09", "S17"]
+    },
+    "c12_供应与成本": {
+      "text": "价格与在售状态均未验证；页面读取日期 2026-11-01。Photographers' Formulary POP Salted-Plain Kit（07-0110）：厂商产品页（stores.photoformulary.com/pop-salted-plain-kit/）可读，显示标价 $76.95（未验证，仅页面显示）。WebSearch 摘录（2026-11-01）列价 $75.95–76.99，并称 B&H 与 Freestyle 缺货（未验证；B&H 页面为人机验证页，不可读）。这是化学套件，不是出厂预涂纸。出厂预涂 POP 纸：未找到可核实的在售页（N3）。Jacquard 站内搜索「printing out」首屏未返回 POP 产品（S19，B，页脚 2026）。论坛所称「Albumen Works」是否为 Chicago Albumen Works：未核实；该站为档案数字化服务，首页未见 POP 纸（S20，B，页脚 © 2017）。Retro Photographic（英国）：论坛提及，连接失败（N18）。Dharma 站内搜索 403（N16）。",
+      "grade": "未验证（价格、库存、在售状态）",
+      "label": "未验证",
+      "source_ids": ["S17", "S19", "S20", "S23", "S24"]
+    },
+    "c13_证据等级": {
+      "text": "关键主张 10 条：(1) POP 与 lumen 的永久性需定影并洗净残留（事实，A，S01、S17）。(2) 定影副产物导致黄化与褪色（事实机理，A，S01、S03、S06；与 S16（C）的经验性反证并存，证据冲突）。(3) 水洗难以去除纸纤维中的硫代硫酸盐（事实，A，S01）。(4) 浓 NaCl 稳定化的低光限定见于 Talbot 处，且未去除 AgCl（事实，A，S02、S01）。(5) Woodbury 1891 三个月日光对照（事实，A 摘录级，单次历史试验，S03）。(6) 20 °C/86% RH 条件下 POP 变化小于 albumen（事实，A 摘录级，S04，仅摘要）。(7) 未定影画面继续变化（事实，实践者描述 C，S10、S11；厂商 A 级佐证「仍感光」，S17）。(8) lumen 颜色取决于纸、曝光、水分与物体透光度（事实，实践者描述，C，S11、S12）。(9) 未找到喷雾或干式稳定化先例（负结果，范围见 negative_findings）。(10) 硝酸银 H272/H314/H410（事实，B，S08）；重铬酸钾 2 g 为套件可选组分（事实，A，S17）。推断：lumen 与 POP 同属光致银析出（依据 S01、S12）；湿处理使拼图板变形（未测）；Woodbury alum+hypo 类比（推断）。",
+      "grade": "A / A（摘录级）/ B / C 混合",
+      "label": "事实与推断已分别标注",
+      "source_ids": ["S01", "S02", "S03", "S04", "S06", "S07", "S08", "S09", "S10", "S11", "S12", "S16", "S17"]
+    },
+    "c14_关键未知": {
+      "text": "1) 是否存在不经湿浸（或仅一次喷涂后免洗）即可停止 POP 或盐纸白区反应、且不留残留物的化学体系。本轮无任何一手先例。最可能的翻盘线索是非硫代硫酸盐络合剂（硫氰酸盐、硫脲、亚硫酸盐）的定量稳定数据，但须先过安全红线。2) 未定影 lumen 的定量光稳定数据（时间与色差）：完全缺失。3) 残留硫代硫酸盐是否为 RC 或现代纸黄化的主因：S01、S06 的机理与 S16（C）的经验判断相冲突，未以定量数据裁定。4) 出厂预涂 POP 纸是否仍在售：未找到。5) 厂商套件的 POP 配方中 dichromate 为可选组分，其他可用对比度调节方式未核实。",
+      "grade": "未知",
+      "label": "未验证",
+      "source_ids": ["S01", "S06", "S09", "S16", "S17"]
+    },
+    "c15_判别实验": {
+      "text": "四组对比（未定影；喷硫代硫酸盐后免洗；喷后水洗含 washing aid；非硫代硫酸盐方案，先过安全红线），同批样本各 30 分钟日光或 UV 灯成像（厂商 UV 汞灯 10–20 分钟可作参照），经室内显示光照与湿热对照后测白区 Dmin 与残留硫代硫酸盐。残留测定方法：碘-淀粉法，见 S22 Crossref 题名「Methods using iodine-amylose」；BS 3403 与 ISO 417 的对应关系未验证，ISO 417 仅由 S16 间接提及。若喷后免洗组白区稳定性不优于未定影组，即证伪本路线的免洗前提。",
+      "grade": "判别设计（未执行）",
+      "label": "推断",
+      "source_ids": ["S01", "S16", "S17", "S22"]
+    }
+  },
+  "c05_免洗核验": {
+    "验收": {
+      "1_喷后免洗": "✗ POP 与 lumen 的稳定化都依赖定影并洗净残留（厂商：定影 10 分钟去除全部银盐，之后至少水洗 1 小时；Reilly：两浴定影、washing aid、流水洗，A，S17、S01）；未发现喷雾或免洗替代（N1、N4，负结果，范围内，本轮未复跑）。",
+      "2_白区停得住": "✗ 厂商明示：定影前印件仍感光，直至定影（S17，A）；未定影 lumen 画面继续变化（S10、S11，C）。定影后残留硫代硫酸盐可致黄化、褪色（S01、S06，A/B）；与 S16（C）的反证并存，证据冲突，未定量。",
+      "3_成色留得住": "? 定影、调色并洗净的 gelatino-chloride POP 在 1891 年单次三个月日光对照中成色保持较好，albumen 严重褪色（S03，A 摘录级，单次未重复）；厂商未给耐光数据；lumen 未定影颜色随时间变化（✗，C）；无现代材料定量数据。",
+      "4_少量喷液": "✗（推断） 定影需浴液全面接触，并分两浴或 10 分钟浸泡（S01、S17，A）；无喷液停止先例（N4）。",
+      "5_底材不变形": "✗（推断，已获一手支持） 湿处理使影像层膨胀并色移（S01，A）；厂商：化学处理使纸纤维变弱、易磨损（S17，A）；拼图板未测。",
+      "6_安全前置": "✗（暂定，保守保留） 套件产品层面含重铬酸钾 2 g，厂商标注为可选对比度调节（S17，A）；硝酸银为 oxidizer 与 caustic（S17，A；H314，S08，B）。ASTM D-4236 与 LHAMA 未核实。此 ✗ 不作为淘汰的独立依据。"
+    },
+    "说明": "POP 与 lumen 在六条底线中，第 1、2、5 条有一手依据失败；第 4 条为推断；第 3 条仅有单次历史试验支持；第 6 条为暂定。「免洗」在此路线不成立。"
+  },
+  "verdict": {
+    "status": "淘汰",
+    "reasons": [
+      "六条底线中第 1、2、5 条有一手依据失败：定影与水洗是 POP、盐纸永久性的必要条件（厂商与 Reilly，A）；定影前印件仍感光（厂商，A）；纤维弱化与湿处理膨胀（厂商与 Reilly，A）。未找到喷雾或干式停止的先例（负结果，范围内）。",
+      "未定影的 lumen 不稳定（C 级描述），且无量化数据。",
+      "定影后残留硫代硫酸盐导致黄化与褪色为 A 级机理，但 S16（C）持相反的经验判断，故结论不作定量。",
+      "红线：POP 套件含重铬酸钾 2 g，厂商标注为可选对比度调节（A）。属产品层面命中，路线可不使用该组分；此项不是淘汰的独立依据。",
+      "唯一有利的历史证据（1891 年三个月日光对照）为单次试验，且其流程仍含定影与洗净，不支持免洗。",
+      "厂商套件给出 UV 汞灯 10–20 分钟的曝光时长（A），与 30 分钟目标兼容，但仍需定影，不改变淘汰结论。"
+    ],
+    "red_line_hits": [
+      {"rule": "重铬酸盐", "hit": true, "detail": "Photographers' Formulary P.O.P. 套件（07-0110）含重铬酸钾 2 g，厂商标注为可选对比度调节（Solution C）（S17，A，厂商说明书 curl全文）。产品层面命中，路线可不使用。"},
+      {"rule": "铁氰化钾 + 强酸", "hit": false, "detail": "本路线未涉及铁氰化物；全文与所查套件组分中无铁氰化钾或亚铁氰化钾。"},
+      {"rule": "普鲁士蓝遇碱", "hit": false, "detail": "本路线无普鲁士蓝；碱性硼砂金调色（Solution D）仅作用于银影像。"},
+      {"rule": "家庭小量通风评估", "hit": true, "detail": "硝酸银（oxidizer、caustic，H314）、氯化金 1%（caustic）、重铬酸钾（toxic，chromium 为 potential carcinogens）均属厂商标注的高风险组分；氰化钾为 Reilly 列出的物质之一，家庭不可接受（推断）。"}
+    ]
+  },
+  "baseline_challenges": [
+    {
+      "round": "4（Case C）",
+      "old_claim": "显影、停止、定影、水洗全链浸泡，不适合拼图",
+      "agree": "agree",
+      "my_evidence": "同意结论。POP 无显影步骤，「全链」表述对 POP 不完全准确，但定影与水洗的浸泡结论成立（S01，A；S17，A）。",
+      "strength": "强（A）"
+    },
+    {
+      "round": "4（Case C）",
+      "old_claim": "干式变体均不适用（dry variants none applicable）",
+      "agree": "agree",
+      "my_evidence": "同意。未找到干式或喷雾稳定化先例（N1、N4、N5）；S02 显示的 NaCl 稳定化仅低光下有效且未移除 AgCl（A）。结论仅限所列搜索范围。",
+      "strength": "中（负结果，搜索范围有限）"
+    },
+    {
+      "round": "4（Case C）",
+      "old_claim": "现成媒介充足（Ilford Multigrade RC/FB 等），YES",
+      "agree": "disagree",
+      "my_evidence": "该说法适用于显影型相纸，不适用于 POP。出厂预涂 POP 纸未找到；厂商现涂套件（盐纸化学套件，需自行涂布与敏化）可读（S17、S23），但需要自涂流程，不是现成媒介。Jacquard 首屏无 POP 产品（S19，B）。",
+      "strength": "中（未找到出厂预涂纸，并非证伪）"
+    },
+    {
+      "round": "4（Case H）",
+      "old_claim": "lumen 需定影浴，色彩易褪",
+      "agree": "agree",
+      "my_evidence": "同意。实践者描述定影会褪色并改变色调（S12、S11，C）；机理上定影时颜色与密度变化是 print-out 银颗粒聚集所致（S01，A）。未定影时也会持续变化（S10，C），因此「需定影」是永久性的前提，但定影本身会损失颜色。",
+      "strength": "中（C 级描述加 A 级机理）"
+    },
+    {
+      "round": "4（Case H）",
+      "old_claim": "lumen 颜色不稳定、会褪（fugitive）",
+      "agree": "agree",
+      "my_evidence": "同意定性结论（S10、S11，C）。未找到任何定量的褪色数据，无法判断褪色速率。",
+      "strength": "弱（仅定性）"
+    },
+    {
+      "round": "5（Note E）",
+      "old_claim": "POP 历史上用硫代硫酸盐定影加水洗；未找到喷雾或加热稳定化",
+      "agree": "agree",
+      "my_evidence": "同意。S01（A）与 S13（C，摘录）一致；S13 原页 HTTP 403 并返回安全验证页，未能全文核对。N1、N4 未发现替代方案。",
+      "strength": "强（前半）；中（负结果）"
+    },
+    {
+      "round": "2（VDB 外部报告）",
+      "old_claim": "硫代硫酸盐定影为化学终止，水洗为物理去除",
+      "agree": "agree",
+      "my_evidence": "同意。Reilly 第 9 章（S01，A）描述的机理与之相同，并补充了「水洗难以去除纤维中硫代硫酸盐」这一限制。厂商说明书亦一致（S17，A）。",
+      "strength": "强（A）"
+    },
+    {
+      "round": "4（pack 结论）",
+      "old_claim": "耐光性：正确加工与调色后可达档案级",
+      "agree": "agree (partly)",
+      "my_evidence": "部分同意。S03 与 S04（A 摘录级）显示定影洗净的 POP 劣化较小，但无现代材料的光稳定定量数据，也不能据此推出年限。",
+      "strength": "中（历史数据与摘要）"
+    }
+  ],
+  "sources": [
+    {
+      "id": "S01",
+      "title": "Reilly, James M., The Albumen & Salted Paper Book (1980), Chapter 9 Fixation and Washing",
+      "url": "https://cool.culturalheritage.org/albumen/library/monographs/reilly/chap9.html",
+      "type": "一手（保存学专著全文）",
+      "access": "curl全文",
+      "date": "1980（页面读取 2026-11-01）",
+      "quote": "These must be removed because they are unstable and will cause yellowing and fading of the image if allowed to remain.（核查时已对照原文）"
+    },
+    {
+      "id": "S02",
+      "title": "Reilly 1980, Chapter 3 (Talbot 的 NaCl 稳定化；salted paper 日光曝光句)",
+      "url": "https://cool.culturalheritage.org/albumen/library/monographs/reilly/chap3.html",
+      "type": "一手（保存学专著全文）",
+      "access": "curl全文",
+      "date": "1980（页面读取 2026-11-01）",
+      "quote": "stabilized against further darkening (at low light levels) by washing the paper in a strong salt solution（Talbot 处）；the best salted paper prints are always made in sunlight"
+    },
+    {
+      "id": "S03",
+      "title": "Woodbury, Walter E., The Gelatino-Chloride of Silver Printing-Out Process (1891)",
+      "url": "https://archive.org/stream/gelatinochlorid00woodgoog/gelatinochlorid00woodgoog_djvu.txt",
+      "type": "一手（1891 原始手册全文，OCR）",
+      "access": "curl全文",
+      "date": "1891（页面读取 2026-11-01）",
+      "quote": "After three months the albumen prints were almost invisible, while the gelatino-chloride print, except a slight yellowing of the paper itself, had not suffered（OCR 校正后）"
+    },
+    {
+      "id": "S04",
+      "title": "Sugiura K., Okayama H., Image Stability of Printing-Out Images, JIST 43(6):567-572 (1999), DOI 10.2352/J.ImagingSci.Technol.1999.43.6.art00013",
+      "url": "https://library.imaging.org/jist/articles/43/6/art00013",
+      "type": "一手（期刊摘要，全文需订阅）",
+      "access": "curl摘要（摘要页，非全文，按规则归为摘录级）；Crossref API 元数据已核对",
+      "date": "1999-11",
+      "quote": "smallest on the POP print under the conditions of 20°C and 86% RH"
+    },
+    {
+      "id": "S06",
+      "title": "Wikipedia, Photographic fixer",
+      "url": "https://en.wikipedia.org/wiki/Photographic_fixer",
+      "type": "B（百科）",
+      "access": "curl全文",
+      "date": "页面读取 2026-11-01（修订日期未核实）",
+      "quote": "Without fixing, the remaining silver halide would darken and cause fogging of the image.；If fixing is incomplete or washing inadequate, the residual compounds can cause black-and-white tones to turn yellow and brown."
+    },
+    {
+      "id": "S07",
+      "title": "Wikipedia, Sodium thiosulfate（危害与毒性段；chembox GHS）",
+      "url": "https://en.wikipedia.org/wiki/Sodium_thiosulfate",
+      "type": "B（百科）",
+      "access": "curl全文（第二次尝试，首次 429 限流）",
+      "date": "页面读取 2026-11-01",
+      "quote": "Sodium thiosulfate has low toxicity. LDLo for rabbits is 4000 mg/kg.；H315, H319, H335。CAS 7772-98-7（无水）、10102-17-7（五水），chembox 所列"
+    },
+    {
+      "id": "S08",
+      "title": "Wikipedia, Silver nitrate（chembox：CAS、GHS）",
+      "url": "https://en.wikipedia.org/wiki/Silver_nitrate",
+      "type": "B（百科，GHS 取自 Sigma-Aldrich 与 ECHA 汇编）",
+      "access": "curl全文",
+      "date": "页面读取 2026-11-01",
+      "quote": "Toxic. Corrosive.（正文）；CASNo 7761-88-8；H-phrases 272|314|410"
+    },
+    {
+      "id": "S09",
+      "title": "Wikipedia, Potassium thiocyanate（chembox：GHS）",
+      "url": "https://en.wikipedia.org/wiki/Potassium_thiocyanate",
+      "type": "B（百科）",
+      "access": "curl全文",
+      "date": "页面读取 2026-11-01",
+      "quote": "H302, H312, H318, H319, H332, H412"
+    },
+    {
+      "id": "S10",
+      "title": "Sanchez, Natasha, Lumen Life Lessons Vol. I: To Fix or Not To Fix?（practitioner 博客）",
+      "url": "https://www.natashasanchezcreates.com/blog/lumen-life-lessons-to-fix-or-not-to-fix",
+      "type": "C（实践者博客）",
+      "access": "curl全文",
+      "date": "发布日期未核实（页面读取 2026-11-01）",
+      "quote": "Without being fixed, these prints are impermanent, they will fade over time."
+    },
+    {
+      "id": "S11",
+      "title": "Pingwish, Two Ways to Make a Photograph With No Chemicals at All（商业科普页）",
+      "url": "https://pingwish.com/discover/anthotype-and-lumen-prints-without-chemicals",
+      "type": "C（商业网站科普）",
+      "access": "curl全文",
+      "date": "发布日期未核实（页面读取 2026-11-01）",
+      "quote": "Unfixed it keeps changing; fixing mutes the colour；A five-minute exposure can give a light blue print；5 minutes to 2 months"
+    },
+    {
+      "id": "S12",
+      "title": "Berrangé, D., An introduction to the Lumen printing process (f/138)",
+      "url": "https://fstop138.berrange.com/?p=414",
+      "type": "C（实践者博客）",
+      "access": "curl全文",
+      "date": "发布日期未核实（页面读取 2026-11-01）",
+      "quote": "will sadly fade somewhat during the fix；Once an archival fix and wash is completed though, the image should be stable thereafter."
+    },
+    {
+      "id": "S13",
+      "title": "Photrio 论坛，print out paper 主题 21802（搜索摘录）",
+      "url": "https://www.photrio.com/forum/threads/print-out-paper.21802/",
+      "type": "C（论坛）",
+      "access": "搜索摘录；原页 HTTP 403，返回安全验证页（bot check），不可读，未绕过",
+      "date": "未核实",
+      "quote": "plain non-hardening fixer is the only chemical absolutely required for POP（未核实）"
+    },
+    {
+      "id": "S14",
+      "title": "Photrio 论坛，help fixing lumen prints 主题 114231（搜索摘录）",
+      "url": "https://www.photrio.com/forum/threads/help-fixing-lumen-prints.114231/",
+      "type": "C（论坛）",
+      "access": "搜索摘录；原页 HTTP 403 并返回安全验证页，不可读，未绕过",
+      "date": "未核实",
+      "quote": "一用户称商业定影液把影像漂向棕色（摘录释义，未核实，未逐字引用）"
+    },
+    {
+      "id": "S15",
+      "title": "CAMEO (MFA Boston), Printing out paper（搜索摘录）",
+      "url": "https://cameo.mfa.org/wiki/Printing_out_paper",
+      "type": "B（保护领域参考，摘录）",
+      "access": "搜索摘录；cameo.mfa.org 在禁止或 403 名单中，未访问、未绕过",
+      "date": "未核实",
+      "quote": "摘录释义：未定影的相片会继续缓慢变化（未核实）"
+    },
+    {
+      "id": "S16",
+      "title": "Conservation DistList 1997 邮件组线程「Processing RC papers Permanence of RC papers」",
+      "url": "https://cool.culturalheritage.org/byform/mailing-lists/cdl/1997/1185.html",
+      "type": "C（邮件组，单一机构经验报告）",
+      "access": "curl全文",
+      "date": "1997",
+      "quote": "all machines left a high amount of residual thiosulfate in the prints；most problems of yellowing and discoloration in exhibited RC-prints originates from pollutants in the atmosphere - not residual thiosulfate；we have no scientific results on ..."
+    },
+    {
+      "id": "S17",
+      "title": "Photographers' Formulary, Printing-Out Process 1/2-liter kit 07-0110（厂商说明书 PDF，可读副本）",
+      "url": "https://stores.photoformulary.com/content/07-0110.pdf",
+      "type": "A（厂商一手文件；非 GHS 格式 SDS）。原 research 所引 freestylephoto PDF（https://www.freestylephoto.com/static/pdf/pages/product_pdfs/formulary/07-0110.pdf）按会话 403 名单不可读（本轮未访问，未绕过）",
+      "access": "curl全文",
+      "date": "2026-11-01 读取；文件属性创建于 2006（未标注修订日）",
+      "quote": "Potassium dichromate 2g；Potassium dichromate is included in this kit for optional use only；Sodium thiosulfate, pentahydrate 50 g；With a mercury vapor yard lamp at 18 inches, 10-20 minutes of exposure is not unusual；Wash the print for at least 1 hour"
+    },
+    {
+      "id": "S19",
+      "title": "Jacquard Products，站内搜索「printing out」结果页（首屏）",
+      "url": "https://www.jacquardproducts.com/search?q=printing+out",
+      "type": "B（厂商页）",
+      "access": "curl全文",
+      "date": "页面读取 2026-11-01（页脚 2026）",
+      "quote": "首屏仅见「Screen Filler / Block Out」一条结果及 See more 链接；未翻页核查"
+    },
+    {
+      "id": "S20",
+      "title": "Chicago Albumen Works 首页（与论坛所称 Albumen Works 是否同一主体未核实）",
+      "url": "https://www.albumenworks.com/",
+      "type": "B（厂商页）",
+      "access": "curl全文",
+      "date": "页面读取 2026-11-01（页脚 CAW © 2017）",
+      "quote": "a leader in the field of digital archiving for photograph collections（服务型，未见 POP 纸）"
+    },
+    {
+      "id": "S22",
+      "title": "BSI 标准题名（Crossref）：Photography. Determination of residual thiosulfate and other related chemicals in processed photographic materials. Methods using iodine-amylose, methylene blue and silver sulfide；DOI 10.3403/00483876",
+      "url": "https://api.crossref.org/works/10.3403/00483876",
+      "type": "B（标准题名，未读全文）",
+      "access": "API（题名与元数据）",
+      "date": "未核实（Crossref 显示批准于 1995-03-15）",
+      "quote": "Methods using iodine-amylose, methylene blue and silver sulfide（题名）。BS 3403 与 ISO 417 的对应关系不在该元数据中，未验证"
+    },
+    {
+      "id": "S23",
+      "title": "Photographers' Formulary, POP Salted-Plain Kit 产品页（零售与厂商页）",
+      "url": "https://stores.photoformulary.com/pop-salted-plain-kit/",
+      "type": "B（厂商零售页）",
+      "access": "curl全文（价格与在售状态未验证）",
+      "date": "页面读取 2026-11-01",
+      "quote": "$76.95（价格未验证）；Product Description：Make your own POP paper using the Formulary's Salted-Plain Paper Kit"
+    },
+    {
+      "id": "S24",
+      "title": "WebSearch 摘录：B&H（bhphotovideo.com 产品 123482）与 digitaltruth 数据页（07-0110）",
+      "url": "https://www.bhphotovideo.com/c/product/123482-REG/Photographers_Formulary_07_0110_Salted_Plain_Paper_Kit.html；https://www.digitaltruth.com/products/photoformulary_tech/Formulary%20Salted%20Plain%20Pop%20[07-0110].pdf",
+      "type": "C（零售与数据页，摘录）",
+      "access": "搜索摘录；两页原页均返回人机验证页（不可读，未绕过）",
+      "date": "2026-11-01 检索",
+      "quote": "摘录释义：列出 gelatin、sodium citrate、ammonium chloride、silver nitrate、borax、1% gold chloride、potassium dichromate、sodium thiosulfate；价格 $75.95–76.99；缺货（均未验证）"
+    }
+  ],
+  "negative_findings": [
+    {
+      "query": "WebSearch: printing-out paper POP silver chloride stabilize without thiosulfate fixer alternative",
+      "scope": "通用网页搜索（standard），1 次",
+      "result": "未发现免硫代硫酸盐的 POP 稳定化方法；所有来源都假定需要硫代硫酸盐定影。（本轮未复跑）"
+    },
+    {
+      "query": "WebSearch: lumen print unfixed silver gelatin paper colors fade darken over time without fixer",
+      "scope": "通用网页搜索（standard），1 次",
+      "result": "未发现定量褪色或时长数据，仅有实践者的定性描述（S10、S11、S12）。（本轮未复跑）"
+    },
+    {
+      "query": "WebSearch: printing out paper POP silver chloride paper for sale 2026 buy",
+      "scope": "通用网页搜索（standard），1 次",
+      "result": "N3（修订）：未发现出厂预涂 POP 纸的可核实在售页，也无价格或库存。已找到厂商 POP 现涂套件页（Photographers' Formulary POP Salted-Plain Kit，stores.photoformulary.com，2026-11-01 可读，标价 $76.95，未验证）。该套件是化学套件，不是预涂纸。"
+    },
+    {
+      "query": "WebSearch: spray fixer photographic print no tray residual thiosulfate yellowing fading stabilization",
+      "scope": "通用网页搜索（standard），1 次",
+      "result": "N4：未发现喷雾式定影或喷雾式硫代硫酸盐清除的研究或产品；命中的 spray 仅为洗涤槽喷淋杆。（本轮未复跑）"
+    },
+    {
+      "query": "Crossref: printing-out paper silver chloride image stability",
+      "scope": "api.crossref.org，rows=8",
+      "result": "找到 S04（Sugiura & Okayama 1999，本轮 Crossref 元数据已核对）；其余为无关条目或书章元数据（Gelatin-Chloride POP 章，2018，未读全文）。"
+    },
+    {
+      "query": "Crossref: lumen print photogram silver gelatin paper sunlight",
+      "scope": "api.crossref.org，rows=8",
+      "result": "N6：未找到 lumen 专题论文，仅有与 POP 书章相关的条目。"
+    },
+    {
+      "query": "Crossref: residual thiosulfate silver gelatin print permanence yellowing",
+      "scope": "api.crossref.org，rows=8",
+      "result": "N7：未找到 permanence 数据的摘要；仅找到 BS 3403 系列测试方法（S22）题名。"
+    },
+    {
+      "query": "Crossref: unfixed silver image daylight fading photographic paper",
+      "scope": "api.crossref.org，rows=8",
+      "result": "N8：无相关条目（结果为银影像存储条件与彩色薄膜标准）。"
+    },
+    {
+      "query": "Crossref: silver chloride print-out image photolysis colloidal silver color",
+      "scope": "api.crossref.org，rows=8",
+      "result": "N9：仅有 2019 年「Inquisition on the Photochemical Degradation of Silver Gelatin Photograph Print-Out」（无作者、无摘要，期刊与出版方不匹配，视为低可信，未采用）。"
+    },
+    {
+      "query": "archive.org advancedsearch: 印出法与 printing-out paper（mediatype:texts）",
+      "scope": "archive.org，rows=25，约 6 条命中",
+      "result": "N10：仅 gelatinochlorid00woodgoog（S03）相关，已全文读取并核对。"
+    },
+    {
+      "query": "Gutenberg 站内搜索：printing out paper",
+      "scope": "gutenberg.org 搜索页，第 1 页 21 条",
+      "result": "N11：首页结果与印出法无关（印刷、纸张工艺类书目）。"
+    },
+    {
+      "query": "Google Patents XHR 关键词查询：printing-out paper fixing；(printing-out OR print-out) silver chloride fixing spray；(photographic silver halide) stabilizing without thiosulfate",
+      "scope": "patents.google.com（xhr/query），3 次尝试",
+      "result": "N12：首次查询返回与关键词无关的结果（疑似查询未生效）；其余两次 503。专利检索未完成，不写「未发现」，也不写「无专利」。"
+    },
+    {
+      "query": "Wikipedia 直接页：Printing-out_paper、Lumen_print、Salted_paper、Salt_print_process",
+      "scope": "en.wikipedia.org",
+      "result": "N13（修订）：本轮复查，Printing-out_paper、Lumen_print、Salted_paper 返回 404；Salt_print_process 返回 429 限流，不可判定。原「4 个页面均为 404」改为「3 个 404，1 个未能判定」。"
+    },
+    {
+      "query": "读取 Photrio 论坛 print-out-paper.21802 与 help-fixing-lumen-prints.114231（直接访问）",
+      "scope": "photrio.com，2 次尝试（修订）",
+      "result": "N15（修订）：两页本轮均为 HTTP 403，并返回安全验证页（bot check），不可读；未绕过。"
+    },
+    {
+      "query": "读取 CAMEO Printing out paper",
+      "scope": "cameo.mfa.org",
+      "result": "N14：403（在禁止名单，未访问，未绕过）；仅有搜索摘录（S15）。"
+    },
+    {
+      "query": "读取 Dharma Trading 站内搜索 printing out paper",
+      "scope": "dharmatrading.com",
+      "result": "N16：403，未读（原记录，本轮未复查）。"
+    },
+    {
+      "query": "读取 Photographers' Formulary 首页与产品页（修订）",
+      "scope": "photographersformulary.com；stores.photoformulary.com",
+      "result": "N17（修订）：首页跳转 lander，不可读（原记录）；但 stores.photoformulary.com 的 POP Salted-Plain Kit 产品页与 07-0110 说明书 PDF 本轮可读（S17、S23）。"
+    },
+    {
+      "query": "读取 retrophotographic.co.uk",
+      "scope": "英国零售商，论坛所提",
+      "result": "N18：连接失败（CONNECT 502）。"
+    },
+    {
+      "query": "PubChem 名称查询（sodium thiosulfate、silver nitrate、potassium thiocyanate）",
+      "scope": "pubchem.ncbi.nlm.nih.gov",
+      "result": "N19（修订）：本轮 PubChem REST 名称查询对 sodium thiosulfate 返回 CID 24477；GHS 仍以 Wikipedia（S07，B）为准，PubChem GHS 未读取。"
+    },
+    {
+      "query": "IS&T 全文：Sugiura & Okayama 1999",
+      "scope": "library.imaging.org（出版社页）",
+      "result": "N20：仅摘要，全文需登录；摘要外的数据或处理条件细节未读到。"
+    },
+    {
+      "query": "WebSearch（本轮核查）：Photographers' Formulary P.O.P. Printing Kit 07-0110 potassium dichromate sodium thiosulfate",
+      "scope": "通用网页搜索，1 次（核查额度）",
+      "result": "N21：返回多条零售与数据页摘录，均称该套件含 potassium dichromate 与 sodium thiosulfate；原页多为人机验证页，未能直接核对，仅作线索。其中的厂商说明书已通过 stores.photoformulary.com 直接核实（S17）。"
+    }
+  ],
+  "key_unknowns": [
+    "是否存在不经湿浸（或仅一次喷涂后免洗）即可停止 POP 或盐纸白区反应、且不留残留物的化学体系（本轮无一手先例）",
+    "未定影 lumen 的定量光稳定数据（时间与色差）完全缺失",
+    "出厂预涂 POP 纸是否仍在售：未找到（厂商在售的是化学套件，非预涂纸）",
+    "非硫代硫酸盐络合剂（硫氰酸盐、硫脲、亚硫酸盐）的稳定化效果与安全性（未验证）",
+    "残留硫代硫酸盐是否为 RC 纸或现代纸黄化的主因：机理（Reilly、Wikipedia）与 S16 的经验判断相冲突，未定量",
+    "POP 的 mJ/cm² 曝光剂量与日光时长：未知（厂商仅给 UV 汞灯 18 英寸 10–20 分钟）",
+    "拼图板底材的变形与封层兼容性：未测"
+  ],
+  "discriminating_experiment": {
+    "one_liner": "同批 POP 样本分四组（未定影；喷硫代硫酸盐后免洗；喷后水洗含 washing aid；非硫代硫酸盐方案），测白区 Dmin 与残留硫代硫酸盐；若喷后免洗组白区稳定性不优于未定影组，即证伪「免洗」前提。",
+    "design_sketch": "各组用厂商 UV 汞灯 18 英寸 10–20 分钟（或日光 30 分钟）成像，再经室内显示光照与湿热对照；测白区 Dmin 变化，并以碘-淀粉法测残留硫代硫酸盐（Crossref 题名确认该方法类别，BS 3403 与 ISO 417 的对应关系未验证）。先过安全红线筛选非硫代硫酸盐方案。结果只报数据本身，不换算为年限。"
+  },
+  "new_routes_spotted": [
+    {
+      "name": "非硫代硫酸盐络合定影（硫氰酸盐、硫脲、亚硫酸盐）",
+      "why": "Reilly 列为有定影或稳定作用的替代物（S01，A），但无稳定化数据；硫氰酸钾带 H302/H312/H332（S09，B），与酸的风险未评估。",
+      "lead_url": "https://cool.culturalheritage.org/albumen/library/monographs/reilly/chap9.html"
+    },
+    {
+      "name": "氯化钾「gaslight」与氯化明胶 POP 自涂体系",
+      "why": "2018 年书章（The Handmade Silver Gelatin Emulsion Print）条目出现，但只有元数据，未读全文；仍需定影，可能不改变结论。",
+      "lead_url": "https://api.crossref.org/works/10.4324/9781351164009-15"
+    },
+    {
+      "name": "金保护与调色对银影像湿热稳定性的影响（对象为 albumen 纸）",
+      "why": "Sugiura & Okayama 1999 测试了 GP-1 金保护（S04，A 摘录级），对象为 albumen 纸，摘要未给数值；可能是「成色留得住」的辅助手段，但金盐的安全性需另行核查。",
+      "lead_url": "https://library.imaging.org/jist/articles/43/6/art00013"
+    }
+  ],
+  "search_budget_used": {
+    "websearch": 4,
+    "curl_reads": 50
+  },
+  "verifier_search_budget_used": {
+    "websearch": 1,
+    "curl_reads": 40
+  },
+  "reconciliation_log": [
+    {"item": "c01/c04/c07 与 md §2：Reilly 引文「残留盐」", "change": "改为「定影副产物（硫代硫酸盐及银-硫代硫酸盐络合物）」", "why": "原文主语为 by-products（chap9 原文核对）。"},
+    {"item": "c01、c08、c10、md 中的「Wood 1891」", "change": "统一为 Woodbury 1891（Walter E. Woodbury）", "why": "S03 题名页为 WALTER E. WOODBURY。"},
+    {"item": "c07：Woodbury 明矾+海波析硫作为「残留硫代硫酸盐 → 黄化褪色」的 A 级例证", "change": "降为推断（类比），且不高于 B；说明其指调色浴内反应", "why": "原文讨论的是调色浴分解，不是定影后残留。未能证实的主张降级。"},
+    {"item": "c07：残留硫代硫酸盐致黄化褪色（A，事实）", "change": "保留 A 级机理，但补入 S16（C）的反证，标注证据冲突，并列入 c13 与 c14", "why": "research 漏记 S16 的反证（大气污染为主因，自陈无科学数据）。冲突时取保守表述。"},
+    {"item": "c03：POP 曝光时长「未查到，标未知」", "change": "补入厂商说明（UV 汞灯 18 英寸 10–20 分钟、日光与 UV 灯箱可用）；mJ/cm² 与日光时长仍未知", "why": "反驳部分：厂商说明书（A）可直接读取。"},
+    {"item": "c03：Reilly 称 salted 与 albumen 纸最佳在日光下曝光", "change": "删去 albumen 部分；salted 部分保留（POP 厂商定义即 salted paper）", "why": "chap3 原句只针对 salted paper。"},
+    {"item": "c04：POP 必须两浴各 4 分钟、30 分钟水洗", "change": "标注为 Reilly 历史方案，并补入厂商现代套件（单浴 10 分钟，50 g 硫代硫酸钠/500 mL，水洗至少 1 小时，金-硼砂调色）", "why": "两套流程不同，原文仅描述历史方案。"},
+    {"item": "c06：「氰化钾曾为历史定影剂（S01）」", "change": "改为「Reilly 列为有定影或稳定作用的物质之一」", "why": "原文无「历史定影剂」用语。降为未验证。"},
+    {"item": "c06：Talbot 与 Daguerre 的 NaCl 稳定化「只在低光下稳定」", "change": "低光限定仅归于 Talbot；Daguerre 处注明为外推", "why": "chap3 的 low-light 限定只出现在 Talbot 处。"},
+    {"item": "c08：Sugiura 20 °C/86% RH 的「湿热加速」", "change": "改为「摘要所列 20 °C/86% RH 条件」，不称加速", "why": "摘要未标明该条件为加速条件。"},
+    {"item": "c08 与 new_routes：GP-1 金保护测试", "change": "注明对象为 albumen 纸，不是 POP", "why": "摘要原文。"},
+    {"item": "S04 access 字段「curl摘要」", "change": "改为「curl摘要（非全文）→ 按规则归为 A（摘录级）」；Crossref 元数据另以 API 核对", "why": "「curl摘要」不在允许取值内；不得标为 A。"},
+    {"item": "S17 原 URL（freestylephoto PDF，403）与「用途未核实」", "change": "以厂商可读副本 stores.photoformulary.com/content/07-0110.pdf 替代；确认组分与用途（optional，Contrast Control，Solution C）", "why": "原 URL 不可读；厂商副本为一手文件。"},
+    {"item": "红线：dichromate 命中（用途未核实，按红线计为命中）", "change": "改为产品层面命中，路线可不使用；仍计为命中（保守）", "why": "厂商标注为可选组分；保守保留命中，但不作为淘汰独立依据。"},
+    {"item": "c05 底线 6「安全前置」✗", "change": "标注为暂定（保守保留），依据为产品层面组分；ASTM D-4236 与 LHAMA 未核实", "why": "不能完全独立核实，不宜作为独立淘汰依据。"},
+    {"item": "c05 底线 2「白区停得住」✗", "change": "补入厂商 A 级依据：定影前印件仍感光", "why": "强化既有判断。"},
+    {"item": "c05 底线 5「底材不变形」✗（推断）", "change": "补入厂商「纤维弱化、易磨损」（A）", "why": "推断获一手支持，但拼图板仍未测。"},
+    {"item": "c09：出厂预涂与现涂", "change": "补入厂商套件流程（盐纸后硝酸银敏化）与存储条件（无时长）；证据等级由 C 升为 A", "why": "厂商一手文件可读。货架期时长仍为未知。"},
+    {"item": "c11：硝酸银 CAS「据本地搜索记录」", "change": "直接引 S08（Wikipedia chembox CAS 7761-88-8）", "why": "原表述不可追溯。"},
+    {"item": "c11：硫代硫酸钠 S07（低毒，H315/H319/H335）", "change": "验证通过；补充 CAS（7772-98-7 无水，10102-17-7 五水）", "why": "首次 429，退避后成功，内容与 research 一致。"},
+    {"item": "c11：氯化金「SDS 未读，未验证」", "change": "补入厂商说明（caustic、皮肤染色，A）；GHS 危害语句仍未验证", "why": "部分可读。"},
+    {"item": "c12：「无价格；站点首页跳转 lander；无可核实在售页」", "change": "改为：厂商产品页可读，标价 $76.95（未验证）；搜索摘录价格区间与缺货状态（未验证）；B&H 与 digitaltruth 为人机验证页（不可读）", "why": "反驳：厂商页可读。价格与库存一律标未验证并写日期。"},
+    {"item": "N3：「未发现 2026 年在售 POP 纸」", "change": "收窄为「未发现出厂预涂 POP 纸」；另记厂商现涂套件页", "why": "避免否定厂商可读页面。"},
+    {"item": "N13：Wikipedia 4 个页面均为 404", "change": "改为 3 个 404，Salt_print_process 因 429 不可判定", "why": "复查结果不支持「4 个均 404」。"},
+    {"item": "S13、S14、S15：访问描述", "change": "S13、S14 确认 HTTP 403 并返回安全验证页（bot check）；S15 为 403 名单、未访问；均未绕过，降为未验证（不高于 C）", "why": "准确描述访问结果（research 原记 403 与本轮一致，仅补充页面类型）。"},
+    {"item": "S22 标签「BS 3403 / ISO 417 系列」", "change": "仅保留 Crossref 题名；BS 3403 对应未验证；ISO 417 仅由 S16 间接提及", "why": "标签不在 Crossref 元数据中。"},
+    {"item": "S16 未被 columns 引用", "change": "加入 c07、c10、c13、c14 的 source_ids，并记录其反证", "why": "对抗式核查要求补入反证。"},
+    {"item": "S19 Jacquard：「未返回 POP 产品」", "change": "限定为首屏可见结果（页面有 See more，未翻页）", "why": "范围限定。"},
+    {"item": "S05、S18、S21 编号缺失", "change": "保留空缺，无引用", "why": "无实害，仅记录。"},
+    {"item": "「Liesegang Aristotype 仅见于 1891 年手册附录」", "change": "改为：Liesegang 亦见于正文历史叙述；Aristotype 条目集中于附录", "why": "原表述过窄。"},
+    {"item": "research 未记录「硫代硫酸盐遇酸释放单质硫」", "change": "补入 c11（Reilly chap9，A）", "why": "家庭操作的配方与安全注意。"},
+    {"item": "红线：铁氰化钾 / 亚铁氰化钾", "change": "无改动。核查确认全文无铁氰或亚铁氰物种，红线 false 正确", "why": "无混写。"},
+    {"item": "避光与碳酸盐中和", "change": "无改动。避光仅作暂停，未当作停止；未出现碳酸盐外推", "why": "符合规则。"},
+    {"item": "加速耐光数据与年限", "change": "无改动。全文无年限换算", "why": "符合规则。"},
+    {"item": "专利表述", "change": "无改动。仅写「未完成」「范围内未发现」，未写「无专利」", "why": "符合规则。"},
+    {"item": "负结果 N1、N4、N5–N11", "change": "未复跑，标注「本轮未复跑」", "why": "核查范围限于关键来源与摘录来源。"},
+    {"item": "淘汰裁定", "change": "维持「淘汰」", "why": "第 1、2、5 条有一手依据失败；红线与第 6 条为保守保留，不作独立依据。裁定未过严，也未过松。"}
+  ]
+}
